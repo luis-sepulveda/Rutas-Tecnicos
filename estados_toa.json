@@ -1,7 +1,8 @@
 {
-  "actualizado": "2026-09-14T09:10:25",
+  "actualizado": "2026-09-14T09:40:41",
   "resumen": {
     "sin informacion": 1,
+    "reagendada": 1,
     "cancelada": 1
   },
   "estados": {
@@ -32,6 +33,16 @@
           }
         ]
       }
+    },
+    "1-3NU0IJFE": {
+      "tec": "ELIAS ARMIJO L",
+      "cat": "Migración 3 Play",
+      "franja_original": "10-13",
+      "d": "PRINCIPAL 861, QUILPUE",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3NU0IJFE - 13-16-MigraciónMar, 15 Sep",
+      "franja_nueva": "13-16"
     },
     "1-3NT2DA3Z": {
       "tec": "JOSE PEREZ RANGEL",
