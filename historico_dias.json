@@ -3992,26 +3992,26 @@
    }
   },
   "14-09-2026": {
-   "hasta": "11:25",
-   "actividades": 126,
+   "hasta": "11:40",
+   "actividades": 134,
    "tecnicos": 31,
    "estados": {
-    "Iniciado": 25,
-    "Pendiente": 68,
-    "Completado": 16,
-    "No Realizada": 13,
-    "en ruta": 2,
+    "Iniciado": 22,
+    "Pendiente": 71,
+    "Completado": 20,
+    "No Realizada": 15,
+    "en ruta": 4,
     "Suspendido": 1,
     "Cancelado": 1
    },
-   "rgu": 183.0,
-   "caidas_total": 6,
-   "caidas_activas": 6,
+   "rgu": 198.0,
+   "caidas_total": 7,
+   "caidas_activas": 7,
    "caidas_resueltas": 0,
-   "nuevas": 20,
+   "nuevas": 24,
    "al_bucket": 3,
-   "repetidas": 26,
-   "reagendadas": 8,
+   "repetidas": 28,
+   "reagendadas": 9,
    "detalle": {
     "caidas": [
      {
@@ -4067,9 +4067,54 @@
       "hi": "16:00",
       "d": "ARAYA 1570, VILLA ALEMANA",
       "e": "Pendiente"
+     },
+     {
+      "o": "1-3NT5XY61",
+      "tec": "LUIS CASTRO TORRES",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "18:05",
+      "d": "ALTO MANQUEHUE 3071, QUILPUE",
+      "e": "Pendiente"
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NU4WBIO",
+      "tec": "JOSE ROJO A",
+      "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "16:04",
+      "d": "LATORRE 15, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NS2WN93",
+      "tec": "YENDER BOSCAN CADENAS",
+      "cat": "Alta Traslado",
+      "f": "13-16",
+      "hi": "17:42",
+      "d": "SAN MARTIN 36, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NT7RCDA",
+      "tec": "SEBASTIAN DOSSOW A",
+      "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "15:23",
+      "d": "VIA UNO SIETE 2065 EDIF. F DEPTO 23, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NU4AWGL",
+      "tec": "CESAR MENA OLIVEROS",
+      "cat": "Alta 2 Play",
+      "f": "13-16",
+      "hi": "17:35",
+      "d": "SAN FRANCISCO PONIENTE 1609, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NS6912O",
       "tec": "CRISTOBAL MIRANDA VALENC",
@@ -4122,7 +4167,7 @@
       "f": "16-19",
       "hi": "17:17",
       "d": "GALLEGUILLOS 1421 EDIF. D DEPTO 12, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NU2JQOS",
@@ -4162,7 +4207,7 @@
      },
      {
       "o": "1-3NSYDMN9",
-      "tec": "SEBASTIAN DOSSOW A",
+      "tec": "JOEL GUSTAVE GUSTA",
       "cat": "Alta 1 Play",
       "f": "10-13",
       "hi": "12:42",
@@ -4194,16 +4239,16 @@
       "f": "10-13",
       "hi": "10:53",
       "d": "DIAZ 950, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3NU0Q8SB",
-      "tec": "MARCO PEREZ G",
+      "tec": "LUIS GATICA DAVILA",
       "cat": "Alta 1 Play",
       "f": "10-13",
       "hi": "12:29",
       "d": "CAMILO MORI 302, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NTML0FL",
@@ -4301,6 +4346,18 @@
       "ult_cierre": "Sin Acceso a camara"
      },
      {
+      "o": "1-3NRIM5GJ",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "10:30",
+      "d": "LAS AMERICAS 1015 EDIF. 10 DEPTO 4, VILLA ALEMANA",
+      "e": "Completado",
+      "tec": "CRISTOBAL MIRANDA VALENC",
+      "visitas": 1,
+      "ult_fecha": "14-09-2026",
+      "ult_cierre": "Orden mal generada"
+     },
+     {
       "o": "1-3NTFHCS7",
       "cat": "Reparación",
       "f": "10-13",
@@ -4376,7 +4433,7 @@
       "o": "1-3NT7APSA",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:47",
+      "hi": "14:00",
       "d": "GOD BLESS YOU 0260 EDIF. 2 DEPTO 232, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -4388,13 +4445,25 @@
       "o": "1-3NTCNF63",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:38",
+      "hi": "15:44",
       "d": "GALLEGUILLOS 1421 EDIF. G DEPTO 52, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JEAN ROODLY ORELIEN",
       "visitas": 1,
       "ult_fecha": "12-09-2026",
       "ult_cierre": "Direccion incorrecta"
+     },
+     {
+      "o": "1-3NSYDMN9",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "11:41",
+      "d": "MARGA MARGA 600, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JOEL GUSTAVE GUSTA",
+      "visitas": 4,
+      "ult_fecha": "11-09-2026",
+      "ult_cierre": "Sin acceso a vivienda"
      },
      {
       "o": "1-3NSYEPN4",
@@ -4424,7 +4493,7 @@
       "o": "1-3NTCF736",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:12",
+      "hi": "18:58",
       "d": "LAS ACACIAS 730 DEPTO 614, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -4445,18 +4514,6 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3NT5XY61",
-      "cat": "Alta 2 Play",
-      "f": "16-19",
-      "hi": "18:05",
-      "d": "ALTO MANQUEHUE 3071, QUILPUE",
-      "e": "Pendiente",
-      "tec": "LUIS CASTRO TORRES",
-      "visitas": 1,
-      "ult_fecha": "12-09-2026",
-      "ult_cierre": "Cliente reagenda"
-     },
-     {
       "o": "1-3NTML0FL",
       "cat": "Modificación de Servicio",
       "f": "13-16",
@@ -4474,7 +4531,7 @@
       "f": "10-13",
       "hi": "11:21",
       "d": "DIAZ 950, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "LUIS GATICA DAVILA",
       "visitas": 1,
       "ult_fecha": "06-08-2026",
@@ -4493,10 +4550,22 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3NU4EWMF",
+      "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "15:28",
+      "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "MARCELO GÓMEZ GÓME",
+      "visitas": 4,
+      "ult_fecha": "24-08-2026",
+      "ult_cierre": "Clte desiste motivo comercial"
+     },
+     {
       "o": "1-3NU3EQE5",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:35",
+      "hi": "16:20",
       "d": "LAS PATAGUAS 1310, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -4520,7 +4589,7 @@
       "o": "1-3NSR1GHM",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "15:32",
+      "hi": "15:02",
       "d": "CALLE 1 851 CASA E, QUILPUE",
       "e": "Pendiente",
       "tec": "NICOLAS MOYANO R",
@@ -4541,16 +4610,16 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3NSYDMN9",
+      "o": "1-3NT7RCDA",
       "cat": "Alta 1 Play",
-      "f": "10-13",
-      "hi": "12:48",
-      "d": "MARGA MARGA 600, VILLA ALEMANA",
+      "f": "13-16",
+      "hi": "15:23",
+      "d": "VIA UNO SIETE 2065 EDIF. F DEPTO 23, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
-      "visitas": 4,
-      "ult_fecha": "11-09-2026",
-      "ult_cierre": "Sin acceso a vivienda"
+      "visitas": 1,
+      "ult_fecha": "12-09-2026",
+      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3NT8U7BG",
@@ -4580,7 +4649,7 @@
       "o": "1-3NOED8X4",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:12",
+      "hi": "17:15",
       "d": "PJE EL TUCUQUERE 2635, QUILPUE",
       "e": "Pendiente",
       "tec": "ELIAS ARMIJO L",
@@ -4590,7 +4659,7 @@
       "o": "1-3NSTZ004",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:45",
+      "hi": "14:50",
       "d": "CONDELL 478 DEPTO 202, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -4605,6 +4674,16 @@
       "e": "Iniciado",
       "tec": "FELIPE SILVA R",
       "desde": "11-09-2026"
+     },
+     {
+      "o": "1-3NSV679Y",
+      "cat": "Alta 2 Play",
+      "f": "10-13",
+      "hi": "11:48",
+      "d": "SANTA MARIA 0241, VILLA ALEMANA",
+      "e": "en ruta",
+      "tec": "JEAN ROODLY ORELIEN",
+      "desde": "12-09-2026"
      },
      {
       "o": "1-3NRBN3CL",
@@ -4627,16 +4706,6 @@
       "desde": "12-09-2026"
      },
      {
-      "o": "1-3NSV679Y",
-      "cat": "Alta 2 Play",
-      "f": "10-13",
-      "hi": "11:46",
-      "d": "SANTA MARIA 0241, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "JOSE ROJO A",
-      "desde": "12-09-2026"
-     },
-     {
       "o": "1-3NSYPBFK",
       "cat": "Alta 1 Play",
       "f": "13-16",
@@ -4645,10 +4714,20 @@
       "e": "Pendiente",
       "tec": "PABLO HERNANEZ FERNANDEZ",
       "desde": "12-09-2026"
+     },
+     {
+      "o": "1-3NS2WN93",
+      "cat": "Alta Traslado",
+      "f": "13-16",
+      "hi": "17:42",
+      "d": "SAN MARTIN 36, QUILPUE",
+      "e": "Pendiente",
+      "tec": "YENDER BOSCAN CADENAS",
+      "desde": "12-09-2026"
      }
     ]
    }
   }
  },
- "generado": "14-09-2026 11:25"
+ "generado": "14-09-2026 11:40"
 }
