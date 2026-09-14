@@ -3992,23 +3992,23 @@
    }
   },
   "14-09-2026": {
-   "hasta": "11:40",
-   "actividades": 134,
+   "hasta": "11:51",
+   "actividades": 136,
    "tecnicos": 31,
    "estados": {
-    "Iniciado": 22,
-    "Pendiente": 71,
-    "Completado": 20,
+    "Iniciado": 19,
+    "Pendiente": 70,
+    "Completado": 24,
     "No Realizada": 15,
-    "en ruta": 4,
+    "en ruta": 6,
     "Suspendido": 1,
     "Cancelado": 1
    },
-   "rgu": 198.0,
+   "rgu": 201.0,
    "caidas_total": 7,
    "caidas_activas": 7,
    "caidas_resueltas": 0,
-   "nuevas": 24,
+   "nuevas": 26,
    "al_bucket": 3,
    "repetidas": 28,
    "reagendadas": 9,
@@ -4079,6 +4079,24 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NU4X67X",
+      "tec": "CRISTOBAL MIRANDA VALENC",
+      "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "13:00",
+      "d": "CABO DE HORNOS 211, VILLA ALEMANA",
+      "e": "en ruta"
+     },
+     {
+      "o": "1-3NU55L9H",
+      "tec": "SEBASTIAN DOSSOW A",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "17:50",
+      "d": "COLO COLO 225, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NU4WBIO",
       "tec": "JOSE ROJO A",
@@ -4176,7 +4194,7 @@
       "f": "10-13",
       "hi": "12:27",
       "d": "LA LUZ 1456, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NT9LSUL",
@@ -4221,7 +4239,7 @@
       "f": "10-13",
       "hi": "12:42",
       "d": "SECCHY 0103 CASA A, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NU1J1YZ",
@@ -4248,7 +4266,7 @@
       "f": "10-13",
       "hi": "12:29",
       "d": "CAMILO MORI 302, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NTML0FL",
@@ -4288,7 +4306,7 @@
      },
      {
       "o": "1-3NT1SACS",
-      "tec": "CRISTOBAL MIRANDA VALENC",
+      "tec": "GEEYSER PEREZ O",
       "cat": "Alta Traslado",
       "f": "13-16",
       "hi": "14:40",
@@ -4457,7 +4475,7 @@
       "o": "1-3NSYDMN9",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "11:41",
+      "hi": "11:55",
       "d": "MARGA MARGA 600, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOEL GUSTAVE GUSTA",
@@ -4625,9 +4643,9 @@
       "o": "1-3NT8U7BG",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "12:44",
+      "hi": "12:05",
       "d": "SECCHY 0103 CASA A, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "YENDER BOSCAN CADENAS",
       "visitas": 1,
       "ult_fecha": "12-09-2026",
@@ -4649,7 +4667,7 @@
       "o": "1-3NOED8X4",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:15",
+      "hi": "17:21",
       "d": "PJE EL TUCUQUERE 2635, QUILPUE",
       "e": "Pendiente",
       "tec": "ELIAS ARMIJO L",
@@ -4719,7 +4737,7 @@
       "o": "1-3NS2WN93",
       "cat": "Alta Traslado",
       "f": "13-16",
-      "hi": "17:42",
+      "hi": "17:03",
       "d": "SAN MARTIN 36, QUILPUE",
       "e": "Pendiente",
       "tec": "YENDER BOSCAN CADENAS",
@@ -4729,5 +4747,5 @@
    }
   }
  },
- "generado": "14-09-2026 11:40"
+ "generado": "14-09-2026 11:51"
 }
