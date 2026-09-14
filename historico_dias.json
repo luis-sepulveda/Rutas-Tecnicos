@@ -3992,23 +3992,23 @@
    }
   },
   "14-09-2026": {
-   "hasta": "12:26",
-   "actividades": 125,
+   "hasta": "12:31",
+   "actividades": 126,
    "tecnicos": 31,
    "estados": {
     "Completado": 29,
-    "en ruta": 3,
+    "en ruta": 4,
     "Pendiente": 52,
-    "No Realizada": 15,
-    "Iniciado": 24,
+    "No Realizada": 16,
+    "Iniciado": 23,
     "Suspendido": 1,
     "Cancelado": 1
    },
-   "rgu": 183.5,
+   "rgu": 183.6,
    "caidas_total": 7,
    "caidas_activas": 7,
    "caidas_resueltas": 0,
-   "nuevas": 26,
+   "nuevas": 27,
    "al_bucket": 3,
    "repetidas": 24,
    "reagendadas": 8,
@@ -4079,6 +4079,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NU6RMW7",
+      "tec": "MARCO PEREZ G",
+      "cat": "Modificación de Servicio",
+      "f": "10-13",
+      "hi": "12:30",
+      "d": "RENE QUEVEDO 2496, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NU4X67X",
       "tec": "CRISTOBAL MIRANDA VALENC",
@@ -4559,7 +4568,7 @@
       "o": "1-3NSJTM61",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "15:59",
+      "hi": "16:29",
       "d": "ALCALDE RODOLFO GALLEGUILLOS 198, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -4641,7 +4650,7 @@
       "f": "10-13",
       "hi": "12:06",
       "d": "SANTA MARIA 0241, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "JEAN ROODLY ORELIEN",
       "desde": "12-09-2026"
      },
@@ -4649,7 +4658,7 @@
       "o": "1-3NS2WN93",
       "cat": "Alta Traslado",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "13:00",
       "d": "SAN MARTIN 36, QUILPUE",
       "e": "Pendiente",
       "tec": "JORDAN ROA PEREZ",
@@ -4689,5 +4698,5 @@
    }
   }
  },
- "generado": "14-09-2026 12:26"
+ "generado": "14-09-2026 12:31"
 }
