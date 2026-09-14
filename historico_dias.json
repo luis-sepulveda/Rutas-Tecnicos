@@ -3992,24 +3992,24 @@
    }
   },
   "14-09-2026": {
-   "hasta": "13:06",
-   "actividades": 140,
+   "hasta": "13:21",
+   "actividades": 141,
    "tecnicos": 32,
    "estados": {
-    "Completado": 35,
-    "Pendiente": 60,
+    "Completado": 40,
+    "Pendiente": 59,
     "No Realizada": 19,
-    "Iniciado": 21,
-    "Suspendido": 1,
     "en ruta": 3,
+    "Iniciado": 18,
+    "Suspendido": 1,
     "Cancelado": 1
    },
-   "rgu": 203.2,
-   "caidas_total": 7,
-   "caidas_activas": 7,
+   "rgu": 205.7,
+   "caidas_total": 8,
+   "caidas_activas": 8,
    "caidas_resueltas": 0,
-   "nuevas": 28,
-   "al_bucket": 3,
+   "nuevas": 29,
+   "al_bucket": 4,
    "repetidas": 28,
    "reagendadas": 9,
    "detalle": {
@@ -4076,9 +4076,27 @@
       "hi": "18:05",
       "d": "ALTO MANQUEHUE 3071, QUILPUE",
       "e": "Pendiente"
+     },
+     {
+      "o": "1-3NU3EQE5",
+      "tec": "MARCO PEREZ G",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "16:20",
+      "d": "LAS PATAGUAS 1310, VILLA ALEMANA",
+      "e": "Pendiente"
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NTA3TXJ",
+      "tec": "FELIPE SILVA R",
+      "cat": "Migración 1 Play",
+      "f": "13-16",
+      "hi": "17:04",
+      "d": "GLACIAR TAPADO 3191 CASA 39, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NU7HVWT",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -4104,7 +4122,7 @@
       "f": "13-16",
       "hi": "13:00",
       "d": "CABO DE HORNOS 211, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NU55L9H",
@@ -4131,7 +4149,7 @@
       "f": "13-16",
       "hi": "17:42",
       "d": "SAN MARTIN 36, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NT7RCDA",
@@ -4153,7 +4171,7 @@
      },
      {
       "o": "1-3NS6912O",
-      "tec": "JEAN ROODLY ORELIEN",
+      "tec": "MARCO PEREZ G",
       "cat": "Migración 1 Play",
       "f": "16-19",
       "hi": "17:26",
@@ -4203,7 +4221,7 @@
       "f": "16-19",
       "hi": "17:17",
       "d": "GALLEGUILLOS 1421 EDIF. D DEPTO 12, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NU2JQOS",
@@ -4221,7 +4239,7 @@
       "f": "10-13",
       "hi": "12:47",
       "d": "VALLE DEL PARAISO 2907 EDIF. A DEPTO 104, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NT6TEJA",
@@ -4351,7 +4369,7 @@
       "f": "10-13",
       "hi": "11:04",
       "d": "VALLE DEL PARAISO 2907 EDIF. A DEPTO 104, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "ALFREDO ALCAYAGA F",
       "visitas": 1,
       "ult_fecha": "10-09-2026",
@@ -4361,7 +4379,7 @@
       "o": "1-3NSYEPN4",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "17:07",
+      "hi": "17:12",
       "d": "SERRANO 1417 CASA A, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
@@ -4409,7 +4427,7 @@
       "o": "1-3NT5NHYI",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "16:29",
+      "hi": "15:19",
       "d": "MANUEL ORTIZ DE ZARATE 2512, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -4445,7 +4463,7 @@
       "o": "1-3NTK7WM5",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "15:29",
+      "hi": "15:53",
       "d": "RAFAEL FABRES 2544 CASA 67, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -4493,7 +4511,7 @@
       "o": "1-3NT7RCDA",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:28",
+      "hi": "14:14",
       "d": "VIA UNO SIETE 2065 EDIF. F DEPTO 23, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -4505,7 +4523,7 @@
       "o": "1-3NTCNF63",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:35",
+      "hi": "14:45",
       "d": "GALLEGUILLOS 1421 EDIF. G DEPTO 52, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -4517,7 +4535,7 @@
       "o": "1-3NT8Y0FF",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:27",
+      "hi": "16:37",
       "d": "MARIA MERCEDES 1482 EDIF. 1 DEPTO 102, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -4589,7 +4607,7 @@
       "o": "1-3NU1U358",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:26",
+      "hi": "16:14",
       "d": "GERONA 41, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCELO GÓMEZ GÓME",
@@ -4625,7 +4643,7 @@
       "o": "1-3NU4EWMF",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:11",
+      "hi": "15:24",
       "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "RAFAEL VARGAS B",
@@ -4639,7 +4657,7 @@
       "f": "10-13",
       "hi": "10:18",
       "d": "HUANHUALI 1626, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "SEBASTIAN DOSSOW A",
       "visitas": 1,
       "ult_fecha": "11-09-2026",
@@ -4675,7 +4693,7 @@
       "o": "1-3NSYPBFK",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:10",
+      "hi": "15:15",
       "d": "LA OBRA 2860, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
@@ -4715,9 +4733,9 @@
       "o": "1-3NS2WN93",
       "cat": "Alta Traslado",
       "f": "13-16",
-      "hi": "13:11",
+      "hi": "13:13",
       "d": "SAN MARTIN 36, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JORDAN ROA PEREZ",
       "desde": "12-09-2026"
      },
@@ -4725,7 +4743,7 @@
       "o": "1-3NOED8X4",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:18",
+      "hi": "17:20",
       "d": "PJE EL TUCUQUERE 2635, QUILPUE",
       "e": "Pendiente",
       "tec": "JORDAN ROA PEREZ",
@@ -4735,7 +4753,7 @@
       "o": "1-3NRBN3CL",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "15:43",
+      "hi": "15:29",
       "d": "VIA UNO SIETE 2025 EDIF. C DEPTO 23, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -4765,5 +4783,5 @@
    }
   }
  },
- "generado": "14-09-2026 13:06"
+ "generado": "14-09-2026 13:21"
 }
