@@ -3992,12 +3992,12 @@
    }
   },
   "14-09-2026": {
-   "hasta": "09:25",
+   "hasta": "09:30",
    "actividades": 105,
    "tecnicos": 32,
    "estados": {
-    "en ruta": 14,
-    "Pendiente": 91
+    "en ruta": 21,
+    "Pendiente": 84
    },
    "rgu": 149.0,
    "caidas_total": 3,
@@ -4170,9 +4170,9 @@
       "o": "1-3NTDHKO4",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:35",
       "d": "BERLIN 1602 EDIF. D DEPTO 206, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "ESTEBAN PIZARRO QUINTANA",
       "visitas": 1,
       "ult_fecha": "08-09-2026",
@@ -4230,7 +4230,7 @@
       "o": "1-3NT5NHYI",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "16:22",
+      "hi": "16:00",
       "d": "MANUEL ORTIZ DE ZARATE 2512, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -4266,7 +4266,7 @@
       "o": "1-3NTCF736",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:19",
+      "hi": "16:00",
       "d": "LAS ACACIAS 730 DEPTO 614, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -4404,7 +4404,7 @@
       "o": "1-3NSWKBYR",
       "cat": "Migración 3 Play",
       "f": "10-13",
-      "hi": "10:57",
+      "hi": "10:36",
       "d": "LISBOA 554, QUILPUE",
       "e": "Pendiente",
       "tec": "HERNAN CORTES HERRERA",
@@ -4414,9 +4414,9 @@
       "o": "1-3NSV679Y",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:35",
       "d": "SANTA MARIA 0241, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JOSE ROJO A",
       "desde": "12-09-2026"
      },
@@ -4444,5 +4444,5 @@
    }
   }
  },
- "generado": "14-09-2026 09:25"
+ "generado": "14-09-2026 09:30"
 }
