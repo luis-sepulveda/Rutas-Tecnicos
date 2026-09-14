@@ -3992,20 +3992,21 @@
    }
   },
   "14-09-2026": {
-   "hasta": "09:30",
+   "hasta": "09:40",
    "actividades": 105,
    "tecnicos": 32,
    "estados": {
-    "en ruta": 21,
-    "Pendiente": 84
+    "en ruta": 24,
+    "Pendiente": 80,
+    "Iniciado": 1
    },
-   "rgu": 149.0,
+   "rgu": 150.0,
    "caidas_total": 3,
    "caidas_activas": 3,
    "caidas_resueltas": 0,
    "nuevas": 6,
-   "al_bucket": 0,
-   "repetidas": 22,
+   "al_bucket": 1,
+   "repetidas": 21,
    "reagendadas": 8,
    "detalle": {
     "caidas": [
@@ -4158,7 +4159,7 @@
       "o": "1-3NSJTM61",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:27",
+      "hi": "14:12",
       "d": "ALCALDE RODOLFO GALLEGUILLOS 198, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -4203,18 +4204,6 @@
       "ult_cierre": "Direccion incorrecta"
      },
      {
-      "o": "1-3NSYEPN4",
-      "cat": "Modificación de Servicio",
-      "f": "16-19",
-      "hi": "18:41",
-      "d": "SERRANO 1417 CASA A, QUILPUE",
-      "e": "Pendiente",
-      "tec": "HERNAN CORTES HERRERA",
-      "visitas": 1,
-      "ult_fecha": "11-08-2026",
-      "ult_cierre": "Sin moradores"
-     },
-     {
       "o": "1-3NTCNF63",
       "cat": "Alta 1 Play",
       "f": "13-16",
@@ -4225,6 +4214,18 @@
       "visitas": 1,
       "ult_fecha": "12-09-2026",
       "ult_cierre": "Direccion incorrecta"
+     },
+     {
+      "o": "1-3NSYEPN4",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "16:40",
+      "d": "SERRANO 1417 CASA A, QUILPUE",
+      "e": "Pendiente",
+      "tec": "JORDAN ROA PEREZ",
+      "visitas": 1,
+      "ult_fecha": "11-08-2026",
+      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3NT5NHYI",
@@ -4287,18 +4288,6 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
-      "o": "1-3NT7APSA",
-      "cat": "Alta 1 Play",
-      "f": "16-19",
-      "hi": "16:00",
-      "d": "GOD BLESS YOU 0260 EDIF. 2 DEPTO 232, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "LUIS GATICA DAVILA",
-      "visitas": 1,
-      "ult_fecha": "12-09-2026",
-      "ult_cierre": "Sin moradores"
-     },
-     {
       "o": "1-3NT63MLH",
       "cat": "Migración 1 Play",
       "f": "10-13",
@@ -4314,9 +4303,9 @@
       "o": "1-3NTE3AJ7",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:42",
       "d": "GERONA 41, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "MATÍAS JAQUE AG",
       "visitas": 3,
       "ult_fecha": "12-09-2026",
@@ -4444,5 +4433,5 @@
    }
   }
  },
- "generado": "14-09-2026 09:30"
+ "generado": "14-09-2026 09:40"
 }
