@@ -3992,15 +3992,15 @@
    }
   },
   "14-09-2026": {
-   "hasta": "13:36",
+   "hasta": "13:41",
    "actividades": 141,
    "tecnicos": 32,
    "estados": {
-    "Completado": 42,
+    "Completado": 43,
     "Pendiente": 56,
-    "No Realizada": 19,
-    "Iniciado": 20,
-    "en ruta": 2,
+    "No Realizada": 20,
+    "Iniciado": 19,
+    "en ruta": 1,
     "Suspendido": 1,
     "Cancelado": 1
    },
@@ -4511,7 +4511,7 @@
       "o": "1-3NT7RCDA",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:14",
+      "hi": "13:41",
       "d": "VIA UNO SIETE 2065 EDIF. F DEPTO 23, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -4643,7 +4643,7 @@
       "o": "1-3NU4EWMF",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:24",
+      "hi": "15:43",
       "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "RAFAEL VARGAS B",
@@ -4753,7 +4753,7 @@
       "o": "1-3NRBN3CL",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "15:29",
+      "hi": "14:56",
       "d": "VIA UNO SIETE 2025 EDIF. C DEPTO 23, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -4783,5 +4783,5 @@
    }
   }
  },
- "generado": "14-09-2026 13:36"
+ "generado": "14-09-2026 13:41"
 }
