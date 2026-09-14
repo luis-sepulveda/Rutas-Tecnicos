@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-14T14:42:40",
+  "actualizado": "2026-09-14T15:12:48",
   "resumen": {
     "reagendada": 6,
     "sin informacion": 1,
@@ -40,13 +40,6 @@
             "ot": "1-3NSO8OYZ",
             "franja": "10-13",
             "texto": "1-3NSO8OYZ - 10-13-AltaSab, 12 Sep"
-          },
-          {
-            "estado": "gestionada",
-            "color": "rgb(96, 206, 206)",
-            "ot": "1-3NS8RVTF",
-            "franja": "13-16",
-            "texto": "1-3NS8RVTF - 13-16-AltaVie, 11 Sep"
           }
         ]
       }
