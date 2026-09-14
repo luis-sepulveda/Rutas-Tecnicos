@@ -3992,23 +3992,23 @@
    }
   },
   "14-09-2026": {
-   "hasta": "13:46",
-   "actividades": 144,
+   "hasta": "14:01",
+   "actividades": 145,
    "tecnicos": 32,
    "estados": {
-    "Completado": 45,
-    "Pendiente": 54,
-    "No Realizada": 20,
-    "Iniciado": 19,
-    "en ruta": 2,
+    "Completado": 49,
+    "Iniciado": 18,
+    "Pendiente": 47,
+    "No Realizada": 21,
+    "en ruta": 6,
     "Suspendido": 2,
     "Cancelado": 2
    },
-   "rgu": 207.8,
+   "rgu": 207.9,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
-   "nuevas": 31,
+   "nuevas": 32,
    "al_bucket": 4,
    "repetidas": 29,
    "reagendadas": 10,
@@ -4089,6 +4089,15 @@
     ],
     "nuevas": [
      {
+      "o": "1-3NU9V1O5",
+      "tec": "JOSE GALAZ D",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "13:54",
+      "d": "PJE CRISOL 013, QUILPUE",
+      "e": "Iniciado"
+     },
+     {
       "o": "1-3NU9BXNW",
       "tec": "ESTEBAN PIZARRO QUINTANA",
       "cat": "Modificación de Servicio",
@@ -4122,7 +4131,7 @@
       "f": "13-16",
       "hi": "12:54",
       "d": "CONDELL SUR 01589, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NU6RMW7",
@@ -4158,7 +4167,7 @@
       "f": "13-16",
       "hi": "16:04",
       "d": "LATORRE 15, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NS2WN93",
@@ -4203,7 +4212,7 @@
       "f": "13-16",
       "hi": "16:27",
       "d": "CHAMPAGNAT 916, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NU3EQE5",
@@ -4275,7 +4284,7 @@
       "f": "13-16",
       "hi": "16:26",
       "d": "PJE 619 1131, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NSYDMN9",
@@ -4320,7 +4329,7 @@
       "f": "10-13",
       "hi": "12:29",
       "d": "CAMILO MORI 302, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NTML0FL",
@@ -4397,7 +4406,7 @@
       "o": "1-3NSYEPN4",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "17:19",
+      "hi": "17:23",
       "d": "SERRANO 1417 CASA A, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
@@ -4481,7 +4490,7 @@
       "o": "1-3NTK7WM5",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "15:52",
+      "hi": "14:17",
       "d": "RAFAEL FABRES 2544 CASA 67, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -4505,7 +4514,7 @@
       "o": "1-3NSJTM61",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:54",
+      "hi": "14:59",
       "d": "ALCALDE RODOLFO GALLEGUILLOS 198, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOEL GUSTAVE GUSTA",
@@ -4553,7 +4562,7 @@
       "o": "1-3NTCNF63",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:41",
+      "hi": "15:15",
       "d": "GALLEGUILLOS 1421 EDIF. G DEPTO 52, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -4565,7 +4574,7 @@
       "o": "1-3NT8Y0FF",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:33",
+      "hi": "17:07",
       "d": "MARIA MERCEDES 1482 EDIF. 1 DEPTO 102, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -4637,7 +4646,7 @@
       "o": "1-3NU1U358",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:48",
+      "hi": "15:38",
       "d": "GERONA 41, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCELO GÓMEZ GÓME",
@@ -4723,7 +4732,7 @@
       "o": "1-3NSYPBFK",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:22",
+      "hi": "15:26",
       "d": "LA OBRA 2860, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
@@ -4802,7 +4811,7 @@
       "o": "1-3NSY4DWU",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:01",
+      "hi": "15:19",
       "d": "VINA DEL MAR 069, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -4822,5 +4831,5 @@
    }
   }
  },
- "generado": "14-09-2026 13:46"
+ "generado": "14-09-2026 14:01"
 }
