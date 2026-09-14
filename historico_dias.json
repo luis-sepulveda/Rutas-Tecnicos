@@ -3992,19 +3992,19 @@
    }
   },
   "14-09-2026": {
-   "hasta": "08:55",
-   "actividades": 97,
+   "hasta": "09:00",
+   "actividades": 101,
    "tecnicos": 32,
    "estados": {
-    "Pendiente": 97
+    "Pendiente": 101
    },
-   "rgu": 138.5,
+   "rgu": 146.0,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
    "nuevas": 2,
    "al_bucket": 0,
-   "repetidas": 20,
+   "repetidas": 22,
    "reagendadas": 8,
    "detalle": {
     "caidas": [],
@@ -4126,6 +4126,18 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3NT8Y0FF",
+      "cat": "Migración 1 Play",
+      "f": "16-19",
+      "hi": "16:00",
+      "d": "MARIA MERCEDES 1482 EDIF. 1 DEPTO 102, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "ESTEBAN PIZARRO QUINTANA",
+      "visitas": 2,
+      "ult_fecha": "12-09-2026",
+      "ult_cierre": "Cliente reagenda"
+     },
+     {
       "o": "1-3NTEVFAF",
       "cat": "Alta 2 Play",
       "f": "10-13",
@@ -4141,7 +4153,7 @@
       "o": "1-3NSYEPN4",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "18:41",
       "d": "SERRANO 1417 CASA A, QUILPUE",
       "e": "Pendiente",
       "tec": "HERNAN CORTES HERRERA",
@@ -4165,7 +4177,7 @@
       "o": "1-3NT5NHYI",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "16:22",
       "d": "MANUEL ORTIZ DE ZARATE 2512, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -4253,6 +4265,18 @@
       "d": "CALLE 1 851 CASA E, QUILPUE",
       "e": "Pendiente",
       "tec": "NICOLAS MOYANO R",
+      "visitas": 1,
+      "ult_fecha": "11-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3NTOD4EN",
+      "cat": "Migración 3 Play",
+      "f": "16-19",
+      "hi": "16:08",
+      "d": "LOS LINGUES 996, QUILPUE",
+      "e": "Pendiente",
+      "tec": "PABLO HERNANEZ FERNANDEZ",
       "visitas": 1,
       "ult_fecha": "11-09-2026",
       "ult_cierre": "Sin moradores"
@@ -4355,5 +4379,5 @@
    }
   }
  },
- "generado": "14-09-2026 08:55"
+ "generado": "14-09-2026 09:00"
 }
