@@ -3992,15 +3992,15 @@
    }
   },
   "14-09-2026": {
-   "hasta": "12:31",
+   "hasta": "12:36",
    "actividades": 126,
    "tecnicos": 31,
    "estados": {
     "Completado": 29,
     "en ruta": 4,
-    "Pendiente": 52,
+    "Pendiente": 51,
     "No Realizada": 16,
-    "Iniciado": 23,
+    "Iniciado": 24,
     "Suspendido": 1,
     "Cancelado": 1
    },
@@ -4086,7 +4086,7 @@
       "f": "10-13",
       "hi": "12:30",
       "d": "RENE QUEVEDO 2496, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NU4X67X",
@@ -4508,7 +4508,7 @@
       "o": "1-3NT7APSA",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "13:00",
       "d": "GOD BLESS YOU 0260 EDIF. 2 DEPTO 232, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -4568,7 +4568,7 @@
       "o": "1-3NSJTM61",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "16:29",
+      "hi": "16:30",
       "d": "ALCALDE RODOLFO GALLEGUILLOS 198, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -4698,5 +4698,5 @@
    }
   }
  },
- "generado": "14-09-2026 12:31"
+ "generado": "14-09-2026 12:36"
 }
