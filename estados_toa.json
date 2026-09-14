@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-14T14:12:31",
+  "actualizado": "2026-09-14T14:42:40",
   "resumen": {
     "reagendada": 6,
     "sin informacion": 1,
@@ -27,6 +27,13 @@
         "buscado": "LOS PEUCOS 2448",
         "aviso": "historial de la direccion, NO es el estado de esta orden",
         "filas": [
+          {
+            "estado": "reagendada",
+            "color": "rgb(255, 222, 0)",
+            "ot": "1-3NU0IE71",
+            "franja": "10-13",
+            "texto": "1-3NU0IE71 - 10-13-AltaMar, 15 Sep"
+          },
           {
             "estado": "gestionada",
             "color": "rgb(96, 206, 206)",
