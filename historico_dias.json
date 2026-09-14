@@ -3992,17 +3992,17 @@
    }
   },
   "14-09-2026": {
-   "hasta": "14:11",
+   "hasta": "14:16",
    "actividades": 147,
    "tecnicos": 32,
    "estados": {
-    "Completado": 51,
-    "Iniciado": 20,
+    "Completado": 53,
+    "Iniciado": 21,
     "Pendiente": 43,
     "No Realizada": 21,
-    "en ruta": 6,
     "Suspendido": 3,
-    "Cancelado": 3
+    "Cancelado": 3,
+    "en ruta": 3
    },
    "rgu": 208.1,
    "caidas_total": 8,
@@ -4176,7 +4176,7 @@
       "f": "13-16",
       "hi": "16:04",
       "d": "LATORRE 15, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Pendiente"
      },
      {
       "o": "1-3NS2WN93",
@@ -4511,9 +4511,9 @@
       "o": "1-3NTK7WM5",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:17",
+      "hi": "14:13",
       "d": "RAFAEL FABRES 2544 CASA 67, QUILPUE",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "GEEYSER PEREZ O",
       "visitas": 1,
       "ult_fecha": "27-08-2026",
@@ -4609,7 +4609,7 @@
       "f": "13-16",
       "hi": "13:04",
       "d": "GOD BLESS YOU 0260 EDIF. 2 DEPTO 232, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JUAN ARRIAGADA C",
       "visitas": 1,
       "ult_fecha": "12-09-2026",
@@ -4739,7 +4739,7 @@
       "o": "1-3NU4EWMF",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:43",
+      "hi": "15:29",
       "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "RAFAEL VARGAS B",
@@ -4888,5 +4888,5 @@
    }
   }
  },
- "generado": "14-09-2026 14:11"
+ "generado": "14-09-2026 14:16"
 }
