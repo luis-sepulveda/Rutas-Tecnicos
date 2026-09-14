@@ -3992,17 +3992,17 @@
    }
   },
   "14-09-2026": {
-   "hasta": "13:21",
+   "hasta": "13:31",
    "actividades": 141,
    "tecnicos": 32,
    "estados": {
-    "Completado": 40,
-    "Pendiente": 59,
+    "Completado": 41,
+    "Pendiente": 60,
     "No Realizada": 19,
-    "en ruta": 3,
     "Iniciado": 18,
     "Suspendido": 1,
-    "Cancelado": 1
+    "Cancelado": 1,
+    "en ruta": 1
    },
    "rgu": 205.7,
    "caidas_total": 8,
@@ -4379,7 +4379,7 @@
       "o": "1-3NSYEPN4",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "17:12",
+      "hi": "17:19",
       "d": "SERRANO 1417 CASA A, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
@@ -4523,7 +4523,7 @@
       "o": "1-3NTCNF63",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:45",
+      "hi": "14:41",
       "d": "GALLEGUILLOS 1421 EDIF. G DEPTO 52, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -4535,7 +4535,7 @@
       "o": "1-3NT8Y0FF",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:37",
+      "hi": "16:33",
       "d": "MARIA MERCEDES 1482 EDIF. 1 DEPTO 102, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -4607,7 +4607,7 @@
       "o": "1-3NU1U358",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "16:14",
+      "hi": "15:48",
       "d": "GERONA 41, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCELO GÓMEZ GÓME",
@@ -4619,9 +4619,9 @@
       "o": "1-3NSR1GHM",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "13:19",
+      "hi": "13:09",
       "d": "CALLE 1 851 CASA E, QUILPUE",
-      "e": "en ruta",
+      "e": "Pendiente",
       "tec": "PABLO HERNANEZ FERNANDEZ",
       "visitas": 1,
       "ult_fecha": "11-09-2026",
@@ -4631,7 +4631,7 @@
       "o": "1-3NU57TMP",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:05",
+      "hi": "16:55",
       "d": "LOS RAULIES 948, QUILPUE",
       "e": "Pendiente",
       "tec": "PABLO HERNANEZ FERNANDEZ",
@@ -4693,7 +4693,7 @@
       "o": "1-3NSYPBFK",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:15",
+      "hi": "15:22",
       "d": "LA OBRA 2860, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
@@ -4783,5 +4783,5 @@
    }
   }
  },
- "generado": "14-09-2026 13:21"
+ "generado": "14-09-2026 13:31"
 }
