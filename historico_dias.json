@@ -3992,17 +3992,17 @@
    }
   },
   "14-09-2026": {
-   "hasta": "13:31",
+   "hasta": "13:36",
    "actividades": 141,
    "tecnicos": 32,
    "estados": {
-    "Completado": 41,
-    "Pendiente": 60,
+    "Completado": 42,
+    "Pendiente": 56,
     "No Realizada": 19,
-    "Iniciado": 18,
+    "Iniciado": 20,
+    "en ruta": 2,
     "Suspendido": 1,
-    "Cancelado": 1,
-    "en ruta": 1
+    "Cancelado": 1
    },
    "rgu": 205.7,
    "caidas_total": 8,
@@ -4257,7 +4257,7 @@
       "f": "13-16",
       "hi": "16:26",
       "d": "PJE 619 1131, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NSYDMN9",
@@ -4463,7 +4463,7 @@
       "o": "1-3NTK7WM5",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "15:53",
+      "hi": "16:00",
       "d": "RAFAEL FABRES 2544 CASA 67, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -4619,9 +4619,9 @@
       "o": "1-3NSR1GHM",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "13:09",
+      "hi": "13:31",
       "d": "CALLE 1 851 CASA E, QUILPUE",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "PABLO HERNANEZ FERNANDEZ",
       "visitas": 1,
       "ult_fecha": "11-09-2026",
@@ -4631,7 +4631,7 @@
       "o": "1-3NU57TMP",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:55",
+      "hi": "17:17",
       "d": "LOS RAULIES 948, QUILPUE",
       "e": "Pendiente",
       "tec": "PABLO HERNANEZ FERNANDEZ",
@@ -4763,7 +4763,7 @@
       "o": "1-3NSY4DWU",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "13:55",
+      "hi": "14:01",
       "d": "VINA DEL MAR 069, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -4783,5 +4783,5 @@
    }
   }
  },
- "generado": "14-09-2026 13:31"
+ "generado": "14-09-2026 13:36"
 }
