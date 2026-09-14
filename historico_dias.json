@@ -3992,17 +3992,17 @@
    }
   },
   "14-09-2026": {
-   "hasta": "12:16",
+   "hasta": "12:21",
    "actividades": 125,
    "tecnicos": 31,
    "estados": {
-    "Iniciado": 25,
-    "Pendiente": 55,
-    "Completado": 26,
+    "Iniciado": 26,
+    "Pendiente": 54,
+    "Completado": 27,
     "No Realizada": 15,
     "Suspendido": 1,
-    "en ruta": 2,
-    "Cancelado": 1
+    "Cancelado": 1,
+    "en ruta": 1
    },
    "rgu": 183.5,
    "caidas_total": 7,
@@ -4230,7 +4230,7 @@
       "f": "10-13",
       "hi": "12:42",
       "d": "MARGA MARGA 600, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NT8U7BG",
@@ -4239,7 +4239,7 @@
       "f": "10-13",
       "hi": "12:42",
       "d": "SECCHY 0103 CASA A, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NU1J1YZ",
@@ -4441,7 +4441,7 @@
       "f": "10-13",
       "hi": "12:17",
       "d": "MARGA MARGA 600, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JOEL GUSTAVE GUSTA",
       "visitas": 4,
       "ult_fecha": "11-09-2026",
@@ -4595,9 +4595,9 @@
       "o": "1-3NT8U7BG",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "12:05",
+      "hi": "12:18",
       "d": "SECCHY 0103 CASA A, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "YENDER BOSCAN CADENAS",
       "visitas": 1,
       "ult_fecha": "12-09-2026",
@@ -4679,9 +4679,9 @@
       "o": "1-3NSTZ004",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "13:00",
+      "hi": "12:27",
       "d": "CONDELL 478 DEPTO 202, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "MATÍAS JAQUE AG",
       "desde": "12-09-2026"
      }
@@ -4689,5 +4689,5 @@
    }
   }
  },
- "generado": "14-09-2026 12:16"
+ "generado": "14-09-2026 12:21"
 }
