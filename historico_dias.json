@@ -3992,19 +3992,19 @@
    }
   },
   "14-09-2026": {
-   "hasta": "14:01",
-   "actividades": 145,
+   "hasta": "14:06",
+   "actividades": 146,
    "tecnicos": 32,
    "estados": {
-    "Completado": 49,
-    "Iniciado": 18,
-    "Pendiente": 47,
+    "Completado": 50,
+    "Iniciado": 17,
+    "Pendiente": 46,
     "No Realizada": 21,
     "en ruta": 6,
-    "Suspendido": 2,
-    "Cancelado": 2
+    "Suspendido": 3,
+    "Cancelado": 3
    },
-   "rgu": 207.9,
+   "rgu": 208.0,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
@@ -4095,7 +4095,7 @@
       "f": "13-16",
       "hi": "13:54",
       "d": "PJE CRISOL 013, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NU9BXNW",
@@ -4104,7 +4104,7 @@
       "f": "13-16",
       "hi": "13:43",
       "d": "EL MIRADOR 738 CASA 108, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Suspendido"
      },
      {
       "o": "1-3NU99YR2",
@@ -4454,7 +4454,7 @@
       "o": "1-3NT5NHYI",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:52",
+      "hi": "15:18",
       "d": "MANUEL ORTIZ DE ZARATE 2512, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -4811,7 +4811,7 @@
       "o": "1-3NSY4DWU",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:19",
+      "hi": "15:12",
       "d": "VINA DEL MAR 069, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -4831,5 +4831,5 @@
    }
   }
  },
- "generado": "14-09-2026 14:01"
+ "generado": "14-09-2026 14:06"
 }
