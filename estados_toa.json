@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-09-15T11:45:34",
+  "actualizado": "2026-09-15T12:15:55",
   "resumen": {
-    "reagendada": 4,
+    "reagendada": 5,
     "sin informacion": 2
   },
   "estados": {
@@ -14,6 +14,16 @@
       "color": "rgb(255, 222, 0)",
       "detalle": "1-3NU8GG8V - 16-19-AltaJue, 17 Sep",
       "franja_nueva": "16-19"
+    },
+    "1-3NUJW4LO": {
+      "tec": "CRISTOBAL MIRANDA VALENC",
+      "cat": "Alta 1 Play",
+      "franja_original": "13-16",
+      "d": "YUNGAY 871 CASA B, VILLA ALEMANA",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3NUJW4LO - 13-16-AltaMie, 16 Sep",
+      "franja_nueva": "13-16"
     },
     "1-3NU0IE71": {
       "tec": "DANIEL NAVARRETE E",
