@@ -4936,20 +4936,20 @@
    }
   },
   "15-09-2026": {
-   "hasta": "09:04",
-   "actividades": 140,
+   "hasta": "09:09",
+   "actividades": 151,
    "tecnicos": 33,
    "estados": {
-    "Pendiente": 140
+    "Pendiente": 151
    },
-   "rgu": 225.5,
+   "rgu": 248.0,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
    "nuevas": 0,
    "al_bucket": 1,
-   "repetidas": 26,
-   "reagendadas": 5,
+   "repetidas": 29,
+   "reagendadas": 6,
    "detalle": {
     "caidas": [],
     "nuevas": [],
@@ -5015,6 +5015,18 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3NUBPC7P",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "17:50",
+      "d": "VIA UNO SIETE 2065 EDIF. F DEPTO 23, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "CRISTOBAL MIRANDA VALENC",
+      "visitas": 2,
+      "ult_fecha": "14-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3NU31PBI",
       "cat": "Migración 2 Play",
       "f": "16-19",
@@ -5027,22 +5039,10 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3NU0IE71",
-      "cat": "Alta 2 Play",
-      "f": "10-13",
-      "hi": "10:00",
-      "d": "LOS PEUCOS 2448, QUILPUE",
-      "e": "Pendiente",
-      "tec": "DANIEL NAVARRETE E",
-      "visitas": 2,
-      "ult_fecha": "12-09-2026",
-      "ult_cierre": "Clte desiste motivo comercial"
-     },
-     {
       "o": "1-3NUJTH96",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "16:22",
+      "hi": "15:01",
       "d": "LOS TOPACIOS 1380 EDIF. N2 DEPTO 101, QUILPUE",
       "e": "Pendiente",
       "tec": "DANIEL NAVARRETE E",
@@ -5087,6 +5087,18 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
+      "o": "1-3NU2Q15C",
+      "cat": "Migración 1 Play",
+      "f": "16-19",
+      "hi": "17:00",
+      "d": "SANTA MARGARITA 1220, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "ESTEBAN PIZARRO QUINTANA",
+      "visitas": 1,
+      "ult_fecha": "14-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3NUAK9E5",
       "cat": "Migración 1 Play",
       "f": "10-13",
@@ -5097,6 +5109,18 @@
       "visitas": 1,
       "ult_fecha": "21-08-2026",
       "ult_cierre": "Direccion no encontrada"
+     },
+     {
+      "o": "1-3NU7XYW8",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "17:48",
+      "d": "SERRANO 1589, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JEAN ROODLY ORELIEN",
+      "visitas": 1,
+      "ult_fecha": "04-09-2026",
+      "ult_cierre": "Clte desiste motivo comercial"
      },
      {
       "o": "1-3NU499ND",
@@ -5255,6 +5279,18 @@
       "ult_cierre": "No Factible"
      },
      {
+      "o": "1-3NUFFK3A",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "20:39",
+      "d": "PJE EL TUCUQUERE 2635, QUILPUE",
+      "e": "Pendiente",
+      "tec": "RAFAEL VARGAS B",
+      "visitas": 1,
+      "ult_fecha": "14-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3NOUGNJ5",
       "cat": "Migración 3 Play",
       "f": "13-16",
@@ -5272,10 +5308,20 @@
       "o": "1-3NSWQ7C5",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "18:16",
+      "hi": "16:55",
       "d": "FREIRE 139 DEPTO 30, QUILPUE",
       "e": "Pendiente",
       "tec": "DANIEL NAVARRETE E",
+      "desde": "12-09-2026"
+     },
+     {
+      "o": "1-3NT54RYR",
+      "cat": "Migración 2 Play",
+      "f": "16-19",
+      "hi": "16:34",
+      "d": "CONDELL 377, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JOSE CASTRO P",
       "desde": "12-09-2026"
      },
      {
@@ -5322,5 +5368,5 @@
    }
   }
  },
- "generado": "15-09-2026 09:04"
+ "generado": "15-09-2026 09:09"
 }
