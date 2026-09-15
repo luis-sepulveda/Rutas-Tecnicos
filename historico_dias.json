@@ -4936,21 +4936,23 @@
    }
   },
   "15-09-2026": {
-   "hasta": "09:34",
-   "actividades": 153,
+   "hasta": "09:39",
+   "actividades": 151,
    "tecnicos": 33,
    "estados": {
-    "en ruta": 20,
-    "Pendiente": 133
+    "en ruta": 23,
+    "Pendiente": 126,
+    "Iniciado": 1,
+    "Cancelado": 1
    },
-   "rgu": 249.0,
+   "rgu": 244.0,
    "caidas_total": 2,
    "caidas_activas": 2,
    "caidas_resueltas": 0,
    "nuevas": 1,
    "al_bucket": 1,
-   "repetidas": 30,
-   "reagendadas": 6,
+   "repetidas": 29,
+   "reagendadas": 5,
    "detalle": {
     "caidas": [
      {
@@ -5204,7 +5206,7 @@
       "o": "1-3NTMMDHP",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "16:05",
+      "hi": "15:53",
       "d": "GALLEGUILLOS 1421 EDIF. D DEPTO 52, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -5237,22 +5239,10 @@
       "ult_cierre": "Ductos tapados"
      },
      {
-      "o": "1-3NT78CUB",
-      "cat": "Migración 2 Play",
-      "f": "10-13",
-      "hi": "12:24",
-      "d": "MADRID 667, QUILPUE",
-      "e": "Pendiente",
-      "tec": "LUIS CASTRO TORRES",
-      "visitas": 1,
-      "ult_fecha": "12-09-2026",
-      "ult_cierre": "Cliente reagenda"
-     },
-     {
       "o": "1-3NU2P8KT",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "16:54",
+      "hi": "15:12",
       "d": "EL ALBA 942, QUILPUE",
       "e": "Pendiente",
       "tec": "LUIS CASTRO TORRES",
@@ -5276,9 +5266,9 @@
       "o": "1-3NRZ1SQW",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:46",
       "d": "VIA UNO SIETE 2065 EDIF. D DEPTO 54, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "MARCO PEREZ G",
       "visitas": 1,
       "ult_fecha": "24-08-2026",
@@ -5288,7 +5278,7 @@
       "o": "1-3NU3EQE5",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "16:13",
+      "hi": "15:59",
       "d": "LAS PATAGUAS 1310, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -5300,9 +5290,9 @@
       "o": "1-3NTF2BGR",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:46",
       "d": "HUANHUALI 1798 EDIF. J DEPTO 204, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "MATÍAS JAQUE AG",
       "visitas": 1,
       "ult_fecha": "12-09-2026",
@@ -5312,7 +5302,7 @@
       "o": "1-3NTFI5TW",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:54",
+      "hi": "14:40",
       "d": "BELLAVISTA 1319, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -5324,9 +5314,8 @@
       "o": "1-3NUFFK3A",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "20:14",
       "d": "PJE EL TUCUQUERE 2635, QUILPUE",
-      "e": "Pendiente",
+      "e": "Cancelado",
       "tec": "RAFAEL VARGAS B",
       "visitas": 1,
       "ult_fecha": "14-09-2026",
@@ -5346,16 +5335,6 @@
      }
     ],
     "reagendadas": [
-     {
-      "o": "1-3NSWQ7C5",
-      "cat": "Alta 2 Play",
-      "f": "16-19",
-      "hi": "17:36",
-      "d": "FREIRE 139 DEPTO 30, QUILPUE",
-      "e": "Pendiente",
-      "tec": "DANIEL NAVARRETE E",
-      "desde": "12-09-2026"
-     },
      {
       "o": "1-3NT54RYR",
       "cat": "Migración 2 Play",
@@ -5380,7 +5359,7 @@
       "o": "1-3NU3EQE5",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "16:13",
+      "hi": "15:59",
       "d": "LAS PATAGUAS 1310, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -5410,5 +5389,5 @@
    }
   }
  },
- "generado": "15-09-2026 09:34"
+ "generado": "15-09-2026 09:39"
 }
