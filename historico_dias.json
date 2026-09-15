@@ -4936,19 +4936,18 @@
    }
   },
   "15-09-2026": {
-   "hasta": "13:25",
-   "actividades": 162,
+   "hasta": "13:30",
+   "actividades": 163,
    "tecnicos": 36,
    "estados": {
-    "Completado": 38,
-    "en ruta": 2,
+    "Completado": 40,
+    "Iniciado": 24,
     "Pendiente": 66,
     "No Realizada": 26,
-    "Iniciado": 25,
-    "Cancelado": 3,
-    "Suspendido": 2
+    "Cancelado": 4,
+    "Suspendido": 3
    },
-   "rgu": 259.0,
+   "rgu": 260.0,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
@@ -5224,7 +5223,7 @@
       "o": "1-3NU3EQE5",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:41",
+      "hi": "14:32",
       "d": "LAS PATAGUAS 1310, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "CRISTOBAL MIRANDA VALENC",
@@ -5236,7 +5235,7 @@
       "o": "1-3NU2Q15C",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "17:39",
+      "hi": "16:30",
       "d": "SANTA MARGARITA 1220, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "CRISTOBAL MIRANDA VALENC",
@@ -5356,7 +5355,7 @@
       "o": "1-3NUEMNZO",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "16:50",
+      "hi": "17:00",
       "d": "COLO COLO 225, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -5368,7 +5367,7 @@
       "o": "1-3NUBPC7P",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "19:10",
+      "hi": "19:20",
       "d": "VIA UNO SIETE 2065 EDIF. F DEPTO 23, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -5392,7 +5391,7 @@
       "o": "1-3NOUGNJ5",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "16:17",
+      "hi": "16:27",
       "d": "SANTA ANA 841, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -5525,7 +5524,7 @@
       "o": "1-3NU3EQE5",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:41",
+      "hi": "14:32",
       "d": "LAS PATAGUAS 1310, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "CRISTOBAL MIRANDA VALENC",
@@ -5575,5 +5574,5 @@
    }
   }
  },
- "generado": "15-09-2026 13:25"
+ "generado": "15-09-2026 13:30"
 }
