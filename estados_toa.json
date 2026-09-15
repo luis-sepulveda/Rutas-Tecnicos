@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-15T09:45:18",
+  "actualizado": "2026-09-15T11:15:24",
   "resumen": {
     "sin informacion": 2,
-    "reagendada": 2
+    "reagendada": 3
   },
   "estados": {
     "1-3NU0IE71": {
@@ -22,6 +22,13 @@
             "ot": "1-3NSO8OYZ",
             "franja": "10-13",
             "texto": "1-3NSO8OYZ - 10-13-AltaSab, 12 Sep"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NS8RVTF",
+            "franja": "13-16",
+            "texto": "1-3NS8RVTF - 13-16-AltaVie, 11 Sep"
           }
         ]
       }
@@ -42,7 +49,27 @@
       "franja_original": "10-13",
       "d": "LOS PEUCOS 2473, QUILPUE",
       "estado": "sin informacion",
-      "nota": "la OT ya no existe en TOA"
+      "nota": "la OT ya no existe en TOA",
+      "contexto": {
+        "buscado": "LOS PEUCOS 2473",
+        "aviso": "historial de la direccion, NO es el estado de esta orden",
+        "filas": [
+          {
+            "estado": "cancelada",
+            "color": "rgb(128, 255, 128)",
+            "ot": "1-3NUVP9OB",
+            "franja": "10-13",
+            "texto": "1-3NUVP9OB - 10-13-AltaMie, 16 Sep"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NT25EFS",
+            "franja": "10-13",
+            "texto": "1-3NT25EFS - 10-13-AltaLun, 14 Sep"
+          }
+        ]
+      }
     },
     "1-3NT78CUB": {
       "tec": "LUIS CASTRO TORRES",
@@ -51,8 +78,18 @@
       "d": "MADRID 667, QUILPUE",
       "estado": "reagendada",
       "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NT78CUB - 16-19-MigraciónJue, 17 Sep",
-      "franja_nueva": "16-19"
+      "detalle": "1-3NT78CUB - 10-13-MigraciónMie, 16 Sep",
+      "franja_nueva": "10-13"
+    },
+    "1-3NUA06ZJ": {
+      "tec": "PABLO HERNANEZ FERNANDEZ",
+      "cat": "Alta 1 Play",
+      "franja_original": "13-16",
+      "d": "LAS MERCEDES 1996, QUILPUE",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3NUA06ZJ - 10-13-AltaJue, 17 Sep",
+      "franja_nueva": "10-13"
     }
   }
 }
