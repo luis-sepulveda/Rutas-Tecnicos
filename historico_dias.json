@@ -4936,23 +4936,23 @@
    }
   },
   "15-09-2026": {
-   "hasta": "12:50",
-   "actividades": 160,
+   "hasta": "13:10",
+   "actividades": 162,
    "tecnicos": 36,
    "estados": {
-    "Completado": 32,
-    "Iniciado": 21,
-    "Pendiente": 72,
-    "No Realizada": 22,
-    "en ruta": 8,
+    "Completado": 36,
+    "en ruta": 4,
+    "Pendiente": 67,
+    "No Realizada": 23,
+    "Iniciado": 27,
     "Cancelado": 3,
     "Suspendido": 2
    },
-   "rgu": 258.8,
+   "rgu": 259.0,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
-   "nuevas": 12,
+   "nuevas": 14,
    "al_bucket": 24,
    "repetidas": 30,
    "reagendadas": 5,
@@ -5033,6 +5033,24 @@
     ],
     "nuevas": [
      {
+      "o": "1-3NV2SAX6",
+      "tec": "NICOLAS MOYANO R",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "13:01",
+      "d": "THOMPSON 927 DEPTO 501, QUILPUE",
+      "e": "Iniciado"
+     },
+     {
+      "o": "1-3NV2OCZ8",
+      "tec": "ANTONHY MORALES MENDOZA",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "12:52",
+      "d": "LOS DURAZNOS 3123, QUILPUE",
+      "e": "Iniciado"
+     },
+     {
       "o": "1-3NV2ET2I",
       "tec": "LUIS GATICA DAVILA",
       "cat": "Modificación de Servicio",
@@ -5048,7 +5066,7 @@
       "f": "10-13",
       "hi": "12:19",
       "d": "DORIS MARTINEZ 690 EDIF. E DEPTO 302, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NV12C63",
@@ -5160,7 +5178,7 @@
       "f": "10-13",
       "hi": "12:19",
       "d": "DORIS MARTINEZ 690 EDIF. E DEPTO 302, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "ALEXIS JARA",
       "visitas": 1,
       "ult_fecha": "13-08-2026",
@@ -5182,7 +5200,7 @@
       "o": "1-3NUF247L",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "17:31",
+      "hi": "17:20",
       "d": "SERRANO 1417 CASA A, QUILPUE",
       "e": "Pendiente",
       "tec": "ANTONHY MORALES MENDOZA",
@@ -5196,7 +5214,7 @@
       "f": "13-16",
       "hi": "12:53",
       "d": "LAS CAMELIAS 1701 CASA 46, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "CESAR MENA OLIVEROS",
       "visitas": 1,
       "ult_fecha": "04-09-2026",
@@ -5290,7 +5308,7 @@
       "o": "1-3NTFI5TW",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:07",
+      "hi": "14:15",
       "d": "BELLAVISTA 1319, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -5338,7 +5356,7 @@
       "o": "1-3NUEMNZO",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "16:09",
+      "hi": "16:29",
       "d": "COLO COLO 225, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -5350,7 +5368,7 @@
       "o": "1-3NUBPC7P",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:29",
+      "hi": "18:49",
       "d": "VIA UNO SIETE 2065 EDIF. F DEPTO 23, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -5374,7 +5392,7 @@
       "o": "1-3NOUGNJ5",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "15:42",
+      "hi": "15:56",
       "d": "SANTA ANA 841, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -5398,7 +5416,7 @@
       "o": "1-3NU4O5DR",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "16:03",
+      "hi": "16:11",
       "d": "PASAJE BARRIA 1221 CASA 33, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -5493,7 +5511,7 @@
       "o": "1-3NTMMDHP",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:31",
+      "hi": "14:10",
       "d": "GALLEGUILLOS 1421 EDIF. D DEPTO 52, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
@@ -5503,16 +5521,6 @@
      }
     ],
     "reagendadas": [
-     {
-      "o": "1-3NUEYZJT",
-      "cat": "Reparación",
-      "f": "13-16",
-      "hi": "14:00",
-      "d": "LEUCOTON 1100 EDIF. 2 DEPTO 104, QUILPUE",
-      "e": "Pendiente",
-      "tec": "ANTONHY MORALES MENDOZA",
-      "desde": "14-09-2026"
-     },
      {
       "o": "1-3NU3EQE5",
       "cat": "Alta 1 Play",
@@ -5547,15 +5555,25 @@
       "o": "1-3NT54RYR",
       "cat": "Migración 2 Play",
       "f": "16-19",
-      "hi": "18:08",
+      "hi": "17:55",
       "d": "CONDELL 377, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCELO GÓMEZ GÓME",
       "desde": "12-09-2026"
+     },
+     {
+      "o": "1-3NUEYZJT",
+      "cat": "Reparación",
+      "f": "13-16",
+      "hi": "15:27",
+      "d": "LEUCOTON 1100 EDIF. 2 DEPTO 104, QUILPUE",
+      "e": "Pendiente",
+      "tec": "RAFAEL VARGAS B",
+      "desde": "14-09-2026"
      }
     ]
    }
   }
  },
- "generado": "15-09-2026 12:50"
+ "generado": "15-09-2026 13:10"
 }
