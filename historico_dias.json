@@ -4936,18 +4936,18 @@
    }
   },
   "15-09-2026": {
-   "hasta": "09:39",
+   "hasta": "09:49",
    "actividades": 151,
    "tecnicos": 33,
    "estados": {
-    "en ruta": 23,
-    "Pendiente": 126,
-    "Iniciado": 1,
+    "Iniciado": 5,
+    "Pendiente": 123,
+    "en ruta": 22,
     "Cancelado": 1
    },
    "rgu": 244.0,
-   "caidas_total": 2,
-   "caidas_activas": 2,
+   "caidas_total": 4,
+   "caidas_activas": 4,
    "caidas_resueltas": 0,
    "nuevas": 1,
    "al_bucket": 1,
@@ -4965,12 +4965,30 @@
       "e": "Pendiente"
      },
      {
+      "o": "1-3NSWQ7C5",
+      "tec": "DANIEL NAVARRETE E",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "17:36",
+      "d": "FREIRE 139 DEPTO 30, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3NU499ND",
       "tec": "JORDAN ROA PEREZ",
       "cat": "Alta 2 Play",
       "f": "10-13",
       "hi": "10:00",
       "d": "LOS PEUCOS 2473, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NT78CUB",
+      "tec": "LUIS CASTRO TORRES",
+      "cat": "Migración 2 Play",
+      "f": "10-13",
+      "hi": "12:24",
+      "d": "MADRID 667, QUILPUE",
       "e": "Pendiente"
      }
     ],
@@ -4990,7 +5008,7 @@
       "o": "1-3NUABZEK",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:50",
+      "hi": "10:53",
       "d": "IRMA JOHNSON MOLINA 201 EDIF. J DEPTO 1022, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -5002,7 +5020,7 @@
       "o": "1-3NUAQHPF",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "16:04",
+      "hi": "16:07",
       "d": "LAS CAMELIAS 1701 CASA 46, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -5218,7 +5236,7 @@
       "o": "1-3NU94S59",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "17:44",
+      "hi": "17:38",
       "d": "BARCELONA 1380, QUILPUE",
       "e": "Pendiente",
       "tec": "KEVIN TAPIA RETAMAL",
@@ -5266,9 +5284,9 @@
       "o": "1-3NRZ1SQW",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "09:46",
+      "hi": "09:41",
       "d": "VIA UNO SIETE 2065 EDIF. D DEPTO 54, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "MARCO PEREZ G",
       "visitas": 1,
       "ult_fecha": "24-08-2026",
@@ -5278,7 +5296,7 @@
       "o": "1-3NU3EQE5",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:59",
+      "hi": "15:54",
       "d": "LAS PATAGUAS 1310, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -5349,7 +5367,7 @@
       "o": "1-3NUEYZJT",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "18:49",
+      "hi": "18:43",
       "d": "LEUCOTON 1100 EDIF. 2 DEPTO 104, QUILPUE",
       "e": "Pendiente",
       "tec": "KEVIN TAPIA RETAMAL",
@@ -5359,7 +5377,7 @@
       "o": "1-3NU3EQE5",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:59",
+      "hi": "15:54",
       "d": "LAS PATAGUAS 1310, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -5369,7 +5387,7 @@
       "o": "1-3NT6OTFJ",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "14:06",
       "d": "VOLCAN OLLAGUE 2101, QUILPUE",
       "e": "Pendiente",
       "tec": "RAFAEL VARGAS B",
@@ -5379,7 +5397,7 @@
       "o": "1-3NU0IJFE",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "15:06",
+      "hi": "14:56",
       "d": "PRINCIPAL 861, QUILPUE",
       "e": "Pendiente",
       "tec": "YENDER BOSCAN CADENAS",
@@ -5389,5 +5407,5 @@
    }
   }
  },
- "generado": "15-09-2026 09:39"
+ "generado": "15-09-2026 09:49"
 }
