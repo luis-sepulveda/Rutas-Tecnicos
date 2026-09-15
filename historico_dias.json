@@ -4936,19 +4936,19 @@
    }
   },
   "15-09-2026": {
-   "hasta": "15:21",
-   "actividades": 159,
+   "hasta": "15:26",
+   "actividades": 160,
    "tecnicos": 36,
    "estados": {
     "Completado": 63,
-    "Suspendido": 6,
+    "Suspendido": 7,
     "No Realizada": 34,
-    "Iniciado": 25,
+    "Iniciado": 24,
     "Cancelado": 6,
     "Pendiente": 20,
-    "en ruta": 5
+    "en ruta": 6
    },
-   "rgu": 235.8,
+   "rgu": 237.8,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
@@ -5618,5 +5618,5 @@
    }
   }
  },
- "generado": "15-09-2026 15:21"
+ "generado": "15-09-2026 15:26"
 }
