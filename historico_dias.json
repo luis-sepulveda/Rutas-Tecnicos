@@ -4936,24 +4936,24 @@
    }
   },
   "15-09-2026": {
-   "hasta": "12:15",
-   "actividades": 136,
+   "hasta": "12:20",
+   "actividades": 137,
    "tecnicos": 36,
    "estados": {
     "Completado": 24,
-    "Pendiente": 61,
+    "Iniciado": 29,
+    "Pendiente": 60,
     "No Realizada": 18,
-    "Iniciado": 28,
-    "en ruta": 2,
+    "en ruta": 3,
     "Cancelado": 3
    },
-   "rgu": 211.2,
+   "rgu": 212.2,
    "caidas_total": 7,
    "caidas_activas": 7,
    "caidas_resueltas": 0,
-   "nuevas": 10,
+   "nuevas": 11,
    "al_bucket": 23,
-   "repetidas": 25,
+   "repetidas": 26,
    "reagendadas": 4,
    "detalle": {
     "caidas": [
@@ -5022,6 +5022,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NV1JL4U",
+      "tec": "ALEXIS JARA",
+      "cat": "Modificación de Servicio",
+      "f": "10-13",
+      "hi": "12:19",
+      "d": "DORIS MARTINEZ 690 EDIF. E DEPTO 302, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3NV12C63",
       "tec": "JOSE PEREZ RANGEL",
@@ -5124,6 +5133,18 @@
       "tec": "ALEXIS JARA",
       "visitas": 1,
       "ult_fecha": "14-08-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3NV1JL4U",
+      "cat": "Modificación de Servicio",
+      "f": "10-13",
+      "hi": "12:19",
+      "d": "DORIS MARTINEZ 690 EDIF. E DEPTO 302, QUILPUE",
+      "e": "Iniciado",
+      "tec": "ALEXIS JARA",
+      "visitas": 1,
+      "ult_fecha": "13-08-2026",
       "ult_cierre": "Sin moradores"
      },
      {
@@ -5439,7 +5460,7 @@
       "o": "1-3NT6OTFJ",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "15:44",
+      "hi": "15:06",
       "d": "VOLCAN OLLAGUE 2101, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -5449,7 +5470,7 @@
       "o": "1-3NU0IJFE",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "16:01",
+      "hi": "16:05",
       "d": "PRINCIPAL 861, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -5459,5 +5480,5 @@
    }
   }
  },
- "generado": "15-09-2026 12:15"
+ "generado": "15-09-2026 12:20"
 }
