@@ -4936,12 +4936,12 @@
    }
   },
   "15-09-2026": {
-   "hasta": "09:24",
+   "hasta": "09:29",
    "actividades": 153,
    "tecnicos": 33,
    "estados": {
-    "en ruta": 14,
-    "Pendiente": 139
+    "en ruta": 19,
+    "Pendiente": 134
    },
    "rgu": 249.0,
    "caidas_total": 2,
@@ -5144,9 +5144,9 @@
       "o": "1-3NUAK9E5",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:38",
       "d": "CALLE 4 (ESMERALDA) 157, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "HERNAN CORTES HERRERA",
       "visitas": 1,
       "ult_fecha": "21-08-2026",
@@ -5180,7 +5180,7 @@
       "o": "1-3NU6FMWG",
       "cat": "Reparación",
       "f": "10-13",
-      "hi": "12:15",
+      "hi": "11:50",
       "d": "PJE COSTA DE LA LUZ 046, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -5192,7 +5192,7 @@
       "o": "1-3NUEMNZO",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:34",
+      "hi": "15:54",
       "d": "COLO COLO 225, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -5228,7 +5228,7 @@
       "o": "1-3NS0FXRN",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "12:32",
+      "hi": "12:09",
       "d": "DORIS MARTINEZ 704, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -5360,7 +5360,7 @@
       "o": "1-3NT54RYR",
       "cat": "Migración 2 Play",
       "f": "16-19",
-      "hi": "16:34",
+      "hi": "16:16",
       "d": "CONDELL 377, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -5410,5 +5410,5 @@
    }
   }
  },
- "generado": "15-09-2026 09:24"
+ "generado": "15-09-2026 09:29"
 }
