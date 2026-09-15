@@ -4936,24 +4936,26 @@
    }
   },
   "15-09-2026": {
-   "hasta": "12:30",
-   "actividades": 136,
+   "hasta": "12:50",
+   "actividades": 160,
    "tecnicos": 36,
    "estados": {
-    "Completado": 27,
-    "Iniciado": 29,
-    "Pendiente": 59,
-    "No Realizada": 18,
-    "Cancelado": 3
+    "Completado": 32,
+    "Iniciado": 21,
+    "Pendiente": 72,
+    "No Realizada": 22,
+    "en ruta": 8,
+    "Cancelado": 3,
+    "Suspendido": 2
    },
-   "rgu": 211.2,
-   "caidas_total": 7,
-   "caidas_activas": 7,
+   "rgu": 258.8,
+   "caidas_total": 8,
+   "caidas_activas": 8,
    "caidas_resueltas": 0,
-   "nuevas": 11,
+   "nuevas": 12,
    "al_bucket": 24,
-   "repetidas": 26,
-   "reagendadas": 4,
+   "repetidas": 30,
+   "reagendadas": 5,
    "detalle": {
     "caidas": [
      {
@@ -5002,6 +5004,15 @@
       "e": "Pendiente"
      },
      {
+      "o": "1-3NU8VX3T",
+      "tec": "KEVIN TAPIA RETAMAL",
+      "cat": "Migración 1 Play",
+      "f": "13-16",
+      "hi": "15:32",
+      "d": "VOLCAN LASCAR 1040 EDIF. B DEPTO 32, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3NT78CUB",
       "tec": "LUIS CASTRO TORRES",
       "cat": "Migración 2 Play",
@@ -5022,6 +5033,15 @@
     ],
     "nuevas": [
      {
+      "o": "1-3NV2ET2I",
+      "tec": "LUIS GATICA DAVILA",
+      "cat": "Modificación de Servicio",
+      "f": "10-13",
+      "hi": "12:42",
+      "d": "ALCALDE RODOLFO GALLEGUILLOS 35 CASA 2, VILLA ALEMANA",
+      "e": "Iniciado"
+     },
+     {
       "o": "1-3NV1JL4U",
       "tec": "ALEXIS JARA",
       "cat": "Modificación de Servicio",
@@ -5037,7 +5057,7 @@
       "f": "10-13",
       "hi": "12:26",
       "d": "VIA UNO SIETE 2025 EDIF. C DEPTO 23, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NUZZWBY",
@@ -5082,7 +5102,7 @@
       "f": "10-13",
       "hi": "10:33",
       "d": "THOMPSON 927 DEPTO 501, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NUXWVOJ",
@@ -5171,6 +5191,18 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
+      "o": "1-3NUAQHPF",
+      "cat": "Migración 2 Play",
+      "f": "13-16",
+      "hi": "12:53",
+      "d": "LAS CAMELIAS 1701 CASA 46, QUILPUE",
+      "e": "en ruta",
+      "tec": "CESAR MENA OLIVEROS",
+      "visitas": 1,
+      "ult_fecha": "04-09-2026",
+      "ult_cierre": "NAP Problema ubicación"
+     },
+     {
       "o": "1-3NU3EQE5",
       "cat": "Alta 1 Play",
       "f": "13-16",
@@ -5181,6 +5213,30 @@
       "visitas": 1,
       "ult_fecha": "14-09-2026",
       "ult_cierre": "Cliente reagenda"
+     },
+     {
+      "o": "1-3NU2Q15C",
+      "cat": "Migración 1 Play",
+      "f": "16-19",
+      "hi": "17:39",
+      "d": "SANTA MARGARITA 1220, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "CRISTOBAL MIRANDA VALENC",
+      "visitas": 1,
+      "ult_fecha": "14-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3NU31PBI",
+      "cat": "Migración 2 Play",
+      "f": "16-19",
+      "hi": "17:21",
+      "d": "AV LOS CARRERA 1172 DEPTO 204, QUILPUE",
+      "e": "Pendiente",
+      "tec": "DANIEL NAVARRETE E",
+      "visitas": 1,
+      "ult_fecha": "14-09-2026",
+      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3NT5VDHD",
@@ -5200,7 +5256,7 @@
       "f": "10-13",
       "hi": "11:53",
       "d": "LATORRE 15, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "EDGAR VALERO C",
       "visitas": 1,
       "ult_fecha": "14-09-2026",
@@ -5210,7 +5266,7 @@
       "o": "1-3NUJTH96",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:36",
+      "hi": "15:10",
       "d": "LOS TOPACIOS 1380 EDIF. N2 DEPTO 101, QUILPUE",
       "e": "Pendiente",
       "tec": "ELIAS ARMIJO L",
@@ -5270,7 +5326,7 @@
       "o": "1-3NU94S59",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:11",
+      "hi": "18:05",
       "d": "BARCELONA 1380, QUILPUE",
       "e": "Pendiente",
       "tec": "JORDAN ROA PEREZ",
@@ -5289,6 +5345,18 @@
       "visitas": 1,
       "ult_fecha": "14-09-2026",
       "ult_cierre": "Cliente reagenda"
+     },
+     {
+      "o": "1-3NUBPC7P",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "18:29",
+      "d": "VIA UNO SIETE 2065 EDIF. F DEPTO 23, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JOSE CASTRO P",
+      "visitas": 2,
+      "ult_fecha": "14-09-2026",
+      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3NUVO4GB",
@@ -5320,7 +5388,7 @@
       "f": "10-13",
       "hi": "11:55",
       "d": "DORIS MARTINEZ 704, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "KEVIN TAPIA RETAMAL",
       "visitas": 1,
       "ult_fecha": "10-09-2026",
@@ -5330,7 +5398,7 @@
       "o": "1-3NU4O5DR",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "16:08",
+      "hi": "16:03",
       "d": "PASAJE BARRIA 1221 CASA 33, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -5387,28 +5455,28 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3NU7XYW8",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "16:00",
+      "d": "SERRANO 1589, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "MATÍAS JAQUE AG",
+      "visitas": 1,
+      "ult_fecha": "04-09-2026",
+      "ult_cierre": "Clte desiste motivo comercial"
+     },
+     {
       "o": "1-3NUX4ZO1",
       "cat": "Migración 3 Play",
       "f": "10-13",
       "hi": "10:33",
       "d": "THOMPSON 927 DEPTO 501, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "NICOLAS MOYANO R",
       "visitas": 1,
       "ult_fecha": "15-09-2026",
       "ult_cierre": "Cliente Desiste"
-     },
-     {
-      "o": "1-3NUAQHPF",
-      "cat": "Migración 2 Play",
-      "f": "13-16",
-      "hi": "15:17",
-      "d": "LAS CAMELIAS 1701 CASA 46, QUILPUE",
-      "e": "Pendiente",
-      "tec": "NICOLAS MOYANO R",
-      "visitas": 1,
-      "ult_fecha": "04-09-2026",
-      "ult_cierre": "NAP Problema ubicación"
      },
      {
       "o": "1-3NUFFK3A",
@@ -5469,15 +5537,25 @@
       "o": "1-3NU0IJFE",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "16:04",
+      "hi": "16:18",
       "d": "PRINCIPAL 861, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
       "desde": "14-09-2026"
+     },
+     {
+      "o": "1-3NT54RYR",
+      "cat": "Migración 2 Play",
+      "f": "16-19",
+      "hi": "18:08",
+      "d": "CONDELL 377, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "MARCELO GÓMEZ GÓME",
+      "desde": "12-09-2026"
      }
     ]
    }
   }
  },
- "generado": "15-09-2026 12:30"
+ "generado": "15-09-2026 12:50"
 }
