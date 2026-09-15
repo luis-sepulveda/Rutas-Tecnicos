@@ -4936,18 +4936,18 @@
    }
   },
   "15-09-2026": {
-   "hasta": "11:04",
-   "actividades": 157,
+   "hasta": "11:09",
+   "actividades": 156,
    "tecnicos": 35,
    "estados": {
-    "Completado": 9,
-    "Iniciado": 28,
-    "Pendiente": 106,
-    "No Realizada": 10,
+    "Completado": 10,
+    "Iniciado": 27,
+    "Pendiente": 103,
+    "No Realizada": 11,
     "Cancelado": 2,
-    "en ruta": 2
+    "en ruta": 3
    },
-   "rgu": 255.5,
+   "rgu": 254.5,
    "caidas_total": 4,
    "caidas_activas": 4,
    "caidas_resueltas": 0,
@@ -5002,7 +5002,7 @@
       "f": "10-13",
       "hi": "12:16",
       "d": "PJE 2 (SAN JORGE) 114, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NUYMNZ9",
@@ -5160,7 +5160,7 @@
       "o": "1-3NUCI6HJ",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "13:05",
+      "hi": "11:54",
       "d": "LATORRE 15, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -5172,7 +5172,7 @@
       "o": "1-3NU7XYW8",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "18:47",
+      "hi": "17:36",
       "d": "SERRANO 1589, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -5455,7 +5455,7 @@
       "o": "1-3NT6OTFJ",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "15:23",
+      "hi": "14:38",
       "d": "VOLCAN OLLAGUE 2101, QUILPUE",
       "e": "Pendiente",
       "tec": "RAFAEL VARGAS B",
@@ -5475,5 +5475,5 @@
    }
   }
  },
- "generado": "15-09-2026 11:04"
+ "generado": "15-09-2026 11:09"
 }
