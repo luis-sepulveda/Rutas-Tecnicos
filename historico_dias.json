@@ -4936,17 +4936,17 @@
    }
   },
   "15-09-2026": {
-   "hasta": "13:41",
+   "hasta": "13:46",
    "actividades": 165,
    "tecnicos": 36,
    "estados": {
-    "Completado": 40,
+    "Completado": 42,
     "Suspendido": 4,
-    "en ruta": 3,
-    "Pendiente": 63,
+    "Iniciado": 23,
+    "Pendiente": 62,
     "Cancelado": 5,
     "No Realizada": 27,
-    "Iniciado": 23
+    "en ruta": 2
    },
    "rgu": 262.0,
    "caidas_total": 8,
@@ -5048,7 +5048,7 @@
       "f": "13-16",
       "hi": "13:01",
       "d": "THOMPSON 927 DEPTO 501, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NV2OCZ8",
@@ -5305,7 +5305,7 @@
       "o": "1-3NUJTH96",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:10",
+      "hi": "15:22",
       "d": "LOS TOPACIOS 1380 EDIF. N2 DEPTO 101, QUILPUE",
       "e": "Pendiente",
       "tec": "ELIAS ARMIJO L",
@@ -5574,7 +5574,7 @@
       "o": "1-3NUEYZJT",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "15:27",
+      "hi": "13:55",
       "d": "LEUCOTON 1100 EDIF. 2 DEPTO 104, QUILPUE",
       "e": "Pendiente",
       "tec": "RAFAEL VARGAS B",
@@ -5584,5 +5584,5 @@
    }
   }
  },
- "generado": "15-09-2026 13:41"
+ "generado": "15-09-2026 13:46"
 }
