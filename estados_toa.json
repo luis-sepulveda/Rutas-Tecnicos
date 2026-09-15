@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-15T12:15:55",
+  "actualizado": "2026-09-15T12:46:02",
   "resumen": {
     "reagendada": 5,
-    "sin informacion": 2
+    "sin informacion": 3
   },
   "estados": {
     "1-3NU8GG8V": {
@@ -90,6 +90,14 @@
           }
         ]
       }
+    },
+    "1-3NU8VX3T": {
+      "tec": "KEVIN TAPIA RETAMAL",
+      "cat": "Migración 1 Play",
+      "franja_original": "13-16",
+      "d": "VOLCAN LASCAR 1040 EDIF. B DEPTO 32, QUILPUE",
+      "estado": "sin informacion",
+      "nota": "la OT ya no existe en TOA"
     },
     "1-3NT78CUB": {
       "tec": "LUIS CASTRO TORRES",
