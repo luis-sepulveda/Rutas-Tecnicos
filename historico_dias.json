@@ -4936,22 +4936,22 @@
    }
   },
   "15-09-2026": {
-   "hasta": "10:54",
-   "actividades": 156,
+   "hasta": "11:04",
+   "actividades": 157,
    "tecnicos": 35,
    "estados": {
-    "Completado": 7,
+    "Completado": 9,
     "Iniciado": 28,
-    "Pendiente": 107,
+    "Pendiente": 106,
     "No Realizada": 10,
     "Cancelado": 2,
     "en ruta": 2
    },
-   "rgu": 254.5,
+   "rgu": 255.5,
    "caidas_total": 4,
    "caidas_activas": 4,
    "caidas_resueltas": 0,
-   "nuevas": 6,
+   "nuevas": 7,
    "al_bucket": 1,
    "repetidas": 30,
    "reagendadas": 5,
@@ -4996,13 +4996,22 @@
     ],
     "nuevas": [
      {
+      "o": "1-3NUYY8J3",
+      "tec": "EDGAR VALERO C",
+      "cat": "Modificación de Servicio",
+      "f": "10-13",
+      "hi": "12:16",
+      "d": "PJE 2 (SAN JORGE) 114, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3NUYMNZ9",
       "tec": "ALFREDO ALCAYAGA F",
       "cat": "Modificación de Servicio",
       "f": "10-13",
       "hi": "10:54",
       "d": "PJE TOLEDO 2450, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NUX4ZO1",
@@ -5079,7 +5088,7 @@
       "o": "1-3NS7RH9Y",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "11:47",
+      "hi": "11:19",
       "d": "DAVID CORTES 875, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
@@ -5151,7 +5160,7 @@
       "o": "1-3NUCI6HJ",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "10:56",
+      "hi": "13:05",
       "d": "LATORRE 15, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -5163,7 +5172,7 @@
       "o": "1-3NU7XYW8",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:38",
+      "hi": "18:47",
       "d": "SERRANO 1589, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -5189,7 +5198,7 @@
       "f": "10-13",
       "hi": "09:56",
       "d": "BARROS ARANA 121 CASA A, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "ESTEBAN PIZARRO QUINTANA",
       "visitas": 1,
       "ult_fecha": "12-09-2026",
@@ -5199,7 +5208,7 @@
       "o": "1-3NU2Q15C",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:56",
+      "hi": "16:36",
       "d": "SANTA MARGARITA 1220, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -5319,7 +5328,7 @@
       "o": "1-3NU4O5DR",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "18:16",
+      "hi": "18:20",
       "d": "PASAJE BARRIA 1221 CASA 33, QUILPUE",
       "e": "Pendiente",
       "tec": "LUIS MARTIN NUÑEZ",
@@ -5466,5 +5475,5 @@
    }
   }
  },
- "generado": "15-09-2026 10:54"
+ "generado": "15-09-2026 11:04"
 }
