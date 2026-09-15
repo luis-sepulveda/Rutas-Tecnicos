@@ -4936,13 +4936,13 @@
    }
   },
   "15-09-2026": {
-   "hasta": "09:49",
+   "hasta": "09:54",
    "actividades": 151,
    "tecnicos": 33,
    "estados": {
-    "Iniciado": 5,
-    "Pendiente": 123,
-    "en ruta": 22,
+    "Iniciado": 7,
+    "Pendiente": 122,
+    "en ruta": 21,
     "Cancelado": 1
    },
    "rgu": 244.0,
@@ -5044,9 +5044,9 @@
       "o": "1-3NUCHBB2",
       "cat": "Migración 3 Play",
       "f": "10-13",
-      "hi": "09:30",
+      "hi": "09:51",
       "d": "PETEN 843 CASA 59, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "ANTONHY MORALES MENDOZA",
       "visitas": 3,
       "ult_fecha": "10-09-2026",
@@ -5104,9 +5104,9 @@
       "o": "1-3NT5VDHD",
       "cat": "Reparación",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "10:01",
       "d": "GABRIEL PARRA 2378, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "EDGAR VALERO C",
       "visitas": 3,
       "ult_fecha": "12-09-2026",
@@ -5116,7 +5116,7 @@
       "o": "1-3NUCI6HJ",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "11:21",
+      "hi": "11:22",
       "d": "LATORRE 15, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -5224,7 +5224,7 @@
       "o": "1-3NTMMDHP",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:53",
+      "hi": "15:56",
       "d": "GALLEGUILLOS 1421 EDIF. D DEPTO 52, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -5407,5 +5407,5 @@
    }
   }
  },
- "generado": "15-09-2026 09:49"
+ "generado": "15-09-2026 09:54"
 }
