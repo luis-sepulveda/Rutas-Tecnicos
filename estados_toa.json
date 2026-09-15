@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-15T13:16:38",
+  "actualizado": "2026-09-15T13:46:51",
   "resumen": {
-    "reagendada": 5,
-    "sin informacion": 3
+    "sin informacion": 4,
+    "reagendada": 4
   },
   "estados": {
     "1-3NU8GG8V": {
@@ -10,10 +10,28 @@
       "cat": "Alta 1 Play",
       "franja_original": "16-19",
       "d": "TOQUI 2436, QUILPUE",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NU8GG8V - 16-19-AltaJue, 17 Sep",
-      "franja_nueva": "16-19"
+      "estado": "sin informacion",
+      "nota": "la OT ya no existe en TOA",
+      "contexto": {
+        "buscado": "TOQUI 2436",
+        "aviso": "historial de la direccion, NO es el estado de esta orden",
+        "filas": [
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NOVXO1H",
+            "franja": "10-13",
+            "texto": "1-3NOVXO1H - 10-13-AltaJue, 10 Sep"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NM03YAG",
+            "franja": "16-19",
+            "texto": "1-3NM03YAG - 16-19-AltaSab, 5 Sep"
+          }
+        ]
+      }
     },
     "1-3NUJW4LO": {
       "tec": "CRISTOBAL MIRANDA VALENC",
