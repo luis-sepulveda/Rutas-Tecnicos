@@ -4936,26 +4936,26 @@
    }
   },
   "15-09-2026": {
-   "hasta": "15:06",
-   "actividades": 176,
+   "hasta": "15:21",
+   "actividades": 159,
    "tecnicos": 36,
    "estados": {
-    "Completado": 61,
+    "Completado": 63,
     "Suspendido": 6,
-    "No Realizada": 32,
-    "en ruta": 4,
-    "Pendiente": 42,
+    "No Realizada": 34,
+    "Iniciado": 25,
     "Cancelado": 6,
-    "Iniciado": 25
+    "Pendiente": 20,
+    "en ruta": 5
    },
-   "rgu": 272.8,
+   "rgu": 235.8,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
    "nuevas": 24,
-   "al_bucket": 24,
-   "repetidas": 30,
-   "reagendadas": 5,
+   "al_bucket": 30,
+   "repetidas": 27,
+   "reagendadas": 4,
    "detalle": {
     "caidas": [
      {
@@ -5039,7 +5039,7 @@
       "f": "13-16",
       "hi": "15:05",
       "d": "COVADONGA 852, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NV7FUQT",
@@ -5048,7 +5048,7 @@
       "f": "16-19",
       "hi": "19:06",
       "d": "CACIQUE 01300 CASA 6, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NV6ETNC",
@@ -5228,7 +5228,7 @@
       "f": "13-16",
       "hi": "17:27",
       "d": "FRANCISCO PENA CALQUIN 0114, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NUXRC9H",
@@ -5278,25 +5278,25 @@
       "o": "1-3NU94S59",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "15:09",
+      "hi": "15:11",
       "d": "BARCELONA 1380, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "ALEXIS JARA",
       "visitas": 1,
       "ult_fecha": "14-09-2026",
       "ult_cierre": "Cliente reagenda"
      },
      {
-      "o": "1-3NU31PBI",
-      "cat": "Migración 2 Play",
+      "o": "1-3NU4O5DR",
+      "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "16:37",
-      "d": "AV LOS CARRERA 1172 DEPTO 204, QUILPUE",
+      "hi": "16:23",
+      "d": "PASAJE BARRIA 1221 CASA 33, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
       "visitas": 1,
-      "ult_fecha": "14-09-2026",
-      "ult_cierre": "Sin moradores"
+      "ult_fecha": "22-08-2026",
+      "ult_cierre": "Falla Aprovisionamiento"
      },
      {
       "o": "1-3NUCHBB2",
@@ -5309,6 +5309,18 @@
       "visitas": 3,
       "ult_fecha": "10-09-2026",
       "ult_cierre": "Direccion no encontrada"
+     },
+     {
+      "o": "1-3NUF247L",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "16:26",
+      "d": "SERRANO 1417 CASA A, QUILPUE",
+      "e": "Pendiente",
+      "tec": "ANTONHY MORALES MENDOZA",
+      "visitas": 3,
+      "ult_fecha": "14-09-2026",
+      "ult_cierre": "Cliente reagenda"
      },
      {
       "o": "1-3NUAQHPF",
@@ -5345,18 +5357,6 @@
       "visitas": 1,
       "ult_fecha": "14-09-2026",
       "ult_cierre": "Cliente reagenda"
-     },
-     {
-      "o": "1-3NU2Q15C",
-      "cat": "Migración 1 Play",
-      "f": "16-19",
-      "hi": "17:00",
-      "d": "SANTA MARGARITA 1220, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "CRISTOBAL MIRANDA VALENC",
-      "visitas": 1,
-      "ult_fecha": "14-09-2026",
-      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3NT5VDHD",
@@ -5433,9 +5433,9 @@
       "o": "1-3NUEMNZO",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:16",
+      "hi": "15:25",
       "d": "COLO COLO 225, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JEAN ROODLY ORELIEN",
       "visitas": 1,
       "ult_fecha": "14-09-2026",
@@ -5457,7 +5457,7 @@
       "o": "1-3NUBPC7P",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:57",
+      "hi": "16:43",
       "d": "VIA UNO SIETE 2065 EDIF. F DEPTO 23, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -5502,18 +5502,6 @@
       "ult_cierre": "Ductos tapados"
      },
      {
-      "o": "1-3NU4O5DR",
-      "cat": "Modificación de Servicio",
-      "f": "16-19",
-      "hi": "17:51",
-      "d": "PASAJE BARRIA 1221 CASA 33, QUILPUE",
-      "e": "Pendiente",
-      "tec": "LEONEL HERNÁNDEZ OJE",
-      "visitas": 1,
-      "ult_fecha": "22-08-2026",
-      "ult_cierre": "Falla Aprovisionamiento"
-     },
-     {
       "o": "1-3NS7RH9Y",
       "cat": "Migración 1 Play",
       "f": "10-13",
@@ -5548,30 +5536,6 @@
       "visitas": 1,
       "ult_fecha": "12-09-2026",
       "ult_cierre": "Sin moradores"
-     },
-     {
-      "o": "1-3NUF247L",
-      "cat": "Modificación de Servicio",
-      "f": "16-19",
-      "hi": "18:41",
-      "d": "SERRANO 1417 CASA A, QUILPUE",
-      "e": "Pendiente",
-      "tec": "MATÍAS JAQUE AG",
-      "visitas": 3,
-      "ult_fecha": "14-09-2026",
-      "ult_cierre": "Cliente reagenda"
-     },
-     {
-      "o": "1-3NU7XYW8",
-      "cat": "Alta 2 Play",
-      "f": "16-19",
-      "hi": "19:43",
-      "d": "SERRANO 1589, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "MATÍAS JAQUE AG",
-      "visitas": 1,
-      "ult_fecha": "04-09-2026",
-      "ult_cierre": "Clte desiste motivo comercial"
      },
      {
       "o": "1-3NUX4ZO1",
@@ -5624,9 +5588,9 @@
       "o": "1-3NT6OTFJ",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "15:15",
+      "hi": "15:14",
       "d": "VOLCAN OLLAGUE 2101, QUILPUE",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "GEEYSER PEREZ O",
       "desde": "14-09-2026"
      },
@@ -5639,16 +5603,6 @@
       "e": "en ruta",
       "tec": "LEONEL HERNÁNDEZ OJE",
       "desde": "14-09-2026"
-     },
-     {
-      "o": "1-3NT54RYR",
-      "cat": "Migración 2 Play",
-      "f": "16-19",
-      "hi": "17:37",
-      "d": "CONDELL 377, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "MARCELO GÓMEZ GÓME",
-      "desde": "12-09-2026"
      },
      {
       "o": "1-3NUEYZJT",
@@ -5664,5 +5618,5 @@
    }
   }
  },
- "generado": "15-09-2026 15:06"
+ "generado": "15-09-2026 15:21"
 }
