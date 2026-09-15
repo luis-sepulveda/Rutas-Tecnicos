@@ -4936,19 +4936,19 @@
    }
   },
   "15-09-2026": {
-   "hasta": "08:49",
-   "actividades": 110,
+   "hasta": "08:54",
+   "actividades": 113,
    "tecnicos": 32,
    "estados": {
-    "Pendiente": 110
+    "Pendiente": 113
    },
-   "rgu": 173.5,
+   "rgu": 176.5,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
    "nuevas": 0,
    "al_bucket": 1,
-   "repetidas": 22,
+   "repetidas": 23,
    "reagendadas": 2,
    "detalle": {
     "caidas": [],
@@ -5150,13 +5150,25 @@
       "o": "1-3NT78CUB",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "12:24",
       "d": "MADRID 667, QUILPUE",
       "e": "Pendiente",
       "tec": "LUIS CASTRO TORRES",
       "visitas": 1,
       "ult_fecha": "12-09-2026",
       "ult_cierre": "Cliente reagenda"
+     },
+     {
+      "o": "1-3NU4O5DR",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "17:28",
+      "d": "PASAJE BARRIA 1221 CASA 33, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LUIS MARTIN NUÑEZ",
+      "visitas": 1,
+      "ult_fecha": "22-08-2026",
+      "ult_cierre": "Falla Aprovisionamiento"
      },
      {
       "o": "1-3NRZ1SQW",
@@ -5244,5 +5256,5 @@
    }
   }
  },
- "generado": "15-09-2026 08:49"
+ "generado": "15-09-2026 08:54"
 }
