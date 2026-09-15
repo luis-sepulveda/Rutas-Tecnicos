@@ -4936,23 +4936,22 @@
    }
   },
   "15-09-2026": {
-   "hasta": "12:20",
-   "actividades": 137,
+   "hasta": "12:30",
+   "actividades": 136,
    "tecnicos": 36,
    "estados": {
-    "Completado": 24,
+    "Completado": 27,
     "Iniciado": 29,
-    "Pendiente": 60,
+    "Pendiente": 59,
     "No Realizada": 18,
-    "en ruta": 3,
     "Cancelado": 3
    },
-   "rgu": 212.2,
+   "rgu": 211.2,
    "caidas_total": 7,
    "caidas_activas": 7,
    "caidas_resueltas": 0,
    "nuevas": 11,
-   "al_bucket": 23,
+   "al_bucket": 24,
    "repetidas": 26,
    "reagendadas": 4,
    "detalle": {
@@ -5331,7 +5330,7 @@
       "o": "1-3NU4O5DR",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "17:17",
+      "hi": "16:08",
       "d": "PASAJE BARRIA 1221 CASA 33, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -5367,7 +5366,7 @@
       "o": "1-3NU2P8KT",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "15:28",
+      "hi": "17:00",
       "d": "EL ALBA 942, QUILPUE",
       "e": "Pendiente",
       "tec": "MATIAS APELEO APELEO",
@@ -5460,7 +5459,7 @@
       "o": "1-3NT6OTFJ",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "15:06",
+      "hi": "15:11",
       "d": "VOLCAN OLLAGUE 2101, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -5470,7 +5469,7 @@
       "o": "1-3NU0IJFE",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "16:05",
+      "hi": "16:04",
       "d": "PRINCIPAL 861, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -5480,5 +5479,5 @@
    }
   }
  },
- "generado": "15-09-2026 12:20"
+ "generado": "15-09-2026 12:30"
 }
