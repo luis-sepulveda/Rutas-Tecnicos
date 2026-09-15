@@ -4936,23 +4936,23 @@
    }
   },
   "15-09-2026": {
-   "hasta": "13:46",
-   "actividades": 165,
+   "hasta": "13:51",
+   "actividades": 166,
    "tecnicos": 36,
    "estados": {
-    "Completado": 42,
+    "Completado": 43,
     "Suspendido": 4,
-    "Iniciado": 23,
-    "Pendiente": 62,
+    "Iniciado": 22,
+    "Pendiente": 60,
     "Cancelado": 5,
-    "No Realizada": 27,
-    "en ruta": 2
+    "No Realizada": 28,
+    "en ruta": 4
    },
-   "rgu": 262.0,
+   "rgu": 263.0,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
-   "nuevas": 15,
+   "nuevas": 16,
    "al_bucket": 24,
    "repetidas": 30,
    "reagendadas": 5,
@@ -5032,6 +5032,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NV22UPI",
+      "tec": "HERNAN CORTES HERRERA",
+      "cat": "Reparación",
+      "f": "13-16",
+      "hi": "18:15",
+      "d": "LAS ROSAS 412, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NV4D7PZ",
       "tec": "LUIS MARTIN NUÑEZ",
@@ -5329,9 +5338,9 @@
       "o": "1-3NTFI5TW",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:15",
+      "hi": "14:03",
       "d": "BELLAVISTA 1319, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "ESTEBAN PIZARRO QUINTANA",
       "visitas": 1,
       "ult_fecha": "12-09-2026",
@@ -5377,7 +5386,7 @@
       "o": "1-3NUEMNZO",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "17:00",
+      "hi": "17:21",
       "d": "COLO COLO 225, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -5389,7 +5398,7 @@
       "o": "1-3NUBPC7P",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "19:20",
+      "hi": "19:41",
       "d": "VIA UNO SIETE 2065 EDIF. F DEPTO 23, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -5413,7 +5422,7 @@
       "o": "1-3NOUGNJ5",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "16:27",
+      "hi": "16:49",
       "d": "SANTA ANA 841, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -5584,5 +5593,5 @@
    }
   }
  },
- "generado": "15-09-2026 13:46"
+ "generado": "15-09-2026 13:51"
 }
