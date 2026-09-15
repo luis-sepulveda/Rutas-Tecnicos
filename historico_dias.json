@@ -4936,22 +4936,23 @@
    }
   },
   "15-09-2026": {
-   "hasta": "13:30",
-   "actividades": 163,
+   "hasta": "13:41",
+   "actividades": 165,
    "tecnicos": 36,
    "estados": {
     "Completado": 40,
-    "Iniciado": 24,
-    "Pendiente": 66,
-    "No Realizada": 26,
-    "Cancelado": 4,
-    "Suspendido": 3
+    "Suspendido": 4,
+    "en ruta": 3,
+    "Pendiente": 63,
+    "Cancelado": 5,
+    "No Realizada": 27,
+    "Iniciado": 23
    },
-   "rgu": 260.0,
+   "rgu": 262.0,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
-   "nuevas": 14,
+   "nuevas": 15,
    "al_bucket": 24,
    "repetidas": 30,
    "reagendadas": 5,
@@ -5031,6 +5032,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NV4D7PZ",
+      "tec": "LUIS MARTIN NUÑEZ",
+      "cat": "Reparación",
+      "f": "13-16",
+      "hi": "13:33",
+      "d": "PJE HUEPIL 1110, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3NV2SAX6",
       "tec": "NICOLAS MOYANO R",
@@ -5199,7 +5209,7 @@
       "o": "1-3NUF247L",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "16:56",
+      "hi": "16:25",
       "d": "SERRANO 1417 CASA A, QUILPUE",
       "e": "Pendiente",
       "tec": "ANTONHY MORALES MENDOZA",
@@ -5218,6 +5228,18 @@
       "visitas": 1,
       "ult_fecha": "04-09-2026",
       "ult_cierre": "NAP Problema ubicación"
+     },
+     {
+      "o": "1-3NU2P8KT",
+      "cat": "Migración 2 Play",
+      "f": "13-16",
+      "hi": "14:34",
+      "d": "EL ALBA 942, QUILPUE",
+      "e": "Pendiente",
+      "tec": "CESAR MENA OLIVEROS",
+      "visitas": 1,
+      "ult_fecha": "14-09-2026",
+      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3NU3EQE5",
@@ -5448,18 +5470,6 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3NU2P8KT",
-      "cat": "Migración 2 Play",
-      "f": "13-16",
-      "hi": "17:00",
-      "d": "EL ALBA 942, QUILPUE",
-      "e": "Pendiente",
-      "tec": "MATIAS APELEO APELEO",
-      "visitas": 1,
-      "ult_fecha": "14-09-2026",
-      "ult_cierre": "Sin moradores"
-     },
-     {
       "o": "1-3NTF2BGR",
       "cat": "Alta 1 Play",
       "f": "10-13",
@@ -5574,5 +5584,5 @@
    }
   }
  },
- "generado": "15-09-2026 13:30"
+ "generado": "15-09-2026 13:41"
 }
