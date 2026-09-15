@@ -4936,12 +4936,12 @@
    }
   },
   "15-09-2026": {
-   "hasta": "09:29",
+   "hasta": "09:34",
    "actividades": 153,
    "tecnicos": 33,
    "estados": {
-    "en ruta": 19,
-    "Pendiente": 134
+    "en ruta": 20,
+    "Pendiente": 133
    },
    "rgu": 249.0,
    "caidas_total": 2,
@@ -4988,9 +4988,9 @@
       "o": "1-3NUABZEK",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "09:30",
+      "hi": "10:50",
       "d": "IRMA JOHNSON MOLINA 201 EDIF. J DEPTO 1022, QUILPUE",
-      "e": "en ruta",
+      "e": "Pendiente",
       "tec": "ALEXIS JARA",
       "visitas": 1,
       "ult_fecha": "14-08-2026",
@@ -5000,7 +5000,7 @@
       "o": "1-3NUAQHPF",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "15:30",
+      "hi": "16:04",
       "d": "LAS CAMELIAS 1701 CASA 46, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -5264,7 +5264,7 @@
       "o": "1-3NU4O5DR",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "20:07",
+      "hi": "19:49",
       "d": "PASAJE BARRIA 1221 CASA 33, QUILPUE",
       "e": "Pendiente",
       "tec": "LUIS MARTIN NUÑEZ",
@@ -5410,5 +5410,5 @@
    }
   }
  },
- "generado": "15-09-2026 09:29"
+ "generado": "15-09-2026 09:34"
 }
