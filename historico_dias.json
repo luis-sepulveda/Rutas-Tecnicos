@@ -4936,23 +4936,23 @@
    }
   },
   "15-09-2026": {
-   "hasta": "14:36",
-   "actividades": 171,
+   "hasta": "14:41",
+   "actividades": 172,
    "tecnicos": 36,
    "estados": {
-    "Completado": 54,
+    "Completado": 56,
     "Suspendido": 4,
     "No Realizada": 31,
     "Iniciado": 23,
-    "Pendiente": 49,
+    "Pendiente": 48,
     "Cancelado": 5,
     "en ruta": 5
    },
-   "rgu": 266.2,
+   "rgu": 267.2,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
-   "nuevas": 21,
+   "nuevas": 22,
    "al_bucket": 24,
    "repetidas": 30,
    "reagendadas": 5,
@@ -5033,6 +5033,15 @@
     ],
     "nuevas": [
      {
+      "o": "1-3NV6ETNC",
+      "tec": "LUIS MARTIN NUÑEZ",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "14:38",
+      "d": "PJE HUEPIL 1110, QUILPUE",
+      "e": "Iniciado"
+     },
+     {
       "o": "1-3NV6QQV9",
       "tec": "JUAN ARRIAGADA C",
       "cat": "Modificación de Servicio",
@@ -5057,7 +5066,7 @@
       "f": "13-16",
       "hi": "13:58",
       "d": "ECHAURREN 586, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NV57IIM",
@@ -5287,9 +5296,9 @@
       "o": "1-3NU2P8KT",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:22",
+      "hi": "14:39",
       "d": "EL ALBA 942, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "CESAR MENA OLIVEROS",
       "visitas": 1,
       "ult_fecha": "14-09-2026",
@@ -5455,7 +5464,7 @@
       "o": "1-3NU94S59",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:43",
+      "hi": "15:43",
       "d": "BARCELONA 1380, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE SALAS MEDINA",
@@ -5630,7 +5639,7 @@
       "f": "13-16",
       "hi": "13:58",
       "d": "LEUCOTON 1100 EDIF. 2 DEPTO 104, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "RAFAEL VARGAS B",
       "desde": "14-09-2026"
      }
@@ -5638,5 +5647,5 @@
    }
   }
  },
- "generado": "15-09-2026 14:36"
+ "generado": "15-09-2026 14:41"
 }
