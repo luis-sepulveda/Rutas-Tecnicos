@@ -4936,15 +4936,15 @@
    }
   },
   "15-09-2026": {
-   "hasta": "13:20",
+   "hasta": "13:25",
    "actividades": 162,
    "tecnicos": 36,
    "estados": {
     "Completado": 38,
-    "en ruta": 4,
+    "en ruta": 2,
     "Pendiente": 66,
-    "No Realizada": 25,
-    "Iniciado": 24,
+    "No Realizada": 26,
+    "Iniciado": 25,
     "Cancelado": 3,
     "Suspendido": 2
    },
@@ -5214,7 +5214,7 @@
       "f": "13-16",
       "hi": "12:53",
       "d": "LAS CAMELIAS 1701 CASA 46, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "CESAR MENA OLIVEROS",
       "visitas": 1,
       "ult_fecha": "04-09-2026",
@@ -5545,7 +5545,7 @@
       "o": "1-3NU0IJFE",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "16:18",
+      "hi": "16:24",
       "d": "PRINCIPAL 861, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -5575,5 +5575,5 @@
    }
   }
  },
- "generado": "15-09-2026 13:20"
+ "generado": "15-09-2026 13:25"
 }
