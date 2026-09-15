@@ -4936,15 +4936,15 @@
    }
   },
   "15-09-2026": {
-   "hasta": "13:10",
+   "hasta": "13:20",
    "actividades": 162,
    "tecnicos": 36,
    "estados": {
-    "Completado": 36,
+    "Completado": 38,
     "en ruta": 4,
-    "Pendiente": 67,
-    "No Realizada": 23,
-    "Iniciado": 27,
+    "Pendiente": 66,
+    "No Realizada": 25,
+    "Iniciado": 24,
     "Cancelado": 3,
     "Suspendido": 2
    },
@@ -5048,7 +5048,7 @@
       "f": "13-16",
       "hi": "12:52",
       "d": "LOS DURAZNOS 3123, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NV2ET2I",
@@ -5057,7 +5057,7 @@
       "f": "10-13",
       "hi": "12:42",
       "d": "ALCALDE RODOLFO GALLEGUILLOS 35 CASA 2, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NV1JL4U",
@@ -5200,7 +5200,7 @@
       "o": "1-3NUF247L",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "17:20",
+      "hi": "16:56",
       "d": "SERRANO 1417 CASA A, QUILPUE",
       "e": "Pendiente",
       "tec": "ANTONHY MORALES MENDOZA",
@@ -5356,7 +5356,7 @@
       "o": "1-3NUEMNZO",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "16:29",
+      "hi": "16:50",
       "d": "COLO COLO 225, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -5368,7 +5368,7 @@
       "o": "1-3NUBPC7P",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:49",
+      "hi": "19:10",
       "d": "VIA UNO SIETE 2065 EDIF. F DEPTO 23, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -5392,7 +5392,7 @@
       "o": "1-3NOUGNJ5",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "15:56",
+      "hi": "16:17",
       "d": "SANTA ANA 841, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -5416,7 +5416,7 @@
       "o": "1-3NU4O5DR",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "16:11",
+      "hi": "16:00",
       "d": "PASAJE BARRIA 1221 CASA 33, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -5575,5 +5575,5 @@
    }
   }
  },
- "generado": "15-09-2026 13:10"
+ "generado": "15-09-2026 13:20"
 }
