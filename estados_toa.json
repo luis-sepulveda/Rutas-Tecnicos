@@ -1,158 +1,11 @@
 {
-  "actualizado": "2026-09-14T16:13:04",
+  "actualizado": "2026-09-15T09:14:55",
   "resumen": {
-    "reagendada": 6,
-    "sin informacion": 1,
-    "cancelada": 1
+    "sin informacion": 1
   },
   "estados": {
-    "1-3NRCP2BD": {
-      "tec": "CESAR MENA OLIVEROS",
-      "cat": "Alta 1 Play",
-      "franja_original": "16-19",
-      "d": "EL AGUILA 2664, QUILPUE",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NRCP2BD - 16-19-AltaMar, 15 Sep",
-      "franja_nueva": "16-19",
-      "previas": [
-        {
-          "estado": "reagendada",
-          "color": "rgb(255, 222, 0)",
-          "ot": "1-3NRC47DW",
-          "franja": "16-19",
-          "texto": "1-3NRC47DW - 16-19-Migración"
-        },
-        {
-          "estado": "reagendada",
-          "color": "rgb(255, 222, 0)",
-          "ot": "1-3NRCZUOA",
-          "franja": "16-19",
-          "texto": "1-3NRCZUOA - 16-19-Migración"
-        },
-        {
-          "estado": "cancelada",
-          "color": "rgb(128, 255, 128)",
-          "ot": "1-3NRCXQNN",
-          "franja": "16-19",
-          "texto": "1-3NRCXQNN - 16-19-Modificación de ServicioSab, 12 Sep"
-        },
-        {
-          "estado": "gestionada",
-          "color": "rgb(96, 206, 206)",
-          "ot": "1-3NRC681F",
-          "franja": "13-16",
-          "texto": "1-3NRC681F - 13-16-MigraciónSab, 12 Sep"
-        },
-        {
-          "estado": "?",
-          "color": "rgb(121, 182, 235)",
-          "ot": "1-3NRCKR7V",
-          "franja": "10-13",
-          "texto": "1-3NRCKR7V - 10-13-MigraciónSab, 12 Sep"
-        },
-        {
-          "estado": "?",
-          "color": "rgb(121, 182, 235)",
-          "ot": "1-3NRC8A33",
-          "franja": "10-13",
-          "texto": "1-3NRC8A33 - 10-13-ReparaciónSab, 12 Sep"
-        },
-        {
-          "estado": "?",
-          "color": "rgb(121, 182, 235)",
-          "ot": "1-3NRCODXU",
-          "franja": "13-16",
-          "texto": "1-3NRCODXU - 13-16-MigraciónVie, 11 Sep"
-        },
-        {
-          "estado": "cancelada",
-          "color": "rgb(128, 255, 128)",
-          "ot": "1-3NRC3ZTO",
-          "franja": "13-16",
-          "texto": "1-3NRC3ZTO - 13-16-ReparaciónJue, 10 Sep"
-        },
-        {
-          "estado": "cancelada",
-          "color": "rgb(128, 255, 128)",
-          "ot": "1-3NRCCBFW",
-          "franja": "10-13",
-          "texto": "1-3NRCCBFW - 10-13-ReparaciónJue, 10 Sep"
-        },
-        {
-          "estado": "reagendada",
-          "color": "rgb(255, 222, 0)",
-          "ot": "1-3NTBHX56",
-          "franja": "10-13",
-          "texto": "1-3NTBHX56 - 10-13-MigraciónMie, 16 Sep"
-        },
-        {
-          "estado": "reagendada",
-          "color": "rgb(255, 222, 0)",
-          "ot": "1-3NRCP2BD",
-          "franja": "16-19",
-          "texto": "1-3NRCP2BD - 16-19-AltaMar, 15 Sep"
-        },
-        {
-          "estado": "reagendada",
-          "color": "rgb(255, 222, 0)",
-          "ot": "1-3NRC47DW",
-          "franja": "16-19",
-          "texto": "1-3NRC47DW - 16-19-Migración"
-        },
-        {
-          "estado": "reagendada",
-          "color": "rgb(255, 222, 0)",
-          "ot": "1-3NRCZUOA",
-          "franja": "16-19",
-          "texto": "1-3NRCZUOA - 16-19-Migración"
-        },
-        {
-          "estado": "gestionada",
-          "color": "rgb(96, 206, 206)",
-          "ot": "1-3NRC681F",
-          "franja": "13-16",
-          "texto": "1-3NRC681F - 13-16-MigraciónSab, 12 Sep"
-        },
-        {
-          "estado": "?",
-          "color": "rgb(121, 182, 235)",
-          "ot": "1-3NRCKR7V",
-          "franja": "10-13",
-          "texto": "1-3NRCKR7V - 10-13-MigraciónSab, 12 Sep"
-        },
-        {
-          "estado": "?",
-          "color": "rgb(121, 182, 235)",
-          "ot": "1-3NT9QBYQ",
-          "franja": "13-16",
-          "texto": "1-3NT9QBYQ - 13-16-Modificación de ServicioSab, 12 Sep"
-        },
-        {
-          "estado": "gestionada",
-          "color": "rgb(96, 206, 206)",
-          "ot": "1-3NS43XIW",
-          "franja": "13-16",
-          "texto": "1-3NS43XIW - 13-16-MigraciónSab, 12 Sep"
-        },
-        {
-          "estado": "cancelada",
-          "color": "rgb(128, 255, 128)",
-          "ot": "1-3NS22RWG",
-          "franja": "16-19",
-          "texto": "1-3NS22RWG - 16-19-AltaVie, 11 Sep"
-        },
-        {
-          "estado": "?",
-          "color": "rgb(121, 182, 235)",
-          "ot": "1-3NSOJ5KZ",
-          "franja": "13-16",
-          "texto": "1-3NSOJ5KZ - 13-16-Modificación de ServicioVie, 11 Sep"
-        }
-      ]
-    },
-    "1-3NT5CO4B": {
-      "tec": "ELIAS ARMIJO L",
+    "1-3NU0IE71": {
+      "tec": "DANIEL NAVARRETE E",
       "cat": "Alta 2 Play",
       "franja_original": "10-13",
       "d": "LOS PEUCOS 2448, QUILPUE",
@@ -163,13 +16,6 @@
         "aviso": "historial de la direccion, NO es el estado de esta orden",
         "filas": [
           {
-            "estado": "reagendada",
-            "color": "rgb(255, 222, 0)",
-            "ot": "1-3NU0IE71",
-            "franja": "10-13",
-            "texto": "1-3NU0IE71 - 10-13-AltaMar, 15 Sep"
-          },
-          {
             "estado": "gestionada",
             "color": "rgb(96, 206, 206)",
             "ot": "1-3NSO8OYZ",
@@ -178,66 +24,6 @@
           }
         ]
       }
-    },
-    "1-3NU0IJFE": {
-      "tec": "ELIAS ARMIJO L",
-      "cat": "Migración 3 Play",
-      "franja_original": "10-13",
-      "d": "PRINCIPAL 861, QUILPUE",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NU0IJFE - 13-16-MigraciónMar, 15 Sep",
-      "franja_nueva": "13-16"
-    },
-    "1-3NT54RYR": {
-      "tec": "JOEL GUSTAVE GUSTA",
-      "cat": "Migración 2 Play",
-      "franja_original": "13-16",
-      "d": "CONDELL 377, VILLA ALEMANA",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NT54RYR - 16-19-MigraciónMar, 15 Sep",
-      "franja_nueva": "16-19"
-    },
-    "1-3NT6OTFJ": {
-      "tec": "JOSE GALAZ D",
-      "cat": "Migración 1 Play",
-      "franja_original": "13-16",
-      "d": "VOLCAN OLLAGUE 2101, QUILPUE",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NT6OTFJ - 13-16-MigraciónMar, 15 Sep",
-      "franja_nueva": "13-16"
-    },
-    "1-3NT2DA3Z": {
-      "tec": "JOSE PEREZ RANGEL",
-      "cat": "Migración 2 Play",
-      "franja_original": "16-19",
-      "d": "ARAYA 1570, VILLA ALEMANA",
-      "estado": "cancelada",
-      "color": "rgb(128, 255, 128)",
-      "detalle": "1-3NT2DA3Z - 16-19-MigraciónLun, 21 Sep",
-      "franja_nueva": "16-19"
-    },
-    "1-3NT5XY61": {
-      "tec": "LUIS CASTRO TORRES",
-      "cat": "Alta 2 Play",
-      "franja_original": "16-19",
-      "d": "ALTO MANQUEHUE 3071, QUILPUE",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NT5XY61 - 16-19-AltaMie, 16 Sep",
-      "franja_nueva": "16-19"
-    },
-    "1-3NU3EQE5": {
-      "tec": "MARCO PEREZ G",
-      "cat": "Alta 1 Play",
-      "franja_original": "16-19",
-      "d": "LAS PATAGUAS 1310, VILLA ALEMANA",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NU3EQE5 - 16-19-AltaMar, 15 Sep",
-      "franja_nueva": "16-19"
     }
   }
 }
