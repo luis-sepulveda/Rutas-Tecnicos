@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-15T12:46:02",
+  "actualizado": "2026-09-15T13:16:38",
   "resumen": {
     "reagendada": 5,
     "sin informacion": 3
@@ -22,8 +22,8 @@
       "d": "YUNGAY 871 CASA B, VILLA ALEMANA",
       "estado": "reagendada",
       "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NUJW4LO - 13-16-AltaMie, 16 Sep",
-      "franja_nueva": "13-16"
+      "detalle": "1-3NUJW4LO - 16-19-AltaMie, 16 Sep",
+      "franja_nueva": "16-19"
     },
     "1-3NU0IE71": {
       "tec": "DANIEL NAVARRETE E",
