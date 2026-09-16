@@ -5691,23 +5691,23 @@
    }
   },
   "16-09-2026": {
-   "hasta": "13:40",
-   "actividades": 178,
+   "hasta": "13:45",
+   "actividades": 179,
    "tecnicos": 36,
    "estados": {
-    "Completado": 46,
-    "No Realizada": 25,
-    "Iniciado": 25,
+    "Completado": 47,
+    "No Realizada": 26,
     "Pendiente": 70,
-    "en ruta": 5,
+    "Iniciado": 25,
+    "en ruta": 4,
     "Cancelado": 6,
     "Suspendido": 1
    },
-   "rgu": 245.0,
+   "rgu": 246.5,
    "caidas_total": 11,
    "caidas_activas": 11,
    "caidas_resueltas": 0,
-   "nuevas": 28,
+   "nuevas": 29,
    "al_bucket": 20,
    "repetidas": 28,
    "reagendadas": 7,
@@ -5814,6 +5814,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NVWQZXY",
+      "tec": "LUIS MARTIN NUÑEZ",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "17:37",
+      "d": "DECIMA 734 DEPTO L1, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NVW1HV8",
       "tec": "YENDER BOSCAN CADENAS",
@@ -6252,7 +6261,7 @@
       "o": "1-3NV3G4DG",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "16:06",
+      "hi": "16:18",
       "d": "BYERS 627, QUILPUE",
       "e": "Pendiente",
       "tec": "JORDAN ROA PEREZ",
@@ -6288,9 +6297,9 @@
       "o": "1-3NUZFQND",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "13:49",
+      "hi": "13:41",
       "d": "PEDRO LAGOS 299 CASA B, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "LEONEL HERNÁNDEZ OJE",
       "visitas": 1,
       "ult_fecha": "15-09-2026",
@@ -6480,5 +6489,5 @@
    }
   }
  },
- "generado": "16-09-2026 13:40"
+ "generado": "16-09-2026 13:45"
 }
