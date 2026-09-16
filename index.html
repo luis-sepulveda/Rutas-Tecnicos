@@ -2705,6 +2705,11 @@ function actividadesDeEstado(est){
       const e = String(p.e || 'Pendiente').trim() || 'Pendiente';
       if(est === '__TODAS__'
          || (est === '__CANCSUSP__' && (e === 'Cancelado' || e === 'Suspendido'))
+         /* Las que siguen abiertas: pendiente, iniciado y en ruta. Es lo que
+            cuenta la caja "sin cerrar" del panel; sin esto la caja decia 112
+            y al abrirla mostraba solo las 82 en Pendiente. */
+         || (est === '__ABIERTAS__'
+             && (e === 'Pendiente' || e === 'Iniciado' || e === 'en ruta'))
          || e === est){
         out.push({tec:t, p:p, e:e});
       }
@@ -2924,7 +2929,9 @@ function renderEst(){
   const lista = actividadesDeEstado(estActual);
   const total = lista.length;
   const nombre = estActual === '__TODAS__' ? 'Todas las actividades'
-               : (estActual === '__CANCSUSP__' ? 'Canceladas y suspendidas' : estActual);
+               : estActual === '__CANCSUSP__' ? 'Canceladas y suspendidas'
+               : estActual === '__ABIERTAS__' ? 'Sin cerrar (pendientes, iniciadas y en ruta)'
+               : estActual;
 
   const tit = document.getElementById('estTitulo');
   tit.textContent = '📊 ' + nombre + ' (' + total + ')';
@@ -3319,7 +3326,11 @@ function pintarPortada(){
   const caidas  = nCaidas();
   const nuevas  = contar(nuevasDelDia()).nuevita;
   const repe    = nRepe();
-  const reca    = filas.filter(o => o.reag).length;
+  /* El mapa no cuenta las ordenes con marca 'reag', cuenta las RECAIDAS
+     VIVAS: una direccion que se cayo hoy y que ademas tiene otra orden
+     todavia abierta, o sea donde aun se puede intervenir. Es lo que muestra
+     el boton del mapa y hay que mostrar lo mismo. */
+  const reca    = nRecaidasVivas();
   const sinComp = tecnicosSinCompletar().length;
 
   /* Lo que queda sin cerrar en cada franja: dice como viene el resto del dia. */
@@ -3405,7 +3416,7 @@ function pintarPortada(){
     +     mini(filas.length, 'actividades', 'e-tot', '__TODAS__')
     +     mini(comp, 'completadas', 'e-comp', 'Completado')
     +     mini(nore, 'no realizadas', 'e-nore', 'No Realizada')
-    +     mini(pend, 'pendientes', 'e-pend', 'Pendiente')
+    +     mini(pend, 'sin cerrar', 'e-pend', '__ABIERTAS__')
     +     mini(canc, 'canceladas', 'e-canc', '__CANCSUSP__')
     +   '</div>'
     + '</div>'
