@@ -5691,14 +5691,14 @@
    }
   },
   "16-09-2026": {
-   "hasta": "14:00",
+   "hasta": "14:05",
    "actividades": 186,
    "tecnicos": 36,
    "estados": {
-    "Completado": 53,
-    "No Realizada": 26,
-    "Iniciado": 25,
-    "Pendiente": 72,
+    "Completado": 54,
+    "No Realizada": 27,
+    "Iniciado": 24,
+    "Pendiente": 71,
     "Cancelado": 6,
     "Suspendido": 1,
     "en ruta": 3
@@ -5857,7 +5857,7 @@
       "f": "13-16",
       "hi": "13:21",
       "d": "PJE LAS ROSAS 1554 CASA B, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NVVZIRC",
@@ -6028,7 +6028,7 @@
       "f": "13-16",
       "hi": "13:00",
       "d": "RAMON ANGEL JARA 1362, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NVBUC70",
@@ -6204,7 +6204,7 @@
       "o": "1-3NV3G4DG",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:09",
+      "hi": "15:09",
       "d": "BYERS 627, QUILPUE",
       "e": "Pendiente",
       "tec": "ELIAS ARMIJO L",
@@ -6228,7 +6228,7 @@
       "o": "1-3NRCP2BD",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:19",
+      "hi": "18:36",
       "d": "EL AGUILA 2664, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -6480,7 +6480,7 @@
       "o": "1-3NRCP2BD",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:19",
+      "hi": "18:36",
       "d": "EL AGUILA 2664, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -6510,7 +6510,7 @@
       "o": "1-3NUJW4LO",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:48",
+      "hi": "17:28",
       "d": "YUNGAY 871 CASA B, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -6540,5 +6540,5 @@
    }
   }
  },
- "generado": "16-09-2026 14:00"
+ "generado": "16-09-2026 14:05"
 }
