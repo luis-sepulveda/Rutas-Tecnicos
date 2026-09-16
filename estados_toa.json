@@ -1,10 +1,48 @@
 {
-  "actualizado": "2026-09-16T10:40:09",
+  "actualizado": "2026-09-16T11:10:45",
   "resumen": {
-    "reagendada": 2,
-    "sin informacion": 2
+    "sin informacion": 5,
+    "reagendada": 4
   },
   "estados": {
+    "1-3NVAVKGC": {
+      "tec": "CESAR MENA OLIVEROS",
+      "cat": "Migración 2 Play",
+      "franja_original": "13-16",
+      "d": "PJE 1 431, QUILPUE",
+      "estado": "sin informacion",
+      "nota": "la OT ya no existe en TOA",
+      "contexto": {
+        "buscado": "PJE 1 431",
+        "aviso": "historial de la direccion, NO es el estado de esta orden",
+        "filas": [
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3N4WP0JB",
+            "franja": "10-13",
+            "texto": "1-3N4WP0JB - 10-13-MigraciónMie, 12 Ago"
+          },
+          {
+            "estado": "cancelada",
+            "color": "rgb(128, 255, 128)",
+            "ot": "1-3MB79Y6U",
+            "franja": "16-19",
+            "texto": "1-3MB79Y6U - 16-19-ReparaciónSab, 27 Jun"
+          }
+        ]
+      }
+    },
+    "1-3NVE6XMT": {
+      "tec": "FELIPE SILVA R",
+      "cat": "Reparación",
+      "franja_original": "13-16",
+      "d": "FEDERICO BARREDO 556 EDIF. B-4 DEPTO 202, QUILPUE",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3NVE6XMT - 16-19-ReparaciónJue, 17 Sep",
+      "franja_nueva": "16-19"
+    },
     "1-3NVGOMXI": {
       "tec": "GEEYSER PEREZ O",
       "cat": "Modificación de Servicio",
@@ -14,6 +52,62 @@
       "color": "rgb(255, 222, 0)",
       "detalle": "1-3NVGOMXI - 16-19-Modificación de ServicioJue, 17 Sep",
       "franja_nueva": "16-19"
+    },
+    "1-3NVD2AC0": {
+      "tec": "JEAN ROODLY ORELIEN",
+      "cat": "Alta 1 Play",
+      "franja_original": "13-16",
+      "d": "VIA UNO SIETE 2065 EDIF. F DEPTO 23, VILLA ALEMANA",
+      "estado": "sin informacion",
+      "nota": "la OT ya no existe en TOA",
+      "contexto": {
+        "buscado": "VIA UNO SIETE 2065",
+        "aviso": "historial de la direccion, NO es el estado de esta orden",
+        "filas": [
+          {
+            "estado": "reagendada",
+            "color": "rgb(255, 222, 0)",
+            "ot": "1-3NTBG6IT",
+            "franja": "13-16",
+            "texto": "1-3NTBG6IT - 13-16-MigraciónSab, 26 Sep"
+          },
+          {
+            "estado": "reagendada",
+            "color": "rgb(255, 222, 0)",
+            "ot": "1-3NU411PC",
+            "franja": "10-13",
+            "texto": "1-3NU411PC - 10-13-MigraciónJue, 24 Sep"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NUBPC7P",
+            "franja": "16-19",
+            "texto": "1-3NUBPC7P - 16-19-AltaMar, 15 Sep"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NRZ1SQW",
+            "franja": "10-13",
+            "texto": "1-3NRZ1SQW - 10-13-MigraciónMar, 15 Sep"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NU96GXV",
+            "franja": "10-13",
+            "texto": "1-3NU96GXV - 10-13-MigraciónMar, 15 Sep"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NU4TI69",
+            "franja": "16-19",
+            "texto": "1-3NU4TI69 - 16-19-MigraciónMar, 15 Sep"
+          }
+        ]
+      }
     },
     "1-3NV20F3F": {
       "tec": "JOSE GALAZ D",
@@ -73,6 +167,72 @@
       "color": "rgb(255, 222, 0)",
       "detalle": "1-3NUXAF0A - 16-19-AltaJue, 17 Sep",
       "franja_nueva": "16-19"
+    },
+    "1-3NV1ZR5Q": {
+      "tec": "MATÍAS JAQUE AG",
+      "cat": "Alta 1 Play",
+      "franja_original": "13-16",
+      "d": "GERONA 41, VILLA ALEMANA",
+      "estado": "sin informacion",
+      "nota": "la OT ya no existe en TOA",
+      "contexto": {
+        "buscado": "GERONA 41",
+        "aviso": "historial de la direccion, NO es el estado de esta orden",
+        "filas": [
+          {
+            "estado": "cancelada",
+            "color": "rgb(128, 255, 128)",
+            "ot": "1-3NTBAYWZ",
+            "franja": "10-13",
+            "texto": "1-3NTBAYWZ - 10-13-AltaLun, 14 Sep"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NU1U358",
+            "franja": "13-16",
+            "texto": "1-3NU1U358 - 13-16-AltaLun, 14 Sep"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NTE3AJ7",
+            "franja": "10-13",
+            "texto": "1-3NTE3AJ7 - 10-13-AltaLun, 14 Sep"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NSUHSWF",
+            "franja": "10-13",
+            "texto": "1-3NSUHSWF - 10-13-AltaSab, 12 Sep"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NS1VY1E",
+            "franja": "13-16",
+            "texto": "1-3NS1VY1E - 13-16-AltaVie, 11 Sep"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NOA1VK9",
+            "franja": "10-13",
+            "texto": "1-3NOA1VK9 - 10-13-AltaSab, 5 Sep"
+          }
+        ]
+      }
+    },
+    "1-3NVI20YY": {
+      "tec": "YENDER BOSCAN CADENAS",
+      "cat": "Reparación",
+      "franja_original": "13-16",
+      "d": "PJE ANGAMOS 275 CASA L, QUILPUE",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3NVI20YY - 10-13-ReparaciónLun, 21 Sep",
+      "franja_nueva": "10-13"
     }
   }
 }
