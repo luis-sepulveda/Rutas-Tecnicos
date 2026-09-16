@@ -5691,13 +5691,13 @@
    }
   },
   "16-09-2026": {
-   "hasta": "14:35",
+   "hasta": "14:40",
    "actividades": 189,
    "tecnicos": 36,
    "estados": {
-    "Completado": 64,
+    "Completado": 65,
     "No Realizada": 31,
-    "en ruta": 3,
+    "en ruta": 2,
     "Pendiente": 65,
     "Iniciado": 19,
     "Cancelado": 6,
@@ -6224,7 +6224,7 @@
       "f": "10-13",
       "hi": "11:21",
       "d": "LAS ROSAS 670 CASA A, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "FELIPE SILVA R",
       "visitas": 1,
       "ult_fecha": "16-09-2026",
@@ -6234,7 +6234,7 @@
       "o": "1-3NRCP2BD",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:59",
+      "hi": "19:00",
       "d": "EL AGUILA 2664, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -6354,9 +6354,9 @@
       "o": "1-3NV3G4DG",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:34",
+      "hi": "14:39",
       "d": "BYERS 627, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "KEVIN TAPIA RETAMAL",
       "visitas": 1,
       "ult_fecha": "15-09-2026",
@@ -6366,7 +6366,7 @@
       "o": "1-3NV8ENUK",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "19:26",
+      "hi": "19:31",
       "d": "ALEMPARTE 277 CASA 9, QUILPUE",
       "e": "Pendiente",
       "tec": "KEVIN TAPIA RETAMAL",
@@ -6498,7 +6498,7 @@
       "o": "1-3NRCP2BD",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:59",
+      "hi": "19:00",
       "d": "EL AGUILA 2664, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -6558,5 +6558,5 @@
    }
   }
  },
- "generado": "16-09-2026 14:35"
+ "generado": "16-09-2026 14:40"
 }
