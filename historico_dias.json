@@ -5691,25 +5691,25 @@
    }
   },
   "16-09-2026": {
-   "hasta": "14:20",
-   "actividades": 187,
+   "hasta": "14:25",
+   "actividades": 188,
    "tecnicos": 36,
    "estados": {
-    "Completado": 57,
+    "Completado": 58,
     "No Realizada": 30,
-    "en ruta": 6,
-    "Pendiente": 65,
-    "Iniciado": 22,
+    "en ruta": 5,
+    "Pendiente": 64,
+    "Iniciado": 24,
     "Cancelado": 6,
     "Suspendido": 1
    },
-   "rgu": 257.0,
+   "rgu": 256.2,
    "caidas_total": 11,
    "caidas_activas": 11,
    "caidas_resueltas": 0,
-   "nuevas": 33,
-   "al_bucket": 20,
-   "repetidas": 30,
+   "nuevas": 34,
+   "al_bucket": 21,
+   "repetidas": 29,
    "reagendadas": 7,
    "detalle": {
     "caidas": [
@@ -5814,6 +5814,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NVXYBAA",
+      "tec": "ELIAS ARMIJO L",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "14:23",
+      "d": "LAUTARO 477 CASA 3, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3NVXDX1R",
       "tec": "JOSE PEREZ RANGEL",
@@ -6378,18 +6387,6 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3NUO6MSD",
-      "cat": "Reparación",
-      "f": "16-19",
-      "hi": "17:59",
-      "d": "MATURANA 510, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "MARCELO GÓMEZ GÓME",
-      "visitas": 1,
-      "ult_fecha": "14-09-2026",
-      "ult_cierre": "Sin moradores"
-     },
-     {
       "o": "1-3NV7ACWX",
       "cat": "Alta 1 Play",
       "f": "13-16",
@@ -6417,9 +6414,9 @@
       "o": "1-3NVAM98E",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:28",
+      "hi": "14:23",
       "d": "MARINERO FUENTEALBA 051, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "NICOLAS MOYANO R",
       "visitas": 1,
       "ult_fecha": "17-08-2026",
@@ -6549,5 +6546,5 @@
    }
   }
  },
- "generado": "16-09-2026 14:20"
+ "generado": "16-09-2026 14:25"
 }
