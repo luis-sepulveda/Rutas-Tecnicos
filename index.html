@@ -573,10 +573,190 @@
   .rvis .rv .rf { color:#93c5fd; font-family:'Consolas',monospace; flex-shrink:0; }
   .rvis .rv .rc { color:#fca5a5; }
   .rvis .rv .rgsa { background:#1e3a5f; color:#93c5fd; border-radius:4px; padding:0 5px; font-size:10px; }
+
+  /* ============ PORTADA ============
+     Pantalla de entrada, en el mismo estilo claro del modulo de
+     actividades: fondo gris muy claro, tarjetas blancas y el color
+     reservado para los datos. El mapa sigue siendo oscuro: son dos
+     contextos distintos y conviene que se noten distintos. */
+  #portada { position:fixed; inset:0; overflow:auto; z-index:5;
+             background:#f1f5f9; color:#25384d;
+             font-family:'DM Sans',system-ui,sans-serif; }
+  .pz-in { max-width:1120px; margin:0 auto; padding:26px 22px 60px; }
+  .pz-cab h2 { font-size:21px; font-weight:700; margin:0; letter-spacing:-.3px;
+               color:#334c68; }
+  .pz-cab .sub { font-size:13px; color:#5f7386; margin-top:3px; }
+  .pz-cab { margin-bottom:20px; }
+
+  .pz-tarj { background:#fff; border:1px solid #d3dde6; border-radius:14px;
+             padding:22px 24px; box-shadow:0 1px 2px rgba(20,45,70,.06);
+             }
+  .pz-tarj .grande { font-size:44px; font-weight:700; line-height:1.05;
+                     margin:10px 0 2px; color:#1f3d5c; }
+  .pz-tarj .bajo { font-size:13px; color:#5f7386; }
+  .pz-tarj .mini { display:flex; gap:10px; flex-wrap:wrap; margin-top:18px;
+                   padding-top:16px; border-top:1px solid #eef2f6; }
+  /* Cada estado en su propia caja, con el borde del color que le toca.
+     El mismo color que usa su tramo en la barra de arriba. */
+  .pz-tarj .mini { display:grid; grid-template-columns:repeat(auto-fit,minmax(104px,1fr));
+                   gap:10px; }
+  .pz-tarj .mini > * { background:#fff; border:1px solid #d3dde6;
+                       border-radius:10px; padding:11px 13px; font-family:inherit;
+                       text-align:left; }
+  .pz-tarj .mini button { cursor:pointer; transition:.12s; }
+  .pz-tarj .mini button:hover { transform:translateY(-1px);
+                                box-shadow:0 2px 6px rgba(20,45,70,.08); }
+  .pz-tarj .mini .n { font-size:21px; font-weight:700; line-height:1.1; }
+  .pz-tarj .mini .l { font-size:11.5px; color:#5f7386; margin-top:2px; }
+
+  .e-tot  { border-color:#b9c6d4 !important; background:#f6f9fc !important; }
+  .e-tot  .n { color:#1f3d5c; }
+  .e-comp { border-color:#9fd8c6 !important; }
+  .e-comp .n { color:#0f766e; }
+  .e-nore { border-color:#f2b3b3 !important; }
+  .e-nore .n { color:#c0392f; }
+  .e-pend { border-color:#a9c9ee !important; }
+  .e-pend .n { color:#2563eb; }
+  .e-canc { border-color:#cfd8e3 !important; }
+  .e-canc .n { color:#8494a6; }
+  .pz-curso { font-size:10.5px; font-weight:700; padding:2px 9px;
+              border-radius:999px; background:#fef3c7; color:#92400e;
+              margin-left:9px; vertical-align:3px; }
+
+  .pz-mapa { width:100%; padding:16px; font-size:15px; font-weight:600;
+             background:#16232f; border:1px solid #16232f; color:#fff;
+             border-radius:12px; cursor:pointer; margin-bottom:24px;
+             font-family:inherit; }
+  .pz-mapa:hover { background:#24374a; }
+
+  .pz-rot { font-size:12.5px; color:#5f7386; font-weight:600;
+            margin:0 0 10px 2px; }
+
+  /* Barra del dia: el reparto de estados en una sola linea. Ocupa el ancho
+     que antes quedaba vacio y deja ver de un vistazo como va la jornada. */
+  .pz-barrad { display:flex; height:12px; border-radius:6px; overflow:hidden;
+               margin:18px 0 0; background:#eef2f6; }
+  .pz-barrad span { display:flex; align-items:center; justify-content:center;
+                    font-size:11.5px; font-weight:700; color:#fff; }
+  /* Dos lineas de contexto bajo la barra: lo que queda por franja y como
+     va cada comuna. Datos que ya existen pero estaban solo dentro del mapa. */
+  /* Cabecera de la tarjeta: la fecha a la izquierda y las comunas a la
+     derecha, que antes quedaban perdidas abajo. */
+  .pz-cabt { display:flex; align-items:center; justify-content:space-between;
+             gap:18px; flex-wrap:wrap; padding-bottom:14px;
+             border-bottom:1px solid #eef2f6; margin-bottom:16px; }
+  .pz-cabt .dia { font-size:19px; font-weight:700; }
+  .pz-com { display:flex; gap:20px; }
+  .pz-com .c { text-align:right; }
+  .pz-com .c .p { font-size:16px; font-weight:700; color:#1f3d5c; }
+  .pz-com .c .l { font-size:11px; color:#93a3b4; }
+
+  /* El porcentaje a la izquierda y las franjas a la derecha: asi se ocupa
+     el ancho que antes quedaba en blanco. */
+  .pz-hero { display:flex; align-items:flex-end; justify-content:space-between;
+             gap:26px; flex-wrap:wrap; }
+  .pz-rotf { font-size:11px; color:#93a3b4; margin-bottom:6px; text-align:right; }
+  .pz-fr { display:flex; gap:10px; }
+  .pz-fr .f { background:#f6f9fc; border:1px solid #e4ecf4; border-radius:9px;
+              padding:8px 13px; min-width:86px; }
+  .pz-fr .f .h { font-size:11px; color:#93a3b4; }
+  .pz-fr .f .q { font-size:17px; font-weight:700; color:#1f3d5c; margin-top:1px; }
+  .pz-fr .f .q span { font-size:11px; font-weight:400; color:#93a3b4; }
+  .pz-fr .f.libre .q { color:#b9c6d4; }
+  .pz-dos { display:block; }
+  .pz-tarj { margin-bottom:22px; }
+
+  /* Los paneles pasan a columna: el numero manda y la etiqueta acompana. */
+  .pz-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+  @media (max-width:900px){ .pz-grid { grid-template-columns:repeat(2,1fr); } }
+  .pz-b { background:#fff; border:1px solid #d3dde6; color:#25384d;
+          border-radius:10px; padding:13px 15px; font-size:13.5px; text-align:left;
+          cursor:pointer; font-family:inherit; display:flex; align-items:center;
+          gap:11px; box-shadow:0 1px 2px rgba(20,45,70,.05); transition:.12s;
+          white-space:nowrap; }
+  .pz-b:hover { transform:translateY(-1px);
+                box-shadow:0 2px 6px rgba(20,45,70,.08); }
+  .pz-b .v { margin-left:auto; font-size:19px; font-weight:700; color:#1f3d5c; }
+  .pz-b .v.cero { color:#b9c6d4; font-weight:400; }
+  .pz-b .v.flecha { font-size:15px; color:#b9c6d4; font-weight:400; }
+  a.pz-b { text-decoration:none; }
+
+  /* Reporte historico de direcciones repetidas. Sale del historial_dir.json,
+     que vive en este mismo repo, asi que se muestra aca sin salir a ninguna
+     otra pagina. */
+  .rp-cif { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+            gap:11px; margin-bottom:18px; }
+  .rp-c { background:#fff; border:1px solid #d3dde6; border-radius:11px;
+          padding:13px 15px; }
+  .rp-c .n { font-size:24px; font-weight:700; color:#1f3d5c; }
+  .rp-c .l { font-size:11.5px; color:#5f7386; margin-top:2px; }
+  .rp-c.mal .n { color:#c0392f; }
+  .rp-lista { background:#fff; border:1px solid #d3dde6; border-radius:12px;
+              overflow:hidden; }
+  .rp-f { display:flex; align-items:center; gap:12px; padding:10px 14px;
+          border-bottom:1px solid #eef2f6; cursor:pointer; }
+  .rp-f:hover { background:#f6f9fc; }
+  .rp-f .vv { width:30px; text-align:center; font-weight:700; font-size:13.5px;
+              border-radius:6px; padding:3px 0; background:#eef2f6; color:#25384d; }
+  .rp-f.alta .vv { background:#e05252; color:#fff; }
+  .rp-f.media .vv { background:#facc15; color:#6b4c07; }
+  .rp-f .dd { flex:1; font-size:13px; overflow:hidden; text-overflow:ellipsis;
+              white-space:nowrap; }
+  .rp-f .uu { font-size:11.5px; color:#93a3b4; }
+  .rp-det { background:#f8fafc; padding:4px 14px 12px 56px; }
+  .rp-det table { width:100%; border-collapse:collapse; font-size:12px; }
+  .rp-det td { padding:5px 8px; border-bottom:1px dashed #e4ecf4; }
+  .rp-det .ot { font-family:ui-monospace,Menlo,monospace; font-size:11px; }
+  .rp-det .malo { color:#c0392f; font-weight:600; }
+  .rp-det .der { color:#93a3b4; font-size:11px; }
+  .rp-per { display:flex; gap:7px; flex-wrap:wrap; align-items:center;
+            margin-bottom:16px; }
+  .rp-per .et { font-size:11px; color:#93a3b4; margin-right:3px; }
+  .rp-per button { background:#eef2f6; border:1px solid #d3dde6; color:#5f7386;
+                   border-radius:999px; padding:5px 14px; font-size:12.5px;
+                   cursor:pointer; font-family:inherit; }
+  .rp-per button.on { background:#25384d; border-color:#25384d; color:#fff;
+                      font-weight:600; }
+  .rp-dos { display:grid; grid-template-columns:1fr 1fr; gap:14px;
+            margin-bottom:18px; }
+  @media (max-width:900px){ .rp-dos { grid-template-columns:1fr; } }
+  .rp-caja { background:#fff; border:1px solid #d3dde6; border-radius:12px;
+             padding:15px 18px; }
+  .rp-caja h3 { font-size:13.5px; font-weight:700; margin:0 0 12px; }
+  .rp-lin { display:flex; align-items:center; gap:11px; padding:7px 0;
+            border-bottom:1px solid #eef2f6; }
+  .rp-lin:last-child { border-bottom:0; }
+  .rp-lin .nm { width:170px; font-size:12.5px; flex-shrink:0; }
+  .rp-lin .pista { flex:1; height:15px; background:#eef2f6; border-radius:4px; }
+  .rp-lin .pista span { display:block; height:100%; border-radius:4px; }
+  .rp-lin .vl { width:46px; text-align:right; font-size:13px; font-weight:700; }
+  .rp-lin .pc { width:46px; text-align:right; font-size:12px; color:#93a3b4; }
+  .rp-lin.ojo .nm { color:#c0392f; font-weight:700; }
+  .pz-b.alerta { border-color:#f2b3b3; background:#fdf2f2; }
+  .pz-b.alerta .v { color:#c0392f; }
+
+  /* Barra de tableros: lo primero de la pantalla, siempre igual. */
+  .pz-barra { display:flex; gap:9px; flex-wrap:wrap; align-items:center;
+              padding-bottom:16px; margin-bottom:20px;
+              border-bottom:1px solid #d3dde6; }
+  .pz-barra a { background:#fff; border:1px solid #d3dde6; border-radius:10px;
+                padding:11px 22px; font-size:14px; font-weight:600; color:#16232f;
+                text-decoration:none; cursor:pointer;
+                box-shadow:0 1px 2px rgba(20,45,70,.05); }
+  .pz-barra a:hover { border-color:#9aadbf; }
+  .pz-barra a.aqui { background:#e2ebf4; border-color:#9fb6cc; color:#1f3d5c; }
+  .pz-barra .sep { flex:1; }
+  .pz-barra .upd { font-size:12px; color:#93a3b4; }
+  /* Aviso de monitor detenido. Rojo fijo, no parpadea: el parpadeo cansa y
+     a los diez minutos se deja de ver. */
+  .pz-barra a.alarma { background:#fdecec; border-color:#e05252; color:#a32222; }
+  .pz-barra .upd.mal { color:#c0392f; font-weight:600; }
+  #btnInicio { background:#1e3a5f; border-color:#3b82f6; }
 </style>
 </head>
 <body>
-<header>
+<div id="portada"></div>
+<header id="cab" style="display:none">
   <div class="hfila hfila1">
     <h1>🚐 Módulo de Actividades <span style="font-size:11px;color:#34d399;font-weight:normal;vertical-align:middle;">· regla GSA ✓ (v2)</span></h1>
     <div class="stats" id="lastUpd">⏳ cargando datos...</div>
@@ -595,6 +775,7 @@
              onkeydown="if(event.key==='Enter') hacerBusqueda(); if(event.key==='Escape') this.blur();">
       <button class="btn" onclick="hacerBusqueda()" title="Buscar en todo el tablero">🔎</button>
     </div>
+    <button class="btn" id="btnInicio" onclick="verPortada()">&larr; Inicio</button>
     <span class="hsep"></span>
     <span class="hgrp">ACCIONES</span>
     <div class="hacc">
@@ -616,7 +797,7 @@
     <button class="btn" id="btnRepe" onclick="toggleRepe()">🔁 Direcciones repetidas hoy</button>
   </div>
 </header>
-<div id="map"></div>
+<div id="map" style="display:none"></div>
 <div id="modalCaidas" onclick="if(event.target===this) cerrarCaidas()">
   <div class="mc-box">
     <div class="mc-head">
@@ -2828,7 +3009,422 @@ function popupPrev(p){
     + filas + mas + '</div>';
 }
 
+/* ==================== PORTADA ====================
+   Pantalla de entrada: resumen de la jornada, el mapa detras de un boton
+   y los paneles que antes vivian apretados en la barra de arriba.
+   El mapa se sigue armando igual; solo se muestra cuando se pide. */
+/* Direccion del dashboard de historial por tecnico. Si algun dia cambia
+   el repo, se corrige aca y nada mas. */
+const URL_HISTORIAL = 'https://luis-sepulveda.github.io/historial-completadas/';
+const URL_ACTIVIDADES = 'https://luis-sepulveda.github.io/Actividades-diario/';
+/* El reporte de direcciones repetidas vive dentro del modulo de actividades,
+   no es una pagina aparte. La marca #repetidas lo abre directo. */
+/* Los dos reportes del historial se abren directo con su marca. */
+const URL_SINMORADORES = URL_HISTORIAL + '#sinmoradores';
+const URL_EQUIPO = URL_HISTORIAL + '#equipo';
+
+/* ============ ESTA VIVO EL MONITOR? ============
+   El monitor publica cada 5 minutos, asi que 15 sin novedad ya es senal de
+   que algo paso. Pero solo avisa EN HORARIO: fuera de el esta apagado a
+   proposito, y una alarma que suena toda la noche se deja de mirar.
+   Horario de operacion: lunes a sabado, de 08:45 a 18:00. */
+const MIN_SIN_AVISO = 15;
+const HORA_INICIO = 8 * 60 + 45;
+const HORA_FIN = 18 * 60;
+
+function estadoMonitor(){
+  const ahora = new Date();
+  const minutos = ahora.getHours() * 60 + ahora.getMinutes();
+  const dia = ahora.getDay();
+  const enHorario = dia >= 1 && dia <= 6
+                    && minutos >= HORA_INICIO && minutos <= HORA_FIN;
+  const edad = (typeof FECHA_DATOS !== 'undefined' && FECHA_DATOS)
+    ? Math.round((ahora - FECHA_DATOS) / 60000) : null;
+
+  if(!enHorario) return {alarma:false, texto:'Monitor fuera de horario'};
+  if(edad === null) return {alarma:true, texto:'Sin datos del monitor'};
+  if(edad > MIN_SIN_AVISO)
+    return {alarma:true, texto:'Sin actualizar hace ' + fmtDur(edad)};
+  return {alarma:false, texto:'Actualizado hace ' + fmtDur(edad)};
+}
+
+/* Pinta el aviso sin rehacer la portada entera: solo toca el boton y el
+   texto de la derecha, asi se llama cada minuto sin que parpadee nada. */
+function refrescarAviso(){
+  const btn = document.querySelector('.pz-barra a.aqui');
+  const txt = document.querySelector('.pz-barra .upd');
+  if(!btn || !txt) return;
+  const e = estadoMonitor();
+  btn.classList.toggle('alarma', e.alarma);
+  txt.textContent = e.texto;
+  txt.className = 'upd' + (e.alarma ? ' mal' : '');
+}
+
+const LEYENDAS = ['letrasBox','estadosBox','avisoAtr'];
+function leyendas(ver){
+  LEYENDAS.forEach(id => {
+    const e = document.getElementById(id);
+    if(e) e.style.visibility = ver ? '' : 'hidden';
+  });
+}
+function verMapa(){
+  document.getElementById('portada').style.display = 'none';
+  document.getElementById('cab').style.display = '';
+  document.getElementById('map').style.display = '';
+  leyendas(true);
+  if(window.map && map.invalidateSize) setTimeout(()=>map.invalidateSize(), 60);
+}
+function verPortada(){
+  leyendas(false);
+  document.getElementById('map').style.display = 'none';
+  document.getElementById('cab').style.display = 'none';
+  document.getElementById('portada').style.display = '';
+  pintarPortada();
+  window.scrollTo(0,0);
+}
+/* abre un panel sin salir de la portada */
+function desdePortada(fn){
+  try { fn(); } catch(e){ console.warn('panel:', e); }
+}
+
+/* Reparto de la jornada en una sola barra. Los mismos colores que usan las
+   cifras de abajo, para que se lean juntas. */
+/* Dos datos de contexto que ya existen pero solo se veian dentro del mapa:
+   cuanto queda sin cerrar en cada franja (como viene el resto del dia) y
+   como va cada comuna por separado (el promedio de las dos puede esconder
+   que una anda bien y la otra mal). */
+/* Cuanto queda sin cerrar en cada franja. Va al lado del porcentaje porque
+   es lo que explica ese numero: un 47% a media manana con la tarde entera
+   por delante no es lo mismo que un 47% a las seis. */
+function franjasHTML(porFranja){
+  return '<div class="pz-fr">' + Object.keys(porFranja).sort().map(function(f){
+    const d = porFranja[f];
+    return '<div class="f' + (d.ab ? '' : ' libre') + '"><div class="h">' + f + '</div>'
+         + '<div class="q">' + d.ab + ' <span>de ' + d.t + '</span></div></div>';
+  }).join('') + '</div>';
+}
+
+/* Como va cada comuna. Separadas, porque el promedio de las dos puede
+   esconder que una anda bien y la otra mal. */
+function comunasHTML(porComuna){
+  return '<div class="pz-com">' + Object.keys(porComuna).sort().map(function(c){
+    const p = Math.round(100 * porComuna[c].c / porComuna[c].t);
+    const nom = c.toLowerCase().replace(/(^|\s)\S/g, t => t.toUpperCase());
+    return '<div class="c"><div class="p">' + p + '%</div>'
+         + '<div class="l">' + nom + '</div></div>';
+  }).join('') + '</div>';
+}
+
+function barraDia(comp, nore, pend, canc, total){
+  if(!total) return '';
+  const p = v => 100*v/total;
+  const seg = (v, color, nom) => v
+    ? '<span style="width:'+p(v)+'%;background:'+color+'" title="'+nom+': '+v+'"></span>'
+    : '';
+  return '<div class="pz-barrad">'
+    + seg(comp, '#0f766e', 'Completadas')
+    + seg(nore, '#e05252', 'No realizadas')
+    + seg(pend, '#60a5fa', 'Pendientes')
+    + seg(canc, '#cfd8e3', 'Canceladas')
+    + '</div>';
+}
+
+/* ============ REPORTE HISTORICO DE DIRECCIONES REPETIDAS ============
+   Vive aca y no en el modulo de actividades porque el historial_dir.json es
+   de este repo. Asi se abre sin salir del panel.
+   Los codigos de abajo apuntan a un dato mal ingresado por el mandante: es
+   la parte que sirve para reclamar. */
+const CIERRE_DATO_MALO = ['direccion incorrecta','direccion no encontrada',
+                          'orden mal generada'];
+
+async function verReporteRepe(){
+  const caja = document.getElementById('portada');
+  caja.innerHTML = '<div class="pz-in"><div class="pz-rot">Cargando el historial…</div></div>';
+  if(HIST === null){
+    try { HIST = await bajarHistorial(); }
+    catch(e){
+      caja.innerHTML = '<div class="pz-in">'
+        + '<button class="btn" onclick="pintarPortada()">← Volver</button>'
+        + '<p style="margin-top:14px;color:#c0392f">No se pudo cargar el historial '
+        + 'de direcciones desde el repo.</p></div>';
+      return;
+    }
+  }
+  pintarReporteRepe();
+}
+
+let mesRepe = null;            // null = todo el periodo; si no, 'AAAA-MM'
+const MESES_NOM = ['enero','febrero','marzo','abril','mayo','junio','julio',
+                   'agosto','septiembre','octubre','noviembre','diciembre'];
+
+function mesDeVisita(f){
+  const p = String(f||'').split('-');
+  return p.length === 3 ? p[2] + '-' + p[1] : null;
+}
+function bonitoMes(ym){
+  const p = String(ym).split('-');
+  return MESES_NOM[+p[1]-1] + ' ' + p[0];
+}
+
+function pintarReporteRepe(){
+  const H = HIST || {};
+  const todas = H.dirs || [];
+  const esMalo = v => CIERRE_DATO_MALO.some(k =>
+      String(v.cierre||'').toLowerCase().indexOf(k) >= 0);
+
+  const meses = [...new Set(todas.flatMap(x => (x.v||[]).map(v => mesDeVisita(v.f))))]
+                .filter(Boolean).sort();
+
+  /* Con un mes elegido se cuentan SOLO las visitas de ese mes. Una direccion
+     aparece si tuvo al menos una ahi, y al abrirla se ven todas igual, para
+     no perder el contexto de que la casa ya venia fallando de antes. */
+  const visitasDe = x => mesRepe
+    ? (x.v||[]).filter(v => mesDeVisita(v.f) === mesRepe) : (x.v||[]);
+  const dirs = todas.map(x => Object.assign({}, x, {vm: visitasDe(x)}))
+                    .filter(x => x.vm.length)
+                    .sort((a,b) => b.vm.length - a.vm.length || (b.n||0) - (a.n||0));
+
+  const viajes = dirs.reduce((s,x) => s + x.vm.length, 0);
+  const malas  = dirs.filter(x => x.vm.some(esMalo));
+  const viajesMalos = malas.reduce((s,x) => s + x.vm.length, 0);
+
+  const der = {};
+  let comercial = 0;
+  dirs.forEach(x => x.vm.forEach(v => {
+    const d = String(v.deriv || '').trim();
+    if(!d) return;
+    der[d] = (der[d]||0) + 1;
+    if(d.toLowerCase().indexOf('comercial') >= 0) comercial++;
+  }));
+
+  const porN = {};
+  dirs.forEach(x => { const k = Math.min(x.vm.length, 5); porN[k] = (porN[k]||0)+1; });
+  const etiqueta = k => k >= 5 ? '5 o más visitas' : k + (k === 1 ? ' visita' : ' visitas');
+
+  const lin = (nom, v, max, tot, color, ojo) =>
+    '<div class="rp-lin' + (ojo ? ' ojo' : '') + '"><span class="nm">' + escR(nom) + '</span>'
+    + '<div class="pista"><span style="width:' + (100*v/max) + '%;background:' + color + '"></span></div>'
+    + '<span class="vl">' + v + '</span>'
+    + (tot ? '<span class="pc">' + (Math.round(1000*v/tot)/10).toFixed(1).replace('.', ',') + '%</span>' : '')
+    + '</div>';
+
+  const maxN = Math.max.apply(null, Object.values(porN).concat([1]));
+  const barrasN = Object.keys(porN).sort((a,b) => a-b).map(k =>
+    lin(etiqueta(+k), porN[k], maxN, dirs.length,
+        +k >= 4 ? '#e05252' : +k === 3 ? '#facc15' : '#94a3b8')).join('');
+
+  const maxD = Math.max.apply(null, Object.values(der).concat([1]));
+  const barrasD = Object.entries(der).sort((a,b) => b[1]-a[1]).slice(0,6).map(function(e){
+    const esCom = e[0].toLowerCase().indexOf('comercial') >= 0;
+    return lin(e[0], e[1], maxD, 0, esCom ? '#e05252' : '#94a3b8', esCom);
+  }).join('');
+
+  const chips = '<div class="rp-per"><span class="et">PERÍODO</span>'
+    + '<button class="' + (mesRepe ? '' : 'on') + '" onclick="verMesRepe(\'\')">Todo</button>'
+    + meses.map(m => '<button class="' + (mesRepe === m ? 'on' : '')
+        + '" onclick="verMesRepe(\'' + m + '\')">' + bonitoMes(m) + '</button>').join('')
+    + '</div>';
+
+  const c = (v, l, mal) => '<div class="rp-c' + (mal ? ' mal' : '') + '">'
+    + '<div class="n">' + v + '</div><div class="l">' + l + '</div></div>';
+
+  let lista = '';
+  dirs.slice(0, 60).forEach(function(x, i){
+    const nv = x.vm.length;
+    const cl = nv >= 5 ? ' alta' : nv >= 3 ? ' media' : '';
+    const extra = (mesRepe && (x.n||0) > nv)
+      ? ' <span style="color:#93a3b4;font-size:11.5px">· ' + x.n + ' en total</span>' : '';
+    lista += '<div class="rp-f' + cl + '" onclick="abrirRepe(' + i + ')">'
+      + '<span class="vv">' + nv + '</span>'
+      + '<span class="dd">' + escR(x.d || '') + extra + '</span>'
+      + '<span class="uu">última ' + escR(x.ult || '') + '</span></div>'
+      + '<div id="rp' + i + '" class="rp-det" style="display:none"><table><tbody>'
+      + (x.v || []).map(function(v){
+          const malo = esMalo(v);
+          const delMes = mesRepe && mesDeVisita(v.f) === mesRepe;
+          return '<tr' + (delMes ? ' style="background:#eef4fa"' : '') + '>'
+            + '<td style="width:88px">' + escR(v.f||'') + '</td>'
+            + '<td class="ot">' + escR(v.o||'') + '</td>'
+            + '<td>' + escR(v.tec||'') + '</td>'
+            + '<td>' + escR(v.cat||'') + '</td>'
+            + '<td' + (malo ? ' class="malo"' : '') + '>'
+            +   escR(v.cierre || 'Completada') + '</td>'
+            + '<td class="der">' + escR(v.deriv||'') + '</td></tr>';
+        }).join('')
+      + '</tbody></table></div>';
+  });
+
+  document.getElementById('portada').innerHTML = '<div class="pz-in">'
+    + '<div class="pz-barra"><a onclick="pintarPortada()">← Volver al panel</a>'
+    +   '<span class="sep"></span>'
+    +   '<span class="upd">' + escR(H.desde||'') + ' al ' + escR(H.hasta||'')
+    +   ' · ' + (H.dias||0) + ' días</span></div>'
+    + '<div class="pz-cab"><h2>Direcciones repetidas</h2></div>'
+    + chips
+    + '<div class="rp-cif">'
+    +   c(viajes, 'viajes repetidos')
+    +   c(dirs.length, 'direcciones')
+    +   c(malas.length, 'con dato mal ingresado', true)
+    +   c(viajesMalos, 'viajes a esas', true)
+    +   c(comercial, 'derivadas a Comercial', true)
+    + '</div>'
+    + '<div class="rp-dos">'
+    +   '<div class="rp-caja"><h3>Cuántas veces se visitó cada dirección</h3>'
+    +     barrasN + '</div>'
+    +   '<div class="rp-caja"><h3>A qué área quedó derivada la visita</h3>'
+    +     barrasD + '</div>'
+    + '</div>'
+    + '<div class="pz-rot">Detalle · las ' + Math.min(60, dirs.length)
+    +   ' más visitadas, toca una para ver cada visita</div>'
+    + '<div class="rp-lista">' + lista + '</div></div>';
+  window.scrollTo(0,0);
+}
+
+function verMesRepe(m){
+  mesRepe = m || null;
+  pintarReporteRepe();
+}
+
+function abrirRepe(i){
+  const d = document.getElementById('rp' + i);
+  if(d) d.style.display = d.style.display === 'none' ? 'block' : 'none';
+}
+
+function pintarPortada(){
+  const caja = document.getElementById('portada');
+  if(!caja || caja.style.display === 'none') return;
+  leyendas(false);
+
+  const filas = [];
+  Object.keys(DB || {}).forEach(t => (DB[t] || []).forEach(o => filas.push(o)));
+  const cuenta = e => filas.filter(o => String(o.e || 'Pendiente') === e).length;
+  const comp = cuenta('Completado');
+  const nore = cuenta('No Realizada');
+  const canc = cuenta('Cancelado');
+  const pend = filas.length - comp - nore - canc;
+  const rgu  = filas.reduce((s,o) => s + (parseFloat(o.rgu) || 0), 0);
+
+  const A = (typeof ALERTAS !== 'undefined' && ALERTAS) ? ALERTAS : {};
+  const caidas  = (A.activas || []).length;
+  const nuevas  = (A.nuevas  || []).length;
+  const repe    = new Set(filas.filter(o => o.prev)
+                    .map(o => String(o.d || '').toUpperCase())).size;
+  const reca    = filas.filter(o => o.reag).length;
+  const sinComp = filas.filter(o => !['Completado','No Realizada','Cancelado']
+                    .includes(String(o.e || ''))).length;
+
+  /* Lo que queda sin cerrar en cada franja: dice como viene el resto del dia. */
+  const abierta = o => !['Completado','No Realizada','Cancelado']
+                        .includes(String(o.e || ''));
+  const porFranja = {};
+  filas.forEach(o => {
+    const f = String(o.f || 's/franja');
+    porFranja[f] = porFranja[f] || {t:0, ab:0};
+    porFranja[f].t++;
+    if(abierta(o)) porFranja[f].ab++;
+  });
+
+  /* Como va cada comuna por separado: el promedio de las dos puede esconder
+     que una anda bien y la otra mal. */
+  const porComuna = {};
+  filas.forEach(o => {
+    const c = String(o.d || '').split(',').pop().trim().toUpperCase() || 'SIN CIUDAD';
+    porComuna[c] = porComuna[c] || {t:0, c:0};
+    porComuna[c].t++;
+    if(String(o.e) === 'Completado') porComuna[c].c++;
+  });
+
+  const alBucket = (A.al_bucket !== undefined && A.al_bucket !== null) ? A.al_bucket : 0;
+
+  const upd = (document.getElementById('lastUpd') || {}).textContent || '';
+  let fecha = (typeof FECHA_DATOS !== 'undefined' && FECHA_DATOS)
+    ? FECHA_DATOS.toLocaleDateString('es-CL', {weekday:'long', day:'numeric', month:'long'})
+    : '';
+  if(fecha) fecha = fecha.charAt(0).toUpperCase() + fecha.slice(1);
+
+  const pct = filas.length ? Math.round(1000*comp/filas.length)/10 : 0;
+  const hoy = (typeof FECHA_DATOS !== 'undefined' && FECHA_DATOS)
+    && FECHA_DATOS.toDateString() === new Date().toDateString();
+
+  /* Cada cifra abre el mismo detalle que dentro del mapa: la lista de esas
+     actividades con su reparto por ciudad, franja, tipo y tecnico. El RGU no
+     abre nada porque es un total, no un grupo de ordenes. */
+  const mini = (v, l, clase, est) => est
+    ? '<button class="' + clase + '" onclick="desdePortada(function(){abrirEst(\''+est+'\')})">'
+      + '<div class="n">' + v + '</div><div class="l">' + l + '</div></button>'
+    : '<div class="' + clase + '"><div class="n">' + v + '</div>'
+      + '<div class="l">' + l + '</div></div>';
+
+  const b = (fn, texto, valor, alerta) =>
+    '<button class="pz-b'+(alerta ? ' alerta' : '')+'" onclick="desdePortada('+fn+')">'
+    + texto
+    + '<span class="v'+(valor ? '' : ' cero')+'">'
+    +   (valor !== undefined && valor !== null ? valor : '›') + '</span>'
+    + '</button>';
+
+  caja.innerHTML = '<div class="pz-in">'
+
+    + '<div class="pz-barra">'
+    +   '<a class="aqui" onclick="verMapa()">Rutas</a>'
+    +   '<a href="' + URL_ACTIVIDADES + '" target="_blank">Actividades</a>'
+    +   '<a href="' + URL_HISTORIAL + '" target="_blank">Historial</a>'
+    +   '<span class="sep"></span>'
+    +   '<span class="upd"></span>'
+    + '</div>'
+
+    + '<div class="pz-cab"><h2>Quilpué y Villa Alemana</h2></div>'
+
+    + '<div class="pz-dos"><div class="pz-tarj">'
+
+    +   '<div class="pz-cabt">'
+    +     '<div class="dia">' + (fecha || 'Jornada') +
+          (hoy ? '<span class="pz-curso">en curso</span>' : '') + '</div>'
+    +     comunasHTML(porComuna)
+    +   '</div>'
+
+    +   '<div class="pz-hero">'
+    +     '<div><div class="grande">' + pct.toFixed(1).replace('.', ',') + '%</div>'
+    +       '<div class="bajo">completadas · ' + Object.keys(DB || {}).length +
+            ' técnicos en ruta</div></div>'
+    +     '<div><div class="pz-rotf">Sin cerrar por franja</div>'
+    +       franjasHTML(porFranja) + '</div>'
+    +   '</div>'
+
+    +   barraDia(comp, nore, pend, canc, filas.length)
+
+    +   '<div class="mini">'
+    +     mini(filas.length, 'actividades', 'e-tot', '__TODAS__')
+    +     mini(comp, 'completadas', 'e-comp', 'Completado')
+    +     mini(nore, 'no realizadas', 'e-nore', 'No Realizada')
+    +     mini(pend, 'pendientes', 'e-pend', 'Pendiente')
+    +     mini(canc, 'canceladas', 'e-canc', '__CANCSUSP__')
+    +   '</div>'
+    + '</div>'
+
+    + '<div><div class="pz-rot">Paneles de la jornada</div><div class="pz-grid">'
+    +   b('toggleCaidas', 'Caídas', caidas, caidas > 0)
+    +   b('toggleComp', 'Completitud')
+    +   b('toggleSinCompletar', 'Sin completar', sinComp)
+    +   b('toggleAtrasados', 'Más de 3 horas')
+    +   b('toggleReca', 'Reingresadas', reca)
+    +   b('toggleNuevas', 'Nuevas', nuevas)
+    +   b('toggleNuevas', 'Al bucket', alBucket)
+    +   b('toggleRepe', 'Repetidas', repe)
+    +   b('verReporteRepe', 'Reporte histórico')
+    + '</div>'
+    + '<div class="pz-rot" style="margin-top:20px">Reportes del historial</div>'
+    + '<div class="pz-grid">'
+    +   '<a class="pz-b" href="' + URL_SINMORADORES + '" target="_blank">'
+    +     'Sin moradores semanal<span class="v flecha">›</span></a>'
+    +   '<a class="pz-b" href="' + URL_EQUIPO + '" target="_blank">'
+    +     'Detalle por supervisor<span class="v flecha">›</span></a>'
+    + '</div></div></div></div>';
+
+  refrescarAviso();
+}
+
 function render(mantenerVista){
+  setTimeout(pintarPortada, 0);
   layer.clearLayers();
   const ft = sel.value;
   let show = ft==='__ALL__' ? tecs : [ft];
@@ -3587,6 +4183,8 @@ setInterval(function(){
   // sello se pone ambar aunque no entre ningun refresco
   const lu = document.getElementById('lastUpd');
   if(lu && SELLO_ULTIMO) marcarEdad(lu, SELLO_ULTIMO);
+  // el aviso del monitor tambien avanza solo, aunque no lleguen datos nuevos
+  refrescarAviso();
 }, 60000);
 /* ==================================================================== */
 
