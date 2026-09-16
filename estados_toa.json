@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-16T11:10:45",
+  "actualizado": "2026-09-16T12:05:39",
   "resumen": {
     "sin informacion": 5,
-    "reagendada": 4
+    "reagendada": 5
   },
   "estados": {
     "1-3NVAVKGC": {
@@ -32,6 +32,16 @@
           }
         ]
       }
+    },
+    "1-3NTPMXMG": {
+      "tec": "CRISTOBAL MIRANDA VALENC",
+      "cat": "Alta 2 Play",
+      "franja_original": "16-19",
+      "d": "PJE SANTA MARIA 3, VILLA ALEMANA",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3NTPMXMG - 16-19-AltaJue, 17 Sep",
+      "franja_nueva": "16-19"
     },
     "1-3NVE6XMT": {
       "tec": "FELIPE SILVA R",
