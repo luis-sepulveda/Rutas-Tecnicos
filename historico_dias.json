@@ -5691,24 +5691,44 @@
    }
   },
   "16-09-2026": {
-   "hasta": "09:14",
-   "actividades": 138,
-   "tecnicos": 34,
+   "hasta": "09:24",
+   "actividades": 151,
+   "tecnicos": 35,
    "estados": {
-    "Pendiente": 137,
-    "en ruta": 1
+    "en ruta": 16,
+    "Pendiente": 134,
+    "Iniciado": 1
    },
-   "rgu": 192.0,
-   "caidas_total": 0,
-   "caidas_activas": 0,
+   "rgu": 212.0,
+   "caidas_total": 1,
+   "caidas_activas": 1,
    "caidas_resueltas": 0,
-   "nuevas": 1,
+   "nuevas": 2,
    "al_bucket": 0,
-   "repetidas": 21,
-   "reagendadas": 5,
+   "repetidas": 23,
+   "reagendadas": 6,
    "detalle": {
-    "caidas": [],
+    "caidas": [
+     {
+      "o": "1-3NVGOMXI",
+      "tec": "GEEYSER PEREZ O",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "15:04",
+      "d": "ARAUCANOS 1490, QUILPUE",
+      "e": "Pendiente"
+     }
+    ],
     "nuevas": [
+     {
+      "o": "1-3NVNW2LS",
+      "tec": "RAFAEL VARGAS B",
+      "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "14:00",
+      "d": "ALEMPARTE 277 CASA 10, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NVDTPRS",
       "tec": "JOSE PEREZ RANGEL",
@@ -5724,7 +5744,7 @@
       "o": "1-3NTBHX56",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "10:57",
+      "hi": "10:27",
       "d": "AVENIDA RETIRO 1233, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -5736,7 +5756,7 @@
       "o": "1-3NUZFQND",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:06",
+      "hi": "14:00",
       "d": "PEDRO LAGOS 299 CASA B, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -5772,9 +5792,9 @@
       "o": "1-3NV2SJB7",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:21",
       "d": "LATORRE 15, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "EDGAR VALERO C",
       "visitas": 2,
       "ult_fecha": "15-09-2026",
@@ -5808,7 +5828,7 @@
       "o": "1-3NVD2AC0",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "16:07",
+      "hi": "15:37",
       "d": "VIA UNO SIETE 2065 EDIF. F DEPTO 23, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JEAN ROODLY ORELIEN",
@@ -5820,9 +5840,9 @@
       "o": "1-3NUZZQUN",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:30",
       "d": "GALLEGUILLOS 1421 EDIF. E DEPTO 33, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JOEL GUSTAVE GUSTA",
       "visitas": 1,
       "ult_fecha": "15-09-2026",
@@ -5832,9 +5852,9 @@
       "o": "1-3NT78CUB",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:30",
       "d": "MADRID 667, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JORDAN ROA PEREZ",
       "visitas": 1,
       "ult_fecha": "12-09-2026",
@@ -5844,7 +5864,7 @@
       "o": "1-3NVAJ3WP",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:05",
+      "hi": "14:52",
       "d": "LOS TOPACIOS 1380 EDIF. N2 DEPTO 101, QUILPUE",
       "e": "Pendiente",
       "tec": "JORDAN ROA PEREZ",
@@ -5856,7 +5876,7 @@
       "o": "1-3NV20F3F",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:28",
+      "hi": "14:48",
       "d": "DORIS MARTINEZ 704, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -5904,7 +5924,7 @@
       "o": "1-3NUKDAHR",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "12:43",
+      "hi": "12:13",
       "d": "LAS AMAPOLAS 593 CASA 3A, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -5925,10 +5945,34 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3NT5XY61",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "16:57",
+      "d": "ALTO MANQUEHUE 3071, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LUIS CASTRO TORRES",
+      "visitas": 1,
+      "ult_fecha": "12-09-2026",
+      "ult_cierre": "Cliente reagenda"
+     },
+     {
+      "o": "1-3NUXAF0A",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "17:04",
+      "d": "PJE EL TUCUQUERE 2635, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LUIS MARTIN NUÑEZ",
+      "visitas": 1,
+      "ult_fecha": "14-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3NUO6MSD",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:06",
+      "hi": "17:04",
       "d": "MATURANA 510, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCELO GÓMEZ GÓME",
@@ -5978,7 +6022,7 @@
       "o": "1-3NUJO75P",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "18:05",
+      "hi": "17:34",
       "d": "IGNACIO CARRERA PINTO 1583, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -5988,9 +6032,9 @@
       "o": "1-3NT78CUB",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:30",
       "d": "MADRID 667, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JORDAN ROA PEREZ",
       "desde": "15-09-2026"
      },
@@ -6005,16 +6049,6 @@
       "desde": "15-09-2026"
      },
      {
-      "o": "1-3NS97LTB",
-      "cat": "Alta 1 Play",
-      "f": "10-13",
-      "hi": "12:18",
-      "d": "LAS ROSAS 670 CASA A, QUILPUE",
-      "e": "Pendiente",
-      "tec": "JOSE GALAZ D",
-      "desde": "11-09-2026"
-     },
-     {
       "o": "1-3NRCP2BD",
       "cat": "Alta 1 Play",
       "f": "16-19",
@@ -6023,10 +6057,30 @@
       "e": "Pendiente",
       "tec": "KEVIN TAPIA RETAMAL",
       "desde": "12-09-2026"
+     },
+     {
+      "o": "1-3NT5XY61",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "16:57",
+      "d": "ALTO MANQUEHUE 3071, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LUIS CASTRO TORRES",
+      "desde": "14-09-2026"
+     },
+     {
+      "o": "1-3NS97LTB",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "09:32",
+      "d": "LAS ROSAS 670 CASA A, QUILPUE",
+      "e": "en ruta",
+      "tec": "RAFAEL VARGAS B",
+      "desde": "11-09-2026"
      }
     ]
    }
   }
  },
- "generado": "16-09-2026 09:14"
+ "generado": "16-09-2026 09:24"
 }
