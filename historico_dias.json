@@ -5691,25 +5691,25 @@
    }
   },
   "16-09-2026": {
-   "hasta": "14:30",
-   "actividades": 188,
+   "hasta": "14:35",
+   "actividades": 189,
    "tecnicos": 36,
    "estados": {
-    "Completado": 59,
+    "Completado": 64,
     "No Realizada": 31,
     "en ruta": 3,
-    "Pendiente": 64,
-    "Iniciado": 24,
+    "Pendiente": 65,
+    "Iniciado": 19,
     "Cancelado": 6,
     "Suspendido": 1
    },
-   "rgu": 256.2,
+   "rgu": 257.2,
    "caidas_total": 11,
    "caidas_activas": 11,
    "caidas_resueltas": 0,
    "nuevas": 34,
    "al_bucket": 21,
-   "repetidas": 29,
+   "repetidas": 30,
    "reagendadas": 7,
    "detalle": {
     "caidas": [
@@ -5830,7 +5830,7 @@
       "f": "13-16",
       "hi": "14:08",
       "d": "PORVENIR 1253, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NVXBF20",
@@ -5938,7 +5938,7 @@
       "f": "13-16",
       "hi": "15:03",
       "d": "VALENTIN LETELIER 1137, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NVSQJQ3",
@@ -6198,7 +6198,7 @@
       "o": "1-3NVPXIAF",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:37",
+      "hi": "15:38",
       "d": "RIQUELME 1708, QUILPUE",
       "e": "Pendiente",
       "tec": "DANIEL NAVARRETE E",
@@ -6258,7 +6258,7 @@
       "o": "1-3NVQW8ZK",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "17:54",
+      "hi": "17:58",
       "d": "PJE HUALA 2665, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -6324,6 +6324,18 @@
       "tec": "JOSE GALAZ D",
       "visitas": 1,
       "ult_fecha": "16-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3NUO6MSD",
+      "cat": "Reparación",
+      "f": "16-19",
+      "hi": "16:52",
+      "d": "MATURANA 510, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JUAN ARRIAGADA C",
+      "visitas": 1,
+      "ult_fecha": "14-09-2026",
       "ult_cierre": "Sin moradores"
      },
      {
@@ -6516,7 +6528,7 @@
       "o": "1-3NUJW4LO",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:08",
+      "hi": "18:02",
       "d": "YUNGAY 871 CASA B, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -6546,5 +6558,5 @@
    }
   }
  },
- "generado": "16-09-2026 14:30"
+ "generado": "16-09-2026 14:35"
 }
