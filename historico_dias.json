@@ -5691,26 +5691,26 @@
    }
   },
   "16-09-2026": {
-   "hasta": "15:45",
-   "actividades": 185,
+   "hasta": "15:51",
+   "actividades": 190,
    "tecnicos": 36,
    "estados": {
-    "Completado": 76,
+    "Completado": 77,
     "No Realizada": 34,
-    "Iniciado": 26,
-    "Pendiente": 37,
+    "Iniciado": 27,
+    "Pendiente": 42,
     "Cancelado": 6,
-    "en ruta": 5,
+    "en ruta": 3,
     "Suspendido": 1
    },
-   "rgu": 252.2,
+   "rgu": 257.2,
    "caidas_total": 12,
    "caidas_activas": 12,
    "caidas_resueltas": 0,
    "nuevas": 36,
    "al_bucket": 31,
-   "repetidas": 28,
-   "reagendadas": 5,
+   "repetidas": 29,
+   "reagendadas": 7,
    "detalle": {
     "caidas": [
      {
@@ -5830,7 +5830,7 @@
       "f": "13-16",
       "hi": "16:39",
       "d": "PABLO NERUDA 1714 EDIF. DEPTO 33, QUILPUE",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NVZ6EOR",
@@ -5879,12 +5879,12 @@
      },
      {
       "o": "1-3NVXC0T6",
-      "tec": "JOSE GALAZ D",
+      "tec": "JOSE SALAS MEDINA",
       "cat": "Alta 1 Play",
       "f": "16-19",
       "hi": "18:38",
       "d": "18 DE SEPTIEMBRE 092 CASA M, QUILPUE",
-      "e": "Pendiente (ya no está)"
+      "e": "Pendiente"
      },
      {
       "o": "1-3NVWQZXY",
@@ -6140,12 +6140,12 @@
      },
      {
       "o": "1-3NVDTPRS",
-      "tec": "JOSE PEREZ RANGEL",
+      "tec": "ESTEBAN PIZARRO QUINTANA",
       "cat": "Alta 1 Play",
       "f": "16-19",
       "hi": "16:00",
       "d": "IGNACIO CARRERA PINTO 0758, VILLA ALEMANA",
-      "e": "Pendiente (ya no está)"
+      "e": "Pendiente"
      }
     ],
     "repetidas": [
@@ -6172,6 +6172,18 @@
       "visitas": 1,
       "ult_fecha": "16-09-2026",
       "ult_cierre": "Cliente Desiste"
+     },
+     {
+      "o": "1-3NRCP2BD",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "18:10",
+      "d": "EL AGUILA 2664, QUILPUE",
+      "e": "Pendiente",
+      "tec": "ALEXIS JARA",
+      "visitas": 1,
+      "ult_fecha": "03-09-2026",
+      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3NVRHK26",
@@ -6477,7 +6489,7 @@
       "o": "1-3NUO6MSD",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:01",
+      "hi": "17:04",
       "d": "MATURANA 510, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
@@ -6487,6 +6499,26 @@
      }
     ],
     "reagendadas": [
+     {
+      "o": "1-3NRCP2BD",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "18:10",
+      "d": "EL AGUILA 2664, QUILPUE",
+      "e": "Pendiente",
+      "tec": "ALEXIS JARA",
+      "desde": "12-09-2026"
+     },
+     {
+      "o": "1-3NUJW4LO",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "18:20",
+      "d": "YUNGAY 871 CASA B, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "EDGAR VALERO C",
+      "desde": "15-09-2026"
+     },
      {
       "o": "1-3NT78CUB",
       "cat": "Migración 2 Play",
@@ -6541,5 +6573,5 @@
    }
   }
  },
- "generado": "16-09-2026 15:45"
+ "generado": "16-09-2026 15:51"
 }
