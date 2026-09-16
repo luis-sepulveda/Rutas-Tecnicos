@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-16T13:06:10",
+  "actualizado": "2026-09-16T13:36:18",
   "resumen": {
     "sin informacion": 5,
-    "reagendada": 5
+    "reagendada": 6
   },
   "estados": {
     "1-3NVAVKGC": {
@@ -167,6 +167,16 @@
           }
         ]
       }
+    },
+    "1-3NVU1MTI": {
+      "tec": "KEVIN TAPIA RETAMAL",
+      "cat": "Reparación",
+      "franja_original": "13-16",
+      "d": "PLUTON 1700, QUILPUE",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3NVU1MTI - 10-13-ReparaciónJue, 17 Sep",
+      "franja_nueva": "10-13"
     },
     "1-3NUXAF0A": {
       "tec": "LUIS MARTIN NUÑEZ",
