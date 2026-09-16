@@ -3300,18 +3300,27 @@ function pintarPortada(){
   const cuenta = e => filas.filter(o => String(o.e || 'Pendiente') === e).length;
   const comp = cuenta('Completado');
   const nore = cuenta('No Realizada');
-  const canc = cuenta('Cancelado');
+  /* El detalle que abre esta caja muestra Canceladas Y Suspendidas juntas
+     (__CANCSUSP__), asi que el numero tiene que contar las dos. Si no, el
+     recuadro dice 6 y al abrirlo aparecen 7. */
+  const canc = cuenta('Cancelado') + cuenta('Suspendido');
   const pend = filas.length - comp - nore - canc;
   const rgu  = filas.reduce((s,o) => s + (parseFloat(o.rgu) || 0), 0);
 
+  /* Los contadores salen de las MISMAS funciones que usa el mapa, no de un
+     calculo aparte. Antes el panel los rehacia por su cuenta y los numeros
+     no cuadraban con los botones de adentro:
+       - Nuevas: el mapa saca las Modificaciones de Servicio (entran a
+         chorros y no son carga de terreno) y muestra solo las nuevitas.
+       - Sin completar: el mapa cuenta TECNICOS que no han cerrado ninguna,
+         no ordenes sin cerrar. Son dos cosas distintas.
+       - Repetidas: direcciones unicas, con la misma normalizacion del mapa. */
   const A = (typeof ALERTAS !== 'undefined' && ALERTAS) ? ALERTAS : {};
-  const caidas  = (A.activas || []).length;
-  const nuevas  = (A.nuevas  || []).length;
-  const repe    = new Set(filas.filter(o => o.prev)
-                    .map(o => String(o.d || '').toUpperCase())).size;
+  const caidas  = nCaidas();
+  const nuevas  = contar(nuevasDelDia()).nuevita;
+  const repe    = nRepe();
   const reca    = filas.filter(o => o.reag).length;
-  const sinComp = filas.filter(o => !['Completado','No Realizada','Cancelado']
-                    .includes(String(o.e || ''))).length;
+  const sinComp = tecnicosSinCompletar().length;
 
   /* Lo que queda sin cerrar en cada franja: dice como viene el resto del dia. */
   const abierta = o => !['Completado','No Realizada','Cancelado']
@@ -3404,7 +3413,7 @@ function pintarPortada(){
     + '<div><div class="pz-rot">Paneles de la jornada</div><div class="pz-grid">'
     +   b('toggleCaidas', 'Caídas', caidas, caidas > 0)
     +   b('toggleComp', 'Completitud')
-    +   b('toggleSinCompletar', 'Sin completar', sinComp)
+    +   b('toggleSinCompletar', 'Técnicos sin completar', sinComp)
     +   b('toggleAtrasados', 'Más de 3 horas')
     +   b('toggleReca', 'Reingresadas', reca)
     +   b('toggleNuevas', 'Nuevas', nuevas)
