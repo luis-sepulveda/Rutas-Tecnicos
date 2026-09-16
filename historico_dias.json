@@ -5691,13 +5691,13 @@
    }
   },
   "16-09-2026": {
-   "hasta": "16:36",
+   "hasta": "16:41",
    "actividades": 192,
    "tecnicos": 36,
    "estados": {
     "Completado": 93,
-    "No Realizada": 40,
-    "Pendiente": 22,
+    "No Realizada": 41,
+    "Pendiente": 21,
     "Iniciado": 20,
     "Cancelado": 6,
     "en ruta": 10,
@@ -5830,7 +5830,7 @@
       "f": "16-19",
       "hi": "16:34",
       "d": "EL CIPRES 961, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NW18FFE",
@@ -6582,5 +6582,5 @@
    }
   }
  },
- "generado": "16-09-2026 16:36"
+ "generado": "16-09-2026 16:41"
 }
