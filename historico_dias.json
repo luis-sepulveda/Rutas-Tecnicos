@@ -5691,15 +5691,16 @@
    }
   },
   "16-09-2026": {
-   "hasta": "10:04",
+   "hasta": "10:09",
    "actividades": 154,
    "tecnicos": 36,
    "estados": {
-    "Completado": 1,
-    "Iniciado": 34,
-    "Pendiente": 115,
-    "en ruta": 1,
-    "Cancelado": 3
+    "Completado": 2,
+    "Iniciado": 31,
+    "Pendiente": 112,
+    "en ruta": 3,
+    "Cancelado": 4,
+    "No Realizada": 2
    },
    "rgu": 218.5,
    "caidas_total": 3,
@@ -5922,7 +5923,7 @@
       "f": "10-13",
       "hi": "09:45",
       "d": "MADRID 667, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "JORDAN ROA PEREZ",
       "visitas": 1,
       "ult_fecha": "12-09-2026",
@@ -5944,7 +5945,7 @@
       "o": "1-3NV7ACWX",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:11",
+      "hi": "14:17",
       "d": "DEL CONDOR 2325, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -6114,7 +6115,7 @@
       "f": "10-13",
       "hi": "09:45",
       "d": "MADRID 667, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "JORDAN ROA PEREZ",
       "desde": "15-09-2026"
      },
@@ -6162,5 +6163,5 @@
    }
   }
  },
- "generado": "16-09-2026 10:04"
+ "generado": "16-09-2026 10:09"
 }
