@@ -5691,24 +5691,24 @@
    }
   },
   "16-09-2026": {
-   "hasta": "11:14",
-   "actividades": 162,
+   "hasta": "11:24",
+   "actividades": 163,
    "tecnicos": 36,
    "estados": {
     "Completado": 15,
-    "en ruta": 8,
+    "Iniciado": 29,
     "Pendiente": 95,
     "No Realizada": 16,
-    "Iniciado": 23,
-    "Cancelado": 5
+    "Cancelado": 5,
+    "en ruta": 3
    },
-   "rgu": 229.6,
+   "rgu": 232.1,
    "caidas_total": 9,
    "caidas_activas": 9,
    "caidas_resueltas": 0,
-   "nuevas": 16,
+   "nuevas": 17,
    "al_bucket": 0,
-   "repetidas": 26,
+   "repetidas": 27,
    "reagendadas": 6,
    "detalle": {
     "caidas": [
@@ -5796,6 +5796,15 @@
     ],
     "nuevas": [
      {
+      "o": "1-3NVRHK26",
+      "tec": "ALFREDO ALCAYAGA F",
+      "cat": "Modificación de Servicio",
+      "f": "10-13",
+      "hi": "11:37",
+      "d": "PASAJE BARRIA 1221 CASA 33, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3NVPXIAF",
       "tec": "MATIAS APELEO APELEO",
       "cat": "Alta 1 Play",
@@ -5820,7 +5829,7 @@
       "f": "10-13",
       "hi": "11:15",
       "d": "LOS MAITENES 2146, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NVOT5W3",
@@ -5829,7 +5838,7 @@
       "f": "10-13",
       "hi": "12:44",
       "d": "LOS ROBLES 501 CASA 227, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NVP5F0T",
@@ -5856,7 +5865,7 @@
       "f": "10-13",
       "hi": "11:44",
       "d": "PJE 3 0823, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NVQ75L6",
@@ -5966,22 +5975,22 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3NTBHX56",
-      "cat": "Migración 1 Play",
+      "o": "1-3NVRHK26",
+      "cat": "Modificación de Servicio",
       "f": "10-13",
-      "hi": "11:16",
-      "d": "AVENIDA RETIRO 1233, QUILPUE",
+      "hi": "11:37",
+      "d": "PASAJE BARRIA 1221 CASA 33, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
       "visitas": 1,
-      "ult_fecha": "12-09-2026",
-      "ult_cierre": "Sin moradores"
+      "ult_fecha": "22-08-2026",
+      "ult_cierre": "Falla Aprovisionamiento"
      },
      {
       "o": "1-3NJTIXOO",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "17:28",
+      "hi": "16:32",
       "d": "PJE PEATONAL 01448 CASA D, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
@@ -5993,9 +6002,9 @@
       "o": "1-3NUKDAHR",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "11:31",
+      "hi": "11:35",
       "d": "LAS AMAPOLAS 593 CASA 3A, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "CESAR MENA OLIVEROS",
       "visitas": 1,
       "ult_fecha": "10-09-2026",
@@ -6005,7 +6014,7 @@
       "o": "1-3NV3G4DG",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "16:15",
+      "hi": "16:19",
       "d": "BYERS 627, QUILPUE",
       "e": "Pendiente",
       "tec": "CESAR MENA OLIVEROS",
@@ -6029,9 +6038,9 @@
       "o": "1-3NVP6LBY",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "11:25",
+      "hi": "11:21",
       "d": "LAS ROSAS 670 CASA A, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "FELIPE SILVA R",
       "visitas": 1,
       "ult_fecha": "16-09-2026",
@@ -6041,7 +6050,7 @@
       "o": "1-3NV7IKD4",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "14:30",
+      "hi": "14:26",
       "d": "LOS TILOS 1765, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -6101,7 +6110,7 @@
       "o": "1-3NV7ACWX",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:55",
+      "hi": "14:57",
       "d": "DEL CONDOR 2325, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -6156,6 +6165,18 @@
       "visitas": 1,
       "ult_fecha": "12-09-2026",
       "ult_cierre": "Cliente reagenda"
+     },
+     {
+      "o": "1-3NTBHX56",
+      "cat": "Migración 1 Play",
+      "f": "10-13",
+      "hi": "11:38",
+      "d": "AVENIDA RETIRO 1233, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LUIS MARTIN NUÑEZ",
+      "visitas": 1,
+      "ult_fecha": "12-09-2026",
+      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3NUO6MSD",
@@ -6319,5 +6340,5 @@
    }
   }
  },
- "generado": "16-09-2026 11:14"
+ "generado": "16-09-2026 11:24"
 }
