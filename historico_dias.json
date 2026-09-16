@@ -5689,7 +5689,42 @@
      }
     ]
    }
+  },
+  "16-09-2026": {
+   "hasta": "07:38",
+   "actividades": 6,
+   "tecnicos": 4,
+   "estados": {
+    "Pendiente": 6
+   },
+   "rgu": 12.0,
+   "caidas_total": 0,
+   "caidas_activas": 0,
+   "caidas_resueltas": 0,
+   "nuevas": 0,
+   "al_bucket": 0,
+   "repetidas": 1,
+   "reagendadas": 0,
+   "detalle": {
+    "caidas": [],
+    "nuevas": [],
+    "repetidas": [
+     {
+      "o": "1-3NUKDAHR",
+      "cat": "Migración 1 Play",
+      "f": "10-13",
+      "hi": "10:10",
+      "d": "LAS AMAPOLAS 593 CASA 3A, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LUIS MARTIN NUÑEZ",
+      "visitas": 1,
+      "ult_fecha": "10-09-2026",
+      "ult_cierre": "Ductos tapados"
+     }
+    ],
+    "reagendadas": []
+   }
   }
  },
- "generado": "15-09-2026 16:11"
+ "generado": "16-09-2026 07:38"
 }
