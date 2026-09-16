@@ -5691,23 +5691,23 @@
    }
   },
   "16-09-2026": {
-   "hasta": "12:14",
-   "actividades": 152,
+   "hasta": "12:29",
+   "actividades": 153,
    "tecnicos": 36,
    "estados": {
-    "Completado": 26,
-    "No Realizada": 19,
-    "en ruta": 5,
-    "Pendiente": 70,
-    "Iniciado": 25,
+    "Completado": 29,
+    "No Realizada": 20,
+    "en ruta": 8,
+    "Pendiente": 65,
+    "Iniciado": 24,
     "Cancelado": 6,
     "Suspendido": 1
    },
-   "rgu": 207.6,
+   "rgu": 207.7,
    "caidas_total": 10,
    "caidas_activas": 10,
    "caidas_resueltas": 0,
-   "nuevas": 23,
+   "nuevas": 24,
    "al_bucket": 20,
    "repetidas": 23,
    "reagendadas": 3,
@@ -5805,6 +5805,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NVTYMM6",
+      "tec": "PABLO HERNANEZ FERNANDEZ",
+      "cat": "Modificación de Servicio",
+      "f": "10-13",
+      "hi": "12:28",
+      "d": "JOSE URIBE 850, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3NVS4OT9",
       "tec": "EDGAR VALERO C",
@@ -6111,18 +6120,6 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3NUZFQND",
-      "cat": "Alta 1 Play",
-      "f": "13-16",
-      "hi": "13:00",
-      "d": "PEDRO LAGOS 299 CASA B, QUILPUE",
-      "e": "Pendiente",
-      "tec": "GEEYSER PEREZ O",
-      "visitas": 1,
-      "ult_fecha": "15-09-2026",
-      "ult_cierre": "Sin moradores"
-     },
-     {
       "o": "1-3NVAJ3WP",
       "cat": "Alta 1 Play",
       "f": "13-16",
@@ -6174,7 +6171,7 @@
       "o": "1-3NV3G4DG",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:57",
+      "hi": "15:23",
       "d": "BYERS 627, QUILPUE",
       "e": "Pendiente",
       "tec": "JORDAN ROA PEREZ",
@@ -6195,12 +6192,24 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
+      "o": "1-3NUZFQND",
+      "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "14:19",
+      "d": "PEDRO LAGOS 299 CASA B, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LEONEL HERNÁNDEZ OJE",
+      "visitas": 1,
+      "ult_fecha": "15-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3NTBHX56",
       "cat": "Migración 1 Play",
       "f": "10-13",
       "hi": "11:55",
       "d": "AVENIDA RETIRO 1233, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "LUIS MARTIN NUÑEZ",
       "visitas": 1,
       "ult_fecha": "12-09-2026",
@@ -6246,7 +6255,7 @@
       "o": "1-3NVAM98E",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:36",
+      "hi": "14:31",
       "d": "MARINERO FUENTEALBA 051, QUILPUE",
       "e": "Pendiente",
       "tec": "NICOLAS MOYANO R",
@@ -6258,7 +6267,7 @@
       "o": "1-3NV91LV1",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:20",
+      "hi": "15:46",
       "d": "AVENIDA LOS REYES 1139, QUILPUE",
       "e": "Pendiente",
       "tec": "PABLO HERNANEZ FERNANDEZ",
@@ -6306,7 +6315,7 @@
       "o": "1-3NUJO75P",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:36",
+      "hi": "14:00",
       "d": "IGNACIO CARRERA PINTO 1583, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -6326,5 +6335,5 @@
    }
   }
  },
- "generado": "16-09-2026 12:14"
+ "generado": "16-09-2026 12:29"
 }
