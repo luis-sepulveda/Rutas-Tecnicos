@@ -5691,22 +5691,23 @@
    }
   },
   "16-09-2026": {
-   "hasta": "09:34",
-   "actividades": 151,
-   "tecnicos": 35,
+   "hasta": "09:44",
+   "actividades": 153,
+   "tecnicos": 36,
    "estados": {
-    "Iniciado": 3,
-    "Pendiente": 127,
-    "en ruta": 20,
-    "Cancelado": 1
+    "Completado": 1,
+    "en ruta": 25,
+    "Pendiente": 120,
+    "Iniciado": 5,
+    "Cancelado": 2
    },
-   "rgu": 213.5,
-   "caidas_total": 1,
-   "caidas_activas": 1,
+   "rgu": 216.5,
+   "caidas_total": 3,
+   "caidas_activas": 3,
    "caidas_resueltas": 0,
-   "nuevas": 4,
+   "nuevas": 6,
    "al_bucket": 0,
-   "repetidas": 24,
+   "repetidas": 25,
    "reagendadas": 6,
    "detalle": {
     "caidas": [
@@ -5718,9 +5719,45 @@
       "hi": "15:04",
       "d": "ARAUCANOS 1490, QUILPUE",
       "e": "Pendiente"
+     },
+     {
+      "o": "1-3NV20F3F",
+      "tec": "JOSE GALAZ D",
+      "cat": "Alta 2 Play",
+      "f": "13-16",
+      "hi": "14:48",
+      "d": "DORIS MARTINEZ 704, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NVB7XXA",
+      "tec": "JOSE PEREZ RANGEL",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "17:28",
+      "d": "OHIGGINS 620, VILLA ALEMANA",
+      "e": "Pendiente"
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NVO7S7F",
+      "tec": "MATIAS APELEO APELEO",
+      "cat": "Migración 2 Play",
+      "f": "13-16",
+      "hi": "14:00",
+      "d": "DAVID CORTES 1086, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NVOBZRI",
+      "tec": "JOSE GALAZ D",
+      "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "15:04",
+      "d": "ALEMPARTE 277 CASA 4, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NVOAEOS",
       "tec": "ALEXIS JARA",
@@ -5728,7 +5765,7 @@
       "f": "13-16",
       "hi": "09:32",
       "d": "IRMA JOHNSON MOLINA 201 EDIF. J DEPTO 1022, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NVO5OG6",
@@ -5765,7 +5802,7 @@
       "f": "13-16",
       "hi": "09:32",
       "d": "IRMA JOHNSON MOLINA 201 EDIF. J DEPTO 1022, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "ALEXIS JARA",
       "visitas": 1,
       "ult_fecha": "14-08-2026",
@@ -5775,7 +5812,7 @@
       "o": "1-3NTBHX56",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "11:25",
+      "hi": "10:54",
       "d": "AVENIDA RETIRO 1233, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -5787,7 +5824,7 @@
       "o": "1-3NUZFQND",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:34",
+      "hi": "14:03",
       "d": "PEDRO LAGOS 299 CASA B, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -5847,7 +5884,7 @@
       "o": "1-3NJTIXOO",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:27",
+      "hi": "16:09",
       "d": "PJE PEATONAL 01448 CASA D, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -5955,7 +5992,7 @@
       "o": "1-3NUZKZ9I",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "11:02",
+      "hi": "10:53",
       "d": "BERNARDO O HIGGINS 0332, QUILPUE",
       "e": "Pendiente",
       "tec": "LUIS CASTRO TORRES",
@@ -5967,7 +6004,7 @@
       "o": "1-3NT5XY61",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:57",
+      "hi": "16:48",
       "d": "ALTO MANQUEHUE 3071, QUILPUE",
       "e": "Pendiente",
       "tec": "LUIS CASTRO TORRES",
@@ -5991,12 +6028,24 @@
       "o": "1-3NUO6MSD",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:04",
+      "hi": "17:16",
       "d": "MATURANA 510, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCELO GÓMEZ GÓME",
       "visitas": 1,
       "ult_fecha": "14-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3NVO7S7F",
+      "cat": "Migración 2 Play",
+      "f": "13-16",
+      "hi": "14:00",
+      "d": "DAVID CORTES 1086, QUILPUE",
+      "e": "Pendiente",
+      "tec": "MATIAS APELEO APELEO",
+      "visitas": 1,
+      "ult_fecha": "10-08-2026",
       "ult_cierre": "Sin moradores"
      },
      {
@@ -6073,7 +6122,7 @@
       "o": "1-3NUJW4LO",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:28",
+      "hi": "18:14",
       "d": "YUNGAY 871 CASA B, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -6093,7 +6142,7 @@
       "o": "1-3NT5XY61",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:57",
+      "hi": "16:48",
       "d": "ALTO MANQUEHUE 3071, QUILPUE",
       "e": "Pendiente",
       "tec": "LUIS CASTRO TORRES",
@@ -6113,5 +6162,5 @@
    }
   }
  },
- "generado": "16-09-2026 09:34"
+ "generado": "16-09-2026 09:44"
 }
