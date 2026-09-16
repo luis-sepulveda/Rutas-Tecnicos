@@ -5691,13 +5691,13 @@
    }
   },
   "16-09-2026": {
-   "hasta": "14:25",
+   "hasta": "14:30",
    "actividades": 188,
    "tecnicos": 36,
    "estados": {
-    "Completado": 58,
-    "No Realizada": 30,
-    "en ruta": 5,
+    "Completado": 59,
+    "No Realizada": 31,
+    "en ruta": 3,
     "Pendiente": 64,
     "Iniciado": 24,
     "Cancelado": 6,
@@ -6234,7 +6234,7 @@
       "o": "1-3NRCP2BD",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:36",
+      "hi": "18:59",
       "d": "EL AGUILA 2664, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -6402,7 +6402,7 @@
       "o": "1-3NVPA4WK",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:21",
+      "hi": "16:29",
       "d": "PJE CRISANTEMOS 1936, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -6486,7 +6486,7 @@
       "o": "1-3NRCP2BD",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:36",
+      "hi": "18:59",
       "d": "EL AGUILA 2664, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -6546,5 +6546,5 @@
    }
   }
  },
- "generado": "16-09-2026 14:25"
+ "generado": "16-09-2026 14:30"
 }
