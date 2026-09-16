@@ -5691,23 +5691,23 @@
    }
   },
   "16-09-2026": {
-   "hasta": "17:01",
-   "actividades": 194,
+   "hasta": "17:06",
+   "actividades": 197,
    "tecnicos": 36,
    "estados": {
     "Completado": 100,
     "No Realizada": 42,
-    "Pendiente": 15,
-    "Iniciado": 24,
+    "Pendiente": 17,
+    "Iniciado": 27,
     "Cancelado": 6,
-    "en ruta": 6,
-    "Suspendido": 1
+    "Suspendido": 1,
+    "en ruta": 4
    },
-   "rgu": 259.4,
+   "rgu": 262.4,
    "caidas_total": 12,
    "caidas_activas": 12,
    "caidas_resueltas": 0,
-   "nuevas": 39,
+   "nuevas": 42,
    "al_bucket": 31,
    "repetidas": 29,
    "reagendadas": 7,
@@ -5823,6 +5823,33 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NW3VXLU",
+      "tec": "ANTONHY MORALES MENDOZA",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "17:03",
+      "d": "THOMPSON 1155, QUILPUE",
+      "e": "Iniciado"
+     },
+     {
+      "o": "1-3NW3Q2CG",
+      "tec": "JOSE ROJO A",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "17:05",
+      "d": "ALTAIR 2648, QUILPUE",
+      "e": "Iniciado"
+     },
+     {
+      "o": "1-3NW3VA3U",
+      "tec": "JOSE PEREZ RANGEL",
+      "cat": "Reparación",
+      "f": "16-19",
+      "hi": "17:05",
+      "d": "EL BOSQUE(ESQ LOS PLATANOS) 1550, VILLA ALEMANA",
+      "e": "en ruta"
+     },
      {
       "o": "1-3NW3WXNP",
       "tec": "MARCELO GÓMEZ GÓME",
@@ -6172,7 +6199,7 @@
       "f": "16-19",
       "hi": "16:00",
       "d": "IGNACIO CARRERA PINTO 0758, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Pendiente"
      }
     ],
     "repetidas": [
@@ -6560,7 +6587,7 @@
       "o": "1-3NUJW4LO",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:09",
+      "hi": "18:11",
       "d": "YUNGAY 871 CASA B, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -6600,5 +6627,5 @@
    }
   }
  },
- "generado": "16-09-2026 17:01"
+ "generado": "16-09-2026 17:06"
 }
