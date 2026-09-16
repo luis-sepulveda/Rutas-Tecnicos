@@ -5691,12 +5691,12 @@
    }
   },
   "16-09-2026": {
-   "hasta": "09:24",
+   "hasta": "09:29",
    "actividades": 151,
    "tecnicos": 35,
    "estados": {
-    "en ruta": 16,
-    "Pendiente": 134,
+    "Pendiente": 133,
+    "en ruta": 17,
     "Iniciado": 1
    },
    "rgu": 212.0,
@@ -5744,7 +5744,7 @@
       "o": "1-3NTBHX56",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "10:27",
+      "hi": "11:27",
       "d": "AVENIDA RETIRO 1233, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -5756,7 +5756,7 @@
       "o": "1-3NUZFQND",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "14:36",
       "d": "PEDRO LAGOS 299 CASA B, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -5768,7 +5768,7 @@
       "o": "1-3NV3G4DG",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:22",
+      "hi": "15:06",
       "d": "BYERS 627, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
@@ -6082,5 +6082,5 @@
    }
   }
  },
- "generado": "16-09-2026 09:24"
+ "generado": "16-09-2026 09:29"
 }
