@@ -5691,16 +5691,16 @@
    }
   },
   "16-09-2026": {
-   "hasta": "16:41",
+   "hasta": "16:46",
    "actividades": 192,
    "tecnicos": 36,
    "estados": {
     "Completado": 93,
     "No Realizada": 41,
     "Pendiente": 21,
-    "Iniciado": 20,
+    "Iniciado": 24,
     "Cancelado": 6,
-    "en ruta": 10,
+    "en ruta": 6,
     "Suspendido": 1
    },
    "rgu": 257.4,
@@ -5893,7 +5893,7 @@
       "f": "16-19",
       "hi": "18:38",
       "d": "18 DE SEPTIEMBRE 092 CASA M, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NVWQZXY",
@@ -6118,7 +6118,7 @@
       "f": "13-16",
       "hi": "15:04",
       "d": "ALEMPARTE 277 CASA 4, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NVOAEOS",
@@ -6582,5 +6582,5 @@
    }
   }
  },
- "generado": "16-09-2026 16:41"
+ "generado": "16-09-2026 16:46"
 }
