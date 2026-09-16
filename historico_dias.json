@@ -5691,21 +5691,21 @@
    }
   },
   "16-09-2026": {
-   "hasta": "14:50",
+   "hasta": "15:00",
    "actividades": 189,
    "tecnicos": 36,
    "estados": {
-    "Completado": 65,
+    "Completado": 67,
     "No Realizada": 31,
     "Iniciado": 23,
-    "Pendiente": 61,
+    "Pendiente": 55,
+    "en ruta": 6,
     "Cancelado": 6,
-    "en ruta": 2,
     "Suspendido": 1
    },
    "rgu": 256.2,
-   "caidas_total": 11,
-   "caidas_activas": 11,
+   "caidas_total": 12,
+   "caidas_activas": 12,
    "caidas_resueltas": 0,
    "nuevas": 35,
    "al_bucket": 21,
@@ -5786,6 +5786,15 @@
       "e": "Pendiente"
      },
      {
+      "o": "1-3NV8ENUK",
+      "tec": "KEVIN TAPIA RETAMAL",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "19:31",
+      "d": "ALEMPARTE 277 CASA 9, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3NUXAF0A",
       "tec": "LUIS MARTIN NUÑEZ",
       "cat": "Alta 1 Play",
@@ -5821,7 +5830,7 @@
       "f": "13-16",
       "hi": "15:06",
       "d": "ALCALDE GALLEGUILLOS 2114 CASA CONSERJE, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NVXYBAA",
@@ -5947,7 +5956,7 @@
       "f": "13-16",
       "hi": "15:03",
       "d": "VALENTIN LETELIER 1137, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NVSQJQ3",
@@ -5992,7 +6001,7 @@
       "f": "13-16",
       "hi": "13:00",
       "d": "RIQUELME 1708, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NVQNQ23",
@@ -6171,7 +6180,7 @@
       "o": "1-3NVP5F0T",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "16:02",
+      "hi": "16:23",
       "d": "VOLCAN SOCOMPA 2675, QUILPUE",
       "e": "Pendiente",
       "tec": "ANTONHY MORALES MENDOZA",
@@ -6207,9 +6216,9 @@
       "o": "1-3NVPXIAF",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:39",
+      "hi": "15:03",
       "d": "RIQUELME 1708, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "DANIEL NAVARRETE E",
       "visitas": 1,
       "ult_fecha": "16-09-2026",
@@ -6243,7 +6252,7 @@
       "o": "1-3NRCP2BD",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "19:00",
+      "hi": "19:10",
       "d": "EL AGUILA 2664, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -6339,7 +6348,7 @@
       "o": "1-3NUO6MSD",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:52",
+      "hi": "16:49",
       "d": "MATURANA 510, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -6485,7 +6494,7 @@
       "o": "1-3NUA06ZJ",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:06",
+      "hi": "17:27",
       "d": "LAS MERCEDES 1996, QUILPUE",
       "e": "Pendiente",
       "tec": "ANTONHY MORALES MENDOZA",
@@ -6495,7 +6504,7 @@
       "o": "1-3NRCP2BD",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "19:00",
+      "hi": "19:10",
       "d": "EL AGUILA 2664, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -6525,7 +6534,7 @@
       "o": "1-3NUJW4LO",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "19:09",
+      "hi": "18:53",
       "d": "YUNGAY 871 CASA B, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -6555,5 +6564,5 @@
    }
   }
  },
- "generado": "16-09-2026 14:50"
+ "generado": "16-09-2026 15:00"
 }
