@@ -5691,19 +5691,19 @@
    }
   },
   "16-09-2026": {
-   "hasta": "13:10",
-   "actividades": 176,
+   "hasta": "13:15",
+   "actividades": 175,
    "tecnicos": 36,
    "estados": {
-    "Completado": 38,
-    "No Realizada": 23,
-    "Iniciado": 26,
-    "Pendiente": 78,
+    "Completado": 40,
+    "No Realizada": 24,
+    "Iniciado": 23,
+    "Pendiente": 75,
     "Cancelado": 6,
-    "en ruta": 4,
+    "en ruta": 6,
     "Suspendido": 1
    },
-   "rgu": 242.4,
+   "rgu": 241.4,
    "caidas_total": 10,
    "caidas_activas": 10,
    "caidas_resueltas": 0,
@@ -6019,7 +6019,7 @@
       "f": "13-16",
       "hi": "15:45",
       "d": "PJE LOMAS ORIENTE 0157, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3NVNW2LS",
@@ -6105,7 +6105,7 @@
       "o": "1-3NVPXIAF",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "16:01",
+      "hi": "15:25",
       "d": "RIQUELME 1708, QUILPUE",
       "e": "Pendiente",
       "tec": "DANIEL NAVARRETE E",
@@ -6321,7 +6321,7 @@
       "o": "1-3NVAM98E",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:31",
+      "hi": "14:30",
       "d": "MARINERO FUENTEALBA 051, QUILPUE",
       "e": "Pendiente",
       "tec": "NICOLAS MOYANO R",
@@ -6347,7 +6347,7 @@
       "f": "13-16",
       "hi": "13:05",
       "d": "PJE LOMAS ORIENTE 0157, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "RAFAEL VARGAS B",
       "visitas": 2,
       "ult_fecha": "28-08-2026",
@@ -6357,7 +6357,7 @@
       "o": "1-3NVO7S7F",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "18:18",
+      "hi": "16:35",
       "d": "DAVID CORTES 1086, QUILPUE",
       "e": "Pendiente",
       "tec": "RAFAEL VARGAS B",
@@ -6411,7 +6411,7 @@
       "o": "1-3NUJW4LO",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:16",
+      "hi": "18:35",
       "d": "YUNGAY 871 CASA B, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -6441,5 +6441,5 @@
    }
   }
  },
- "generado": "16-09-2026 13:10"
+ "generado": "16-09-2026 13:15"
 }
