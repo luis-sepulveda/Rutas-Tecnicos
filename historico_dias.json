@@ -5691,23 +5691,23 @@
    }
   },
   "16-09-2026": {
-   "hasta": "16:46",
-   "actividades": 192,
+   "hasta": "16:56",
+   "actividades": 193,
    "tecnicos": 36,
    "estados": {
-    "Completado": 93,
+    "Completado": 98,
     "No Realizada": 41,
-    "Pendiente": 21,
-    "Iniciado": 24,
+    "Pendiente": 17,
+    "Iniciado": 25,
     "Cancelado": 6,
-    "en ruta": 6,
+    "en ruta": 5,
     "Suspendido": 1
    },
-   "rgu": 257.4,
+   "rgu": 258.4,
    "caidas_total": 12,
    "caidas_activas": 12,
    "caidas_resueltas": 0,
-   "nuevas": 37,
+   "nuevas": 38,
    "al_bucket": 31,
    "repetidas": 29,
    "reagendadas": 7,
@@ -5823,6 +5823,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NW3A3X4",
+      "tec": "YENDER BOSCAN CADENAS",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "16:51",
+      "d": "JOSE URIBE 1210 CASA E2, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3NW2QFSC",
       "tec": "CRISTOBAL MIRANDA VALENC",
@@ -6001,7 +6010,7 @@
       "f": "16-19",
       "hi": "17:18",
       "d": "LAS MERCEDES 1996, QUILPUE",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NVRHK26",
@@ -6100,7 +6109,7 @@
       "f": "16-19",
       "hi": "18:27",
       "d": "PJE CRISANTEMOS 1936, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NVO7S7F",
@@ -6154,7 +6163,7 @@
       "f": "16-19",
       "hi": "16:00",
       "d": "IGNACIO CARRERA PINTO 0758, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      }
     ],
     "repetidas": [
@@ -6282,7 +6291,7 @@
       "o": "1-3NJTIXOO",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "17:06",
+      "hi": "17:23",
       "d": "PJE PEATONAL 01448 CASA D, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -6414,9 +6423,9 @@
       "o": "1-3NVPA4WK",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:45",
+      "hi": "16:49",
       "d": "PJE CRISANTEMOS 1936, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "LUIS GATICA DAVILA",
       "visitas": 1,
       "ult_fecha": "16-09-2026",
@@ -6426,7 +6435,7 @@
       "o": "1-3NUO6MSD",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:50",
+      "hi": "17:54",
       "d": "MATURANA 510, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS GATICA DAVILA",
@@ -6542,7 +6551,7 @@
       "o": "1-3NUJW4LO",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:14",
+      "hi": "17:09",
       "d": "YUNGAY 871 CASA B, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -6562,9 +6571,9 @@
       "o": "1-3NUA06ZJ",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:37",
+      "hi": "16:50",
       "d": "LAS MERCEDES 1996, QUILPUE",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "PABLO HERNANEZ FERNANDEZ",
       "desde": "15-09-2026"
      },
@@ -6582,5 +6591,5 @@
    }
   }
  },
- "generado": "16-09-2026 16:46"
+ "generado": "16-09-2026 16:56"
 }
