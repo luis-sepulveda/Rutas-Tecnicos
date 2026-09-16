@@ -5691,15 +5691,15 @@
    }
   },
   "16-09-2026": {
-   "hasta": "09:44",
+   "hasta": "09:49",
    "actividades": 153,
    "tecnicos": 36,
    "estados": {
     "Completado": 1,
-    "en ruta": 25,
-    "Pendiente": 120,
-    "Iniciado": 5,
-    "Cancelado": 2
+    "en ruta": 16,
+    "Pendiente": 115,
+    "Iniciado": 18,
+    "Cancelado": 3
    },
    "rgu": 216.5,
    "caidas_total": 3,
@@ -5884,7 +5884,7 @@
       "o": "1-3NJTIXOO",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:09",
+      "hi": "16:00",
       "d": "PJE PEATONAL 01448 CASA D, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -5920,9 +5920,9 @@
       "o": "1-3NT78CUB",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "09:30",
+      "hi": "09:45",
       "d": "MADRID 667, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JORDAN ROA PEREZ",
       "visitas": 1,
       "ult_fecha": "12-09-2026",
@@ -5944,7 +5944,7 @@
       "o": "1-3NV7ACWX",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:01",
+      "hi": "15:11",
       "d": "DEL CONDOR 2325, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -5956,9 +5956,9 @@
       "o": "1-3NV4ZRNB",
       "cat": "Migración 3 Play",
       "f": "10-13",
-      "hi": "09:42",
+      "hi": "09:45",
       "d": "LOS LINGUES 996, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "KEVIN TAPIA RETAMAL",
       "visitas": 2,
       "ult_fecha": "12-09-2026",
@@ -6028,7 +6028,7 @@
       "o": "1-3NUO6MSD",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:16",
+      "hi": "17:04",
       "d": "MATURANA 510, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCELO GÓMEZ GÓME",
@@ -6102,7 +6102,7 @@
       "o": "1-3NUJO75P",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "17:34",
+      "hi": "17:49",
       "d": "IGNACIO CARRERA PINTO 1583, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -6112,9 +6112,9 @@
       "o": "1-3NT78CUB",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "09:30",
+      "hi": "09:45",
       "d": "MADRID 667, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JORDAN ROA PEREZ",
       "desde": "15-09-2026"
      },
@@ -6152,9 +6152,9 @@
       "o": "1-3NS97LTB",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "09:32",
+      "hi": "09:49",
       "d": "LAS ROSAS 670 CASA A, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "RAFAEL VARGAS B",
       "desde": "11-09-2026"
      }
@@ -6162,5 +6162,5 @@
    }
   }
  },
- "generado": "16-09-2026 09:44"
+ "generado": "16-09-2026 09:49"
 }
