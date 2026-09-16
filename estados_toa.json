@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-16T16:37:27",
+  "actualizado": "2026-09-16T17:07:36",
   "resumen": {
     "sin informacion": 6,
     "reagendada": 6
@@ -197,8 +197,8 @@
             "texto": "1-3NVNW2LS - 13-16-Alta"
           },
           {
-            "estado": "?",
-            "color": "rgb(255, 170, 170)",
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
             "ot": "1-3NVOBZRI",
             "franja": "13-16",
             "texto": "1-3NVOBZRI - 13-16-Alta"
