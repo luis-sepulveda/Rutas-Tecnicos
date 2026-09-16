@@ -5691,21 +5691,22 @@
    }
   },
   "16-09-2026": {
-   "hasta": "09:29",
+   "hasta": "09:34",
    "actividades": 151,
    "tecnicos": 35,
    "estados": {
-    "Pendiente": 133,
-    "en ruta": 17,
-    "Iniciado": 1
+    "Iniciado": 3,
+    "Pendiente": 127,
+    "en ruta": 20,
+    "Cancelado": 1
    },
-   "rgu": 212.0,
+   "rgu": 213.5,
    "caidas_total": 1,
    "caidas_activas": 1,
    "caidas_resueltas": 0,
-   "nuevas": 2,
+   "nuevas": 4,
    "al_bucket": 0,
-   "repetidas": 23,
+   "repetidas": 24,
    "reagendadas": 6,
    "detalle": {
     "caidas": [
@@ -5720,6 +5721,24 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NVOAEOS",
+      "tec": "ALEXIS JARA",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "09:32",
+      "d": "IRMA JOHNSON MOLINA 201 EDIF. J DEPTO 1022, QUILPUE",
+      "e": "Iniciado"
+     },
+     {
+      "o": "1-3NVO5OG6",
+      "tec": "RAFAEL VARGAS B",
+      "cat": "Migración 3 Play",
+      "f": "13-16",
+      "hi": "15:45",
+      "d": "PJE LOMAS ORIENTE 0157, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NVNW2LS",
       "tec": "RAFAEL VARGAS B",
@@ -5741,10 +5760,22 @@
     ],
     "repetidas": [
      {
+      "o": "1-3NVOAEOS",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "09:32",
+      "d": "IRMA JOHNSON MOLINA 201 EDIF. J DEPTO 1022, QUILPUE",
+      "e": "Iniciado",
+      "tec": "ALEXIS JARA",
+      "visitas": 1,
+      "ult_fecha": "14-08-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3NTBHX56",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "11:27",
+      "hi": "11:25",
       "d": "AVENIDA RETIRO 1233, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -5756,7 +5787,7 @@
       "o": "1-3NUZFQND",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:36",
+      "hi": "14:34",
       "d": "PEDRO LAGOS 299 CASA B, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -5828,7 +5859,7 @@
       "o": "1-3NVD2AC0",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:37",
+      "hi": "14:33",
       "d": "VIA UNO SIETE 2065 EDIF. F DEPTO 23, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JEAN ROODLY ORELIEN",
@@ -5873,18 +5904,6 @@
       "ult_cierre": "Sin acceso a vivienda"
      },
      {
-      "o": "1-3NV20F3F",
-      "cat": "Alta 2 Play",
-      "f": "13-16",
-      "hi": "14:48",
-      "d": "DORIS MARTINEZ 704, QUILPUE",
-      "e": "Pendiente",
-      "tec": "JOSE GALAZ D",
-      "visitas": 2,
-      "ult_fecha": "15-09-2026",
-      "ult_cierre": "Cliente reagenda"
-     },
-     {
       "o": "1-3NV7ACWX",
       "cat": "Alta 1 Play",
       "f": "13-16",
@@ -5900,9 +5919,9 @@
       "o": "1-3NV4ZRNB",
       "cat": "Migración 3 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:42",
       "d": "LOS LINGUES 996, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "KEVIN TAPIA RETAMAL",
       "visitas": 2,
       "ult_fecha": "12-09-2026",
@@ -5984,7 +6003,7 @@
       "o": "1-3NV1ZR5Q",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "16:03",
+      "hi": "15:46",
       "d": "GERONA 41, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -6015,6 +6034,18 @@
       "visitas": 1,
       "ult_fecha": "17-08-2026",
       "ult_cierre": "Direccion no encontrada"
+     },
+     {
+      "o": "1-3NVO5OG6",
+      "cat": "Migración 3 Play",
+      "f": "13-16",
+      "hi": "15:45",
+      "d": "PJE LOMAS ORIENTE 0157, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "RAFAEL VARGAS B",
+      "visitas": 2,
+      "ult_fecha": "28-08-2026",
+      "ult_cierre": "Cliente Desiste"
      }
     ],
     "reagendadas": [
@@ -6082,5 +6113,5 @@
    }
   }
  },
- "generado": "16-09-2026 09:29"
+ "generado": "16-09-2026 09:34"
 }
