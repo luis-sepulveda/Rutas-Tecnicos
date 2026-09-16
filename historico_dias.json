@@ -5691,15 +5691,15 @@
    }
   },
   "16-09-2026": {
-   "hasta": "14:40",
+   "hasta": "14:45",
    "actividades": 189,
    "tecnicos": 36,
    "estados": {
     "Completado": 65,
     "No Realizada": 31,
-    "en ruta": 2,
-    "Pendiente": 65,
-    "Iniciado": 19,
+    "en ruta": 1,
+    "Pendiente": 63,
+    "Iniciado": 22,
     "Cancelado": 6,
     "Suspendido": 1
    },
@@ -5938,7 +5938,7 @@
       "f": "13-16",
       "hi": "15:03",
       "d": "VALENTIN LETELIER 1137, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NVSQJQ3",
@@ -6198,7 +6198,7 @@
       "o": "1-3NVPXIAF",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:38",
+      "hi": "15:39",
       "d": "RIQUELME 1708, QUILPUE",
       "e": "Pendiente",
       "tec": "DANIEL NAVARRETE E",
@@ -6558,5 +6558,5 @@
    }
   }
  },
- "generado": "16-09-2026 14:40"
+ "generado": "16-09-2026 14:45"
 }
