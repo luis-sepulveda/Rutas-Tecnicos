@@ -5691,14 +5691,14 @@
    }
   },
   "16-09-2026": {
-   "hasta": "09:54",
+   "hasta": "09:59",
    "actividades": 154,
    "tecnicos": 36,
    "estados": {
     "Completado": 1,
-    "en ruta": 8,
-    "Pendiente": 116,
-    "Iniciado": 26,
+    "en ruta": 4,
+    "Pendiente": 115,
+    "Iniciado": 31,
     "Cancelado": 3
    },
    "rgu": 218.5,
@@ -5872,7 +5872,7 @@
       "o": "1-3NV7IKD4",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "15:06",
+      "hi": "15:05",
       "d": "LOS TILOS 1765, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -6052,7 +6052,7 @@
       "o": "1-3NV1ZR5Q",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:46",
+      "hi": "15:58",
       "d": "GERONA 41, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -6162,5 +6162,5 @@
    }
   }
  },
- "generado": "16-09-2026 09:54"
+ "generado": "16-09-2026 09:59"
 }
