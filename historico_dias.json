@@ -5691,25 +5691,25 @@
    }
   },
   "16-09-2026": {
-   "hasta": "14:45",
+   "hasta": "14:50",
    "actividades": 189,
    "tecnicos": 36,
    "estados": {
     "Completado": 65,
     "No Realizada": 31,
-    "en ruta": 1,
-    "Pendiente": 63,
-    "Iniciado": 22,
+    "Iniciado": 23,
+    "Pendiente": 61,
     "Cancelado": 6,
+    "en ruta": 2,
     "Suspendido": 1
    },
-   "rgu": 257.2,
+   "rgu": 256.2,
    "caidas_total": 11,
    "caidas_activas": 11,
    "caidas_resueltas": 0,
-   "nuevas": 34,
+   "nuevas": 35,
    "al_bucket": 21,
-   "repetidas": 30,
+   "repetidas": 29,
    "reagendadas": 7,
    "detalle": {
     "caidas": [
@@ -5815,6 +5815,15 @@
     ],
     "nuevas": [
      {
+      "o": "1-3NVZ6EOR",
+      "tec": "JOSE PEREZ RANGEL",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "15:06",
+      "d": "ALCALDE GALLEGUILLOS 2114 CASA CONSERJE, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3NVXYBAA",
       "tec": "ELIAS ARMIJO L",
       "cat": "Modificación de Servicio",
@@ -5848,7 +5857,7 @@
       "f": "13-16",
       "hi": "19:07",
       "d": "VOLCAN LICANCABUR 2657, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NVXC0T6",
@@ -6282,9 +6291,9 @@
       "o": "1-3NV7IKD4",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "15:23",
+      "hi": "15:02",
       "d": "LOS TILOS 1765, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "HERNAN CORTES HERRERA",
       "visitas": 1,
       "ult_fecha": "06-08-2026",
@@ -6361,18 +6370,6 @@
       "visitas": 1,
       "ult_fecha": "15-09-2026",
       "ult_cierre": "Sin moradores"
-     },
-     {
-      "o": "1-3NV8ENUK",
-      "cat": "Alta 2 Play",
-      "f": "16-19",
-      "hi": "19:31",
-      "d": "ALEMPARTE 277 CASA 9, QUILPUE",
-      "e": "Pendiente",
-      "tec": "KEVIN TAPIA RETAMAL",
-      "visitas": 1,
-      "ult_fecha": "15-09-2026",
-      "ult_cierre": "Clte desiste motivo comercial"
      },
      {
       "o": "1-3NUZFQND",
@@ -6528,7 +6525,7 @@
       "o": "1-3NUJW4LO",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:02",
+      "hi": "19:09",
       "d": "YUNGAY 871 CASA B, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -6558,5 +6555,5 @@
    }
   }
  },
- "generado": "16-09-2026 14:45"
+ "generado": "16-09-2026 14:50"
 }
