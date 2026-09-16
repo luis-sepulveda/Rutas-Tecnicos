@@ -5691,15 +5691,15 @@
    }
   },
   "16-09-2026": {
-   "hasta": "13:25",
+   "hasta": "13:30",
    "actividades": 178,
    "tecnicos": 36,
    "estados": {
-    "Completado": 45,
+    "Completado": 46,
     "No Realizada": 24,
-    "Iniciado": 22,
-    "Pendiente": 73,
-    "en ruta": 7,
+    "Iniciado": 21,
+    "Pendiente": 71,
+    "en ruta": 9,
     "Cancelado": 6,
     "Suspendido": 1
    },
@@ -6288,7 +6288,7 @@
       "o": "1-3NUZFQND",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:43",
+      "hi": "13:43",
       "d": "PEDRO LAGOS 299 CASA B, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -6324,7 +6324,7 @@
       "o": "1-3NUO6MSD",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:33",
+      "hi": "17:37",
       "d": "MATURANA 510, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCELO GÓMEZ GÓME",
@@ -6480,5 +6480,5 @@
    }
   }
  },
- "generado": "16-09-2026 13:25"
+ "generado": "16-09-2026 13:30"
 }
