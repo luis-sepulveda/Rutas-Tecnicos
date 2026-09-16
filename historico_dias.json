@@ -5691,23 +5691,23 @@
    }
   },
   "16-09-2026": {
-   "hasta": "16:56",
-   "actividades": 193,
+   "hasta": "17:01",
+   "actividades": 194,
    "tecnicos": 36,
    "estados": {
-    "Completado": 98,
-    "No Realizada": 41,
-    "Pendiente": 17,
-    "Iniciado": 25,
+    "Completado": 100,
+    "No Realizada": 42,
+    "Pendiente": 15,
+    "Iniciado": 24,
     "Cancelado": 6,
-    "en ruta": 5,
+    "en ruta": 6,
     "Suspendido": 1
    },
-   "rgu": 258.4,
+   "rgu": 259.4,
    "caidas_total": 12,
    "caidas_activas": 12,
    "caidas_resueltas": 0,
-   "nuevas": 38,
+   "nuevas": 39,
    "al_bucket": 31,
    "repetidas": 29,
    "reagendadas": 7,
@@ -5823,6 +5823,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NW3WXNP",
+      "tec": "MARCELO GÓMEZ GÓME",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "17:00",
+      "d": "LAS ACACIAS 0175 CASA 28, VILLA ALEMANA",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3NW3A3X4",
       "tec": "YENDER BOSCAN CADENAS",
@@ -6091,7 +6100,7 @@
       "f": "13-16",
       "hi": "13:00",
       "d": "RAMON ANGEL JARA 1362, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NVBUC70",
@@ -6365,7 +6374,7 @@
       "f": "13-16",
       "hi": "16:32",
       "d": "PJE HUALA 2665, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "JOSE SALAS MEDINA",
       "visitas": 1,
       "ult_fecha": "16-09-2026",
@@ -6591,5 +6600,5 @@
    }
   }
  },
- "generado": "16-09-2026 16:56"
+ "generado": "16-09-2026 17:01"
 }
