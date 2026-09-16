@@ -5691,19 +5691,19 @@
    }
   },
   "16-09-2026": {
-   "hasta": "08:49",
-   "actividades": 119,
+   "hasta": "08:54",
+   "actividades": 125,
    "tecnicos": 34,
    "estados": {
-    "Pendiente": 119
+    "Pendiente": 125
    },
-   "rgu": 163.5,
+   "rgu": 169.5,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
    "nuevas": 0,
    "al_bucket": 0,
-   "repetidas": 18,
+   "repetidas": 19,
    "reagendadas": 3,
    "detalle": {
     "caidas": [],
@@ -5725,7 +5725,7 @@
       "o": "1-3NUZFQND",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:39",
+      "hi": "14:06",
       "d": "PEDRO LAGOS 299 CASA B, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -5890,6 +5890,18 @@
       "ult_cierre": "Ductos tapados"
      },
      {
+      "o": "1-3NUO6MSD",
+      "cat": "Reparación",
+      "f": "16-19",
+      "hi": "17:06",
+      "d": "MATURANA 510, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "MARCELO GÓMEZ GÓME",
+      "visitas": 1,
+      "ult_fecha": "14-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3NV1ZR5Q",
       "cat": "Alta 1 Play",
       "f": "13-16",
@@ -5961,5 +5973,5 @@
    }
   }
  },
- "generado": "16-09-2026 08:49"
+ "generado": "16-09-2026 08:54"
 }
