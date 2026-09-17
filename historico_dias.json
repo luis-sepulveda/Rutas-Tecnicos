@@ -6627,14 +6627,14 @@
    }
   },
   "17-09-2026": {
-   "hasta": "13:13",
+   "hasta": "13:18",
    "actividades": 131,
    "tecnicos": 35,
    "estados": {
     "Completado": 47,
-    "en ruta": 6,
+    "en ruta": 2,
     "Pendiente": 39,
-    "Iniciado": 20,
+    "Iniciado": 24,
     "Cancelado": 3,
     "No Realizada": 16
    },
@@ -6756,7 +6756,7 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "LLIULLIU 1093, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NWKYV01",
@@ -6774,7 +6774,7 @@
       "f": "13-16",
       "hi": "13:00",
       "d": "G TELLEZ 2670 EDIF. N DEPTO 401, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NVY0BXT",
@@ -6953,9 +6953,9 @@
       "o": "1-3NWKCJKV",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "13:19",
+      "hi": "13:17",
       "d": "G TELLEZ 2670 EDIF. N DEPTO 401, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "ELIAS ARMIJO L",
       "visitas": 1,
       "ult_fecha": "16-09-2026",
@@ -7221,5 +7221,5 @@
    }
   }
  },
- "generado": "17-09-2026 13:13"
+ "generado": "17-09-2026 13:18"
 }
