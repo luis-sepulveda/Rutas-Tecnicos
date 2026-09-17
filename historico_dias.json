@@ -6627,19 +6627,20 @@
    }
   },
   "17-09-2026": {
-   "hasta": "09:47",
-   "actividades": 115,
+   "hasta": "09:52",
+   "actividades": 117,
    "tecnicos": 34,
    "estados": {
-    "Iniciado": 20,
-    "Pendiente": 83,
-    "en ruta": 12
+    "Iniciado": 25,
+    "Pendiente": 85,
+    "en ruta": 6,
+    "Completado": 1
    },
-   "rgu": 171.5,
+   "rgu": 173.5,
    "caidas_total": 1,
    "caidas_activas": 1,
    "caidas_resueltas": 0,
-   "nuevas": 5,
+   "nuevas": 7,
    "al_bucket": 5,
    "repetidas": 26,
    "reagendadas": 5,
@@ -6656,6 +6657,24 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NWISPXR",
+      "tec": "SEBASTIAN DOSSOW A",
+      "cat": "Migración 1 Play",
+      "f": "10-13",
+      "hi": "12:27",
+      "d": "ALCALDE ALEJANDRO PERALTA 1121 LOCAL 10, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NWJ7YLM",
+      "tec": "LUIS CASTRO TORRES",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "16:00",
+      "d": "FREIRE 1278 CASA H, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NW2PFZB",
       "tec": "DANIEL NAVARRETE E",
@@ -6791,7 +6810,7 @@
       "o": "1-3NVSP2OC",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "13:08",
+      "hi": "13:10",
       "d": "MARGA MARGA 9999 CASA FIC, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -6971,7 +6990,7 @@
       "o": "1-3NVXMFHU",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "12:00",
+      "hi": "12:18",
       "d": "CASA DE PIEDRA 3064, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -6983,7 +7002,7 @@
       "o": "1-3NHP9MUJ",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "17:48",
+      "hi": "18:06",
       "d": "LOS TILOS 13, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -7071,5 +7090,5 @@
    }
   }
  },
- "generado": "17-09-2026 09:47"
+ "generado": "17-09-2026 09:52"
 }
