@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-09-17T10:43:16",
+  "actualizado": "2026-09-17T11:13:29",
   "resumen": {
-    "reagendada": 1,
+    "reagendada": 2,
     "sin informacion": 3
   },
   "estados": {
@@ -134,6 +134,16 @@
           }
         ]
       }
+    },
+    "1-3NVY0BXT": {
+      "tec": "MATIAS APELEO APELEO",
+      "cat": "Alta 1 Play",
+      "franja_original": "13-16",
+      "d": "ALEMPARTE 277 CASA 10, QUILPUE",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3NVY0BXT - 10-13-AltaLun, 21 Sep",
+      "franja_nueva": "10-13"
     }
   }
 }
