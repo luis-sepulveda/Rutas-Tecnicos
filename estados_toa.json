@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-17T13:44:09",
+  "actualizado": "2026-09-17T14:14:26",
   "resumen": {
     "sin informacion": 3,
     "reagendada": 3
@@ -25,18 +25,18 @@
         "aviso": "historial de la direccion, NO es el estado de esta orden",
         "filas": [
           {
-            "estado": "?",
-            "color": "rgb(121, 182, 235)",
-            "ot": "1-3NVGMYSS",
-            "franja": "10-13",
-            "texto": "1-3NVGMYSS - 10-13-Alta"
-          },
-          {
             "estado": "reagendada",
             "color": "rgb(255, 222, 0)",
             "ot": "1-3NW8F66C",
             "franja": "16-19",
             "texto": "1-3NW8F66C - 16-19-Migración"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NVGMYSS",
+            "franja": "10-13",
+            "texto": "1-3NVGMYSS - 10-13-Alta"
           },
           {
             "estado": "?",
@@ -60,11 +60,11 @@
             "texto": "1-3NQTU502 - 13-16-AltaMie, 9 Sep"
           },
           {
-            "estado": "cancelada",
-            "color": "rgb(128, 255, 128)",
-            "ot": "1-3NJKXMT3",
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NFRWN6C",
             "franja": "13-16",
-            "texto": "1-3NJKXMT3 - 13-16-ReparaciónSab, 29 Ago"
+            "texto": "1-3NFRWN6C - 13-16-MigraciónMie, 26 Ago"
           }
         ]
       }
@@ -102,25 +102,25 @@
             "texto": "1-3NTMMDHP - 13-16-AltaMar, 15 Sep"
           },
           {
-            "estado": "?",
-            "color": "rgb(121, 182, 235)",
-            "ot": "1-3NVA6V56",
-            "franja": "16-19",
-            "texto": "1-3NVA6V56 - 16-19-Modificación de ServicioMar, 15 Sep"
-          },
-          {
-            "estado": "gestionada",
-            "color": "rgb(96, 206, 206)",
-            "ot": "1-3NUBYNEX",
-            "franja": "10-13",
-            "texto": "1-3NUBYNEX - 10-13-AltaMar, 15 Sep"
-          },
-          {
             "estado": "cancelada",
             "color": "rgb(128, 255, 128)",
             "ot": "1-3NTD6TUX",
             "franja": "10-13",
             "texto": "1-3NTD6TUX - 10-13-AltaLun, 14 Sep"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NTCNF63",
+            "franja": "13-16",
+            "texto": "1-3NTCNF63 - 13-16-AltaLun, 14 Sep"
+          },
+          {
+            "estado": "cancelada",
+            "color": "rgb(128, 255, 128)",
+            "ot": "1-3NSZK42A",
+            "franja": "13-16",
+            "texto": "1-3NSZK42A - 13-16-AltaSab, 12 Sep"
           }
         ]
       }
