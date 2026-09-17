@@ -6627,21 +6627,22 @@
    }
   },
   "17-09-2026": {
-   "hasta": "10:17",
-   "actividades": 117,
+   "hasta": "10:22",
+   "actividades": 119,
    "tecnicos": 34,
    "estados": {
-    "Completado": 3,
+    "Completado": 5,
     "en ruta": 3,
-    "Pendiente": 79,
-    "Iniciado": 31,
+    "Pendiente": 80,
+    "Iniciado": 29,
+    "Cancelado": 1,
     "No Realizada": 1
    },
-   "rgu": 176.0,
+   "rgu": 180.5,
    "caidas_total": 2,
    "caidas_activas": 2,
    "caidas_resueltas": 0,
-   "nuevas": 9,
+   "nuevas": 10,
    "al_bucket": 7,
    "repetidas": 25,
    "reagendadas": 5,
@@ -6668,13 +6669,22 @@
     ],
     "nuevas": [
      {
+      "o": "1-3NWJTLF0",
+      "tec": "ALFREDO ALCAYAGA F",
+      "cat": "Alta 2 Play",
+      "f": "10-13",
+      "hi": "11:10",
+      "d": "BARROS BORGONO 2345, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3NWJOAV0",
       "tec": "CRISTOBAL SILVA LEIVA",
       "cat": "Migración 3 Play",
       "f": "13-16",
       "hi": "14:38",
       "d": "FERNANDOIS 1488, QUILPUE",
-      "e": "Pendiente"
+      "e": "Cancelado"
      },
      {
       "o": "1-3NW6SLLH",
@@ -6946,7 +6956,7 @@
       "o": "1-3NUE1QLG",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "13:00",
+      "hi": "12:37",
       "d": "JOSE MIGUEL CARRERA 1510, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -7096,7 +7106,7 @@
       "o": "1-3NTPMXMG",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "17:50",
+      "hi": "18:55",
       "d": "PJE SANTA MARIA 3, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -7106,5 +7116,5 @@
    }
   }
  },
- "generado": "17-09-2026 10:17"
+ "generado": "17-09-2026 10:22"
 }
