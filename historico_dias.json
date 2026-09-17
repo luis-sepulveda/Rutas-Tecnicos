@@ -6627,22 +6627,22 @@
    }
   },
   "17-09-2026": {
-   "hasta": "12:53",
-   "actividades": 131,
+   "hasta": "12:58",
+   "actividades": 132,
    "tecnicos": 35,
    "estados": {
-    "Completado": 40,
-    "Iniciado": 27,
+    "Completado": 43,
     "Pendiente": 44,
-    "en ruta": 4,
+    "Iniciado": 23,
+    "en ruta": 5,
     "Cancelado": 3,
-    "No Realizada": 13
+    "No Realizada": 14
    },
-   "rgu": 187.4,
+   "rgu": 189.4,
    "caidas_total": 5,
    "caidas_activas": 5,
    "caidas_resueltas": 0,
-   "nuevas": 18,
+   "nuevas": 19,
    "al_bucket": 10,
    "repetidas": 25,
    "reagendadas": 5,
@@ -6695,6 +6695,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NWOL603",
+      "tec": "RAFAEL VARGAS B",
+      "cat": "Alta 2 Play",
+      "f": "13-16",
+      "hi": "14:15",
+      "d": "HUILLICHES 1586, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NWNOXAL",
       "tec": "CRISTOBAL SILVA LEIVA",
@@ -7093,7 +7102,7 @@
       "f": "10-13",
       "hi": "12:45",
       "d": "CASA DE PIEDRA 3064, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "RAFAEL VARGAS B",
       "visitas": 1,
       "ult_fecha": "16-09-2026",
@@ -7103,7 +7112,7 @@
       "o": "1-3NUXAF0A",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "16:20",
       "d": "PJE EL TUCUQUERE 2635, QUILPUE",
       "e": "Pendiente",
       "tec": "RAFAEL VARGAS B",
@@ -7205,7 +7214,7 @@
       "o": "1-3NUXAF0A",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "16:20",
       "d": "PJE EL TUCUQUERE 2635, QUILPUE",
       "e": "Pendiente",
       "tec": "RAFAEL VARGAS B",
@@ -7215,5 +7224,5 @@
    }
   }
  },
- "generado": "17-09-2026 12:53"
+ "generado": "17-09-2026 12:58"
 }
