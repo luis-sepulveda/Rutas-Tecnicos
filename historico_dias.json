@@ -6627,22 +6627,22 @@
    }
   },
   "17-09-2026": {
-   "hasta": "12:38",
-   "actividades": 129,
+   "hasta": "12:48",
+   "actividades": 131,
    "tecnicos": 35,
    "estados": {
-    "Completado": 36,
-    "Iniciado": 23,
-    "Pendiente": 47,
-    "en ruta": 8,
+    "Completado": 37,
+    "Iniciado": 27,
+    "Pendiente": 46,
+    "en ruta": 6,
     "Cancelado": 3,
     "No Realizada": 12
    },
-   "rgu": 186.3,
+   "rgu": 187.4,
    "caidas_total": 5,
    "caidas_activas": 5,
    "caidas_resueltas": 0,
-   "nuevas": 17,
+   "nuevas": 18,
    "al_bucket": 10,
    "repetidas": 25,
    "reagendadas": 5,
@@ -6696,13 +6696,22 @@
     ],
     "nuevas": [
      {
+      "o": "1-3NWNOXAL",
+      "tec": "CRISTOBAL SILVA LEIVA",
+      "cat": "Reparación",
+      "f": "16-19",
+      "hi": "16:00",
+      "d": "POPAYAN (P.MENA) 212, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3NWMRNZA",
       "tec": "LUIS MARTIN NUÑEZ",
       "cat": "Modificación de Servicio",
       "f": "13-16",
       "hi": "11:51",
       "d": "RIO IMPERIAL 021, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NWM8ETX",
@@ -6854,7 +6863,7 @@
       "o": "1-3NW1MMUB",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:44",
+      "hi": "14:48",
       "d": "VOLCAN SOCOMPA 2675, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
@@ -6926,7 +6935,7 @@
       "o": "1-3NWKCJKV",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:04",
+      "hi": "14:14",
       "d": "G TELLEZ 2670 EDIF. N DEPTO 401, QUILPUE",
       "e": "Pendiente",
       "tec": "ELIAS ARMIJO L",
@@ -7082,9 +7091,9 @@
       "o": "1-3NVXMFHU",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "12:47",
+      "hi": "12:45",
       "d": "CASA DE PIEDRA 3064, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "RAFAEL VARGAS B",
       "visitas": 1,
       "ult_fecha": "16-09-2026",
@@ -7142,7 +7151,7 @@
       "o": "1-3NHP9MUJ",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "14:20",
       "d": "LOS TILOS 13, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "YENDER BOSCAN CADENAS",
@@ -7176,7 +7185,7 @@
       "o": "1-3NVGOMXI",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "17:06",
       "d": "ARAUCANOS 1490, QUILPUE",
       "e": "Pendiente",
       "tec": "KEVIN TAPIA RETAMAL",
@@ -7206,5 +7215,5 @@
    }
   }
  },
- "generado": "17-09-2026 12:38"
+ "generado": "17-09-2026 12:48"
 }
