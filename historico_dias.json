@@ -6627,16 +6627,16 @@
    }
   },
   "17-09-2026": {
-   "hasta": "11:07",
+   "hasta": "11:12",
    "actividades": 120,
    "tecnicos": 35,
    "estados": {
     "Completado": 9,
-    "Iniciado": 33,
+    "Iniciado": 34,
     "Pendiente": 70,
-    "en ruta": 2,
     "Cancelado": 3,
-    "No Realizada": 3
+    "No Realizada": 3,
+    "en ruta": 1
    },
    "rgu": 180.0,
    "caidas_total": 5,
@@ -6842,7 +6842,7 @@
       "o": "1-3NWKCJKV",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "13:48",
+      "hi": "13:49",
       "d": "G TELLEZ 2670 EDIF. N DEPTO 401, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
@@ -7170,5 +7170,5 @@
    }
   }
  },
- "generado": "17-09-2026 11:07"
+ "generado": "17-09-2026 11:12"
 }
