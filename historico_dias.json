@@ -6627,11 +6627,12 @@
    }
   },
   "17-09-2026": {
-   "hasta": "08:57",
+   "hasta": "09:02",
    "actividades": 100,
    "tecnicos": 36,
    "estados": {
-    "Pendiente": 100
+    "Pendiente": 99,
+    "en ruta": 1
    },
    "rgu": 145.5,
    "caidas_total": 0,
@@ -6965,5 +6966,5 @@
    }
   }
  },
- "generado": "17-09-2026 08:57"
+ "generado": "17-09-2026 09:02"
 }
