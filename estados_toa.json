@@ -1,20 +1,10 @@
 {
-  "actualizado": "2026-09-17T12:43:46",
+  "actualizado": "2026-09-17T13:14:04",
   "resumen": {
-    "reagendada": 2,
-    "sin informacion": 3
+    "sin informacion": 3,
+    "reagendada": 3
   },
   "estados": {
-    "1-3NWJTLF0": {
-      "tec": "ALFREDO ALCAYAGA F",
-      "cat": "Alta 2 Play",
-      "franja_original": "10-13",
-      "d": "BARROS BORGONO 2345, QUILPUE",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NWJTLF0 - 10-13-AltaLun, 21 Sep",
-      "franja_nueva": "10-13"
-    },
     "1-3NU37BIV": {
       "tec": "CRISTOBAL SILVA LEIVA",
       "cat": "Migración 1 Play",
@@ -36,7 +26,7 @@
         "filas": [
           {
             "estado": "?",
-            "color": "rgb(93, 190, 63)",
+            "color": "rgb(121, 182, 235)",
             "ot": "1-3NVGMYSS",
             "franja": "10-13",
             "texto": "1-3NVGMYSS - 10-13-Alta"
@@ -144,6 +134,26 @@
       "color": "rgb(255, 222, 0)",
       "detalle": "1-3NVY0BXT - 10-13-AltaLun, 21 Sep",
       "franja_nueva": "10-13"
+    },
+    "1-3NVP5EKY": {
+      "tec": "NICOLAS MOYANO R",
+      "cat": "Alta 2 Play",
+      "franja_original": "16-19",
+      "d": "HORNOPIREN 2151, VILLA ALEMANA",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3NVP5EKY - 10-13-AltaLun, 21 Sep",
+      "franja_nueva": "10-13"
+    },
+    "1-3NWOL603": {
+      "tec": "RAFAEL VARGAS B",
+      "cat": "Alta 2 Play",
+      "franja_original": "13-16",
+      "d": "HUILLICHES 1586, QUILPUE",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3NWOL603 - 16-19-AltaLun, 21 Sep",
+      "franja_nueva": "16-19"
     }
   }
 }
