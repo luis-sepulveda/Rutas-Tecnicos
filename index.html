@@ -679,6 +679,13 @@
   .pz-b .v { margin-left:auto; font-size:19px; font-weight:700; color:#1f3d5c; }
   .pz-b .v.cero { color:#b9c6d4; font-weight:400; }
   .pz-b .v.flecha { font-size:15px; color:#b9c6d4; font-weight:400; }
+  /* Punto del color del tema: distingue de un vistazo las tarjetas que traen
+     cifra de las que abren un reporte, sin tener que leerlas una por una. */
+  .pz-b .pt { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+  .pz-b .et.enlace { color:#2563eb; }
+  /* En cero se apaga. Un 0 no tiene por que pesar lo mismo que un 25, y el dia
+     que suba a 1 salta a la vista solo. */
+  .pz-b.apagada { opacity:.55; }
   a.pz-b { text-decoration:none; }
 
   /* Reporte historico de direcciones repetidas. Sale del historial_dir.json,
@@ -744,7 +751,11 @@
                 text-decoration:none; cursor:pointer;
                 box-shadow:0 1px 2px rgba(20,45,70,.05); }
   .pz-barra a:hover { border-color:#9aadbf; }
-  .pz-barra a.aqui { background:#e2ebf4; border-color:#9fb6cc; color:#1f3d5c; }
+  /* El tablero en el que estas parado: azul lleno, el mismo azul que ya usan
+     las ordenes sin cerrar. No se agrega un color nuevo a la pantalla. */
+  .pz-barra a.aqui { background:#2563eb; border-color:#2563eb; color:#fff;
+                     font-weight:700; }
+  .pz-barra a.aqui:hover { background:#1d4ed8; border-color:#1d4ed8; }
   .pz-barra .sep { flex:1; }
   .pz-barra .upd { font-size:12px; color:#93a3b4; }
   /* Aviso de monitor detenido. Rojo fijo, no parpadea: el parpadeo cansa y
@@ -3375,12 +3386,16 @@ function pintarPortada(){
     : '<div class="' + clase + '"><div class="n">' + v + '</div>'
       + '<div class="l">' + l + '</div></div>';
 
-  const b = (fn, texto, valor, alerta) =>
-    '<button class="pz-b'+(alerta ? ' alerta' : '')+'" onclick="desdePortada('+fn+')">'
-    + texto
-    + '<span class="v'+(valor ? '' : ' cero')+'">'
-    +   (valor !== undefined && valor !== null ? valor : '›') + '</span>'
-    + '</button>';
+  const b = (fn, texto, valor, alerta, punto) => {
+    const esCifra = (valor !== undefined && valor !== null);
+    return '<button class="pz-b'+(alerta ? ' alerta' : '')
+      +   (esCifra && !valor ? ' apagada' : '')+'" onclick="desdePortada('+fn+')">'
+      + (punto ? '<span class="pt" style="background:'+punto+'"></span>' : '')
+      + '<span class="et'+(esCifra ? '' : ' enlace')+'">' + texto + '</span>'
+      + '<span class="v'+(valor ? '' : (esCifra ? ' cero' : ' flecha'))+'">'
+      +   (esCifra ? valor : '›') + '</span>'
+      + '</button>';
+  };
 
   caja.innerHTML = '<div class="pz-in">'
 
@@ -3422,22 +3437,24 @@ function pintarPortada(){
     + '</div>'
 
     + '<div><div class="pz-rot">Paneles de la jornada</div><div class="pz-grid">'
-    +   b('toggleCaidas', 'Caídas', caidas, caidas > 0)
+    +   b('toggleCaidas', 'Caídas', caidas, caidas > 0, '#dc2626')
     +   b('toggleComp', 'Completitud')
-    +   b('toggleSinCompletar', 'Técnicos sin completar', sinComp)
+    +   b('toggleSinCompletar', 'Técnicos sin completar', sinComp, false, '#f59e0b')
     +   b('toggleAtrasados', 'Más de 3 horas')
-    +   b('toggleReca', 'Reingresadas', reca)
-    +   b('toggleNuevas', 'Nuevas', nuevas)
-    +   b('toggleNuevas', 'Al bucket', alBucket)
-    +   b('toggleRepe', 'Repetidas', repe)
+    +   b('toggleReca', 'Reingresadas', reca, false, '#c3cdd9')
+    +   b('toggleNuevas', 'Nuevas', nuevas, false, '#2563eb')
+    +   b('toggleNuevas', 'Al bucket', alBucket, false, '#2563eb')
+    +   b('toggleRepe', 'Repetidas', repe, false, '#7c3aed')
     +   b('verReporteRepe', 'Reporte histórico')
     + '</div>'
     + '<div class="pz-rot" style="margin-top:20px">Reportes del historial</div>'
     + '<div class="pz-grid">'
     +   '<a class="pz-b" href="' + URL_SINMORADORES + '" target="_blank">'
-    +     'Sin moradores semanal<span class="v flecha">›</span></a>'
+    +     '<span class="et enlace">Sin moradores semanal</span>'
+    +     '<span class="v flecha">›</span></a>'
     +   '<a class="pz-b" href="' + URL_EQUIPO + '" target="_blank">'
-    +     'Detalle por supervisor<span class="v flecha">›</span></a>'
+    +     '<span class="et enlace">Detalle por supervisor</span>'
+    +     '<span class="v flecha">›</span></a>'
     + '</div></div></div></div>';
 
   refrescarAviso();
