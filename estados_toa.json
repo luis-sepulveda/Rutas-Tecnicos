@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-17T12:13:41",
+  "actualizado": "2026-09-17T12:43:46",
   "resumen": {
     "reagendada": 2,
     "sin informacion": 3
@@ -35,18 +35,18 @@
         "aviso": "historial de la direccion, NO es el estado de esta orden",
         "filas": [
           {
-            "estado": "reagendada",
-            "color": "rgb(255, 222, 0)",
-            "ot": "1-3NW8F66C",
-            "franja": "16-19",
-            "texto": "1-3NW8F66C - 16-19-Migración"
-          },
-          {
             "estado": "?",
             "color": "rgb(93, 190, 63)",
             "ot": "1-3NVGMYSS",
             "franja": "10-13",
             "texto": "1-3NVGMYSS - 10-13-Alta"
+          },
+          {
+            "estado": "reagendada",
+            "color": "rgb(255, 222, 0)",
+            "ot": "1-3NW8F66C",
+            "franja": "16-19",
+            "texto": "1-3NW8F66C - 16-19-Migración"
           },
           {
             "estado": "?",
