@@ -6627,14 +6627,14 @@
    }
   },
   "17-09-2026": {
-   "hasta": "13:38",
+   "hasta": "13:48",
    "actividades": 134,
    "tecnicos": 35,
    "estados": {
-    "Completado": 51,
-    "Iniciado": 22,
-    "Pendiente": 34,
-    "en ruta": 4,
+    "Completado": 52,
+    "Iniciado": 23,
+    "Pendiente": 33,
+    "en ruta": 3,
     "Cancelado": 4,
     "No Realizada": 18,
     "Suspendido": 1
@@ -6842,7 +6842,7 @@
      },
      {
       "o": "1-3NWJ7YLM",
-      "tec": "ANTONHY MORALES MENDOZA",
+      "tec": "CRISTOBAL SILVA LEIVA",
       "cat": "Modificación de Servicio",
       "f": "16-19",
       "hi": "16:00",
@@ -6900,7 +6900,7 @@
       "o": "1-3NW1MMUB",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:48",
+      "hi": "15:08",
       "d": "VOLCAN SOCOMPA 2675, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
@@ -7032,7 +7032,7 @@
       "o": "1-3NVSP2OC",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:12",
+      "hi": "15:22",
       "d": "MARGA MARGA 9999 CASA FIC, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JEAN ROODLY ORELIEN",
@@ -7210,7 +7210,7 @@
       "o": "1-3NVGOMXI",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "17:31",
+      "hi": "17:33",
       "d": "ARAUCANOS 1490, QUILPUE",
       "e": "Pendiente",
       "tec": "KEVIN TAPIA RETAMAL",
@@ -7240,5 +7240,5 @@
    }
   }
  },
- "generado": "17-09-2026 13:38"
+ "generado": "17-09-2026 13:48"
 }
