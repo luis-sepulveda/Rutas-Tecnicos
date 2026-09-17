@@ -6627,16 +6627,16 @@
    }
   },
   "17-09-2026": {
-   "hasta": "12:48",
+   "hasta": "12:53",
    "actividades": 131,
    "tecnicos": 35,
    "estados": {
-    "Completado": 37,
+    "Completado": 40,
     "Iniciado": 27,
-    "Pendiente": 46,
-    "en ruta": 6,
+    "Pendiente": 44,
+    "en ruta": 4,
     "Cancelado": 3,
-    "No Realizada": 12
+    "No Realizada": 13
    },
    "rgu": 187.4,
    "caidas_total": 5,
@@ -6889,7 +6889,7 @@
       "f": "10-13",
       "hi": "11:39",
       "d": "MIRASOL 2342, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "DANIEL NAVARRETE E",
       "visitas": 1,
       "ult_fecha": "27-08-2026",
@@ -6947,7 +6947,7 @@
       "o": "1-3NW1FOYR",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "15:16",
+      "hi": "14:01",
       "d": "RINCON DEL MAQUI 1534, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -7067,9 +7067,9 @@
       "o": "1-3NVT8KD7",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "12:46",
+      "hi": "12:51",
       "d": "MATURANA 115 CASA 5, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "NICOLAS MOYANO R",
       "visitas": 4,
       "ult_fecha": "11-09-2026",
@@ -7127,9 +7127,9 @@
       "o": "1-3NVQU2MD",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "12:44",
+      "hi": "12:53",
       "d": "PRIMERA 358, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "SAMUEL FERNANDEZ VIDAL",
       "visitas": 1,
       "ult_fecha": "11-09-2026",
@@ -7215,5 +7215,5 @@
    }
   }
  },
- "generado": "17-09-2026 12:48"
+ "generado": "17-09-2026 12:53"
 }
