@@ -6627,22 +6627,23 @@
    }
   },
   "17-09-2026": {
-   "hasta": "09:52",
+   "hasta": "10:17",
    "actividades": 117,
    "tecnicos": 34,
    "estados": {
-    "Iniciado": 25,
-    "Pendiente": 85,
-    "en ruta": 6,
-    "Completado": 1
+    "Completado": 3,
+    "en ruta": 3,
+    "Pendiente": 79,
+    "Iniciado": 31,
+    "No Realizada": 1
    },
-   "rgu": 173.5,
-   "caidas_total": 1,
-   "caidas_activas": 1,
+   "rgu": 176.0,
+   "caidas_total": 2,
+   "caidas_activas": 2,
    "caidas_resueltas": 0,
-   "nuevas": 7,
-   "al_bucket": 5,
-   "repetidas": 26,
+   "nuevas": 9,
+   "al_bucket": 7,
+   "repetidas": 25,
    "reagendadas": 5,
    "detalle": {
     "caidas": [
@@ -6654,9 +6655,36 @@
       "hi": "14:28",
       "d": "PASAJE INCAHUASI 1833 CASA B, QUILPUE",
       "e": "Pendiente"
+     },
+     {
+      "o": "1-3NUCCRY8",
+      "tec": "ESTEBAN PIZARRO QUINTANA",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "12:09",
+      "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
+      "e": "Pendiente"
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NWJOAV0",
+      "tec": "CRISTOBAL SILVA LEIVA",
+      "cat": "Migración 3 Play",
+      "f": "13-16",
+      "hi": "14:38",
+      "d": "FERNANDOIS 1488, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NW6SLLH",
+      "tec": "GEEYSER PEREZ O",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "16:00",
+      "d": "CENTENARIO 859 DEPTO 31, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NWISPXR",
       "tec": "SEBASTIAN DOSSOW A",
@@ -6668,7 +6696,7 @@
      },
      {
       "o": "1-3NWJ7YLM",
-      "tec": "LUIS CASTRO TORRES",
+      "tec": "JOSE SALAS MEDINA",
       "cat": "Modificación de Servicio",
       "f": "16-19",
       "hi": "16:00",
@@ -6726,7 +6754,7 @@
       "o": "1-3NW1MMUB",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:13",
+      "hi": "14:00",
       "d": "VOLCAN SOCOMPA 2675, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -6762,7 +6790,7 @@
       "o": "1-3NUWYQ03",
       "cat": "Reparación",
       "f": "10-13",
-      "hi": "11:16",
+      "hi": "11:39",
       "d": "MIRASOL 2342, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "CRISTOBAL MIRANDA VALENC",
@@ -6774,7 +6802,7 @@
       "o": "1-3NVQU2MD",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "12:26",
+      "hi": "12:49",
       "d": "PRIMERA 358, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "CRISTOBAL MIRANDA VALENC",
@@ -6810,7 +6838,7 @@
       "o": "1-3NVSP2OC",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "13:10",
+      "hi": "15:40",
       "d": "MARGA MARGA 9999 CASA FIC, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -6819,28 +6847,16 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3NUCCRY8",
-      "cat": "Alta 1 Play",
-      "f": "10-13",
-      "hi": "10:53",
-      "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "ESTEBAN PIZARRO QUINTANA",
-      "visitas": 5,
-      "ult_fecha": "14-09-2026",
-      "ult_cierre": "Clte desiste motivo comercial"
-     },
-     {
-      "o": "1-3NVPV07U",
+      "o": "1-3NW6R166",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "12:29",
-      "d": "CONGUILLO 1992, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "ESTEBAN PIZARRO QUINTANA",
+      "hi": "10:28",
+      "d": "MARGA MARGA 1640, VILLA ALEMANA",
+      "e": "en ruta",
+      "tec": "ELIAS ARMIJO L",
       "visitas": 1,
       "ult_fecha": "16-09-2026",
-      "ult_cierre": "Direccion incorrecta"
+      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3NW2TW1I",
@@ -6858,19 +6874,31 @@
       "o": "1-3NVDWX8H",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "13:00",
+      "hi": "12:42",
       "d": "AVENIDA VALPARAISO 1215, VILLA ALEMANA",
       "e": "Pendiente",
-      "tec": "JEAN ROODLY ORELIEN",
+      "tec": "HERNAN CORTES HERRERA",
       "visitas": 1,
       "ult_fecha": "06-08-2026",
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3NVOZTZL",
+      "cat": "Alta 2 Play",
+      "f": "13-16",
+      "hi": "15:59",
+      "d": "GALLEGUILLOS 1421 EDIF. E DEPTO 33, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "HERNAN CORTES HERRERA",
+      "visitas": 2,
+      "ult_fecha": "16-09-2026",
+      "ult_cierre": "Direccion incorrecta"
+     },
+     {
       "o": "1-3NTEJYBV",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:38",
+      "hi": "16:11",
       "d": "DOLORES 822, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOEL GUSTAVE GUSTA",
@@ -6882,7 +6910,7 @@
       "o": "1-3NVU74LG",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "13:18",
+      "hi": "13:20",
       "d": "PJE RIO CISNES 1969, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -6915,18 +6943,6 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
-      "o": "1-3NW6R166",
-      "cat": "Alta 2 Play",
-      "f": "10-13",
-      "hi": "15:07",
-      "d": "MARGA MARGA 1640, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "JOSE PEREZ RANGEL",
-      "visitas": 1,
-      "ult_fecha": "16-09-2026",
-      "ult_cierre": "Sin moradores"
-     },
-     {
       "o": "1-3NUE1QLG",
       "cat": "Alta 1 Play",
       "f": "10-13",
@@ -6942,7 +6958,7 @@
       "o": "1-3NW1FOYR",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "16:15",
+      "hi": "14:00",
       "d": "RINCON DEL MAQUI 1534, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -6954,7 +6970,7 @@
       "o": "1-3NVP5EKY",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "17:21",
+      "hi": "16:00",
       "d": "HORNOPIREN 2151, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -6968,23 +6984,11 @@
       "f": "10-13",
       "hi": "09:42",
       "d": "BERNARDO O HIGGINS 0332, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "LEONEL HERNÁNDEZ OJE",
       "visitas": 2,
       "ult_fecha": "16-09-2026",
       "ult_cierre": "Direccion incorrecta"
-     },
-     {
-      "o": "1-3NVT8KD7",
-      "cat": "Alta 1 Play",
-      "f": "13-16",
-      "hi": "18:05",
-      "d": "MATURANA 115 CASA 5, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "LUIS GATICA DAVILA",
-      "visitas": 4,
-      "ult_fecha": "11-09-2026",
-      "ult_cierre": "Cliente reagenda"
      },
      {
       "o": "1-3NVXMFHU",
@@ -7002,7 +7006,7 @@
       "o": "1-3NHP9MUJ",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "18:06",
+      "hi": "15:45",
       "d": "LOS TILOS 13, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -7011,24 +7015,36 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
-      "o": "1-3NVOZTZL",
+      "o": "1-3NVPV07U",
       "cat": "Alta 2 Play",
-      "f": "13-16",
-      "hi": "17:51",
-      "d": "GALLEGUILLOS 1421 EDIF. E DEPTO 33, VILLA ALEMANA",
+      "f": "10-13",
+      "hi": "12:13",
+      "d": "CONGUILLO 1992, VILLA ALEMANA",
       "e": "Pendiente",
-      "tec": "MATÍAS JAQUE AG",
-      "visitas": 2,
+      "tec": "NICOLAS MOYANO R",
+      "visitas": 1,
       "ult_fecha": "16-09-2026",
       "ult_cierre": "Direccion incorrecta"
+     },
+     {
+      "o": "1-3NVT8KD7",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "14:38",
+      "d": "MATURANA 115 CASA 5, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "NICOLAS MOYANO R",
+      "visitas": 4,
+      "ult_fecha": "11-09-2026",
+      "ult_cierre": "Cliente reagenda"
      },
      {
       "o": "1-3NVUUQJH",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "09:42",
+      "hi": "09:55",
       "d": "PJE ANA MARIA LAREDO 1982, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "SEBASTIAN DOSSOW A",
       "visitas": 1,
       "ult_fecha": "16-09-2026",
@@ -7070,7 +7086,7 @@
       "o": "1-3NUZCGOC",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:59",
+      "hi": "11:01",
       "d": "HUANHUALI 482 EDIF. B1 DEPTO 32, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -7080,7 +7096,7 @@
       "o": "1-3NTPMXMG",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "17:48",
+      "hi": "17:50",
       "d": "PJE SANTA MARIA 3, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -7090,5 +7106,5 @@
    }
   }
  },
- "generado": "17-09-2026 09:52"
+ "generado": "17-09-2026 10:17"
 }
