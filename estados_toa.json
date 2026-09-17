@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-09-17T09:42:43",
+  "actualizado": "2026-09-17T10:13:02",
   "resumen": {
-    "sin informacion": 1
+    "sin informacion": 2
   },
   "estados": {
     "1-3NU37BIV": {
@@ -11,6 +11,62 @@
       "d": "PASAJE INCAHUASI 1833 CASA B, QUILPUE",
       "estado": "sin informacion",
       "nota": "la OT ya no existe en TOA"
+    },
+    "1-3NUCCRY8": {
+      "tec": "ESTEBAN PIZARRO QUINTANA",
+      "cat": "Alta 1 Play",
+      "franja_original": "10-13",
+      "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
+      "estado": "sin informacion",
+      "nota": "la OT ya no existe en TOA",
+      "contexto": {
+        "buscado": "SAN ENRIQUE 1780",
+        "aviso": "historial de la direccion, NO es el estado de esta orden",
+        "filas": [
+          {
+            "estado": "reagendada",
+            "color": "rgb(255, 222, 0)",
+            "ot": "1-3NW8F66C",
+            "franja": "16-19",
+            "texto": "1-3NW8F66C - 16-19-Migración"
+          },
+          {
+            "estado": "reagendada",
+            "color": "rgb(255, 222, 0)",
+            "ot": "1-3NVGMYSS",
+            "franja": "10-13",
+            "texto": "1-3NVGMYSS - 10-13-Alta"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NTBG5UZ",
+            "franja": "10-13",
+            "texto": "1-3NTBG5UZ - 10-13-ReparaciónLun, 14 Sep"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NU4EWMF",
+            "franja": "13-16",
+            "texto": "1-3NU4EWMF - 13-16-AltaLun, 14 Sep"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NQTU502",
+            "franja": "13-16",
+            "texto": "1-3NQTU502 - 13-16-AltaMie, 9 Sep"
+          },
+          {
+            "estado": "cancelada",
+            "color": "rgb(128, 255, 128)",
+            "ot": "1-3NJKXMT3",
+            "franja": "13-16",
+            "texto": "1-3NJKXMT3 - 13-16-ReparaciónSab, 29 Ago"
+          }
+        ]
+      }
     }
   }
 }
