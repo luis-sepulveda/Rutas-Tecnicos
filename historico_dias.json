@@ -6627,27 +6627,229 @@
    }
   },
   "17-09-2026": {
-   "hasta": "08:42",
-   "actividades": 2,
-   "tecnicos": 2,
+   "hasta": "08:47",
+   "actividades": 68,
+   "tecnicos": 36,
    "estados": {
-    "Pendiente": 2
+    "Pendiente": 68
    },
-   "rgu": 3.0,
+   "rgu": 104.0,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
-   "nuevas": 0,
+   "nuevas": 1,
    "al_bucket": 0,
-   "repetidas": 0,
-   "reagendadas": 0,
+   "repetidas": 15,
+   "reagendadas": 1,
    "detalle": {
     "caidas": [],
-    "nuevas": [],
-    "repetidas": [],
-    "reagendadas": []
+    "nuevas": [
+     {
+      "o": "1-3NU0M0RN",
+      "tec": "MARCELO GÓMEZ GÓME",
+      "cat": "Alta Traslado",
+      "f": "10-13",
+      "hi": "10:00",
+      "d": "LAS ROSAS 196, VILLA ALEMANA",
+      "e": "Pendiente"
+     }
+    ],
+    "repetidas": [
+     {
+      "o": "1-3NVXMFHU",
+      "cat": "Alta 2 Play",
+      "f": "10-13",
+      "hi": "10:00",
+      "d": "CASA DE PIEDRA 3064, QUILPUE",
+      "e": "Pendiente",
+      "tec": "CESAR MENA OLIVEROS",
+      "visitas": 1,
+      "ult_fecha": "16-09-2026",
+      "ult_cierre": "Clte desiste motivo comercial"
+     },
+     {
+      "o": "1-3NUWYQ03",
+      "cat": "Reparación",
+      "f": "10-13",
+      "hi": "11:44",
+      "d": "MIRASOL 2342, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "CRISTOBAL MIRANDA VALENC",
+      "visitas": 1,
+      "ult_fecha": "27-08-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3NVQU2MD",
+      "cat": "Migración 2 Play",
+      "f": "10-13",
+      "hi": "12:54",
+      "d": "PRIMERA 358, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "CRISTOBAL MIRANDA VALENC",
+      "visitas": 1,
+      "ult_fecha": "11-09-2026",
+      "ult_cierre": "Direccion no encontrada"
+     },
+     {
+      "o": "1-3NV04374",
+      "cat": "Migración 2 Play",
+      "f": "10-13",
+      "hi": "10:45",
+      "d": "IGNACIO CARRERA PINTO 1237, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "EDGAR VALERO C",
+      "visitas": 3,
+      "ult_fecha": "12-09-2026",
+      "ult_cierre": "Cliente reagenda"
+     },
+     {
+      "o": "1-3NVPV07U",
+      "cat": "Alta 2 Play",
+      "f": "10-13",
+      "hi": "11:07",
+      "d": "CONGUILLO 1992, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "ESTEBAN PIZARRO QUINTANA",
+      "visitas": 1,
+      "ult_fecha": "16-09-2026",
+      "ult_cierre": "Direccion incorrecta"
+     },
+     {
+      "o": "1-3NUCCRY8",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "13:07",
+      "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "ESTEBAN PIZARRO QUINTANA",
+      "visitas": 5,
+      "ult_fecha": "14-09-2026",
+      "ult_cierre": "Clte desiste motivo comercial"
+     },
+     {
+      "o": "1-3NW2TW1I",
+      "cat": "Reparación",
+      "f": "10-13",
+      "hi": "10:57",
+      "d": "AV BLANCO ENCALADA 1300, QUILPUE",
+      "e": "Pendiente",
+      "tec": "FELIPE SILVA R",
+      "visitas": 1,
+      "ult_fecha": "16-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3NVDWX8H",
+      "cat": "Migración 1 Play",
+      "f": "10-13",
+      "hi": "13:00",
+      "d": "AVENIDA VALPARAISO 1215, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JEAN ROODLY ORELIEN",
+      "visitas": 1,
+      "ult_fecha": "06-08-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3NVU74LG",
+      "cat": "Alta 2 Play",
+      "f": "10-13",
+      "hi": "13:27",
+      "d": "PJE RIO CISNES 1969, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JOSE CASTRO P",
+      "visitas": 1,
+      "ult_fecha": "16-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3NW6FAIY",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "10:00",
+      "d": "FREIRE 1409, QUILPUE",
+      "e": "Pendiente",
+      "tec": "JOSE GALAZ D",
+      "visitas": 1,
+      "ult_fecha": "16-09-2026",
+      "ult_cierre": "Clte desiste motivo comercial"
+     },
+     {
+      "o": "1-3NW6R166",
+      "cat": "Alta 2 Play",
+      "f": "10-13",
+      "hi": "13:08",
+      "d": "MARGA MARGA 1640, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JOSE PEREZ RANGEL",
+      "visitas": 1,
+      "ult_fecha": "16-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3NUE1QLG",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "11:12",
+      "d": "JOSE MIGUEL CARRERA 1510, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JOSE ROJO A",
+      "visitas": 2,
+      "ult_fecha": "04-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3NVRD433",
+      "cat": "Alta 2 Play",
+      "f": "10-13",
+      "hi": "10:00",
+      "d": "BERNARDO O HIGGINS 0332, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LEONEL HERNÁNDEZ OJE",
+      "visitas": 2,
+      "ult_fecha": "16-09-2026",
+      "ult_cierre": "Direccion incorrecta"
+     },
+     {
+      "o": "1-3NW8Z8O8",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "10:00",
+      "d": "RIQUELME 1708, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LUIS MARTIN NUÑEZ",
+      "visitas": 1,
+      "ult_fecha": "16-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3NVUUQJH",
+      "cat": "Migración 1 Play",
+      "f": "10-13",
+      "hi": "10:00",
+      "d": "PJE ANA MARIA LAREDO 1982, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "SEBASTIAN DOSSOW A",
+      "visitas": 1,
+      "ult_fecha": "16-09-2026",
+      "ult_cierre": "Sin moradores"
+     }
+    ],
+    "reagendadas": [
+     {
+      "o": "1-3NUZCGOC",
+      "cat": "Alta 2 Play",
+      "f": "10-13",
+      "hi": "11:08",
+      "d": "HUANHUALI 482 EDIF. B1 DEPTO 32, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JOSE CASTRO P",
+      "desde": "16-09-2026"
+     }
+    ]
    }
   }
  },
- "generado": "17-09-2026 08:42"
+ "generado": "17-09-2026 08:47"
 }
