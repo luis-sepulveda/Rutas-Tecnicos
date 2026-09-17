@@ -6627,17 +6627,17 @@
    }
   },
   "17-09-2026": {
-   "hasta": "14:53",
+   "hasta": "15:09",
    "actividades": 127,
    "tecnicos": 32,
    "estados": {
-    "Completado": 61,
-    "Pendiente": 18,
-    "Iniciado": 14,
+    "Completado": 64,
+    "en ruta": 5,
+    "Pendiente": 14,
+    "Iniciado": 13,
     "Cancelado": 4,
     "No Realizada": 26,
-    "Suspendido": 1,
-    "en ruta": 3
+    "Suspendido": 1
    },
    "rgu": 180.0,
    "caidas_total": 7,
@@ -6779,7 +6779,7 @@
      },
      {
       "o": "1-3NWKYV01",
-      "tec": "FELIPE SILVA R",
+      "tec": "ELIAS ARMIJO L",
       "cat": "Reparación",
       "f": "16-19",
       "hi": "16:00",
@@ -6829,7 +6829,7 @@
       "f": "16-19",
       "hi": "16:00",
       "d": "CENTENARIO 859 DEPTO 31, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NWISPXR",
@@ -6947,7 +6947,7 @@
       "o": "1-3NTEJYBV",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "17:20",
       "d": "DOLORES 822, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -7203,7 +7203,7 @@
       "f": "16-19",
       "hi": "14:53",
       "d": "FEDERICO BARREDO 556 EDIF. B-4 DEPTO 202, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "ELIAS ARMIJO L",
       "desde": "16-09-2026"
      },
@@ -7241,5 +7241,5 @@
    }
   }
  },
- "generado": "17-09-2026 14:53"
+ "generado": "17-09-2026 15:09"
 }
