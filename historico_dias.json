@@ -7241,15 +7241,15 @@
    }
   },
   "21-09-2026": {
-   "hasta": "15:00",
+   "hasta": "15:10",
    "actividades": 184,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 43,
+    "No Realizada": 45,
     "Completado": 59,
-    "Iniciado": 21,
-    "Pendiente": 48,
-    "en ruta": 6,
+    "Iniciado": 22,
+    "Pendiente": 43,
+    "en ruta": 8,
     "Suspendido": 2,
     "Cancelado": 5
    },
@@ -7434,7 +7434,7 @@
       "f": "13-16",
       "hi": "17:16",
       "d": "MADRID 620 CASA D, QUILPUE",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3NYD0BYG",
@@ -7479,7 +7479,7 @@
       "f": "13-16",
       "hi": "15:08",
       "d": "ALBA DE TORMES 094, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NYCJ1B9",
@@ -7578,7 +7578,7 @@
       "f": "13-16",
       "hi": "14:53",
       "d": "PJE DEL VERGEL 67, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NY9G6LV",
@@ -7727,18 +7727,6 @@
       "ult_cierre": "Riesgo electrico"
      },
      {
-      "o": "1-3NY6Q4V4",
-      "cat": "Alta 1 Play",
-      "f": "16-19",
-      "hi": "18:43",
-      "d": "SAN ENRIQUE 1950 EDIF. 10 DEPTO 102, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "EDGAR VALERO C",
-      "visitas": 1,
-      "ult_fecha": "21-09-2026",
-      "ult_cierre": "Sin moradores"
-     },
-     {
       "o": "1-3NVP5EKY",
       "cat": "Alta 2 Play",
       "f": "10-13",
@@ -7797,6 +7785,18 @@
       "visitas": 1,
       "ult_fecha": "04-09-2026",
       "ult_cierre": "Cliente reagenda"
+     },
+     {
+      "o": "1-3NY6Q4V4",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "17:18",
+      "d": "SAN ENRIQUE 1950 EDIF. 10 DEPTO 102, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "FELIPE SILVA R",
+      "visitas": 1,
+      "ult_fecha": "21-09-2026",
+      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3NXVUC5I",
@@ -7936,8 +7936,8 @@
       "d": "MADRID 620 CASA D, QUILPUE",
       "e": "No Realizada",
       "tec": "KEVIN TAPIA RETAMAL",
-      "visitas": 1,
-      "ult_fecha": "11-09-2026",
+      "visitas": 2,
+      "ult_fecha": "21-09-2026",
       "ult_cierre": "Sin apoyo vivienda-Pierrack"
      },
      {
@@ -7968,7 +7968,7 @@
       "o": "1-3NY6HHPV",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "18:16",
+      "hi": "16:24",
       "d": "LAGO LAS TORRES 29 DEPTO 1203, QUILPUE",
       "e": "Pendiente",
       "tec": "LUIS CASTRO TORRES",
@@ -8004,7 +8004,7 @@
       "o": "1-3NY8IVXY",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:14",
+      "hi": "16:17",
       "d": "CUMMING 831, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -8132,5 +8132,5 @@
    }
   }
  },
- "generado": "21-09-2026 15:00"
+ "generado": "21-09-2026 15:10"
 }
