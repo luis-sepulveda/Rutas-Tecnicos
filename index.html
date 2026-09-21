@@ -298,6 +298,141 @@
   .nfila .vermapa { cursor:pointer; text-decoration:underline dotted; text-underline-offset:2px; }
   .nfila .vermapa:hover { color:#a7f3d0; text-decoration:underline solid; }
   .nfila.cai:hover { background:#132845; }
+  /* ---- Caidas, version que se explica sola (21-09-2026) ----
+     El detalle es el mismo de antes. Lo que cambia es que ya no hay que
+     haberlo construido para leerlo: columnas con titulo, y debajo de cada
+     orden una frase que cuenta que paso con ella. */
+  .mc-intro { color:#b8d4ee; font-size:12.5px; line-height:1.55; padding:10px 16px 0; }
+  .mc-intro b { color:#eff6ff; }
+  .cfila, .ccab { display:grid; grid-template-columns:150px 92px minmax(0,1.35fr) minmax(0,1fr) 124px;
+    gap:14px; align-items:start; }
+  .ccab { padding:0 10px 6px 13px; margin-bottom:6px; border-bottom:1px solid #1e3a5f;
+    color:#8ab4dd; font-size:10.5px; letter-spacing:.4px; text-transform:uppercase; }
+  .ccab .der, .cfila .der { text-align:right; }
+  .corden { border-left:3px solid #ef4444; background:#111c33; border-radius:6px;
+    padding:8px 10px; margin-bottom:6px; font-size:12.5px; }
+  .corden, .corden * { user-select:text; -webkit-user-select:text; }
+  .corden:hover { background:#132845; }
+  .corden .npet { font-family:'Consolas',monospace; font-size:11px; color:#93c5fd;
+    background:#132845; border:1px solid #1e3a5f; border-radius:5px; padding:1px 6px; display:inline-block; }
+  .corden .ctipo { font-weight:bold; color:#eff6ff; margin-top:3px; }
+  .corden .cfr, .corden .chora { font-family:'Consolas',monospace; color:#dbeafe; }
+  .corden .ctec { color:#dbeafe; cursor:pointer; text-decoration:underline dotted; text-underline-offset:2px; }
+  .corden .ctec:hover { color:#a7f3d0; text-decoration:underline solid; }
+  .corden .cdir { color:#93c5fd; font-size:11.5px; margin-top:2px; }
+  .corden .cdesde { color:#dbeafe; }
+  .corden .cdesde.hoy { color:#86efac; }
+  .crelato { margin-top:7px; padding:6px 9px; border-radius:5px; background:#0a1930;
+    border:1px solid #1e3a5f; color:#dbeafe; font-size:12.5px; line-height:1.5; }
+  .crelato .btoa { font-size:11px; padding:1px 8px; margin:0 0 0 2px; }
+  .crelato .cextra { color:#8ab4dd; }
+  .cley { display:flex; flex-wrap:wrap; gap:6px 16px; margin-bottom:8px; }
+
+  /* ---- COLOR POR DESENLACE (sirve en oscuro y en claro) ----
+     El borde de la orden y la franja del relato toman el color de lo que
+     paso con ella. Aca el color se elige por la CONSECUENCIA, no por el
+     color que usa TOA: rojo = se perdio, ambar = vuelve otro dia. */
+  .t-des .corden.d-reag { border-left-color:#f59e0b; }
+  .t-des .corden.d-canc { border-left-color:#ef4444; }
+  .t-des .corden.d-susp { border-left-color:#2dd4bf; }
+  .t-des .corden.d-gest { border-left-color:#22d3ee; }
+  .t-des .corden.d-sinf,
+  .t-des .corden.d-pend { border-left-color:#9ca3af; }
+  .t-des .corden { border-left-width:5px; }
+  .t-des .crelato { font-size:13px; color:#f8fafc; }
+  .t-des .d-reag .crelato { background:#2a1a05; border-color:#92400e; }
+  .t-des .d-canc .crelato { background:#2a0d0d; border-color:#991b1b; }
+  .t-des .d-susp .crelato { background:#06231f; border-color:#0f766e; }
+  .t-des .d-gest .crelato { background:#06222b; border-color:#0e7490; }
+  .t-des .d-sinf .crelato,
+  .t-des .d-pend .crelato { background:#161d29; border-color:#4b5563; }
+  .t-des .btoa.canc { background:#7f1d1d; color:#fecaca; }
+
+  /* ---- TEMA CLARO ---- fondo blanco, letra oscura, el azul solo para datos */
+  .t-claro .mc-box { background:#ffffff; border-color:#94a3b8; }
+  .t-claro .mc-head { border-bottom-color:#e2e8f0; }
+  .t-claro .mc-head h2 { color:#0f172a; }
+  .t-claro .mc-close { background:#f1f5f9; border-color:#cbd5e1; color:#0f172a; }
+  .t-claro .fchip { background:#f1f5f9; border-color:#cbd5e1; color:#1e293b; }
+  .t-claro .fchip b { color:#0f172a; }
+  .t-claro .fchip.toa { border-color:#d97706; color:#92400e; background:#fffbeb; }
+  .t-claro .mc-intro { color:#334155; }
+  .t-claro .mc-intro b { color:#0f172a; }
+  .t-claro .ccab { color:#64748b; border-bottom-color:#cbd5e1; }
+  .t-claro .corden { background:#f8fafc; border-top:1px solid #e2e8f0;
+    border-right:1px solid #e2e8f0; border-bottom:1px solid #e2e8f0; }
+  .t-claro .corden:hover { background:#f1f5f9; }
+  .t-claro .corden .npet { background:#e2e8f0; border-color:#cbd5e1; color:#1e3a8a; }
+  .t-claro .corden .ctipo { color:#0f172a; }
+  .t-claro .corden .cfr,
+  .t-claro .corden .chora { color:#0f172a; font-weight:bold; }
+  .t-claro .corden .ctec { color:#0f172a; }
+  .t-claro .corden .ctec:hover { color:#0f766e; }
+  .t-claro .corden .cdir { color:#475569; }
+  .t-claro .corden .cdesde { color:#334155; }
+  .t-claro .corden .cdesde.hoy { color:#15803d; font-weight:bold; }
+  .t-claro .crelato { background:#ffffff; border-color:#e2e8f0; color:#0f172a; }
+  .t-claro .crelato .cextra { color:#64748b; }
+  .t-claro .mc-resnota { color:#475569; border-top-color:#e2e8f0; }
+  .t-claro .btoa.reag { background:#fef3c7; color:#92400e; }
+  .t-claro .btoa.canc { background:#ecfccb; color:#3f6212; }
+  .t-claro .btoa.susp { background:#ccfbf1; color:#115e59; }
+  .t-claro .btoa.gest { background:#cffafe; color:#155e75; }
+  .t-claro .btoa.sinf { background:#e5e7eb; color:#374151; }
+  /* --- piezas que solo usa Ordenes nuevas, en claro --- */
+  .t-claro .nchip { background:#f1f5f9; border-color:#cbd5e1; color:#1e293b; }
+  .t-claro .nchip:hover { background:#e2e8f0; }
+  .t-claro .nchip.act { background:#0f766e; border-color:#0f766e; color:#fff; }
+  .t-claro .nchip.re.act { background:#b45309; border-color:#b45309; color:#fff; }
+  .t-claro .rsep { background:#cbd5e1; }
+  .t-claro .mc-xls { background:#0f766e; border-color:#0f766e; color:#fff; }
+  .t-claro .mc-xls:hover { background:#115e59; }
+  .t-claro .mc-body .vacio { color:#15803d; }
+  .t-claro .bes.ini  { background:#dcfce7; color:#166534; }
+  .t-claro .bes.ruta { background:#ffedd5; color:#9a3412; }
+  .t-claro .bes.ok   { background:#dbeafe; color:#1e40af; }
+  .t-claro .bes.susp { background:#ccfbf1; color:#115e59; }
+  .t-claro .bes.nr   { background:#fee2e2; color:#991b1b; }
+  .t-claro .bes.can  { background:#ecfccb; color:#3f6212; }
+  .t-claro .bes.pen  { background:#e2e8f0; color:#334155; }
+  .corden .bes { font-size:11px; padding:1px 8px; }
+  /* Ordenes nuevas: el color del borde dice que clase de entrada es.
+     Gris azulado = primera vez, no hay nada que contar. Ambar = reingreso.
+     Rojo = ya se fue del tecnico sin cerrarse. Violeta = reagendada. */
+  .corden.n-nueva { border-left-color:#94a3b8; }
+  .corden.n-rein  { border-left-color:#d97706; }
+  .corden.n-reag  { border-left-color:#7c3aed; }
+  .corden.n-ida   { border-left-color:#dc2626; }
+  .t-claro .n-rein .crelato { background:#fffbeb; border-color:#fcd34d; }
+  .t-claro .n-reag .crelato { background:#f5f3ff; border-color:#c4b5fd; }
+  .t-claro .n-ida  .crelato { background:#fef2f2; border-color:#fca5a5; }
+  .crelato .cvis { display:block; margin-top:3px; }
+  .crelato .cvis .nfec { font-family:'Consolas',monospace; font-weight:bold; }
+  .t-claro .crelato .cvis .nmot { color:#b91c1c; font-weight:bold; }
+  .t-claro .crelato .cvis .nord { color:#64748b; font-family:'Consolas',monospace; font-size:11px; }
+  .ctag { display:inline-block; border-radius:999px; font-size:11px; font-weight:bold;
+    padding:1px 8px; margin-right:4px; }
+  .ctag.rein { background:#fef3c7; color:#92400e; }
+  .ctag.reag { background:#ede9fe; color:#5b21b6; }
+  .ctag.ida  { background:#fee2e2; color:#991b1b; }
+  .ctag.buck { background:#e2e8f0; color:#334155; }
+  /* claro + por desenlace */
+  .t-claro.t-des .corden.d-reag { border-left-color:#d97706; }
+  .t-claro.t-des .corden.d-canc { border-left-color:#dc2626; }
+  .t-claro.t-des .corden.d-susp { border-left-color:#0d9488; }
+  .t-claro.t-des .corden.d-gest { border-left-color:#0891b2; }
+  .t-claro.t-des .corden.d-sinf,
+  .t-claro.t-des .corden.d-pend { border-left-color:#6b7280; }
+  .t-claro.t-des .crelato { color:#0f172a; }
+  .t-claro.t-des .d-reag .crelato { background:#fffbeb; border-color:#fcd34d; }
+  .t-claro.t-des .d-canc .crelato { background:#fef2f2; border-color:#fca5a5; }
+  .t-claro.t-des .d-susp .crelato { background:#f0fdfa; border-color:#5eead4; }
+  .t-claro.t-des .d-gest .crelato { background:#ecfeff; border-color:#67e8f9; }
+  .t-claro.t-des .d-sinf .crelato,
+  .t-claro.t-des .d-pend .crelato { background:#f3f4f6; border-color:#d1d5db; }
+  .t-claro.t-des .btoa.canc { background:#fee2e2; color:#991b1b; }
+  .cley span.it { white-space:nowrap; }
+  .cley .btoa { font-size:10.5px; padding:1px 7px; margin-right:4px; }
   .nfila .nsub .ntec { color:#dbeafe; }
   .nfila .nsub .ndir { color:#93c5fd; }
   .mc-body .vacio { grid-column:1/-1; color:#4ade80; text-align:center; padding:28px 6px; line-height:1.6; font-size:14px; }
@@ -809,7 +944,12 @@
   </div>
 </header>
 <div id="map" style="display:none"></div>
-<div id="modalCaidas" onclick="if(event.target===this) cerrarCaidas()">
+<!-- Colores del modal de caidas: los dan las dos clases de aca abajo.
+     t-claro = fondo blanco y letra oscura.  t-des = color por desenlace.
+     Se eligio asi el 21-09-2026 (opcion 4 de 4) porque en oscuro, para
+     alguien que no conoce el modulo, la informacion se perdia: todo era azul
+     sobre azul. Sacando las dos clases vuelve al oscuro de siempre. -->
+<div id="modalCaidas" class="t-claro t-des" onclick="if(event.target===this) cerrarCaidas()">
   <div class="mc-box">
     <div class="mc-head">
       <div class="mc-head-left">
@@ -818,20 +958,24 @@
       </div>
       <button class="mc-close" onclick="cerrarCaidas()" title="Cerrar (Esc)">✖</button>
     </div>
+    <div id="mcIntro" class="mc-intro"></div>
     <div id="listaCaidas" class="mc-body"></div>
     <div id="mcResnota" class="mc-resnota" style="display:none;"></div>
   </div>
 </div>
-<div id="modalNuevas" onclick="if(event.target===this) cerrarNuevas()">
+<!-- Mismo criterio de colores que el modal de Caidas (21-09-2026): claro y
+     dicho con palabras. Sacando class="t-claro" vuelve al oscuro. -->
+<div id="modalNuevas" class="t-claro" onclick="if(event.target===this) cerrarNuevas()">
   <div class="mc-box">
     <div class="mc-head">
       <div class="mc-head-left">
-        <h2>🆕 Órdenes nuevas de hoy</h2>
+        <h2 id="nuevasTitulo">🆕 Órdenes que entraron hoy</h2>
         <div id="nuevasChips" class="mc-cont"></div>
       </div>
       <button class="mc-xls" onclick="bajarNuevasXlsx()" title="Descargar en Excel lo que se está mostrando">⬇️ Excel</button>
       <button class="mc-close" onclick="cerrarNuevas()" title="Cerrar (Esc)">✖</button>
     </div>
+    <div id="nuevasIntro" class="mc-intro"></div>
     <div id="listaNuevas" class="mc-body"></div>
     <div id="nuevasNota" class="mc-resnota"></div>
   </div>
@@ -1205,6 +1349,12 @@ function toggleCaidas(){
   renderBannerCaidas();
 }
 
+function verTecnicoNueva(t){
+  // igual que en Caidas: cerrar el modal y enfocar al tecnico en el mapa
+  cerrarNuevas();
+  if(DB && DB[t]){ sel.value = t; render(); }
+}
+
 function verTecnicoCaida(t){
   // cerramos el modal y, si el tecnico sigue con trabajos hoy, lo enfocamos en el mapa
   cerrarCaidas();
@@ -1330,6 +1480,15 @@ function renderNuevas(){
   const nota = document.getElementById('nuevasNota');
   const todas = nuevasDelDia();
   const c = contar(todas);
+  document.getElementById('nuevasTitulo').textContent =
+    '🆕 Órdenes que entraron hoy (' + todas.length + ')';
+  /* La explicacion va arriba, igual que en Caidas: que es esta lista, que no
+     cuenta, y que el estado es el de AHORA (una que entro a las 10 y ya esta
+     cerrada sale Completado, y sin este aviso parece un error). */
+  document.getElementById('nuevasIntro').innerHTML =
+    'Las que VTR/Claro fue cargando <b>durante el día</b>, después de la lista con que partió cada técnico '
+    + 'en la mañana. No cuenta las Modificaciones de Servicio. El estado es el de <b>ahora</b>, '
+    + 'no el que traía al entrar.';
 
   // conteo por familia para los chips de tipo (siempre sobre el total, no
   // sobre lo filtrado)
@@ -1339,10 +1498,10 @@ function renderNuevas(){
 
   chips.innerHTML =
       '<span class="nchip'+(nuevasFiltro==='todas'?' act':'')+'" onclick="setNuevasFiltro(\'todas\')">'
-    + 'todas · '+todas.length+'</span>'
+    + 'Todas · '+todas.length+'</span>'
     + '<span class="nchip'+(nuevasFiltro==='nuevitas'?' act':'')+'" onclick="setNuevasFiltro(\'nuevitas\')" '
     + 'title="sin ningún antecedente: ni la orden ni la dirección aparecen antes">'
-    + '\u2728 nuevas · '+c.nuevita+'</span>'
+    + '\u2728 primera vez · '+c.nuevita+'</span>'
     + '<span class="nchip re'+(nuevasFiltro==='reingresos'?' act':'')+'" onclick="setNuevasFiltro(\'reingresos\')" '
     + 'title="otra orden, misma dirección: la visita anterior quedó No Realizada">'
     + '\u21a9 reingresos · '+c.reingreso+'</span>'
@@ -1374,20 +1533,31 @@ function renderNuevas(){
   todas.filter(function(x){ return clase(x) === 'nuevita'; })
        .forEach(function(x){ const f = x.f || 's/f'; porFr[f] = (porFr[f]||0)+1; });
   chips.innerHTML += Object.keys(porFr).sort().map(function(f){
-    return '<span class="fchip">\u2728 ' + escR(f) + ' · <b>'+porFr[f]+'</b></span>';
+    return '<span class="fchip" title="órdenes de primera vez en esa franja">\u2728 Franja '
+         + escR(f) + ' · <b>'+porFr[f]+'</b></span>';
   }).join('');
 
   if(!lista.length){
     cont.innerHTML = '<div class="vacio">Nada que mostrar con este filtro.<br>'
       + 'Aquí aparece lo que el portal va cargando después de la bandeja inicial.</div>';
   } else {
-    cont.innerHTML = lista.map(function(x){
-      // el sufijo "(ya no está)" no va dentro de la pildora: ensucia el texto y
-      // esa condicion ya se comunica con la fila en gris
+    /* Misma forma que el modal de Caidas: columnas con titulo y, debajo, una
+       frase SOLO cuando hay algo que contar. La de primera vez no lleva frase:
+       no hay historia, y repetir "no tiene antecedentes" en 40 filas seria
+       ruido. Asi las que tienen franja de color son justo las que hay que leer.
+
+       Dato que se AGREGA respecto del formato anterior: tecnico y direccion en
+       todas las filas. Antes solo salian en los reingresos, y para quien mira
+       de afuera la primera pregunta es a quien se la cargaron.              */
+    const cab = '<div class="ccab"><span>Orden y tipo</span><span>Franja</span>'
+      + '<span>A quién se la cargaron</span><span>Estado ahora</span>'
+      + '<span class="der">Entró a las</span></div>';
+    cont.innerHTML = cab + lista.map(function(x){
+      // el sufijo "(ya no está)" no va dentro de la pildora: ensucia el texto
       const est = String(x.e||'').replace(/\s*\(ya no está\)\s*/, '').trim();
       // Salir de la bandeja solo es raro si la orden estaba ABIERTA. Una
       // completada o cancelada que desaparece es el curso normal, asi que no
-      // se marca: si se grisara igual, se leeria como sospechosa y mandaria a
+      // se marca: si se marcara igual, se leeria como sospechosa y mandaria a
       // buscarla al boton de Caidas, donde no esta ni tiene por que estar.
       const fue = String(x.e||'').indexOf('ya no está') >= 0;
       const cerrada = ['Completado','No Realizada','Cancelado'].indexOf(est) >= 0;
@@ -1403,64 +1573,73 @@ function renderNuevas(){
       const enBucket = ida && !enCaidas && EN_BUCKET.has(x.o);
       const det = String(x.visto||'').split(' ')[1] || '—';
       const k = clase(x);
-      let badge = '', extra = '';
-      // aviso fijo, no tooltip: el tooltip no existe en celular ni sale al
-      // imprimir. Se dice solo lo que se pudo comprobar: si esta en Caidas se
-      // manda para alla, si no, se avisa que salio y punto.
-      const avisoIda = !ida ? ''
-        : enCaidas
-          ? '<span class="nida">🚨 salió sin cerrar · está en Caídas</span>'
-          : enBucket
-            ? '<span class="nida bucket">🪣 volvió al bucket · sin técnico asignado</span>'
-            : '<span class="nida sinver">🚨 salió sin cerrar · no está en Caídas</span>';
 
+      // ---- la frase, armada por partes: puede ser reingreso Y haberse ido ----
+      const frases = [];
+      if(ida){
+        if(enCaidas){
+          // si TOA ya dijo que paso con ella, se cuenta aca mismo y no hay
+          // que ir a buscarla al otro modal
+          const caida = ((ALERTAS && ALERTAS.activas) || []).filter(function(a){ return a.o === x.o; })[0];
+          const salio = caida ? String(caida.visto||'').split(' ').pop() : '';
+          frases.push('<span class="ctag ida">Ya no la tiene</span>Se la sacaron al técnico sin que la tocara'
+            + (salio ? ', a las ' + escR(salio) : '') + '. ' + relatoCaida(x, det, salio));
+        } else if(enBucket){
+          frases.push('<span class="ctag buck">Volvió al bucket</span>Se la quitaron al técnico y está '
+            + 'esperando que se le asigne otro. No se perdió.');
+        } else {
+          frases.push('<span class="ctag ida">Ya no la tiene</span>Salió de la lista del técnico sin cerrarse '
+            + 'y no aparece en Caídas: puede haber pasado a un técnico de otra zona.');
+        }
+      }
       if(k === 'reagendada'){
-        extra = ' reag';
-        badge = '<span class="nrg" title="misma orden, ya estaba en la bandeja del '
-              + escR(x.reag)+'">\u21bb desde '+escR(x.reag)+'</span>';
+        frases.push('<span class="ctag reag">Reagendada</span>Es la misma orden que ya estaba en la lista del '
+          + escR(x.reag) + '. No es trabajo nuevo: volvió.');
       } else if(k === 'reingreso'){
-        extra = ' rein';
-        badge = '<span class="nre">\u21a9 reingreso</span>';
-        // El detalle va EN LA MISMA LINEA, a continuacion del badge: con una
-        // sola visita previa (10 de 13 casos) ocupaba un bloque aparte al
-        // pedo. La celda .ncat es la columna elastica del grid, asi que si el
-        // texto no cabe hace wrap solo y las demas columnas se mantienen.
         // Las visitas van de la mas VIEJA a la mas nueva, que es como se lee
         // una historia. Se muestran las 3 ultimas; el resto se resume.
         const vis = x.prev.slice(-3);
         const ocultas = x.prev.length - vis.length;
-        badge += '<span class="nsub">'
-            + '<span class="nsep">·</span>'
-            + '<span class="ndir">\ud83d\udccd '+escR(x.d || '')+'</span>'
-            + vis.map(function(p){
-                return '<span class="nsep">·</span>'
-                  + '<span class="nfec">'+escR(p.f||'?')+'</span> '
-                  + '<span class="nmot">'+escR(p.cierre||'sin código')+'</span>'
-                  + (p.tec ? ' <span class="ntec">'+escR(p.tec)+'</span>' : '')
-                  + (p.num ? ' <span class="nord">'+escR(p.num)+'</span>' : '');
-              }).join('')
-            + (ocultas > 0
-                ? '<span class="nsep">·</span><span class="nmas">+'+ocultas
-                  +' antes</span>' : '')
-            + '</span>';
+        frases.push('<span class="ctag rein">Reingreso</span>A esta dirección ya se fue antes y no se pudo hacer. '
+          + 'VTR/Claro creó una orden nueva para volver.'
+          + (ocultas > 0 ? ' <span class="cextra">Hay ' + ocultas + ' visita(s) más antiguas.</span>' : '')
+          + vis.map(function(p){
+              return '<span class="cvis"><span class="nfec">'+escR(p.f||'?')+'</span> · '
+                + '<span class="nmot">'+escR(p.cierre||'sin código de cierre')+'</span>'
+                + (p.tec ? ' · fue ' + escR(p.tec) : '')
+                + (p.num ? ' · <span class="nord">orden '+escR(p.num)+'</span>' : '')
+                + '</span>';
+            }).join(''));
       }
+      const cls = ida ? 'n-ida' : (k === 'reingreso' ? 'n-rein' : (k === 'reagendada' ? 'n-reag' : 'n-nueva'));
 
-      return '<div class="nfila'+(ida?' ida':'')+extra+'">'
-        + '<span class="npet">'+escR(x.pet || x.o || '')+'</span>'
-        + '<span class="ncat">'+escR(x.cat)+pill(est)+chipToa(x.o)+avisoIda+badge+'</span>'
-        + '<span class="nfr">'+escR(x.f)+'</span>'
-        // hora en que el CICLO la detecto (campo 'visto'), no la hora de la
-        // cita. Sirve de referencia de cuando cayo en la bandeja.
-        + '<span class="nde" title="detectada a las '+escR(det)+'">'+escR(det)+'</span>'
+      return '<div class="corden '+cls+'"><div class="cfila">'
+        + '<span><span class="npet">'+escR(x.pet || x.o || '')+'</span>'
+          + '<div class="ctipo">'+escR(x.cat||'')+'</div></span>'
+        + '<span class="cfr">'+escR(x.f||'s/f')+'</span>'
+        + '<span><span class="ctec" onclick="verTecnicoNueva(\''
+            + String(x.tec||'').replace(/'/g,"\\'")+'\')" '
+            + 'title="Ver a '+escR(x.tec||'')+' en el mapa">👷 '+escR(x.tec||'sin técnico')+'</span>'
+          + '<div class="cdir">📍 '+escR(x.d||'')+'</div></span>'
+        // la que ya salio no tiene estado "de ahora": se muestra el ultimo que
+        // se le vio, dicho asi, para que no parezca que sigue pendiente con el
+        + '<span>'+pill(est)+(ida ? '<div class="cdir">cuando salió</div>' : '')+'</span>'
+        // hora en que el CICLO la detecto (campo 'visto'), no la hora de la cita
+        + '<span class="chora der" title="el monitor la vio por primera vez a las '+escR(det)+'">'+escR(det)+'</span>'
+        + '</div>'
+        + (frases.length ? '<div class="crelato">'+frases.join('<br>')+'</div>' : '')
         + '</div>';
     }).join('');
   }
 
-  nota.textContent = 'Lo que entró después de la bandeja inicial · jornada '
-    + (ALERTAS && ALERTAS.fecha ? ALERTAS.fecha : '')
-    + ' · sin Modificaciones de Servicio · lo último detectado arriba. '
-    + '✨ nuevas = sin antecedentes · ↩ reingreso = misma dirección, la anterior se cayó '
-    + '(la fecha, el motivo, el técnico y la orden anterior van en la misma fila).';
+  nota.innerHTML = '<div class="cley">'
+    + '<span class="it"><b>\u2728 Primera vez</b> · ni la orden ni la dirección tienen visitas anteriores</span>'
+    + '<span class="it"><span class="ctag rein">Reingreso</span>misma dirección, la visita anterior no se pudo hacer</span>'
+    + '<span class="it"><span class="ctag ida">Ya no la tiene</span>salió del técnico sin cerrarse</span>'
+    + '</div>'
+    + escR('Jornada ' + (ALERTAS && ALERTAS.fecha ? ALERTAS.fecha : '')
+      + '. La más reciente va primero. Toca el nombre del técnico para verlo en el mapa. '
+      + 'El botón Excel baja lo que se está mostrando con el filtro elegido.');
 }
 /* ---------------------- DESCARGA A EXCEL ----------------------
    Exporta lo que se esta MOSTRANDO, respetando el chip activo: si tienes
@@ -2337,6 +2516,113 @@ function renderBusqueda(){
     + (histFallo ? 'Ojo: no se pudo bajar el histórico, faltan las caídas viejas y las fallas de red.' : '');
 }
 
+/* ============ EL RELATO DE UNA CAIDA ============
+   Arma, con los MISMOS campos que ya alimentaban el chip de TOA, una frase que
+   se entiende sin conocer el sistema: quien movio la orden, para cuando quedo
+   y si vuelve o no. No inventa nada: si TOA no trae un dato, no lo dice.    */
+const MESES_TOA = { ene:1, feb:2, mar:3, abr:4, may:5, jun:6, jul:7, ago:8,
+                    sep:9, set:9, oct:10, nov:11, dic:12 };
+
+// "22 Sep" contra la jornada -> "mañana 22-09", "hoy 21-09" o "el 23-09".
+// Si la fecha cae antes que la jornada se asume el año siguiente (diciembre
+// mirando a enero); TOA no manda el año.
+function cuandoToa(reg){
+  const m = RE_FECHA_TOA.exec(String((reg && reg.detalle) || ''));
+  if(!m) return '';
+  const dia = +m[1];
+  const mes = MESES_TOA[String(m[2]).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').slice(0,3)];
+  const z = function(n){ return String(n).padStart(2,'0'); };
+  if(!mes) return 'el ' + m[1] + ' ' + m[2];
+  const corto = z(dia) + '-' + z(mes);
+  const p = String((ALERTAS && ALERTAS.fecha) || '').split('-');       // dd-mm-yyyy
+  if(p.length !== 3) return 'el ' + corto;
+  const hoy = new Date(+p[2], +p[1]-1, +p[0]);
+  let f = new Date(+p[2], mes-1, dia);
+  if(f < hoy && (hoy - f) > 200*86400000) f = new Date(+p[2]+1, mes-1, dia);
+  const dif = Math.round((f - hoy) / 86400000);
+  if(dif === 0) return 'hoy mismo, ' + corto;
+  if(dif === 1) return 'mañana ' + corto;
+  return 'el ' + corto;
+}
+
+// "13-16" -> "de 13 a 16"
+function franjaHablada(fr){
+  const p = String(fr||'').split('-');
+  return (p.length === 2 && p[0] && p[1]) ? 'de ' + p[0] + ' a ' + p[1] : '';
+}
+
+// minutos entre dos HH:MM del mismo dia, o null
+function minutosEntre(a, b){
+  const pa = String(a||'').split(':'), pb = String(b||'').split(':');
+  if(pa.length < 2 || pb.length < 2) return null;
+  const d = (+pb[0]*60 + +pb[1]) - (+pa[0]*60 + +pa[1]);
+  return (isFinite(d) && d >= 0) ? d : null;
+}
+function duracionHablada(min){
+  if(min === null) return '';
+  if(min < 60) return min + ' min';
+  const h = Math.floor(min/60), r = min % 60;
+  return h + ' h' + (r ? ' ' + r + ' min' : '');
+}
+
+// clase CSS segun lo que paso con la orden: la usa el color por desenlace
+function claseDesenlace(c){
+  const T = toaVigente();
+  const reg = (T && T.estados) ? T.estados[c.o] : null;
+  const est = (reg && reg.estado) ? String(reg.estado) : '';
+  return est ? 'd-' + (TOA_CLASE[est] || 'sinf') : 'd-pend';
+}
+
+function relatoCaida(c, entro, salio){
+  const T = toaVigente();
+  const reg = (T && T.estados) ? T.estados[c.o] : null;
+  const est = (reg && reg.estado) ? String(reg.estado) : '';
+  const cls = TOA_CLASE[est] || 'sinf';
+  // el mismo tooltip del chip de antes: a que hora se consulto y el texto crudo
+  let tit = 'Consultado en TOA';
+  if(T && T.actualizado) tit += ' a las ' + String(T.actualizado).replace('T',' ').slice(11,16);
+  if(reg && reg.detalle) tit += ' \u00b7 ' + reg.detalle;
+  if(reg && reg.nota) tit += ' \u00b7 ' + reg.nota;
+  const tag = function(txt){
+    return '<span class="btoa '+cls+'" title="'+escR(tit)+'">'+escR(txt)+'</span>';
+  };
+
+  let frase;
+  if(est === 'reagendada'){
+    const cu = cuandoToa(reg);
+    const fh = franjaHablada(reg.franja_nueva);
+    const misma = reg.franja_nueva && reg.franja_nueva === (reg.franja_original || c.f);
+    frase = 'VTR/Claro la ' + tag('reagendó') + (cu ? ' para ' + escR(cu) : '')
+          + (fh ? ', ' + fh + (misma ? ' (misma franja)' : '') : '') + '. Vuelve otro día.';
+  } else if(est === 'cancelada'){
+    frase = 'VTR/Claro la ' + tag('canceló') + ' y no vuelve, salvo que creen una orden nueva en la misma dirección.';
+  } else if(est === 'suspendida'){
+    frase = 'En TOA quedó ' + tag('suspendida') + ' y en espera. Todavía no se sabe si vuelve.';
+  } else if(est === 'gestionada'){
+    frase = 'En TOA figura como ' + tag('gestionada') + '.';
+  } else if(est === 'sin informacion'){
+    frase = tag('Sin información') + ' Ya no aparece en TOA: alguien de VTR/Claro la sacó del sistema.';
+  } else if(est === 'sin respuesta'){
+    frase = tag('Sin respuesta') + ' TOA no contestó la consulta. Se vuelve a intentar en la próxima pasada.';
+  } else {
+    frase = '<span class="btoa sinf">Aún sin consultar</span> Todavía no se sabe qué pasó con ella: '
+          + 'el monitor pregunta en TOA cada media hora.';
+  }
+
+  // cuanto alcanzo a estar con el tecnico: solo si entro HOY, que es cuando
+  // se conocen las dos horas. Una que entra y sale en minutos es el caso que
+  // mas cuesta explicar despues, por eso se dice con todas sus letras.
+  let extra = '';
+  if(entro){
+    const d = duracionHablada(minutosEntre(entro, salio));
+    if(d) extra = ' <span class="cextra">Alcanzó a estar ' + d + ' con el técnico.</span>';
+  }
+  if(reg && reg.previas && reg.previas.length)
+    extra += ' <span class="cextra">TOA muestra ' + reg.previas.length
+           + ' resultado(s) anterior(es) para esta orden.</span>';
+  return frase + extra;
+}
+
 /* ============ PANELES DE CAIDAS Y SIN COMPLETAR ============
    Quedaron aparte al sacar el modal de Fallas de red: son los
    renderers de "Caidas" y "Sin completar", nada que ver con planta. */
@@ -2347,7 +2633,13 @@ function renderPanelCaidas(){
   const res = (ALERTAS && ALERTAS.resueltas) ? ALERTAS.resueltas : 0;
   const cont2 = document.getElementById('mcContadores');
   document.getElementById('mcTitulo').textContent =
-    '🚨 Se cayeron de la bandeja ('+activas.length+')';
+    '🚨 Órdenes que le sacaron al técnico ('+activas.length+')';
+  /* La explicacion va ARRIBA y en dos lineas: antes estaba al pie, en letra
+     chica, y habia que leerla entera para entender lo de arriba. */
+  document.getElementById('mcIntro').innerHTML = activas.length
+    ? 'Estaban <b>asignadas y sin empezar</b>, y desaparecieron de la lista del técnico '
+      + '<b>sin que él las tocara</b>. No las hizo ni las rechazó: VTR/Claro las movió o las anuló.'
+    : '';
   if(!activas.length){
     cont2.innerHTML = '';
     cont.innerHTML = '<div class="vacio">✅ Ninguna orden se ha caído sin cerrar hoy.</div>';
@@ -2371,7 +2663,7 @@ function renderPanelCaidas(){
     items.forEach(function(x){ cuenta[x.fr] = (cuenta[x.fr]||0)+1; });
     cont2.innerHTML = ['10-13','13-16','16-19','s/franja']
       .filter(function(k){ return cuenta[k]; })
-      .map(function(k){ return '<span class="fchip">🕒 '+k+' · <b>'+cuenta[k]+'</b></span>'; })
+      .map(function(k){ return '<span class="fchip">🕒 Franja '+k+' · <b>'+cuenta[k]+'</b></span>'; })
       .join('');
 
     /* Resumen de lo que dijo TOA, al lado de los chips de franja: cuantas
@@ -2380,7 +2672,7 @@ function renderPanelCaidas(){
     const Tv = toaVigente();
     if(Tv && Tv.resumen){
       cont2.innerHTML += Object.keys(Tv.resumen).sort().map(function(k){
-        return '<span class="fchip toa">TOA · '+escR(k)+' <b>'+Tv.resumen[k]+'</b></span>';
+        return '<span class="fchip toa">Según TOA · '+escR(k)+' <b>'+Tv.resumen[k]+'</b></span>';
       }).join('');
     } else if(TOA){
       // hay archivo, pero es de otra jornada: se dice, en vez de mostrar
@@ -2403,39 +2695,54 @@ function renderPanelCaidas(){
       entroHoy[n.o] = String(n.visto||'').split(' ')[1] || '';
     });
 
-    cont.innerHTML = items.map(function(x){
+    /* Mismo detalle que antes, orden por orden. Cambia la forma:
+         - cada columna tiene titulo (las dos horas de la derecha no decian que eran)
+         - "bandeja inicial" / "entro 10:44" pasan a ser una sola columna,
+           "desde cuando la tenia", dicho con palabras
+         - se saca el "Pendiente": todas lo estaban, lo dice la explicacion de arriba
+         - el desenlace de TOA deja de ser un chip y pasa a ser una frase      */
+    const cab = '<div class="ccab"><span>Orden y tipo</span><span>Franja de hoy</span>'
+      + '<span>Técnico y dirección</span><span>Desde cuándo la tenía</span>'
+      + '<span class="der">Desapareció a las</span></div>';
+    cont.innerHTML = cab + items.map(function(x){
       const c = x.c;
       const salio = String(c.visto||'').split(' ').pop();   // solo HH:MM
       const ent = entroHoy[c.o];
-      const origen = (ent !== undefined)
-        ? '<span class="norig hoy">✨ entró ' + escR(ent || 'hoy') + '</span>'
-        : '<span class="norig ini">📋 bandeja inicial</span>';
-      return '<div class="nfila cai">'
-        + '<span class="npet">'+escR(c.o||'')+'</span>'
-        + '<span class="ncat">'+escR(c.cat||'')+pill(c.e)+chipToa(c.o)+origen
-          + '<span class="nsub"><span class="nsep">·</span>'
-          + '<span class="ntec vermapa" onclick="verTecnicoCaida(\''
+      const desde = (ent !== undefined)
+        ? '<span class="cdesde hoy">Se la cargaron hoy' + (ent ? ' a las ' + escR(ent) : '') + '</span>'
+        : '<span class="cdesde">Desde la mañana</span>';
+      return '<div class="corden '+claseDesenlace(c)+'"><div class="cfila">'
+        + '<span><span class="npet">'+escR(c.o||'')+'</span>'
+          + '<div class="ctipo">'+escR(c.cat||'')+'</div></span>'
+        + '<span class="cfr">'+escR(x.fr)+'</span>'
+        + '<span><span class="ctec" onclick="verTecnicoCaida(\''
             + String(c.tec).replace(/'/g,"\\'")+'\')" '
             + 'title="Ver a '+escR(c.tec)+' en el mapa">👷 '+escR(c.tec||'')+'</span>'
-          + '<span class="nsep">·</span><span class="ndir">📍 '+escR(c.d||'')+'</span>'
-          + '</span></span>'
-        + '<span class="nfr">'+escR(x.fr)+'</span>'
-        + '<span class="nde" title="salió de la bandeja a las '+escR(salio||'?')+'">'
-          + escR(salio||'?')+'</span>'
-        + '</div>';
+          + '<div class="cdir">📍 '+escR(c.d||'')+'</div></span>'
+        + desde
+        + '<span class="chora der">'+escR(salio||'?')+'</span>'
+        + '</div><div class="crelato">'+relatoCaida(c, ent, salio)+'</div></div>';
     }).join('');
   }
   const buck = (ALERTAS && ALERTAS.al_bucket) ? ALERTAS.al_bucket : 0;
   const curso = (ALERTAS && ALERTAS.en_curso) ? ALERTAS.en_curso : 0;
-  const partes = ['Órdenes que desaparecieron de la bandeja de un técnico estando '
-    + 'PENDIENTE: nadie las tocó y no están en ninguna parte — se cancelaron o se reagendaron. '
-    + '✨ entró durante el día · 📋 ya venía en la bandeja inicial.'];
-  if(res) partes.push(res+' se cayó(eron) y ya volvió(eron) a una bandeja hoy — no cuentan arriba.');
-  if(buck) partes.push(buck+' pasó(aron) al bucket: no están caídas, están sin técnico asignado.');
-  if(curso) partes.push(curso+' desapareció(eron) ya iniciada(s) — no se listan acá: el portal '
-    + 'siempre muestra un paso antes, así que ese paso ocurrió entre dos lecturas del ciclo.');
-  partes.push('Lo último detectado va primero; toca una fila para ver al técnico en el mapa.');
-  nota.textContent = partes.join(' ');
+  /* El pie ya no explica QUE es el panel (eso subio al encabezado). Queda
+     para dos cosas: que significa cada color, dicho por su consecuencia, y
+     lo que NO esta en la lista, para que nadie lo eche de menos. */
+  const ley = '<div class="cley">'
+    + '<span class="it"><span class="btoa reag">reagendó</span>vuelve otro día</span>'
+    + '<span class="it"><span class="btoa canc">canceló</span>no vuelve</span>'
+    + '<span class="it"><span class="btoa susp">suspendida</span>en espera</span>'
+    + '<span class="it"><span class="btoa gest">gestionada</span>así figura en TOA</span>'
+    + '<span class="it"><span class="btoa sinf">sin información</span>ya no está en TOA</span>'
+    + '</div>';
+  const partes = [];
+  if(res) partes.push(res+' orden(es) se fueron y ya volvieron a la lista de un técnico hoy: no se cuentan arriba.');
+  if(buck) partes.push(buck+' pasó(aron) al bucket: no se perdieron, están esperando que se les asigne técnico.');
+  if(curso) partes.push(curso+' desapareció(eron) cuando el técnico ya las había iniciado: no se listan acá, '
+    + 'porque ese paso ocurrió entre dos lecturas del monitor.');
+  partes.push('La más reciente va primero. Toca el nombre del técnico para verlo en el mapa.');
+  nota.innerHTML = (activas.length ? ley : '') + escR(partes.join(' '));
   nota.style.display = 'block';
 }
 
