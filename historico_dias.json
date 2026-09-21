@@ -7241,23 +7241,23 @@
    }
   },
   "21-09-2026": {
-   "hasta": "13:19",
-   "actividades": 172,
+   "hasta": "13:30",
+   "actividades": 174,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 36,
-    "Completado": 40,
+    "No Realizada": 37,
+    "Completado": 44,
     "en ruta": 3,
     "Pendiente": 65,
-    "Iniciado": 24,
-    "Suspendido": 1,
-    "Cancelado": 3
+    "Iniciado": 19,
+    "Suspendido": 2,
+    "Cancelado": 4
    },
-   "rgu": 251.4,
+   "rgu": 253.4,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
-   "nuevas": 28,
+   "nuevas": 29,
    "al_bucket": 8,
    "repetidas": 35,
    "reagendadas": 3,
@@ -7338,6 +7338,15 @@
     ],
     "nuevas": [
      {
+      "o": "1-3NY8B1H3",
+      "tec": "LUIS MARTIN NUÑEZ",
+      "cat": "Migración 1 Play",
+      "f": "13-16",
+      "hi": "17:16",
+      "d": "MADRID 620 CASA D, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3NYD0BYG",
       "tec": "NICOLAS MOYANO R",
       "cat": "Alta 2 Play",
@@ -7366,7 +7375,7 @@
      },
      {
       "o": "1-3NYCM7EL",
-      "tec": "CRISTOBAL SILVA LEIVA",
+      "tec": "CESAR MENA OLIVEROS",
       "cat": "Reparación",
       "f": "13-16",
       "hi": "14:19",
@@ -7389,7 +7398,7 @@
       "f": "13-16",
       "hi": "13:09",
       "d": "18 DE SEPTIEMBRE 011, QUILPUE",
-      "e": "Iniciado"
+      "e": "Suspendido"
      },
      {
       "o": "1-3NYC9CDW",
@@ -7407,7 +7416,7 @@
       "f": "13-16",
       "hi": "14:09",
       "d": "EGANA 349, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NYBXKK5",
@@ -7443,7 +7452,7 @@
       "f": "13-16",
       "hi": "13:00",
       "d": "FRANCISCO FONCK 262, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NYAZ98Z",
@@ -7560,7 +7569,7 @@
       "f": "10-13",
       "hi": "11:28",
       "d": "DIEGO DE ALMAGRO 106, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NY64AVJ",
@@ -7669,7 +7678,7 @@
       "f": "13-16",
       "hi": "12:34",
       "d": "PJE LAS AMARILIS 1021, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "FELIPE SILVA R",
       "visitas": 1,
       "ult_fecha": "21-09-2026",
@@ -7679,7 +7688,7 @@
       "o": "1-3NYCQAUW",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:47",
+      "hi": "14:44",
       "d": "EL TEPUAL 1248, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -8046,5 +8055,5 @@
    }
   }
  },
- "generado": "21-09-2026 13:19"
+ "generado": "21-09-2026 13:30"
 }
