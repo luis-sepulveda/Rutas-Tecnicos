@@ -7241,14 +7241,14 @@
    }
   },
   "21-09-2026": {
-   "hasta": "09:28",
-   "actividades": 119,
+   "hasta": "09:33",
+   "actividades": 118,
    "tecnicos": 37,
    "estados": {
-    "en ruta": 24,
-    "Pendiente": 95
+    "en ruta": 27,
+    "Pendiente": 91
    },
-   "rgu": 186.0,
+   "rgu": 185.0,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
@@ -7312,9 +7312,9 @@
       "o": "1-3NVP5EKY",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:39",
       "d": "HORNOPIREN 2151, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "ESTEBAN PIZARRO QUINTANA",
       "visitas": 1,
       "ult_fecha": "16-09-2026",
@@ -7324,7 +7324,7 @@
       "o": "1-3NUCCRY8",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:14",
+      "hi": "14:53",
       "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -7564,9 +7564,9 @@
       "o": "1-3NVP5EKY",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:39",
       "d": "HORNOPIREN 2151, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "ESTEBAN PIZARRO QUINTANA",
       "desde": "17-09-2026"
      },
@@ -7574,7 +7574,7 @@
       "o": "1-3NUCCRY8",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:14",
+      "hi": "14:53",
       "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -7594,5 +7594,5 @@
    }
   }
  },
- "generado": "21-09-2026 09:28"
+ "generado": "21-09-2026 09:33"
 }
