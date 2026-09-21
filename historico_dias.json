@@ -7241,23 +7241,23 @@
    }
   },
   "21-09-2026": {
-   "hasta": "12:54",
-   "actividades": 162,
+   "hasta": "12:59",
+   "actividades": 164,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 33,
-    "Completado": 34,
-    "en ruta": 11,
-    "Pendiente": 59,
-    "Iniciado": 22,
+    "Completado": 35,
+    "en ruta": 7,
+    "Pendiente": 61,
+    "Iniciado": 25,
     "Suspendido": 1,
     "Cancelado": 2
    },
-   "rgu": 240.2,
+   "rgu": 242.2,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
-   "nuevas": 23,
+   "nuevas": 25,
    "al_bucket": 8,
    "repetidas": 34,
    "reagendadas": 3,
@@ -7337,6 +7337,24 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NYCM7EL",
+      "tec": "CRISTOBAL SILVA LEIVA",
+      "cat": "Reparación",
+      "f": "13-16",
+      "hi": "14:19",
+      "d": "PJE LUCHO ZAPATA 373, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NYA6LGM",
+      "tec": "EDGAR VALERO C",
+      "cat": "Migración 1 Play",
+      "f": "13-16",
+      "hi": "15:08",
+      "d": "ALBA DE TORMES 094, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NYCJ1B9",
       "tec": "MARCO PEREZ G",
@@ -7452,7 +7470,7 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "LA QUEBRADA 1011, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NY7UPT8",
@@ -7574,7 +7592,7 @@
       "o": "1-3NUFNPQ2",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "17:39",
       "d": "LAS ACACIAS 1575 CASA 09, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -7586,7 +7604,7 @@
       "o": "1-3NY6Q4V4",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:55",
+      "hi": "18:34",
       "d": "SAN ENRIQUE 1950 EDIF. 10 DEPTO 102, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -7669,9 +7687,9 @@
       "o": "1-3NWNYCEE",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "12:31",
+      "hi": "12:55",
       "d": "CALLE 1 1150 EDIF. 13 DEPTO 102, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JOEL GUSTAVE GUSTA",
       "visitas": 1,
       "ult_fecha": "17-09-2026",
@@ -7693,7 +7711,7 @@
       "o": "1-3NYB7P5P",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "13:08",
+      "hi": "14:08",
       "d": "EL RINCON DE LOS ZORZALES 668, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -7837,9 +7855,9 @@
       "o": "1-3NYA4LLM",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "12:54",
+      "hi": "12:56",
       "d": "DAVID CORTES 1086, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "LUIS MARTIN NUÑEZ",
       "visitas": 2,
       "ult_fecha": "16-09-2026",
@@ -7989,5 +8007,5 @@
    }
   }
  },
- "generado": "21-09-2026 12:54"
+ "generado": "21-09-2026 12:59"
 }
