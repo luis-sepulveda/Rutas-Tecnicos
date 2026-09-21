@@ -1,158 +1,17 @@
 {
-  "actualizado": "2026-09-17T15:14:44",
+  "actualizado": "2026-09-21T09:59:16",
   "resumen": {
-    "sin informacion": 3,
-    "reagendada": 3
+    "reagendada": 1
   },
   "estados": {
-    "1-3NU37BIV": {
-      "tec": "CRISTOBAL SILVA LEIVA",
-      "cat": "Migración 1 Play",
-      "franja_original": "13-16",
-      "d": "PASAJE INCAHUASI 1833 CASA B, QUILPUE",
-      "estado": "sin informacion",
-      "nota": "la OT ya no existe en TOA"
-    },
-    "1-3NUCCRY8": {
-      "tec": "ESTEBAN PIZARRO QUINTANA",
+    "1-3NY55E4M": {
+      "tec": "PABLO HERNANEZ FERNANDEZ",
       "cat": "Alta 1 Play",
       "franja_original": "10-13",
-      "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
-      "estado": "sin informacion",
-      "nota": "la OT ya no existe en TOA",
-      "contexto": {
-        "buscado": "SAN ENRIQUE 1780",
-        "aviso": "historial de la direccion, NO es el estado de esta orden",
-        "filas": [
-          {
-            "estado": "?",
-            "color": "rgb(255, 170, 170)",
-            "ot": "1-3NW8F66C",
-            "franja": "16-19",
-            "texto": "1-3NW8F66C - 16-19-Migración"
-          },
-          {
-            "estado": "?",
-            "color": "rgb(121, 182, 235)",
-            "ot": "1-3NVGMYSS",
-            "franja": "10-13",
-            "texto": "1-3NVGMYSS - 10-13-Alta"
-          },
-          {
-            "estado": "?",
-            "color": "rgb(121, 182, 235)",
-            "ot": "1-3NTBG5UZ",
-            "franja": "10-13",
-            "texto": "1-3NTBG5UZ - 10-13-ReparaciónLun, 14 Sep"
-          },
-          {
-            "estado": "gestionada",
-            "color": "rgb(96, 206, 206)",
-            "ot": "1-3NU4EWMF",
-            "franja": "13-16",
-            "texto": "1-3NU4EWMF - 13-16-AltaLun, 14 Sep"
-          },
-          {
-            "estado": "?",
-            "color": "rgb(121, 182, 235)",
-            "ot": "1-3NQTU502",
-            "franja": "13-16",
-            "texto": "1-3NQTU502 - 13-16-AltaMie, 9 Sep"
-          },
-          {
-            "estado": "?",
-            "color": "rgb(121, 182, 235)",
-            "ot": "1-3NFRWN6C",
-            "franja": "13-16",
-            "texto": "1-3NFRWN6C - 13-16-MigraciónMie, 26 Ago"
-          }
-        ]
-      }
-    },
-    "1-3NVOZTZL": {
-      "tec": "HERNAN CORTES HERRERA",
-      "cat": "Alta 2 Play",
-      "franja_original": "13-16",
-      "d": "GALLEGUILLOS 1421 EDIF. E DEPTO 33, VILLA ALEMANA",
-      "estado": "sin informacion",
-      "nota": "la OT ya no existe en TOA",
-      "contexto": {
-        "buscado": "GALLEGUILLOS 1421",
-        "aviso": "historial de la direccion, NO es el estado de esta orden",
-        "filas": [
-          {
-            "estado": "cancelada",
-            "color": "rgb(128, 255, 128)",
-            "ot": "1-3NVBUC70",
-            "franja": "16-19",
-            "texto": "1-3NVBUC70 - 16-19-AltaMie, 16 Sep"
-          },
-          {
-            "estado": "gestionada",
-            "color": "rgb(96, 206, 206)",
-            "ot": "1-3NUZZQUN",
-            "franja": "10-13",
-            "texto": "1-3NUZZQUN - 10-13-AltaMie, 16 Sep"
-          },
-          {
-            "estado": "gestionada",
-            "color": "rgb(96, 206, 206)",
-            "ot": "1-3NTMMDHP",
-            "franja": "13-16",
-            "texto": "1-3NTMMDHP - 13-16-AltaMar, 15 Sep"
-          },
-          {
-            "estado": "cancelada",
-            "color": "rgb(128, 255, 128)",
-            "ot": "1-3NTD6TUX",
-            "franja": "10-13",
-            "texto": "1-3NTD6TUX - 10-13-AltaLun, 14 Sep"
-          },
-          {
-            "estado": "?",
-            "color": "rgb(121, 182, 235)",
-            "ot": "1-3NTCNF63",
-            "franja": "13-16",
-            "texto": "1-3NTCNF63 - 13-16-AltaLun, 14 Sep"
-          },
-          {
-            "estado": "cancelada",
-            "color": "rgb(128, 255, 128)",
-            "ot": "1-3NSZK42A",
-            "franja": "13-16",
-            "texto": "1-3NSZK42A - 13-16-AltaSab, 12 Sep"
-          }
-        ]
-      }
-    },
-    "1-3NVY0BXT": {
-      "tec": "MATIAS APELEO APELEO",
-      "cat": "Alta 1 Play",
-      "franja_original": "13-16",
-      "d": "ALEMPARTE 277 CASA 10, QUILPUE",
+      "d": "CALLE HERALDO ORREGO 3201 EDIF. A DEPTO 905, QUILPUE",
       "estado": "reagendada",
       "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NVY0BXT - 10-13-AltaLun, 21 Sep",
-      "franja_nueva": "10-13"
-    },
-    "1-3NVP5EKY": {
-      "tec": "NICOLAS MOYANO R",
-      "cat": "Alta 2 Play",
-      "franja_original": "16-19",
-      "d": "HORNOPIREN 2151, VILLA ALEMANA",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NVP5EKY - 10-13-AltaLun, 21 Sep",
-      "franja_nueva": "10-13"
-    },
-    "1-3NWOL603": {
-      "tec": "RAFAEL VARGAS B",
-      "cat": "Alta 2 Play",
-      "franja_original": "13-16",
-      "d": "HUILLICHES 1586, QUILPUE",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NWOL603 - 16-19-AltaLun, 21 Sep",
+      "detalle": "1-3NY55E4M - 16-19-AltaMie, 23 Sep",
       "franja_nueva": "16-19"
     }
   }
