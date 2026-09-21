@@ -7241,25 +7241,25 @@
    }
   },
   "21-09-2026": {
-   "hasta": "12:29",
-   "actividades": 153,
+   "hasta": "12:34",
+   "actividades": 158,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 32,
-    "Iniciado": 21,
-    "Pendiente": 59,
-    "Completado": 28,
+    "No Realizada": 33,
+    "Completado": 30,
+    "Pendiente": 63,
     "en ruta": 10,
+    "Iniciado": 19,
     "Suspendido": 1,
     "Cancelado": 2
    },
-   "rgu": 228.2,
+   "rgu": 235.2,
    "caidas_total": 7,
    "caidas_activas": 7,
    "caidas_resueltas": 0,
-   "nuevas": 17,
+   "nuevas": 19,
    "al_bucket": 7,
-   "repetidas": 32,
+   "repetidas": 34,
    "reagendadas": 3,
    "detalle": {
     "caidas": [
@@ -7328,6 +7328,24 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NYBQW3V",
+      "tec": "ELIAS ARMIJO L",
+      "cat": "Migración 1 Play",
+      "f": "13-16",
+      "hi": "14:00",
+      "d": "BILBAO 1534 DEPTO 33, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NYBHG3X",
+      "tec": "JUAN ARRIAGADA C",
+      "cat": "Reparación",
+      "f": "16-19",
+      "hi": "16:00",
+      "d": "SANTA ELENA 023 CASA A, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NYB2QTT",
       "tec": "SEBASTIAN DOSSOW A",
@@ -7407,7 +7425,7 @@
       "f": "10-13",
       "hi": "12:18",
       "d": "LINCOYAN 1410 EDIF. D DEPTO 24, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NWQC0QG",
@@ -7559,9 +7577,9 @@
       "o": "1-3NY6OT1N",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "12:22",
+      "hi": "12:34",
       "d": "PJE LAS AMARILIS 1021, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "FELIPE SILVA R",
       "visitas": 1,
       "ult_fecha": "21-09-2026",
@@ -7627,6 +7645,18 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3NYB7P5P",
+      "cat": "Migración 2 Play",
+      "f": "13-16",
+      "hi": "13:00",
+      "d": "EL RINCON DE LOS ZORZALES 668, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JOSE CASTRO P",
+      "visitas": 1,
+      "ult_fecha": "07-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3NW41KZL",
       "cat": "Alta 1 Play",
       "f": "10-13",
@@ -7687,6 +7717,18 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3NWMBOFC",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "17:49",
+      "d": "CARLOS SAAVEDRA 80 CASA 39, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JOSE PEREZ RANGEL",
+      "visitas": 1,
+      "ult_fecha": "17-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3NUWSJ6N",
       "cat": "Reparación",
       "f": "16-19",
@@ -7726,7 +7768,7 @@
       "o": "1-3NUANPT8",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:55",
+      "hi": "14:10",
       "d": "CALLE 1 851 CASA E, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -7902,5 +7944,5 @@
    }
   }
  },
- "generado": "21-09-2026 12:29"
+ "generado": "21-09-2026 12:34"
 }
