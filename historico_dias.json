@@ -7241,23 +7241,23 @@
    }
   },
   "21-09-2026": {
-   "hasta": "12:49",
-   "actividades": 159,
+   "hasta": "12:54",
+   "actividades": 162,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 33,
-    "Completado": 32,
-    "en ruta": 10,
-    "Pendiente": 58,
-    "Iniciado": 23,
+    "Completado": 34,
+    "en ruta": 11,
+    "Pendiente": 59,
+    "Iniciado": 22,
     "Suspendido": 1,
     "Cancelado": 2
    },
-   "rgu": 237.2,
+   "rgu": 240.2,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
-   "nuevas": 21,
+   "nuevas": 23,
    "al_bucket": 8,
    "repetidas": 34,
    "reagendadas": 3,
@@ -7337,6 +7337,24 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NYCJ1B9",
+      "tec": "MARCO PEREZ G",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "13:09",
+      "d": "18 DE SEPTIEMBRE 011, QUILPUE",
+      "e": "en ruta"
+     },
+     {
+      "o": "1-3NYC9CDW",
+      "tec": "LUIS CASTRO TORRES",
+      "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "14:42",
+      "d": "SUIZA 235 CASA A, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NY9PQZJ",
       "tec": "GEEYSER PEREZ O",
@@ -7594,7 +7612,7 @@
       "f": "10-13",
       "hi": "10:47",
       "d": "MATURANA 115 CASA 5, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "ESTEBAN PIZARRO QUINTANA",
       "visitas": 5,
       "ult_fecha": "17-09-2026",
@@ -7665,7 +7683,7 @@
       "f": "10-13",
       "hi": "09:47",
       "d": "PJE RIO CISNES 1969, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JOSE CASTRO P",
       "visitas": 2,
       "ult_fecha": "17-09-2026",
@@ -7675,7 +7693,7 @@
       "o": "1-3NYB7P5P",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "13:00",
+      "hi": "13:08",
       "d": "EL RINCON DE LOS ZORZALES 668, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -7807,7 +7825,7 @@
       "o": "1-3NY6HHPV",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "17:06",
+      "hi": "18:07",
       "d": "LAGO LAS TORRES 29 DEPTO 1203, QUILPUE",
       "e": "Pendiente",
       "tec": "LUIS CASTRO TORRES",
@@ -7971,5 +7989,5 @@
    }
   }
  },
- "generado": "21-09-2026 12:49"
+ "generado": "21-09-2026 12:54"
 }
