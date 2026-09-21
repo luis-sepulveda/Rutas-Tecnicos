@@ -7241,24 +7241,24 @@
    }
   },
   "21-09-2026": {
-   "hasta": "10:09",
-   "actividades": 119,
+   "hasta": "10:24",
+   "actividades": 124,
    "tecnicos": 37,
    "estados": {
-    "Iniciado": 35,
-    "Pendiente": 80,
+    "No Realizada": 10,
+    "en ruta": 9,
+    "Pendiente": 73,
+    "Iniciado": 28,
     "Cancelado": 1,
-    "No Realizada": 1,
-    "en ruta": 1,
-    "Completado": 1
+    "Completado": 3
    },
-   "rgu": 187.0,
+   "rgu": 194.5,
    "caidas_total": 1,
    "caidas_activas": 1,
    "caidas_resueltas": 0,
-   "nuevas": 0,
+   "nuevas": 4,
    "al_bucket": 0,
-   "repetidas": 25,
+   "repetidas": 26,
    "reagendadas": 4,
    "detalle": {
     "caidas": [
@@ -7272,15 +7272,52 @@
       "e": "Pendiente"
      }
     ],
-    "nuevas": [],
+    "nuevas": [
+     {
+      "o": "1-3NY6TXND",
+      "tec": "ANTONHY MORALES MENDOZA",
+      "cat": "Reparación",
+      "f": "10-13",
+      "hi": "11:28",
+      "d": "DIEGO DE ALMAGRO 106, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NY64AVJ",
+      "tec": "ESTEBAN PIZARRO QUINTANA",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "17:16",
+      "d": "LOS PENSAMIENTOS 1983, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NWWXFF8",
+      "tec": "FELIPE SILVA R",
+      "cat": "Reparación",
+      "f": "16-19",
+      "hi": "16:00",
+      "d": "PJE CAMPO LINDO 2657, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NY6A791",
+      "tec": "JOSE ROJO A",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "14:00",
+      "d": "EL PEHUEN 2162, VILLA ALEMANA",
+      "e": "Pendiente"
+     }
+    ],
     "repetidas": [
      {
       "o": "1-3NVY0BXT",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "12:00",
+      "hi": "10:22",
       "d": "ALEMPARTE 277 CASA 10, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "ALEXIS JARA",
       "visitas": 1,
       "ult_fecha": "16-09-2026",
@@ -7323,6 +7360,18 @@
       "ult_cierre": "Sin acceso a vivienda"
      },
      {
+      "o": "1-3NWNYCEE",
+      "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "14:00",
+      "d": "CALLE 1 1150 EDIF. 13 DEPTO 102, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "EDGAR VALERO C",
+      "visitas": 1,
+      "ult_fecha": "17-09-2026",
+      "ult_cierre": "Clte desiste motivo comercial"
+     },
+     {
       "o": "1-3NWULDQP",
       "cat": "Alta 2 Play",
       "f": "16-19",
@@ -7340,7 +7389,7 @@
       "f": "10-13",
       "hi": "09:42",
       "d": "HORNOPIREN 2151, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "ESTEBAN PIZARRO QUINTANA",
       "visitas": 1,
       "ult_fecha": "16-09-2026",
@@ -7350,9 +7399,9 @@
       "o": "1-3NWOQOJJ",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "11:51",
+      "hi": "10:35",
       "d": "MATURANA 115 CASA 5, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "ESTEBAN PIZARRO QUINTANA",
       "visitas": 5,
       "ult_fecha": "17-09-2026",
@@ -7362,7 +7411,7 @@
       "o": "1-3NUCCRY8",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:02",
+      "hi": "14:00",
       "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -7385,25 +7434,13 @@
       "o": "1-3NXKVOKP",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "10:54",
+      "hi": "10:28",
       "d": "LAS YERBAS 1994, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "GEEYSER PEREZ O",
       "visitas": 1,
       "ult_fecha": "05-09-2026",
       "ult_cierre": "Sin moradores"
-     },
-     {
-      "o": "1-3NWNYCEE",
-      "cat": "Alta 1 Play",
-      "f": "13-16",
-      "hi": "14:00",
-      "d": "CALLE 1 1150 EDIF. 13 DEPTO 102, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "JEAN ROODLY ORELIEN",
-      "visitas": 1,
-      "ult_fecha": "17-09-2026",
-      "ult_cierre": "Clte desiste motivo comercial"
      },
      {
       "o": "1-3NUFNPQ2",
@@ -7433,7 +7470,7 @@
       "o": "1-3NX72AOQ",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "12:35",
+      "hi": "11:29",
       "d": "VIENA 099, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -7481,9 +7518,9 @@
       "o": "1-3NWJGLAV",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:58",
+      "hi": "10:40",
       "d": "BERNARDO O HIGGINS 0332, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "LEONEL HERNÁNDEZ OJE",
       "visitas": 3,
       "ult_fecha": "17-09-2026",
@@ -7493,7 +7530,7 @@
       "o": "1-3NUANPT8",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:22",
+      "hi": "14:13",
       "d": "CALLE 1 851 CASA E, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -7538,6 +7575,18 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3NY6HHPV",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "18:33",
+      "d": "LAGO LAS TORRES 29 DEPTO 1203, QUILPUE",
+      "e": "Pendiente",
+      "tec": "NICOLAS MOYANO R",
+      "visitas": 1,
+      "ult_fecha": "21-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3NX894QZ",
       "cat": "Migración 1 Play",
       "f": "10-13",
@@ -7579,9 +7628,9 @@
       "o": "1-3NVY0BXT",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "12:00",
+      "hi": "10:22",
       "d": "ALEMPARTE 277 CASA 10, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "ALEXIS JARA",
       "desde": "17-09-2026"
      },
@@ -7591,7 +7640,7 @@
       "f": "10-13",
       "hi": "09:42",
       "d": "HORNOPIREN 2151, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "ESTEBAN PIZARRO QUINTANA",
       "desde": "17-09-2026"
      },
@@ -7599,7 +7648,7 @@
       "o": "1-3NUCCRY8",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:02",
+      "hi": "14:00",
       "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -7619,5 +7668,5 @@
    }
   }
  },
- "generado": "21-09-2026 10:09"
+ "generado": "21-09-2026 10:24"
 }
