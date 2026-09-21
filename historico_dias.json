@@ -7241,14 +7241,15 @@
    }
   },
   "21-09-2026": {
-   "hasta": "09:54",
+   "hasta": "09:59",
    "actividades": 119,
    "tecnicos": 37,
    "estados": {
-    "Iniciado": 24,
-    "Pendiente": 82,
-    "en ruta": 12,
-    "Cancelado": 1
+    "Iniciado": 31,
+    "Pendiente": 80,
+    "en ruta": 6,
+    "Cancelado": 1,
+    "No Realizada": 1
    },
    "rgu": 187.0,
    "caidas_total": 1,
@@ -7300,9 +7301,9 @@
       "o": "1-3NY5GYKY",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "09:50",
+      "hi": "09:56",
       "d": "PEDRO GONZALEZ 159 CASA D, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "CRISTOBAL SILVA LEIVA",
       "visitas": 1,
       "ult_fecha": "10-08-2026",
@@ -7395,7 +7396,7 @@
       "o": "1-3NWNYCEE",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:35",
+      "hi": "14:00",
       "d": "CALLE 1 1150 EDIF. 13 DEPTO 102, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JEAN ROODLY ORELIEN",
@@ -7563,7 +7564,7 @@
       "o": "1-3NWOCFG5",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:45",
+      "hi": "11:10",
       "d": "CASA DE PIEDRA 3064, QUILPUE",
       "e": "Pendiente",
       "tec": "YENDER BOSCAN CADENAS",
@@ -7617,5 +7618,5 @@
    }
   }
  },
- "generado": "21-09-2026 09:54"
+ "generado": "21-09-2026 09:59"
 }
