@@ -7241,14 +7241,14 @@
    }
   },
   "21-09-2026": {
-   "hasta": "15:40",
+   "hasta": "15:45",
    "actividades": 192,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 45,
-    "Completado": 64,
+    "Completado": 65,
     "Iniciado": 26,
-    "Pendiente": 43,
+    "Pendiente": 42,
     "en ruta": 5,
     "Suspendido": 3,
     "Cancelado": 6
@@ -7259,7 +7259,7 @@
    "caidas_resueltas": 0,
    "nuevas": 38,
    "al_bucket": 15,
-   "repetidas": 35,
+   "repetidas": 36,
    "reagendadas": 3,
    "detalle": {
     "caidas": [
@@ -7769,7 +7769,7 @@
       "o": "1-3NY9AR85",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:44",
+      "hi": "15:40",
       "d": "AV VICEPRESIDENTE BDO LEIGHTON 1550 CASA 1, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -7805,9 +7805,9 @@
       "o": "1-3NY6Q4V4",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "15:43",
       "d": "SAN ENRIQUE 1950 EDIF. 10 DEPTO 102, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "FELIPE SILVA R",
       "visitas": 1,
       "ult_fecha": "21-09-2026",
@@ -7835,6 +7835,18 @@
       "visitas": 1,
       "ult_fecha": "05-09-2026",
       "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3NW9QOGO",
+      "cat": "Alta 2 Play",
+      "f": "10-13",
+      "hi": "11:18",
+      "d": "MARIA MERCEDES 1482 EDIF. 9 DEPTO 304, VILLA ALEMANA",
+      "e": "Completado",
+      "tec": "JEAN ROODLY ORELIEN",
+      "visitas": 1,
+      "ult_fecha": "21-09-2026",
+      "ult_cierre": "Falla Aprovisionamiento"
      },
      {
       "o": "1-3NWNYCEE",
@@ -7912,7 +7924,7 @@
       "o": "1-3NWMBOFC",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "17:48",
+      "hi": "18:02",
       "d": "CARLOS SAAVEDRA 80 CASA 39, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -7983,7 +7995,7 @@
       "o": "1-3NWQ4E3N",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:57",
+      "hi": "16:56",
       "d": "YUNGAY 871 CASA B, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS GATICA DAVILA",
@@ -8171,5 +8183,5 @@
    }
   }
  },
- "generado": "21-09-2026 15:40"
+ "generado": "21-09-2026 15:45"
 }
