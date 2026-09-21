@@ -7241,23 +7241,23 @@
    }
   },
   "21-09-2026": {
-   "hasta": "13:30",
-   "actividades": 174,
+   "hasta": "13:34",
+   "actividades": 175,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 37,
-    "Completado": 44,
-    "en ruta": 3,
+    "No Realizada": 38,
+    "Completado": 45,
+    "en ruta": 4,
     "Pendiente": 65,
-    "Iniciado": 19,
+    "Iniciado": 17,
     "Suspendido": 2,
     "Cancelado": 4
    },
-   "rgu": 253.4,
+   "rgu": 254.4,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
-   "nuevas": 29,
+   "nuevas": 30,
    "al_bucket": 8,
    "repetidas": 35,
    "reagendadas": 3,
@@ -7338,6 +7338,15 @@
     ],
     "nuevas": [
      {
+      "o": "1-3NYB8K39",
+      "tec": "JEAN ROODLY ORELIEN",
+      "cat": "Migración 1 Play",
+      "f": "13-16",
+      "hi": "17:57",
+      "d": "MICHAEL 748, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3NY8B1H3",
       "tec": "LUIS MARTIN NUÑEZ",
       "cat": "Migración 1 Play",
@@ -7380,7 +7389,7 @@
       "f": "13-16",
       "hi": "14:19",
       "d": "PJE LUCHO ZAPATA 373, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NYA6LGM",
@@ -7688,9 +7697,9 @@
       "o": "1-3NYCQAUW",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:44",
+      "hi": "13:49",
       "d": "EL TEPUAL 1248, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "FELIPE SILVA R",
       "visitas": 1,
       "ult_fecha": "04-09-2026",
@@ -7881,7 +7890,7 @@
       "f": "13-16",
       "hi": "13:13",
       "d": "CALLE 1 851 CASA E, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "LEONEL HERNÁNDEZ OJE",
       "visitas": 2,
       "ult_fecha": "14-09-2026",
@@ -7989,7 +7998,7 @@
       "f": "13-16",
       "hi": "13:23",
       "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
       "visitas": 5,
       "ult_fecha": "14-09-2026",
@@ -8047,7 +8056,7 @@
       "f": "13-16",
       "hi": "13:23",
       "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
       "desde": "17-09-2026"
      }
@@ -8055,5 +8064,5 @@
    }
   }
  },
- "generado": "21-09-2026 13:30"
+ "generado": "21-09-2026 13:34"
 }
