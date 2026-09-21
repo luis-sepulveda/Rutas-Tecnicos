@@ -7241,15 +7241,15 @@
    }
   },
   "21-09-2026": {
-   "hasta": "15:25",
+   "hasta": "15:30",
    "actividades": 175,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 45,
-    "Completado": 61,
-    "Iniciado": 22,
-    "Pendiente": 29,
-    "en ruta": 9,
+    "Completado": 63,
+    "Iniciado": 20,
+    "Pendiente": 28,
+    "en ruta": 10,
     "Suspendido": 3,
     "Cancelado": 6
    },
@@ -7905,7 +7905,7 @@
       "o": "1-3NUWSJ6N",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:01",
+      "hi": "16:43",
       "d": "ALFA 2035, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE SALAS MEDINA",
@@ -7953,7 +7953,7 @@
       "o": "1-3NWQ4E3N",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:28",
+      "hi": "16:48",
       "d": "YUNGAY 871 CASA B, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS GATICA DAVILA",
@@ -8117,5 +8117,5 @@
    }
   }
  },
- "generado": "21-09-2026 15:25"
+ "generado": "21-09-2026 15:30"
 }
