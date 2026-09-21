@@ -7241,17 +7241,16 @@
    }
   },
   "21-09-2026": {
-   "hasta": "11:49",
+   "hasta": "11:54",
    "actividades": 142,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 31,
-    "Iniciado": 29,
+    "Iniciado": 27,
     "Pendiente": 62,
-    "Completado": 16,
+    "Completado": 19,
     "Suspendido": 1,
-    "Cancelado": 2,
-    "en ruta": 1
+    "Cancelado": 2
    },
    "rgu": 218.5,
    "caidas_total": 5,
@@ -7824,5 +7823,5 @@
    }
   }
  },
- "generado": "21-09-2026 11:49"
+ "generado": "21-09-2026 11:54"
 }
