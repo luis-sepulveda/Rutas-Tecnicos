@@ -7241,24 +7241,25 @@
    }
   },
   "21-09-2026": {
-   "hasta": "11:59",
-   "actividades": 143,
+   "hasta": "12:29",
+   "actividades": 153,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 31,
-    "Iniciado": 26,
-    "Pendiente": 62,
-    "Completado": 21,
+    "No Realizada": 32,
+    "Iniciado": 21,
+    "Pendiente": 59,
+    "Completado": 28,
+    "en ruta": 10,
     "Suspendido": 1,
     "Cancelado": 2
    },
-   "rgu": 218.6,
-   "caidas_total": 5,
-   "caidas_activas": 5,
+   "rgu": 228.2,
+   "caidas_total": 7,
+   "caidas_activas": 7,
    "caidas_resueltas": 0,
-   "nuevas": 13,
-   "al_bucket": 1,
-   "repetidas": 30,
+   "nuevas": 17,
+   "al_bucket": 7,
+   "repetidas": 32,
    "reagendadas": 3,
    "detalle": {
     "caidas": [
@@ -7272,12 +7273,30 @@
       "e": "Pendiente"
      },
      {
+      "o": "1-3NYAI9PD",
+      "tec": "EDGAR VALERO C",
+      "cat": "Migración 3 Play",
+      "f": "13-16",
+      "hi": "15:01",
+      "d": "LAS ORQUIDEAS 1650 CASA 78, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3NWOL603",
       "tec": "HERNAN CORTES HERRERA",
       "cat": "Alta 2 Play",
       "f": "16-19",
       "hi": "16:00",
       "d": "HUILLICHES 1586, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NW5W0EA",
+      "tec": "HERNAN CORTES HERRERA",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "16:00",
+      "d": "ISIDORA 2833 DEPTO 12, QUILPUE",
       "e": "Pendiente"
      },
      {
@@ -7310,8 +7329,44 @@
     ],
     "nuevas": [
      {
+      "o": "1-3NYB2QTT",
+      "tec": "SEBASTIAN DOSSOW A",
+      "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "13:00",
+      "d": "FRANCISCO FONCK 262, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NYAZ98Z",
+      "tec": "SEBASTIAN DOSSOW A",
+      "cat": "Reparación",
+      "f": "16-19",
+      "hi": "17:19",
+      "d": "VOLCAN LICANCABUR 2652, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NYAMZEV",
+      "tec": "MARCO PEREZ G",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "12:12",
+      "d": "PJE JOSE ZAPIOLA 421, QUILPUE",
+      "e": "Iniciado"
+     },
+     {
+      "o": "1-3NYAI9PD",
+      "tec": "EDGAR VALERO C",
+      "cat": "Migración 3 Play",
+      "f": "13-16",
+      "hi": "15:01",
+      "d": "LAS ORQUIDEAS 1650 CASA 78, VILLA ALEMANA",
+      "e": "Pendiente (ya no está)"
+     },
+     {
       "o": "1-3NY9JSUP",
-      "tec": "JOSE PEREZ RANGEL",
+      "tec": "MATIAS APELEO APELEO",
       "cat": "Migración 3 Play",
       "f": "13-16",
       "hi": "14:53",
@@ -7329,21 +7384,21 @@
      },
      {
       "o": "1-3NY88BN4",
-      "tec": "ANTONHY MORALES MENDOZA",
+      "tec": "YENDER BOSCAN CADENAS",
       "cat": "Reparación",
       "f": "13-16",
       "hi": "14:00",
       "d": "LA QUEBRADA 1011, QUILPUE",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NY7UPT8",
-      "tec": "GEEYSER PEREZ O",
+      "tec": "DANIEL NAVARRETE E",
       "cat": "Alta 2 Play",
       "f": "13-16",
       "hi": "14:00",
       "d": "OVALLE 1921, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NY7HMBJ",
@@ -7356,7 +7411,7 @@
      },
      {
       "o": "1-3NWQC0QG",
-      "tec": "LUIS CASTRO TORRES",
+      "tec": "PABLO HERNANEZ FERNANDEZ",
       "cat": "Alta 1 Play",
       "f": "16-19",
       "hi": "16:55",
@@ -7365,7 +7420,7 @@
      },
      {
       "o": "1-3NY7GTMN",
-      "tec": "HERNAN CORTES HERRERA",
+      "tec": "FELIPE SILVA R",
       "cat": "Reparación",
       "f": "10-13",
       "hi": "11:03",
@@ -7401,7 +7456,7 @@
      },
      {
       "o": "1-3NY64AVJ",
-      "tec": "ESTEBAN PIZARRO QUINTANA",
+      "tec": "LUIS GATICA DAVILA",
       "cat": "Modificación de Servicio",
       "f": "16-19",
       "hi": "17:16",
@@ -7410,7 +7465,7 @@
      },
      {
       "o": "1-3NWWXFF8",
-      "tec": "FELIPE SILVA R",
+      "tec": "ELIAS ARMIJO L",
       "cat": "Reparación",
       "f": "16-19",
       "hi": "16:00",
@@ -7441,18 +7496,6 @@
       "ult_cierre": "Sin acceso a vivienda"
      },
      {
-      "o": "1-3NUWXYHV",
-      "cat": "Migración 2 Play",
-      "f": "16-19",
-      "hi": "16:00",
-      "d": "CONDELL SUR 01565 CASA G, QUILPUE",
-      "e": "Pendiente",
-      "tec": "ANTONHY MORALES MENDOZA",
-      "visitas": 1,
-      "ult_fecha": "20-08-2026",
-      "ult_cierre": "Sin moradores"
-     },
-     {
       "o": "1-3NY5GYKY",
       "cat": "Migración 2 Play",
       "f": "10-13",
@@ -7465,27 +7508,27 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3NWNYCEE",
-      "cat": "Alta 1 Play",
-      "f": "13-16",
-      "hi": "15:08",
-      "d": "CALLE 1 1150 EDIF. 13 DEPTO 102, VILLA ALEMANA",
+      "o": "1-3NUFNPQ2",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "16:00",
+      "d": "LAS ACACIAS 1575 CASA 09, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
       "visitas": 1,
-      "ult_fecha": "17-09-2026",
-      "ult_cierre": "Clte desiste motivo comercial"
+      "ult_fecha": "05-09-2026",
+      "ult_cierre": "Riesgo electrico"
      },
      {
-      "o": "1-3NWULDQP",
-      "cat": "Alta 2 Play",
+      "o": "1-3NY6Q4V4",
+      "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:07",
-      "d": "LAS LILAS 1920, VILLA ALEMANA",
+      "hi": "16:55",
+      "d": "SAN ENRIQUE 1950 EDIF. 10 DEPTO 102, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
       "visitas": 1,
-      "ult_fecha": "17-09-2026",
+      "ult_fecha": "21-09-2026",
       "ult_cierre": "Sin moradores"
      },
      {
@@ -7513,24 +7556,12 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
-      "o": "1-3NUCCRY8",
-      "cat": "Alta 1 Play",
-      "f": "13-16",
-      "hi": "14:00",
-      "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "ESTEBAN PIZARRO QUINTANA",
-      "visitas": 5,
-      "ult_fecha": "14-09-2026",
-      "ult_cierre": "Clte desiste motivo comercial"
-     },
-     {
       "o": "1-3NY6OT1N",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "12:22",
       "d": "PJE LAS AMARILIS 1021, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "FELIPE SILVA R",
       "visitas": 1,
       "ult_fecha": "21-09-2026",
@@ -7560,16 +7591,28 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3NUFNPQ2",
-      "cat": "Modificación de Servicio",
+      "o": "1-3NWQ4E3N",
+      "cat": "Alta 1 Play",
       "f": "16-19",
       "hi": "16:00",
-      "d": "LAS ACACIAS 1575 CASA 09, VILLA ALEMANA",
+      "d": "YUNGAY 871 CASA B, VILLA ALEMANA",
       "e": "Pendiente",
+      "tec": "JEAN ROODLY ORELIEN",
+      "visitas": 1,
+      "ult_fecha": "17-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3NWNYCEE",
+      "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "12:31",
+      "d": "CALLE 1 1150 EDIF. 13 DEPTO 102, VILLA ALEMANA",
+      "e": "en ruta",
       "tec": "JOEL GUSTAVE GUSTA",
       "visitas": 1,
-      "ult_fecha": "05-09-2026",
-      "ult_cierre": "Riesgo electrico"
+      "ult_fecha": "17-09-2026",
+      "ult_cierre": "Clte desiste motivo comercial"
      },
      {
       "o": "1-3NWONULC",
@@ -7594,6 +7637,18 @@
       "visitas": 1,
       "ult_fecha": "16-09-2026",
       "ult_cierre": "Sin acceso a vivienda"
+     },
+     {
+      "o": "1-3NUWXYHV",
+      "cat": "Migración 2 Play",
+      "f": "16-19",
+      "hi": "16:00",
+      "d": "CONDELL SUR 01565 CASA G, QUILPUE",
+      "e": "Pendiente",
+      "tec": "JOSE GALAZ D",
+      "visitas": 1,
+      "ult_fecha": "20-08-2026",
+      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3NX72AOQ",
@@ -7623,7 +7678,7 @@
       "o": "1-3NXJ9VEI",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "17:17",
+      "hi": "16:00",
       "d": "HUANHUALI 418 EDIF. B5 DEPTO 42, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -7671,13 +7726,37 @@
       "o": "1-3NUANPT8",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:57",
+      "hi": "14:55",
       "d": "CALLE 1 851 CASA E, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
       "visitas": 2,
       "ult_fecha": "14-09-2026",
       "ult_cierre": "Sin acceso a vivienda"
+     },
+     {
+      "o": "1-3NY6HHPV",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "17:06",
+      "d": "LAGO LAS TORRES 29 DEPTO 1203, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LUIS CASTRO TORRES",
+      "visitas": 1,
+      "ult_fecha": "21-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3NYA4LLM",
+      "cat": "Migración 2 Play",
+      "f": "13-16",
+      "hi": "13:00",
+      "d": "DAVID CORTES 1086, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LUIS MARTIN NUÑEZ",
+      "visitas": 2,
+      "ult_fecha": "16-09-2026",
+      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3NWTNZUB",
@@ -7692,15 +7771,15 @@
       "ult_cierre": "Direccion no encontrada"
      },
      {
-      "o": "1-3NWMBOFC",
-      "cat": "Alta 2 Play",
+      "o": "1-3NY8IVXY",
+      "cat": "Alta 1 Play",
       "f": "16-19",
       "hi": "16:00",
-      "d": "CARLOS SAAVEDRA 80 CASA 39, VILLA ALEMANA",
+      "d": "CUMMING 831, VILLA ALEMANA",
       "e": "Pendiente",
-      "tec": "MATIAS APELEO APELEO",
+      "tec": "MATÍAS JAQUE AG",
       "visitas": 1,
-      "ult_fecha": "17-09-2026",
+      "ult_fecha": "21-09-2026",
       "ult_cierre": "Sin moradores"
      },
      {
@@ -7721,7 +7800,7 @@
       "f": "10-13",
       "hi": "11:49",
       "d": "SANTIAGO 657, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "NICOLAS MOYANO R",
       "visitas": 1,
       "ult_fecha": "08-09-2026",
@@ -7731,25 +7810,13 @@
       "o": "1-3NY9EKS2",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:04",
+      "hi": "12:12",
       "d": "PERU (NODO 92) 440, QUILPUE",
-      "e": "Pendiente",
-      "tec": "NICOLAS MOYANO R",
+      "e": "en ruta",
+      "tec": "PABLO HERNANEZ FERNANDEZ",
       "visitas": 1,
       "ult_fecha": "19-08-2026",
       "ult_cierre": "Cliente reagenda"
-     },
-     {
-      "o": "1-3NY6HHPV",
-      "cat": "Alta 2 Play",
-      "f": "16-19",
-      "hi": "18:27",
-      "d": "LAGO LAS TORRES 29 DEPTO 1203, QUILPUE",
-      "e": "Pendiente",
-      "tec": "NICOLAS MOYANO R",
-      "visitas": 1,
-      "ult_fecha": "21-09-2026",
-      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3NX894QZ",
@@ -7764,11 +7831,23 @@
       "ult_cierre": "Cliente Desiste"
      },
      {
-      "o": "1-3NWQ4E3N",
+      "o": "1-3NUCCRY8",
       "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "13:27",
+      "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "SAMUEL FERNANDEZ VIDAL",
+      "visitas": 5,
+      "ult_fecha": "14-09-2026",
+      "ult_cierre": "Clte desiste motivo comercial"
+     },
+     {
+      "o": "1-3NWULDQP",
+      "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:00",
-      "d": "YUNGAY 871 CASA B, VILLA ALEMANA",
+      "hi": "16:07",
+      "d": "LAS LILAS 1920, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
       "visitas": 1,
@@ -7813,15 +7892,15 @@
       "o": "1-3NUCCRY8",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "13:27",
       "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
       "e": "Pendiente",
-      "tec": "ESTEBAN PIZARRO QUINTANA",
+      "tec": "SAMUEL FERNANDEZ VIDAL",
       "desde": "17-09-2026"
      }
     ]
    }
   }
  },
- "generado": "21-09-2026 11:59"
+ "generado": "21-09-2026 12:29"
 }
