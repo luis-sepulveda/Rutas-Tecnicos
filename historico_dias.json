@@ -7241,24 +7241,24 @@
    }
   },
   "21-09-2026": {
-   "hasta": "12:39",
-   "actividades": 157,
+   "hasta": "12:49",
+   "actividades": 159,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 33,
-    "Completado": 30,
-    "en ruta": 12,
-    "Pendiente": 60,
-    "Iniciado": 19,
+    "Completado": 32,
+    "en ruta": 10,
+    "Pendiente": 58,
+    "Iniciado": 23,
     "Suspendido": 1,
     "Cancelado": 2
    },
-   "rgu": 234.2,
-   "caidas_total": 7,
-   "caidas_activas": 7,
+   "rgu": 237.2,
+   "caidas_total": 8,
+   "caidas_activas": 8,
    "caidas_resueltas": 0,
-   "nuevas": 19,
-   "al_bucket": 7,
+   "nuevas": 21,
+   "al_bucket": 8,
    "repetidas": 34,
    "reagendadas": 3,
    "detalle": {
@@ -7279,6 +7279,15 @@
       "f": "13-16",
       "hi": "15:01",
       "d": "LAS ORQUIDEAS 1650 CASA 78, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NYBQW3V",
+      "tec": "ELIAS ARMIJO L",
+      "cat": "Migración 1 Play",
+      "f": "13-16",
+      "hi": "14:00",
+      "d": "BILBAO 1534 DEPTO 33, QUILPUE",
       "e": "Pendiente"
      },
      {
@@ -7329,6 +7338,24 @@
     ],
     "nuevas": [
      {
+      "o": "1-3NY9PQZJ",
+      "tec": "GEEYSER PEREZ O",
+      "cat": "Reparación",
+      "f": "13-16",
+      "hi": "14:09",
+      "d": "EGANA 349, QUILPUE",
+      "e": "en ruta"
+     },
+     {
+      "o": "1-3NYBXKK5",
+      "tec": "HERNAN CORTES HERRERA",
+      "cat": "Alta 2 Play",
+      "f": "13-16",
+      "hi": "14:18",
+      "d": "NIEBLA 594, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3NYBQW3V",
       "tec": "ELIAS ARMIJO L",
       "cat": "Migración 1 Play",
@@ -7371,7 +7398,7 @@
       "f": "13-16",
       "hi": "12:12",
       "d": "PJE JOSE ZAPIOLA 421, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NYAI9PD",
@@ -7416,7 +7443,7 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "OVALLE 1921, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NY7HMBJ",
@@ -7768,9 +7795,9 @@
       "o": "1-3NUANPT8",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:10",
+      "hi": "12:57",
       "d": "CALLE 1 851 CASA E, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "LEONEL HERNÁNDEZ OJE",
       "visitas": 2,
       "ult_fecha": "14-09-2026",
@@ -7792,9 +7819,9 @@
       "o": "1-3NYA4LLM",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "13:00",
+      "hi": "12:54",
       "d": "DAVID CORTES 1086, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "LUIS MARTIN NUÑEZ",
       "visitas": 2,
       "ult_fecha": "16-09-2026",
@@ -7852,9 +7879,9 @@
       "o": "1-3NY9EKS2",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "12:12",
+      "hi": "12:46",
       "d": "PERU (NODO 92) 440, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "PABLO HERNANEZ FERNANDEZ",
       "visitas": 1,
       "ult_fecha": "19-08-2026",
@@ -7887,8 +7914,8 @@
      {
       "o": "1-3NWULDQP",
       "cat": "Alta 2 Play",
-      "f": "16-19",
-      "hi": "16:07",
+      "f": "13-16",
+      "hi": "16:17",
       "d": "LAS LILAS 1920, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -7944,5 +7971,5 @@
    }
   }
  },
- "generado": "21-09-2026 12:39"
+ "generado": "21-09-2026 12:49"
 }
