@@ -7241,13 +7241,13 @@
    }
   },
   "21-09-2026": {
-   "hasta": "09:49",
+   "hasta": "09:54",
    "actividades": 119,
    "tecnicos": 37,
    "estados": {
-    "Iniciado": 19,
-    "Pendiente": 83,
-    "en ruta": 16,
+    "Iniciado": 24,
+    "Pendiente": 82,
+    "en ruta": 12,
     "Cancelado": 1
    },
    "rgu": 187.0,
@@ -7383,7 +7383,7 @@
       "o": "1-3NXKVOKP",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "11:04",
+      "hi": "10:54",
       "d": "LAS YERBAS 1994, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -7467,9 +7467,9 @@
       "o": "1-3NXTQ5QU",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:59",
       "d": "MADRID 620 CASA D, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "KEVIN TAPIA RETAMAL",
       "visitas": 1,
       "ult_fecha": "11-09-2026",
@@ -7479,7 +7479,7 @@
       "o": "1-3NWJGLAV",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:38",
+      "hi": "10:58",
       "d": "BERNARDO O HIGGINS 0332, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -7491,7 +7491,7 @@
       "o": "1-3NUANPT8",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:10",
+      "hi": "14:22",
       "d": "CALLE 1 851 CASA E, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -7617,5 +7617,5 @@
    }
   }
  },
- "generado": "21-09-2026 09:49"
+ "generado": "21-09-2026 09:54"
 }
