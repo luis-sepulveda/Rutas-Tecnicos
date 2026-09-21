@@ -7241,23 +7241,23 @@
    }
   },
   "21-09-2026": {
-   "hasta": "13:34",
-   "actividades": 175,
+   "hasta": "13:55",
+   "actividades": 178,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 38,
-    "Completado": 45,
+    "No Realizada": 40,
+    "Completado": 46,
+    "Iniciado": 19,
+    "Pendiente": 63,
     "en ruta": 4,
-    "Pendiente": 65,
-    "Iniciado": 17,
     "Suspendido": 2,
     "Cancelado": 4
    },
-   "rgu": 254.4,
+   "rgu": 259.9,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
-   "nuevas": 30,
+   "nuevas": 32,
    "al_bucket": 8,
    "repetidas": 35,
    "reagendadas": 3,
@@ -7338,6 +7338,24 @@
     ],
     "nuevas": [
      {
+      "o": "1-3NYEDOP2",
+      "tec": "CRISTOBAL SILVA LEIVA",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "16:00",
+      "d": "PJE DOS 0223, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NYE7OXX",
+      "tec": "JORDAN ROA PEREZ",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "17:38",
+      "d": "LOS QUILLAYES 110, QUILPUE",
+      "e": "Pendiente (ya no está)"
+     },
+     {
       "o": "1-3NYB8K39",
       "tec": "JEAN ROODLY ORELIEN",
       "cat": "Migración 1 Play",
@@ -7389,7 +7407,7 @@
       "f": "13-16",
       "hi": "14:19",
       "d": "PJE LUCHO ZAPATA 373, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NYA6LGM",
@@ -7425,16 +7443,16 @@
       "f": "13-16",
       "hi": "14:09",
       "d": "EGANA 349, QUILPUE",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3NYBXKK5",
-      "tec": "HERNAN CORTES HERRERA",
+      "tec": "GEEYSER PEREZ O",
       "cat": "Alta 2 Play",
       "f": "13-16",
       "hi": "14:18",
       "d": "NIEBLA 594, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NYBQW3V",
@@ -7461,7 +7479,7 @@
       "f": "13-16",
       "hi": "13:00",
       "d": "FRANCISCO FONCK 262, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NYAZ98Z",
@@ -7582,7 +7600,7 @@
      },
      {
       "o": "1-3NY64AVJ",
-      "tec": "LUIS GATICA DAVILA",
+      "tec": "MARCELO GÓMEZ GÓME",
       "cat": "Modificación de Servicio",
       "f": "16-19",
       "hi": "17:16",
@@ -7627,7 +7645,7 @@
       "f": "10-13",
       "hi": "09:56",
       "d": "PEDRO GONZALEZ 159 CASA D, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "CRISTOBAL SILVA LEIVA",
       "visitas": 1,
       "ult_fecha": "10-08-2026",
@@ -7697,9 +7715,9 @@
       "o": "1-3NYCQAUW",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "13:49",
+      "hi": "13:45",
       "d": "EL TEPUAL 1248, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "FELIPE SILVA R",
       "visitas": 1,
       "ult_fecha": "04-09-2026",
@@ -7996,9 +8014,9 @@
       "o": "1-3NUCCRY8",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "13:23",
+      "hi": "13:48",
       "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "No Realizada",
       "tec": "SAMUEL FERNANDEZ VIDAL",
       "visitas": 5,
       "ult_fecha": "14-09-2026",
@@ -8008,7 +8026,7 @@
       "o": "1-3NWULDQP",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "16:13",
+      "hi": "15:03",
       "d": "LAS LILAS 1920, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -8054,9 +8072,9 @@
       "o": "1-3NUCCRY8",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "13:23",
+      "hi": "13:48",
       "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "No Realizada",
       "tec": "SAMUEL FERNANDEZ VIDAL",
       "desde": "17-09-2026"
      }
@@ -8064,5 +8082,5 @@
    }
   }
  },
- "generado": "21-09-2026 13:34"
+ "generado": "21-09-2026 13:55"
 }
