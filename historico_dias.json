@@ -7241,15 +7241,15 @@
    }
   },
   "21-09-2026": {
-   "hasta": "10:04",
+   "hasta": "10:09",
    "actividades": 119,
    "tecnicos": 37,
    "estados": {
-    "Iniciado": 33,
-    "Pendiente": 79,
+    "Iniciado": 35,
+    "Pendiente": 80,
     "Cancelado": 1,
     "No Realizada": 1,
-    "en ruta": 4,
+    "en ruta": 1,
     "Completado": 1
    },
    "rgu": 187.0,
@@ -7469,9 +7469,9 @@
       "o": "1-3NXTQ5QU",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "09:59",
+      "hi": "10:06",
       "d": "MADRID 620 CASA D, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "KEVIN TAPIA RETAMAL",
       "visitas": 1,
       "ult_fecha": "11-09-2026",
@@ -7619,5 +7619,5 @@
    }
   }
  },
- "generado": "21-09-2026 10:04"
+ "generado": "21-09-2026 10:09"
 }
