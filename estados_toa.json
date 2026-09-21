@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-09-21T11:29:56",
+  "actualizado": "2026-09-21T12:00:08",
   "resumen": {
-    "reagendada": 4
+    "reagendada": 5
   },
   "estados": {
     "1-3NY6ZWQR": {
@@ -23,6 +23,16 @@
       "color": "rgb(255, 222, 0)",
       "detalle": "1-3NWOL603 - 16-19-AltaMar, 22 Sep",
       "franja_nueva": "16-19"
+    },
+    "1-3NY9G6LV": {
+      "tec": "JORDAN ROA PEREZ",
+      "cat": "Alta 1 Play",
+      "franja_original": "10-13",
+      "d": "LAS ROSAS 859, QUILPUE",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3NY9G6LV - 10-13-AltaMar, 22 Sep",
+      "franja_nueva": "10-13"
     },
     "1-3NY6IP29": {
       "tec": "LUIS GATICA DAVILA",
