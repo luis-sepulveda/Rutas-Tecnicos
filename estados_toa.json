@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-17T14:44:32",
+  "actualizado": "2026-09-17T15:14:44",
   "resumen": {
-    "sin informacion": 2,
-    "reagendada": 4
+    "sin informacion": 3,
+    "reagendada": 3
   },
   "estados": {
     "1-3NU37BIV": {
@@ -19,82 +19,111 @@
       "franja_original": "10-13",
       "d": "SAN ENRIQUE 1780 EDIF. 1 DEPTO 204, VILLA ALEMANA",
       "estado": "sin informacion",
-      "nota": "la OT ya no existe en TOA"
+      "nota": "la OT ya no existe en TOA",
+      "contexto": {
+        "buscado": "SAN ENRIQUE 1780",
+        "aviso": "historial de la direccion, NO es el estado de esta orden",
+        "filas": [
+          {
+            "estado": "?",
+            "color": "rgb(255, 170, 170)",
+            "ot": "1-3NW8F66C",
+            "franja": "16-19",
+            "texto": "1-3NW8F66C - 16-19-Migración"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NVGMYSS",
+            "franja": "10-13",
+            "texto": "1-3NVGMYSS - 10-13-Alta"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NTBG5UZ",
+            "franja": "10-13",
+            "texto": "1-3NTBG5UZ - 10-13-ReparaciónLun, 14 Sep"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NU4EWMF",
+            "franja": "13-16",
+            "texto": "1-3NU4EWMF - 13-16-AltaLun, 14 Sep"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NQTU502",
+            "franja": "13-16",
+            "texto": "1-3NQTU502 - 13-16-AltaMie, 9 Sep"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NFRWN6C",
+            "franja": "13-16",
+            "texto": "1-3NFRWN6C - 13-16-MigraciónMie, 26 Ago"
+          }
+        ]
+      }
     },
     "1-3NVOZTZL": {
       "tec": "HERNAN CORTES HERRERA",
       "cat": "Alta 2 Play",
       "franja_original": "13-16",
       "d": "GALLEGUILLOS 1421 EDIF. E DEPTO 33, VILLA ALEMANA",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NW8F66C - 16-19-Migración",
-      "franja_nueva": "16-19",
-      "previas": [
-        {
-          "estado": "?",
-          "color": "rgb(121, 182, 235)",
-          "ot": "1-3NVGMYSS",
-          "franja": "10-13",
-          "texto": "1-3NVGMYSS - 10-13-Alta"
-        },
-        {
-          "estado": "?",
-          "color": "rgb(121, 182, 235)",
-          "ot": "1-3NTBG5UZ",
-          "franja": "10-13",
-          "texto": "1-3NTBG5UZ - 10-13-ReparaciónLun, 14 Sep"
-        },
-        {
-          "estado": "gestionada",
-          "color": "rgb(96, 206, 206)",
-          "ot": "1-3NU4EWMF",
-          "franja": "13-16",
-          "texto": "1-3NU4EWMF - 13-16-AltaLun, 14 Sep"
-        },
-        {
-          "estado": "?",
-          "color": "rgb(121, 182, 235)",
-          "ot": "1-3NQTU502",
-          "franja": "13-16",
-          "texto": "1-3NQTU502 - 13-16-AltaMie, 9 Sep"
-        },
-        {
-          "estado": "?",
-          "color": "rgb(121, 182, 235)",
-          "ot": "1-3NFRWN6C",
-          "franja": "13-16",
-          "texto": "1-3NFRWN6C - 13-16-MigraciónMie, 26 Ago"
-        },
-        {
-          "estado": "?",
-          "color": "rgb(121, 182, 235)",
-          "ot": "1-3NHWK739",
-          "franja": "16-19",
-          "texto": "1-3NHWK739 - 16-19-Modificación de ServicioMie, 26 Ago"
-        },
-        {
-          "estado": "?",
-          "color": "rgb(121, 182, 235)",
-          "ot": "1-3NFRMGU8",
-          "franja": "10-13",
-          "texto": "1-3NFRMGU8 - 10-13-AltaMar, 25 Ago"
-        },
-        {
-          "estado": "suspendida",
-          "color": "rgb(153, 255, 255)",
-          "ot": "1-3NFRMGU8",
-          "franja": "10-13",
-          "texto": "1-3NFRMGU8 - 10-13-AltaMar, 25 Ago"
-        },
-        {
-          "estado": "gestionada",
-          "color": "rgb(96, 206, 206)",
-          "ot": "1-3NAEY87X",
-          "franja": "16-19",
-          "texto": "1-3NAEY87X - 16-19-MigraciónLun, 24 Ago"
-        }
-      ]
+      "estado": "sin informacion",
+      "nota": "la OT ya no existe en TOA",
+      "contexto": {
+        "buscado": "GALLEGUILLOS 1421",
+        "aviso": "historial de la direccion, NO es el estado de esta orden",
+        "filas": [
+          {
+            "estado": "cancelada",
+            "color": "rgb(128, 255, 128)",
+            "ot": "1-3NVBUC70",
+            "franja": "16-19",
+            "texto": "1-3NVBUC70 - 16-19-AltaMie, 16 Sep"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NUZZQUN",
+            "franja": "10-13",
+            "texto": "1-3NUZZQUN - 10-13-AltaMie, 16 Sep"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NTMMDHP",
+            "franja": "13-16",
+            "texto": "1-3NTMMDHP - 13-16-AltaMar, 15 Sep"
+          },
+          {
+            "estado": "cancelada",
+            "color": "rgb(128, 255, 128)",
+            "ot": "1-3NTD6TUX",
+            "franja": "10-13",
+            "texto": "1-3NTD6TUX - 10-13-AltaLun, 14 Sep"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NTCNF63",
+            "franja": "13-16",
+            "texto": "1-3NTCNF63 - 13-16-AltaLun, 14 Sep"
+          },
+          {
+            "estado": "cancelada",
+            "color": "rgb(128, 255, 128)",
+            "ot": "1-3NSZK42A",
+            "franja": "13-16",
+            "texto": "1-3NSZK42A - 13-16-AltaSab, 12 Sep"
+          }
+        ]
+      }
     },
     "1-3NVY0BXT": {
       "tec": "MATIAS APELEO APELEO",
