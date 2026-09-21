@@ -7241,23 +7241,23 @@
    }
   },
   "21-09-2026": {
-   "hasta": "15:30",
-   "actividades": 175,
+   "hasta": "15:35",
+   "actividades": 176,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 45,
     "Completado": 63,
-    "Iniciado": 20,
-    "Pendiente": 28,
-    "en ruta": 10,
+    "Iniciado": 22,
+    "Pendiente": 26,
+    "en ruta": 11,
     "Suspendido": 3,
     "Cancelado": 6
    },
-   "rgu": 253.6,
+   "rgu": 254.6,
    "caidas_total": 12,
    "caidas_activas": 12,
    "caidas_resueltas": 0,
-   "nuevas": 36,
+   "nuevas": 37,
    "al_bucket": 15,
    "repetidas": 32,
    "reagendadas": 3,
@@ -7373,6 +7373,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NYIE0IS",
+      "tec": "JOSE SALAS MEDINA",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "15:48",
+      "d": "CAMILO HENRIQUEZ 105, QUILPUE",
+      "e": "en ruta"
+     },
      {
       "o": "1-3NYI0PY9",
       "tec": "MARCO PEREZ G",
@@ -7858,9 +7867,9 @@
       "o": "1-3NYB7P5P",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "15:30",
+      "hi": "15:31",
       "d": "EL RINCON DE LOS ZORZALES 668, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JOSE CASTRO P",
       "visitas": 1,
       "ult_fecha": "07-09-2026",
@@ -7905,7 +7914,7 @@
       "o": "1-3NUWSJ6N",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:43",
+      "hi": "16:53",
       "d": "ALFA 2035, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE SALAS MEDINA",
@@ -8117,5 +8126,5 @@
    }
   }
  },
- "generado": "21-09-2026 15:30"
+ "generado": "21-09-2026 15:35"
 }
