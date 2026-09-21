@@ -7241,25 +7241,25 @@
    }
   },
   "21-09-2026": {
-   "hasta": "11:04",
-   "actividades": 131,
+   "hasta": "11:24",
+   "actividades": 135,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 18,
-    "en ruta": 4,
-    "Pendiente": 65,
-    "Iniciado": 31,
+    "No Realizada": 24,
+    "Iniciado": 26,
+    "Pendiente": 61,
+    "Completado": 14,
+    "en ruta": 7,
     "Suspendido": 1,
-    "Cancelado": 2,
-    "Completado": 10
+    "Cancelado": 2
    },
-   "rgu": 203.5,
+   "rgu": 208.5,
    "caidas_total": 4,
    "caidas_activas": 4,
    "caidas_resueltas": 0,
    "nuevas": 10,
    "al_bucket": 0,
-   "repetidas": 26,
+   "repetidas": 28,
    "reagendadas": 3,
    "detalle": {
     "caidas": [
@@ -7317,7 +7317,7 @@
       "f": "10-13",
       "hi": "12:18",
       "d": "LINCOYAN 1410 EDIF. D DEPTO 24, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NWQC0QG",
@@ -7353,16 +7353,16 @@
       "f": "10-13",
       "hi": "10:55",
       "d": "PJE YANKA 01142, QUILPUE",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3NY6TXND",
-      "tec": "ANTONHY MORALES MENDOZA",
+      "tec": "KEVIN TAPIA RETAMAL",
       "cat": "Reparación",
       "f": "10-13",
       "hi": "11:28",
       "d": "DIEGO DE ALMAGRO 106, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NY64AVJ",
@@ -7433,7 +7433,7 @@
       "o": "1-3NWNYCEE",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:50",
+      "hi": "14:56",
       "d": "CALLE 1 1150 EDIF. 13 DEPTO 102, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -7445,7 +7445,7 @@
       "o": "1-3NWULDQP",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "17:49",
+      "hi": "16:55",
       "d": "LAS LILAS 1920, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -7490,6 +7490,18 @@
       "ult_cierre": "Clte desiste motivo comercial"
      },
      {
+      "o": "1-3NY6OT1N",
+      "cat": "Reparación",
+      "f": "13-16",
+      "hi": "14:00",
+      "d": "PJE LAS AMARILIS 1021, QUILPUE",
+      "e": "Pendiente",
+      "tec": "FELIPE SILVA R",
+      "visitas": 1,
+      "ult_fecha": "21-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3NXVUC5I",
       "cat": "Reparación",
       "f": "16-19",
@@ -7506,7 +7518,7 @@
       "f": "10-13",
       "hi": "10:33",
       "d": "LAS YERBAS 1994, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "GEEYSER PEREZ O",
       "visitas": 1,
       "ult_fecha": "05-09-2026",
@@ -7540,9 +7552,9 @@
       "o": "1-3NW41KZL",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "11:19",
+      "hi": "11:16",
       "d": "ALEMPARTE 277 CASA 4, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JOSE GALAZ D",
       "visitas": 1,
       "ult_fecha": "16-09-2026",
@@ -7554,11 +7566,23 @@
       "f": "10-13",
       "hi": "11:04",
       "d": "VIENA 099, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "JOSE PEREZ RANGEL",
       "visitas": 1,
       "ult_fecha": "17-09-2026",
       "ult_cierre": "Cliente Desiste"
+     },
+     {
+      "o": "1-3NVD291J",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "11:33",
+      "d": "AV VICEPRESIDENTE BDO LEIGHTON 1550 CASA 1, VILLA ALEMANA",
+      "e": "en ruta",
+      "tec": "JOSE PEREZ RANGEL",
+      "visitas": 1,
+      "ult_fecha": "15-09-2026",
+      "ult_cierre": "Direccion incorrecta"
      },
      {
       "o": "1-3NXJ9VEI",
@@ -7590,7 +7614,7 @@
       "f": "10-13",
       "hi": "10:06",
       "d": "MADRID 620 CASA D, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "KEVIN TAPIA RETAMAL",
       "visitas": 1,
       "ult_fecha": "11-09-2026",
@@ -7612,7 +7636,7 @@
       "o": "1-3NUANPT8",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:40",
+      "hi": "14:46",
       "d": "CALLE 1 851 CASA E, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -7672,9 +7696,9 @@
       "o": "1-3NX894QZ",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "12:39",
+      "hi": "11:17",
       "d": "ALCALDE ALEJANDRO PERALTA 1121 LOCAL 10, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "SAMUEL FERNANDEZ VIDAL",
       "visitas": 1,
       "ult_fecha": "17-09-2026",
@@ -7684,7 +7708,7 @@
       "o": "1-3NWQ4E3N",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:10",
+      "hi": "16:04",
       "d": "YUNGAY 871 CASA B, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -7740,5 +7764,5 @@
    }
   }
  },
- "generado": "21-09-2026 11:04"
+ "generado": "21-09-2026 11:24"
 }
