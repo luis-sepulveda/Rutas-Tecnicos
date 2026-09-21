@@ -7241,19 +7241,19 @@
    }
   },
   "21-09-2026": {
-   "hasta": "12:34",
-   "actividades": 158,
+   "hasta": "12:39",
+   "actividades": 157,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 33,
     "Completado": 30,
-    "Pendiente": 63,
-    "en ruta": 10,
+    "en ruta": 12,
+    "Pendiente": 60,
     "Iniciado": 19,
     "Suspendido": 1,
     "Cancelado": 2
    },
-   "rgu": 235.2,
+   "rgu": 234.2,
    "caidas_total": 7,
    "caidas_activas": 7,
    "caidas_resueltas": 0,
@@ -7335,7 +7335,7 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "BILBAO 1534 DEPTO 33, QUILPUE",
-      "e": "Pendiente"
+      "e": "Pendiente (ya no está)"
      },
      {
       "o": "1-3NYBHG3X",
@@ -7944,5 +7944,5 @@
    }
   }
  },
- "generado": "21-09-2026 12:34"
+ "generado": "21-09-2026 12:39"
 }
