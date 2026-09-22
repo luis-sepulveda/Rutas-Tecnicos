@@ -8228,15 +8228,15 @@
    }
   },
   "22-09-2026": {
-   "hasta": "18:08",
+   "hasta": "18:13",
    "actividades": 176,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 52,
-    "Completado": 97,
-    "Iniciado": 15,
+    "Completado": 98,
     "Suspendido": 4,
-    "Cancelado": 8
+    "Cancelado": 8,
+    "Iniciado": 14
    },
    "rgu": 262.8,
    "caidas_total": 9,
@@ -8356,7 +8356,7 @@
       "f": "16-19",
       "hi": "17:46",
       "d": "ESTRELLA POLAR 2261, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NZI80NV",
@@ -8996,5 +8996,5 @@
    }
   }
  },
- "generado": "22-09-2026 18:08"
+ "generado": "22-09-2026 18:13"
 }
