@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-09-22T14:22:17",
+  "actualizado": "2026-09-22T14:52:23",
   "resumen": {
-    "reagendada": 4,
+    "reagendada": 5,
     "sin informacion": 3
   },
   "estados": {
@@ -56,6 +56,16 @@
           }
         ]
       }
+    },
+    "1-3NZC0L4T": {
+      "tec": "JOEL GUSTAVE GUSTA",
+      "cat": "Migración 2 Play",
+      "franja_original": "16-19",
+      "d": "ALDO FRANCIA 2398, VILLA ALEMANA",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3NZC0L4T - 10-13-Migración-Migración-ALDO FRANCIA 2398Mie, 23 Sep",
+      "franja_nueva": "10-13"
     },
     "1-3NZ1TFKU": {
       "tec": "JOSE CASTRO P",
