@@ -1,7 +1,8 @@
 {
-  "actualizado": "2026-09-22T12:21:14",
+  "actualizado": "2026-09-22T12:51:28",
   "resumen": {
-    "reagendada": 2
+    "reagendada": 2,
+    "sin informacion": 1
   },
   "estados": {
     "1-3NZ3RONO": {
@@ -13,6 +14,27 @@
       "color": "rgb(255, 222, 0)",
       "detalle": "1-3NZ3RONO - 16-19-Migración-Migración-DE VEER 1451Mie, 23 Sep",
       "franja_nueva": "16-19"
+    },
+    "1-3NWPLFGT": {
+      "tec": "HERNAN CORTES HERRERA",
+      "cat": "Migración 2 Play",
+      "franja_original": "13-16",
+      "d": "PJE LIMACHE 166, QUILPUE",
+      "estado": "sin informacion",
+      "nota": "la OT ya no existe en TOA",
+      "contexto": {
+        "buscado": "PJE LIMACHE 166",
+        "aviso": "historial de la direccion, NO es el estado de esta orden",
+        "filas": [
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NVR59VT",
+            "franja": "13-16",
+            "texto": "1-3NVR59VT - 13-16-Migración-Migración-PJE LIMACHE 166Jue, 17 Sep"
+          }
+        ]
+      }
     },
     "1-3NZ5K106": {
       "tec": "JOSE ROJO A",
