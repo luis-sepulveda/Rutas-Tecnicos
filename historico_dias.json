@@ -8228,23 +8228,23 @@
    }
   },
   "22-09-2026": {
-   "hasta": "14:46",
-   "actividades": 160,
+   "hasta": "14:51",
+   "actividades": 161,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 37,
-    "Completado": 48,
+    "No Realizada": 38,
+    "Completado": 50,
     "Iniciado": 26,
-    "Pendiente": 39,
+    "Pendiente": 35,
+    "en ruta": 6,
     "Cancelado": 5,
-    "en ruta": 4,
     "Suspendido": 1
    },
-   "rgu": 250.2,
+   "rgu": 250.3,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
-   "nuevas": 16,
+   "nuevas": 17,
    "al_bucket": 12,
    "repetidas": 27,
    "reagendadas": 10,
@@ -8325,6 +8325,15 @@
     ],
     "nuevas": [
      {
+      "o": "1-3NZDCAK9",
+      "tec": "GEEYSER PEREZ O",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "14:49",
+      "d": "INGENIERO HYATT 2551 CASA 12, QUILPUE",
+      "e": "Iniciado"
+     },
+     {
       "o": "1-3NZC0L4T",
       "tec": "JOEL GUSTAVE GUSTA",
       "cat": "Migración 2 Play",
@@ -8403,7 +8412,7 @@
       "f": "16-19",
       "hi": "17:16",
       "d": "RAFAEL FABRES 2596 CASA 13, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NZ5K106",
@@ -8691,7 +8700,7 @@
       "f": "13-16",
       "hi": "14:48",
       "d": "TARRAGONA 61, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "JOSE ROJO A",
       "visitas": 1,
       "ult_fecha": "21-09-2026",
@@ -8785,9 +8794,9 @@
       "o": "1-3NZ83HBR",
       "cat": "Migración 2 Play",
       "f": "16-19",
-      "hi": "16:09",
+      "hi": "15:03",
       "d": "VIENA 099, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "RAFAEL VARGAS B",
       "visitas": 2,
       "ult_fecha": "21-09-2026",
@@ -8849,7 +8858,7 @@
       "o": "1-3NWOL603",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:50",
+      "hi": "16:41",
       "d": "HUILLICHES 1586, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -8899,5 +8908,5 @@
    }
   }
  },
- "generado": "22-09-2026 14:46"
+ "generado": "22-09-2026 14:51"
 }
