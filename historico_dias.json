@@ -8228,14 +8228,14 @@
    }
   },
   "22-09-2026": {
-   "hasta": "12:20",
+   "hasta": "12:25",
    "actividades": 138,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 24,
-    "Iniciado": 22,
+    "Completado": 24,
     "Pendiente": 66,
-    "Completado": 23,
+    "Iniciado": 21,
     "en ruta": 1,
     "Cancelado": 2
    },
@@ -8358,7 +8358,7 @@
       "f": "10-13",
       "hi": "10:21",
       "d": "MONACO 925, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "ALEXIS JARA",
       "visitas": 1,
       "ult_fecha": "14-09-2026",
@@ -8783,5 +8783,5 @@
    }
   }
  },
- "generado": "22-09-2026 12:20"
+ "generado": "22-09-2026 12:25"
 }
