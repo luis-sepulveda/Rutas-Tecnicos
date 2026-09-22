@@ -8228,13 +8228,13 @@
    }
   },
   "22-09-2026": {
-   "hasta": "17:33",
+   "hasta": "17:43",
    "actividades": 173,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 50,
-    "Completado": 83,
-    "Iniciado": 28,
+    "Completado": 88,
+    "Iniciado": 23,
     "Suspendido": 4,
     "Cancelado": 8
    },
@@ -8356,7 +8356,7 @@
       "f": "16-19",
       "hi": "16:31",
       "d": "PAICAVI 0109, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NZHLWMR",
@@ -8365,7 +8365,7 @@
       "f": "16-19",
       "hi": "16:48",
       "d": "RIQUELME 1532, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NZFR9MO",
@@ -8969,5 +8969,5 @@
    }
   }
  },
- "generado": "22-09-2026 17:33"
+ "generado": "22-09-2026 17:43"
 }
