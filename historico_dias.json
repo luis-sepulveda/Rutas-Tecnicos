@@ -8228,15 +8228,15 @@
    }
   },
   "22-09-2026": {
-   "hasta": "16:01",
+   "hasta": "16:07",
    "actividades": 169,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 44,
-    "Completado": 65,
-    "Iniciado": 26,
-    "en ruta": 7,
-    "Pendiente": 17,
+    "Completado": 66,
+    "Iniciado": 28,
+    "en ruta": 6,
+    "Pendiente": 15,
     "Cancelado": 7,
     "Suspendido": 3
    },
@@ -8394,7 +8394,7 @@
       "f": "16-19",
       "hi": "17:23",
       "d": "ALMIRANTE WILSON 912, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NZ3OG48",
@@ -8926,5 +8926,5 @@
    }
   }
  },
- "generado": "22-09-2026 16:01"
+ "generado": "22-09-2026 16:07"
 }
