@@ -8228,13 +8228,13 @@
    }
   },
   "22-09-2026": {
-   "hasta": "14:51",
+   "hasta": "14:56",
    "actividades": 161,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 38,
+    "No Realizada": 39,
     "Completado": 50,
-    "Iniciado": 26,
+    "Iniciado": 25,
     "Pendiente": 35,
     "en ruta": 6,
     "Cancelado": 5,
@@ -8662,7 +8662,7 @@
       "o": "1-3NYLC9T7",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:53",
+      "hi": "15:25",
       "d": "BARROS ARANA 121 CASA A, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -8674,7 +8674,7 @@
       "o": "1-3NYHSF2I",
       "cat": "Migración 2 Play",
       "f": "16-19",
-      "hi": "16:13",
+      "hi": "16:45",
       "d": "MARIA MERCEDES 1482 EDIF. 3 DEPTO 104, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -8758,7 +8758,7 @@
       "o": "1-3NYIW0VT",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "15:58",
+      "hi": "16:28",
       "d": "ALBA DE TORMES 094, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATIAS APELEO APELEO",
@@ -8908,5 +8908,5 @@
    }
   }
  },
- "generado": "22-09-2026 14:51"
+ "generado": "22-09-2026 14:56"
 }
