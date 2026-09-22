@@ -8228,22 +8228,22 @@
    }
   },
   "22-09-2026": {
-   "hasta": "12:10",
-   "actividades": 137,
+   "hasta": "12:20",
+   "actividades": 138,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 23,
-    "Iniciado": 24,
-    "Pendiente": 67,
-    "Completado": 19,
-    "en ruta": 2,
+    "No Realizada": 24,
+    "Iniciado": 22,
+    "Pendiente": 66,
+    "Completado": 23,
+    "en ruta": 1,
     "Cancelado": 2
    },
-   "rgu": 213.5,
+   "rgu": 214.5,
    "caidas_total": 2,
    "caidas_activas": 2,
    "caidas_resueltas": 0,
-   "nuevas": 8,
+   "nuevas": 9,
    "al_bucket": 11,
    "repetidas": 28,
    "reagendadas": 9,
@@ -8269,6 +8269,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NZ6Y91O",
+      "tec": "DANIEL NAVARRETE E",
+      "cat": "Modificación de Servicio",
+      "f": "10-13",
+      "hi": "12:14",
+      "d": "PJE ISLA SAN FELIX 1308, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3NZ62BZL",
       "tec": "SEBASTIAN DOSSOW A",
@@ -8407,7 +8416,7 @@
       "o": "1-3NZ28V01",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:10",
+      "hi": "14:15",
       "d": "FREIRE 139 DEPTO 30, QUILPUE",
       "e": "Pendiente",
       "tec": "DANIEL NAVARRETE E",
@@ -8421,7 +8430,7 @@
       "f": "10-13",
       "hi": "10:39",
       "d": "AVENIDA VALPARAISO 1215, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "EDGAR VALERO C",
       "visitas": 2,
       "ult_fecha": "17-09-2026",
@@ -8600,7 +8609,7 @@
       "f": "10-13",
       "hi": "09:47",
       "d": "MANUEL BULNES 1533 CASA 25, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "LEONEL HERNÁNDEZ OJE",
       "visitas": 1,
       "ult_fecha": "17-09-2026",
@@ -8704,7 +8713,7 @@
       "o": "1-3NY6ZWQR",
       "cat": "Alta Traslado",
       "f": "13-16",
-      "hi": "14:25",
+      "hi": "14:34",
       "d": "HUMBOLD 0694 CASA B, QUILPUE",
       "e": "Pendiente",
       "tec": "CRISTOBAL MIRANDA VALENC",
@@ -8724,7 +8733,7 @@
       "o": "1-3NWOL603",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:37",
+      "hi": "16:15",
       "d": "HUILLICHES 1586, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -8774,5 +8783,5 @@
    }
   }
  },
- "generado": "22-09-2026 12:10"
+ "generado": "22-09-2026 12:20"
 }
