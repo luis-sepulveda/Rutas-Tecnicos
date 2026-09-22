@@ -8228,19 +8228,19 @@
    }
   },
   "22-09-2026": {
-   "hasta": "14:56",
-   "actividades": 161,
+   "hasta": "15:01",
+   "actividades": 162,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 39,
-    "Completado": 50,
-    "Iniciado": 25,
-    "Pendiente": 35,
-    "en ruta": 6,
+    "No Realizada": 42,
+    "Completado": 52,
+    "Iniciado": 21,
+    "en ruta": 9,
+    "Pendiente": 31,
     "Cancelado": 5,
-    "Suspendido": 1
+    "Suspendido": 2
    },
-   "rgu": 250.3,
+   "rgu": 252.3,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
@@ -8497,7 +8497,7 @@
       "f": "13-16",
       "hi": "13:57",
       "d": "GALO VALENCIA 544, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "ALEXIS JARA",
       "visitas": 2,
       "ult_fecha": "16-09-2026",
@@ -8533,7 +8533,7 @@
       "f": "13-16",
       "hi": "13:35",
       "d": "FREIRE 120, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "CRISTOBAL SILVA LEIVA",
       "visitas": 1,
       "ult_fecha": "11-09-2026",
@@ -8700,7 +8700,7 @@
       "f": "13-16",
       "hi": "14:48",
       "d": "TARRAGONA 61, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "JOSE ROJO A",
       "visitas": 1,
       "ult_fecha": "21-09-2026",
@@ -8838,9 +8838,9 @@
       "o": "1-3NYBQW3V",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:07",
+      "hi": "15:15",
       "d": "BILBAO 1534 DEPTO 33, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "CRISTOBAL SILVA LEIVA",
       "desde": "21-09-2026"
      },
@@ -8908,5 +8908,5 @@
    }
   }
  },
- "generado": "22-09-2026 14:56"
+ "generado": "22-09-2026 15:01"
 }
