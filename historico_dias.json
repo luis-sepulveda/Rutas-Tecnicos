@@ -8228,21 +8228,22 @@
    }
   },
   "22-09-2026": {
-   "hasta": "11:40",
-   "actividades": 146,
+   "hasta": "12:00",
+   "actividades": 147,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 19,
-    "Iniciado": 27,
-    "Pendiente": 82,
-    "Completado": 13,
-    "en ruta": 5
+    "No Realizada": 21,
+    "Iniciado": 29,
+    "Pendiente": 78,
+    "Completado": 15,
+    "en ruta": 3,
+    "Cancelado": 1
    },
-   "rgu": 230.5,
-   "caidas_total": 1,
-   "caidas_activas": 1,
+   "rgu": 234.5,
+   "caidas_total": 2,
+   "caidas_activas": 2,
    "caidas_resueltas": 0,
-   "nuevas": 6,
+   "nuevas": 8,
    "al_bucket": 0,
    "repetidas": 27,
    "reagendadas": 10,
@@ -8256,9 +8257,36 @@
       "hi": "13:00",
       "d": "DE VEER 1451, QUILPUE",
       "e": "Pendiente"
+     },
+     {
+      "o": "1-3NZ5K106",
+      "tec": "JOSE ROJO A",
+      "cat": "Migración 2 Play",
+      "f": "16-19",
+      "hi": "17:19",
+      "d": "TRASLAVINA 1611, VILLA ALEMANA",
+      "e": "Pendiente"
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NZ62BZL",
+      "tec": "SEBASTIAN DOSSOW A",
+      "cat": "Migración 3 Play",
+      "f": "16-19",
+      "hi": "17:16",
+      "d": "RAFAEL FABRES 2596 CASA 13, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NZ5K106",
+      "tec": "JOSE ROJO A",
+      "cat": "Migración 2 Play",
+      "f": "16-19",
+      "hi": "17:19",
+      "d": "TRASLAVINA 1611, VILLA ALEMANA",
+      "e": "Pendiente (ya no está)"
+     },
      {
       "o": "1-3NZ580MA",
       "tec": "LUIS CASTRO TORRES",
@@ -8331,7 +8359,7 @@
       "o": "1-3NWM6RXG",
       "cat": "Alta 3 Play",
       "f": "13-16",
-      "hi": "15:31",
+      "hi": "14:00",
       "d": "PLUTON 1700, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
@@ -8439,7 +8467,7 @@
       "o": "1-3NZ28V01",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:28",
+      "hi": "14:00",
       "d": "FREIRE 139 DEPTO 30, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -8487,9 +8515,9 @@
       "o": "1-3NW3GOQ9",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "11:37",
+      "hi": "11:45",
       "d": "PJE HUALA 2665, QUILPUE",
-      "e": "Pendiente",
+      "e": "No Realizada",
       "tec": "JORDAN ROA PEREZ",
       "visitas": 2,
       "ult_fecha": "16-09-2026",
@@ -8607,9 +8635,9 @@
       "o": "1-3NZ1HE59",
       "cat": "Reparación",
       "f": "10-13",
-      "hi": "11:37",
+      "hi": "11:48",
       "d": "NANDU 1625 DEPTO 22, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "PABLO HERNANEZ FERNANDEZ",
       "visitas": 1,
       "ult_fecha": "13-08-2026",
@@ -8655,7 +8683,7 @@
       "o": "1-3NY6ZWQR",
       "cat": "Alta Traslado",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "14:36",
       "d": "HUMBOLD 0694 CASA B, QUILPUE",
       "e": "Pendiente",
       "tec": "CRISTOBAL MIRANDA VALENC",
@@ -8685,7 +8713,7 @@
       "o": "1-3NYBQW3V",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "17:28",
+      "hi": "16:00",
       "d": "BILBAO 1534 DEPTO 33, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -8695,7 +8723,7 @@
       "o": "1-3NW5W0EA",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:43",
+      "hi": "14:00",
       "d": "ISIDORA 2833 DEPTO 12, QUILPUE",
       "e": "Pendiente",
       "tec": "JORDAN ROA PEREZ",
@@ -8715,7 +8743,7 @@
       "o": "1-3NWOL603",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:59",
+      "hi": "17:51",
       "d": "HUILLICHES 1586, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -8745,5 +8773,5 @@
    }
   }
  },
- "generado": "22-09-2026 11:40"
+ "generado": "22-09-2026 12:00"
 }
