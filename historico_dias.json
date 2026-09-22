@@ -8228,21 +8228,22 @@
    }
   },
   "22-09-2026": {
-   "hasta": "17:53",
-   "actividades": 174,
+   "hasta": "17:58",
+   "actividades": 176,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 50,
-    "Completado": 92,
-    "Iniciado": 20,
+    "No Realizada": 51,
+    "Completado": 93,
+    "Iniciado": 19,
     "Suspendido": 4,
-    "Cancelado": 8
+    "Cancelado": 8,
+    "Pendiente": 1
    },
-   "rgu": 262.6,
+   "rgu": 262.8,
    "caidas_total": 9,
    "caidas_activas": 9,
    "caidas_resueltas": 0,
-   "nuevas": 24,
+   "nuevas": 26,
    "al_bucket": 30,
    "repetidas": 27,
    "reagendadas": 10,
@@ -8331,6 +8332,24 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NZJMC80",
+      "tec": "ESTEBAN PIZARRO QUINTANA",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "17:58",
+      "d": "ALMIRANTE WILSON 912, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NZJPHLF",
+      "tec": "JORDAN ROA PEREZ",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "17:58",
+      "d": "HUILLICHES 1586, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3NZJH5A9",
       "tec": "ALFREDO ALCAYAGA F",
@@ -8675,7 +8694,7 @@
       "f": "13-16",
       "hi": "14:31",
       "d": "SANTA ROSA 16 CASA MI, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JEAN ROODLY ORELIEN",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -8806,7 +8825,7 @@
       "f": "16-19",
       "hi": "16:54",
       "d": "ARTURO ALESSANDRI 578, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "LEONEL HERNÁNDEZ OJE",
       "visitas": 2,
       "ult_fecha": "03-09-2026",
@@ -8978,5 +8997,5 @@
    }
   }
  },
- "generado": "22-09-2026 17:53"
+ "generado": "22-09-2026 17:58"
 }
