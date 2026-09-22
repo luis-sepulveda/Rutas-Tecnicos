@@ -8228,21 +8228,22 @@
    }
   },
   "22-09-2026": {
-   "hasta": "13:01",
-   "actividades": 155,
+   "hasta": "13:11",
+   "actividades": 156,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 26,
-    "Completado": 34,
-    "Pendiente": 79,
-    "Iniciado": 13,
+    "Completado": 35,
+    "Pendiente": 77,
+    "Iniciado": 14,
+    "en ruta": 1,
     "Cancelado": 3
    },
-   "rgu": 241.6,
+   "rgu": 242.6,
    "caidas_total": 3,
    "caidas_activas": 3,
    "caidas_resueltas": 0,
-   "nuevas": 12,
+   "nuevas": 13,
    "al_bucket": 11,
    "repetidas": 27,
    "reagendadas": 10,
@@ -8277,6 +8278,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NZ99UDB",
+      "tec": "PABLO HERNANEZ FERNANDEZ",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "13:06",
+      "d": "NANDU 1625 DEPTO 22, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3NZ8QVY2",
       "tec": "MARCELO GÓMEZ GÓME",
@@ -8403,7 +8413,7 @@
       "o": "1-3NYS7BGC",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:52",
+      "hi": "14:10",
       "d": "GALO VALENCIA 544, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -8499,7 +8509,7 @@
       "o": "1-3NZ2NA2V",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:04",
+      "hi": "14:05",
       "d": "SANTA ROSA 16 CASA MI, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JEAN ROODLY ORELIEN",
@@ -8558,7 +8568,7 @@
       "o": "1-3NYBZXUH",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "14:58",
+      "hi": "14:00",
       "d": "OJOS DE AGUA 108 EDIF. A1 DEPTO 201, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -8594,7 +8604,7 @@
       "o": "1-3NY77CWV",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:34",
+      "hi": "14:06",
       "d": "TARRAGONA 61, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -8690,7 +8700,7 @@
       "o": "1-3NYLC9T7",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "14:06",
       "d": "BARROS ARANA 121 CASA A, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "RAFAEL VARGAS B",
@@ -8702,7 +8712,7 @@
       "o": "1-3NZ4OMCB",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:43",
+      "hi": "16:49",
       "d": "SANTA RITA 766, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "RAFAEL VARGAS B",
@@ -8736,9 +8746,9 @@
       "o": "1-3NY6ZWQR",
       "cat": "Alta Traslado",
       "f": "13-16",
-      "hi": "14:05",
+      "hi": "13:27",
       "d": "HUMBOLD 0694 CASA B, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "CRISTOBAL MIRANDA VALENC",
       "desde": "21-09-2026"
      },
@@ -8816,5 +8826,5 @@
    }
   }
  },
- "generado": "22-09-2026 13:01"
+ "generado": "22-09-2026 13:11"
 }
