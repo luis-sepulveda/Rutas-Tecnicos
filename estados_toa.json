@@ -1,7 +1,8 @@
 {
-  "actualizado": "2026-09-21T15:56:19",
+  "actualizado": "2026-09-21T16:26:59",
   "resumen": {
-    "reagendada": 12
+    "reagendada": 14,
+    "sin informacion": 2
   },
   "estados": {
     "1-3NY6ZWQR": {
@@ -94,6 +95,118 @@
       "detalle": "1-3NUWXYHV - 16-19-Migración-Migración-CONDELL SUR 01565 CASA GJue, 1 Oct",
       "franja_nueva": "16-19"
     },
+    "1-3NWMBOFC": {
+      "tec": "JOSE PEREZ RANGEL",
+      "cat": "Alta 2 Play",
+      "franja_original": "16-19",
+      "d": "CARLOS SAAVEDRA 80 CASA 39, VILLA ALEMANA",
+      "estado": "sin informacion",
+      "nota": "la OT ya no existe en TOA",
+      "contexto": {
+        "buscado": "CARLOS SAAVEDRA 80",
+        "aviso": "historial de la direccion, NO es el estado de esta orden",
+        "filas": [
+          {
+            "estado": "reagendada",
+            "color": "rgb(255, 222, 0)",
+            "ot": "1-3NY5TGK7",
+            "franja": "10-13",
+            "texto": "1-3NY5TGK7 - 10-13-Alta-1 Play-CARLOS SAAVEDRA 80 CASA 131Mar, 22 Sep"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NWLPV38",
+            "franja": "10-13",
+            "texto": "1-3NWLPV38 - 10-13-Alta-1 Play-CARLOS SAAVEDRA 80 CASA 131"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NVESBD7",
+            "franja": "10-13",
+            "texto": "1-3NVESBD7 - 10-13-Alta-2 Play-CARLOS SAAVEDRA 80 CASA 39Jue, 17 Sep"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NU6G2W7",
+            "franja": "10-13",
+            "texto": "1-3NU6G2W7 - 10-13-Alta-1 Play-CARLOS SAAVEDRA 80 CASA 32Mie, 16 Sep"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NMS4H8J",
+            "franja": "16-19",
+            "texto": "1-3NMS4H8J - 16-19-Reparación-2 Play Servicio Degradado-CARLOS SAAVEDRA 80 CASA 133Mie, 2 Sep"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NMYA7XY",
+            "franja": "19-21",
+            "texto": "1-3NMYA7XY - 19-21-Modificación de Servicio-Modificación-CARLOS SAAVEDRA 80 CASA 133Mie, 2 Sep"
+          }
+        ]
+      }
+    },
+    "1-3NWQC0QG": {
+      "tec": "LUIS CASTRO TORRES",
+      "cat": "Alta 1 Play",
+      "franja_original": "16-19",
+      "d": "PUERTO DEL NORTE 795 EDIF. A DEPTO 402, QUILPUE",
+      "estado": "sin informacion",
+      "nota": "la OT ya no existe en TOA",
+      "contexto": {
+        "buscado": "PUERTO DEL NORTE 795",
+        "aviso": "historial de la direccion, NO es el estado de esta orden",
+        "filas": [
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NODWMK9",
+            "franja": "10-13",
+            "texto": "1-3NODWMK9 - 10-13-Reparación-2 Play Servicio Degradado-PUERTO DEL NORTE 795 EDIF. D DEPTO 201Lun, 7 Sep"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NID1FM7",
+            "franja": "10-13",
+            "texto": "1-3NID1FM7 - 10-13-Migración-Migración-PUERTO DEL NORTE 795 EDIF. J DEPTO 201Vie, 28 Ago"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3N625N9R",
+            "franja": "10-13",
+            "texto": "1-3N625N9R - 10-13-Migración-Migración-PUERTO DEL NORTE 795 EDIF. D DEPTO 201Jue, 13 Ago"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3N73ZHYE",
+            "franja": "16-19",
+            "texto": "1-3N73ZHYE - 16-19-Modificación de Servicio-Modificación-PUERTO DEL NORTE 795 EDIF. D DEPTO 201Jue, 13 Ago"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3N4U9AVW",
+            "franja": "10-13",
+            "texto": "1-3N4U9AVW - 10-13-Migración-Migración-PUERTO DEL NORTE 795 EDIF. D DEPTO 201Mie, 12 Ago"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3N2HSCL3",
+            "franja": "13-16",
+            "texto": "1-3N2HSCL3 - 13-16-Migración-Migración-PUERTO DEL NORTE 795 EDIF. D DEPTO 201Lun, 10 Ago"
+          }
+        ]
+      }
+    },
     "1-3NY6IP29": {
       "tec": "LUIS GATICA DAVILA",
       "cat": "Alta 1 Play",
@@ -102,6 +215,26 @@
       "estado": "reagendada",
       "color": "rgb(255, 222, 0)",
       "detalle": "1-3NY6IP29 - 16-19-Alta-1 Play-DOLORES 820Mar, 22 Sep",
+      "franja_nueva": "16-19"
+    },
+    "1-3NVCBGKU": {
+      "tec": "MARCO PEREZ G",
+      "cat": "Migración 1 Play",
+      "franja_original": "16-19",
+      "d": "LOS ALERCES 951, QUILPUE",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3NVCBGKU - 16-19-Migración-Migración-LOS ALERCES 951Jue, 24 Sep",
+      "franja_nueva": "16-19"
+    },
+    "1-3NW2DAB3": {
+      "tec": "MATÍAS JAQUE AG",
+      "cat": "Alta 1 Play",
+      "franja_original": "16-19",
+      "d": "NAVELATE 1040 CASA 50, VILLA ALEMANA",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3NW2DAB3 - 16-19-Alta-1 Play-NAVELATE 1040 CASA 50Mie, 23 Sep",
       "franja_nueva": "16-19"
     },
     "1-3NY55E4M": {
