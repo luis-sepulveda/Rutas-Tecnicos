@@ -8228,15 +8228,15 @@
    }
   },
   "22-09-2026": {
-   "hasta": "10:50",
+   "hasta": "10:55",
    "actividades": 135,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 12,
-    "Iniciado": 30,
-    "Pendiente": 86,
-    "Completado": 4,
-    "en ruta": 3
+    "Iniciado": 31,
+    "Pendiente": 83,
+    "Completado": 5,
+    "en ruta": 4
    },
    "rgu": 208.5,
    "caidas_total": 0,
@@ -8244,7 +8244,7 @@
    "caidas_resueltas": 0,
    "nuevas": 0,
    "al_bucket": 0,
-   "repetidas": 24,
+   "repetidas": 25,
    "reagendadas": 10,
    "detalle": {
     "caidas": [],
@@ -8266,9 +8266,9 @@
       "o": "1-3NYE7OXX",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:40",
+      "hi": "10:53",
       "d": "LOS QUILLAYES 110, QUILPUE",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "CESAR MENA OLIVEROS",
       "visitas": 1,
       "ult_fecha": "05-08-2026",
@@ -8369,6 +8369,18 @@
       "visitas": 2,
       "ult_fecha": "25-08-2026",
       "ult_cierre": "Direccion no encontrada"
+     },
+     {
+      "o": "1-3NZ28V01",
+      "cat": "Alta 2 Play",
+      "f": "13-16",
+      "hi": "15:28",
+      "d": "FREIRE 139 DEPTO 30, QUILPUE",
+      "e": "Pendiente",
+      "tec": "GEEYSER PEREZ O",
+      "visitas": 1,
+      "ult_fecha": "22-09-2026",
+      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3NYLC9T7",
@@ -8544,9 +8556,9 @@
       "o": "1-3NYE7OXX",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:40",
+      "hi": "10:53",
       "d": "LOS QUILLAYES 110, QUILPUE",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "CESAR MENA OLIVEROS",
       "desde": "21-09-2026"
      },
@@ -8644,5 +8656,5 @@
    }
   }
  },
- "generado": "22-09-2026 10:50"
+ "generado": "22-09-2026 10:55"
 }
