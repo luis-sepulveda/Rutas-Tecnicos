@@ -8228,13 +8228,13 @@
    }
   },
   "22-09-2026": {
-   "hasta": "17:28",
+   "hasta": "17:33",
    "actividades": 173,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 50,
-    "Completado": 79,
-    "Iniciado": 32,
+    "Completado": 83,
+    "Iniciado": 28,
     "Suspendido": 4,
     "Cancelado": 8
    },
@@ -8383,7 +8383,7 @@
       "f": "13-16",
       "hi": "16:18",
       "d": "AV LOS CARRERA (BTO 2000) 1826 DEPTO 12, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NZDCAK9",
@@ -8437,7 +8437,7 @@
       "f": "16-19",
       "hi": "17:23",
       "d": "ALMIRANTE WILSON 912, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NZ3OG48",
@@ -8921,7 +8921,7 @@
       "f": "16-19",
       "hi": "16:09",
       "d": "HUILLICHES 1586, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JORDAN ROA PEREZ",
       "desde": "17-09-2026"
      },
@@ -8969,5 +8969,5 @@
    }
   }
  },
- "generado": "22-09-2026 17:28"
+ "generado": "22-09-2026 17:33"
 }
