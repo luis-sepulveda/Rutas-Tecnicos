@@ -8228,26 +8228,26 @@
    }
   },
   "22-09-2026": {
-   "hasta": "15:06",
-   "actividades": 162,
+   "hasta": "15:16",
+   "actividades": 137,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 42,
-    "Completado": 54,
-    "Iniciado": 22,
-    "Pendiente": 30,
+    "Completado": 55,
+    "Iniciado": 21,
     "Cancelado": 5,
-    "en ruta": 7,
-    "Suspendido": 2
+    "en ruta": 8,
+    "Suspendido": 2,
+    "Pendiente": 4
    },
-   "rgu": 252.3,
+   "rgu": 215.8,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
    "nuevas": 17,
-   "al_bucket": 12,
-   "repetidas": 27,
-   "reagendadas": 10,
+   "al_bucket": 30,
+   "repetidas": 24,
+   "reagendadas": 8,
    "detalle": {
     "caidas": [
      {
@@ -8358,7 +8358,7 @@
       "f": "16-19",
       "hi": "16:00",
       "d": "COSTA AZUL 2281, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Pendiente (ya no está)"
      },
      {
       "o": "1-3NZ99UDB",
@@ -8376,7 +8376,7 @@
       "f": "16-19",
       "hi": "17:23",
       "d": "ALMIRANTE WILSON 912, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Pendiente (ya no está)"
      },
      {
       "o": "1-3NZ3OG48",
@@ -8394,7 +8394,7 @@
       "f": "16-19",
       "hi": "16:40",
       "d": "SEGUNDA 0347, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Pendiente (ya no está)"
      },
      {
       "o": "1-3NZ6Y91O",
@@ -8430,7 +8430,7 @@
       "f": "16-19",
       "hi": "17:30",
       "d": "LEUCOTON 1100 EDIF. 4 DEPTO 102, QUILPUE",
-      "e": "Pendiente"
+      "e": "Pendiente (ya no está)"
      },
      {
       "o": "1-3NZ43PYH",
@@ -8671,18 +8671,6 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
-      "o": "1-3NYHSF2I",
-      "cat": "Migración 2 Play",
-      "f": "16-19",
-      "hi": "16:45",
-      "d": "MARIA MERCEDES 1482 EDIF. 3 DEPTO 104, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "JOSE PEREZ RANGEL",
-      "visitas": 3,
-      "ult_fecha": "02-09-2026",
-      "ult_cierre": "Sin moradores"
-     },
-     {
       "o": "1-3NYP2ZP9",
       "cat": "Reparación",
       "f": "10-13",
@@ -8755,18 +8743,6 @@
       "ult_cierre": "Cliente Desiste"
      },
      {
-      "o": "1-3NYIW0VT",
-      "cat": "Migración 1 Play",
-      "f": "13-16",
-      "hi": "16:28",
-      "d": "ALBA DE TORMES 094, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "MATIAS APELEO APELEO",
-      "visitas": 1,
-      "ult_fecha": "21-09-2026",
-      "ult_cierre": "Cliente reagenda"
-     },
-     {
       "o": "1-3NZ1HE59",
       "cat": "Reparación",
       "f": "10-13",
@@ -8789,18 +8765,6 @@
       "visitas": 1,
       "ult_fecha": "21-09-2026",
       "ult_cierre": "Direccion incorrecta"
-     },
-     {
-      "o": "1-3NZ83HBR",
-      "cat": "Migración 2 Play",
-      "f": "16-19",
-      "hi": "15:03",
-      "d": "VIENA 099, VILLA ALEMANA",
-      "e": "en ruta",
-      "tec": "RAFAEL VARGAS B",
-      "visitas": 2,
-      "ult_fecha": "21-09-2026",
-      "ult_cierre": "Cliente Desiste"
      }
     ],
     "reagendadas": [
@@ -8855,26 +8819,6 @@
       "desde": "12-09-2026"
      },
      {
-      "o": "1-3NWOL603",
-      "cat": "Alta 2 Play",
-      "f": "16-19",
-      "hi": "16:21",
-      "d": "HUILLICHES 1586, QUILPUE",
-      "e": "Pendiente",
-      "tec": "GEEYSER PEREZ O",
-      "desde": "17-09-2026"
-     },
-     {
-      "o": "1-3NY6IP29",
-      "cat": "Alta 1 Play",
-      "f": "16-19",
-      "hi": "16:00",
-      "d": "DOLORES 820, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "JEAN ROODLY ORELIEN",
-      "desde": "21-09-2026"
-     },
-     {
       "o": "1-3NYAI9PD",
       "cat": "Migración 3 Play",
       "f": "10-13",
@@ -8908,5 +8852,5 @@
    }
   }
  },
- "generado": "22-09-2026 15:06"
+ "generado": "22-09-2026 15:16"
 }
