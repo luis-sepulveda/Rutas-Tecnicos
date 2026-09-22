@@ -8228,16 +8228,15 @@
    }
   },
   "22-09-2026": {
-   "hasta": "17:58",
+   "hasta": "18:03",
    "actividades": 176,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 51,
-    "Completado": 93,
-    "Iniciado": 19,
+    "Completado": 95,
+    "Iniciado": 18,
     "Suspendido": 4,
-    "Cancelado": 8,
-    "Pendiente": 1
+    "Cancelado": 8
    },
    "rgu": 262.8,
    "caidas_total": 9,
@@ -8339,7 +8338,7 @@
       "f": "16-19",
       "hi": "17:58",
       "d": "ALMIRANTE WILSON 912, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NZJPHLF",
@@ -8919,7 +8918,7 @@
       "f": "13-16",
       "hi": "13:33",
       "d": "HUMBOLD 0694 CASA B, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "CRISTOBAL MIRANDA VALENC",
       "desde": "21-09-2026"
      },
@@ -8997,5 +8996,5 @@
    }
   }
  },
- "generado": "22-09-2026 17:58"
+ "generado": "22-09-2026 18:03"
 }
