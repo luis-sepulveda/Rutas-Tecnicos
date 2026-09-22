@@ -8228,24 +8228,23 @@
    }
   },
   "22-09-2026": {
-   "hasta": "12:25",
-   "actividades": 138,
+   "hasta": "12:30",
+   "actividades": 137,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 24,
-    "Completado": 24,
-    "Pendiente": 66,
-    "Iniciado": 21,
-    "en ruta": 1,
+    "No Realizada": 25,
+    "Completado": 25,
+    "Pendiente": 65,
+    "Iniciado": 20,
     "Cancelado": 2
    },
-   "rgu": 214.5,
+   "rgu": 212.5,
    "caidas_total": 2,
    "caidas_activas": 2,
    "caidas_resueltas": 0,
    "nuevas": 9,
    "al_bucket": 11,
-   "repetidas": 28,
+   "repetidas": 27,
    "reagendadas": 9,
    "detalle": {
     "caidas": [
@@ -8276,7 +8275,7 @@
       "f": "10-13",
       "hi": "12:14",
       "d": "PJE ISLA SAN FELIX 1308, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NZ62BZL",
@@ -8416,7 +8415,7 @@
       "o": "1-3NZ28V01",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:15",
+      "hi": "14:00",
       "d": "FREIRE 139 DEPTO 30, QUILPUE",
       "e": "Pendiente",
       "tec": "DANIEL NAVARRETE E",
@@ -8458,18 +8457,6 @@
       "tec": "FELIPE SILVA R",
       "visitas": 1,
       "ult_fecha": "15-09-2026",
-      "ult_cierre": "Sin moradores"
-     },
-     {
-      "o": "1-3NWPLFGT",
-      "cat": "Migración 2 Play",
-      "f": "13-16",
-      "hi": "14:38",
-      "d": "PJE LIMACHE 166, QUILPUE",
-      "e": "Pendiente",
-      "tec": "HERNAN CORTES HERRERA",
-      "visitas": 1,
-      "ult_fecha": "17-09-2026",
       "ult_cierre": "Sin moradores"
      },
      {
@@ -8783,5 +8770,5 @@
    }
   }
  },
- "generado": "22-09-2026 12:25"
+ "generado": "22-09-2026 12:30"
 }
