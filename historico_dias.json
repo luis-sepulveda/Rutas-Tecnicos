@@ -8228,16 +8228,16 @@
    }
   },
   "22-09-2026": {
-   "hasta": "15:01",
+   "hasta": "15:06",
    "actividades": 162,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 42,
-    "Completado": 52,
-    "Iniciado": 21,
-    "en ruta": 9,
-    "Pendiente": 31,
+    "Completado": 54,
+    "Iniciado": 22,
+    "Pendiente": 30,
     "Cancelado": 5,
+    "en ruta": 7,
     "Suspendido": 2
    },
    "rgu": 252.3,
@@ -8331,7 +8331,7 @@
       "f": "13-16",
       "hi": "14:49",
       "d": "INGENIERO HYATT 2551 CASA 12, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NZC0L4T",
@@ -8858,7 +8858,7 @@
       "o": "1-3NWOL603",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:41",
+      "hi": "16:21",
       "d": "HUILLICHES 1586, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -8908,5 +8908,5 @@
    }
   }
  },
- "generado": "22-09-2026 15:01"
+ "generado": "22-09-2026 15:06"
 }
