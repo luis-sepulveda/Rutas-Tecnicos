@@ -8228,24 +8228,24 @@
    }
   },
   "22-09-2026": {
-   "hasta": "14:21",
-   "actividades": 158,
+   "hasta": "14:36",
+   "actividades": 159,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 35,
-    "Completado": 41,
+    "No Realizada": 36,
+    "Completado": 45,
     "Iniciado": 26,
-    "Pendiente": 49,
-    "en ruta": 2,
-    "Cancelado": 4,
+    "Pendiente": 41,
+    "en ruta": 5,
+    "Cancelado": 5,
     "Suspendido": 1
    },
-   "rgu": 247.6,
-   "caidas_total": 7,
-   "caidas_activas": 7,
+   "rgu": 247.7,
+   "caidas_total": 8,
+   "caidas_activas": 8,
    "caidas_resueltas": 0,
    "nuevas": 16,
-   "al_bucket": 11,
+   "al_bucket": 12,
    "repetidas": 27,
    "reagendadas": 10,
    "detalle": {
@@ -8275,6 +8275,15 @@
       "f": "13-16",
       "hi": "14:38",
       "d": "PJE LIMACHE 166, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NZC0L4T",
+      "tec": "JOEL GUSTAVE GUSTA",
+      "cat": "Migración 2 Play",
+      "f": "16-19",
+      "hi": "17:15",
+      "d": "ALDO FRANCIA 2398, VILLA ALEMANA",
       "e": "Pendiente"
      },
      {
@@ -8331,7 +8340,7 @@
       "f": "13-16",
       "hi": "15:04",
       "d": "SAN IGNACIO 1877, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NZACG6T",
@@ -8367,7 +8376,7 @@
       "f": "16-19",
       "hi": "17:57",
       "d": "CENTENARIO 859 DEPTO 31, QUILPUE",
-      "e": "Pendiente"
+      "e": "Cancelado"
      },
      {
       "o": "1-3NVU8OCL",
@@ -8573,9 +8582,9 @@
       "o": "1-3NZ2NA2V",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:17",
+      "hi": "14:31",
       "d": "SANTA ROSA 16 CASA MI, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JEAN ROODLY ORELIEN",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -8680,7 +8689,7 @@
       "o": "1-3NY77CWV",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:57",
+      "hi": "14:48",
       "d": "TARRAGONA 61, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -8740,7 +8749,7 @@
       "o": "1-3NYIW0VT",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "15:35",
+      "hi": "15:58",
       "d": "ALBA DE TORMES 094, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATIAS APELEO APELEO",
@@ -8802,7 +8811,7 @@
       "f": "13-16",
       "hi": "13:49",
       "d": "LAS ROSAS 859, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "CESAR MENA OLIVEROS",
       "desde": "21-09-2026"
      },
@@ -8840,7 +8849,7 @@
       "o": "1-3NWOL603",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "17:55",
+      "hi": "16:00",
       "d": "HUILLICHES 1586, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -8890,5 +8899,5 @@
    }
   }
  },
- "generado": "22-09-2026 14:21"
+ "generado": "22-09-2026 14:36"
 }
