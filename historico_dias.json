@@ -8228,15 +8228,15 @@
    }
   },
   "22-09-2026": {
-   "hasta": "18:49",
+   "hasta": "18:54",
    "actividades": 176,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 53,
-    "Completado": 105,
+    "Completado": 106,
     "Suspendido": 4,
     "Cancelado": 8,
-    "Iniciado": 6
+    "Iniciado": 5
    },
    "rgu": 262.8,
    "caidas_total": 9,
@@ -8338,7 +8338,7 @@
       "f": "16-19",
       "hi": "17:58",
       "d": "ALMIRANTE WILSON 912, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NZJPHLF",
@@ -8996,5 +8996,5 @@
    }
   }
  },
- "generado": "22-09-2026 18:49"
+ "generado": "22-09-2026 18:54"
 }
