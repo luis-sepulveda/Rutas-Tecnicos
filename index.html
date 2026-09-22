@@ -4,10 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Módulo de Actividades</title>
+<!-- =====================================================================
+     CAMBIO DE PRESENTACION — 22-09-2026
+
+     Tres bloques nuevos al final del <style>, cada uno con su titulo:
+       NUEVA CABECERA            la cabecera pasa de 3 filas (148 px) a 1 (52 px)
+                                 y los botones se van a flotar sobre el mapa
+       MODALES VIEJOS AL CLARO   Jornada, Recaidas, Repetidas, Buscar y Detalle
+                                 pasan al tema t-claro que ya usaban Caidas y Nuevas
+       LEYENDA PLEGABLE          las dos cajas de las esquinas se juntan en una
+
+     Borrando un bloque se revierte solo esa parte. Ninguna funcion cambio de
+     nombre y ningun id se perdio: los cambios en el JS son tres colores que
+     estaban escritos a mano y quedaban ilegibles sobre blanco, mas la funcion
+     pintarResumenDia() y acomodarBarras(), que son nuevas.
+
+     Respaldo del anterior: index_OLD.html
+     ===================================================================== -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js">
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap">
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   body { font-family:'Segoe UI',Arial,sans-serif; background:#0a1930; color:#dbeafe; height:100vh; display:flex; flex-direction:column; }
@@ -915,19 +934,252 @@
   .pz-barra a.alarma { background:#fdecec; border-color:#e05252; color:#a32222; }
   .pz-barra .upd.mal { color:#c0392f; font-weight:600; }
   #btnInicio { background:#1e3a5f; border-color:#3b82f6; }
+
+  /* ==================== NUEVA CABECERA — 22-09-2026 ====================
+     Va al final a proposito: estas reglas pisan a las de mas arriba, asi que
+     borrando este bloque entero (y devolviendo el <header> viejo) el tablero
+     queda exactamente como estaba. Ninguna funcion cambio: los id y los
+     onclick son los mismos de siempre. */
+
+  body { font-family:'DM Sans','Segoe UI',Arial,sans-serif; }
+
+  /* La cabecera pasa de tres filas a una: identidad y frescura a la izquierda,
+     filtros al medio, resumen del dia a la derecha. Los botones se fueron a
+     flotar sobre el mapa, que es donde se usan. */
+  header#cab { flex-direction:row; align-items:center; gap:16px; row-gap:9px;
+    padding:9px 18px; background:#0d1b2e; border-bottom:1px solid #1d314a; }
+  .nb-marca { display:flex; align-items:baseline; gap:9px; flex-shrink:0; }
+  .nb-marca .nom { font-size:16px; font-weight:700; color:#f2f7fc; letter-spacing:-.01em; }
+  .nb-marca .zona { font-size:12px; color:#7e97b2; white-space:nowrap; }
+
+  /* El sello de actualizacion lleva un punto verde delante: se ve el estado
+     antes de leer la hora. Ambar cuando el dato pasa de 15 min, igual que antes. */
+  #lastUpd { margin:0; font-size:11.5px; color:#7e97b2; display:flex;
+    align-items:center; gap:7px; flex-shrink:0; white-space:nowrap; }
+  #lastUpd::before { content:''; width:7px; height:7px; border-radius:50%;
+    background:#34d399; box-shadow:0 0 0 3px rgba(52,211,153,.18); flex-shrink:0; }
+  #lastUpd.viejo { color:#fbbf24; }
+  #lastUpd.viejo::before { background:#fbbf24; box-shadow:0 0 0 3px rgba(251,191,36,.18); }
+
+  .nb-filtros { display:flex; align-items:center; gap:7px; flex-wrap:wrap; }
+  header#cab select, header#cab .mbtn { background:transparent; border:1px solid #25405f;
+    color:#c3d6e8; border-radius:7px; padding:6px 11px; font-size:13px;
+    font-family:inherit; }
+  header#cab select:hover, header#cab .mbtn:hover { border-color:#3d6b9e; }
+  header#cab .msel.activo .mbtn { border-color:#60a5fa; color:#93c5fd; }
+  header#cab .buscador { margin-left:0; }
+  header#cab .buscador input { border-radius:7px; padding:6px 11px; font-size:13px;
+    border-color:#25405f; min-width:210px; font-family:inherit; }
+  header#cab .buscador .btn { border-radius:7px; padding:6px 10px; font-size:13px;
+    border-color:#25405f; background:transparent; }
+
+  .nb-der { margin-left:auto; display:flex; align-items:center; gap:18px; flex-wrap:wrap; }
+
+  /* Resumen del dia: el porcentaje adelante y grande, con la barra del reparto
+     al lado. Es el mismo bloque que ya usa la portada, traido al mapa. */
+  .nb-res { display:flex; align-items:center; gap:14px; }
+  .nb-pct { display:flex; align-items:baseline; gap:7px; }
+  .nb-pct .v { font-size:26px; font-weight:700; color:#fff; line-height:1;
+    font-variant-numeric:tabular-nums; letter-spacing:-.02em; }
+  .nb-pct .u { font-size:16px; }
+  .nb-pct .l { font-size:12px; color:#7e97b2; }
+  .nb-bar { width:190px; }
+  .nb-bar .b { display:flex; height:9px; border-radius:5px; overflow:hidden;
+    background:#1b2c42; }
+  .nb-bar .b span { display:block; }
+  .nb-leg { display:flex; justify-content:space-between; gap:10px; font-size:11px;
+    color:#7e97b2; margin-top:5px; font-variant-numeric:tabular-nums; }
+  .nb-leg b { color:#c3d6e8; }
+
+  /* Las ocho cifras siguen estando — cada una abre su desglose — pero pasan a
+     segundo plano: el numero que se mira es el porcentaje.
+     Si estorban, con esta linea desaparecen:   #stats { display:none; }        */
+  header#cab .stats { margin-left:0; gap:11px; padding:0; }
+  .stats .snum { font-size:14px; }
+  .stats .stxt { font-size:10.5px; color:#7e97b2; }
+  .stats .sbloque.tot { padding-right:13px; border-right:1px solid #25405f; }
+  .stats .sbloque.tot .snum { font-size:16px; }
+  .sbloque.clic:hover { background:#1b2c42; }
+
+  #btnInicio { background:#152941; border:1px solid #2f5580; color:#bcd4ec;
+    border-radius:7px; padding:6px 12px; font-size:13px; }
+
+  /* ---- Las dos barras que flotan sobre el mapa ----
+     Avisos del dia a la izquierda, herramientas a la derecha. Una franja
+     traslucida de 34 px tapa mucho menos mapa que los 90 px de cabecera solida
+     que ocupaban antes estos mismos botones. */
+  .nb-flota { position:absolute; top:70px; z-index:1002; display:flex; gap:7px;
+    flex-wrap:wrap; }
+  .nb-flota.izq { left:12px; max-width:36vw; }
+  .nb-flota.der { right:12px; max-width:56vw; justify-content:flex-end; }
+  .nb-flota .btn { background:rgba(11,24,40,.86); -webkit-backdrop-filter:blur(6px);
+    backdrop-filter:blur(6px); border:1px solid #26405e; color:#c3d6e8;
+    border-radius:999px; padding:6px 14px; font-size:13px; font-family:inherit; }
+  .nb-flota .btn:hover { border-color:#4a7ab0; color:#eaf3fb; }
+
+  /* Encendido: contorno y cifra del color del aviso, no el boton entero pintado
+     de rojo, naranjo, verde y morado a la vez. Con los cuatro rellenos ninguno
+     destacaba; asi el que pesa mas se lee primero y los otros no se pierden. */
+  #btnCaidas.on-caidas { background:rgba(88,20,20,.9); border-color:#ff8b80;
+    color:#ffd9d5; font-weight:700; }
+  #btnReca.on-reca { background:rgba(88,42,12,.9); border-color:#f6ab63;
+    color:#ffe3c6; font-weight:700; }
+  #btnNuevas.on-nuevas { background:rgba(6,68,52,.9); border-color:#5fd7ae;
+    color:#c8f4e4; font-weight:700; }
+  #btnRepe.on-repe { background:rgba(50,24,96,.9); border-color:#b9a0f5;
+    color:#e6dcff; font-weight:700; }
+  .nb-flota .btn.on-repemapa { background:rgba(21,41,65,.94); border-color:#60a5fa;
+    color:#eaf3fb; font-weight:700; }
+  /* Los modos que se entra y se sale conservan su color fuerte de siempre. */
+  .nb-flota .btn.on  { background:#dc2626; border-color:#f87171; color:#fff; font-weight:700; }
+  .nb-flota .btn.on3 { background:#b45309; border-color:#fbbf24; color:#fff; font-weight:700; }
+  .nb-flota .btn.on5 { background:#be123c; border-color:#fb7185; color:#fff; font-weight:700; }
+  .nb-flota .btn.on6 { background:#0e7490; border-color:#22d3ee; color:#fff; font-weight:700; }
+
+  /* Los paneles bajan para no quedar debajo de la barra flotante. */
+  #panel, #panelSC, #panelComp, #panelAtr { top:116px; }
+  /* Letra mas grande en las leyendas: en un monitor de 27" los 10 px de antes
+     obligaban a acercarse. */
+  .letras, .estados { font-size:11.5px; }
+  .letras .ltit { font-size:10.5px; }
+  .letras div, .estados div { margin:5px 0; }
+
+  /* ============ LOS MODALES VIEJOS, AL TEMA CLARO — 22-09-2026 ============
+     Jornada, Recaídas, Repetidas, Buscar y Detalle pasan al mismo tema que ya
+     usaban Caídas y Nuevas: el marco sigue en azul noche y las cajas de adentro
+     van en blanco con letra oscura, que es lo que de verdad se lee.
+
+     Se hace con la clase t-claro en el div de cada modal. Sacandosela a uno,
+     ese modal vuelve al oscuro de siempre — se pueden probar de a uno. */
+
+  /* -- las cajas de contenido pasan a blanco -- */
+  .t-claro .bcaja, .t-claro .jcard, .t-claro .rcard, .t-claro .bcard {
+    background:#ffffff; border-color:#e2e8f0; }
+  .t-claro .rcard { border-top:1px solid #e2e8f0; border-right:1px solid #e2e8f0;
+    border-bottom:1px solid #e2e8f0; }
+  .t-claro .bcard { border-top-color:#e2e8f0; border-right-color:#e2e8f0;
+    border-bottom-color:#e2e8f0; }
+
+  /* -- lo que va dentro de una caja blanca: letra oscura -- */
+  .t-claro .btit { color:#334155; }
+  .t-claro .bsub, .t-claro .bcap { color:#64748b; }
+  .t-claro .bsep { border-top-color:#e2e8f0; }
+  .t-claro .bety, .t-claro .bnum, .t-claro .bres .bety { color:#0f172a; }
+  .t-claro .bpct { color:#64748b; }
+  .t-claro .bguia { border-bottom-color:#cbd5e1; }
+  .t-claro .bhl { background:#fef08a; color:#713f12; }
+
+  /* -- Estado de la jornada -- */
+  .t-claro .jtxt { color:#64748b; }
+  .t-claro .jbar { background:#e2e8f0; border-color:#cbd5e1; }
+  .t-claro .jleg { color:#cbd5e1; }
+  .t-claro .jfila { border-bottom-color:#eef2f6; }
+  .t-claro .jety, .t-claro .jbnum { color:#0f172a; }
+  .t-claro .jbpct { color:#64748b; }
+  .t-claro .jalert { color:#334155; }
+  .t-claro .jalert b { color:#0f172a; }
+  .t-claro .jvacio { color:#64748b; }
+
+  /* -- Recaídas y Direcciones repetidas (comparten .rcard) -- */
+  .t-claro .rcard .rdir { color:#0f172a; }
+  .t-claro .rcard .rult { color:#64748b; }
+  .t-claro .rcard .rvis { border-top-color:#e2e8f0; }
+  .t-claro .rvh { color:#64748b; }
+  .t-claro .rvis .rv { color:#334155; }
+  .t-claro .rvis .rv .rh, .t-claro .rvis .rv .rf { color:#1e3a8a; }
+  .t-claro .rvis .rv .rc { color:#b91c1c; }
+  .t-claro .rvis .rv .rgsa { background:#e2e8f0; color:#1e3a8a; }
+  .t-claro .rnum { background:#e2e8f0; border-color:#cbd5e1; color:#1e3a8a; }
+  .t-claro .rvis .rv .re { background:#e2e8f0; color:#334155; }
+  .t-claro .rvis .rv .re.ini  { background:#dcfce7; color:#166534; }
+  .t-claro .rvis .rv .re.ruta { background:#ffedd5; color:#9a3412; }
+  .t-claro .rvis .rv .re.ok   { background:#dbeafe; color:#1e40af; }
+  .t-claro .rvis .rv .re.nr   { background:#fee2e2; color:#991b1b; }
+  .t-claro .rmapa { color:#1d4ed8; }
+  .t-claro .shoy { background:#dcfce7; color:#166534; }
+  .t-claro .sdom { color:#334155; }
+  .t-claro .sdom .sn { color:#1e3a8a; }
+  .t-claro .fam.red     { background:#fee2e2; color:#991b1b; }
+  .t-claro .fam.cliente { background:#dbeafe; color:#1e40af; }
+  .t-claro .fam.datos   { background:#ede9fe; color:#5b21b6; }
+  .t-claro .fam.otro    { background:#e2e8f0; color:#334155; }
+  /* Los chip del encabezado viven sobre el marco oscuro, no sobre las
+     tarjetas: por eso se visten como los de Caídas y no en blanco. */
+  .t-claro .pchip, .t-claro .schip { background:#f1f5f9; border-color:#cbd5e1; color:#1e293b; }
+  .t-claro .pchip:hover, .t-claro .schip:hover { background:#e2e8f0; }
+  .t-claro .pchip.act { background:#4c1d95; border-color:#4c1d95; color:#fff; }
+  .t-claro .schip.act { background:#0c4a6e; border-color:#0c4a6e; color:#fff; }
+  .t-claro .pchip.exp { border-color:#15803d; color:#15803d; }
+
+  /* -- Buscador -- */
+  .t-claro .bcard h3 { color:#0f172a; }
+  .t-claro .bcard .bmeta { color:#64748b; }
+  .t-claro .brow { color:#334155; border-left-color:#e2e8f0; }
+  .t-claro .brow .bord, .t-claro .brow .bfec { color:#1e3a8a; }
+  .t-claro .brow .btec { color:#0f766e; }
+  .t-claro .brow .bmot { color:#b45309; }
+  .t-claro .brow .bsep { color:#cbd5e1; }
+  .t-claro .brow .bcat { color:#0f172a; }
+  .t-claro .bsec.hoy   .bt { color:#1d4ed8; }
+  .t-claro .bsec.caida .bt { color:#b91c1c; }
+  .t-claro .bsec.nueva .bt { color:#15803d; }
+  .t-claro .bsec.hist  .bt { color:#b45309; }
+  .t-claro .bsec.red   .bt { color:#7e22ce; }
+  .t-claro .bsec.reca  .bt { color:#c2410c; }
+
+  /* -- "no hay nada que mostrar": va sobre el marco oscuro, no sobre blanco.
+        Lleva el id delante porque cada modal ya le fijaba su propio color. -- */
+  #modalJor.t-claro .vacio, #modalReca.t-claro .vacio,
+  #modalRepe.t-claro .vacio, #modalBuscar.t-claro .vacio,
+  #modalEst.t-claro .vacio, .t-claro .bvacio { color:#cbd5e1; }
+
+  /* ================= LEYENDA PLEGABLE — 22-09-2026 =================
+     Antes eran dos cajas fijas, una en cada esquina de abajo, siempre puestas.
+     Once lineas que se aprenden en una semana y despues solo tapan mapa. Ahora
+     es una sola caja con las dos columnas, plegada por omision, y se acuerda de
+     como la dejaste. Para que arranque abierta siempre: sacarle la clase
+     "plegada" al div #leyenda y listo. */
+  #leyenda { position:absolute; bottom:16px; left:12px; z-index:1000;
+    background:rgba(11,24,40,.88); -webkit-backdrop-filter:blur(6px);
+    backdrop-filter:blur(6px); border:1px solid #26405e; border-radius:10px;
+    overflow:hidden; font-family:'DM Sans',sans-serif;
+    max-width:min(440px,48vw); }
+  #leyenda .ley-tit { display:flex; align-items:center; gap:8px; width:100%;
+    background:transparent; border:0; color:#c3d6e8; font-family:inherit;
+    font-size:12.5px; padding:8px 15px; cursor:pointer; text-align:left;
+    letter-spacing:.2px; white-space:nowrap; }
+  #leyenda .ley-tit:hover { color:#eaf3fb; }
+  #leyenda .ley-tit:focus-visible { outline:2px solid #60a5fa; outline-offset:-2px; }
+  #leyenda .ley-car { color:#7e97b2; display:inline-block; transition:transform .15s; }
+  #leyenda.plegada .ley-cuerpo { display:none; }
+  #leyenda:not(.plegada) .ley-car { transform:rotate(90deg); }
+  #leyenda .ley-cuerpo { display:flex; gap:28px; padding:2px 15px 12px; }
+  /* Las dos columnas dejan de ser cajas sueltas: pierden su posicion fija y su
+     fondo, porque ahora el fondo lo pone la caja de afuera.
+     El display lleva !important a proposito: varios paneles (Sin completar,
+     Completitud, +3 horas, Tecnico libre) escondian estadosBox por JS para no
+     chocar con el panel de la derecha. Ese choque ya no existe — la leyenda se
+     fue a la esquina izquierda — y asi esas lineas quedan sin efecto sin tener
+     que tocar seis funciones. */
+  #leyenda .letras, #leyenda .estados { position:static; background:none;
+    border-radius:0; padding:0; font-size:11.5px; display:block !important; }
+  #leyenda .letras div, #leyenda .estados div { margin:5px 0; }
+  #leyenda .ltit { color:#7e97b2; font-size:10px; letter-spacing:.5px;
+    margin:0 0 7px; text-transform:uppercase; }
+  #leyenda .letras b { width:17px; height:17px; font-size:10.5px; }
+  #leyenda .estados .mini { width:17px; height:17px; }
 </style>
 </head>
 <body>
 <div id="portada"></div>
 <header id="cab" style="display:none">
-  <div class="hfila hfila1">
-    <h1>🚐 Módulo de Actividades <span style="font-size:11px;color:#34d399;font-weight:normal;vertical-align:middle;">· regla GSA ✓ (v2)</span></h1>
-    <div class="stats" id="lastUpd">⏳ cargando datos...</div>
-    <div class="stats" id="stats"></div>
+  <div class="nb-marca">
+    <span class="nom">Actividades</span>
+    <span class="zona">Quilpué · Villa Alemana</span>
   </div>
+  <div id="lastUpd">cargando datos…</div>
 
-  <div class="hfila">
-    <span class="hgrp">FILTRAR</span>
+  <div class="nb-filtros">
     <select id="selTec"><option value="__ALL__">Todos los técnicos</option></select>
     <div class="msel" id="mselCiudad"><button type="button" class="mbtn" onclick="abrirMenu(event,'Ciudad')"><span class="mtxt">Ambas ciudades</span><span class="mcar">▼</span></button><div class="mmenu"></div></div>
     <div class="msel" id="mselFranja"><button type="button" class="mbtn" onclick="abrirMenu(event,'Franja')"><span class="mtxt">Todas las franjas</span><span class="mcar">▼</span></button><div class="mmenu"></div></div>
@@ -936,31 +1188,34 @@
       <input id="qBuscar" type="search" placeholder="Buscar dirección u orden…"
              autocomplete="off" spellcheck="false"
              onkeydown="if(event.key==='Enter') hacerBusqueda(); if(event.key==='Escape') this.blur();">
-      <button class="btn" onclick="hacerBusqueda()" title="Buscar en todo el tablero">🔎</button>
-    </div>
-    <button class="btn" id="btnInicio" onclick="verPortada()">&larr; Inicio</button>
-    <span class="hsep"></span>
-    <span class="hgrp">ACCIONES</span>
-    <div class="hacc">
-      <button class="btn" id="btnNombres" onclick="toggleNombres()">👷 Nombres</button>
-      <button class="btn" id="btnRutas" onclick="toggleRutas()">〰️ Rutas</button>
-      <button class="btn" id="btnJornada" onclick="toggleJornada()">📋 Jornada</button>
-      <button class="btn" id="btnComp" onclick="toggleComp()">📊 Completitud</button>
-      <button class="btn" id="btnSC" onclick="toggleSinCompletar()">🚩 Sin completar</button>
-      <button class="btn" id="btnAtr" onclick="toggleAtrasados()">⏱️ Más de 3 horas</button>
-      <button class="btn" id="btnLibre" onclick="toggleLibre()">🚐 Técnico libre</button>
+      <button class="btn" onclick="hacerBusqueda()" title="Buscar en todo el tablero">Buscar</button>
     </div>
   </div>
 
-  <div class="hfila">
-    <span class="hgrp">PANELES</span>
-    <button class="btn" id="btnCaidas" onclick="toggleCaidas()">🚨 Caídas</button>
-    <button class="btn" id="btnReca" onclick="toggleReca()">🔄 Recaídas hoy</button>
-    <button class="btn" id="btnNuevas" onclick="toggleNuevas()">🆕 Nuevas</button>
-    <button class="btn" id="btnRepe" onclick="toggleRepe()">🔁 Direcciones repetidas hoy</button>
+  <div class="nb-der">
+    <div class="nb-res" id="resumenDia"></div>
+    <div class="stats" id="stats"></div>
+    <button class="btn" id="btnInicio" onclick="verPortada()">&larr; Inicio</button>
   </div>
 </header>
 <div id="map" style="display:none"></div>
+<!-- Los botones que antes iban en las filas ACCIONES y PANELES de la cabecera.
+     Mismos id y mismos onclick: lo unico que cambio es donde estan parados. -->
+<div id="barraAvisos" class="nb-flota izq">
+  <button class="btn" id="btnCaidas" onclick="toggleCaidas()">Caídas</button>
+  <button class="btn" id="btnReca" onclick="toggleReca()">Recaídas</button>
+  <button class="btn" id="btnNuevas" onclick="toggleNuevas()">Nuevas</button>
+  <button class="btn" id="btnRepe" onclick="toggleRepe()">Repetidas</button>
+</div>
+<div id="barraAcc" class="nb-flota der">
+  <button class="btn" id="btnNombres" onclick="toggleNombres()">Nombres</button>
+  <button class="btn" id="btnRutas" onclick="toggleRutas()">Rutas</button>
+  <button class="btn" id="btnJornada" onclick="toggleJornada()">Jornada</button>
+  <button class="btn" id="btnComp" onclick="toggleComp()">Completitud</button>
+  <button class="btn" id="btnSC" onclick="toggleSinCompletar()">Sin completar</button>
+  <button class="btn" id="btnAtr" onclick="toggleAtrasados()">Más de 3 horas</button>
+  <button class="btn" id="btnLibre" onclick="toggleLibre()">Técnico libre</button>
+</div>
 <!-- Colores del modal de caidas: los dan las dos clases de aca abajo.
      t-claro = fondo blanco y letra oscura.  t-des = color por desenlace.
      Se eligio asi el 21-09-2026 (opcion 4 de 4) porque en oscuro, para
@@ -997,7 +1252,7 @@
     <div id="nuevasNota" class="mc-resnota"></div>
   </div>
 </div>
-<div id="modalBuscar" onclick="if(event.target===this) cerrarBuscar()">
+<div id="modalBuscar" class="t-claro" onclick="if(event.target===this) cerrarBuscar()">
   <div class="mc-box">
     <div class="mc-head">
       <div class="mc-head-left"><h2>🔎 Buscar</h2><span id="buscarChips"></span></div>
@@ -1007,7 +1262,7 @@
     <div id="buscarNota" class="mc-resnota"></div>
   </div>
 </div>
-<div id="modalReca" onclick="if(event.target===this) cerrarReca()">
+<div id="modalReca" class="t-claro" onclick="if(event.target===this) cerrarReca()">
   <div class="mc-box">
     <div class="mc-head">
       <div class="mc-head-left"><h2>🔄 Recaídas del mismo día</h2></div>
@@ -1017,7 +1272,7 @@
     <div id="recaNota" class="mc-resnota"></div>
   </div>
 </div>
-<div id="modalRepe" onclick="if(event.target===this) cerrarRepe()">
+<div id="modalRepe" class="t-claro" onclick="if(event.target===this) cerrarRepe()">
   <div class="mc-box">
     <div class="mc-head">
       <div class="mc-head-left">
@@ -1030,7 +1285,7 @@
     <div id="repeNota" class="mc-resnota"></div>
   </div>
 </div>
-<div id="modalJor" onclick="if(event.target===this) cerrarJornada()">
+<div id="modalJor" class="t-claro" onclick="if(event.target===this) cerrarJornada()">
   <div class="mc-box">
     <div class="mc-head">
       <div class="mc-head-left">
@@ -1043,7 +1298,7 @@
     <div id="jorNota" class="mc-resnota"></div>
   </div>
 </div>
-<div id="modalEst" onclick="if(event.target===this) cerrarEst()">
+<div id="modalEst" class="t-claro" onclick="if(event.target===this) cerrarEst()">
   <div class="mc-box">
     <div class="mc-head">
       <div class="mc-head-left">
@@ -1077,21 +1332,35 @@
   <div class="hint">Órdenes en estado <b>Iniciado</b> cuya hora de inicio ya lleva más del umbral. Respeta el filtro de ciudad de arriba. Toca una tarjeta para ver al técnico en el mapa.</div>
   <div id="listaAtr"></div>
 </div>
-<div class="letras" id="letrasBox">
-  <div class="ltit">LETRA DEL PIN</div>
-  <div><b>R</b> Reparación</div>
-  <div><b>A</b> Alta</div>
-  <div><b>M</b> Migración</div>
-  <div><b>T</b> Alta Traslado</div>
-  <div><b>S</b> Modificación de Servicio</div>
-  <div><b>U</b> Upgrade promoción</div>
-</div>
-<div class="estados" id="estadosBox">
-  <div><span class="mini mk-iniciado"></span> Iniciado (trabajando)</div>
-  <div><span class="mini mk-enruta"></span> En ruta (parpadea)</div>
-  <div><span class="mini"></span> Pendiente</div>
-  <div><span class="mini mk-completado"></span> Completado</div>
-  <div><span class="mini mk-norealizada"></span> No realizada</div>
+<!-- Una sola leyenda plegable, abajo a la izquierda, en vez de las dos cajas
+     que antes ocupaban las dos esquinas de abajo del mapa. Los dos id de
+     siempre (letrasBox y estadosBox) siguen existiendo: ahora son las dos
+     columnas de adentro, asi que nada de lo que los nombra se rompe. -->
+<div id="leyenda" class="plegada">
+  <button type="button" class="ley-tit" onclick="toggleLeyenda()"
+          aria-expanded="false" aria-controls="leyCuerpo"
+          title="Mostrar u ocultar la leyenda del mapa">
+    <span class="ley-car">▸</span> Leyenda del mapa
+  </button>
+  <div class="ley-cuerpo" id="leyCuerpo">
+    <div class="letras" id="letrasBox">
+      <div class="ltit">LETRA DEL PIN</div>
+      <div><b>R</b> Reparación</div>
+      <div><b>A</b> Alta</div>
+      <div><b>M</b> Migración</div>
+      <div><b>T</b> Alta Traslado</div>
+      <div><b>S</b> Modificación de Servicio</div>
+      <div><b>U</b> Upgrade promoción</div>
+    </div>
+    <div class="estados" id="estadosBox">
+      <div class="ltit">BORDE DEL PIN</div>
+      <div><span class="mini mk-iniciado"></span> Iniciado (trabajando)</div>
+      <div><span class="mini mk-enruta"></span> En ruta (parpadea)</div>
+      <div><span class="mini"></span> Pendiente</div>
+      <div><span class="mini mk-completado"></span> Completado</div>
+      <div><span class="mini mk-norealizada"></span> No realizada</div>
+    </div>
+  </div>
 </div>
 <div id="panel">
   <h2>🚐 Técnico libre</h2>
@@ -1306,7 +1575,7 @@ function cerrarSC(){
   if(!sinComp) return;
   sinComp = false;
   document.getElementById('btnSC').classList.remove('on3');
-  document.getElementById('btnSC').textContent = '🚩 Sin completar';
+  document.getElementById('btnSC').textContent = 'Sin completar';
   document.getElementById('panelSC').style.display = 'none';
 }
 
@@ -1314,7 +1583,7 @@ function toggleSinCompletar(){
   cerrarPaneles('sc');                 // modos excluyentes
   sinComp = !sinComp;
   document.getElementById('btnSC').classList.toggle('on3', sinComp);
-  document.getElementById('btnSC').textContent = sinComp ? '✖ Salir sin completar' : '🚩 Sin completar';
+  document.getElementById('btnSC').textContent = sinComp ? 'Salir' : 'Sin completar';
   document.getElementById('panelSC').style.display = sinComp ? 'block' : 'none';
   document.getElementById('estadosBox').style.display = sinComp ? 'none' : '';
   if(sinComp){ sel.value='__ALL__'; FILTROS.Estado.clear(); pintarFiltro('Estado'); }
@@ -1342,7 +1611,7 @@ function renderBannerCaidas(){
   // una franja del mapa. El conteo vive solo en el boton.
   const n = nCaidas();
   const btn = document.getElementById('btnCaidas');
-  btn.innerHTML = '🚨 Caídas' + (n>0 ? ' <span class="badge">'+n+'</span>' : '');
+  btn.innerHTML = 'Caídas' + (n>0 ? ' <span class="badge">'+n+'</span>' : '');
   btn.classList.toggle('on-caidas', n>0 && !caidasAbierto);
   renderBotonNuevas();
   if(nuevasAbierto) renderNuevas();   // el modal abierto se refresca solo
@@ -1465,7 +1734,7 @@ function renderBotonNuevas(){
   // el badge muestra las NUEVITAS, que es el numero que sirve para dimensionar
   // carga entrante. El desglose completo va en el tooltip.
   const mix = c.reingreso > 0;
-  btn.innerHTML = '🆕 Nuevas' + (todas.length>0
+  btn.innerHTML = 'Nuevas' + (todas.length>0
     ? ' <span class="badge'+(mix?' mix':'')+'">'+c.nuevita+'</span>' : '');
   btn.title = todas.length
     ? c.nuevita+' nuevas · '+c.reingreso+' reingresos — '
@@ -1984,7 +2253,7 @@ function renderBotonRepe(){
   const btn = document.getElementById('btnRepe');
   if(!btn) return;
   const n = nRepe();
-  btn.innerHTML = '🔁 Direcciones repetidas hoy'
+  btn.innerHTML = 'Repetidas'
     + (n > 0 ? ' <span class="badge">'+n+'</span>' : '');
   btn.classList.toggle('on-repe', n > 0 && !repeAbierto);
 }
@@ -2856,7 +3125,7 @@ function renderBotonReca(){
   const btn = document.getElementById('btnReca');
   if(!btn) return;
   const n = nRecaidasVivas();
-  btn.innerHTML = '🔄 Recaídas hoy' + (n > 0 ? ' <span class="badge">'+n+'</span>' : '');
+  btn.innerHTML = 'Recaídas' + (n > 0 ? ' <span class="badge">'+n+'</span>' : '');
   btn.classList.toggle('on-reca', n > 0 && !recaAbierto);
 }
 
@@ -2936,8 +3205,8 @@ function renderReca(){
     const mismo = c.sig.some(function(w){ return w.tec === quien; });
     const consejo = c.viva
       ? (mismo
-          ? '<div class="rvh" style="color:#4ade80">✔ va el mismo técnico que ya fue</div>'
-          : '<div class="rvh" style="color:#fbbf24">⚠ la toma otro técnico · '+escR(quien)+' ya estuvo ahí</div>')
+          ? '<div class="rvh" style="color:#15803d">✔ va el mismo técnico que ya fue</div>'
+          : '<div class="rvh" style="color:#b45309">⚠ la toma otro técnico · '+escR(quien)+' ya estuvo ahí</div>')
       : '<div class="rvh">— ya cerrada, sin acción</div>';
     return '<div class="rcard'+(c.viva?' repe':'')+'" id="rc'+i+'">'
       + '<div class="rtop" onclick="document.getElementById(\'rc'+i+'\').classList.toggle(\'abierta\')">'
@@ -3188,10 +3457,10 @@ function renderJornada(){
   };
 
   let html = '<div class="jgrid">'
-    + tarjeta(total, 'actividades del día', '#fff')
-    + tarjeta(n('Completado'), 'completadas', '#93c5fd')
-    + tarjeta(quedan, 'quedan por cerrar', '#fde68a')
-    + tarjeta(n('No Realizada'), 'no realizadas', '#fca5a5')
+    + tarjeta(total, 'actividades del día', '#0f172a')
+    + tarjeta(n('Completado'), 'completadas', '#1d4ed8')
+    + tarjeta(quedan, 'quedan por cerrar', '#b45309')
+    + tarjeta(n('No Realizada'), 'no realizadas', '#b91c1c')
     + '</div>';
 
   // barra de avance
@@ -3311,7 +3580,7 @@ function renderEst(){
   const pal = paleta[estActual] || paleta['__TODAS__'];
   const grad = 'linear-gradient(90deg,'+pal[0]+','+pal[1]+')';
 
-  let html = '<div class="bcaja"><div class="btit" style="color:'+pal[2]+'">TIPO DE ACTIVIDAD</div>'
+  let html = '<div class="bcaja"><div class="btit" style="color:'+pal[0]+'">TIPO DE ACTIVIDAD</div>'
            + barrasFijas(resumenPlay(porTipo), total, grad, 'bres')
            + '<div class="bsep"></div>'
            + '<div class="bcap">DETALLE</div>'
@@ -3319,13 +3588,13 @@ function renderEst(){
 
   const nMot = Object.keys(porMotivo).reduce(function(a,k){ return a+porMotivo[k]; }, 0);
   if(nMot){
-    html += '<div class="bcaja"><div class="btit" style="color:'+pal[2]+'">CÓDIGO DE CIERRE'
+    html += '<div class="bcaja"><div class="btit" style="color:'+pal[0]+'">CÓDIGO DE CIERRE'
          +  (nMot < total ? ' <span class="bsub">· '+nMot+' de '+total
              +' con código registrado</span>' : '') + '</div>'
          + barras(porMotivo, nMot, grad) + '</div>';
   }
 
-  html += '<div class="bcaja"><div class="btit" style="color:'+pal[2]+'">POR TÉCNICO</div>'
+  html += '<div class="bcaja"><div class="btit" style="color:'+pal[0]+'">POR TÉCNICO</div>'
         + barras(porTec, total, grad) + '</div>';
 
   tit.style.color = pal[2];
@@ -3402,18 +3671,82 @@ function refrescarAviso(){
   txt.className = 'upd' + (e.alarma ? ' mal' : '');
 }
 
-const LEYENDAS = ['letrasBox','estadosBox','avisoAtr'];
+/* Resumen del dia para la cabecera: el porcentaje de completadas con la barra
+   del reparto al lado. Se alimenta del mismo tally que ya arma las ocho cifras,
+   asi que respeta los mismos filtros y no hace ninguna cuenta nueva. */
+function pintarResumenDia(tally, total){
+  const caja = document.getElementById('resumenDia');
+  if(!caja) return;
+  if(!total){ caja.innerHTML = ''; return; }
+  const comp  = tally['Completado']  || 0;
+  const nore  = tally['No Realizada'] || 0;
+  const cys   = (tally['Cancelado'] || 0) + (tally['Suspendido'] || 0);
+  const sinCerrar = total - comp - nore - cys;
+  const pct = comp * 100 / total;
+  const tramo = function(n, color){
+    return n > 0 ? '<span style="width:' + (n * 100 / total) + '%;background:' + color + '"></span>' : '';
+  };
+  caja.innerHTML =
+      '<div class="nb-pct"><span class="v">' + pct.toFixed(1).replace('.', ',')
+    +   '<span class="u">%</span></span><span class="l">completadas</span></div>'
+    + '<div class="nb-bar" title="' + comp + ' completadas \u00b7 ' + nore
+    +   ' no realizadas \u00b7 ' + sinCerrar + ' sin cerrar \u00b7 ' + cys + ' canc/susp">'
+    +   '<div class="b">' + tramo(comp, '#10a37f') + tramo(nore, '#e0575b')
+    +     tramo(sinCerrar, '#4a90e2') + tramo(cys, '#7d8fa3') + '</div>'
+    +   '<div class="nb-leg"><span><b>' + total + '</b> del d\u00eda</span>'
+    +     '<span><b>' + sinCerrar + '</b> sin cerrar</span></div>'
+    + '</div>';
+}
+
+/* En la portada se esconde la caja entera; antes se escondian las dos
+   columnas por separado, que ahora viven adentro. */
+const LEYENDAS = ['leyenda','avisoAtr','barraAvisos','barraAcc'];
+
+/* La leyenda se acuerda de como la dejaste. Si el navegador no deja guardar
+   (incognito, permisos), no pasa nada: arranca plegada, que es lo de siempre. */
+function toggleLeyenda(){
+  const caja = document.getElementById('leyenda');
+  if(!caja) return;
+  const abierta = !caja.classList.toggle('plegada');
+  const bot = caja.querySelector('.ley-tit');
+  if(bot) bot.setAttribute('aria-expanded', abierta ? 'true' : 'false');
+  try { localStorage.setItem('leyendaAbierta', abierta ? '1' : '0'); } catch(e){}
+}
+(function recordarLeyenda(){
+  let abierta = false;
+  try { abierta = localStorage.getItem('leyendaAbierta') === '1'; } catch(e){}
+  if(!abierta) return;
+  const caja = document.getElementById('leyenda');
+  if(!caja) return;
+  caja.classList.remove('plegada');
+  const bot = caja.querySelector('.ley-tit');
+  if(bot) bot.setAttribute('aria-expanded', 'true');
+})();
 function leyendas(ver){
   LEYENDAS.forEach(id => {
     const e = document.getElementById(id);
     if(e) e.style.visibility = ver ? '' : 'hidden';
   });
 }
+/* Las dos barras flotan sobre el mapa, y el alto de la cabecera cambia segun
+   el ancho de la ventana (en una pantalla angosta los filtros bajan a una
+   segunda linea). En vez de dejar un valor fijo que algun dia queda corto, se
+   lee el alto real y las barras se paran justo debajo. */
+function acomodarBarras(){
+  const cab = document.getElementById('cab');
+  if(!cab) return;
+  const alto = cab.offsetHeight || 56;
+  const barras = document.querySelectorAll('.nb-flota');
+  for(let i = 0; i < barras.length; i++) barras[i].style.top = (alto + 12) + 'px';
+}
+window.addEventListener('resize', acomodarBarras);
+
 function verMapa(){
   document.getElementById('portada').style.display = 'none';
   document.getElementById('cab').style.display = '';
   document.getElementById('map').style.display = '';
   leyendas(true);
+  acomodarBarras();
   if(window.map && map.invalidateSize) setTimeout(()=>map.invalidateSize(), 60);
 }
 function verPortada(){
@@ -3892,6 +4225,8 @@ function render(mantenerVista){
         juntos.filter(function(e){ return tally[e]; })
               .map(function(e){ return tally[e]+' '+e; }).join(' · '),
         '', '__CANCSUSP__') : '');
+  pintarResumenDia(tally, totalAct);
+  acomodarBarras();
   // En el refresco automatico NO se reencuadra el mapa: si estabas mirando
   // un sector con zoom, se respeta donde tenias la vista.
   if(bounds.length && !mantenerVista) map.fitBounds(bounds,{padding:[40,40]});
@@ -3928,7 +4263,7 @@ function toggleLibre(){
   cerrarSC(); cerrarRGU(); cerrarAtr(); cerrarComp(); cerrarCaidas();
   libre = !libre;
   document.getElementById('btnLibre').classList.toggle('on', libre);
-  document.getElementById('btnLibre').textContent = libre ? '✖ Salir técnico libre' : '🚐 Técnico libre';
+  document.getElementById('btnLibre').textContent = libre ? 'Salir' : 'Técnico libre';
   document.getElementById('panel').style.display = libre ? 'block' : 'none';
   document.getElementById('estadosBox').style.display = libre ? 'none' : '';
   if(libre){
@@ -4466,7 +4801,7 @@ function actualizarBadgeAtr(){
   if(!b) return;
   if(atr){ b.textContent = '✖ Salir'; return; }
   const n = trabajosAtrasados().length;
-  b.innerHTML = '⏱️ Más de '+umbralEnPalabras() + (n ? '<span class="pill">'+n+'</span>' : '');
+  b.innerHTML = 'Más de '+umbralEnPalabras() + (n ? '<span class="pill">'+n+'</span>' : '');
 }
 
 function cerrarAtr(){
@@ -4607,7 +4942,7 @@ function ajustarRefresco(quedan, resetEnMin){
 function marcarEdad(lu, sello){
   let edad = null;
   if(FECHA_DATOS) edad = Math.round((new Date() - FECHA_DATOS)/60000);
-  lu.textContent = '🔄 Actualizado: ' + sello
+  lu.textContent = 'Actualizado ' + sello
     + (edad !== null ? '  ·  hace ' + fmtDur(edad) : '');
   lu.title = 'Origen: ' + (ORIGEN_DATOS === 'api'
       ? 'API de Contents (instantánea)'
