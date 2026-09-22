@@ -8228,13 +8228,13 @@
    }
   },
   "22-09-2026": {
-   "hasta": "12:56",
+   "hasta": "13:01",
    "actividades": 155,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 26,
-    "Completado": 33,
-    "Pendiente": 80,
+    "Completado": 34,
+    "Pendiente": 79,
     "Iniciado": 13,
     "Cancelado": 3
    },
@@ -8451,7 +8451,7 @@
       "o": "1-3NZ28V01",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "13:59",
       "d": "FREIRE 139 DEPTO 30, QUILPUE",
       "e": "Pendiente",
       "tec": "DANIEL NAVARRETE E",
@@ -8816,5 +8816,5 @@
    }
   }
  },
- "generado": "22-09-2026 12:56"
+ "generado": "22-09-2026 13:01"
 }
