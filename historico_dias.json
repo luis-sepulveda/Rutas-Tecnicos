@@ -8228,14 +8228,14 @@
    }
   },
   "22-09-2026": {
-   "hasta": "12:51",
+   "hasta": "12:56",
    "actividades": 155,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 26,
-    "Completado": 30,
+    "Completado": 33,
     "Pendiente": 80,
-    "Iniciado": 16,
+    "Iniciado": 13,
     "Cancelado": 3
    },
    "rgu": 241.6,
@@ -8403,7 +8403,7 @@
       "o": "1-3NYS7BGC",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "14:52",
       "d": "GALO VALENCIA 544, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -8499,7 +8499,7 @@
       "o": "1-3NZ2NA2V",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "14:04",
       "d": "SANTA ROSA 16 CASA MI, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JEAN ROODLY ORELIEN",
@@ -8654,7 +8654,7 @@
       "o": "1-3NYIW0VT",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "14:19",
       "d": "ALBA DE TORMES 094, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATIAS APELEO APELEO",
@@ -8726,7 +8726,7 @@
       "o": "1-3NY9G6LV",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:01",
+      "hi": "14:17",
       "d": "LAS ROSAS 859, QUILPUE",
       "e": "Pendiente",
       "tec": "CESAR MENA OLIVEROS",
@@ -8766,7 +8766,7 @@
       "o": "1-3NWOL603",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:15",
+      "hi": "16:30",
       "d": "HUILLICHES 1586, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -8806,7 +8806,7 @@
       "o": "1-3NW5W0EA",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:10",
+      "hi": "14:06",
       "d": "ISIDORA 2833 DEPTO 12, QUILPUE",
       "e": "Pendiente",
       "tec": "YENDER BOSCAN CADENAS",
@@ -8816,5 +8816,5 @@
    }
   }
  },
- "generado": "22-09-2026 12:51"
+ "generado": "22-09-2026 12:56"
 }
