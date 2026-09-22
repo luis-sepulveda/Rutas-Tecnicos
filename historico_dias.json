@@ -8228,19 +8228,19 @@
    }
   },
   "22-09-2026": {
-   "hasta": "14:36",
-   "actividades": 159,
+   "hasta": "14:46",
+   "actividades": 160,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 36,
-    "Completado": 45,
+    "No Realizada": 37,
+    "Completado": 48,
     "Iniciado": 26,
-    "Pendiente": 41,
-    "en ruta": 5,
+    "Pendiente": 39,
     "Cancelado": 5,
+    "en ruta": 4,
     "Suspendido": 1
    },
-   "rgu": 247.7,
+   "rgu": 250.2,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
@@ -8849,7 +8849,7 @@
       "o": "1-3NWOL603",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "16:50",
       "d": "HUILLICHES 1586, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -8899,5 +8899,5 @@
    }
   }
  },
- "generado": "22-09-2026 14:36"
+ "generado": "22-09-2026 14:46"
 }
