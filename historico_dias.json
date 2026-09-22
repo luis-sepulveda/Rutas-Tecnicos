@@ -8228,15 +8228,15 @@
    }
   },
   "22-09-2026": {
-   "hasta": "13:31",
+   "hasta": "13:36",
    "actividades": 156,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 27,
     "Completado": 40,
-    "Pendiente": 71,
-    "en ruta": 3,
-    "Iniciado": 12,
+    "Pendiente": 69,
+    "Iniciado": 15,
+    "en ruta": 2,
     "Cancelado": 3
    },
    "rgu": 242.6,
@@ -8449,9 +8449,9 @@
       "o": "1-3NYGCSEI",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "13:35",
       "d": "FREIRE 120, QUILPUE",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "CRISTOBAL SILVA LEIVA",
       "visitas": 1,
       "ult_fecha": "11-09-2026",
@@ -8556,7 +8556,7 @@
       "o": "1-3NWM6RXG",
       "cat": "Alta 3 Play",
       "f": "13-16",
-      "hi": "14:29",
+      "hi": "14:26",
       "d": "PLUTON 1700, QUILPUE",
       "e": "Pendiente",
       "tec": "JORDAN ROA PEREZ",
@@ -8746,9 +8746,9 @@
       "o": "1-3NY6ZWQR",
       "cat": "Alta Traslado",
       "f": "13-16",
-      "hi": "13:27",
+      "hi": "13:33",
       "d": "HUMBOLD 0694 CASA B, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "CRISTOBAL MIRANDA VALENC",
       "desde": "21-09-2026"
      },
@@ -8756,7 +8756,7 @@
       "o": "1-3NYBQW3V",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:32",
+      "hi": "16:07",
       "d": "BILBAO 1534 DEPTO 33, QUILPUE",
       "e": "Pendiente",
       "tec": "CRISTOBAL SILVA LEIVA",
@@ -8776,7 +8776,7 @@
       "o": "1-3NWOL603",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:59",
+      "hi": "17:19",
       "d": "HUILLICHES 1586, QUILPUE",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -8826,5 +8826,5 @@
    }
   }
  },
- "generado": "22-09-2026 13:31"
+ "generado": "22-09-2026 13:36"
 }
