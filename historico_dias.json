@@ -8228,22 +8228,21 @@
    }
   },
   "22-09-2026": {
-   "hasta": "12:46",
-   "actividades": 154,
+   "hasta": "12:51",
+   "actividades": 155,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 26,
-    "Completado": 29,
-    "Pendiente": 79,
+    "Completado": 30,
+    "Pendiente": 80,
     "Iniciado": 16,
-    "en ruta": 1,
     "Cancelado": 3
    },
-   "rgu": 239.6,
+   "rgu": 241.6,
    "caidas_total": 3,
    "caidas_activas": 3,
    "caidas_resueltas": 0,
-   "nuevas": 11,
+   "nuevas": 12,
    "al_bucket": 11,
    "repetidas": 27,
    "reagendadas": 10,
@@ -8278,6 +8277,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NZ8QVY2",
+      "tec": "MARCELO GÓMEZ GÓME",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "17:23",
+      "d": "ALMIRANTE WILSON 912, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NZ3OG48",
       "tec": "KEVIN TAPIA RETAMAL",
@@ -8348,7 +8356,7 @@
       "f": "13-16",
       "hi": "15:24",
       "d": "PORVENIR 26, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NWM6RXG",
@@ -8728,7 +8736,7 @@
       "o": "1-3NY6ZWQR",
       "cat": "Alta Traslado",
       "f": "13-16",
-      "hi": "14:45",
+      "hi": "14:05",
       "d": "HUMBOLD 0694 CASA B, QUILPUE",
       "e": "Pendiente",
       "tec": "CRISTOBAL MIRANDA VALENC",
@@ -8808,5 +8816,5 @@
    }
   }
  },
- "generado": "22-09-2026 12:46"
+ "generado": "22-09-2026 12:51"
 }
