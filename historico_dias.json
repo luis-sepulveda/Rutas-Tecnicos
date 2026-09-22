@@ -8228,19 +8228,19 @@
    }
   },
   "22-09-2026": {
-   "hasta": "14:16",
-   "actividades": 159,
+   "hasta": "14:21",
+   "actividades": 158,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 34,
+    "No Realizada": 35,
     "Completado": 41,
-    "Iniciado": 24,
-    "Pendiente": 50,
-    "en ruta": 5,
+    "Iniciado": 26,
+    "Pendiente": 49,
+    "en ruta": 2,
     "Cancelado": 4,
     "Suspendido": 1
    },
-   "rgu": 250.1,
+   "rgu": 247.6,
    "caidas_total": 7,
    "caidas_activas": 7,
    "caidas_resueltas": 0,
@@ -8322,7 +8322,7 @@
       "f": "16-19",
       "hi": "17:15",
       "d": "ALDO FRANCIA 2398, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Pendiente (ya no está)"
      },
      {
       "o": "1-3NZBD8NU",
@@ -8890,5 +8890,5 @@
    }
   }
  },
- "generado": "22-09-2026 14:16"
+ "generado": "22-09-2026 14:21"
 }
