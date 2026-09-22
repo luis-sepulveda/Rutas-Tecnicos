@@ -8228,16 +8228,15 @@
    }
   },
   "22-09-2026": {
-   "hasta": "17:23",
+   "hasta": "17:28",
    "actividades": 173,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 50,
-    "Completado": 78,
+    "Completado": 79,
     "Iniciado": 32,
     "Suspendido": 4,
-    "Cancelado": 8,
-    "Pendiente": 1
+    "Cancelado": 8
    },
    "rgu": 262.5,
    "caidas_total": 9,
@@ -8492,7 +8491,7 @@
       "f": "16-19",
       "hi": "17:30",
       "d": "LEUCOTON 1100 EDIF. 4 DEPTO 102, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NZ43PYH",
@@ -8617,9 +8616,9 @@
       "o": "1-3NZ51UXS",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "17:05",
+      "hi": "17:28",
       "d": "MADRID 620 CASA D, QUILPUE",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "DANIEL NAVARRETE E",
       "visitas": 4,
       "ult_fecha": "22-09-2026",
@@ -8970,5 +8969,5 @@
    }
   }
  },
- "generado": "22-09-2026 17:23"
+ "generado": "22-09-2026 17:28"
 }
