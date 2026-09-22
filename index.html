@@ -26,7 +26,7 @@
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap">
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   body { font-family:'Segoe UI',Arial,sans-serif; background:#0a1930; color:#dbeafe; height:100vh; display:flex; flex-direction:column; }
@@ -1168,6 +1168,268 @@
     margin:0 0 7px; text-transform:uppercase; }
   #leyenda .letras b { width:17px; height:17px; font-size:10.5px; }
   #leyenda .estados .mini { width:17px; height:17px; }
+
+  /* ================== PORTADA v2 — 22-09-2026 ==================
+     La portada pasa de una lista de contadores a una pantalla con orden de
+     lectura: primero como va el dia, despues como viene el resto del dia,
+     despues lo que pide accion, y al final los enlaces.
+
+     Tres cosas que cambian de fondo:
+     1. La barra de arriba pasa a azul noche, el mismo del mapa. Amarra los dos
+        lados del modulo y le da un punto de apoyo a la pagina, que antes era
+        todo tarjetas blancas del mismo peso.
+     2. Los nueve botones iguales se separan en dos cosas distintas: los que
+        traen una cifra (estado de la jornada) y los que solo abren un reporte
+        (navegacion). Antes "Caídas 8" y "Reporte histórico" pesaban igual.
+     3. Las franjas se dibujan como la linea del dia, con la hora actual
+        marcada: asi se entiende por que la franja 16-19 tiene todo abierto.
+
+     Titulares en Archivo, texto en DM Sans. Este bloque pisa a las reglas
+     .pz-* de mas arriba, que quedan de respaldo. */
+
+  #portada { background:#eaeff5; color:#15293e; }
+
+  /* ---- barra superior ---- */
+  /* flex-direction:row va explicito: la regla general de <header> (la del mapa)
+     deja los header en columna, y sin esto la barra se apila en tres lineas. */
+  .pv-bar { display:flex; flex-direction:row; align-items:center; gap:22px;
+    flex-wrap:wrap; background:#0d1b2e; padding:11px 26px; border:0; margin:0;
+    position:sticky; top:0; z-index:6; }
+  .pv-marca { display:flex; align-items:baseline; gap:10px; }
+  .pv-marca .pv-nom { font-family:'Archivo',sans-serif; font-size:16px;
+    font-weight:700; color:#f4f8fc; letter-spacing:-.01em; }
+  .pv-marca .pv-zona { font-size:12.5px; color:#7e97b2; }
+  .pv-bar .pv-seg { display:flex; gap:4px; background:#15273e; border-radius:9px;
+    padding:3px; }
+  .pv-bar a { background:transparent; border:0; box-shadow:none; color:#a8c0d6;
+    font-size:13.5px; font-weight:500; padding:6px 16px; border-radius:7px;
+    text-decoration:none; cursor:pointer; white-space:nowrap; }
+  .pv-bar a:hover { background:#1d3350; color:#eaf3fb; }
+  .pv-bar a.aqui { background:#2563eb; color:#fff; font-weight:700; }
+  .pv-bar a.aqui:hover { background:#1d4ed8; }
+  .pv-bar a.alarma { background:#7f1d1d; color:#ffd9d5; }
+  .pv-bar .pv-upd { margin-left:auto; display:flex; align-items:center; gap:8px;
+    font-size:12px; color:#7e97b2; font-variant-numeric:tabular-nums; }
+  .pv-bar .pv-upd i { width:7px; height:7px; border-radius:50%; background:#34d399;
+    box-shadow:0 0 0 3px rgba(52,211,153,.18); flex-shrink:0; }
+  .pv-bar .upd.mal { color:#ff8b80; font-weight:600; }
+
+  .pv-in { max-width:1240px; margin:0 auto; padding:26px 22px 64px; }
+
+  /* rotulo de seccion: uno solo para toda la pagina */
+  .pv-rot { font-family:'Archivo',sans-serif; font-size:11px; font-weight:600;
+    letter-spacing:.09em; text-transform:uppercase; color:#8fa1b3; margin:0 0 11px; }
+  .pv-rot-sec { margin:26px 0 12px; }
+
+  /* ---- tarjeta grande del dia ---- */
+  .pv-hero { background:#fff; border:1px solid #dbe4ed; border-radius:16px;
+    display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:34px;
+    padding:24px 26px; box-shadow:0 1px 3px rgba(20,45,70,.05); }
+  @media (max-width:900px){ .pv-hero { grid-template-columns:1fr; gap:24px; } }
+  .pv-fecha { font-family:'Archivo',sans-serif; font-size:17px; font-weight:600;
+    color:#2c4460; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .pv-curso { font-size:10.5px; font-weight:700; padding:3px 10px; border-radius:999px;
+    background:#fef3c7; color:#92400e; letter-spacing:.02em;
+    font-family:'DM Sans',sans-serif; }
+  .pv-pct { display:flex; align-items:baseline; gap:2px; margin:14px 0 2px; }
+  .pv-pct .v { font-family:'Archivo',sans-serif; font-size:66px; font-weight:700;
+    line-height:.95; letter-spacing:-.035em; color:#15293e;
+    font-variant-numeric:tabular-nums; }
+  .pv-pct .u { font-family:'Archivo',sans-serif; font-size:30px; font-weight:600;
+    color:#8fa1b3; }
+  .pv-pctl { font-size:13.5px; color:#5b7086; }
+
+  /* las cinco cifras: una fila de datos con separadores, no cinco cajas.
+     Cada una sigue abriendo su detalle, igual que antes. */
+  .pv-cifras { display:flex; flex-wrap:wrap; gap:0 22px; margin-top:22px;
+    padding-top:18px; border-top:1px solid #edf1f6; }
+  .pv-cif { background:none; border:0; padding:4px 10px 4px 0; font-family:inherit;
+    text-align:left; cursor:pointer; border-radius:7px; }
+  .pv-cif + .pv-cif { padding-left:22px; border-left:1px solid #e6ecf3; }
+  .pv-cif:hover .n { text-decoration:underline; text-underline-offset:3px; }
+  .pv-cif .n { font-family:'Archivo',sans-serif; font-size:22px; font-weight:700;
+    line-height:1.1; font-variant-numeric:tabular-nums; color:#15293e; }
+  .pv-cif .l { font-size:11.5px; color:#8fa1b3; margin-top:1px; }
+  .pv-cif.comp .n { color:#0e7c6b; }
+  .pv-cif.nore .n { color:#c0392f; }
+  .pv-cif.abie .n { color:#2563eb; }
+  .pv-cif.canc .n { color:#8fa1b3; }
+
+  /* ---- reparto y comunas (columna derecha) ---- */
+  .pv-barra { display:flex; height:16px; border-radius:8px; overflow:hidden;
+    background:#eef2f6; }
+  .pv-barra span { display:block; }
+  .pv-ley { display:flex; flex-wrap:wrap; gap:7px 18px; margin-top:12px; }
+  .pv-ley .li { display:flex; align-items:center; gap:7px; font-size:12.5px;
+    color:#5b7086; }
+  .pv-ley .li i { width:9px; height:9px; border-radius:3px; flex-shrink:0; }
+  .pv-ley .li b { color:#15293e; font-variant-numeric:tabular-nums;
+    font-family:'Archivo',sans-serif; font-size:13.5px; }
+  .pv-com { display:flex; flex-direction:column; gap:11px; }
+  .pv-com .c { display:grid; grid-template-columns:118px 1fr 46px; gap:12px;
+    align-items:center; font-size:13px; }
+  .pv-com .c .nm { color:#41586f; white-space:nowrap; overflow:hidden;
+    text-overflow:ellipsis; }
+  .pv-com .c .pista { height:8px; border-radius:4px; background:#eef2f6; overflow:hidden; }
+  .pv-com .c .pista span { display:block; height:100%; border-radius:4px;
+    background:#0e7c6b; }
+  .pv-com .c .vl { text-align:right; font-family:'Archivo',sans-serif;
+    font-weight:700; font-variant-numeric:tabular-nums; color:#15293e; }
+
+  /* ---- linea del dia ---- */
+  .pv-tl { background:#fff; border:1px solid #dbe4ed; border-radius:14px;
+    padding:20px 24px 22px; margin-top:16px; box-shadow:0 1px 3px rgba(20,45,70,.05); }
+  .pv-tlf { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px; }
+  .pv-tlf .fr .h { display:flex; align-items:baseline; justify-content:space-between;
+    gap:10px; margin-bottom:7px; }
+  .pv-tlf .fr .hh { font-family:'Archivo',sans-serif; font-weight:600; font-size:14px;
+    color:#41586f; font-variant-numeric:tabular-nums; }
+  .pv-tlf .fr.ahora .hh { color:#2563eb; }
+  .pv-tlf .fr .ah { font-size:10px; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:#2563eb; }
+  .pv-tlf .fr .pista { height:9px; border-radius:5px; background:#eef2f6; overflow:hidden; }
+  .pv-tlf .fr .pista span { display:block; height:100%; border-radius:5px;
+    background:#0e7c6b; }
+  .pv-tlf .fr.ahora .pista { box-shadow:0 0 0 2px rgba(37,99,235,.18); }
+  .pv-tlf .fr .q { font-size:12.5px; color:#5b7086; margin-top:7px;
+    font-variant-numeric:tabular-nums; }
+  .pv-tlf .fr .q b { font-family:'Archivo',sans-serif; color:#15293e; font-size:14px; }
+  .pv-tlf .fr.vacia .q b { color:#9fb0c0; }
+
+  /* ---- lo que pide accion ---- */
+  .pv-alertas { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:12px; }
+  .pv-al { background:#fff; border:1px solid #dbe4ed; border-radius:13px;
+    padding:16px 18px; text-align:left; font-family:inherit; cursor:pointer;
+    box-shadow:0 1px 3px rgba(20,45,70,.05); transition:.13s;
+    display:flex; align-items:flex-start; gap:14px; }
+  .pv-al:hover { transform:translateY(-1px); box-shadow:0 4px 12px rgba(20,45,70,.09);
+    border-color:#c3d2e0; }
+  .pv-al .n { font-family:'Archivo',sans-serif; font-size:34px; font-weight:700;
+    line-height:.95; font-variant-numeric:tabular-nums; color:#15293e;
+    flex-shrink:0; min-width:44px; }
+  .pv-al .tx { display:flex; flex-direction:column; min-width:0; }
+  .pv-al .tx .t { display:block; font-size:14.5px; font-weight:500; color:#15293e;
+    line-height:1.3; }
+  .pv-al .tx .s { display:block; font-size:12px; color:#8fa1b3; margin-top:4px;
+    line-height:1.45; }
+  /* Solo se enciende la que pesa. En cero la tarjeta se apaga entera: un 0 no
+     tiene por que ocupar la misma atencion que un 8. */
+  .pv-al.viva { border-left:4px solid var(--tono); }
+  .pv-al.viva .n { color:var(--tono); }
+  .pv-al.cero { background:#f5f8fb; box-shadow:none; }
+  .pv-al.cero .n { color:#c3d2e0; font-weight:600; }
+  .pv-al.cero .tx .t { color:#8fa1b3; font-weight:400; }
+
+  .pv-chips { display:flex; flex-wrap:wrap; gap:9px; margin-top:12px; }
+  .pv-ch { display:inline-flex; align-items:baseline; gap:9px; background:#fff;
+    border:1px solid #dbe4ed; border-radius:999px; padding:8px 17px;
+    font-family:inherit; font-size:13.5px; color:#41586f; cursor:pointer;
+    box-shadow:0 1px 2px rgba(20,45,70,.04); transition:.13s; }
+  .pv-ch:hover { border-color:#9fb4c8; color:#15293e; }
+  .pv-ch i { width:7px; height:7px; border-radius:50%; align-self:center; }
+  .pv-ch b { font-family:'Archivo',sans-serif; font-size:15px; font-weight:700;
+    font-variant-numeric:tabular-nums; color:#15293e; }
+  .pv-ch.cero { color:#9fb0c0; }
+  .pv-ch.cero b { color:#c3d2e0; font-weight:500; }
+
+  /* ---- enlaces: navegacion, no estado ---- */
+  .pv-links { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:10px; }
+  .pv-lk { display:flex; align-items:center; justify-content:space-between; gap:12px;
+    background:#fff; border:1px solid #dbe4ed; border-radius:11px;
+    padding:14px 17px; font-family:inherit; font-size:13.5px; color:#2c4460;
+    text-decoration:none; cursor:pointer; text-align:left; transition:.13s;
+    box-shadow:0 1px 2px rgba(20,45,70,.04); }
+  .pv-lk:hover { color:#2563eb; border-color:#9fb4c8; }
+  .pv-lk .fl { color:#c3d2e0; font-size:17px; line-height:1; }
+  .pv-lk:hover .fl { color:#2563eb; }
+
+  /* ============== TENDENCIA POR DÍA — 22-09-2026 ==============
+     Sale de historico_dias.json, que hasta ahora solo leia la pantalla del
+     otro dashboard.
+
+     POR QUE NO HAY UNA LINEA DE PORCENTAJES: cada dia esta medido hasta la
+     hora en que se apago el monitor (el campo "hasta"). El 12-09 marca 24%
+     porque se corto a las 13:12, no porque fuera un mal dia. Graficar esos
+     porcentajes uno al lado del otro seria comparar cosas distintas. Lo que
+     si se compara de frente es la CARGA — las actividades asignadas se saben
+     en la manana y no dependen del corte. El porcentaje sigue estando, pero
+     dentro del globo de cada barra y siempre con su hora al lado.
+
+     Dos graficos separados y no uno con dos ejes: dos escalas en el mismo
+     dibujo es la forma mas rapida de que alguien lea mal una diferencia. */
+  .pv-tend { background:#fff; border:1px solid #dbe4ed; border-radius:14px;
+    padding:20px 24px 18px; margin-top:16px;
+    box-shadow:0 1px 3px rgba(20,45,70,.05); }
+  .pv-tend-cab { display:flex; align-items:baseline; justify-content:space-between;
+    gap:16px; flex-wrap:wrap; }
+  .pv-tend-cab .pv-rot { margin:0; }
+  .pv-rango { display:flex; gap:5px; }
+  .pv-rango button { background:#f2f6fa; border:1px solid #dbe4ed; color:#5b7086;
+    border-radius:999px; padding:4px 13px; font-size:12px; font-family:inherit;
+    cursor:pointer; }
+  .pv-rango button:hover { border-color:#9fb4c8; }
+  .pv-rango button.act { background:#15293e; border-color:#15293e; color:#fff;
+    font-weight:600; }
+  .pv-tend-res { font-size:14px; color:#5b7086; margin:12px 0 20px; }
+  .pv-tend-res b { font-family:'Archivo',sans-serif; color:#15293e; font-size:16px;
+    font-variant-numeric:tabular-nums; }
+  .pv-tend-res .alto { color:#b45309; }
+  .pv-tend-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px; }
+  .pv-fig { margin:0; }
+  .pv-fig figcaption { font-size:12.5px; color:#5b7086; margin-bottom:14px; }
+  .pv-fig figcaption b { font-family:'Archivo',sans-serif; color:#15293e; font-size:13.5px; }
+
+  /* Las columnas: marca delgada, punta redondeada arriba y apoyada en la base.
+     2px de aire entre una y otra para que se lean como piezas distintas. */
+  .pv-cols { display:flex; align-items:flex-end; gap:4px; height:104px;
+    border-bottom:1px solid #e2e9f0; padding-bottom:0; }
+  .pv-col { flex:1; min-width:0; position:relative; height:100%;
+    display:flex; flex-direction:column; justify-content:flex-end; cursor:default; }
+  .pv-col .mk { border-radius:4px 4px 0 0; background:#8fb5e0; min-height:2px;
+    transition:background .12s; }
+  .pv-col:hover .mk { background:#4a90e2; }
+  .pv-col.hoy .mk { background:#2563eb; }
+  .pv-fig.cai .pv-col .mk { background:#e9a9a5; }
+  .pv-fig.cai .pv-col:hover .mk { background:#d04a46; }
+  .pv-fig.cai .pv-col.hoy .mk { background:#c0392f; }
+  /* Etiqueta directa solo en hoy y en el maximo: un numero sobre cada barra
+     tapa el dibujo y deja de leerse el conjunto. */
+  .pv-col .vl { position:absolute; left:0; right:0; text-align:center; bottom:100%;
+    margin-bottom:3px; font-family:'Archivo',sans-serif; font-size:11px;
+    font-weight:700; color:#15293e; font-variant-numeric:tabular-nums;
+    pointer-events:none; }
+  .pv-fig.cai .pv-col .vl { color:#a3302a; }
+  .pv-ejex { display:flex; gap:4px; margin-top:7px; }
+  .pv-ejex span { flex:1; min-width:0; text-align:center; font-size:10px;
+    color:#9fb0c0; font-variant-numeric:tabular-nums; white-space:nowrap;
+    overflow:hidden; }
+  .pv-ejex span.hoy { color:#2563eb; font-weight:700; }
+
+  /* globo al pasar el mouse: el dato completo del dia, con su hora de corte */
+  .pv-tip { position:absolute; bottom:100%; left:50%; transform:translateX(-50%);
+    margin-bottom:9px; background:#15293e; color:#e8eff6; border-radius:9px;
+    padding:9px 12px; font-size:11.5px; line-height:1.6; white-space:nowrap;
+    box-shadow:0 6px 18px rgba(12,27,44,.28); opacity:0; visibility:hidden;
+    transition:opacity .12s; z-index:5; text-align:left;
+    font-variant-numeric:tabular-nums; }
+  .pv-col:hover .pv-tip { opacity:1; visibility:visible; }
+  .pv-tip .d { font-family:'Archivo',sans-serif; font-weight:700; font-size:13px;
+    color:#fff; display:block; margin-bottom:5px; }
+  .pv-tip .corte { color:#93a9c0; }
+  .pv-tip i { color:#93a9c0; font-style:normal; }
+  .pv-tip b { color:#fff; font-weight:600; }
+  /* los ultimos globos se abren hacia la izquierda para no salirse de la caja */
+  .pv-col:nth-last-child(-n+2) .pv-tip { left:auto; right:0; transform:none; }
+  .pv-col:nth-child(-n+2) .pv-tip { left:0; right:auto; transform:none; }
+
+  .pv-tend-nota { font-size:11.5px; color:#8fa1b3; line-height:1.55;
+    margin-top:18px; padding-top:13px; border-top:1px solid #edf1f6; }
+  .pv-tend-nota b { color:#5b7086; font-weight:600; }
+  .pv-tend .cargando { font-size:13px; color:#9fb0c0; padding:22px 0; }
 </style>
 </head>
 <body>
@@ -2069,6 +2331,11 @@ function bajarNuevasXlsx(){
    lado del tablero no se pierde nada. */
 const RAMA_DATOS = 'data';
 const REPO_BASE = 'luis-sepulveda/Rutas-tecnicos';
+/* Resumen dia por dia. Lo escribe resumen_dia.py y hasta ahora solo lo leia la
+   pantalla del dashboard de Actividades. Se baja UNA vez por sesion: cambia
+   una vez al dia, no cada cinco minutos como rutas.json. */
+const URL_DIAS_RAW = 'https://raw.githubusercontent.com/'+REPO_BASE+'/'+RAMA_DATOS+'/historico_dias.json';
+let DIAS = null, diasBajando = false, diasFallo = false, diasRango = 10;
 const URL_HIST_RAW = 'https://raw.githubusercontent.com/'+REPO_BASE+'/'+RAMA_DATOS+'/historial_dir.json';
 
 let HIST = null;             // contenido de historial_dir.json
@@ -3965,6 +4232,175 @@ function abrirRepe(i){
   if(d) d.style.display = d.style.display === 'none' ? 'block' : 'none';
 }
 
+
+/* ==================== TENDENCIA POR DIA ====================
+   Lee historico_dias.json y dibuja dos graficos de barras: la carga asignada y
+   las caidas, dia por dia.
+
+   La regla de lectura esta escrita en el pie del bloque y vale la pena
+   repetirla aca: cada dia se midio hasta la hora en que se apago el monitor.
+   Por eso se grafica la CARGA (que se sabe en la manana y no depende del
+   corte) y no el porcentaje de cierre, que sube o baja segun a que hora paro
+   el monitor ese dia. El porcentaje esta en el globo, con su hora al lado. */
+
+function ordenarDias(claves){
+  return claves.slice().sort(function(a, b){
+    const A = a.split('-'), B = b.split('-');
+    return (A[2]+A[1]+A[0]) < (B[2]+B[1]+B[0]) ? -1 : 1;
+  });
+}
+
+async function bajarDias(){
+  const r = await fetch(URL_DIAS_RAW + '?t=' + Date.now(), { cache:'no-store' });
+  if(!r.ok) throw new Error(r.status);
+  const js = await r.json();
+  return (js && js.dias) ? js.dias : {};
+}
+
+/* Pide el archivo una sola vez. Si falla, el bloque lo dice y no reintenta en
+   cada refresco: son 60 llamadas por hora para un archivo que cambia una vez
+   al dia. */
+function asegurarDias(){
+  if(DIAS !== null || diasBajando || diasFallo) return;
+  diasBajando = true;
+  bajarDias()
+    .then(function(d){ DIAS = d; diasBajando = false; pintarTendencia(); })
+    .catch(function(){ diasFallo = true; diasBajando = false; pintarTendencia(); });
+}
+
+function setRangoDias(n){ diasRango = n; pintarTendencia(); }
+
+/* Un grafico. serie = [{k, v, hoy, tip}], una sola serie por dibujo: dos
+   escalas en el mismo cuadro es la forma mas rapida de que alguien lea mal
+   una diferencia. */
+function figuraDias(titulo, resumen, serie, clase){
+  const max = serie.reduce(function(m, x){ return Math.max(m, x.v); }, 0) || 1;
+  /* Etiqueta directa solo en hoy y en el maximo. Un numero sobre cada barra
+     tapa el dibujo y se deja de leer el conjunto. */
+  const iMax = serie.reduce(function(im, x, i){ return x.v > serie[im].v ? i : im; }, 0);
+  const cols = serie.map(function(x, i){
+    const alto = Math.max(2, Math.round(100 * x.v / max));
+    const marca = (x.hoy || i === iMax) ? '<span class="vl">' + x.v + '</span>' : '';
+    return '<div class="pv-col' + (x.hoy ? ' hoy' : '') + '">'
+      + marca
+      + '<div class="mk" style="height:' + alto + '%"></div>'
+      + '<div class="pv-tip">' + x.tip + '</div>'
+      + '</div>';
+  }).join('');
+  const eje = serie.map(function(x){
+    return '<span' + (x.hoy ? ' class="hoy"' : '') + '>' + x.k.slice(0,5) + '</span>';
+  }).join('');
+  return '<figure class="pv-fig ' + (clase || '') + '">'
+    + '<figcaption>' + titulo + ' \u00b7 ' + resumen + '</figcaption>'
+    + '<div class="pv-cols">' + cols + '</div>'
+    + '<div class="pv-ejex">' + eje + '</div>'
+    + '</figure>';
+}
+
+function pintarTendencia(){
+  const caja = document.getElementById('tendencia');
+  if(!caja) return;
+
+  if(diasFallo){
+    caja.innerHTML = '<div class="pv-rot">Los \u00faltimos d\u00edas</div>'
+      + '<div class="cargando">No se pudo bajar <b>historico_dias.json</b> de la '
+      + 'rama <b>data</b>. El resto del tablero no se ve afectado.</div>';
+    return;
+  }
+  if(DIAS === null){
+    caja.innerHTML = '<div class="pv-rot">Los \u00faltimos d\u00edas</div>'
+      + '<div class="cargando">Bajando el resumen d\u00eda por d\u00eda\u2026</div>';
+    return;
+  }
+
+  const todas = ordenarDias(Object.keys(DIAS));
+  if(!todas.length){
+    caja.innerHTML = '<div class="pv-rot">Los \u00faltimos d\u00edas</div>'
+      + '<div class="cargando">Todav\u00eda no hay d\u00edas guardados.</div>';
+    return;
+  }
+
+  /* El selector solo ofrece rangos que el archivo aguanta. Hoy son 13 dias;
+     resumen_dia.py guarda hasta MAX_DIAS = 400, asi que con el tiempo van
+     apareciendo solos. */
+  const rangos = [10, 20, 30, 60].filter(function(n, i){
+    return todas.length > n || (i > 0 && todas.length > [10,20,30,60][i-1]);
+  });
+  if(!rangos.length) rangos.push(todas.length);
+  if(rangos.indexOf(diasRango) < 0) diasRango = rangos[0];
+
+  const claves = todas.slice(-diasRango);
+  const hoyK = todas[todas.length - 1];
+
+  const serieAct = [], serieCai = [];
+  claves.forEach(function(k){
+    const d = DIAS[k] || {};
+    const est = d.estados || {};
+    const act = d.actividades || 0;
+    const comp = est['Completado'] || 0;
+    const pct = act ? (100 * comp / act) : 0;
+    const corte = d.hasta || 's/hora';
+    const cab = '<span class="d">' + k + (k === hoyK ? ' \u00b7 hoy' : '') + '</span>'
+      + '<span class="corte">medido hasta las ' + corte + '</span><br>';
+    serieAct.push({ k:k, v:act, hoy:(k === hoyK), tip: cab
+      + '<b>' + act + '</b> actividades <i>\u00b7</i> <b>' + (d.tecnicos || 0) + '</b> t\u00e9cnicos<br>'
+      + '<b>' + comp + '</b> completadas <i>(' + pct.toFixed(1).replace('.', ',') + '% al corte)</i><br>'
+      + '<i>nuevas</i> <b>' + (d.nuevas || 0) + '</b> <i>\u00b7 al bucket</i> <b>' + (d.al_bucket || 0) + '</b>'
+      + ' <i>\u00b7 repetidas</i> <b>' + (d.repetidas || 0) + '</b>' });
+    serieCai.push({ k:k, v:(d.caidas_total || 0), hoy:(k === hoyK), tip: cab
+      + '<b>' + (d.caidas_total || 0) + '</b> ca\u00eddas <i>\u00b7</i> '
+      + '<b>' + (d.reagendadas || 0) + '</b> reagendadas en TOA<br>'
+      + '<i>sobre</i> <b>' + act + '</b> <i>actividades del d\u00eda</i>' });
+  });
+
+  /* La comparacion se hace contra los dias ANTERIORES, no contra el promedio
+     que ya incluye a hoy: un promedio que se contiene a si mismo se acerca
+     solo al dato y esconde la diferencia. */
+  const previos = serieAct.slice(0, -1);
+  const prom = previos.length
+    ? Math.round(previos.reduce(function(a, x){ return a + x.v; }, 0) / previos.length) : 0;
+  const hoyAct = serieAct.length ? serieAct[serieAct.length - 1].v : 0;
+  const dif = prom ? Math.round(100 * (hoyAct - prom) / prom) : 0;
+  const veredicto = !prom ? ''
+    : (Math.abs(dif) < 10
+        ? ' \u2014 un d\u00eda normal'
+        : (dif > 0 ? ' \u2014 <span class="alto">' + dif + '% m\u00e1s cargado que lo habitual</span>'
+                   : ' \u2014 ' + Math.abs(dif) + '% m\u00e1s liviano que lo habitual'));
+
+  const maxAct = serieAct.reduce(function(m, x){ return x.v > m.v ? x : m; }, serieAct[0]);
+  const promCai = previos.length
+    ? (serieCai.slice(0, -1).reduce(function(a, x){ return a + x.v; }, 0) / previos.length) : 0;
+  const hoyCai = serieCai.length ? serieCai[serieCai.length - 1].v : 0;
+
+  caja.innerHTML =
+      '<div class="pv-tend-cab">'
+    +   '<div class="pv-rot">Los \u00faltimos d\u00edas</div>'
+    +   '<div class="pv-rango">' + rangos.map(function(n){
+          return '<button type="button" class="' + (n === diasRango ? 'act' : '')
+               + '" onclick="setRangoDias(' + n + ')">' + n + ' d\u00edas</button>';
+        }).join('') + '</div>'
+    + '</div>'
+
+    + '<div class="pv-tend-res">Hoy entraron <b>' + hoyAct + '</b> actividades'
+    +   (prom ? ', contra <b>' + prom + '</b> de promedio en los '
+             + previos.length + ' d\u00edas anteriores' : '') + veredicto + '.</div>'
+
+    + '<div class="pv-tend-grid">'
+    +   figuraDias('Actividades asignadas',
+          'm\u00e1ximo <b>' + maxAct.v + '</b> el ' + maxAct.k.slice(0,5), serieAct, '')
+    +   figuraDias('Ca\u00eddas de bandeja',
+          'promedio <b>' + promCai.toFixed(1).replace('.', ',') + '</b> \u00b7 hoy <b>'
+          + hoyCai + '</b>', serieCai, 'cai')
+    + '</div>'
+
+    + '<div class="pv-tend-nota">C\u00f3mo leerlo: cada d\u00eda se mide '
+    + '<b>hasta la hora en que se apag\u00f3 el monitor</b>, y esa hora sale en el globo '
+    + 'de cada barra. Por eso se grafica la carga asignada, que se conoce en la '
+    + 'ma\u00f1ana y no depende del corte, y no el porcentaje de cierre: un d\u00eda '
+    + 'cortado a las 13:00 marca un porcentaje bajo aunque haya sido un buen d\u00eda. '
+    + 'Hoy va en curso, as\u00ed que su barra todav\u00eda puede crecer.</div>';
+}
+
 function pintarPortada(){
   const caja = document.getElementById('portada');
   if(!caja || caja.style.display === 'none') return;
@@ -3975,31 +4411,25 @@ function pintarPortada(){
   const cuenta = e => filas.filter(o => String(o.e || 'Pendiente') === e).length;
   const comp = cuenta('Completado');
   const nore = cuenta('No Realizada');
-  /* El detalle que abre esta caja muestra Canceladas Y Suspendidas juntas
-     (__CANCSUSP__), asi que el numero tiene que contar las dos. Si no, el
-     recuadro dice 6 y al abrirlo aparecen 7. */
+  /* El detalle que abre esta cifra muestra Canceladas Y Suspendidas juntas
+     (__CANCSUSP__), asi que el numero tiene que contar las dos. Si no, dice 6
+     y al abrirlo aparecen 7. */
   const canc = cuenta('Cancelado') + cuenta('Suspendido');
   const pend = filas.length - comp - nore - canc;
-  const rgu  = filas.reduce((s,o) => s + (parseFloat(o.rgu) || 0), 0);
 
   /* Los contadores salen de las MISMAS funciones que usa el mapa, no de un
-     calculo aparte. Antes el panel los rehacia por su cuenta y los numeros
-     no cuadraban con los botones de adentro:
-       - Nuevas: el mapa saca las Modificaciones de Servicio (entran a
-         chorros y no son carga de terreno) y muestra solo las nuevitas.
-       - Sin completar: el mapa cuenta TECNICOS que no han cerrado ninguna,
-         no ordenes sin cerrar. Son dos cosas distintas.
-       - Repetidas: direcciones unicas, con la misma normalizacion del mapa. */
+     calculo aparte. Antes el panel los rehacia por su cuenta y los numeros no
+     cuadraban con los botones de adentro. */
   const A = (typeof ALERTAS !== 'undefined' && ALERTAS) ? ALERTAS : {};
   const caidas  = nCaidas();
   const nuevas  = contar(nuevasDelDia()).nuevita;
   const repe    = nRepe();
-  /* El mapa no cuenta las ordenes con marca 'reag', cuenta las RECAIDAS
-     VIVAS: una direccion que se cayo hoy y que ademas tiene otra orden
-     todavia abierta, o sea donde aun se puede intervenir. Es lo que muestra
-     el boton del mapa y hay que mostrar lo mismo. */
   const reca    = nRecaidasVivas();
   const sinComp = tecnicosSinCompletar().length;
+  /* "Mas de 3 horas" antes era solo un enlace sin cifra, aunque el numero ya
+     estaba calculado para el boton del mapa. Aca se muestra. */
+  const atras   = (typeof trabajosAtrasados === 'function') ? trabajosAtrasados().length : null;
+  const alBucket = (A.al_bucket !== undefined && A.al_bucket !== null) ? A.al_bucket : 0;
 
   /* Lo que queda sin cerrar en cada franja: dice como viene el resto del dia. */
   const abierta = o => !['Completado','No Realizada','Cancelado']
@@ -4022,98 +4452,163 @@ function pintarPortada(){
     if(String(o.e) === 'Completado') porComuna[c].c++;
   });
 
-  const alBucket = (A.al_bucket !== undefined && A.al_bucket !== null) ? A.al_bucket : 0;
-
-  const upd = (document.getElementById('lastUpd') || {}).textContent || '';
   let fecha = (typeof FECHA_DATOS !== 'undefined' && FECHA_DATOS)
     ? FECHA_DATOS.toLocaleDateString('es-CL', {weekday:'long', day:'numeric', month:'long'})
     : '';
   if(fecha) fecha = fecha.charAt(0).toUpperCase() + fecha.slice(1);
-
-  const pct = filas.length ? Math.round(1000*comp/filas.length)/10 : 0;
   const hoy = (typeof FECHA_DATOS !== 'undefined' && FECHA_DATOS)
     && FECHA_DATOS.toDateString() === new Date().toDateString();
+  const pct = filas.length ? Math.round(1000*comp/filas.length)/10 : 0;
+  const nTec = Object.keys(DB || {}).length;
 
-  /* Cada cifra abre el mismo detalle que dentro del mapa: la lista de esas
-     actividades con su reparto por ciudad, franja, tipo y tecnico. El RGU no
-     abre nada porque es un total, no un grupo de ordenes. */
-  const mini = (v, l, clase, est) => est
-    ? '<button class="' + clase + '" onclick="desdePortada(function(){abrirEst(\''+est+'\')})">'
-      + '<div class="n">' + v + '</div><div class="l">' + l + '</div></button>'
-    : '<div class="' + clase + '"><div class="n">' + v + '</div>'
-      + '<div class="l">' + l + '</div></div>';
+  /* ---- cada cifra abre su detalle, el mismo que dentro del mapa ---- */
+  const cif = (v, l, clase, est) =>
+      '<button class="pv-cif ' + clase + '" onclick="desdePortada(function(){abrirEst(\'' + est + '\')})">'
+    +   '<div class="n">' + v + '</div><div class="l">' + l + '</div>'
+    + '</button>';
 
-  const b = (fn, texto, valor, alerta, punto) => {
-    const esCifra = (valor !== undefined && valor !== null);
-    return '<button class="pz-b'+(alerta ? ' alerta' : '')
-      +   (esCifra && !valor ? ' apagada' : '')+'" onclick="desdePortada('+fn+')">'
-      + (punto ? '<span class="pt" style="background:'+punto+'"></span>' : '')
-      + '<span class="et'+(esCifra ? '' : ' enlace')+'">' + texto + '</span>'
-      + '<span class="v'+(valor ? '' : (esCifra ? ' cero' : ' flecha'))+'">'
-      +   (esCifra ? valor : '›') + '</span>'
-      + '</button>';
-  };
+  /* ---- reparto del dia ---- */
+  const tramo = (v, color, nom) => v
+    ? '<span style="width:' + (100*v/filas.length) + '%;background:' + color + '" title="'
+      + nom + ': ' + v + '"></span>' : '';
+  const leyItem = (color, nom, v) =>
+    '<span class="li"><i style="background:' + color + '"></i>' + nom + ' <b>' + v + '</b></span>';
 
-  caja.innerHTML = '<div class="pz-in">'
-
-    + '<div class="pz-barra">'
-    +   '<a class="aqui" onclick="verMapa()">Rutas</a>'
-    +   '<a href="' + URL_ACTIVIDADES + '" target="_blank">Actividades</a>'
-    +   '<a href="' + URL_HISTORIAL + '" target="_blank">Historial</a>'
-    +   '<span class="sep"></span>'
-    +   '<span class="upd"></span>'
+  const barra = !filas.length ? '' :
+      '<div class="pv-barra">'
+    +   tramo(comp, '#0e7c6b', 'Completadas') + tramo(nore, '#d04a46', 'No realizadas')
+    +   tramo(pend, '#4a90e2', 'Sin cerrar')  + tramo(canc, '#c3d2e0', 'Canc/susp')
     + '</div>'
+    + '<div class="pv-ley">'
+    +   leyItem('#0e7c6b', 'Completadas', comp) + leyItem('#d04a46', 'No realizadas', nore)
+    +   leyItem('#4a90e2', 'Sin cerrar', pend)  + leyItem('#c3d2e0', 'Canc/susp', canc)
+    + '</div>';
 
-    + '<div class="pz-cab"><h2>Quilpué y Villa Alemana</h2></div>'
+  const comunas = Object.keys(porComuna).sort().map(function(c){
+    const d = porComuna[c];
+    const p = Math.round(100 * d.c / d.t);
+    const nom = c.toLowerCase().replace(/(^|\s)\S/g, t => t.toUpperCase());
+    return '<div class="c"><span class="nm">' + nom + '</span>'
+      + '<span class="pista"><span style="width:' + p + '%"></span></span>'
+      + '<span class="vl">' + p + '%</span></div>';
+  }).join('');
 
-    + '<div class="pz-dos"><div class="pz-tarj">'
+  /* ---- la linea del dia: que franja se esta corriendo ahora ----
+     Explica el numero de al lado. 33 sin cerrar en la franja 16-19 a las dos
+     de la tarde no es un atraso: esa franja todavia no empieza. */
+  const ahora = new Date().getHours() + new Date().getMinutes()/60;
+  const franjas = Object.keys(porFranja).sort().map(function(f){
+    const d = porFranja[f];
+    const m = /^(\d{1,2})\s*-\s*(\d{1,2})$/.exec(f);
+    const enCurso = hoy && m && ahora >= +m[1] && ahora < +m[2];
+    const cerradas = d.t - d.ab;
+    const p = d.t ? Math.round(100 * cerradas / d.t) : 0;
+    return '<div class="fr' + (enCurso ? ' ahora' : '') + (d.ab ? '' : ' vacia') + '">'
+      + '<div class="h"><span class="hh">' + f + '</span>'
+      +   (enCurso ? '<span class="ah">en curso</span>' : '') + '</div>'
+      + '<div class="pista"><span style="width:' + p + '%"></span></div>'
+      + '<div class="q"><b>' + d.ab + '</b> sin cerrar de ' + d.t + '</div>'
+      + '</div>';
+  }).join('');
 
-    +   '<div class="pz-cabt">'
-    +     '<div class="dia">' + (fecha || 'Jornada') +
-          (hoy ? '<span class="pz-curso">en curso</span>' : '') + '</div>'
-    +     comunasHTML(porComuna)
+  /* ---- lo que pide accion ----
+     Tres tarjetas grandes con la explicacion de que significa cada una, para
+     el que no vive dentro del modulo. En cero se apagan enteras. */
+  const alerta = (fn, n, titulo, sub, tono) =>
+      '<button class="pv-al ' + (n > 0 ? 'viva' : 'cero') + '" style="--tono:' + tono + '"'
+    +   ' onclick="desdePortada(' + fn + ')">'
+    +   '<span class="n">' + (n === null ? '\u2013' : n) + '</span>'
+    +   '<span class="tx"><span class="t">' + titulo + '</span>'
+    +     '<span class="s">' + sub + '</span></span>'
+    + '</button>';
+
+  const chip = (fn, n, nom, color) =>
+      '<button class="pv-ch' + (n > 0 ? '' : ' cero') + '" onclick="desdePortada(' + fn + ')">'
+    +   '<i style="background:' + (n > 0 ? color : '#dbe4ed') + '"></i>' + nom
+    +   ' <b>' + n + '</b></button>';
+
+  const enlace = (destino, texto) => destino.indexOf('http') === 0
+    ? '<a class="pv-lk" href="' + destino + '" target="_blank">' + texto
+      + '<span class="fl">\u203a</span></a>'
+    : '<button class="pv-lk" onclick="desdePortada(' + destino + ')">' + texto
+      + '<span class="fl">\u203a</span></button>';
+
+  caja.innerHTML =
+
+      '<header class="pv-bar pz-barra">'
+    +   '<div class="pv-marca"><span class="pv-nom">M\u00f3dulo de Actividades</span>'
+    +     '<span class="pv-zona">Quilpu\u00e9 \u00b7 Villa Alemana</span></div>'
+    +   '<nav class="pv-seg">'
+    +     '<a class="aqui" onclick="verMapa()">Rutas</a>'
+    +     '<a href="' + URL_ACTIVIDADES + '" target="_blank">Actividades</a>'
+    +     '<a href="' + URL_HISTORIAL + '" target="_blank">Historial</a>'
+    +   '</nav>'
+    +   '<span class="pv-upd"><i></i><span class="upd"></span></span>'
+    + '</header>'
+
+    + '<div class="pv-in">'
+
+    /* ---- 1. como va el dia ---- */
+    +   '<section class="pv-hero">'
+    +     '<div>'
+    +       '<div class="pv-fecha">' + (fecha || 'Jornada')
+    +         (hoy ? '<span class="pv-curso">en curso</span>' : '') + '</div>'
+    +       '<div class="pv-pct"><span class="v">' + pct.toFixed(1).replace('.', ',')
+    +         '</span><span class="u">%</span></div>'
+    +       '<div class="pv-pctl">completadas \u00b7 ' + filas.length + ' actividades \u00b7 '
+    +         nTec + ' t\u00e9cnicos en ruta</div>'
+    +       '<div class="pv-cifras">'
+    +         cif(filas.length, 'del d\u00eda', 'tot', '__TODAS__')
+    +         cif(comp, 'completadas', 'comp', 'Completado')
+    +         cif(nore, 'no realizadas', 'nore', 'No Realizada')
+    +         cif(pend, 'sin cerrar', 'abie', '__ABIERTAS__')
+    +         cif(canc, 'canc/susp', 'canc', '__CANCSUSP__')
+    +       '</div>'
+    +     '</div>'
+    +     '<div>'
+    +       '<div class="pv-rot">Reparto del d\u00eda</div>'
+    +       barra
+    +       '<div class="pv-rot" style="margin:24px 0 11px">Por comuna</div>'
+    +       '<div class="pv-com">' + comunas + '</div>'
+    +     '</div>'
+    +   '</section>'
+
+    /* ---- 2. como viene el resto del dia ---- */
+    +   '<section class="pv-tl">'
+    +     '<div class="pv-rot">C\u00f3mo viene el resto del d\u00eda</div>'
+    +     '<div class="pv-tlf">' + franjas + '</div>'
+    +   '</section>'
+
+    /* ---- 2b. los ultimos dias ---- */
+    +   '<section class="pv-tend" id="tendencia"></section>'
+
+    /* ---- 3. lo que pide accion ---- */
+    +   '<div class="pv-rot pv-rot-sec">Requiere atenci\u00f3n</div>'
+    +   '<section class="pv-alertas">'
+    +     alerta('toggleCaidas', caidas, 'Ca\u00eddas', 'se las sacaron al t\u00e9cnico sin que las tocara', '#c0392f')
+    +     alerta('toggleSinCompletar', sinComp, 'T\u00e9cnicos sin completar', 'no han cerrado ninguna todav\u00eda hoy', '#b45309')
+    +     alerta('toggleAtrasados', atras, 'M\u00e1s de 3 horas', 'iniciadas hace rato y sin cerrar', '#be123c')
+    +   '</section>'
+    +   '<div class="pv-chips">'
+    +     chip('toggleNuevas', nuevas, 'Nuevas', '#2563eb')
+    +     chip('toggleNuevas', alBucket, 'Al bucket', '#2563eb')
+    +     chip('toggleReca', reca, 'Reingresadas', '#7d8fa3')
+    +     chip('toggleRepe', repe, 'Direcciones repetidas', '#7c3aed')
     +   '</div>'
 
-    +   '<div class="pz-hero">'
-    +     '<div><div class="grande">' + pct.toFixed(1).replace('.', ',') + '%</div>'
-    +       '<div class="bajo">completadas · ' + Object.keys(DB || {}).length +
-            ' técnicos en ruta</div></div>'
-    +     '<div><div class="pz-rotf">Sin cerrar por franja</div>'
-    +       franjasHTML(porFranja) + '</div>'
-    +   '</div>'
+    /* ---- 4. enlaces ---- */
+    +   '<div class="pv-rot pv-rot-sec">Reportes</div>'
+    +   '<nav class="pv-links">'
+    +     enlace('toggleComp', 'Completitud al corte de las 13:00')
+    +     enlace('verReporteRepe', 'Reporte hist\u00f3rico de direcciones')
+    +     enlace(URL_SINMORADORES, 'Sin moradores semanal')
+    +     enlace(URL_EQUIPO, 'Detalle por supervisor')
+    +   '</nav>'
 
-    +   barraDia(comp, nore, pend, canc, filas.length)
+    + '</div>';
 
-    +   '<div class="mini">'
-    +     mini(filas.length, 'actividades', 'e-tot', '__TODAS__')
-    +     mini(comp, 'completadas', 'e-comp', 'Completado')
-    +     mini(nore, 'no realizadas', 'e-nore', 'No Realizada')
-    +     mini(pend, 'sin cerrar', 'e-pend', '__ABIERTAS__')
-    +     mini(canc, 'canceladas', 'e-canc', '__CANCSUSP__')
-    +   '</div>'
-    + '</div>'
-
-    + '<div><div class="pz-rot">Paneles de la jornada</div><div class="pz-grid">'
-    +   b('toggleCaidas', 'Caídas', caidas, caidas > 0, '#dc2626')
-    +   b('toggleComp', 'Completitud')
-    +   b('toggleSinCompletar', 'Técnicos sin completar', sinComp, false, '#f59e0b')
-    +   b('toggleAtrasados', 'Más de 3 horas')
-    +   b('toggleReca', 'Reingresadas', reca, false, '#c3cdd9')
-    +   b('toggleNuevas', 'Nuevas', nuevas, false, '#2563eb')
-    +   b('toggleNuevas', 'Al bucket', alBucket, false, '#2563eb')
-    +   b('toggleRepe', 'Repetidas', repe, false, '#7c3aed')
-    +   b('verReporteRepe', 'Reporte histórico')
-    + '</div>'
-    + '<div class="pz-rot" style="margin-top:20px">Reportes del historial</div>'
-    + '<div class="pz-grid">'
-    +   '<a class="pz-b" href="' + URL_SINMORADORES + '" target="_blank">'
-    +     '<span class="et enlace">Sin moradores semanal</span>'
-    +     '<span class="v flecha">›</span></a>'
-    +   '<a class="pz-b" href="' + URL_EQUIPO + '" target="_blank">'
-    +     '<span class="et enlace">Detalle por supervisor</span>'
-    +     '<span class="v flecha">›</span></a>'
-    + '</div></div></div></div>';
-
+  pintarTendencia();   // con lo que ya haya en memoria
+  asegurarDias();      // y lo pide una sola vez si todavia no esta
   refrescarAviso();
 }
 
