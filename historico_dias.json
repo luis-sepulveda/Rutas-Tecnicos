@@ -8228,21 +8228,21 @@
    }
   },
   "22-09-2026": {
-   "hasta": "17:43",
-   "actividades": 173,
+   "hasta": "17:48",
+   "actividades": 174,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 50,
-    "Completado": 88,
-    "Iniciado": 23,
+    "Completado": 91,
+    "Iniciado": 21,
     "Suspendido": 4,
     "Cancelado": 8
    },
-   "rgu": 262.5,
+   "rgu": 262.6,
    "caidas_total": 9,
    "caidas_activas": 9,
    "caidas_resueltas": 0,
-   "nuevas": 23,
+   "nuevas": 24,
    "al_bucket": 30,
    "repetidas": 27,
    "reagendadas": 10,
@@ -8331,6 +8331,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NZJH5A9",
+      "tec": "ALFREDO ALCAYAGA F",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "17:46",
+      "d": "ESTRELLA POLAR 2261, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3NZI80NV",
       "tec": "JOEL GUSTAVE GUSTA",
@@ -8969,5 +8978,5 @@
    }
   }
  },
- "generado": "22-09-2026 17:43"
+ "generado": "22-09-2026 17:48"
 }
