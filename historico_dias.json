@@ -8228,21 +8228,21 @@
    }
   },
   "22-09-2026": {
-   "hasta": "11:20",
-   "actividades": 145,
+   "hasta": "11:35",
+   "actividades": 146,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 14,
-    "Iniciado": 32,
-    "Pendiente": 89,
-    "Completado": 8,
-    "en ruta": 2
+    "No Realizada": 19,
+    "Iniciado": 27,
+    "Pendiente": 82,
+    "Completado": 11,
+    "en ruta": 7
    },
-   "rgu": 228.0,
+   "rgu": 230.5,
    "caidas_total": 1,
    "caidas_activas": 1,
    "caidas_resueltas": 0,
-   "nuevas": 5,
+   "nuevas": 6,
    "al_bucket": 0,
    "repetidas": 27,
    "reagendadas": 10,
@@ -8259,6 +8259,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3NZ580MA",
+      "tec": "LUIS CASTRO TORRES",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "17:30",
+      "d": "LEUCOTON 1100 EDIF. 4 DEPTO 102, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NZ43PYH",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -8293,7 +8302,7 @@
       "f": "10-13",
       "hi": "11:35",
       "d": "VILLA ESMERALDA 1531 DEPTO 304, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NZ3YVGY",
@@ -8367,18 +8376,6 @@
       "ult_cierre": "Sin acceso a vivienda"
      },
      {
-      "o": "1-3NW3GOQ9",
-      "cat": "Alta 1 Play",
-      "f": "10-13",
-      "hi": "11:38",
-      "d": "PJE HUALA 2665, QUILPUE",
-      "e": "Pendiente",
-      "tec": "DANIEL NAVARRETE E",
-      "visitas": 2,
-      "ult_fecha": "16-09-2026",
-      "ult_cierre": "Direccion incorrecta"
-     },
-     {
       "o": "1-3NWNCW9D",
       "cat": "Migración 1 Play",
       "f": "10-13",
@@ -8420,7 +8417,7 @@
       "f": "10-13",
       "hi": "10:19",
       "d": "LAS VIOLETAS 2658 CASA B, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "FELIPE SILVA R",
       "visitas": 1,
       "ult_fecha": "15-09-2026",
@@ -8430,7 +8427,7 @@
       "o": "1-3NYBZXUH",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "15:26",
+      "hi": "15:33",
       "d": "OJOS DE AGUA 108 EDIF. A1 DEPTO 201, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -8454,7 +8451,7 @@
       "o": "1-3NYLC9T7",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:39",
+      "hi": "14:00",
       "d": "BARROS ARANA 121 CASA A, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JEAN ROODLY ORELIEN",
@@ -8487,10 +8484,22 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3NW3GOQ9",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "11:39",
+      "d": "PJE HUALA 2665, QUILPUE",
+      "e": "en ruta",
+      "tec": "JORDAN ROA PEREZ",
+      "visitas": 2,
+      "ult_fecha": "16-09-2026",
+      "ult_cierre": "Direccion incorrecta"
+     },
+     {
       "o": "1-3NZ2NA2V",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:59",
+      "hi": "14:00",
       "d": "SANTA ROSA 16 CASA MI, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -8504,7 +8513,7 @@
       "f": "10-13",
       "hi": "09:49",
       "d": "SANTA MARGARITA 1332, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JOSE ROJO A",
       "visitas": 1,
       "ult_fecha": "13-08-2026",
@@ -8514,7 +8523,7 @@
       "o": "1-3NY77CWV",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:30",
+      "hi": "14:44",
       "d": "TARRAGONA 61, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -8540,7 +8549,7 @@
       "f": "10-13",
       "hi": "09:47",
       "d": "MADRID 620 CASA D, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "KEVIN TAPIA RETAMAL",
       "visitas": 3,
       "ult_fecha": "21-09-2026",
@@ -8598,9 +8607,9 @@
       "o": "1-3NZ1HE59",
       "cat": "Reparación",
       "f": "10-13",
-      "hi": "12:51",
+      "hi": "11:37",
       "d": "NANDU 1625 DEPTO 22, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "PABLO HERNANEZ FERNANDEZ",
       "visitas": 1,
       "ult_fecha": "13-08-2026",
@@ -8612,7 +8621,7 @@
       "f": "10-13",
       "hi": "10:39",
       "d": "CARLOS SAAVEDRA 80 CASA 131, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "RAFAEL VARGAS B",
       "visitas": 1,
       "ult_fecha": "21-09-2026",
@@ -8686,7 +8695,7 @@
       "o": "1-3NW5W0EA",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "14:45",
       "d": "ISIDORA 2833 DEPTO 12, QUILPUE",
       "e": "Pendiente",
       "tec": "JORDAN ROA PEREZ",
@@ -8698,7 +8707,7 @@
       "f": "10-13",
       "hi": "10:32",
       "d": "LAS ORQUIDEAS 1650 CASA 78, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "JOSE CASTRO P",
       "desde": "21-09-2026"
      },
@@ -8706,7 +8715,7 @@
       "o": "1-3NWOL603",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:20",
+      "hi": "17:09",
       "d": "HUILLICHES 1586, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -8736,5 +8745,5 @@
    }
   }
  },
- "generado": "22-09-2026 11:20"
+ "generado": "22-09-2026 11:35"
 }
