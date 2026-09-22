@@ -8228,15 +8228,15 @@
    }
   },
   "22-09-2026": {
-   "hasta": "13:36",
+   "hasta": "13:41",
    "actividades": 156,
    "tecnicos": 37,
    "estados": {
-    "No Realizada": 27,
+    "No Realizada": 29,
     "Completado": 40,
-    "Pendiente": 69,
-    "Iniciado": 15,
-    "en ruta": 2,
+    "Pendiente": 68,
+    "Iniciado": 13,
+    "en ruta": 3,
     "Cancelado": 3
    },
    "rgu": 242.6,
@@ -8366,7 +8366,7 @@
       "f": "13-16",
       "hi": "15:24",
       "d": "PORVENIR 26, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3NWM6RXG",
@@ -8736,7 +8736,7 @@
       "o": "1-3NY9G6LV",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:43",
+      "hi": "13:50",
       "d": "LAS ROSAS 859, QUILPUE",
       "e": "Pendiente",
       "tec": "CESAR MENA OLIVEROS",
@@ -8826,5 +8826,5 @@
    }
   }
  },
- "generado": "22-09-2026 13:36"
+ "generado": "22-09-2026 13:41"
 }
