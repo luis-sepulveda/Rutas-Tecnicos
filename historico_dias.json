@@ -8228,15 +8228,15 @@
    }
   },
   "22-09-2026": {
-   "hasta": "13:26",
+   "hasta": "13:31",
    "actividades": 156,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 27,
-    "Completado": 39,
-    "Pendiente": 72,
-    "en ruta": 6,
-    "Iniciado": 9,
+    "Completado": 40,
+    "Pendiente": 71,
+    "en ruta": 3,
+    "Iniciado": 12,
     "Cancelado": 3
    },
    "rgu": 242.6,
@@ -8393,7 +8393,7 @@
       "f": "10-13",
       "hi": "12:55",
       "d": "JARDINES DE PASO HONDO 02330 EDIF. C DEPTO 115, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      }
     ],
     "repetidas": [
@@ -8568,9 +8568,9 @@
       "o": "1-3NYBZXUH",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "13:31",
+      "hi": "13:28",
       "d": "OJOS DE AGUA 108 EDIF. A1 DEPTO 201, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JOSE GALAZ D",
       "visitas": 2,
       "ult_fecha": "25-08-2026",
@@ -8664,7 +8664,7 @@
       "o": "1-3NXK9MXU",
       "cat": "Migración 3 Play",
       "f": "16-19",
-      "hi": "16:53",
+      "hi": "16:54",
       "d": "ARTURO ALESSANDRI 578, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -8736,7 +8736,7 @@
       "o": "1-3NY9G6LV",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:40",
+      "hi": "14:43",
       "d": "LAS ROSAS 859, QUILPUE",
       "e": "Pendiente",
       "tec": "CESAR MENA OLIVEROS",
@@ -8826,5 +8826,5 @@
    }
   }
  },
- "generado": "22-09-2026 13:26"
+ "generado": "22-09-2026 13:31"
 }
