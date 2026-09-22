@@ -8228,15 +8228,15 @@
    }
   },
   "22-09-2026": {
-   "hasta": "11:35",
+   "hasta": "11:40",
    "actividades": 146,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 19,
     "Iniciado": 27,
     "Pendiente": 82,
-    "Completado": 11,
-    "en ruta": 7
+    "Completado": 13,
+    "en ruta": 5
    },
    "rgu": 230.5,
    "caidas_total": 1,
@@ -8302,7 +8302,7 @@
       "f": "10-13",
       "hi": "11:35",
       "d": "VILLA ESMERALDA 1531 DEPTO 304, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NZ3YVGY",
@@ -8427,7 +8427,7 @@
       "o": "1-3NYBZXUH",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "15:33",
+      "hi": "15:29",
       "d": "OJOS DE AGUA 108 EDIF. A1 DEPTO 201, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -8487,9 +8487,9 @@
       "o": "1-3NW3GOQ9",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "11:39",
+      "hi": "11:37",
       "d": "PJE HUALA 2665, QUILPUE",
-      "e": "en ruta",
+      "e": "Pendiente",
       "tec": "JORDAN ROA PEREZ",
       "visitas": 2,
       "ult_fecha": "16-09-2026",
@@ -8695,7 +8695,7 @@
       "o": "1-3NW5W0EA",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:45",
+      "hi": "14:43",
       "d": "ISIDORA 2833 DEPTO 12, QUILPUE",
       "e": "Pendiente",
       "tec": "JORDAN ROA PEREZ",
@@ -8715,7 +8715,7 @@
       "o": "1-3NWOL603",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "17:09",
+      "hi": "16:59",
       "d": "HUILLICHES 1586, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -8745,5 +8745,5 @@
    }
   }
  },
- "generado": "22-09-2026 11:35"
+ "generado": "22-09-2026 11:40"
 }
