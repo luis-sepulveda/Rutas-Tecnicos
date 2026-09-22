@@ -8228,15 +8228,15 @@
    }
   },
   "22-09-2026": {
-   "hasta": "18:13",
+   "hasta": "18:18",
    "actividades": 176,
    "tecnicos": 37,
    "estados": {
     "No Realizada": 52,
-    "Completado": 98,
+    "Completado": 99,
     "Suspendido": 4,
     "Cancelado": 8,
-    "Iniciado": 14
+    "Iniciado": 13
    },
    "rgu": 262.8,
    "caidas_total": 9,
@@ -8347,7 +8347,7 @@
       "f": "16-19",
       "hi": "17:58",
       "d": "HUILLICHES 1586, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NZJH5A9",
@@ -8996,5 +8996,5 @@
    }
   }
  },
- "generado": "22-09-2026 18:13"
+ "generado": "22-09-2026 18:18"
 }
