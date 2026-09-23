@@ -8996,15 +8996,15 @@
    }
   },
   "23-09-2026": {
-   "hasta": "15:03",
+   "hasta": "15:14",
    "actividades": 158,
    "tecnicos": 37,
    "estados": {
-    "Completado": 58,
-    "Iniciado": 25,
-    "Pendiente": 37,
-    "en ruta": 5,
-    "No Realizada": 24,
+    "Completado": 61,
+    "en ruta": 6,
+    "Pendiente": 34,
+    "No Realizada": 26,
+    "Iniciado": 22,
     "Suspendido": 4,
     "Cancelado": 5
    },
@@ -9099,7 +9099,7 @@
       "f": "16-19",
       "hi": "14:07",
       "d": "GALO VALENCIA 544, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O03VMNE",
@@ -9337,7 +9337,7 @@
       "f": "16-19",
       "hi": "14:07",
       "d": "GALO VALENCIA 544, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "ALEXIS JARA",
       "visitas": 2,
       "ult_fecha": "16-09-2026",
@@ -9541,7 +9541,7 @@
       "f": "13-16",
       "hi": "13:30",
       "d": "ALCALDE ALEJANDRO PERALTA 1121 LOCAL 10, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JOSE PEREZ RANGEL",
       "visitas": 2,
       "ult_fecha": "21-09-2026",
@@ -9637,7 +9637,7 @@
       "f": "13-16",
       "hi": "14:43",
       "d": "TARRAGONA 61, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "MATIAS APELEO APELEO",
       "visitas": 2,
       "ult_fecha": "22-09-2026",
@@ -9695,7 +9695,7 @@
       "o": "1-3NZXVYVM",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:18",
+      "hi": "16:41",
       "d": "SAN MARTIN 446, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -9709,7 +9709,7 @@
       "o": "1-3NZ3RONO",
       "cat": "Migración 2 Play",
       "f": "16-19",
-      "hi": "16:14",
+      "hi": "16:53",
       "d": "DE VEER 1451, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -9729,5 +9729,5 @@
    }
   }
  },
- "generado": "23-09-2026 15:03"
+ "generado": "23-09-2026 15:14"
 }
