@@ -8996,15 +8996,15 @@
    }
   },
   "23-09-2026": {
-   "hasta": "14:38",
+   "hasta": "14:43",
    "actividades": 158,
    "tecnicos": 37,
    "estados": {
-    "Completado": 52,
-    "Iniciado": 25,
-    "Pendiente": 46,
+    "Completado": 53,
+    "Iniciado": 24,
+    "Pendiente": 44,
     "No Realizada": 23,
-    "en ruta": 3,
+    "en ruta": 5,
     "Suspendido": 4,
     "Cancelado": 5
    },
@@ -9144,7 +9144,7 @@
       "f": "16-19",
       "hi": "17:43",
       "d": "PJE TORREMOLINOS 0523, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O00VPYW",
@@ -9261,7 +9261,7 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "EL RINCON DE LOS CISNES 617, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NZYE527",
@@ -9625,7 +9625,7 @@
       "f": "13-16",
       "hi": "14:39",
       "d": "TARRAGONA 61, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Pendiente",
       "tec": "MATIAS APELEO APELEO",
       "visitas": 2,
       "ult_fecha": "22-09-2026",
@@ -9729,5 +9729,5 @@
    }
   }
  },
- "generado": "23-09-2026 14:38"
+ "generado": "23-09-2026 14:43"
 }
