@@ -8996,12 +8996,12 @@
    }
   },
   "23-09-2026": {
-   "hasta": "09:30",
+   "hasta": "09:35",
    "actividades": 107,
    "tecnicos": 37,
    "estados": {
-    "Pendiente": 87,
-    "en ruta": 19,
+    "Pendiente": 83,
+    "en ruta": 23,
     "Cancelado": 1
    },
    "rgu": 180.5,
@@ -9030,7 +9030,7 @@
       "o": "1-3NZMGHU1",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:18",
+      "hi": "14:48",
       "d": "PJE PARTICULAR(J. URIBE) 59 CASA E, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -9138,7 +9138,7 @@
       "o": "1-3NZ2A7K2",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:21",
+      "hi": "17:03",
       "d": "ALMIRANTE NEFF 653 EDIF. 3 DEPTO 51, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -9150,7 +9150,7 @@
       "o": "1-3NZ8UY3L",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "11:37",
+      "hi": "11:19",
       "d": "LAGO JANOSA 2685 DEPTO 41, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -9186,9 +9186,9 @@
       "o": "1-3NZNYZJX",
       "cat": "Reparación",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:44",
       "d": "PJE COSTA DE LA LUZ 046, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "LUIS GATICA DAVILA",
       "visitas": 2,
       "ult_fecha": "15-09-2026",
@@ -9210,7 +9210,7 @@
       "o": "1-3NZ7U071",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:30",
+      "hi": "10:59",
       "d": "SANTA MARIA 0241, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -9258,7 +9258,7 @@
       "o": "1-3NWR9A2Z",
       "cat": "Reparación",
       "f": "10-13",
-      "hi": "12:56",
+      "hi": "12:40",
       "d": "VOLCAN SOCOMPA 2675, QUILPUE",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
@@ -9294,9 +9294,9 @@
       "o": "1-3NZC0L4T",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:42",
       "d": "ALDO FRANCIA 2398, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JOSE PEREZ RANGEL",
       "desde": "22-09-2026"
      }
@@ -9304,5 +9304,5 @@
    }
   }
  },
- "generado": "23-09-2026 09:30"
+ "generado": "23-09-2026 09:35"
 }
