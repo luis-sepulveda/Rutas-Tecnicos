@@ -1236,6 +1236,14 @@
   .pv-ini .fl { font-size:15px; line-height:1; }
   .pv-ini:hover { background:#d3ede8; }
   .pv-ini:focus-visible { outline:2px solid #0f766e; outline-offset:2px; }
+  /* tablas del panel Inicio de jornada (las mismas del reporte de WhatsApp) */
+  .ini-scroll { overflow-x:auto; }
+  .ini-tab { border-collapse:collapse; font-size:13px; font-variant-numeric:tabular-nums; min-width:360px; }
+  .ini-tab th { font-weight:600; color:#5d7389; text-align:right; padding:5px 14px; border-bottom:1px solid #dbe4ed; }
+  .ini-tab td { text-align:right; padding:5px 14px; border-bottom:1px solid #edf1f5; color:#15293e; }
+  .ini-tab td.ini-nom { text-align:left; padding-left:0; }
+  .ini-tab td.ini-t { font-weight:700; }
+  .ini-tab tr.ini-tot td { font-weight:700; border-top:1px solid #dbe4ed; border-bottom:0; }
   .pv-curso { font-size:10.5px; font-weight:700; padding:3px 10px; border-radius:999px;
     background:#fef3c7; color:#92400e; letter-spacing:.02em;
     font-family:'DM Sans',sans-serif; }
@@ -3614,33 +3622,69 @@ function abrirInicio(){
   renderEst();
   asegurarInicio(function(){ if(estActual === '__INICIO__') renderEst(); });
 }
-/* Las actividades con que partio el dia, cada una con el estado que tiene
-   AHORA: si ya esta en una bandeja, el de la bandeja; si sigue sin tecnico,
-   'En bucket'; si no aparece en ningun lado, 'Ya no esta' (cancelada,
-   reagendada a otro dia o sacada de la zona). */
+/* Las actividades con que partio el dia, TAL COMO ESTABAN en el Excel de la
+   manana: antes de que los tecnicos las tocaran. No se cruzan con el estado
+   actual (se probo y a Luis no le servia: el panel es la foto del inicio, no
+   el avance del dia, que ya muestran las otras cifras). Tampoco se filtra por
+   tecnico: a esa hora casi todas estan en el bucket. */
 function actividadesInicio(){
   const foto = inicioHoy();
   if(!foto) return [];
-  const ahora = {};
-  Object.keys(DB || {}).forEach(function(t){
-    (DB[t] || []).forEach(function(p){ ahora[p.o] = {tec:t, p:p}; });
-  });
-  const ft = document.getElementById('selTec').value;
   const out = [];
   foto.ots.forEach(function(o){
-    const hoy = ahora[o.o];
-    // Direccion, franja y tipo salen de la foto de la manana: asi los filtros
-    // y el reparto no cambian aunque despues muevan la orden.
-    const p = {o:o.o, d:o.d, f:o.f, t:o.t, cat:o.cat, cie: hoy ? hoy.p.cie : ''};
-    let e, tec;
-    if(hoy){ e = String(hoy.p.e || 'Pendiente'); tec = hoy.tec; }
-    else if(EN_BUCKET.has(o.o)){ e = 'En bucket'; tec = 'En bucket'; }
-    else { e = 'Ya no est\u00e1'; tec = 'Ya no est\u00e1'; }
-    if(ft !== '__ALL__' && tec !== ft) return;
+    const p = {o:o.o, d:o.d, f:o.f, t:o.t, cat:o.cat};
     if(!okCiudad(p) || !okFranja(p)) return;
-    out.push({tec:tec, p:p, e:e});
+    out.push({tec:o.tec, p:p, e:'Pendiente'});
   });
   return out;
+}
+
+let listaInicioHtml = '';
+/* Lo que muestra el panel de Inicio de jornada: el tipo de actividad con su
+   Play (igual que los otros paneles) y las dos tablas que se mandan por
+   WhatsApp cada manana, comuna x franja y tipo x franja. Nada del avance del
+   dia: el codigo de cierre y el reparto por tecnico se sacaron a proposito. */
+function tablasInicio(lista, pal, grad, porTipo, total){
+  const franjas = [];
+  lista.forEach(function(x){ if(franjas.indexOf(x.p.f) < 0) franjas.push(x.p.f); });
+  franjas.sort();
+  const tabla = function(titulo, clave){
+    const filas = {};
+    lista.forEach(function(x){
+      const k = clave(x);
+      filas[k] = filas[k] || {};
+      filas[k][x.p.f] = (filas[k][x.p.f] || 0) + 1;
+    });
+    const nombres = Object.keys(filas).sort();
+    const tot = {};
+    let h = '<div class="bcaja"><div class="btit" style="color:'+pal[0]+'">'+titulo+'</div>'
+          + '<div class="ini-scroll"><table class="ini-tab"><tr><th></th>'
+          + franjas.map(function(f){ return '<th>'+escR(f)+'</th>'; }).join('')
+          + '<th>Total</th></tr>';
+    nombres.forEach(function(n){
+      let t = 0;
+      h += '<tr><td class="ini-nom">'+escR(n)+'</td>';
+      franjas.forEach(function(f){
+        const v = filas[n][f] || 0; t += v; tot[f] = (tot[f] || 0) + v;
+        h += '<td>'+(v || '')+'</td>';
+      });
+      h += '<td class="ini-t">'+t+'</td></tr>';
+    });
+    h += '<tr class="ini-tot"><td class="ini-nom">Total</td>'
+       + franjas.map(function(f){ return '<td>'+(tot[f] || 0)+'</td>'; }).join('')
+       + '<td class="ini-t">'+lista.length+'</td></tr></table></div></div>';
+    return h;
+  };
+  const comuna = function(x){
+    const c = String(x.p.d || '').split(',').pop().trim().toLowerCase();
+    return c.replace(/\b\w/g, function(l){ return l.toUpperCase(); }) || 'Sin comuna';
+  };
+  return tabla('POR COMUNA Y FRANJA', comuna)
+       + tabla('POR TIPO DE ACTIVIDAD Y FRANJA', function(x){ return x.p.t || 'Sin tipo'; })
+       + '<div class="bcaja"><div class="btit" style="color:'+pal[0]+'">TIPO DE ACTIVIDAD CON SU PLAY</div>'
+       + barrasFijas(resumenPlay(porTipo), total, grad, 'bres')
+       + '<div class="bsep"></div><div class="bcap">DETALLE</div>'
+       + barras(porTipo, total, grad, ordenPlay) + '</div>';
 }
 
 function actividadesDeEstado(est){
@@ -3933,6 +3977,9 @@ function renderEst(){
 
   let html = '';
   if(estActual === '__INICIO__'){
+    listaInicioHtml = tablasInicio(lista, pal, grad, porTipo, total);
+  }
+  if(false){
     /* Primero lo que mas se pregunta: de las que habia en la manana, cuantas
        ya se cerraron y cuantas siguen abiertas o sin tecnico. */
     const ordenEst = ['Completado','No Realizada','Iniciado','en ruta','Pendiente',
@@ -3967,16 +4014,15 @@ function renderEst(){
       + 'ma\u00f1ana est\u00e1 en la carpeta <b>inicio_jornada</b> y corre el monitor '
       + '(o con inicio_jornada.bat).') + '</div>';
   }
+  if(estActual === '__INICIO__') html = listaInicioHtml;
   document.getElementById('listaEst').innerHTML = total ? html : vacio;
 
   if(estActual === '__INICIO__'){
     document.getElementById('estNota').innerHTML =
-        'Foto del Excel de la ma\u00f1ana: actividades Pendientes de red NFTT, la misma regla '
-      + 'de la tabla que se env\u00eda por WhatsApp. Incluye las del bucket, que el resto '
-      + 'del m\u00f3dulo no cuenta porque todav\u00eda no tienen t\u00e9cnico. '
-      + '\u201cC\u00f3mo van hoy\u201d cruza cada una con su estado actual; \u201cYa no '
-      + 'est\u00e1\u201d = sali\u00f3 de las bandejas y del bucket (cancelada, reagendada a otro '
-      + 'd\u00eda o sacada de la zona). Respeta los filtros de ciudad, franja y t\u00e9cnico.';
+        'Foto del Excel de la ma\u00f1ana, antes de que los t\u00e9cnicos empiecen: '
+      + 'actividades Pendientes de red NFTT, la misma regla de la tabla que se env\u00eda '
+      + 'por WhatsApp. Incluye las del bucket, que el resto del m\u00f3dulo no cuenta porque '
+      + 'todav\u00eda no tienen t\u00e9cnico. Respeta los filtros de ciudad y franja.';
     return;
   }
   document.getElementById('estNota').innerHTML =
