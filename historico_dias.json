@@ -8994,7 +8994,43 @@
      }
     ]
    }
+  },
+  "23-09-2026": {
+   "hasta": "08:09",
+   "actividades": 4,
+   "tecnicos": 3,
+   "estados": {
+    "Pendiente": 3,
+    "Cancelado": 1
+   },
+   "rgu": 11.0,
+   "caidas_total": 0,
+   "caidas_activas": 0,
+   "caidas_resueltas": 0,
+   "nuevas": 0,
+   "al_bucket": 0,
+   "repetidas": 1,
+   "reagendadas": 0,
+   "detalle": {
+    "caidas": [],
+    "nuevas": [],
+    "repetidas": [
+     {
+      "o": "1-3NZDNICM",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "10:00",
+      "d": "FREIRE 120, QUILPUE",
+      "e": "Pendiente",
+      "tec": "CRISTOBAL SILVA LEIVA",
+      "visitas": 2,
+      "ult_fecha": "22-09-2026",
+      "ult_cierre": "Cliente reagenda"
+     }
+    ],
+    "reagendadas": []
+   }
   }
  },
- "generado": "22-09-2026 18:54"
+ "generado": "23-09-2026 08:09"
 }
