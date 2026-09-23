@@ -8996,23 +8996,23 @@
    }
   },
   "23-09-2026": {
-   "hasta": "13:03",
-   "actividades": 145,
+   "hasta": "13:13",
+   "actividades": 148,
    "tecnicos": 37,
    "estados": {
-    "Completado": 30,
-    "Iniciado": 24,
-    "Pendiente": 58,
+    "Completado": 32,
+    "Iniciado": 23,
+    "Pendiente": 59,
     "No Realizada": 21,
     "Suspendido": 4,
     "Cancelado": 5,
-    "en ruta": 3
+    "en ruta": 4
    },
-   "rgu": 232.3,
-   "caidas_total": 6,
-   "caidas_activas": 6,
+   "rgu": 236.3,
+   "caidas_total": 7,
+   "caidas_activas": 7,
    "caidas_resueltas": 0,
-   "nuevas": 21,
+   "nuevas": 22,
    "al_bucket": 5,
    "repetidas": 31,
    "reagendadas": 2,
@@ -9064,6 +9064,15 @@
       "e": "Pendiente"
      },
      {
+      "o": "1-3NZAHAJS",
+      "tec": "RAFAEL VARGAS B",
+      "cat": "Migración 3 Play",
+      "f": "13-16",
+      "hi": "15:37",
+      "d": "CAMINO TRONCAL 2091 CASA 18, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3NZX9BPJ",
       "tec": "YENDER BOSCAN CADENAS",
       "cat": "Reparación",
@@ -9074,6 +9083,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O04QYG5",
+      "tec": "MATÍAS JAQUE AG",
+      "cat": "Alta 2 Play",
+      "f": "13-16",
+      "hi": "16:25",
+      "d": "HUANHUALI 1481 EDIF. 1 DEPTO 401, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3O03AXD4",
       "tec": "ANTONHY MORALES MENDOZA",
@@ -9329,7 +9347,7 @@
       "o": "1-3NZMGHU1",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:15",
+      "hi": "14:30",
       "d": "PJE PARTICULAR(J. URIBE) 59 CASA E, QUILPUE",
       "e": "Pendiente",
       "tec": "DANIEL NAVARRETE E",
@@ -9365,7 +9383,7 @@
       "o": "1-3NZZ8SVP",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "15:06",
+      "hi": "15:19",
       "d": "PJE FELISA 720, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -9377,7 +9395,7 @@
       "o": "1-3NY6B925",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:09",
+      "hi": "16:22",
       "d": "JOSE MIGUEL CARRERA 1524, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -9403,7 +9421,7 @@
       "f": "10-13",
       "hi": "10:52",
       "d": "EPSILON 2030 EDIF. A DEPTO 31, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "HERNAN CORTES HERRERA",
       "visitas": 1,
       "ult_fecha": "11-08-2026",
@@ -9461,7 +9479,7 @@
       "o": "1-3NZWLO1X",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:07",
+      "hi": "14:36",
       "d": "ALCALDE ALEJANDRO PERALTA 1121 LOCAL 10, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -9545,7 +9563,7 @@
       "o": "1-3NZZ8RP9",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:08",
+      "hi": "14:11",
       "d": "SAN JORGE 1563, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCELO GÓMEZ GÓME",
@@ -9557,7 +9575,7 @@
       "o": "1-3O01G3QG",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "17:20",
+      "hi": "17:23",
       "d": "ALMIRANTE NEFF 653 EDIF. 3 DEPTO 51, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCELO GÓMEZ GÓME",
@@ -9569,7 +9587,7 @@
       "o": "1-3NZDS5FD",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:35",
+      "hi": "14:41",
       "d": "TARRAGONA 61, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATIAS APELEO APELEO",
@@ -9663,5 +9681,5 @@
    }
   }
  },
- "generado": "23-09-2026 13:03"
+ "generado": "23-09-2026 13:13"
 }
