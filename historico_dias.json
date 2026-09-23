@@ -8996,23 +8996,23 @@
    }
   },
   "23-09-2026": {
-   "hasta": "15:44",
-   "actividades": 159,
+   "hasta": "15:49",
+   "actividades": 160,
    "tecnicos": 37,
    "estados": {
-    "Completado": 67,
-    "Iniciado": 21,
-    "Pendiente": 27,
+    "Completado": 68,
+    "en ruta": 7,
+    "Iniciado": 24,
     "No Realizada": 27,
+    "Pendiente": 25,
     "Suspendido": 4,
-    "en ruta": 8,
     "Cancelado": 5
    },
-   "rgu": 248.0,
+   "rgu": 249.0,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
-   "nuevas": 26,
+   "nuevas": 27,
    "al_bucket": 13,
    "repetidas": 33,
    "reagendadas": 2,
@@ -9092,6 +9092,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O0BF44H",
+      "tec": "JOSE PEREZ RANGEL",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "16:22",
+      "d": "2 SUR 1521, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NYBILL7",
       "tec": "DANIEL NAVARRETE E",
@@ -9428,7 +9437,7 @@
       "o": "1-3NYBILL7",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:08",
+      "hi": "17:06",
       "d": "LAS BARRANCAS 2581 CASA S1, QUILPUE",
       "e": "Pendiente",
       "tec": "DANIEL NAVARRETE E",
@@ -9750,5 +9759,5 @@
    }
   }
  },
- "generado": "23-09-2026 15:44"
+ "generado": "23-09-2026 15:49"
 }
