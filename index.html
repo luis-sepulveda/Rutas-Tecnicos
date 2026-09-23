@@ -1247,6 +1247,7 @@
   .pv-curso { font-size:10.5px; font-weight:700; padding:3px 10px; border-radius:999px;
     background:#fef3c7; color:#92400e; letter-spacing:.02em;
     font-family:'DM Sans',sans-serif; }
+  .pv-pct-tit { font-size:13px; font-weight:600; color:#5b7086; margin:14px 0 -8px; }
   .pv-pct { display:flex; align-items:baseline; gap:2px; margin:14px 0 2px; }
   .pv-pct .v { font-family:'Archivo',sans-serif; font-size:66px; font-weight:700;
     line-height:.95; letter-spacing:-.035em; color:#15293e;
@@ -4734,10 +4735,16 @@ function pintarPortada(){
     +           'actividades parti\u00f3 el d\u00eda (Excel de la ma\u00f1ana)">Inicio de jornada'
     +           (nInicio ? ' <b>' + nInicio + '</b>' : '') + '<span class="fl">\u203a</span></button>'
     +         '</div>'
+    /* Titulo del porcentaje (23-09-2026): sin el, no se sabia que numero era.
+       Mismo calculo que la efectividad oficial (completadas / todas las
+       actividades, canceladas incluidas), pero mientras hay ordenes abiertas
+       es el avance del momento; por eso "hasta ahora", y cuando no queda nada
+       abierto pasa a decir "del dia". */
+    +       '<div class="pv-pct-tit">' + (pend > 0 ? 'Efectividad hasta ahora' : 'Efectividad del d\u00eda') + '</div>'
     +       '<div class="pv-pct"><span class="v">' + pct.toFixed(1).replace('.', ',')
     +         '</span><span class="u">%</span></div>'
-    +       '<div class="pv-pctl">completadas \u00b7 ' + filas.length + ' actividades \u00b7 '
-    +         nTec + ' t\u00e9cnicos en ruta</div>'
+    +       '<div class="pv-pctl">' + filas.length + ' actividades \u00b7 '
+    +         nTec + ' t\u00e9cnicos operativos</div>'
     +       '<div class="pv-cifras">'
     +         cif(filas.length, 'del d\u00eda', 'tot', '__TODAS__')
     +         cif(comp, 'completadas', 'comp', 'Completado')
