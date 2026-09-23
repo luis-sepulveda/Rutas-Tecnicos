@@ -8996,21 +8996,21 @@
    }
   },
   "23-09-2026": {
-   "hasta": "15:59",
+   "hasta": "16:09",
    "actividades": 160,
    "tecnicos": 37,
    "estados": {
-    "Completado": 70,
-    "en ruta": 7,
-    "Iniciado": 26,
+    "Completado": 74,
+    "en ruta": 8,
+    "Iniciado": 25,
     "No Realizada": 28,
-    "Pendiente": 20,
+    "Pendiente": 16,
     "Suspendido": 4,
     "Cancelado": 5
    },
    "rgu": 249.0,
-   "caidas_total": 8,
-   "caidas_activas": 8,
+   "caidas_total": 9,
+   "caidas_activas": 9,
    "caidas_resueltas": 0,
    "nuevas": 28,
    "al_bucket": 13,
@@ -9034,6 +9034,15 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "PJE DEL RISCO 502, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3O084K94",
+      "tec": "CRISTOBAL MIRANDA VALENC",
+      "cat": "Migración 1 Play",
+      "f": "16-19",
+      "hi": "17:17",
+      "d": "PJE JOSE ZAPIOLA 422, QUILPUE",
       "e": "Pendiente"
      },
      {
@@ -9780,5 +9789,5 @@
    }
   }
  },
- "generado": "23-09-2026 15:59"
+ "generado": "23-09-2026 16:09"
 }
