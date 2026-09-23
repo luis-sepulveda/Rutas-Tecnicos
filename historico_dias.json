@@ -8996,21 +8996,21 @@
    }
   },
   "23-09-2026": {
-   "hasta": "19:19",
-   "actividades": 162,
+   "hasta": "19:24",
+   "actividades": 163,
    "tecnicos": 37,
    "estados": {
     "Completado": 110,
     "No Realizada": 42,
+    "Iniciado": 2,
     "Suspendido": 4,
-    "Cancelado": 5,
-    "Iniciado": 1
+    "Cancelado": 5
    },
-   "rgu": 249.2,
+   "rgu": 249.3,
    "caidas_total": 9,
    "caidas_activas": 9,
    "caidas_resueltas": 0,
-   "nuevas": 30,
+   "nuevas": 31,
    "al_bucket": 13,
    "repetidas": 34,
    "reagendadas": 2,
@@ -9099,6 +9099,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O0IM2B5",
+      "tec": "ANTONHY MORALES MENDOZA",
+      "cat": "Modificación de Servicio",
+      "f": "19-21",
+      "hi": "19:23",
+      "d": "LOS ALMENDROS 2521 EDIF. C DEPTO 34, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3O0GCEQB",
       "tec": "CRISTOBAL SILVA LEIVA",
@@ -9805,5 +9814,5 @@
    }
   }
  },
- "generado": "23-09-2026 19:19"
+ "generado": "23-09-2026 19:24"
 }
