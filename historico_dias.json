@@ -8996,7 +8996,7 @@
    }
   },
   "23-09-2026": {
-   "hasta": "09:10",
+   "hasta": "09:15",
    "actividades": 100,
    "tecnicos": 37,
    "estados": {
@@ -9055,7 +9055,7 @@
       "o": "1-3NZJUAIK",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "13:00",
       "d": "LAS AMAPOLAS 593 CASA 4A, QUILPUE",
       "e": "Pendiente",
       "tec": "ANTONHY MORALES MENDOZA",
@@ -9269,5 +9269,5 @@
    }
   }
  },
- "generado": "23-09-2026 09:10"
+ "generado": "23-09-2026 09:15"
 }
