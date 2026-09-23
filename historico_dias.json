@@ -8996,13 +8996,13 @@
    }
   },
   "23-09-2026": {
-   "hasta": "18:34",
+   "hasta": "18:38",
    "actividades": 162,
    "tecnicos": 37,
    "estados": {
-    "Completado": 104,
+    "Completado": 106,
     "No Realizada": 41,
-    "Iniciado": 8,
+    "Iniciado": 6,
     "Suspendido": 4,
     "Cancelado": 5
    },
@@ -9665,7 +9665,7 @@
       "f": "13-16",
       "hi": "15:58",
       "d": "SECCHY 046, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "LUIS CASTRO TORRES",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -9805,5 +9805,5 @@
    }
   }
  },
- "generado": "23-09-2026 18:34"
+ "generado": "23-09-2026 18:38"
 }
