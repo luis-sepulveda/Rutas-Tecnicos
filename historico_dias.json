@@ -8996,19 +8996,19 @@
    }
   },
   "23-09-2026": {
-   "hasta": "13:58",
-   "actividades": 153,
+   "hasta": "14:03",
+   "actividades": 154,
    "tecnicos": 37,
    "estados": {
-    "Completado": 47,
-    "Pendiente": 55,
+    "Completado": 49,
+    "Pendiente": 54,
     "No Realizada": 21,
-    "Iniciado": 18,
+    "Iniciado": 17,
     "Suspendido": 4,
     "Cancelado": 5,
-    "en ruta": 3
+    "en ruta": 4
    },
-   "rgu": 242.9,
+   "rgu": 243.9,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
@@ -9198,7 +9198,7 @@
       "f": "13-16",
       "hi": "15:44",
       "d": "SAN JORGE 1563, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NZZ4060",
@@ -9458,9 +9458,9 @@
       "o": "1-3O01SBHI",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:35",
+      "hi": "14:08",
       "d": "HUANHUALI 1549 EDIF. B10 DEPTO 32, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JOEL GUSTAVE GUSTA",
       "visitas": 1,
       "ult_fecha": "10-09-2026",
@@ -9470,7 +9470,7 @@
       "o": "1-3NZGNSYI",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:48",
+      "hi": "16:10",
       "d": "DOLORES 820, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -9518,9 +9518,9 @@
       "o": "1-3O01LDKU",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "13:48",
+      "hi": "14:00",
       "d": "G TELLEZ 2535, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JOSE SALAS MEDINA",
       "visitas": 1,
       "ult_fecha": "04-09-2026",
@@ -9590,9 +9590,9 @@
       "o": "1-3NZZ8RP9",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:11",
+      "hi": "14:06",
       "d": "SAN JORGE 1563, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "MARCELO GÓMEZ GÓME",
       "visitas": 1,
       "ult_fecha": "21-08-2026",
@@ -9708,5 +9708,5 @@
    }
   }
  },
- "generado": "23-09-2026 13:58"
+ "generado": "23-09-2026 14:03"
 }
