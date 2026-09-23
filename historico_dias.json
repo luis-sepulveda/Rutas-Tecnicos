@@ -8996,7 +8996,7 @@
    }
   },
   "23-09-2026": {
-   "hasta": "09:00",
+   "hasta": "09:10",
    "actividades": 100,
    "tecnicos": 37,
    "estados": {
@@ -9103,7 +9103,7 @@
       "o": "1-3NZC7HWS",
       "cat": "Reparación",
       "f": "10-13",
-      "hi": "11:18",
+      "hi": "11:20",
       "d": "EPSILON 2030 EDIF. A DEPTO 31, QUILPUE",
       "e": "Pendiente",
       "tec": "HERNAN CORTES HERRERA",
@@ -9269,5 +9269,5 @@
    }
   }
  },
- "generado": "23-09-2026 09:00"
+ "generado": "23-09-2026 09:10"
 }
