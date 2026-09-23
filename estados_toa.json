@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-23T17:44:40",
+  "actualizado": "2026-09-23T18:14:48",
   "resumen": {
     "sin informacion": 4,
     "cancelada": 1,
@@ -185,6 +185,13 @@
             "texto": "1-3NUW717N - 10-13-Migración-Migración-ALMIRANTE NEFF 653 EDIF. 3 DEPTO 43Sab, 26 Sep"
           },
           {
+            "estado": "reagendada",
+            "color": "rgb(255, 222, 0)",
+            "ot": "1-3O0D4CQW",
+            "franja": "10-13",
+            "texto": "1-3O0D4CQW - 10-13-Alta-1 Play-ALMIRANTE NEFF 653 EDIF. 3 DEPTO 51Jue, 24 Sep"
+          },
+          {
             "estado": "gestionada",
             "color": "rgb(96, 206, 206)",
             "ot": "1-3O01G3QG",
@@ -211,13 +218,6 @@
             "ot": "1-3NSN3Q7K",
             "franja": "13-16",
             "texto": "1-3NSN3Q7K - 13-16-Downgrade promoción-Downgrade promoción-ALMIRANTE NEFF 653 EDIF. 3 DEPTO 10Vie, 11 Sep"
-          },
-          {
-            "estado": "?",
-            "color": "rgb(121, 182, 235)",
-            "ot": "1-3NPODSF6",
-            "franja": "10-13",
-            "texto": "1-3NPODSF6 - 10-13-Modificación de Servicio-Modificación-ALMIRANTE NEFF 653 EDIF. 1 DEPTO 10Lun, 7 Sep"
           }
         ]
       }
