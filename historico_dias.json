@@ -8996,15 +8996,15 @@
    }
   },
   "23-09-2026": {
-   "hasta": "14:43",
+   "hasta": "14:53",
    "actividades": 158,
    "tecnicos": 37,
    "estados": {
-    "Completado": 53,
-    "Iniciado": 24,
-    "Pendiente": 44,
+    "Completado": 55,
+    "Iniciado": 26,
+    "Pendiente": 41,
     "No Realizada": 23,
-    "en ruta": 5,
+    "en ruta": 4,
     "Suspendido": 4,
     "Cancelado": 5
    },
@@ -9126,7 +9126,7 @@
       "f": "13-16",
       "hi": "16:25",
       "d": "HUANHUALI 1481 EDIF. 1 DEPTO 401, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O03AXD4",
@@ -9144,7 +9144,7 @@
       "f": "16-19",
       "hi": "17:43",
       "d": "PJE TORREMOLINOS 0523, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Pendiente"
      },
      {
       "o": "1-3O00VPYW",
@@ -9162,7 +9162,7 @@
       "f": "13-16",
       "hi": "15:02",
       "d": "BUENOS AIRES 1066, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NZZLWEY",
@@ -9193,7 +9193,7 @@
      },
      {
       "o": "1-3NZZ8SVP",
-      "tec": "EDGAR VALERO C",
+      "tec": "GEEYSER PEREZ O",
       "cat": "Reparación",
       "f": "13-16",
       "hi": "14:17",
@@ -9261,7 +9261,7 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "EL RINCON DE LOS CISNES 617, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NZYE527",
@@ -9428,22 +9428,10 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3NZZ8SVP",
-      "cat": "Reparación",
-      "f": "13-16",
-      "hi": "16:08",
-      "d": "PJE FELISA 720, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "EDGAR VALERO C",
-      "visitas": 1,
-      "ult_fecha": "21-08-2026",
-      "ult_cierre": "Cliente reagenda"
-     },
-     {
       "o": "1-3NY6B925",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:11",
+      "hi": "16:09",
       "d": "JOSE MIGUEL CARRERA 1524, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -9462,6 +9450,18 @@
       "visitas": 1,
       "ult_fecha": "22-09-2026",
       "ult_cierre": "Clte desiste motivo comercial"
+     },
+     {
+      "o": "1-3NZZ8SVP",
+      "cat": "Reparación",
+      "f": "13-16",
+      "hi": "15:07",
+      "d": "PJE FELISA 720, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "GEEYSER PEREZ O",
+      "visitas": 1,
+      "ult_fecha": "21-08-2026",
+      "ult_cierre": "Cliente reagenda"
      },
      {
       "o": "1-3NZC7HWS",
@@ -9488,10 +9488,22 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3O01G3QG",
+      "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "15:02",
+      "d": "ALMIRANTE NEFF 653 EDIF. 3 DEPTO 51, VILLA ALEMANA",
+      "e": "en ruta",
+      "tec": "JOEL GUSTAVE GUSTA",
+      "visitas": 1,
+      "ult_fecha": "22-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3NZGNSYI",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:10",
+      "hi": "16:05",
       "d": "DOLORES 820, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -9587,7 +9599,7 @@
       "o": "1-3O00MT4D",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "15:53",
+      "hi": "15:54",
       "d": "SECCHY 046, QUILPUE",
       "e": "Pendiente",
       "tec": "LUIS CASTRO TORRES",
@@ -9623,9 +9635,9 @@
       "o": "1-3NZDS5FD",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:39",
+      "hi": "14:43",
       "d": "TARRAGONA 61, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "MATIAS APELEO APELEO",
       "visitas": 2,
       "ult_fecha": "22-09-2026",
@@ -9644,18 +9656,6 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3O01G3QG",
-      "cat": "Alta 1 Play",
-      "f": "13-16",
-      "hi": "16:54",
-      "d": "ALMIRANTE NEFF 653 EDIF. 3 DEPTO 51, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "MATÍAS JAQUE AG",
-      "visitas": 1,
-      "ult_fecha": "22-09-2026",
-      "ult_cierre": "Sin moradores"
-     },
-     {
       "o": "1-3NZZD8YY",
       "cat": "Alta 2 Play",
       "f": "10-13",
@@ -9671,7 +9671,7 @@
       "o": "1-3NZZEICT",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:48",
+      "hi": "16:47",
       "d": "SANTA SARA 1788 CASA 1, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "RAFAEL VARGAS B",
@@ -9695,7 +9695,7 @@
       "o": "1-3NZXVYVM",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:09",
+      "hi": "16:18",
       "d": "SAN MARTIN 446, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -9709,7 +9709,7 @@
       "o": "1-3NZ3RONO",
       "cat": "Migración 2 Play",
       "f": "16-19",
-      "hi": "17:09",
+      "hi": "16:14",
       "d": "DE VEER 1451, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -9729,5 +9729,5 @@
    }
   }
  },
- "generado": "23-09-2026 14:43"
+ "generado": "23-09-2026 14:53"
 }
