@@ -8996,13 +8996,12 @@
    }
   },
   "23-09-2026": {
-   "hasta": "19:34",
+   "hasta": "19:39",
    "actividades": 163,
    "tecnicos": 37,
    "estados": {
-    "Completado": 111,
+    "Completado": 112,
     "No Realizada": 42,
-    "Iniciado": 1,
     "Suspendido": 4,
     "Cancelado": 5
    },
@@ -9106,7 +9105,7 @@
       "f": "19-21",
       "hi": "19:23",
       "d": "LOS ALMENDROS 2521 EDIF. C DEPTO 34, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O0GCEQB",
@@ -9814,5 +9813,5 @@
    }
   }
  },
- "generado": "23-09-2026 19:34"
+ "generado": "23-09-2026 19:39"
 }
