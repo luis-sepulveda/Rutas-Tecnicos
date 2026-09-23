@@ -8996,21 +8996,21 @@
    }
   },
   "23-09-2026": {
-   "hasta": "17:18",
-   "actividades": 160,
+   "hasta": "17:23",
+   "actividades": 161,
    "tecnicos": 37,
    "estados": {
-    "Completado": 88,
-    "Iniciado": 26,
-    "No Realizada": 37,
+    "Completado": 89,
+    "Iniciado": 25,
+    "No Realizada": 38,
     "Suspendido": 4,
     "Cancelado": 5
    },
-   "rgu": 249.0,
+   "rgu": 249.1,
    "caidas_total": 9,
    "caidas_activas": 9,
    "caidas_resueltas": 0,
-   "nuevas": 28,
+   "nuevas": 29,
    "al_bucket": 13,
    "repetidas": 34,
    "reagendadas": 2,
@@ -9100,6 +9100,15 @@
     ],
     "nuevas": [
      {
+      "o": "1-3O0EULSQ",
+      "tec": "JOSE SALAS MEDINA",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "17:22",
+      "d": "G TELLEZ 2535, QUILPUE",
+      "e": "Iniciado"
+     },
+     {
       "o": "1-3O0BD911",
       "tec": "CRISTOBAL MIRANDA VALENC",
       "cat": "Alta 1 Play",
@@ -9142,7 +9151,7 @@
       "f": "16-19",
       "hi": "16:25",
       "d": "LAS ROSAS 859, QUILPUE",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3O05Z5RC",
@@ -9419,7 +9428,7 @@
       "f": "16-19",
       "hi": "16:52",
       "d": "LAS ROSAS 859, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "CESAR MENA OLIVEROS",
       "visitas": 2,
       "ult_fecha": "23-09-2026",
@@ -9787,5 +9796,5 @@
    }
   }
  },
- "generado": "23-09-2026 17:18"
+ "generado": "23-09-2026 17:23"
 }
