@@ -8996,15 +8996,15 @@
    }
   },
   "23-09-2026": {
-   "hasta": "14:53",
+   "hasta": "15:03",
    "actividades": 158,
    "tecnicos": 37,
    "estados": {
-    "Completado": 55,
-    "Iniciado": 26,
-    "Pendiente": 41,
-    "No Realizada": 23,
-    "en ruta": 4,
+    "Completado": 58,
+    "Iniciado": 25,
+    "Pendiente": 37,
+    "en ruta": 5,
+    "No Realizada": 24,
     "Suspendido": 4,
     "Cancelado": 5
    },
@@ -9198,7 +9198,7 @@
       "f": "13-16",
       "hi": "14:17",
       "d": "PJE FELISA 720, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3NZZ8RP9",
@@ -9383,7 +9383,7 @@
       "o": "1-3NZAG6G3",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:38",
+      "hi": "17:43",
       "d": "MANUEL BULNES 1640, QUILPUE",
       "e": "Pendiente",
       "tec": "CRISTOBAL SILVA LEIVA",
@@ -9397,7 +9397,7 @@
       "f": "13-16",
       "hi": "14:33",
       "d": "PJE PARTICULAR(J. URIBE) 59 CASA E, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "DANIEL NAVARRETE E",
       "visitas": 1,
       "ult_fecha": "16-09-2026",
@@ -9455,9 +9455,9 @@
       "o": "1-3NZZ8SVP",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "15:07",
+      "hi": "15:17",
       "d": "PJE FELISA 720, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "GEEYSER PEREZ O",
       "visitas": 1,
       "ult_fecha": "21-08-2026",
@@ -9491,9 +9491,9 @@
       "o": "1-3O01G3QG",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:02",
+      "hi": "14:55",
       "d": "ALMIRANTE NEFF 653 EDIF. 3 DEPTO 51, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JOEL GUSTAVE GUSTA",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -9729,5 +9729,5 @@
    }
   }
  },
- "generado": "23-09-2026 14:53"
+ "generado": "23-09-2026 15:03"
 }
