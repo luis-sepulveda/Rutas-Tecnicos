@@ -1228,6 +1228,14 @@
   @media (max-width:900px){ .pv-hero { grid-template-columns:1fr; gap:24px; } }
   .pv-fecha { font-family:'Archivo',sans-serif; font-size:17px; font-weight:600;
     color:#2c4460; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  /* Boton Inicio de jornada, al lado de "en curso" (23-09-2026). */
+  .pv-ini { font-family:'DM Sans',sans-serif; font-size:12.5px; font-weight:600; color:#0f766e;
+    background:#e6f4f1; border:1px solid #b9e2da; border-radius:999px; padding:4px 12px;
+    cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:none; }
+  .pv-ini b { font-weight:700; color:#0b5a53; }
+  .pv-ini .fl { font-size:15px; line-height:1; }
+  .pv-ini:hover { background:#d3ede8; }
+  .pv-ini:focus-visible { outline:2px solid #0f766e; outline-offset:2px; }
   .pv-curso { font-size:10.5px; font-weight:700; padding:3px 10px; border-radius:999px;
     background:#fef3c7; color:#92400e; letter-spacing:.02em;
     font-family:'DM Sans',sans-serif; }
@@ -1472,6 +1480,7 @@
 <div id="barraAcc" class="nb-flota der">
   <button class="btn" id="btnNombres" onclick="toggleNombres()">Nombres</button>
   <button class="btn" id="btnRutas" onclick="toggleRutas()">Rutas</button>
+  <button class="btn" id="btnInicio" onclick="abrirInicio()">Inicio de jornada</button>
   <button class="btn" id="btnJornada" onclick="toggleJornada()">Jornada</button>
   <button class="btn" id="btnComp" onclick="toggleComp()">Completitud</button>
   <button class="btn" id="btnSC" onclick="toggleSinCompletar()">Sin completar</button>
@@ -2336,6 +2345,13 @@ const REPO_BASE = 'luis-sepulveda/Rutas-tecnicos';
    una vez al dia, no cada cinco minutos como rutas.json. */
 const URL_DIAS_RAW = 'https://raw.githubusercontent.com/'+REPO_BASE+'/'+RAMA_DATOS+'/historico_dias.json';
 let DIAS = null, diasBajando = false, diasFallo = false, diasRango = 10;
+/* INICIO DE JORNADA (desde el 23-09-2026). La foto de como partio el dia, sacada
+   del Excel de la manana que Luis guarda en Rutas tecnicos\inicio_jornada\.
+   La arma y la sube inicio_jornada.py (lo llama registro_jornada.py en cada
+   ciclo del monitor). Trae las OT con que se partio, incluidas las del bucket,
+   que el modulo no cuenta porque todavia no tienen tecnico DOMI. */
+const URL_INICIO_RAW = 'https://raw.githubusercontent.com/'+REPO_BASE+'/'+RAMA_DATOS+'/inicio_jornada.json';
+let INICIO = null, inicioBajando = false, inicioPedido = 0;
 const URL_HIST_RAW = 'https://raw.githubusercontent.com/'+REPO_BASE+'/'+RAMA_DATOS+'/historial_dir.json';
 
 let HIST = null;             // contenido de historial_dir.json
@@ -3565,7 +3581,70 @@ function letraTipo(t){
    ese bloque aparece solo cuando hay datos, en vez de una seccion vacia. */
 let estActual = null;
 
+/* Clave del dia de hoy, igual que las del archivo: 'dd-mm-yyyy'. */
+function hoyClave(){
+  const d = new Date();
+  const dd = String(d.getDate()).padStart(2,'0'), mm = String(d.getMonth()+1).padStart(2,'0');
+  return dd + '-' + mm + '-' + d.getFullYear();
+}
+/* La foto de hoy, o null si todavia no se publico. */
+function inicioHoy(){
+  return (INICIO && INICIO[hoyClave()]) ? INICIO[hoyClave()] : null;
+}
+/* Baja el archivo. Si ya esta el dia de hoy no lo vuelve a pedir (no cambia
+   en el resto del dia). Si todavia no esta (se abrio el modulo antes de que
+   se publicara), reintenta, pero como mucho cada 5 minutos. */
+function asegurarInicio(alTerminar){
+  if(inicioHoy() || inicioBajando) { if(alTerminar) alTerminar(); return; }
+  if(Date.now() - inicioPedido < 5*60*1000){ if(alTerminar) alTerminar(); return; }
+  inicioBajando = true; inicioPedido = Date.now();
+  fetch(URL_INICIO_RAW + '?t=' + Date.now(), { cache:'no-store' })
+    .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function(js){ INICIO = (js && js.dias) ? js.dias : {}; })
+    .catch(function(){ INICIO = INICIO || {}; })
+    .then(function(){
+      inicioBajando = false;
+      if(alTerminar) alTerminar();
+      if(typeof pintarPortada === 'function') pintarPortada();
+    });
+}
+function abrirInicio(){
+  estActual = '__INICIO__';
+  document.getElementById('modalEst').classList.add('abierto');
+  renderEst();
+  asegurarInicio(function(){ if(estActual === '__INICIO__') renderEst(); });
+}
+/* Las actividades con que partio el dia, cada una con el estado que tiene
+   AHORA: si ya esta en una bandeja, el de la bandeja; si sigue sin tecnico,
+   'En bucket'; si no aparece en ningun lado, 'Ya no esta' (cancelada,
+   reagendada a otro dia o sacada de la zona). */
+function actividadesInicio(){
+  const foto = inicioHoy();
+  if(!foto) return [];
+  const ahora = {};
+  Object.keys(DB || {}).forEach(function(t){
+    (DB[t] || []).forEach(function(p){ ahora[p.o] = {tec:t, p:p}; });
+  });
+  const ft = document.getElementById('selTec').value;
+  const out = [];
+  foto.ots.forEach(function(o){
+    const hoy = ahora[o.o];
+    // Direccion, franja y tipo salen de la foto de la manana: asi los filtros
+    // y el reparto no cambian aunque despues muevan la orden.
+    const p = {o:o.o, d:o.d, f:o.f, t:o.t, cat:o.cat, cie: hoy ? hoy.p.cie : ''};
+    let e, tec;
+    if(hoy){ e = String(hoy.p.e || 'Pendiente'); tec = hoy.tec; }
+    else if(EN_BUCKET.has(o.o)){ e = 'En bucket'; tec = 'En bucket'; }
+    else { e = 'Ya no est\u00e1'; tec = 'Ya no est\u00e1'; }
+    if(ft !== '__ALL__' && tec !== ft) return;
+    if(!okCiudad(p) || !okFranja(p)) return;
+    out.push({tec:tec, p:p, e:e});
+  });
+  return out;
+}
+
 function actividadesDeEstado(est){
+  if(est === '__INICIO__') return actividadesInicio();
   const ft = document.getElementById('selTec').value;
   const tecs = Object.keys(DB);
   const show = ft === '__ALL__' ? tecs : [ft];
@@ -3799,7 +3878,8 @@ function renderEst(){
   if(!estActual) return;
   const lista = actividadesDeEstado(estActual);
   const total = lista.length;
-  const nombre = estActual === '__TODAS__' ? 'Todas las actividades'
+  const nombre = estActual === '__INICIO__' ? 'Inicio de jornada'
+               : estActual === '__TODAS__' ? 'Todas las actividades'
                : estActual === '__CANCSUSP__' ? 'Canceladas y suspendidas'
                : estActual === '__ABIERTAS__' ? 'Sin cerrar (pendientes, iniciadas y en ruta)'
                : estActual;
@@ -3816,8 +3896,11 @@ function renderEst(){
     const f = x.p.f || 's/franja';
     porFranja[f] = (porFranja[f]||0)+1;
   });
+  const fotoIni = estActual === '__INICIO__' ? inicioHoy() : null;
   document.getElementById('estChips').innerHTML =
-      Object.keys(porCiudad).sort().map(function(c){
+      (fotoIni ? '<span class="fchip">Excel de las <b>' + escR(fotoIni.hora) + '</b></span>'
+               + '<span class="fchip">en bucket al partir <b>' + fotoIni.en_bucket + '</b></span>' : '')
+    + Object.keys(porCiudad).sort().map(function(c){
         return '<span class="fchip">'+escR(c)+' <b>'+porCiudad[c]+'</b></span>'; }).join('')
     + Object.keys(porFranja).sort().map(function(f){
         return '<span class="fchip">🕒 '+escR(f)+' · <b>'+porFranja[f]+'</b></span>'; }).join('');
@@ -3842,12 +3925,24 @@ function renderEst(){
     'en ruta':      ['#c2410c','#fb923c','#fdba74'],
     'Pendiente':    ['#4338ca','#818cf8','#c7d2fe'],
     '__CANCSUSP__': ['#4b5563','#9ca3af','#d1d5db'],
-    '__TODAS__':    ['#7c3aed','#a78bfa','#ddd6fe']
+    '__TODAS__':    ['#7c3aed','#a78bfa','#ddd6fe'],
+    '__INICIO__':   ['#0f766e','#2dd4bf','#99f6e4']
   };
   const pal = paleta[estActual] || paleta['__TODAS__'];
   const grad = 'linear-gradient(90deg,'+pal[0]+','+pal[1]+')';
 
-  let html = '<div class="bcaja"><div class="btit" style="color:'+pal[0]+'">TIPO DE ACTIVIDAD</div>'
+  let html = '';
+  if(estActual === '__INICIO__'){
+    /* Primero lo que mas se pregunta: de las que habia en la manana, cuantas
+       ya se cerraron y cuantas siguen abiertas o sin tecnico. */
+    const ordenEst = ['Completado','No Realizada','Iniciado','en ruta','Pendiente',
+                      'En bucket','Cancelado','Suspendido','Ya no est\u00e1'];
+    html += '<div class="bcaja"><div class="btit" style="color:'+pal[0]+'">C\u00d3MO VAN HOY</div>'
+         +  barras(porEstado, total, grad, function(k){
+              const i = ordenEst.indexOf(k); return [i < 0 ? 99 : i, k]; })
+         +  '</div>';
+  }
+  html += '<div class="bcaja"><div class="btit" style="color:'+pal[0]+'">TIPO DE ACTIVIDAD</div>'
            + barrasFijas(resumenPlay(porTipo), total, grad, 'bres')
            + '<div class="bsep"></div>'
            + '<div class="bcap">DETALLE</div>'
@@ -3865,9 +3960,25 @@ function renderEst(){
         + barras(porTec, total, grad) + '</div>';
 
   tit.style.color = pal[2];
-  document.getElementById('listaEst').innerHTML = total ? html
-    : '<div class="vacio">No hay actividades en este estado con los filtros puestos.</div>';
+  let vacio = '<div class="vacio">No hay actividades en este estado con los filtros puestos.</div>';
+  if(estActual === '__INICIO__' && !inicioHoy()){
+    vacio = '<div class="vacio">' + (inicioBajando ? 'Cargando el inicio de jornada\u2026'
+      : 'Todav\u00eda no se carg\u00f3 el inicio de hoy. Se publica cuando el Excel de la '
+      + 'ma\u00f1ana est\u00e1 en la carpeta <b>inicio_jornada</b> y corre el monitor '
+      + '(o con inicio_jornada.bat).') + '</div>';
+  }
+  document.getElementById('listaEst').innerHTML = total ? html : vacio;
 
+  if(estActual === '__INICIO__'){
+    document.getElementById('estNota').innerHTML =
+        'Foto del Excel de la ma\u00f1ana: actividades Pendientes de red NFTT, la misma regla '
+      + 'de la tabla que se env\u00eda por WhatsApp. Incluye las del bucket, que el resto '
+      + 'del m\u00f3dulo no cuenta porque todav\u00eda no tienen t\u00e9cnico. '
+      + '\u201cC\u00f3mo van hoy\u201d cruza cada una con su estado actual; \u201cYa no '
+      + 'est\u00e1\u201d = sali\u00f3 de las bandejas y del bucket (cancelada, reagendada a otro '
+      + 'd\u00eda o sacada de la zona). Respeta los filtros de ciudad, franja y t\u00e9cnico.';
+    return;
+  }
   document.getElementById('estNota').innerHTML =
       'Respeta los filtros de ciudad, franja y técnico de arriba, pero no el de estado. '
     + 'El código de cierre solo lo traen las No Realizadas: en los demás estados el '
@@ -4435,6 +4546,8 @@ function pintarPortada(){
      estaba calculado para el boton del mapa. Aca se muestra. */
   const atras   = (typeof trabajosAtrasados === 'function') ? trabajosAtrasados().length : null;
   const alBucket = (A.al_bucket !== undefined && A.al_bucket !== null) ? A.al_bucket : 0;
+  asegurarInicio();
+  const nInicio = inicioHoy() ? inicioHoy().total : 0;
 
   /* Lo que queda sin cerrar en cada franja: dice como viene el resto del dia. */
   const abierta = o => !['Completado','No Realizada','Cancelado']
@@ -4558,7 +4671,14 @@ function pintarPortada(){
     +   '<section class="pv-hero">'
     +     '<div>'
     +       '<div class="pv-fecha">' + (fecha || 'Jornada')
-    +         (hoy ? '<span class="pv-curso">en curso</span>' : '') + '</div>'
+    +         (hoy ? '<span class="pv-curso">en curso</span>' : '')
+    /* Inicio de jornada va aca, al lado de la fecha, a pedido de Luis: es
+       "como partio este dia", asi que se lee junto al dia. Antes era un chip
+       mas en la fila de Nuevas / Al bucket. */
+    +         '<button class="pv-ini" onclick="desdePortada(abrirInicio)" title="Con cu\u00e1ntas '
+    +           'actividades parti\u00f3 el d\u00eda (Excel de la ma\u00f1ana)">Inicio de jornada'
+    +           (nInicio ? ' <b>' + nInicio + '</b>' : '') + '<span class="fl">\u203a</span></button>'
+    +         '</div>'
     +       '<div class="pv-pct"><span class="v">' + pct.toFixed(1).replace('.', ',')
     +         '</span><span class="u">%</span></div>'
     +       '<div class="pv-pctl">completadas \u00b7 ' + filas.length + ' actividades \u00b7 '
