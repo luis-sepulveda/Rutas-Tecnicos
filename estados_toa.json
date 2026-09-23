@@ -1,9 +1,9 @@
 {
-  "actualizado": "2026-09-23T15:40:12",
+  "actualizado": "2026-09-23T16:10:18",
   "resumen": {
     "sin informacion": 4,
     "cancelada": 1,
-    "reagendada": 3
+    "reagendada": 4
   },
   "estados": {
     "1-3NZJUAIK": {
@@ -70,6 +70,16 @@
       "estado": "cancelada",
       "color": "rgb(128, 255, 128)",
       "detalle": "1-3O03AXD4 - 10-13-Migración-Migración-PJE DEL RISCO 502Lun, 28 Sep",
+      "franja_nueva": "10-13"
+    },
+    "1-3O084K94": {
+      "tec": "CRISTOBAL MIRANDA VALENC",
+      "cat": "Migración 1 Play",
+      "franja_original": "16-19",
+      "d": "PJE JOSE ZAPIOLA 422, QUILPUE",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3O084K94 - 10-13-Migración-Migración-PJE JOSE ZAPIOLA 422Jue, 24 Sep",
       "franja_nueva": "10-13"
     },
     "1-3NY6VJ1J": {
