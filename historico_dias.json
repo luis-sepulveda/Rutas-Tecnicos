@@ -8996,15 +8996,15 @@
    }
   },
   "23-09-2026": {
-   "hasta": "15:29",
+   "hasta": "15:34",
    "actividades": 146,
    "tecnicos": 37,
    "estados": {
     "Completado": 65,
-    "en ruta": 6,
-    "Pendiente": 18,
-    "Iniciado": 21,
+    "Iniciado": 22,
+    "Pendiente": 17,
     "No Realizada": 27,
+    "en ruta": 6,
     "Suspendido": 4,
     "Cancelado": 5
    },
@@ -9371,9 +9371,9 @@
       "o": "1-3NZAG6G3",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:16",
+      "hi": "15:37",
       "d": "MANUEL BULNES 1640, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "ANTONHY MORALES MENDOZA",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -9719,5 +9719,5 @@
    }
   }
  },
- "generado": "23-09-2026 15:29"
+ "generado": "23-09-2026 15:34"
 }
