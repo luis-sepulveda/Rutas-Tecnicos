@@ -8996,13 +8996,13 @@
    }
   },
   "23-09-2026": {
-   "hasta": "12:13",
+   "hasta": "12:18",
    "actividades": 131,
    "tecnicos": 37,
    "estados": {
-    "Completado": 16,
-    "Iniciado": 35,
-    "Pendiente": 57,
+    "Completado": 17,
+    "Iniciado": 36,
+    "Pendiente": 55,
     "No Realizada": 14,
     "Suspendido": 4,
     "Cancelado": 4,
@@ -9470,9 +9470,9 @@
       "o": "1-3NWR9A2Z",
       "cat": "Reparación",
       "f": "10-13",
-      "hi": "12:13",
+      "hi": "12:16",
       "d": "VOLCAN SOCOMPA 2675, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "LEONEL HERNÁNDEZ OJE",
       "visitas": 3,
       "ult_fecha": "17-09-2026",
@@ -9542,9 +9542,9 @@
       "o": "1-3NZZD8YY",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "12:27",
+      "hi": "12:24",
       "d": "GABRIEL DAZAROLA 0211, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "RAFAEL VARGAS B",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -9554,7 +9554,7 @@
       "o": "1-3NZZEICT",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:26",
+      "hi": "17:23",
       "d": "SANTA SARA 1788 CASA 1, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "RAFAEL VARGAS B",
@@ -9612,5 +9612,5 @@
    }
   }
  },
- "generado": "23-09-2026 12:13"
+ "generado": "23-09-2026 12:18"
 }
