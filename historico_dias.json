@@ -8996,13 +8996,13 @@
    }
   },
   "23-09-2026": {
-   "hasta": "18:58",
+   "hasta": "19:04",
    "actividades": 162,
    "tecnicos": 37,
    "estados": {
-    "Completado": 108,
-    "No Realizada": 41,
-    "Iniciado": 4,
+    "Completado": 109,
+    "No Realizada": 42,
+    "Iniciado": 2,
     "Suspendido": 4,
     "Cancelado": 5
    },
@@ -9106,7 +9106,7 @@
       "f": "16-19",
       "hi": "18:12",
       "d": "CAMINO DEL SOL 2400 EDIF. B DEPTO 61, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O0EULSQ",
@@ -9205,7 +9205,7 @@
       "f": "16-19",
       "hi": "16:30",
       "d": "MATURANA 34, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3O00CD5H",
@@ -9805,5 +9805,5 @@
    }
   }
  },
- "generado": "23-09-2026 18:58"
+ "generado": "23-09-2026 19:04"
 }
