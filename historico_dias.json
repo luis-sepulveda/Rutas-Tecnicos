@@ -8996,13 +8996,13 @@
    }
   },
   "23-09-2026": {
-   "hasta": "18:28",
+   "hasta": "18:34",
    "actividades": 162,
    "tecnicos": 37,
    "estados": {
-    "Completado": 103,
+    "Completado": 104,
     "No Realizada": 41,
-    "Iniciado": 9,
+    "Iniciado": 8,
     "Suspendido": 4,
     "Cancelado": 5
    },
@@ -9196,7 +9196,7 @@
       "f": "16-19",
       "hi": "17:43",
       "d": "PJE TORREMOLINOS 0523, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O00VPYW",
@@ -9805,5 +9805,5 @@
    }
   }
  },
- "generado": "23-09-2026 18:28"
+ "generado": "23-09-2026 18:34"
 }
