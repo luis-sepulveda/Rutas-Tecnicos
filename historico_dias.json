@@ -8996,17 +8996,16 @@
    }
   },
   "23-09-2026": {
-   "hasta": "16:19",
+   "hasta": "17:08",
    "actividades": 160,
    "tecnicos": 37,
    "estados": {
-    "Completado": 77,
-    "en ruta": 5,
-    "Iniciado": 27,
-    "No Realizada": 28,
-    "Pendiente": 14,
+    "Completado": 88,
+    "Iniciado": 24,
+    "No Realizada": 36,
     "Suspendido": 4,
-    "Cancelado": 5
+    "Cancelado": 5,
+    "en ruta": 3
    },
    "rgu": 249.0,
    "caidas_total": 9,
@@ -9103,12 +9102,12 @@
     "nuevas": [
      {
       "o": "1-3O0BD911",
-      "tec": "JOSE SALAS MEDINA",
+      "tec": "CRISTOBAL MIRANDA VALENC",
       "cat": "Alta 1 Play",
       "f": "16-19",
       "hi": "17:07",
       "d": "PJE YANKA 01142, QUILPUE",
-      "e": "Pendiente"
+      "e": "No Realizada"
      },
      {
       "o": "1-3O0BF44H",
@@ -9121,12 +9120,12 @@
      },
      {
       "o": "1-3NYBILL7",
-      "tec": "DANIEL NAVARRETE E",
+      "tec": "PABLO HERNANEZ FERNANDEZ",
       "cat": "Alta 1 Play",
       "f": "16-19",
       "hi": "17:08",
       "d": "LAS BARRANCAS 2581 CASA S1, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O07BQWC",
@@ -9144,7 +9143,7 @@
       "f": "16-19",
       "hi": "16:25",
       "d": "LAS ROSAS 859, QUILPUE",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O05Z5RC",
@@ -9162,7 +9161,7 @@
       "f": "13-16",
       "hi": "16:25",
       "d": "HUANHUALI 1481 EDIF. 1 DEPTO 401, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O03AXD4",
@@ -9175,16 +9174,16 @@
      },
      {
       "o": "1-3NZDB48P",
-      "tec": "MATIAS APELEO APELEO",
+      "tec": "SAMUEL FERNANDEZ VIDAL",
       "cat": "Alta 2 Play",
       "f": "16-19",
       "hi": "17:43",
       "d": "PJE TORREMOLINOS 0523, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O00VPYW",
-      "tec": "SAMUEL FERNANDEZ VIDAL",
+      "tec": "NICOLAS MOYANO R",
       "cat": "Migración 1 Play",
       "f": "16-19",
       "hi": "16:30",
@@ -9198,7 +9197,7 @@
       "f": "13-16",
       "hi": "15:02",
       "d": "BUENOS AIRES 1066, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NZZLWEY",
@@ -9216,7 +9215,7 @@
       "f": "16-19",
       "hi": "16:00",
       "d": "MINERALES 287, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NZZEICT",
@@ -9225,7 +9224,7 @@
       "f": "16-19",
       "hi": "16:17",
       "d": "SANTA SARA 1788 CASA 1, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Completado"
      },
      {
       "o": "1-3NZZ8SVP",
@@ -9243,7 +9242,7 @@
       "f": "13-16",
       "hi": "15:44",
       "d": "SAN JORGE 1563, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NZZ4060",
@@ -9306,7 +9305,7 @@
       "f": "13-16",
       "hi": "15:15",
       "d": "LAS PALMAS DEL ROCIO 123, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NZXVYVM",
@@ -9315,7 +9314,7 @@
       "f": "16-19",
       "hi": "16:00",
       "d": "SAN MARTIN 446, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NZXU2WU",
@@ -9419,12 +9418,24 @@
       "o": "1-3O03VMNE",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:36",
+      "hi": "16:52",
       "d": "LAS ROSAS 859, QUILPUE",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "CESAR MENA OLIVEROS",
       "visitas": 2,
       "ult_fecha": "23-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3O0BD911",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "16:39",
+      "d": "PJE YANKA 01142, QUILPUE",
+      "e": "No Realizada",
+      "tec": "CRISTOBAL MIRANDA VALENC",
+      "visitas": 2,
+      "ult_fecha": "22-09-2026",
       "ult_cierre": "Sin moradores"
      },
      {
@@ -9450,18 +9461,6 @@
       "visitas": 1,
       "ult_fecha": "16-09-2026",
       "ult_cierre": "Sin moradores"
-     },
-     {
-      "o": "1-3NYBILL7",
-      "cat": "Alta 1 Play",
-      "f": "16-19",
-      "hi": "17:06",
-      "d": "LAS BARRANCAS 2581 CASA S1, QUILPUE",
-      "e": "Pendiente",
-      "tec": "DANIEL NAVARRETE E",
-      "visitas": 1,
-      "ult_fecha": "21-09-2026",
-      "ult_cierre": "Sin Apoyo de Poste"
      },
      {
       "o": "1-3NSXHRA4",
@@ -9529,7 +9528,7 @@
       "f": "13-16",
       "hi": "14:55",
       "d": "ALMIRANTE NEFF 653 EDIF. 3 DEPTO 51, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "JOEL GUSTAVE GUSTA",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -9539,9 +9538,9 @@
       "o": "1-3NZZEICT",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:00",
+      "hi": "16:43",
       "d": "SANTA SARA 1788 CASA 1, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Completado",
       "tec": "JOEL GUSTAVE GUSTA",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -9551,9 +9550,9 @@
       "o": "1-3NZXVYVM",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:56",
+      "hi": "16:40",
       "d": "SAN MARTIN 446, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "JOSE CASTRO P",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -9601,23 +9600,11 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "G TELLEZ 2535, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JOSE SALAS MEDINA",
       "visitas": 1,
       "ult_fecha": "04-09-2026",
       "ult_cierre": "Direccion no encontrada"
-     },
-     {
-      "o": "1-3O0BD911",
-      "cat": "Alta 1 Play",
-      "f": "16-19",
-      "hi": "17:07",
-      "d": "PJE YANKA 01142, QUILPUE",
-      "e": "Pendiente",
-      "tec": "JOSE SALAS MEDINA",
-      "visitas": 2,
-      "ult_fecha": "22-09-2026",
-      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3NZYE527",
@@ -9625,7 +9612,7 @@
       "f": "13-16",
       "hi": "14:07",
       "d": "LAS PALMAS DEL ROCIO 123, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JUAN ARRIAGADA C",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -9683,9 +9670,9 @@
       "o": "1-3NY6B925",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:39",
+      "hi": "16:28",
       "d": "JOSE MIGUEL CARRERA 1524, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "LUIS GATICA DAVILA",
       "visitas": 1,
       "ult_fecha": "21-09-2026",
@@ -9697,7 +9684,7 @@
       "f": "13-16",
       "hi": "14:17",
       "d": "SAN JORGE 1563, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "MARCELO GÓMEZ GÓME",
       "visitas": 1,
       "ult_fecha": "21-08-2026",
@@ -9728,6 +9715,18 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3NYBILL7",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "17:11",
+      "d": "LAS BARRANCAS 2581 CASA S1, QUILPUE",
+      "e": "en ruta",
+      "tec": "PABLO HERNANEZ FERNANDEZ",
+      "visitas": 1,
+      "ult_fecha": "21-09-2026",
+      "ult_cierre": "Sin Apoyo de Poste"
+     },
+     {
       "o": "1-3NZZD8YY",
       "cat": "Alta 2 Play",
       "f": "10-13",
@@ -9743,9 +9742,9 @@
       "o": "1-3NZGNSYI",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:41",
+      "hi": "16:38",
       "d": "DOLORES 820, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "RAFAEL VARGAS B",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -9771,7 +9770,7 @@
       "f": "16-19",
       "hi": "15:54",
       "d": "DE VEER 1451, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "JOSE GALAZ D",
       "desde": "22-09-2026"
      },
@@ -9789,5 +9788,5 @@
    }
   }
  },
- "generado": "23-09-2026 16:19"
+ "generado": "23-09-2026 17:08"
 }
