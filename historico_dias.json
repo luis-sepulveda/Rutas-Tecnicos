@@ -8996,16 +8996,16 @@
    }
   },
   "23-09-2026": {
-   "hasta": "15:39",
+   "hasta": "15:44",
    "actividades": 159,
    "tecnicos": 37,
    "estados": {
     "Completado": 67,
-    "Iniciado": 20,
-    "Pendiente": 29,
+    "Iniciado": 21,
+    "Pendiente": 27,
     "No Realizada": 27,
-    "en ruta": 7,
     "Suspendido": 4,
+    "en ruta": 8,
     "Cancelado": 5
    },
    "rgu": 248.0,
@@ -9380,9 +9380,9 @@
       "o": "1-3NZAG6G3",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "15:37",
+      "hi": "15:43",
       "d": "MANUEL BULNES 1640, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "ANTONHY MORALES MENDOZA",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -9620,9 +9620,9 @@
       "o": "1-3O00MT4D",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "15:54",
+      "hi": "15:51",
       "d": "SECCHY 046, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "LUIS CASTRO TORRES",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -9730,9 +9730,9 @@
       "o": "1-3NZ3RONO",
       "cat": "Migración 2 Play",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "16:01",
       "d": "DE VEER 1451, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JOSE GALAZ D",
       "desde": "22-09-2026"
      },
@@ -9750,5 +9750,5 @@
    }
   }
  },
- "generado": "23-09-2026 15:39"
+ "generado": "23-09-2026 15:44"
 }
