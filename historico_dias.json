@@ -8996,12 +8996,12 @@
    }
   },
   "23-09-2026": {
-   "hasta": "17:48",
+   "hasta": "17:53",
    "actividades": 161,
    "tecnicos": 37,
    "estados": {
-    "Completado": 95,
-    "Iniciado": 16,
+    "Completado": 98,
+    "Iniciado": 13,
     "No Realizada": 41,
     "Suspendido": 4,
     "Cancelado": 5
@@ -9752,7 +9752,7 @@
       "f": "16-19",
       "hi": "16:38",
       "d": "DOLORES 820, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "RAFAEL VARGAS B",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -9796,5 +9796,5 @@
    }
   }
  },
- "generado": "23-09-2026 17:48"
+ "generado": "23-09-2026 17:53"
 }
