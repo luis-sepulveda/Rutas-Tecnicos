@@ -8996,15 +8996,15 @@
    }
   },
   "23-09-2026": {
-   "hasta": "16:14",
+   "hasta": "16:19",
    "actividades": 160,
    "tecnicos": 37,
    "estados": {
     "Completado": 77,
-    "en ruta": 6,
-    "Iniciado": 25,
+    "en ruta": 5,
+    "Iniciado": 27,
     "No Realizada": 28,
-    "Pendiente": 15,
+    "Pendiente": 14,
     "Suspendido": 4,
     "Cancelado": 5
    },
@@ -9551,7 +9551,7 @@
       "o": "1-3NZXVYVM",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:18",
+      "hi": "16:56",
       "d": "SAN MARTIN 446, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -9683,7 +9683,7 @@
       "o": "1-3NY6B925",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:24",
+      "hi": "16:39",
       "d": "JOSE MIGUEL CARRERA 1524, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS GATICA DAVILA",
@@ -9789,5 +9789,5 @@
    }
   }
  },
- "generado": "23-09-2026 16:14"
+ "generado": "23-09-2026 16:19"
 }
