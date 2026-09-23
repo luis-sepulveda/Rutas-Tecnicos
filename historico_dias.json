@@ -8996,23 +8996,23 @@
    }
   },
   "23-09-2026": {
-   "hasta": "11:27",
-   "actividades": 133,
+   "hasta": "11:32",
+   "actividades": 134,
    "tecnicos": 37,
    "estados": {
-    "Completado": 8,
-    "Iniciado": 31,
-    "Pendiente": 71,
+    "Completado": 10,
+    "Iniciado": 32,
+    "Pendiente": 70,
     "No Realizada": 12,
     "Suspendido": 4,
-    "en ruta": 3,
+    "en ruta": 2,
     "Cancelado": 4
    },
-   "rgu": 219.6,
+   "rgu": 220.6,
    "caidas_total": 2,
    "caidas_activas": 2,
    "caidas_resueltas": 0,
-   "nuevas": 18,
+   "nuevas": 19,
    "al_bucket": 0,
    "repetidas": 30,
    "reagendadas": 2,
@@ -9039,6 +9039,15 @@
     ],
     "nuevas": [
      {
+      "o": "1-3O00VPYW",
+      "tec": "CRISTOBAL SILVA LEIVA",
+      "cat": "Migración 1 Play",
+      "f": "16-19",
+      "hi": "16:30",
+      "d": "MATURANA 34, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3O00CD5H",
       "tec": "RAFAEL VARGAS B",
       "cat": "Reparación",
@@ -9054,7 +9063,7 @@
       "f": "10-13",
       "hi": "12:37",
       "d": "CALLE 1 1150 EDIF. 13 DEPTO 203, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NZZQCGW",
@@ -9386,9 +9395,9 @@
       "o": "1-3NZ8UY3L",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "11:41",
+      "hi": "11:31",
       "d": "LAGO JANOSA 2685 DEPTO 41, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "JOSE PEREZ RANGEL",
       "visitas": 1,
       "ult_fecha": "03-09-2026",
@@ -9580,7 +9589,7 @@
       "f": "10-13",
       "hi": "09:44",
       "d": "ALDO FRANCIA 2398, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JOSE PEREZ RANGEL",
       "desde": "22-09-2026"
      }
@@ -9588,5 +9597,5 @@
    }
   }
  },
- "generado": "23-09-2026 11:27"
+ "generado": "23-09-2026 11:32"
 }
