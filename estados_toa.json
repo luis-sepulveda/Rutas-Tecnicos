@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-23T12:08:49",
+  "actualizado": "2026-09-23T12:38:50",
   "resumen": {
     "sin informacion": 3,
     "reagendada": 2
@@ -108,8 +108,8 @@
             "texto": "1-3NUW717N - 10-13-Migración-Migración-ALMIRANTE NEFF 653 EDIF. 3 DEPTO 43Sab, 26 Sep"
           },
           {
-            "estado": "reagendada",
-            "color": "rgb(255, 222, 0)",
+            "estado": "?",
+            "color": "rgb(255, 170, 170)",
             "ot": "1-3O01G3QG",
             "franja": "13-16",
             "texto": "1-3O01G3QG - 13-16-Alta-1 Play-ALMIRANTE NEFF 653 EDIF. 3 DEPTO 51"
