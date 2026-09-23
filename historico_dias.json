@@ -8996,24 +8996,35 @@
    }
   },
   "23-09-2026": {
-   "hasta": "09:15",
-   "actividades": 100,
+   "hasta": "09:30",
+   "actividades": 107,
    "tecnicos": 37,
    "estados": {
-    "Pendiente": 99,
+    "Pendiente": 87,
+    "en ruta": 19,
     "Cancelado": 1
    },
-   "rgu": 171.5,
+   "rgu": 180.5,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
-   "nuevas": 0,
+   "nuevas": 1,
    "al_bucket": 0,
-   "repetidas": 19,
+   "repetidas": 21,
    "reagendadas": 2,
    "detalle": {
     "caidas": [],
-    "nuevas": [],
+    "nuevas": [
+     {
+      "o": "1-3NZX98TA",
+      "tec": "FELIPE SILVA R",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "12:05",
+      "d": "LAS ROSAS 859, QUILPUE",
+      "e": "Pendiente"
+     }
+    ],
     "repetidas": [
      {
       "o": "1-3NZMGHU1",
@@ -9031,7 +9042,7 @@
       "o": "1-3NZ8GAMB",
       "cat": "Migración 3 Play",
       "f": "10-13",
-      "hi": "10:50",
+      "hi": "10:28",
       "d": "OJOS DE AGUA 929, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
@@ -9088,6 +9099,18 @@
       "ult_cierre": "Falla Aprovisionamiento"
      },
      {
+      "o": "1-3NZX98TA",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "12:05",
+      "d": "LAS ROSAS 859, QUILPUE",
+      "e": "Pendiente",
+      "tec": "FELIPE SILVA R",
+      "visitas": 1,
+      "ult_fecha": "22-09-2026",
+      "ult_cierre": "Clte desiste motivo comercial"
+     },
+     {
       "o": "1-3NZHDAI1",
       "cat": "Alta 1 Play",
       "f": "10-13",
@@ -9115,7 +9138,7 @@
       "o": "1-3NZ2A7K2",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "17:21",
       "d": "ALMIRANTE NEFF 653 EDIF. 3 DEPTO 51, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -9172,10 +9195,22 @@
       "ult_cierre": "Falla Aprovisionamiento"
      },
      {
+      "o": "1-3NZWLO1X",
+      "cat": "Migración 1 Play",
+      "f": "13-16",
+      "hi": "14:00",
+      "d": "ALCALDE ALEJANDRO PERALTA 1121 LOCAL 10, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "MARCELO GÓMEZ GÓME",
+      "visitas": 2,
+      "ult_fecha": "21-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3NZ7U071",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:59",
+      "hi": "10:30",
       "d": "SANTA MARIA 0241, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -9199,9 +9234,9 @@
       "o": "1-3NZ92PUO",
       "cat": "Migración 3 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:31",
       "d": "HUANHUALI 418 EDIF. B5 DEPTO 22, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "SAMUEL FERNANDEZ VIDAL",
       "visitas": 1,
       "ult_fecha": "24-08-2026",
@@ -9269,5 +9304,5 @@
    }
   }
  },
- "generado": "23-09-2026 09:15"
+ "generado": "23-09-2026 09:30"
 }
