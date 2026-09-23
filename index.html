@@ -2125,7 +2125,7 @@ function renderNuevas(){
       // se marca: si se marcara igual, se leeria como sospechosa y mandaria a
       // buscarla al boton de Caidas, donde no esta ni tiene por que estar.
       const fue = String(x.e||'').indexOf('ya no está') >= 0;
-      const cerrada = ['Completado','No Realizada','Cancelado'].indexOf(est) >= 0;
+      const cerrada = ['Completado','No Realizada','Cancelado','Suspendido'].indexOf(est) >= 0;
       const ida = fue && !cerrada;
       // ...y se dice DONDE esta, no solo donde no esta. Tres destinos
       // posibles para una orden que salio de una bandeja:
@@ -4601,7 +4601,11 @@ function pintarPortada(){
   const nInicio = inicioHoy() ? inicioHoy().total : 0;
 
   /* Lo que queda sin cerrar en cada franja: dice como viene el resto del dia. */
-  const abierta = o => !['Completado','No Realizada','Cancelado']
+  /* Suspendido cuenta como CERRADA (23-09-2026): el tecnico ya la dejo y la
+     resuelve VTR/CLARO. Antes faltaba en esta lista y la franja 10-13 decia
+     "4 sin cerrar" con todo cerrado: eran 4 suspendidas. Asi calza con la
+     cifra "sin cerrar" de arriba, que ya las contaba con las canceladas. */
+  const abierta = o => !['Completado','No Realizada','Cancelado','Suspendido']
                         .includes(String(o.e || ''));
   const porFranja = {};
   filas.forEach(o => {
