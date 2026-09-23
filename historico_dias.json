@@ -8996,17 +8996,17 @@
    }
   },
   "23-09-2026": {
-   "hasta": "14:18",
+   "hasta": "14:23",
    "actividades": 157,
    "tecnicos": 37,
    "estados": {
-    "Completado": 50,
+    "Completado": 51,
     "Iniciado": 23,
     "Pendiente": 50,
     "No Realizada": 21,
-    "en ruta": 4,
     "Suspendido": 4,
-    "Cancelado": 5
+    "Cancelado": 5,
+    "en ruta": 3
    },
    "rgu": 246.0,
    "caidas_total": 8,
@@ -9171,7 +9171,7 @@
       "f": "10-13",
       "hi": "12:37",
       "d": "CALLE 1 1150 EDIF. 13 DEPTO 203, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NZZQCGW",
@@ -9383,9 +9383,9 @@
       "o": "1-3NZAG6G3",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "14:22",
+      "hi": "16:00",
       "d": "MANUEL BULNES 1640, QUILPUE",
-      "e": "en ruta",
+      "e": "Pendiente",
       "tec": "CRISTOBAL SILVA LEIVA",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -9587,7 +9587,7 @@
       "o": "1-3O00MT4D",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "15:25",
+      "hi": "15:45",
       "d": "SECCHY 046, QUILPUE",
       "e": "Pendiente",
       "tec": "LUIS CASTRO TORRES",
@@ -9623,7 +9623,7 @@
       "o": "1-3NZDS5FD",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:38",
+      "hi": "15:33",
       "d": "TARRAGONA 61, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATIAS APELEO APELEO",
@@ -9709,7 +9709,7 @@
       "o": "1-3NZ3RONO",
       "cat": "Migración 2 Play",
       "f": "16-19",
-      "hi": "16:39",
+      "hi": "17:01",
       "d": "DE VEER 1451, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -9729,5 +9729,5 @@
    }
   }
  },
- "generado": "23-09-2026 14:18"
+ "generado": "23-09-2026 14:23"
 }
