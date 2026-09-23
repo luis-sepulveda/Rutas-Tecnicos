@@ -1,8 +1,9 @@
 {
-  "actualizado": "2026-09-23T12:38:50",
+  "actualizado": "2026-09-23T13:09:04",
   "resumen": {
     "sin informacion": 3,
-    "reagendada": 2
+    "cancelada": 1,
+    "reagendada": 3
   },
   "estados": {
     "1-3NZJUAIK": {
@@ -61,6 +62,16 @@
         ]
       }
     },
+    "1-3O03AXD4": {
+      "tec": "ANTONHY MORALES MENDOZA",
+      "cat": "Migración 2 Play",
+      "franja_original": "13-16",
+      "d": "PJE DEL RISCO 502, QUILPUE",
+      "estado": "cancelada",
+      "color": "rgb(128, 255, 128)",
+      "detalle": "1-3O03AXD4 - 10-13-Migración-Migración-PJE DEL RISCO 502Lun, 28 Sep",
+      "franja_nueva": "10-13"
+    },
     "1-3NZHDAI1": {
       "tec": "GEEYSER PEREZ O",
       "cat": "Alta 1 Play",
@@ -101,8 +112,8 @@
         "aviso": "historial de la direccion, NO es el estado de esta orden",
         "filas": [
           {
-            "estado": "reagendada",
-            "color": "rgb(255, 222, 0)",
+            "estado": "cancelada",
+            "color": "rgb(128, 255, 128)",
             "ot": "1-3NUW717N",
             "franja": "10-13",
             "texto": "1-3NUW717N - 10-13-Migración-Migración-ALMIRANTE NEFF 653 EDIF. 3 DEPTO 43Sab, 26 Sep"
@@ -154,6 +165,16 @@
       "color": "rgb(255, 222, 0)",
       "detalle": "1-3NZ7U071 - 16-19-Alta-2 Play-SANTA MARIA 0241Vie, 25 Sep",
       "franja_nueva": "16-19"
+    },
+    "1-3NZAHAJS": {
+      "tec": "RAFAEL VARGAS B",
+      "cat": "Migración 3 Play",
+      "franja_original": "13-16",
+      "d": "CAMINO TRONCAL 2091 CASA 18, VILLA ALEMANA",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3NZAHAJS - 10-13-Migración-Migración-CAMINO TRONCAL 2091 CASA 18Sab, 26 Sep",
+      "franja_nueva": "10-13"
     },
     "1-3NZX9BPJ": {
       "tec": "YENDER BOSCAN CADENAS",
