@@ -4067,10 +4067,16 @@ const URL_EQUIPO = URL_HISTORIAL + '#equipo';
    El monitor publica cada 5 minutos, asi que 15 sin novedad ya es senal de
    que algo paso. Pero solo avisa EN HORARIO: fuera de el esta apagado a
    proposito, y una alarma que suena toda la noche se deja de mirar.
-   Horario de operacion: lunes a sabado, de 08:45 a 18:00. */
+   Horario de operacion: lunes a sabado, de 08:45 a 19:30 (hasta el
+   23-09-2026 era 18:00; se corrio porque en la semana PM de Luis el monitor
+   corre hasta las 19:00 y los tecnicos a veces terminan mas tarde).
+
+   Desde el 23-09-2026 el texto dice SIEMPRE hace cuanto se actualizo, tambien
+   fuera de horario, a pedido de Luis: asi sabe de un vistazo si el monitor
+   sigue vivo. Lo unico que depende del horario es el ROJO de la alarma. */
 const MIN_SIN_AVISO = 15;
 const HORA_INICIO = 8 * 60 + 45;
-const HORA_FIN = 18 * 60;
+const HORA_FIN = 19 * 60 + 30;
 
 function estadoMonitor(){
   const ahora = new Date();
@@ -4081,10 +4087,9 @@ function estadoMonitor(){
   const edad = (typeof FECHA_DATOS !== 'undefined' && FECHA_DATOS)
     ? Math.round((ahora - FECHA_DATOS) / 60000) : null;
 
-  if(!enHorario) return {alarma:false, texto:'Monitor fuera de horario'};
-  if(edad === null) return {alarma:true, texto:'Sin datos del monitor'};
+  if(edad === null) return {alarma:enHorario, texto:'Sin datos del monitor'};
   if(edad > MIN_SIN_AVISO)
-    return {alarma:true, texto:'Sin actualizar hace ' + fmtDur(edad)};
+    return {alarma:enHorario, texto:'Sin actualizar hace ' + fmtDur(edad)};
   return {alarma:false, texto:'Actualizado hace ' + fmtDur(edad)};
 }
 
