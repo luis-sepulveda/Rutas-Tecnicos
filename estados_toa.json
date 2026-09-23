@@ -1,133 +1,28 @@
 {
-  "actualizado": "2026-09-22T18:55:06",
+  "actualizado": "2026-09-23T10:37:55",
   "resumen": {
-    "reagendada": 5,
-    "sin informacion": 3,
-    "?": 1
+    "reagendada": 2
   },
   "estados": {
-    "1-3NZ3RONO": {
-      "tec": "CRISTOBAL MIRANDA VALENC",
-      "cat": "Migración 2 Play",
-      "franja_original": "13-16",
-      "d": "DE VEER 1451, QUILPUE",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NZ3RONO - 16-19-Migración-Migración-DE VEER 1451Mie, 23 Sep",
-      "franja_nueva": "16-19"
-    },
-    "1-3NY8VKVC": {
-      "tec": "ELIAS ARMIJO L",
-      "cat": "Migración 1 Play",
-      "franja_original": "16-19",
-      "d": "ROMA 1286, QUILPUE",
-      "estado": "sin informacion",
-      "nota": "la OT ya no existe en TOA",
-      "contexto": {
-        "buscado": "ROMA 1286",
-        "aviso": "historial de la direccion, NO es el estado de esta orden",
-        "filas": [
-          {
-            "estado": "gestionada",
-            "color": "rgb(96, 206, 206)",
-            "ot": "1-3MERD1ZX",
-            "franja": "16-19",
-            "texto": "1-3MERD1ZX - 16-19-Migración-Migración-ROMA 1286Lun, 6 Jul"
-          }
-        ]
-      }
-    },
-    "1-3NWPLFGT": {
-      "tec": "HERNAN CORTES HERRERA",
-      "cat": "Migración 2 Play",
-      "franja_original": "13-16",
-      "d": "PJE LIMACHE 166, QUILPUE",
-      "estado": "sin informacion",
-      "nota": "la OT ya no existe en TOA",
-      "contexto": {
-        "buscado": "PJE LIMACHE 166",
-        "aviso": "historial de la direccion, NO es el estado de esta orden",
-        "filas": [
-          {
-            "estado": "gestionada",
-            "color": "rgb(96, 206, 206)",
-            "ot": "1-3NVR59VT",
-            "franja": "13-16",
-            "texto": "1-3NVR59VT - 13-16-Migración-Migración-PJE LIMACHE 166Jue, 17 Sep"
-          }
-        ]
-      }
-    },
-    "1-3NZC0L4T": {
-      "tec": "JOEL GUSTAVE GUSTA",
-      "cat": "Migración 2 Play",
-      "franja_original": "16-19",
-      "d": "ALDO FRANCIA 2398, VILLA ALEMANA",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NZC0L4T - 10-13-Migración-Migración-ALDO FRANCIA 2398Mie, 23 Sep",
-      "franja_nueva": "10-13"
-    },
-    "1-3NZ1TFKU": {
-      "tec": "JOSE CASTRO P",
+    "1-3NZ7U071": {
+      "tec": "MATÍAS JAQUE AG",
       "cat": "Alta 2 Play",
-      "franja_original": "16-19",
-      "d": "LAS PALMAS DEL ROCIO 123, VILLA ALEMANA",
-      "estado": "sin informacion",
-      "nota": "la OT ya no existe en TOA",
-      "contexto": {
-        "buscado": "LAS PALMAS DEL ROCIO 123",
-        "aviso": "historial de la direccion, NO es el estado de esta orden",
-        "filas": [
-          {
-            "estado": "reagendada",
-            "color": "rgb(255, 222, 0)",
-            "ot": "1-3NZBZ9XY",
-            "franja": "10-13",
-            "texto": "1-3NZBZ9XY - 10-13-Alta-2 Play-LAS PALMAS DEL ROCIO 123Mie, 23 Sep"
-          }
-        ]
-      }
-    },
-    "1-3NZ5K106": {
-      "tec": "JOSE ROJO A",
-      "cat": "Migración 2 Play",
-      "franja_original": "16-19",
-      "d": "TRASLAVINA 1611, VILLA ALEMANA",
+      "franja_original": "10-13",
+      "d": "SANTA MARIA 0241, VILLA ALEMANA",
       "estado": "reagendada",
       "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NZ5K106 - 10-13-Migración-Migración-TRASLAVINA 1611Jue, 24 Sep",
-      "franja_nueva": "10-13"
-    },
-    "1-3NVU8OCL": {
-      "tec": "JUAN ARRIAGADA C",
-      "cat": "Modificación de Servicio",
-      "franja_original": "16-19",
-      "d": "SEGUNDA 0347, VILLA ALEMANA",
-      "estado": "?",
-      "color": "rgb(255, 170, 170)",
-      "detalle": "1-3NVU8OCL - 16-19-Modificacion postventa-Modificación postventa-SEGUNDA 0347",
+      "detalle": "1-3NZ7U071 - 16-19-Alta-2 Play-SANTA MARIA 0241Vie, 25 Sep",
       "franja_nueva": "16-19"
     },
-    "1-3NZ4OMCB": {
-      "tec": "MATIAS APELEO APELEO",
-      "cat": "Alta 1 Play",
-      "franja_original": "16-19",
-      "d": "SANTA RITA 766, VILLA ALEMANA",
+    "1-3NZX9BPJ": {
+      "tec": "YENDER BOSCAN CADENAS",
+      "cat": "Reparación",
+      "franja_original": "10-13",
+      "d": "LA INVERNADA 3172, QUILPUE",
       "estado": "reagendada",
       "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NZ4OMCB - 10-13-Alta-1 Play-SANTA RITA 766Vie, 25 Sep",
+      "detalle": "1-3NZX9BPJ - 10-13-Reparación-3 Play Sin Servicio-LA INVERNADA 3172Sab, 26 Sep",
       "franja_nueva": "10-13"
-    },
-    "1-3NWUM8QC": {
-      "tec": "RAFAEL VARGAS B",
-      "cat": "Migración 1 Play",
-      "franja_original": "16-19",
-      "d": "MARCONI 744, VILLA ALEMANA",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NWUM8QC - 16-19-Migración-Migración-MARCONI 744Vie, 25 Sep",
-      "franja_nueva": "16-19"
     }
   }
 }
