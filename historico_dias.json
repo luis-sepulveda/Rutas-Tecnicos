@@ -8996,21 +8996,22 @@
    }
   },
   "23-09-2026": {
-   "hasta": "18:08",
-   "actividades": 161,
+   "hasta": "18:13",
+   "actividades": 162,
    "tecnicos": 37,
    "estados": {
     "Completado": 102,
     "Iniciado": 9,
     "No Realizada": 41,
+    "Pendiente": 1,
     "Suspendido": 4,
     "Cancelado": 5
    },
-   "rgu": 249.1,
+   "rgu": 249.2,
    "caidas_total": 9,
    "caidas_activas": 9,
    "caidas_resueltas": 0,
-   "nuevas": 29,
+   "nuevas": 30,
    "al_bucket": 13,
    "repetidas": 34,
    "reagendadas": 2,
@@ -9099,6 +9100,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O0GCEQB",
+      "tec": "CRISTOBAL SILVA LEIVA",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "18:12",
+      "d": "CAMINO DEL SOL 2400 EDIF. B DEPTO 61, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3O0EULSQ",
       "tec": "JOSE SALAS MEDINA",
@@ -9796,5 +9806,5 @@
    }
   }
  },
- "generado": "23-09-2026 18:08"
+ "generado": "23-09-2026 18:13"
 }
