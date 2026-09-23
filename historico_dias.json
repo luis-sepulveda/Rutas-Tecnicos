@@ -8996,12 +8996,12 @@
    }
   },
   "23-09-2026": {
-   "hasta": "15:24",
+   "hasta": "15:29",
    "actividades": 146,
    "tecnicos": 37,
    "estados": {
-    "Completado": 64,
-    "en ruta": 7,
+    "Completado": 65,
+    "en ruta": 6,
     "Pendiente": 18,
     "Iniciado": 21,
     "No Realizada": 27,
@@ -9623,7 +9623,7 @@
       "o": "1-3NY6B925",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:08",
+      "hi": "16:24",
       "d": "JOSE MIGUEL CARRERA 1524, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS GATICA DAVILA",
@@ -9719,5 +9719,5 @@
    }
   }
  },
- "generado": "23-09-2026 15:24"
+ "generado": "23-09-2026 15:29"
 }
