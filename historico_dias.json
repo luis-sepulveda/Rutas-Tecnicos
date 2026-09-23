@@ -8996,13 +8996,13 @@
    }
   },
   "23-09-2026": {
-   "hasta": "18:43",
+   "hasta": "18:48",
    "actividades": 162,
    "tecnicos": 37,
    "estados": {
-    "Completado": 107,
+    "Completado": 108,
     "No Realizada": 41,
-    "Iniciado": 5,
+    "Iniciado": 4,
     "Suspendido": 4,
     "Cancelado": 5
    },
@@ -9689,7 +9689,7 @@
       "f": "16-19",
       "hi": "16:28",
       "d": "JOSE MIGUEL CARRERA 1524, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "LUIS GATICA DAVILA",
       "visitas": 1,
       "ult_fecha": "21-09-2026",
@@ -9805,5 +9805,5 @@
    }
   }
  },
- "generado": "23-09-2026 18:43"
+ "generado": "23-09-2026 18:48"
 }
