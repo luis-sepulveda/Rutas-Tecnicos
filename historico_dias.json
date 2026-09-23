@@ -8996,19 +8996,19 @@
    }
   },
   "23-09-2026": {
-   "hasta": "14:08",
-   "actividades": 156,
+   "hasta": "14:18",
+   "actividades": 157,
    "tecnicos": 37,
    "estados": {
-    "Completado": 49,
-    "Iniciado": 21,
-    "Pendiente": 52,
+    "Completado": 50,
+    "Iniciado": 23,
+    "Pendiente": 50,
     "No Realizada": 21,
     "en ruta": 4,
     "Suspendido": 4,
     "Cancelado": 5
    },
-   "rgu": 245.9,
+   "rgu": 246.0,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
@@ -9207,7 +9207,7 @@
       "f": "13-16",
       "hi": "15:44",
       "d": "SAN JORGE 1563, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NZZ4060",
@@ -9431,7 +9431,7 @@
       "o": "1-3NZZ8SVP",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "15:19",
+      "hi": "15:48",
       "d": "PJE FELISA 720, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -9443,7 +9443,7 @@
       "o": "1-3NY6B925",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:22",
+      "hi": "16:51",
       "d": "JOSE MIGUEL CARRERA 1524, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -9481,7 +9481,7 @@
       "f": "13-16",
       "hi": "14:08",
       "d": "HUANHUALI 1549 EDIF. B10 DEPTO 32, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JOEL GUSTAVE GUSTA",
       "visitas": 1,
       "ult_fecha": "10-09-2026",
@@ -9611,9 +9611,9 @@
       "o": "1-3NZZ8RP9",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:06",
+      "hi": "14:17",
       "d": "SAN JORGE 1563, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "MARCELO GÓMEZ GÓME",
       "visitas": 1,
       "ult_fecha": "21-08-2026",
@@ -9623,7 +9623,7 @@
       "o": "1-3NZDS5FD",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:10",
+      "hi": "15:38",
       "d": "TARRAGONA 61, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATIAS APELEO APELEO",
@@ -9729,5 +9729,5 @@
    }
   }
  },
- "generado": "23-09-2026 14:08"
+ "generado": "23-09-2026 14:18"
 }
