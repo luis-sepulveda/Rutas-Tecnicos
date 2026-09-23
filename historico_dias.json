@@ -8996,15 +8996,15 @@
    }
   },
   "23-09-2026": {
-   "hasta": "16:09",
+   "hasta": "16:14",
    "actividades": 160,
    "tecnicos": 37,
    "estados": {
-    "Completado": 74,
-    "en ruta": 8,
+    "Completado": 77,
+    "en ruta": 6,
     "Iniciado": 25,
     "No Realizada": 28,
-    "Pendiente": 16,
+    "Pendiente": 15,
     "Suspendido": 4,
     "Cancelado": 5
    },
@@ -9117,7 +9117,7 @@
       "f": "13-16",
       "hi": "16:22",
       "d": "2 SUR 1521, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NYBILL7",
@@ -9419,7 +9419,7 @@
       "o": "1-3O03VMNE",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:17",
+      "hi": "16:36",
       "d": "LAS ROSAS 859, QUILPUE",
       "e": "Pendiente",
       "tec": "CESAR MENA OLIVEROS",
@@ -9789,5 +9789,5 @@
    }
   }
  },
- "generado": "23-09-2026 16:09"
+ "generado": "23-09-2026 16:14"
 }
