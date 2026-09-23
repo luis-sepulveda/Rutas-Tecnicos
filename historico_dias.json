@@ -8996,17 +8996,17 @@
    }
   },
   "23-09-2026": {
-   "hasta": "12:08",
+   "hasta": "12:13",
    "actividades": 131,
    "tecnicos": 37,
    "estados": {
     "Completado": 16,
-    "Iniciado": 34,
+    "Iniciado": 35,
     "Pendiente": 57,
     "No Realizada": 14,
     "Suspendido": 4,
     "Cancelado": 4,
-    "en ruta": 2
+    "en ruta": 1
    },
    "rgu": 220.6,
    "caidas_total": 5,
@@ -9234,7 +9234,7 @@
       "f": "10-13",
       "hi": "12:05",
       "d": "LAS ROSAS 859, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      }
     ],
     "repetidas": [
@@ -9254,7 +9254,7 @@
       "o": "1-3NZYCT7D",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "12:30",
+      "hi": "12:41",
       "d": "AV LOS CARRERA 2409, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -9374,9 +9374,9 @@
       "o": "1-3NZX98TA",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "12:08",
+      "hi": "12:09",
       "d": "LAS ROSAS 859, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "GEEYSER PEREZ O",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -9612,5 +9612,5 @@
    }
   }
  },
- "generado": "23-09-2026 12:08"
+ "generado": "23-09-2026 12:13"
 }
