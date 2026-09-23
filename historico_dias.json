@@ -8996,13 +8996,13 @@
    }
   },
   "23-09-2026": {
-   "hasta": "17:43",
+   "hasta": "17:48",
    "actividades": 161,
    "tecnicos": 37,
    "estados": {
-    "Completado": 91,
-    "Iniciado": 21,
-    "No Realizada": 40,
+    "Completado": 95,
+    "Iniciado": 16,
+    "No Realizada": 41,
     "Suspendido": 4,
     "Cancelado": 5
    },
@@ -9106,7 +9106,7 @@
       "f": "16-19",
       "hi": "17:22",
       "d": "G TELLEZ 2535, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O0BD911",
@@ -9133,7 +9133,7 @@
       "f": "16-19",
       "hi": "17:08",
       "d": "LAS BARRANCAS 2581 CASA S1, QUILPUE",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3O07BQWC",
@@ -9304,7 +9304,7 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "EL RINCON DE LOS CISNES 617, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NZYE527",
@@ -9728,7 +9728,7 @@
       "f": "16-19",
       "hi": "17:14",
       "d": "LAS BARRANCAS 2581 CASA S1, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "PABLO HERNANEZ FERNANDEZ",
       "visitas": 1,
       "ult_fecha": "21-09-2026",
@@ -9796,5 +9796,5 @@
    }
   }
  },
- "generado": "23-09-2026 17:43"
+ "generado": "23-09-2026 17:48"
 }
