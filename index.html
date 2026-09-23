@@ -3895,6 +3895,11 @@ function popupPrev(p){
    el repo, se corrige aca y nada mas. */
 const URL_HISTORIAL = 'https://luis-sepulveda.github.io/historial-completadas/';
 const URL_ACTIVIDADES = 'https://luis-sepulveda.github.io/Actividades-diario/';
+/* Reporte de seguimiento de las restricciones al despacho (desde 16-09-2026).
+   Lo genera seguimiento_autonomia.py en Dashboard-actividades y se sube a ese
+   repo junto con datos.json. Vive alla y no aca porque sus datos (datos.csv)
+   y su rutina diaria son de ese dashboard. */
+const URL_SEGUIMIENTO = URL_ACTIVIDADES + 'seguimiento_autonomia.html';
 /* El reporte de direcciones repetidas vive dentro del modulo de actividades,
    no es una pagina aparte. La marca #repetidas lo abre directo. */
 /* Los dos reportes del historial se abren directo con su marca. */
@@ -4542,6 +4547,7 @@ function pintarPortada(){
     +     '<a class="aqui" onclick="verMapa()">Rutas</a>'
     +     '<a href="' + URL_ACTIVIDADES + '" target="_blank">Actividades</a>'
     +     '<a href="' + URL_HISTORIAL + '" target="_blank">Historial</a>'
+    +     '<a href="' + URL_SEGUIMIENTO + '" target="_blank">Seguimiento</a>'
     +   '</nav>'
     +   '<span class="pv-upd"><i></i><span class="upd"></span></span>'
     + '</header>'
