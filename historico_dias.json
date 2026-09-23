@@ -8996,19 +8996,19 @@
    }
   },
   "23-09-2026": {
-   "hasta": "11:22",
-   "actividades": 132,
+   "hasta": "11:27",
+   "actividades": 133,
    "tecnicos": 37,
    "estados": {
-    "Completado": 7,
-    "Iniciado": 33,
-    "Pendiente": 70,
+    "Completado": 8,
+    "Iniciado": 31,
+    "Pendiente": 71,
     "No Realizada": 12,
+    "Suspendido": 4,
     "en ruta": 3,
-    "Suspendido": 3,
     "Cancelado": 4
    },
-   "rgu": 218.6,
+   "rgu": 219.6,
    "caidas_total": 2,
    "caidas_activas": 2,
    "caidas_resueltas": 0,
@@ -9386,7 +9386,7 @@
       "o": "1-3NZ8UY3L",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "11:21",
+      "hi": "11:41",
       "d": "LAGO JANOSA 2685 DEPTO 41, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -9458,7 +9458,7 @@
       "o": "1-3NZ2CGO9",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "11:31",
+      "hi": "11:56",
       "d": "COLOMBIA 1334, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -9588,5 +9588,5 @@
    }
   }
  },
- "generado": "23-09-2026 11:22"
+ "generado": "23-09-2026 11:27"
 }
