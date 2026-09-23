@@ -8996,13 +8996,13 @@
    }
   },
   "23-09-2026": {
-   "hasta": "13:23",
+   "hasta": "13:28",
    "actividades": 148,
    "tecnicos": 37,
    "estados": {
-    "Completado": 35,
+    "Completado": 37,
     "Pendiente": 58,
-    "Iniciado": 22,
+    "Iniciado": 20,
     "No Realizada": 21,
     "en ruta": 3,
     "Suspendido": 4,
@@ -9347,7 +9347,7 @@
       "o": "1-3NZMGHU1",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:30",
+      "hi": "14:50",
       "d": "PJE PARTICULAR(J. URIBE) 59 CASA E, QUILPUE",
       "e": "Pendiente",
       "tec": "DANIEL NAVARRETE E",
@@ -9479,7 +9479,7 @@
       "o": "1-3NZWLO1X",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:28",
+      "hi": "13:28",
       "d": "ALCALDE ALEJANDRO PERALTA 1121 LOCAL 10, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -9647,7 +9647,7 @@
       "o": "1-3NZXVYVM",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:45",
+      "hi": "16:31",
       "d": "SAN MARTIN 446, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -9681,5 +9681,5 @@
    }
   }
  },
- "generado": "23-09-2026 13:23"
+ "generado": "23-09-2026 13:28"
 }
