@@ -8996,12 +8996,12 @@
    }
   },
   "23-09-2026": {
-   "hasta": "17:38",
+   "hasta": "17:43",
    "actividades": 161,
    "tecnicos": 37,
    "estados": {
-    "Completado": 90,
-    "Iniciado": 22,
+    "Completado": 91,
+    "Iniciado": 21,
     "No Realizada": 40,
     "Suspendido": 4,
     "Cancelado": 5
@@ -9223,7 +9223,7 @@
       "f": "16-19",
       "hi": "16:00",
       "d": "MINERALES 287, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NZZEICT",
@@ -9796,5 +9796,5 @@
    }
   }
  },
- "generado": "23-09-2026 17:38"
+ "generado": "23-09-2026 17:43"
 }
