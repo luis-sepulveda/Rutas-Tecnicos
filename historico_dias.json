@@ -8996,19 +8996,19 @@
    }
   },
   "23-09-2026": {
-   "hasta": "15:54",
-   "actividades": 161,
+   "hasta": "15:59",
+   "actividades": 160,
    "tecnicos": 37,
    "estados": {
-    "Completado": 68,
-    "en ruta": 6,
+    "Completado": 70,
+    "en ruta": 7,
     "Iniciado": 26,
-    "No Realizada": 27,
-    "Pendiente": 25,
+    "No Realizada": 28,
+    "Pendiente": 20,
     "Suspendido": 4,
     "Cancelado": 5
    },
-   "rgu": 250.0,
+   "rgu": 249.0,
    "caidas_total": 8,
    "caidas_activas": 8,
    "caidas_resueltas": 0,
@@ -9144,7 +9144,7 @@
       "f": "13-16",
       "hi": "13:36",
       "d": "EUSEBIO LILLO 1863, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O04QYG5",
@@ -9180,7 +9180,7 @@
       "f": "16-19",
       "hi": "16:30",
       "d": "MATURANA 34, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O00CD5H",
@@ -9400,7 +9400,7 @@
       "f": "16-19",
       "hi": "15:43",
       "d": "MANUEL BULNES 1640, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "ANTONHY MORALES MENDOZA",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -9650,9 +9650,9 @@
       "o": "1-3O00MT4D",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "15:51",
+      "hi": "15:58",
       "d": "SECCHY 046, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "LUIS CASTRO TORRES",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -9760,9 +9760,9 @@
       "o": "1-3NZ3RONO",
       "cat": "Migración 2 Play",
       "f": "16-19",
-      "hi": "16:01",
+      "hi": "15:54",
       "d": "DE VEER 1451, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JOSE GALAZ D",
       "desde": "22-09-2026"
      },
@@ -9780,5 +9780,5 @@
    }
   }
  },
- "generado": "23-09-2026 15:54"
+ "generado": "23-09-2026 15:59"
 }
