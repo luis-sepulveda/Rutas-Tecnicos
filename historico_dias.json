@@ -8996,16 +8996,15 @@
    }
   },
   "23-09-2026": {
-   "hasta": "17:13",
+   "hasta": "17:18",
    "actividades": 160,
    "tecnicos": 37,
    "estados": {
     "Completado": 88,
-    "Iniciado": 24,
+    "Iniciado": 26,
     "No Realizada": 37,
     "Suspendido": 4,
-    "Cancelado": 5,
-    "en ruta": 2
+    "Cancelado": 5
    },
    "rgu": 249.0,
    "caidas_total": 9,
@@ -9125,7 +9124,7 @@
       "f": "16-19",
       "hi": "17:08",
       "d": "LAS BARRANCAS 2581 CASA S1, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O07BQWC",
@@ -9188,7 +9187,7 @@
       "f": "16-19",
       "hi": "16:30",
       "d": "MATURANA 34, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O00CD5H",
@@ -9547,16 +9546,16 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3NZXVYVM",
+      "o": "1-3NZKWFOK",
       "cat": "Alta 2 Play",
-      "f": "16-19",
-      "hi": "16:40",
+      "f": "10-13",
+      "hi": "09:46",
       "d": "SAN MARTIN 446, VILLA ALEMANA",
       "e": "No Realizada",
       "tec": "JOSE CASTRO P",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
-      "ult_cierre": "Sin moradores"
+      "ult_cierre": "Clte desiste motivo comercial"
      },
      {
       "o": "1-3NZYCT7D",
@@ -9718,9 +9717,9 @@
       "o": "1-3NYBILL7",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:11",
+      "hi": "17:14",
       "d": "LAS BARRANCAS 2581 CASA S1, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "PABLO HERNANEZ FERNANDEZ",
       "visitas": 1,
       "ult_fecha": "21-09-2026",
@@ -9788,5 +9787,5 @@
    }
   }
  },
- "generado": "23-09-2026 17:13"
+ "generado": "23-09-2026 17:18"
 }
