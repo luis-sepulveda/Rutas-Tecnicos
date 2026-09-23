@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-09-23T13:39:09",
+  "actualizado": "2026-09-23T14:09:29",
   "resumen": {
-    "sin informacion": 3,
+    "sin informacion": 4,
     "cancelada": 1,
     "reagendada": 3
   },
@@ -71,6 +71,62 @@
       "color": "rgb(128, 255, 128)",
       "detalle": "1-3O03AXD4 - 10-13-Migración-Migración-PJE DEL RISCO 502Lun, 28 Sep",
       "franja_nueva": "10-13"
+    },
+    "1-3NY6VJ1J": {
+      "tec": "ELIAS ARMIJO L",
+      "cat": "Migración 1 Play",
+      "franja_original": "16-19",
+      "d": "IRMA JOHNSON MOLINA 201 EDIF. I DEPTO 934, QUILPUE",
+      "estado": "sin informacion",
+      "nota": "la OT ya no existe en TOA",
+      "contexto": {
+        "buscado": "IRMA JOHNSON MOLINA 201",
+        "aviso": "historial de la direccion, NO es el estado de esta orden",
+        "filas": [
+          {
+            "estado": "?",
+            "color": "rgb(93, 190, 63)",
+            "ot": "1-3NZB4NPY",
+            "franja": "13-16",
+            "texto": "1-3NZB4NPY - 13-16-Migración-Migración-IRMA JOHNSON MOLINA 201 EDIF. J DEPTO 1042"
+          },
+          {
+            "estado": "gestionada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NYSE6WF",
+            "franja": "16-19",
+            "texto": "1-3NYSE6WF - 16-19-Reparación-2 Play Sin Servicio-IRMA JOHNSON MOLINA 201 EDIF. I DEPTO 913Mar, 22 Sep"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NVOAEOS",
+            "franja": "13-16",
+            "texto": "1-3NVOAEOS - 13-16-Modificación de Servicio-Modificación-IRMA JOHNSON MOLINA 201 EDIF. J DEPTO 1022Mie, 16 Sep"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NUABZEK",
+            "franja": "10-13",
+            "texto": "1-3NUABZEK - 10-13-Alta-2 Play-IRMA JOHNSON MOLINA 201 EDIF. J DEPTO 1022Mar, 15 Sep"
+          },
+          {
+            "estado": "cancelada",
+            "color": "rgb(128, 255, 128)",
+            "ot": "1-3NRXG2KI",
+            "franja": "10-13",
+            "texto": "1-3NRXG2KI - 10-13-Alta-1 Play-IRMA JOHNSON MOLINA 201 EDIF. D DEPTO 412Vie, 11 Sep"
+          },
+          {
+            "estado": "?",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3NOWY0SW",
+            "franja": "10-13",
+            "texto": "1-3NOWY0SW - 10-13-Alta-1 Play-IRMA JOHNSON MOLINA 201 EDIF. C DEPTO 331Lun, 7 Sep"
+          }
+        ]
+      }
     },
     "1-3NZHDAI1": {
       "tec": "GEEYSER PEREZ O",
