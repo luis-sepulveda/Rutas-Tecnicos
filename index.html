@@ -355,6 +355,7 @@
   .t-des .corden.d-canc { border-left-color:#ef4444; }
   .t-des .corden.d-susp { border-left-color:#2dd4bf; }
   .t-des .corden.d-gest { border-left-color:#22d3ee; }
+  .t-des .corden.d-comp { border-left-color:#60a5fa; }
   .t-des .corden.d-sinf,
   .t-des .corden.d-pend { border-left-color:#9ca3af; }
   .t-des .corden { border-left-width:5px; }
@@ -397,6 +398,7 @@
   .t-claro .btoa.canc { background:#ecfccb; color:#3f6212; }
   .t-claro .btoa.susp { background:#ccfbf1; color:#115e59; }
   .t-claro .btoa.gest { background:#cffafe; color:#155e75; }
+  .t-claro .btoa.comp { background:#dbeafe; color:#1e40af; }
   .t-claro .btoa.sinf { background:#e5e7eb; color:#374151; }
   /* FONDO DEL MODAL (21-09-2026): se oscurecio el marco para que resalten las
      tarjetas de las ordenes. El marco vuelve al azul noche del modulo; cada
@@ -457,6 +459,7 @@
   .t-claro.t-des .corden.d-canc { border-left-color:#dc2626; }
   .t-claro.t-des .corden.d-susp { border-left-color:#0d9488; }
   .t-claro.t-des .corden.d-gest { border-left-color:#0891b2; }
+  .t-claro.t-des .corden.d-comp { border-left-color:#2563eb; }
   .t-claro.t-des .corden.d-sinf,
   .t-claro.t-des .corden.d-pend { border-left-color:#6b7280; }
   .t-claro.t-des .crelato { color:#0f172a; }
@@ -651,7 +654,8 @@
   .btoa.reag { background:#78350f; color:#fde68a; }   /* reagendada */
   .btoa.canc { background:#1a2e05; color:#bef264; }   /* cancelada */
   .btoa.susp { background:#134e4a; color:#5eead4; }   /* suspendida */
-  .btoa.gest { background:#164e63; color:#67e8f9; }   /* gestionada */
+  .btoa.gest { background:#164e63; color:#67e8f9; }   /* no realizada (antes "gestionada") */
+  .btoa.comp { background:#1e3a8a; color:#bfdbfe; }   /* completada (azul claro en TOA) */
   .btoa.sinf { background:#1f2937; color:#9ca3af; }   /* sin informacion */
   .fchip.toa { border-color:#b45309; color:#fde68a; }
   .fchip.toavieja { border-color:#374151; color:#9ca3af; background:#111827; }
@@ -2402,11 +2406,17 @@ async function bajarToa(){
   } catch(e) { return null; }
 }
 
+/* 23-09-2026: el celeste oscuro de TOA resulto ser No Realizada (antes se
+   llamaba "gestionada") y el azul claro, Completada. Se comprobo cruzando las
+   OT con datos.csv y lo confirmo Luis en TOA. 'gestionada' se deja por si
+   queda un estados_toa.json viejo. */
 const TOA_CLASE = { 'reagendada':'reag', 'cancelada':'canc', 'suspendida':'susp',
+                    'no realizada':'gest', 'completada':'comp',
                     'gestionada':'gest', 'sin informacion':'sinf',
                     'sin respuesta':'sinf' };
 const TOA_ICONO = { 'reagendada':'\u21bb', 'cancelada':'\u2716',
                     'suspendida':'\u23f8', 'gestionada':'\u2714',
+                    'no realizada':'\u2715', 'completada':'\u2714',
                     'sin informacion':'\u2753', 'sin respuesta':'\u2753' };
 
 /* Fecha para la que quedo reagendada la orden. TOA no la manda en un campo
@@ -3176,8 +3186,10 @@ function relatoCaida(c, entro, salio){
     frase = 'VTR/Claro la ' + tag('canceló') + ' y no vuelve, salvo que creen una orden nueva en la misma dirección.';
   } else if(est === 'suspendida'){
     frase = 'En TOA quedó ' + tag('suspendida') + ' y en espera. Todavía no se sabe si vuelve.';
-  } else if(est === 'gestionada'){
-    frase = 'En TOA figura como ' + tag('gestionada') + '.';
+  } else if(est === 'no realizada' || est === 'gestionada'){
+    frase = 'En TOA qued\u00f3 ' + tag('no realizada') + ': se cerr\u00f3 sin hacer el trabajo, desde otra bandeja o por VTR/Claro.';
+  } else if(est === 'completada'){
+    frase = 'En TOA figura ' + tag('completada') + ': la termin\u00f3 otro t\u00e9cnico o se cerr\u00f3 desde otro lado.';
   } else if(est === 'sin informacion'){
     frase = tag('Sin información') + ' Ya no aparece en TOA: alguien de VTR/Claro la sacó del sistema.';
   } else if(est === 'sin respuesta'){
@@ -3311,7 +3323,8 @@ function renderPanelCaidas(){
     + '<span class="it"><span class="btoa reag">reagendó</span>vuelve otro día</span>'
     + '<span class="it"><span class="btoa canc">canceló</span>no vuelve</span>'
     + '<span class="it"><span class="btoa susp">suspendida</span>en espera</span>'
-    + '<span class="it"><span class="btoa gest">gestionada</span>así figura en TOA</span>'
+    + '<span class="it"><span class="btoa gest">no realizada</span>se cerró sin hacerla</span>'
+    + '<span class="it"><span class="btoa comp">completada</span>la cerró otro</span>'
     + '<span class="it"><span class="btoa sinf">sin información</span>ya no está en TOA</span>'
     + '</div>';
   const partes = [];
