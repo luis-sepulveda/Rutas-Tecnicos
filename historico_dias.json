@@ -8996,20 +8996,20 @@
    }
   },
   "23-09-2026": {
-   "hasta": "09:40",
+   "hasta": "09:50",
    "actividades": 109,
    "tecnicos": 37,
    "estados": {
-    "Iniciado": 3,
-    "Pendiente": 79,
-    "en ruta": 26,
-    "Cancelado": 1
+    "Iniciado": 26,
+    "Pendiente": 74,
+    "en ruta": 7,
+    "Cancelado": 2
    },
    "rgu": 182.5,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
-   "nuevas": 3,
+   "nuevas": 4,
    "al_bucket": 0,
    "repetidas": 22,
    "reagendadas": 2,
@@ -9017,13 +9017,22 @@
     "caidas": [],
     "nuevas": [
      {
+      "o": "1-3NZXU2WU",
+      "tec": "MATIAS APELEO APELEO",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "12:04",
+      "d": "AV LA PALMA 151 EDIF. 7 DEPTO 527, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3NZX9BPJ",
       "tec": "YENDER BOSCAN CADENAS",
       "cat": "Reparación",
       "f": "10-13",
       "hi": "12:10",
       "d": "LA INVERNADA 3172, QUILPUE",
-      "e": "Pendiente"
+      "e": "Pendiente (ya no está)"
      },
      {
       "o": "1-3NZXG9E8",
@@ -9073,7 +9082,7 @@
       "o": "1-3NZ8GAMB",
       "cat": "Migración 3 Play",
       "f": "10-13",
-      "hi": "10:28",
+      "hi": "10:30",
       "d": "OJOS DE AGUA 929, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
@@ -9085,9 +9094,9 @@
       "o": "1-3NVWAJ1M",
       "cat": "Migración 3 Play",
       "f": "10-13",
-      "hi": "09:45",
+      "hi": "09:47",
       "d": "LAS AMAPOLAS 593 CASA 13C, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "ANTONHY MORALES MENDOZA",
       "visitas": 1,
       "ult_fecha": "16-09-2026",
@@ -9133,7 +9142,7 @@
       "o": "1-3NZX98TA",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "12:05",
+      "hi": "12:18",
       "d": "LAS ROSAS 859, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -9169,7 +9178,7 @@
       "o": "1-3NZ2A7K2",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:03",
+      "hi": "17:07",
       "d": "ALMIRANTE NEFF 653 EDIF. 3 DEPTO 51, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -9181,7 +9190,7 @@
       "o": "1-3NZ8UY3L",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "11:19",
+      "hi": "11:21",
       "d": "LAGO JANOSA 2685 DEPTO 41, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -9205,9 +9214,9 @@
       "o": "1-3NZBM32L",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "09:49",
+      "hi": "09:50",
       "d": "JARDINES DE PASO HONDO 02330 EDIF. C DEPTO 115, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "LUIS CASTRO TORRES",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -9217,9 +9226,9 @@
       "o": "1-3NZNYZJX",
       "cat": "Reparación",
       "f": "10-13",
-      "hi": "09:44",
+      "hi": "09:48",
       "d": "PJE COSTA DE LA LUZ 046, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "LUIS GATICA DAVILA",
       "visitas": 2,
       "ult_fecha": "15-09-2026",
@@ -9265,9 +9274,9 @@
       "o": "1-3NZ92PUO",
       "cat": "Migración 3 Play",
       "f": "10-13",
-      "hi": "09:31",
+      "hi": "09:47",
       "d": "HUANHUALI 418 EDIF. B5 DEPTO 22, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "SAMUEL FERNANDEZ VIDAL",
       "visitas": 1,
       "ult_fecha": "24-08-2026",
@@ -9289,7 +9298,7 @@
       "o": "1-3NWR9A2Z",
       "cat": "Reparación",
       "f": "10-13",
-      "hi": "12:40",
+      "hi": "12:56",
       "d": "VOLCAN SOCOMPA 2675, QUILPUE",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
@@ -9325,9 +9334,9 @@
       "o": "1-3NZC0L4T",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "09:42",
+      "hi": "09:44",
       "d": "ALDO FRANCIA 2398, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JOSE PEREZ RANGEL",
       "desde": "22-09-2026"
      }
@@ -9335,5 +9344,5 @@
    }
   }
  },
- "generado": "23-09-2026 09:40"
+ "generado": "23-09-2026 09:50"
 }
