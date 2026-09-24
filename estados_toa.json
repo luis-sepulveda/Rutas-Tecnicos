@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-24T11:55:54",
+  "actualizado": "2026-09-24T12:26:09",
   "resumen": {
     "sin informacion": 1,
-    "reagendada": 5
+    "reagendada": 6
   },
   "estados": {
     "1-3O0IB2ZT": {
@@ -32,6 +32,16 @@
       "color": "rgb(255, 222, 0)",
       "detalle": "1-3NZL8KQK - 10-13-Alta-2 Play-SANTA MARGARITA 1319Vie, 25 Sep",
       "franja_nueva": "10-13"
+    },
+    "1-3O0WLFFG": {
+      "tec": "LUIS GATICA DAVILA",
+      "cat": "Migración 2 Play",
+      "franja_original": "13-16",
+      "d": "BLANCO 339, VILLA ALEMANA",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3O0WLFFG - 13-16-Migración-Migración-BLANCO 339Vie, 25 Sep",
+      "franja_nueva": "13-16"
     },
     "1-3O0W823N": {
       "tec": "LUIS GATICA DAVILA",
