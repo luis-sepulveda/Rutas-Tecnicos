@@ -9813,15 +9813,15 @@
    }
   },
   "24-09-2026": {
-   "hasta": "11:50",
+   "hasta": "11:55",
    "actividades": 129,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 14,
-    "en ruta": 3,
-    "Pendiente": 60,
-    "Iniciado": 23,
-    "Completado": 24,
+    "en ruta": 2,
+    "Pendiente": 61,
+    "Iniciado": 21,
+    "Completado": 26,
     "Cancelado": 3,
     "Suspendido": 2
    },
@@ -9916,7 +9916,7 @@
       "f": "10-13",
       "hi": "11:27",
       "d": "MANUEL ANTONIO MATTA 543, QUILPUE",
-      "e": "en ruta"
+      "e": "Pendiente"
      },
      {
       "o": "1-3O0W823N",
@@ -10453,5 +10453,5 @@
    }
   }
  },
- "generado": "24-09-2026 11:50"
+ "generado": "24-09-2026 11:55"
 }
