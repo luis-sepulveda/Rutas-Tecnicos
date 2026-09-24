@@ -5366,7 +5366,9 @@ function pintarPortada(){
     +   '</section>'
     +   '<div class="pv-chips">'
     +     chip('toggleNuevas', nuevas, 'Nuevas', '#2563eb')
-    +     chip('toggleNuevas', alBucket, 'Al bucket', '#2563eb')
+    /* "Al bucket" se saco de la portada el 24-09-2026 a pedido de Luis. El
+       dato sigue en el modal de Nuevas, que marca cuales "volvieron al
+       bucket"; alBucket se sigue calculando por si se quiere volver a poner. */
     +     chip('toggleReca', reca, 'Reingresadas', '#7d8fa3')
     +     chip('toggleRepe', repe, 'Direcciones repetidas', '#7c3aed')
     +   '</div>'
