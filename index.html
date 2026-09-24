@@ -1311,7 +1311,11 @@
     padding-top:18px; border-top:1px solid #edf1f6; }
   .pv-cif { background:none; border:0; padding:4px 10px 4px 0; font-family:inherit;
     text-align:left; cursor:pointer; border-radius:7px; }
-  .pv-cif + .pv-cif { padding-left:22px; border-left:1px solid #e6ecf3; }
+  .pv-cif + .pv-cif, .pv-cif-caja + .pv-cif { padding-left:22px; border-left:1px solid #e6ecf3; }
+  /* el boton va debajo pero sin ensanchar la columna (si no, las cifras
+     se pasan a una segunda fila) */
+  .pv-cif-caja { position:relative; padding-bottom:24px; }
+  .pv-cif-caja .pv-cq { position:absolute; left:0; bottom:0; margin:0; white-space:nowrap; }
   .pv-cif:hover .n { text-decoration:underline; text-underline-offset:3px; }
   .pv-cif .n { font-family:'Archivo',sans-serif; font-size:22px; font-weight:700;
     line-height:1.1; font-variant-numeric:tabular-nums; color:#15293e; }
@@ -5905,12 +5909,13 @@ function pintarPortada(){
     +         nTec + ' t\u00e9cnicos operativos'
     /* No operativos (24-09-2026): del equipo, sin ordenes hoy. Ver dotacion.py */
     +         botonNoOperativos()
-    /* Cuadratura del dia (24-09-2026): boton chico al lado de la cifra que
-       explica; la tabla se abre en una ventana. Primero fue una seccion
-       entera en la portada y Luis pidio que no ocupara tanto espacio. */
-    +         botonCuadratura(filas.length) + '</div>'
+    +         '</div>'
     +       '<div class="pv-cifras">'
-    +         cif(filas.length, 'del d\u00eda', 'tot', '__TODAS__')
+    /* Cuadratura del dia (24-09-2026): boton chico DEBAJO de "del dia", la
+       cifra que explica (a pedido de Luis, para que no se mezcle con los
+       tecnicos operativos). La tabla se abre en una ventana. */
+    +         '<div class="pv-cif-caja">' + cif(filas.length, 'del d\u00eda', 'tot', '__TODAS__')
+    +           botonCuadratura(filas.length) + '</div>'
     +         cif(comp, 'completadas', 'comp', 'Completado')
     +         cif(nore, 'no realizadas', 'nore', 'No Realizada')
     +         cif(pend, 'sin cerrar', 'abie', '__ABIERTAS__')
