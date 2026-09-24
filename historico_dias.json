@@ -9813,21 +9813,21 @@
    }
   },
   "24-09-2026": {
-   "hasta": "17:37",
-   "actividades": 162,
+   "hasta": "17:42",
+   "actividades": 163,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 42,
-    "Completado": 87,
+    "Completado": 88,
     "Iniciado": 25,
     "Cancelado": 5,
     "Suspendido": 3
    },
-   "rgu": 228.7,
+   "rgu": 229.7,
    "caidas_total": 15,
    "caidas_activas": 14,
    "caidas_resueltas": 1,
-   "nuevas": 47,
+   "nuevas": 48,
    "al_bucket": 14,
    "repetidas": 27,
    "reagendadas": 3,
@@ -9961,6 +9961,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O19MRVJ",
+      "tec": "GEEYSER PEREZ O",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "17:38",
+      "d": "JOHN KENNEDY 1981, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3O16138Z",
       "tec": "ALFREDO ALCAYAGA F",
@@ -10745,5 +10754,5 @@
    }
   }
  },
- "generado": "24-09-2026 17:37"
+ "generado": "24-09-2026 17:42"
 }
