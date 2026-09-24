@@ -9813,15 +9813,15 @@
    }
   },
   "24-09-2026": {
-   "hasta": "15:06",
+   "hasta": "15:11",
    "actividades": 159,
    "tecnicos": 36,
    "estados": {
-    "No Realizada": 29,
-    "Completado": 64,
+    "No Realizada": 30,
+    "Completado": 66,
     "en ruta": 5,
-    "Pendiente": 36,
-    "Iniciado": 19,
+    "Pendiente": 35,
+    "Iniciado": 17,
     "Cancelado": 4,
     "Suspendido": 2
    },
@@ -9952,7 +9952,7 @@
       "f": "16-19",
       "hi": "14:42",
       "d": "ARTURO ALESSANDRI 578, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O1392XE",
@@ -10150,7 +10150,7 @@
       "f": "13-16",
       "hi": "15:25",
       "d": "CRISTOBAL COLON 0326, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O0VJ9G3",
@@ -10332,7 +10332,7 @@
       "o": "1-3O0U4OL3",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:06",
+      "hi": "15:20",
       "d": "PJE TURQUESA 13, QUILPUE",
       "e": "Pendiente",
       "tec": "CRISTOBAL SILVA LEIVA",
@@ -10463,9 +10463,9 @@
       "o": "1-3O0V7XF3",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:18",
+      "hi": "15:09",
       "d": "CRISTOBAL COLON 0326, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JOSE GALAZ D",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -10523,7 +10523,7 @@
       "o": "1-3NZ6LKOY",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:30",
+      "hi": "16:27",
       "d": "GLACIAR TAPADO 3191 CASA 39, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -10675,5 +10675,5 @@
    }
   }
  },
- "generado": "24-09-2026 15:06"
+ "generado": "24-09-2026 15:11"
 }
