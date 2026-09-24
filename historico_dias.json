@@ -9813,13 +9813,13 @@
    }
   },
   "24-09-2026": {
-   "hasta": "18:27",
+   "hasta": "18:32",
    "actividades": 166,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 46,
-    "Completado": 103,
-    "Iniciado": 9,
+    "Completado": 105,
+    "Iniciado": 7,
     "Cancelado": 5,
     "Suspendido": 3
    },
@@ -10658,7 +10658,7 @@
       "f": "16-19",
       "hi": "16:26",
       "d": "LO MOSCOSO 1115 CASA B, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "LEONEL HERNÁNDEZ OJE",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -10708,8 +10708,8 @@
       "d": "PORVENIR 26, VILLA ALEMANA",
       "e": "Completado",
       "tec": "MATÍAS JAQUE AG",
-      "visitas": 1,
-      "ult_fecha": "22-09-2026",
+      "visitas": 2,
+      "ult_fecha": "24-09-2026",
       "ult_cierre": "Cliente reagenda"
      },
      {
@@ -10772,5 +10772,5 @@
    }
   }
  },
- "generado": "24-09-2026 18:27"
+ "generado": "24-09-2026 18:32"
 }
