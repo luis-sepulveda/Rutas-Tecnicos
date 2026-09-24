@@ -9813,15 +9813,15 @@
    }
   },
   "24-09-2026": {
-   "hasta": "12:15",
+   "hasta": "12:20",
    "actividades": 126,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 14,
     "Iniciado": 17,
-    "Pendiente": 50,
-    "Completado": 35,
-    "en ruta": 5,
+    "Pendiente": 47,
+    "Completado": 36,
+    "en ruta": 7,
     "Cancelado": 3,
     "Suspendido": 2
    },
@@ -9952,7 +9952,7 @@
       "f": "13-16",
       "hi": "13:00",
       "d": "EL TRIGAL 481, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O0VTX82",
@@ -10269,7 +10269,7 @@
       "o": "1-3O0WLU7S",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:06",
+      "hi": "14:14",
       "d": "ADRIAZOLA 2672, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -10317,7 +10317,7 @@
       "o": "1-3NZA1Q0B",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:34",
+      "hi": "16:00",
       "d": "MADRID 1050 CASA 4, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -10435,5 +10435,5 @@
    }
   }
  },
- "generado": "24-09-2026 12:15"
+ "generado": "24-09-2026 12:20"
 }
