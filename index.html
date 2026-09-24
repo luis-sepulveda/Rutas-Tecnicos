@@ -1360,6 +1360,7 @@
   .pv-nop { color:#b45309; font-weight:600; cursor:pointer; text-decoration:underline dotted; text-underline-offset:3px; }
   .pv-nop:hover { color:#92400e; }
   .pv-nop.alerta { color:#b91c1c; }
+  .pv-nop-esp { color:#94a3b8; }
   .nop-t { font:700 12.5px 'DM Sans',sans-serif; color:#475569; margin:4px 0 6px; }
   .nop-t.alerta { color:#b91c1c; }
   .nop-t + .cq { margin-bottom:14px; }
@@ -5610,6 +5611,9 @@ function pintarTendencia(){
 let NOOP = null;
 function botonNoOperativos(){
   if(!NOOP) return '';
+  // antes de la carga de bandejas casi nadie tiene ordenes: no se muestra la cifra
+  if(NOOP.listo === false)
+    return ' \u00b7 <span class="pv-nop-esp" title="Antes de la carga de bandejas casi nadie tiene órdenes">no operativos: tras la carga</span>';
   const sx = NOOP.n_sin_expl || 0;
   return ' \u00b7 <a class="pv-nop' + (sx ? ' alerta' : '') + '" onclick="abrirNoOperativos()" '
     + 'title="Del equipo, sin órdenes hoy' + (sx ? ': ' + sx + ' figuran como OPERATIVO' : '') + '">'
