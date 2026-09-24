@@ -1,209 +1,37 @@
 {
-  "actualizado": "2026-09-23T19:14:46",
+  "actualizado": "2026-09-24T10:25:18",
   "resumen": {
-    "sin informacion": 3,
-    "cancelada": 1,
-    "reagendada": 4,
-    "sin respuesta": 1
+    "sin informacion": 1,
+    "reagendada": 2
   },
   "estados": {
-    "1-3NZJUAIK": {
-      "tec": "ANTONHY MORALES MENDOZA",
-      "cat": "Alta 1 Play",
+    "1-3O0IB2ZT": {
+      "tec": "ALEXIS JARA",
+      "cat": "Alta 2 Play",
       "franja_original": "13-16",
-      "d": "LAS AMAPOLAS 593 CASA 4A, QUILPUE",
+      "d": "JOSE FUENTES 921 DEPTO 31, QUILPUE",
       "estado": "sin informacion",
-      "nota": "la OT ya no existe en TOA",
-      "contexto": {
-        "buscado": "LAS AMAPOLAS 593",
-        "aviso": "historial de la direccion, NO es el estado de esta orden",
-        "filas": [
-          {
-            "estado": "gestionada",
-            "color": "rgb(96, 206, 206)",
-            "ot": "1-3NVWAJ1M",
-            "franja": "10-13",
-            "texto": "1-3NVWAJ1M - 10-13-Migración-Migración-LAS AMAPOLAS 593 CASA 13C"
-          },
-          {
-            "estado": "gestionada",
-            "color": "rgb(96, 206, 206)",
-            "ot": "1-3NYENN3N",
-            "franja": "10-13",
-            "texto": "1-3NYENN3N - 10-13-Alta-1 Play-LAS AMAPOLAS 593 CASA 4AMar, 22 Sep"
-          },
-          {
-            "estado": "gestionada",
-            "color": "rgb(96, 206, 206)",
-            "ot": "1-3NUFWQ28",
-            "franja": "13-16",
-            "texto": "1-3NUFWQ28 - 13-16-Migración-Migración-LAS AMAPOLAS 593 CASA 13CMie, 16 Sep"
-          },
-          {
-            "estado": "gestionada",
-            "color": "rgb(96, 206, 206)",
-            "ot": "1-3NUKDAHR",
-            "franja": "10-13",
-            "texto": "1-3NUKDAHR - 10-13-Migración-Migración-LAS AMAPOLAS 593 CASA 3AMie, 16 Sep"
-          },
-          {
-            "estado": "cancelada",
-            "color": "rgb(128, 255, 128)",
-            "ot": "1-3NUISLWC",
-            "franja": "13-16",
-            "texto": "1-3NUISLWC - 13-16-Migración-Migración-LAS AMAPOLAS 593 CASA 1CMar, 15 Sep"
-          },
-          {
-            "estado": "gestionada",
-            "color": "rgb(96, 206, 206)",
-            "ot": "1-3NT6TEJA",
-            "franja": "13-16",
-            "texto": "1-3NT6TEJA - 13-16-Migración-Migración-LAS AMAPOLAS 593 CASA 13CLun, 14 Sep"
-          }
-        ]
-      }
+      "nota": "la OT ya no existe en TOA"
     },
-    "1-3O03AXD4": {
-      "tec": "ANTONHY MORALES MENDOZA",
-      "cat": "Migración 2 Play",
-      "franja_original": "13-16",
-      "d": "PJE DEL RISCO 502, QUILPUE",
-      "estado": "cancelada",
-      "color": "rgb(128, 255, 128)",
-      "detalle": "1-3O03AXD4 - 10-13-Migración-Migración-PJE DEL RISCO 502Lun, 28 Sep",
-      "franja_nueva": "10-13"
-    },
-    "1-3O084K94": {
-      "tec": "CRISTOBAL MIRANDA VALENC",
-      "cat": "Migración 1 Play",
-      "franja_original": "16-19",
-      "d": "PJE JOSE ZAPIOLA 422, QUILPUE",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3O084K94 - 10-13-Migración-Migración-PJE JOSE ZAPIOLA 422Jue, 24 Sep",
-      "franja_nueva": "10-13"
-    },
-    "1-3NY6VJ1J": {
-      "tec": "ELIAS ARMIJO L",
-      "cat": "Migración 1 Play",
-      "franja_original": "16-19",
-      "d": "IRMA JOHNSON MOLINA 201 EDIF. I DEPTO 934, QUILPUE",
-      "estado": "sin respuesta",
-      "nota": "TOA no respondio a tiempo"
-    },
-    "1-3NZHDAI1": {
-      "tec": "GEEYSER PEREZ O",
-      "cat": "Alta 1 Play",
-      "franja_original": "10-13",
-      "d": "FRANCISCO FONCK 262, QUILPUE",
-      "estado": "sin informacion",
-      "nota": "la OT ya no existe en TOA",
-      "contexto": {
-        "buscado": "FRANCISCO FONCK 262",
-        "aviso": "historial de la direccion, NO es el estado de esta orden",
-        "filas": [
-          {
-            "estado": "gestionada",
-            "color": "rgb(96, 206, 206)",
-            "ot": "1-3NY66E1W",
-            "franja": "10-13",
-            "texto": "1-3NY66E1W - 10-13-Alta-1 Play-FRANCISCO FONCK 262Mar, 22 Sep"
-          },
-          {
-            "estado": "?",
-            "color": "rgb(121, 182, 235)",
-            "ot": "1-3NYB2QTT",
-            "franja": "13-16",
-            "texto": "1-3NYB2QTT - 13-16-Alta-1 Play-FRANCISCO FONCK 262Lun, 21 Sep"
-          }
-        ]
-      }
-    },
-    "1-3NZ2A7K2": {
+    "1-3NZL8KQK": {
       "tec": "JOSE CASTRO P",
-      "cat": "Alta 1 Play",
-      "franja_original": "16-19",
-      "d": "ALMIRANTE NEFF 653 EDIF. 3 DEPTO 51, VILLA ALEMANA",
-      "estado": "sin informacion",
-      "nota": "la OT ya no existe en TOA",
-      "contexto": {
-        "buscado": "ALMIRANTE NEFF 653",
-        "aviso": "historial de la direccion, NO es el estado de esta orden",
-        "filas": [
-          {
-            "estado": "cancelada",
-            "color": "rgb(128, 255, 128)",
-            "ot": "1-3NUW717N",
-            "franja": "10-13",
-            "texto": "1-3NUW717N - 10-13-Migración-Migración-ALMIRANTE NEFF 653 EDIF. 3 DEPTO 43Sab, 26 Sep"
-          },
-          {
-            "estado": "reagendada",
-            "color": "rgb(255, 222, 0)",
-            "ot": "1-3O0D4CQW",
-            "franja": "10-13",
-            "texto": "1-3O0D4CQW - 10-13-Alta-1 Play-ALMIRANTE NEFF 653 EDIF. 3 DEPTO 51Jue, 24 Sep"
-          },
-          {
-            "estado": "gestionada",
-            "color": "rgb(96, 206, 206)",
-            "ot": "1-3O01G3QG",
-            "franja": "13-16",
-            "texto": "1-3O01G3QG - 13-16-Alta-1 Play-ALMIRANTE NEFF 653 EDIF. 3 DEPTO 51"
-          },
-          {
-            "estado": "gestionada",
-            "color": "rgb(96, 206, 206)",
-            "ot": "1-3NYLE8NT",
-            "franja": "10-13",
-            "texto": "1-3NYLE8NT - 10-13-Alta-1 Play-ALMIRANTE NEFF 653 EDIF. 3 DEPTO 51Mar, 22 Sep"
-          },
-          {
-            "estado": "?",
-            "color": "rgb(121, 182, 235)",
-            "ot": "1-3NTML0FL",
-            "franja": "13-16",
-            "texto": "1-3NTML0FL - 13-16-Modificación de Servicio-Modificación-ALMIRANTE NEFF 653 EDIF. 3 DEPTO 10Lun, 14 Sep"
-          },
-          {
-            "estado": "?",
-            "color": "rgb(121, 182, 235)",
-            "ot": "1-3NSN3Q7K",
-            "franja": "13-16",
-            "texto": "1-3NSN3Q7K - 13-16-Downgrade promoción-Downgrade promoción-ALMIRANTE NEFF 653 EDIF. 3 DEPTO 10Vie, 11 Sep"
-          }
-        ]
-      }
-    },
-    "1-3NZ7U071": {
-      "tec": "MATÍAS JAQUE AG",
       "cat": "Alta 2 Play",
       "franja_original": "10-13",
-      "d": "SANTA MARIA 0241, VILLA ALEMANA",
+      "d": "SANTA MARGARITA 1319, VILLA ALEMANA",
       "estado": "reagendada",
       "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NZ7U071 - 16-19-Alta-2 Play-SANTA MARIA 0241Vie, 25 Sep",
-      "franja_nueva": "16-19"
-    },
-    "1-3NZAHAJS": {
-      "tec": "RAFAEL VARGAS B",
-      "cat": "Migración 3 Play",
-      "franja_original": "13-16",
-      "d": "CAMINO TRONCAL 2091 CASA 18, VILLA ALEMANA",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NZAHAJS - 10-13-Migración-Migración-CAMINO TRONCAL 2091 CASA 18Sab, 26 Sep",
+      "detalle": "1-3NZL8KQK - 10-13-Alta-2 Play-SANTA MARGARITA 1319Vie, 25 Sep",
       "franja_nueva": "10-13"
     },
-    "1-3NZX9BPJ": {
-      "tec": "YENDER BOSCAN CADENAS",
-      "cat": "Reparación",
+    "1-3O0GSHFD": {
+      "tec": "SEBASTIAN DOSSOW A",
+      "cat": "Alta 2 Play",
       "franja_original": "10-13",
-      "d": "LA INVERNADA 3172, QUILPUE",
+      "d": "PJE ISIDORA ZEGERS 378, QUILPUE",
       "estado": "reagendada",
       "color": "rgb(255, 222, 0)",
-      "detalle": "1-3NZX9BPJ - 10-13-Reparación-3 Play Sin Servicio-LA INVERNADA 3172Sab, 26 Sep",
-      "franja_nueva": "10-13"
+      "detalle": "1-3O0GSHFD - 16-19-Alta-2 Play-PJE ISIDORA ZEGERS 378Vie, 25 Sep",
+      "franja_nueva": "16-19"
     }
   }
 }
