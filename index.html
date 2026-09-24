@@ -52,10 +52,12 @@
        reit). Nodos y NAP quedo igual: a proposito no se mezclan.
      - Direcciones repetidas: misma informacion, vista nueva (agrupada por
        gravedad, circulo de color, motivos debajo, lo de hoy a la derecha).
-     - Capa "Red" (boton Red en las herramientas del mapa y enlace Red en la
-       portada): NAP y zonas de nodo sobre el mapa. La red conocida viene de
-       red_mapa.json (lo arma red_mapa.py, crece solo cada dia); las
-       reparaciones de hoy vienen en vivo de rutas.json -> red.todas.
+     - "Mapa de red" (boton Red en las herramientas del mapa y enlace Red en
+       la portada): pantalla APARTE con su propio mapa, solo NAP y zonas de
+       nodo, sin los pines de los tecnicos; filtros arriba y leyenda
+       desplegable. La red conocida viene de red_mapa.json (lo arma
+       red_mapa.py, crece solo cada dia); las reparaciones de hoy vienen en
+       vivo de rutas.json -> red.todas.
        Desde la tarde del 24-09-2026 cuentan tambien los trabajos completados
        HOY, si terminaron antes de que empezara la reparacion (dias = 0, se
        muestra "hoy").
@@ -1537,23 +1539,39 @@
     font-size:10.5px; font-weight:700; line-height:15px; padding:0 6px; margin-left:4px;
     border-radius:5px; background:#ede9fe; color:#5b21b6; white-space:nowrap; vertical-align:1px; }
   .tg-neg.reit { background:#fee2e2; color:#991b1b; }
-  /* ===================== CAPA RED (NAP y nodos) — 24-09-2026 ===================== */
-  #redPanel { display:none; position:absolute; right:12px; bottom:28px; z-index:1002; width:260px;
-    background:rgba(255,255,255,.96); border-radius:10px; padding:10px 12px; color:#0f172a;
-    font:12.5px/1.7 'DM Sans','Segoe UI',Arial,sans-serif; box-shadow:0 2px 10px rgba(0,0,0,.25); }
-  #redPanel.on { display:block; }
-  #redPanel .rdp-t { font:700 13.5px 'Archivo','Segoe UI',sans-serif; margin-bottom:4px; }
-  #redPanel .rdp-ch { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:6px; }
-  #redPanel .pchip { cursor:pointer; font-size:11.5px; padding:2px 9px; border-radius:12px;
-    background:#e2e8f0; color:#334155; border:1px solid #cbd5e1; }
-  #redPanel .pchip.act { background:#0e7490; color:#fff; border-color:#0e7490; }
-  #redPanel .rdp-l i { display:inline-block; border-radius:50%; vertical-align:middle; margin-right:7px; }
-  #redPanel .rdp-l i.g { width:7px; height:7px; background:#64748b; opacity:.7; }
-  #redPanel .rdp-l i.a { width:10px; height:10px; background:#f59e0b; border:2px solid #b45309; }
-  #redPanel .rdp-l i.r { width:12px; height:12px; background:#dc2626; border:2px solid #7f1d1d; }
-  #redPanel .rdp-l .z { display:inline-block; width:16px; height:11px; border-radius:3px; vertical-align:middle;
+  /* ============ MAPA DE RED (vista aparte) — 24-09-2026 ============
+     Pantalla propia con su propio mapa: solo NAP y zonas de nodo, sin los
+     pines de los tecnicos (a pedido de Luis, para que no se mezclen).
+     Leyenda desplegable abajo a la izquierda. */
+  #vistaRed { display:none; position:fixed; inset:0; z-index:2600; background:#0b1828; }
+  #vistaRed.abierta { display:block; }
+  #vrCab { position:absolute; top:0; left:0; right:0; z-index:1001; background:#0b1828; color:#eaf3fb;
+    display:flex; align-items:center; gap:10px 16px; flex-wrap:wrap; padding:9px 14px;
+    padding-top:calc(9px + env(safe-area-inset-top, 0px)); font-family:'DM Sans','Segoe UI',Arial,sans-serif; }
+  #vrCab .vr-tit { font:700 16px 'Archivo','Segoe UI',sans-serif; white-space:nowrap; }
+  #vrCab .vr-grp { display:flex; gap:5px; flex-wrap:wrap; }
+  #vrCab .vr-sep { width:1px; height:22px; background:#26405e; }
+  #vrCab .vch { cursor:pointer; font:600 12.5px 'DM Sans',sans-serif; padding:5px 11px; border-radius:16px;
+    background:rgba(255,255,255,.06); color:#c3d6e8; border:1px solid #26405e; white-space:nowrap; user-select:none; }
+  #vrCab .vch.act { background:#0e7490; border-color:#22d3ee; color:#fff; }
+  #vrCab .vr-vol { margin-left:auto; cursor:pointer; font:600 13px 'DM Sans',sans-serif; padding:6px 13px;
+    border-radius:8px; background:#1e3a5f; color:#eaf3fb; border:1px solid #3b5b85; white-space:nowrap; }
+  #mapaRed { position:absolute; left:0; right:0; bottom:0; top:52px; }
+  #vrLey { position:absolute; left:12px; bottom:calc(18px + env(safe-area-inset-bottom, 0px)); z-index:1001;
+    background:rgba(255,255,255,.96); border-radius:10px; color:#0f172a; max-width:290px;
+    font:12.5px/1.8 'DM Sans','Segoe UI',Arial,sans-serif; box-shadow:0 2px 10px rgba(0,0,0,.25); }
+  #vrLey .vl-cab { cursor:pointer; padding:7px 12px; font-weight:700; user-select:none; }
+  #vrLey .vl-cab:before { content:'▸ '; }
+  #vrLey.abierta .vl-cab:before { content:'▾ '; }
+  #vrLey .vl-cuerpo { display:none; padding:0 12px 10px; }
+  #vrLey.abierta .vl-cuerpo { display:block; }
+  #vrLey i { display:inline-block; border-radius:50%; vertical-align:middle; margin-right:7px; }
+  #vrLey i.g { width:7px; height:7px; background:#64748b; opacity:.7; }
+  #vrLey i.a { width:10px; height:10px; background:#f59e0b; border:2px solid #b45309; }
+  #vrLey i.r { width:12px; height:12px; background:#dc2626; border:2px solid #7f1d1d; }
+  #vrLey .z { display:inline-block; width:16px; height:11px; border-radius:3px; vertical-align:middle;
     margin-right:7px; border:1px dashed #7c3aed; background:rgba(124,58,237,.12); }
-  #redPanel .rdp-n { color:#64748b; font-size:11.5px; line-height:1.4; margin-top:4px; }
+  #vrLey .vl-n { color:#64748b; font-size:11.5px; line-height:1.45; margin-top:4px; }
   .ppred { font:12.5px/1.5 'DM Sans','Segoe UI',Arial,sans-serif; min-width:250px; max-width:340px; }
   .ppred h4 { margin:0 0 2px; font:700 14px 'Archivo','Segoe UI',sans-serif; }
   .ppred .s { color:#64748b; margin-bottom:6px; }
@@ -1563,14 +1581,12 @@
   .ppred td { padding:3px 6px 3px 0; border-top:1px solid #eef2f7; vertical-align:top; }
   .ppred .ot { font-family:Consolas,monospace; font-size:11.5px; background:#e2e8f0; color:#1e3a8a; padding:0 5px; border-radius:4px; white-space:nowrap; }
   .ppred td:first-child { white-space:nowrap; }
-  /* con una ventanita abierta el panel se achica a titulo y botones, para no taparla */
-  #redPanel.min .rdp-l, #redPanel.min .rdp-n { display:none; }
   .ppred .m { color:#64748b; }
   .lbl-nodo { background:rgba(255,255,255,.88); border:0; box-shadow:none; color:#4c1d95;
     font:700 11px 'DM Sans',sans-serif; padding:1px 5px; border-radius:4px; }
   .lbl-nodo.hoy { color:#991b1b; }
   .lbl-nodo:before { display:none; }
-  @media (max-width:760px){ #redPanel { width:auto; left:12px; bottom:40px; } }
+  @media (max-width:760px){ #vrCab .vr-sep { display:none; } #vrLey { right:12px; max-width:none; } }
   /* ============ DIRECCIONES REPETIDAS, vista nueva — 24-09-2026 ============
      Agrupada por gravedad, circulo de color por cantidad de caidas, direccion
      en minusculas, motivos debajo y lo de hoy a la derecha. Borrando este
@@ -1663,24 +1679,44 @@
   <button class="btn" id="btnRed" onclick="toggleRed()">Nodos y NAP</button>
   <button class="btn" id="btnReit" onclick="toggleReit()">Reiterados</button>
 </div>
-<!-- Capa Red (24-09-2026): panel que aparece cuando la capa esta prendida -->
-<div id="redPanel">
-  <div class="rdp-t">Red · NAP y nodos</div>
-  <div class="rdp-ch">
-    <span class="pchip act" id="rpNap" onclick="capaRedOpc('nap')">NAP</span>
-    <span class="pchip act" id="rpNodo" onclick="capaRedOpc('nodo')">Zonas de nodo</span>
-    <span class="pchip" id="rpSolo" onclick="capaRedOpc('solo')">Solo con reparaciones</span>
+<!-- Mapa de red (24-09-2026): pantalla aparte, con su propio mapa. Solo NAP y
+     zonas de nodo, sin los pines de los tecnicos. Se abre con el boton Red del
+     mapa o con el enlace Red de la portada; Esc o "Volver" la cierran. -->
+<div id="vistaRed">
+  <div id="vrCab">
+    <span class="vr-tit">Mapa de red · NAP y nodos</span>
+    <span class="vr-grp">
+      <span class="vch" id="vrTodas" onclick="vrModo('todas')">Todas las NAP</span>
+      <span class="vch act" id="vr30" onclick="vrModo('r30')">Con reparaciones (30 días)</span>
+      <span class="vch" id="vrHoy" onclick="vrModo('hoy')">Solo hoy</span>
+    </span>
+    <span class="vr-sep"></span>
+    <span class="vr-grp">
+      <span class="vch act" id="vrAmbas" onclick="vrCiudad('')">Ambas</span>
+      <span class="vch" id="vrQui" onclick="vrCiudad('QUILPUE')">Quilpué</span>
+      <span class="vch" id="vrVA" onclick="vrCiudad('VILLA ALEMANA')">Villa Alemana</span>
+    </span>
+    <span class="vr-sep"></span>
+    <span class="vch act" id="vrNodos" onclick="vrNodos()">Zonas de nodo</span>
+    <span class="vr-vol" onclick="cerrarVistaRed()">← Volver</span>
   </div>
-  <div class="rdp-l"><i class="g"></i>NAP sin reparaciones</div>
-  <div class="rdp-l"><i class="a"></i>Reparación en los últimos 30 días</div>
-  <div class="rdp-l"><i class="r"></i>Reparación hoy</div>
-  <div class="rdp-l"><span class="z"></span>Zona de un nodo (en rojo si hoy tiene reparación)</div>
-  <div class="rdp-n" id="rpNota"></div>
+  <div id="mapaRed"></div>
+  <div id="vrLey">
+    <div class="vl-cab" onclick="document.getElementById('vrLey').classList.toggle('abierta')">Leyenda</div>
+    <div class="vl-cuerpo">
+      <div><i class="g"></i>NAP sin reparaciones</div>
+      <div><i class="a"></i>Reparación en los últimos 30 días</div>
+      <div><i class="r"></i>Reparación hoy</div>
+      <div><span class="z"></span>Zona de un nodo (roja si hoy tiene reparación)</div>
+      <div>Más grande = más reparaciones.</div>
+      <div class="vl-n" id="vrNota"></div>
+    </div>
+  </div>
 </div>
 <div id="barraAcc" class="nb-flota der">
   <button class="btn" id="btnNombres" onclick="toggleNombres()">Nombres</button>
   <button class="btn" id="btnRutas" onclick="toggleRutas()">Rutas</button>
-  <button class="btn" id="btnCapaRed" onclick="toggleCapaRed()">Red</button>
+  <button class="btn" id="btnCapaRed" onclick="abrirVistaRed()">Red</button>
   <button class="btn" id="btnInicio" onclick="abrirInicio()">Inicio de jornada</button>
   <button class="btn" id="btnJornada" onclick="toggleJornada()">Jornada</button>
   <button class="btn" id="btnComp" onclick="toggleComp()">Completitud</button>
@@ -2151,7 +2187,7 @@ function verTecnicoCaida(t){
 
 // cerrar los modales con la tecla Esc
 document.addEventListener('keydown', function(e){
-  if(e.key === 'Escape'){ cerrarCaidas(); cerrarNuevas(); cerrarRepe(); cerrarReca(); cerrarBuscar(); cerrarEst(); cerrarJornada(); cerrarRed(); cerrarReit(); }
+  if(e.key === 'Escape'){ cerrarCaidas(); cerrarNuevas(); cerrarRepe(); cerrarReca(); cerrarBuscar(); cerrarEst(); cerrarJornada(); cerrarRed(); cerrarReit(); cerrarVistaRed(); }
 });
 
 /* ======================= ORDENES NUEVAS DEL DIA =======================
@@ -4128,29 +4164,30 @@ function verReitEnMapa(i){
   setTimeout(function(){ dibujarRed({nivel:'reit', ots:[w]}); }, enPortada ? 150 : 0);
 }
 
-/* ============================== CAPA RED ==============================
-   24-09-2026. NAP y zonas de nodo sobre el mapa, a pedido de Luis.
+/* ============================ MAPA DE RED ============================
+   24-09-2026. NAP y zonas de nodo en una PANTALLA APARTE, con su propio
+   mapa: primero se probo como capa encima del mapa de rutas y con ~3.400 NAP
+   se mezclaba con los pines de los tecnicos. Luis pidio verla sola.
 
    De donde sale:
      red_mapa.json  -> la red CONOCIDA: cada NAP ubicada en el promedio de las
                        casas conectadas a ella, la zona de cada nodo (contorno
                        de sus casas) y las reparaciones de los ultimos 30 dias
                        hasta ayer. Lo arma red_mapa.py y crece solo cada dia
-                       (se publica una vez al dia, en la primera vuelta del
-                       monitor). Se baja una vez por sesion, al prender la capa.
+                       (se publica una vez al dia). Se baja una vez por sesion.
      rutas.json     -> red.todas: las reparaciones de HOY, en vivo cada 5 min.
                        Pintan de rojo su NAP y su nodo.
-   Las claves (kn = NAP, kd = nodo) las calculan clave_nap/clave_nodo de
+   Las claves (kn = NAP, kd = nodo) salen de clave_nap/clave_nodo de
    generar_rutas.py, las mismas en los dos archivos, asi calzan.
 
-   La posicion de la NAP es APROXIMADA (el export no trae la de la caja):
-   alcanza para saber la cuadra, no el poste. Los puntos van en SVG (lo
-   normal de Leaflet): se probo con L.canvas y en la prueba se caia la
-   pagina al hacer zoom, asi que se dejo lo seguro.                       */
+   Filtros de arriba: que NAP mostrar (todas / con reparaciones en 30 dias /
+   solo hoy), ciudad, y prender o apagar las zonas de nodo. Por defecto
+   "con reparaciones": las ~3.400 grises juntas tapan lo importante.
+   La posicion de la NAP es APROXIMADA: sirve para la cuadra, no el poste. */
 const URL_REDMAPA_RAW = 'https://raw.githubusercontent.com/'+REPO_BASE+'/'+RAMA_DATOS+'/red_mapa.json';
 let REDMAPA = null, redMapaFallo = false;
-let capaRedOn = false, capaRedNap = true, capaRedNodo = true, capaRedSolo = false;
-let grpRedNodos = null, grpRedNaps = null;
+let vistaRedAbierta = false, mapaRed = null, grpRedNodos = null, grpRedNaps = null;
+let vrModoAct = 'r30', vrCiudadAct = '', vrVerNodos = true, vrEncuadrado = false;
 const COL_NODO = ['#7c3aed','#0f766e','#c2410c','#be185d','#1d4ed8','#4d7c0f','#a16207','#0369a1'];
 
 async function asegurarRedMapa(){
@@ -4163,26 +4200,57 @@ async function asegurarRedMapa(){
   return REDMAPA;
 }
 
-async function toggleCapaRed(forzar){
-  capaRedOn = (forzar === true) ? true : !capaRedOn;
-  document.getElementById('btnCapaRed').classList.toggle('on6', capaRedOn);
-  document.getElementById('redPanel').classList.toggle('on', capaRedOn);
-  if(!capaRedOn){ if(grpRedNodos) grpRedNodos.clearLayers(); if(grpRedNaps) grpRedNaps.clearLayers(); return; }
-  document.getElementById('rpNota').textContent = 'Cargando la red…';
+async function abrirVistaRed(){
+  cerrarPaneles('vistaRed');
+  vistaRedAbierta = true;
+  document.getElementById('vistaRed').classList.add('abierta');
+  if(!mapaRed){
+    mapaRed = L.map('mapaRed', { zoomControl:true }).setView([-33.05, -71.41], 13);
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      { maxZoom:19, attribution:'© Esri' }).addTo(mapaRed);
+    grpRedNodos = L.layerGroup().addTo(mapaRed);
+    grpRedNaps = L.layerGroup().addTo(mapaRed);
+  }
+  acomodarVistaRed();
+  setTimeout(function(){ mapaRed.invalidateSize(); }, 60);
+  document.getElementById('vrNota').textContent = 'Cargando la red…';
   await asegurarRedMapa();
   pintarCapaRed();
 }
+function cerrarVistaRed(){
+  if(!vistaRedAbierta) return;
+  vistaRedAbierta = false;
+  document.getElementById('vistaRed').classList.remove('abierta');
+}
+// compatibilidad: el boton del mapa y el enlace de la portada llaman a esto
+function toggleCapaRed(){ abrirVistaRed(); }
+function irCapaRed(){ abrirVistaRed(); }
 
-// desde la portada: ir al mapa con la capa prendida
-function irCapaRed(){ verMapa(); setTimeout(function(){ toggleCapaRed(true); }, 120); }
+// el mapa arranca justo debajo de la barra, mida lo que mida (en celular baja a 2-3 filas)
+function acomodarVistaRed(){
+  const cab = document.getElementById('vrCab');
+  if(cab) document.getElementById('mapaRed').style.top = cab.offsetHeight + 'px';
+  if(mapaRed) mapaRed.invalidateSize();
+}
+window.addEventListener('resize', function(){ if(vistaRedAbierta) acomodarVistaRed(); });
 
-function capaRedOpc(q){
-  if(q === 'nap') capaRedNap = !capaRedNap;
-  if(q === 'nodo') capaRedNodo = !capaRedNodo;
-  if(q === 'solo') capaRedSolo = !capaRedSolo;
-  document.getElementById('rpNap').classList.toggle('act', capaRedNap);
-  document.getElementById('rpNodo').classList.toggle('act', capaRedNodo);
-  document.getElementById('rpSolo').classList.toggle('act', capaRedSolo);
+function vrModo(m){
+  vrModoAct = m;
+  document.getElementById('vrTodas').classList.toggle('act', m === 'todas');
+  document.getElementById('vr30').classList.toggle('act', m === 'r30');
+  document.getElementById('vrHoy').classList.toggle('act', m === 'hoy');
+  pintarCapaRed();
+}
+function vrCiudad(c){
+  vrCiudadAct = c; vrEncuadrado = false;
+  document.getElementById('vrAmbas').classList.toggle('act', c === '');
+  document.getElementById('vrQui').classList.toggle('act', c === 'QUILPUE');
+  document.getElementById('vrVA').classList.toggle('act', c === 'VILLA ALEMANA');
+  pintarCapaRed();
+}
+function vrNodos(){
+  vrVerNodos = !vrVerNodos;
+  document.getElementById('vrNodos').classList.toggle('act', vrVerNodos);
   pintarCapaRed();
 }
 
@@ -4194,15 +4262,10 @@ function filaRepRed(r, hoy){
 }
 
 function pintarCapaRed(){
-  if(!capaRedOn) return;
-  if(!grpRedNodos){
-    grpRedNodos = L.layerGroup().addTo(map); grpRedNaps = L.layerGroup().addTo(map);
-    // con una ventanita abierta el panel se achica, para no taparla
-    map.on('popupopen', function(){ document.getElementById('redPanel').classList.add('min'); });
-    map.on('popupclose', function(){ document.getElementById('redPanel').classList.remove('min'); });
-  }
+  if(!vistaRedAbierta || !mapaRed) return;
   grpRedNodos.clearLayers(); grpRedNaps.clearLayers();
-  const nota = document.getElementById('rpNota');
+  const nota = document.getElementById('vrNota');
+  const okCiu = function(c){ return !vrCiudadAct || c === vrCiudadAct; };
 
   // reparaciones de hoy, por NAP y por nodo
   const hoyNap = {}, hoyNodo = {};
@@ -4212,12 +4275,15 @@ function pintarCapaRed(){
   });
 
   const R = REDMAPA || { naps:[], nodos:[] };
-  if(capaRedNodo){
+  const pts = [];
+  if(vrVerNodos){
     R.nodos.forEach(function(n, i){
+      if(!okCiu(n.c)) return;
       const hoy = hoyNodo[n.k] || 0;
+      if(vrModoAct === 'hoy' && !hoy) return;
       const col = hoy ? '#dc2626' : COL_NODO[i % COL_NODO.length];
       const pol = L.polygon(n.h, { color:col, weight:hoy ? 1.6 : 1, dashArray:'5 4',
-        fillColor:col, fillOpacity:hoy ? 0.14 : 0.07, interactive:true });
+        fillColor:col, fillOpacity:hoy ? 0.14 : 0.06 });
       // etiqueta fija solo en los nodos con reparacion hoy; los demas al pasar el mouse
       pol.bindTooltip('Nodo ' + n.nodo + (n.red === 'HFC' ? ' HFC' : ''),
         { permanent:!!hoy, direction:'center', className:'lbl-nodo' + (hoy ? ' hoy' : '') });
@@ -4227,39 +4293,49 @@ function pintarCapaRed(){
     });
   }
 
-  let nHoy = 0, n30 = 0;
+  let nHoy = 0, nVis = 0;
   const vistas = {};
-  if(capaRedNap){
-    R.naps.forEach(function(p){
-      vistas[p.k] = 1;
-      const hoy = hoyNap[p.k] || [];
-      if(hoy.length) nHoy++; if(p.r30) n30++;
-      if(capaRedSolo && !hoy.length && !p.r30) return;
-      let st;
-      if(hoy.length) st = { radius:Math.min(16, 6 + 2*(hoy.length + p.r30)), color:'#7f1d1d', weight:2, fillColor:'#dc2626', fillOpacity:.88 };
-      else if(p.r30) st = { radius:Math.min(13, 4 + 1.5*p.r30), color:'#b45309', weight:2, fillColor:'#f59e0b', fillOpacity:.8 };
-      else st = { radius:3.5, color:'#475569', weight:0, fillColor:'#64748b', fillOpacity:.55 };
-      L.circleMarker([p.lat, p.lng], st).bindPopup(function(){
-        return '<div class="ppred"><h4>NAP ' + escR(tituloDir(p.n)) + '</h4>'
-          + '<div class="s">' + escR(tituloDir(p.c)) + (p.nodo ? ' · nodo ' + escR(p.nodo) : ' · sin nodo en el export')
-          + ' · ' + p.casas + ' casa(s) conocidas</div>'
-          + (hoy.length ? '<div class="tt hoy">Hoy (' + hoy.length + ')</div><table>' + hoy.map(function(w){ return filaRepRed(w, true); }).join('') + '</table>' : '')
-          + (p.r30 ? '<div class="tt">Últimos ' + (R.dias || 30) + ' días (' + p.r30 + ')</div><table>' + p.reps.map(function(r){ return filaRepRed(r, false); }).join('') + '</table>'
-                   : (hoy.length ? '' : '<span class="m">Sin reparaciones en los últimos ' + (R.dias || 30) + ' días.</span>'))
-          + '</div>';
-      }).addTo(grpRedNaps);
+  R.naps.forEach(function(p){
+    vistas[p.k] = 1;
+    if(!okCiu(p.c)) return;
+    const hoy = hoyNap[p.k] || [];
+    if(hoy.length) nHoy++;
+    if(vrModoAct === 'hoy' && !hoy.length) return;
+    if(vrModoAct === 'r30' && !hoy.length && !p.r30) return;
+    nVis++;
+    let st;
+    if(hoy.length) st = { radius:Math.min(16, 6 + 2*(hoy.length + p.r30)), color:'#7f1d1d', weight:2, fillColor:'#dc2626', fillOpacity:.88 };
+    else if(p.r30) st = { radius:Math.min(13, 4 + 1.5*p.r30), color:'#b45309', weight:1.5, fillColor:'#f59e0b', fillOpacity:.8 };
+    else st = { radius:3.5, color:'#475569', weight:0, fillColor:'#64748b', fillOpacity:.55 };
+    pts.push([p.lat, p.lng]);
+    const mk = L.circleMarker([p.lat, p.lng], st).bindPopup(function(){
+      return '<div class="ppred"><h4>NAP ' + escR(tituloDir(p.n)) + '</h4>'
+        + '<div class="s">' + escR(tituloDir(p.c)) + (p.nodo ? ' · nodo ' + escR(p.nodo) : ' · sin nodo en el export')
+        + ' · ' + p.casas + ' casa(s) conocidas</div>'
+        + (hoy.length ? '<div class="tt hoy">Hoy (' + hoy.length + ')</div><table>' + hoy.map(function(w){ return filaRepRed(w, true); }).join('') + '</table>' : '')
+        + (p.r30 ? '<div class="tt">Últimos ' + (R.dias || 30) + ' días (' + p.r30 + ')</div><table>' + p.reps.map(function(r){ return filaRepRed(r, false); }).join('') + '</table>'
+                 : (hoy.length ? '' : '<span class="m">Sin reparaciones en los últimos ' + (R.dias || 30) + ' días.</span>'))
+        + '</div>';
     });
-    // NAP que aparecen hoy por primera vez: todavia no estan en red_mapa.json
-    Object.keys(hoyNap).forEach(function(k){
-      if(vistas[k]) return;
-      const w0 = hoyNap[k][0];
-      if(!w0.lat || !w0.lng) return;
-      nHoy++;
-      L.circleMarker([w0.lat, w0.lng], { radius:7, color:'#7f1d1d', weight:2, fillColor:'#dc2626', fillOpacity:.88 })
-        .bindPopup('<div class="ppred"><h4>NAP ' + escR(tituloDir(w0.nap)) + '</h4><div class="s">NAP nueva, vista hoy por primera vez</div>'
-          + '<div class="tt hoy">Hoy (' + hoyNap[k].length + ')</div><table>' + hoyNap[k].map(function(w){ return filaRepRed(w, true); }).join('') + '</table></div>')
-        .addTo(grpRedNaps);
-    });
+    mk.addTo(grpRedNaps);
+    if(hoy.length) mk.bringToFront();
+  });
+  // NAP que aparecen hoy por primera vez: todavia no estan en red_mapa.json
+  Object.keys(hoyNap).forEach(function(k){
+    if(vistas[k]) return;
+    const w0 = hoyNap[k][0];
+    if(!w0.lat || !w0.lng || !okCiu(k.split('|')[0])) return;
+    nHoy++; nVis++; pts.push([w0.lat, w0.lng]);
+    L.circleMarker([w0.lat, w0.lng], { radius:7, color:'#7f1d1d', weight:2, fillColor:'#dc2626', fillOpacity:.88 })
+      .bindPopup('<div class="ppred"><h4>NAP ' + escR(tituloDir(w0.nap)) + '</h4><div class="s">NAP nueva, vista hoy por primera vez</div>'
+        + '<div class="tt hoy">Hoy (' + hoyNap[k].length + ')</div><table>' + hoyNap[k].map(function(w){ return filaRepRed(w, true); }).join('') + '</table></div>')
+      .addTo(grpRedNaps);
+  });
+
+  // encuadrar la primera vez (y al cambiar de ciudad)
+  if(!vrEncuadrado && pts.length){
+    mapaRed.invalidateSize();          // si recien se abrio, Leaflet aun no sabe su tamano
+    mapaRed.fitBounds(pts, { padding:[30,30], maxZoom:16 }); vrEncuadrado = true;
   }
 
   if(!REDMAPA){
@@ -4267,8 +4343,9 @@ function pintarCapaRed(){
       ? 'No se pudo bajar red_mapa.json (¿ya corrió rellenar_mapa_red.bat?). Solo se ven las reparaciones de hoy.'
       : 'Todavía no hay red publicada. Solo se ven las reparaciones de hoy.';
   } else {
-    nota.textContent = R.naps.length + ' NAP y ' + R.nodos.length + ' zonas de nodo conocidas (' + (R.n_casas || 0)
-      + ' casas) · ' + nHoy + ' NAP con reparación hoy · red al ' + (R.generado || R.fecha || '') + '. La ubicación de la NAP es aproximada.';
+    nota.textContent = 'En pantalla: ' + nVis + ' NAP. Conocidas: ' + R.naps.length + ' NAP y ' + R.nodos.length
+      + ' zonas de nodo (' + (R.n_casas || 0) + ' casas). ' + nHoy + ' NAP con reparación hoy. Red al '
+      + (R.generado || R.fecha || '') + '. La ubicación de la NAP es aproximada.';
   }
 }
 
@@ -5499,8 +5576,8 @@ function pintarPortada(){
     +       (gruposRojos() ? '<span class="pv-nred">' + gruposRojos() + '</span>' : '') + '</a>'
     /* Reiterados al lado, 24-09-2026. Solo lleva la cifra: se da casi todos
        los dias, asi que no se pinta en rojo como Nodos y NAP. */
-    /* Red (24-09-2026): va al mapa con la capa de NAP y nodos prendida */
-    +     '<a onclick="irCapaRed()">Red</a>'
+    /* Red (24-09-2026): abre el mapa de red, pantalla aparte con su propio mapa */
+    +     '<a onclick="abrirVistaRed()">Red</a>'
     +     '<a onclick="desdePortada(toggleReit)">Reiterados'
     +       (nReit() ? '<span class="pv-nreit">' + nReit() + '</span>' : '') + '</a>'
     +   '</nav>'
@@ -6497,7 +6574,7 @@ async function cargarDatosVivos(auto){
     // informa donde NO esta en vez de donde SI esta.
     EN_BUCKET = new Set(js.fuera_domi || []);
     RED = js.red || null;              // Nodos y NAP (24-09-2026)
-    if(capaRedOn) pintarCapaRed();     // capa Red: las de hoy vienen de aca
+    if(vistaRedAbierta) pintarCapaRed();  // mapa de red: las de hoy vienen de aca
     NEG = js.neg || {};                // Negocios / Reiterado (24-09-2026)
     REIT = js.reit || null;            // Reiterados (24-09-2026)
     renderBotonReit();
