@@ -9813,13 +9813,13 @@
    }
   },
   "24-09-2026": {
-   "hasta": "18:57",
+   "hasta": "19:03",
    "actividades": 167,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 47,
-    "Completado": 107,
-    "Iniciado": 5,
+    "Completado": 109,
+    "Iniciado": 3,
     "Cancelado": 5,
     "Suspendido": 3
    },
@@ -10004,7 +10004,7 @@
       "f": "16-19",
       "hi": "16:41",
       "d": "PJE TURQUESA 13, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O17X12C",
@@ -10772,5 +10772,5 @@
    }
   }
  },
- "generado": "24-09-2026 18:57"
+ "generado": "24-09-2026 19:03"
 }
