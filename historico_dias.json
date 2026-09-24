@@ -9813,13 +9813,13 @@
    }
   },
   "24-09-2026": {
-   "hasta": "17:42",
+   "hasta": "17:47",
    "actividades": 163,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 42,
-    "Completado": 88,
-    "Iniciado": 25,
+    "Completado": 91,
+    "Iniciado": 22,
     "Cancelado": 5,
     "Suspendido": 3
    },
@@ -9995,7 +9995,7 @@
       "f": "16-19",
       "hi": "16:51",
       "d": "LOS PEUMOS 1092, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O16EP6U",
@@ -10094,7 +10094,7 @@
       "f": "13-16",
       "hi": "16:40",
       "d": "LINCOYAN 1410 EDIF. C DEPTO 23, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O0ZDP6Y",
@@ -10688,7 +10688,7 @@
       "f": "10-13",
       "hi": "11:19",
       "d": "PORVENIR 26, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "MATÍAS JAQUE AG",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -10754,5 +10754,5 @@
    }
   }
  },
- "generado": "24-09-2026 17:42"
+ "generado": "24-09-2026 17:47"
 }
