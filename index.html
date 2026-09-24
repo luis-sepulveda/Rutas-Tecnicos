@@ -50,6 +50,9 @@
        Lo arma armar_reiterados() de generar_rutas.py leyendo el
        historico_completadas.csv del Historial por tecnico (rutas.json ->
        reit). Nodos y NAP quedo igual: a proposito no se mezclan.
+       Desde la tarde del 24-09-2026 cuentan tambien los trabajos completados
+       HOY, si terminaron antes de que empezara la reparacion (dias = 0, se
+       muestra "hoy").
      ===================================================================== -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js">
@@ -3884,6 +3887,10 @@ let reitAbierto = false;
 
 function nReit(){ return REIT && REIT.items ? REIT.items.length : 0; }
 
+// "hoy" / "1 día" / "12 días". Desde el 24-09-2026 tambien cuentan los
+// trabajos completados hoy mismo (dias = 0), antes de la reparacion.
+function haceReit(d){ return d === 0 ? 'hoy' : (d + ' día' + (d === 1 ? '' : 's')); }
+
 function renderBotonReit(){
   const btn = document.getElementById('btnReit');
   if(!btn) return;
@@ -3930,7 +3937,8 @@ function renderReit(){
     + '<span class="fchip"><b>' + items.length + '</b> reiteradas</span>'
     + '<span class="fchip"><b>' + cerca + '</b> de la última semana</span>';
   intro.innerHTML = 'Reparaciones de hoy en una casa donde un técnico de Dominion completó una '
-    + '<b>alta, migración o reparación en los últimos ' + dias + ' días</b>. '
+    + '<b>alta, migración o reparación en los últimos ' + dias + ' días</b>, '
+    + 'o hoy mismo antes de la reparación. '
     + 'Incluye las que siguen en el bucket. No entran las canceladas.';
 
   if(!items.length){
@@ -3942,7 +3950,7 @@ function renderReit(){
       const filas = w.prev.map(function(v){
         return '<tr>'
           + '<td style="white-space:nowrap">' + escR(v.f) + '</td>'
-          + '<td style="white-space:nowrap"><b>' + v.dias + ' día' + (v.dias === 1 ? '' : 's') + '</b></td>'
+          + '<td style="white-space:nowrap"><b>' + haceReit(v.dias) + '</b></td>'
           + '<td>' + escR(v.cat || v.tipo) + '</td>'
           + '<td><span class="rd-ot">' + escR(v.ot) + '</span></td>'
           + '<td class="rd-tec">' + escR(v.tec) + '</td>'
@@ -3952,7 +3960,7 @@ function renderReit(){
       }).join('');
       return '<div class="rd-card reit' + (p0.dias <= 7 ? ' cerca' : '') + '">'
         + '<div class="rd-top"><span class="rd-tit">' + escR(w.d) + '</span>'
-        + '<span class="rd-sello">' + escR(p0.cat || p0.tipo) + ' hace ' + p0.dias + ' día' + (p0.dias === 1 ? '' : 's')
+        + '<span class="rd-sello">' + escR(p0.cat || p0.tipo) + (p0.dias === 0 ? ' hoy mismo' : ' hace ' + haceReit(p0.dias))
         + ' · ' + escR(p0.tec) + '</span></div>'
         + '<div class="rd-hoy"><b>Hoy:</b> <span class="rd-ot">' + escR(w.pet || w.o) + '</span>' + tagNeg(w.o)
         + ' · ' + escR(w.cat || 'Reparación') + (w.sub ? ' · ' + escR(w.sub) : '')
@@ -3970,8 +3978,9 @@ function renderReit(){
     }).join('');
   }
   nota.textContent = 'Reiterada = en la misma dirección (con casa y depto) hubo una alta, migración o '
-    + 'reparación completada en los últimos ' + dias + ' días. Solo se ven trabajos de técnicos de '
-    + 'Dominion (sale del Historial por técnico). En rojo, las de la última semana.';
+    + 'reparación completada en los últimos ' + dias + ' días, o hoy mismo si terminó antes de que '
+    + 'empezara la reparación. Solo se ven trabajos de técnicos de Dominion (los días anteriores salen '
+    + 'del Historial por técnico; los de hoy, del export en vivo). En rojo, las de la última semana.';
 }
 
 function verReitEnMapa(i){
