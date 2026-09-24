@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-24T15:27:25",
+  "actualizado": "2026-09-24T15:57:48",
   "resumen": {
-    "sin informacion": 5,
-    "reagendada": 8
+    "sin informacion": 6,
+    "reagendada": 9
   },
   "estados": {
     "1-3O0IB2ZT": {
@@ -12,6 +12,34 @@
       "d": "JOSE FUENTES 921 DEPTO 31, QUILPUE",
       "estado": "sin informacion",
       "nota": "la OT ya no existe en TOA"
+    },
+    "1-3O10DCSU": {
+      "tec": "EDGAR VALERO C",
+      "cat": "Reparación",
+      "franja_original": "13-16",
+      "d": "EL AMANECER 1343, VILLA ALEMANA",
+      "estado": "sin informacion",
+      "nota": "la OT ya no existe en TOA",
+      "contexto": {
+        "buscado": "EL AMANECER 1343",
+        "aviso": "historial de la direccion, NO es el estado de esta orden",
+        "filas": [
+          {
+            "estado": "completada",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3MZK0TV0",
+            "franja": "13-16",
+            "texto": "1-3MZK0TV0 - 13-16-Reparación-2 Play Servicio Degradado-EL AMANECER 1343Lun, 3 Ago"
+          },
+          {
+            "estado": "completada",
+            "color": "rgb(121, 182, 235)",
+            "ot": "1-3MZQYRF6",
+            "franja": "13-16",
+            "texto": "1-3MZQYRF6 - 13-16-Modificación de Servicio-Modificación-EL AMANECER 1343Lun, 3 Ago"
+          }
+        ]
+      }
     },
     "1-3NZ590ZD": {
       "tec": "FELIPE SILVA R",
@@ -110,6 +138,16 @@
           }
         ]
       }
+    },
+    "1-3O0ZI4C2": {
+      "tec": "KEVIN TAPIA RETAMAL",
+      "cat": "Alta 1 Play",
+      "franja_original": "16-19",
+      "d": "CALLE 1 850 EDIF. S DEPTO 32, QUILPUE",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3O0ZI4C2 - 10-13-Alta-2 Play-CALLE 1 850 EDIF. S DEPTO 32Vie, 25 Sep",
+      "franja_nueva": "10-13"
     },
     "1-3O0A3FCQ": {
       "tec": "KEVIN TAPIA RETAMAL",
