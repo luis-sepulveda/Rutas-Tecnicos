@@ -9813,22 +9813,23 @@
    }
   },
   "24-09-2026": {
-   "hasta": "10:24",
-   "actividades": 106,
+   "hasta": "10:34",
+   "actividades": 110,
    "tecnicos": 36,
    "estados": {
-    "Iniciado": 29,
+    "No Realizada": 7,
+    "en ruta": 2,
     "Pendiente": 64,
-    "en ruta": 5,
-    "No Realizada": 5,
-    "Completado": 2,
-    "Suspendido": 1
+    "Iniciado": 32,
+    "Completado": 3,
+    "Suspendido": 1,
+    "Cancelado": 1
    },
-   "rgu": 163.5,
+   "rgu": 169.0,
    "caidas_total": 3,
    "caidas_activas": 3,
    "caidas_resueltas": 0,
-   "nuevas": 9,
+   "nuevas": 13,
    "al_bucket": 1,
    "repetidas": 22,
    "reagendadas": 2,
@@ -9863,6 +9864,42 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O0UD9GH",
+      "tec": "CESAR MENA OLIVEROS",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "11:46",
+      "d": "CALLE VIA V3 1127 CASA 1 DEPTO 135, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3O0UIMNX",
+      "tec": "JEAN ROODLY ORELIEN",
+      "cat": "Reparación",
+      "f": "16-19",
+      "hi": "17:20",
+      "d": "BELLAVISTA 1342, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3O0UDCCR",
+      "tec": "SEBASTIAN DOSSOW A",
+      "cat": "Reparación",
+      "f": "10-13",
+      "hi": "10:27",
+      "d": "EL TRIGAL 481, QUILPUE",
+      "e": "Iniciado"
+     },
+     {
+      "o": "1-3O0UD4N3",
+      "tec": "ALEXIS JARA",
+      "cat": "Alta 2 Play",
+      "f": "10-13",
+      "hi": "10:46",
+      "d": "CRISTOBAL COLON 0326, QUILPUE",
+      "e": "en ruta"
+     },
      {
       "o": "1-3O0TZASS",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -9901,7 +9938,7 @@
      },
      {
       "o": "1-3O0SYK31",
-      "tec": "GEEYSER PEREZ O",
+      "tec": "CRISTOBAL MIRANDA VALENC",
       "cat": "Reparación",
       "f": "10-13",
       "hi": "11:05",
@@ -10202,9 +10239,9 @@
       "o": "1-3NZ4UIWC",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "10:28",
+      "hi": "10:34",
       "d": "FLAMARION 0335, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "YENDER BOSCAN CADENAS",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -10236,5 +10273,5 @@
    }
   }
  },
- "generado": "24-09-2026 10:24"
+ "generado": "24-09-2026 10:34"
 }
