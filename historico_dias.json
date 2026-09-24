@@ -9813,24 +9813,24 @@
    }
   },
   "24-09-2026": {
-   "hasta": "14:40",
-   "actividades": 156,
+   "hasta": "15:06",
+   "actividades": 159,
    "tecnicos": 36,
    "estados": {
-    "No Realizada": 26,
-    "Completado": 58,
-    "Pendiente": 43,
-    "Iniciado": 18,
+    "No Realizada": 29,
+    "Completado": 64,
     "en ruta": 5,
+    "Pendiente": 36,
+    "Iniciado": 19,
     "Cancelado": 4,
     "Suspendido": 2
    },
-   "rgu": 225.4,
+   "rgu": 227.5,
    "caidas_total": 11,
    "caidas_activas": 11,
    "caidas_resueltas": 0,
-   "nuevas": 39,
-   "al_bucket": 7,
+   "nuevas": 42,
+   "al_bucket": 8,
    "repetidas": 27,
    "reagendadas": 3,
    "detalle": {
@@ -9937,6 +9937,33 @@
     ],
     "nuevas": [
      {
+      "o": "1-3O13CDDE",
+      "tec": "JOSE SALAS MEDINA",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "14:53",
+      "d": "LAS VIOLETAS 2420, QUILPUE",
+      "e": "Iniciado"
+     },
+     {
+      "o": "1-3O134T52",
+      "tec": "MARCO PEREZ G",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "14:42",
+      "d": "ARTURO ALESSANDRI 578, QUILPUE",
+      "e": "Iniciado"
+     },
+     {
+      "o": "1-3O1392XE",
+      "tec": "ALFREDO ALCAYAGA F",
+      "cat": "Reparación",
+      "f": "16-19",
+      "hi": "16:14",
+      "d": "BUENOS AIRES 1613 CASA 5, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3NWUM8QC",
       "tec": "MATÍAS JAQUE AG",
       "cat": "Migración 1 Play",
@@ -9961,7 +9988,7 @@
       "f": "10-13",
       "hi": "15:30",
       "d": "CALLE TRES 980, QUILPUE",
-      "e": "en ruta"
+      "e": "No Realizada"
      },
      {
       "o": "1-3O10DCSU",
@@ -9988,7 +10015,7 @@
       "f": "13-16",
       "hi": "16:40",
       "d": "LINCOYAN 1410 EDIF. C DEPTO 23, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O0ZDP6Y",
@@ -10015,7 +10042,7 @@
       "f": "13-16",
       "hi": "15:16",
       "d": "NOVENA 876, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O0YW2W3",
@@ -10118,12 +10145,12 @@
      },
      {
       "o": "1-3O0V7XF3",
-      "tec": "MARCO PEREZ G",
+      "tec": "JOSE GALAZ D",
       "cat": "Alta 2 Play",
       "f": "13-16",
       "hi": "15:25",
       "d": "CRISTOBAL COLON 0326, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O0VJ9G3",
@@ -10141,7 +10168,7 @@
       "f": "10-13",
       "hi": "11:51",
       "d": "GERONA 41, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O0UOZ12",
@@ -10258,7 +10285,7 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "PAKISTAN 943, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O0T2V89",
@@ -10305,7 +10332,7 @@
       "o": "1-3O0U4OL3",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:04",
+      "hi": "15:06",
       "d": "PJE TURQUESA 13, QUILPUE",
       "e": "Pendiente",
       "tec": "CRISTOBAL SILVA LEIVA",
@@ -10329,7 +10356,7 @@
       "o": "1-3O0I9FOT",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:27",
+      "hi": "16:17",
       "d": "SEGUNDO DE LINEA 2498, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -10391,7 +10418,7 @@
       "f": "10-13",
       "hi": "11:50",
       "d": "GERONA 41, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JORDAN ROA PEREZ",
       "visitas": 5,
       "ult_fecha": "14-09-2026",
@@ -10412,7 +10439,7 @@
       "o": "1-3O0ZIORG",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:17",
+      "hi": "16:18",
       "d": "PAUL HARRIS 807 EDIF. C DEPTO 108, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -10433,10 +10460,22 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3O0V7XF3",
+      "cat": "Alta 2 Play",
+      "f": "13-16",
+      "hi": "15:18",
+      "d": "CRISTOBAL COLON 0326, QUILPUE",
+      "e": "en ruta",
+      "tec": "JOSE GALAZ D",
+      "visitas": 1,
+      "ult_fecha": "24-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3NYKPFG1",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:19",
+      "hi": "17:17",
       "d": "CUMMING 831, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -10496,7 +10535,7 @@
       "o": "1-3O10H2LL",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:44",
+      "hi": "16:10",
       "d": "PJE TURQUESA 20, QUILPUE",
       "e": "Pendiente",
       "tec": "LUIS MARTIN NUÑEZ",
@@ -10517,18 +10556,6 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
-      "o": "1-3O0V7XF3",
-      "cat": "Alta 2 Play",
-      "f": "13-16",
-      "hi": "15:54",
-      "d": "CRISTOBAL COLON 0326, QUILPUE",
-      "e": "Pendiente",
-      "tec": "MARCO PEREZ G",
-      "visitas": 1,
-      "ult_fecha": "24-09-2026",
-      "ult_cierre": "Sin moradores"
-     },
-     {
       "o": "1-3NZAH7WL",
       "cat": "Alta 2 Play",
       "f": "10-13",
@@ -10544,7 +10571,7 @@
       "o": "1-3NWUM8QC",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "18:41",
+      "hi": "16:23",
       "d": "MARCONI 744, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -10556,7 +10583,7 @@
       "o": "1-3O0IDSIG",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "15:15",
+      "hi": "15:13",
       "d": "MATURANA 34, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -10604,7 +10631,7 @@
       "o": "1-3O0FALHK",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:01",
+      "hi": "16:09",
       "d": "LO MOSCOSO 1115 CASA B, QUILPUE",
       "e": "Pendiente",
       "tec": "YENDER BOSCAN CADENAS",
@@ -10638,7 +10665,7 @@
       "o": "1-3NWUM8QC",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "18:41",
+      "hi": "16:23",
       "d": "MARCONI 744, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -10648,5 +10675,5 @@
    }
   }
  },
- "generado": "24-09-2026 14:40"
+ "generado": "24-09-2026 15:06"
 }
