@@ -9813,19 +9813,19 @@
    }
   },
   "24-09-2026": {
-   "hasta": "10:59",
-   "actividades": 114,
+   "hasta": "11:05",
+   "actividades": 115,
    "tecnicos": 36,
    "estados": {
-    "No Realizada": 8,
-    "Iniciado": 32,
-    "Pendiente": 61,
-    "Completado": 8,
+    "No Realizada": 9,
+    "Iniciado": 29,
+    "Pendiente": 62,
+    "Completado": 10,
     "en ruta": 3,
     "Suspendido": 1,
     "Cancelado": 1
    },
-   "rgu": 174.0,
+   "rgu": 175.0,
    "caidas_total": 4,
    "caidas_activas": 4,
    "caidas_resueltas": 0,
@@ -10082,7 +10082,7 @@
       "f": "10-13",
       "hi": "09:45",
       "d": "BAQUEDANO 978 CASA 4, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "FELIPE SILVA R",
       "visitas": 1,
       "ult_fecha": "17-09-2026",
@@ -10330,5 +10330,5 @@
    }
   }
  },
- "generado": "24-09-2026 10:59"
+ "generado": "24-09-2026 11:05"
 }
