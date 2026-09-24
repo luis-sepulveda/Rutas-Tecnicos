@@ -21,6 +21,20 @@
 
      Respaldo del anterior: index_OLD.html
      ===================================================================== -->
+<!-- =====================================================================
+     NODOS Y NAP — 24-09-2026
+
+     Boton nuevo en los avisos (arriba a la izquierda del mapa). Muestra las
+     reparaciones del dia que cuelgan del mismo punto de la red: misma NAP
+     (FTTH) o mismo nodo+subnodo (HFC). El calculo lo hace armar_red() en
+     generar_rutas.py y viaja dentro de rutas.json, en el campo 'red'; aca solo
+     se pinta. Incluye las ordenes que siguen en el bucket.
+
+     Se toco: el boton (id btnRed), el modal (id modalRed), un bloque CSS al
+     final del <style> con su titulo, el bloque JS "NODOS Y NAP", y tres
+     lineas en funciones que ya existian: cargarDatosVivos() (lee js.red),
+     cerrarPaneles() y la tecla Esc (cierran el modal nuevo).
+     ===================================================================== -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js">
 </script>
@@ -1451,6 +1465,48 @@
     margin-top:18px; padding-top:13px; border-top:1px solid #edf1f6; }
   .pv-tend-nota b { color:#5b7086; font-weight:600; }
   .pv-tend .cargando { font-size:13px; color:#9fb0c0; padding:22px 0; }
+
+  /* ===================== NODOS Y NAP — 24-09-2026 =====================
+     Modal de reparaciones que comparten red. Marco oscuro y tarjetas blancas,
+     igual que Caidas y Nuevas. Rojo = misma NAP o mismo nodo HFC (posible
+     falla de red). Ambar = mismo nodo FTTH en NAP distintas (vigilar).
+     Borrando este bloque el modal queda sin formato, pero no se rompe nada. */
+  #modalRed { position:fixed; inset:0; z-index:3000; display:none; background:rgba(2,6,23,.72); }
+  #modalRed.abierto { display:flex; align-items:flex-start; justify-content:center; padding:4vh 2vw; }
+  #modalRed .mc-body { display:block; }
+  #modalRed .vacio { color:#86efac; text-align:center; padding:28px 6px; font-size:14px; line-height:1.6; }
+  #btnRed .badge { display:inline-block; min-width:16px; padding:0 5px; margin-left:5px;
+    background:#f87171; color:#450a0a; border-radius:9px; font-size:11px; font-weight:bold;
+    line-height:16px; text-align:center; }
+  #btnRed.on-red { background:rgba(88,20,20,.9); border-color:#ff8b80; color:#ffd9d5; font-weight:700; }
+  .rd-card { background:#fff; border-radius:10px; padding:12px 14px; margin-bottom:10px;
+    border-left:6px solid #94a3b8; color:#0f172a; font-family:'DM Sans','Segoe UI',Arial,sans-serif; }
+  .rd-card.rojo { border-left-color:#dc2626; }
+  .rd-card.ambar { border-left-color:#d97706; }
+  .rd-top { display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap; }
+  .rd-tit { font-family:'Archivo','Segoe UI',sans-serif; font-size:15px; font-weight:700; color:#0f172a; }
+  .rd-sello { font-size:12px; font-weight:700; padding:3px 10px; border-radius:6px; white-space:nowrap; }
+  .rd-card.rojo .rd-sello { background:#fee2e2; color:#991b1b; }
+  .rd-card.ambar .rd-sello { background:#fef3c7; color:#92400e; }
+  .rd-sub { font-size:12.5px; color:#475569; margin:3px 0 8px; }
+  .rd-tabla { width:100%; border-collapse:collapse; font-size:12.5px; }
+  .rd-tabla th { text-align:left; font-size:10.5px; color:#64748b; font-weight:700;
+    text-transform:uppercase; letter-spacing:.03em; padding:4px 8px 4px 0; border-bottom:1px solid #e2e8f0; }
+  .rd-tabla td { padding:6px 8px 6px 0; border-bottom:1px solid #f1f5f9; vertical-align:top; color:#0f172a; }
+  .rd-tabla tr:last-child td { border-bottom:0; }
+  .rd-tabla, .rd-tabla * { user-select:text; -webkit-user-select:text; }
+  .rd-ot { font-family:'Consolas',monospace; font-size:12px; background:#e2e8f0;
+    color:#1e3a8a; padding:1px 6px; border-radius:5px; white-space:nowrap; }
+  .rd-tec.buck { color:#9a3412; font-weight:700; }
+  .rd-pto { font-family:'Consolas',monospace; font-size:11.5px; color:#475569; white-space:nowrap; }
+  .rd-mapa { display:inline-block; margin-top:8px; font-size:12.5px; color:#0f766e; cursor:pointer;
+    text-decoration:underline dotted; text-underline-offset:2px; }
+  .rd-mapa:hover { color:#115e59; text-decoration:underline solid; }
+  .rd-scroll { overflow-x:auto; }
+  .rd-sep { color:#e2e8f0; font-size:11px; font-weight:700; text-transform:uppercase;
+    letter-spacing:.05em; margin:14px 0 8px; }
+  .rd-sep:first-child { margin-top:2px; }
+  /* =================================================================== */
 </style>
 </head>
 <body>
@@ -1489,6 +1545,7 @@
   <button class="btn" id="btnReca" onclick="toggleReca()">Recaídas</button>
   <button class="btn" id="btnNuevas" onclick="toggleNuevas()">Nuevas</button>
   <button class="btn" id="btnRepe" onclick="toggleRepe()">Repetidas</button>
+  <button class="btn" id="btnRed" onclick="toggleRed()">Nodos y NAP</button>
 </div>
 <div id="barraAcc" class="nb-flota der">
   <button class="btn" id="btnNombres" onclick="toggleNombres()">Nombres</button>
@@ -1567,6 +1624,21 @@
     </div>
     <div id="listaRepe" class="mc-body"></div>
     <div id="repeNota" class="mc-resnota"></div>
+  </div>
+</div>
+<!-- Nodos y NAP (24-09-2026). Mismo tema claro que los demas. -->
+<div id="modalRed" class="t-claro" onclick="if(event.target===this) cerrarRed()">
+  <div class="mc-box">
+    <div class="mc-head">
+      <div class="mc-head-left">
+        <h2>Nodos y NAP · reparaciones que comparten red</h2>
+        <div id="redChips" class="mc-cont"></div>
+      </div>
+      <button class="mc-close" onclick="cerrarRed()" title="Cerrar (Esc)">✖</button>
+    </div>
+    <div id="redIntro" class="mc-intro"></div>
+    <div id="listaRed" class="mc-body"></div>
+    <div id="redNota" class="mc-resnota"></div>
   </div>
 </div>
 <div id="modalJor" class="t-claro" onclick="if(event.target===this) cerrarJornada()">
@@ -1933,7 +2005,7 @@ function verTecnicoCaida(t){
 
 // cerrar los modales con la tecla Esc
 document.addEventListener('keydown', function(e){
-  if(e.key === 'Escape'){ cerrarCaidas(); cerrarNuevas(); cerrarRepe(); cerrarReca(); cerrarBuscar(); cerrarEst(); cerrarJornada(); }
+  if(e.key === 'Escape'){ cerrarCaidas(); cerrarNuevas(); cerrarRepe(); cerrarReca(); cerrarBuscar(); cerrarEst(); cerrarJornada(); cerrarRed(); }
 });
 
 /* ======================= ORDENES NUEVAS DEL DIA =======================
@@ -3455,7 +3527,8 @@ function cerrarPaneles(salvo){
   const todos = {
     comp:   cerrarComp,   rgu:    cerrarRGU,    atr:    cerrarAtr,
     sc:     cerrarSC,     caidas: cerrarCaidas, repe:   cerrarRepe,
-    nuevas: cerrarNuevas, reca:   cerrarReca,   buscar: cerrarBuscar
+    nuevas: cerrarNuevas, reca:   cerrarReca,   buscar: cerrarBuscar,
+    red:    cerrarRed
   };
   Object.keys(todos).forEach(function(k){
     if(k !== salvo && typeof todos[k] === 'function') todos[k]();
@@ -3533,6 +3606,187 @@ function renderReca(){
   nota.textContent = casos.length + ' dirección(es) que se cayeron y volvieron a cargarse hoy · '
     + vivas + ' todavía sin cerrar. Se ignora la misma OT repetida por cambio de '
     + 'estado: solo cuenta cuando es otra orden en la misma puerta.';
+}
+
+/* ============================ NODOS Y NAP ============================
+   24-09-2026. Reparaciones del dia que cuelgan del mismo punto de la red.
+
+   Dos casas distintas con falla en la misma NAP huelen a problema de la NAP,
+   no de los clientes. Y si van en franjas distintas, terminan yendo dos
+   tecnicos al mismo punto sin saberlo.
+
+   Aca NO se calcula nada: los grupos vienen armados en rutas.json (campo
+   'red') por armar_red() de generar_rutas.py, con el export completo, o sea
+   tambien las ordenes que siguen en el bucket. Las reglas estan explicadas
+   alla. Si el rutas.json es de la version vieja no trae 'red' y el boton
+   queda sin globo.
+
+   Tampoco respeta los filtros de arriba, a proposito, igual que Repetidas: el
+   globo del boton tiene que ser un numero fijo.
+
+   "Ver en el mapa" dibuja un circulo en cada casa del grupo (tambien las del
+   bucket, que no tienen pin) y encuadra. Los circulos se borran al volver a
+   abrir el modal.                                                         */
+let RED = null;
+let redAbierto = false;
+let redCapa = null;
+
+function gruposRojos(){
+  return RED && RED.grupos ? RED.grupos.filter(function(g){ return g.nivel === 'rojo'; }).length : 0;
+}
+
+function renderBotonRed(){
+  const btn = document.getElementById('btnRed');
+  if(!btn) return;
+  const n = gruposRojos();
+  btn.innerHTML = 'Nodos y NAP' + (n > 0 ? ' <span class="badge">'+n+'</span>' : '');
+  btn.classList.toggle('on-red', n > 0 && !redAbierto);
+}
+
+function cerrarRed(){
+  if(!redAbierto) return;
+  redAbierto = false;
+  document.getElementById('modalRed').classList.remove('abierto');
+  renderBotonRed();
+}
+
+function toggleRed(){
+  cerrarPaneles('red');
+  redAbierto = !redAbierto;
+  document.getElementById('modalRed').classList.toggle('abierto', redAbierto);
+  if(redAbierto){ limpiarCirculosRed(); renderRed(); }
+  renderBotonRed();
+}
+
+function limpiarCirculosRed(){
+  if(redCapa){ redCapa.clearLayers(); }
+}
+
+// pildora de estado: reusa las clases .bes del resto del modulo
+function besRed(e){
+  const x = String(e||'').toLowerCase();
+  if(x === 'iniciado') return 'ini';
+  if(x === 'en ruta') return 'ruta';
+  if(x === 'completado') return 'ok';
+  if(x === 'no realizada') return 'nr';
+  if(x === 'suspendido') return 'susp';
+  return 'pen';
+}
+
+function tituloGrupoRed(g){
+  const ciu = g.ciudad === 'VILLA ALEMANA' ? 'Villa Alemana' : 'Quilpué';
+  if(g.tipo === 'nap')  return 'NAP ' + g.nap + ' · ' + ciu;
+  if(g.tipo === 'hfc')  return 'Nodo ' + g.nodo + (g.subn ? ' / subnodo ' + g.subn : '') + ' · ' + ciu + ' · HFC';
+  return 'Nodo ' + g.nodo + ' · ' + ciu + ' · FTTH';
+}
+
+function selloGrupoRed(g){
+  if(g.tipo === 'nap')  return g.n_dir + ' casas en la misma NAP';
+  if(g.tipo === 'hfc')  return g.n_dir + ' casas en el mismo nodo';
+  return g.n_dir + ' casas en el nodo, ' + g.n_nap + ' NAP distintas';
+}
+
+function explicaGrupoRed(g){
+  const fr = {};
+  g.ots.forEach(function(w){ fr[w.f || 's/franja'] = 1; });
+  const nfr = Object.keys(fr).length;
+  const buck = g.ots.filter(function(w){ return w.tec === 'En bucket'; }).length;
+  let t;
+  if(g.tipo === 'nap') t = 'Clientes distintos colgados del mismo equipo: puede ser la NAP y no las casas.';
+  else if(g.tipo === 'hfc') t = 'En HFC no hay NAP: el nodo es lo que falla. Puede ser una falla del sector.';
+  else t = 'Mismo nodo, pero cada casa en su NAP. Por ahora solo para vigilar.';
+  if(nfr > 1) t += ' Van en ' + nfr + ' franjas distintas.';
+  if(buck) t += ' ' + (buck === g.ots.length ? 'Todas siguen' : buck + ' siguen') + ' en el bucket.';
+  return t;
+}
+
+function renderRed(){
+  const cont = document.getElementById('listaRed');
+  const intro = document.getElementById('redIntro');
+  const chips = document.getElementById('redChips');
+  const nota = document.getElementById('redNota');
+  if(!RED){
+    chips.innerHTML = '';
+    intro.innerHTML = '';
+    cont.innerHTML = '<div class="vacio">Todavía no hay datos de red. Aparecen cuando '
+      + 'generar_rutas.py (versión del 24-09-2026) corre en el monitor.</div>';
+    nota.textContent = '';
+    return;
+  }
+  const grupos = RED.grupos || [];
+  const rojos = grupos.filter(function(g){ return g.nivel === 'rojo'; });
+  const ambar = grupos.filter(function(g){ return g.nivel !== 'rojo'; });
+
+  chips.innerHTML = '<span class="fchip"><b>' + (RED.n_rep||0) + '</b> reparaciones hoy</span>'
+    + '<span class="fchip"><b>' + rojos.length + '</b> posible falla de red</span>'
+    + '<span class="fchip"><b>' + ambar.length + '</b> para vigilar</span>';
+  intro.innerHTML = 'Reparaciones del día que cuelgan del mismo punto de la red, '
+    + '<b>incluidas las que siguen en el bucket</b>. Se cuentan casas distintas, no órdenes, '
+    + 'y no entran las canceladas.';
+
+  if(!grupos.length){
+    cont.innerHTML = '<div class="vacio">Ninguna NAP ni nodo con más de una casa en reparación hoy.</div>';
+  } else {
+    let html = '';
+    function tarjetas(lista, titulo){
+      if(!lista.length) return;
+      html += '<div class="rd-sep">' + titulo + '</div>';
+      lista.forEach(function(g){
+        const i = grupos.indexOf(g);
+        const filas = g.ots.map(function(w){
+          const buck = w.tec === 'En bucket';
+          const redTxt = w.red === 'HFC'
+            ? 'nodo ' + escR(w.nodo) + (w.subn ? ' / ' + escR(w.subn) : '')
+            : (w.nap ? 'NAP ' + escR(w.nap) : 'sin NAP') + (w.nodo ? ' · nodo ' + escR(w.nodo) : '');
+          return '<tr>'
+            + '<td><span class="rd-ot">' + escR(w.pet || w.o) + '</span></td>'
+            + '<td>' + escR(w.d) + '</td>'
+            + '<td>' + escR(w.cat || 'Reparación') + (w.sub ? '<br><span style="color:#64748b">' + escR(w.sub) + '</span>' : '') + '</td>'
+            + '<td style="white-space:nowrap">' + escR(w.f || 's/franja') + '</td>'
+            + '<td class="rd-tec' + (buck ? ' buck' : '') + '">' + escR(w.tec) + '</td>'
+            + '<td><span class="bes ' + besRed(w.e) + '">' + escR(w.e || 'Pendiente') + '</span></td>'
+            + '<td>' + redTxt + (w.pto ? '<br><span class="rd-pto">' + escR(w.pto) + '</span>' : '') + '</td>'
+            + '</tr>';
+        }).join('');
+        html += '<div class="rd-card ' + (g.nivel === 'rojo' ? 'rojo' : 'ambar') + '">'
+          + '<div class="rd-top"><span class="rd-tit">' + escR(tituloGrupoRed(g)) + '</span>'
+          + '<span class="rd-sello">' + escR(selloGrupoRed(g)) + '</span></div>'
+          + '<div class="rd-sub">' + escR(explicaGrupoRed(g)) + '</div>'
+          + '<div class="rd-scroll"><table class="rd-tabla">'
+          + '<tr><th>Orden</th><th>Dirección</th><th>Tipo</th><th>Franja</th><th>Técnico</th><th>Estado</th><th>Red / puerto NAP</th></tr>'
+          + filas + '</table></div>'
+          + '<span class="rd-mapa" onclick="verRedEnMapa(' + i + ')">📍 ver en el mapa</span>'
+          + '</div>';
+      });
+    }
+    tarjetas(rojos, 'Posible falla de red');
+    tarjetas(ambar, 'Para vigilar');
+    cont.innerHTML = html;
+  }
+
+  nota.textContent = (RED.sin_red ? RED.sin_red + ' reparación(es) sin dato de NAP ni nodo en el export. ' : '')
+    + 'Rojo: 2 o más casas distintas en la misma NAP (FTTH) o en el mismo nodo y subnodo (HFC). '
+    + 'Ámbar: 2 o más casas en el mismo nodo FTTH pero en NAP distintas. '
+    + 'Se actualiza con cada export del monitor (cada 5 min).';
+}
+
+function verRedEnMapa(i){
+  const g = RED && RED.grupos ? RED.grupos[i] : null;
+  if(!g) return;
+  cerrarRed();
+  if(!redCapa) redCapa = L.layerGroup().addTo(map);
+  redCapa.clearLayers();
+  const color = g.nivel === 'rojo' ? '#dc2626' : '#d97706';
+  const pts = [];
+  g.ots.forEach(function(w){
+    if(!w.lat || !w.lng) return;
+    pts.push([w.lat, w.lng]);
+    L.circleMarker([w.lat, w.lng], {radius:14, color:color, weight:3, fillColor:color, fillOpacity:.18})
+      .bindTooltip(escR(w.pet || w.o) + ' · ' + escR(w.d) + ' · ' + escR(w.tec), {direction:'top'})
+      .addTo(redCapa);
+  });
+  if(pts.length === 1) map.setView(pts[0], 17);
+  else if(pts.length > 1) map.fitBounds(pts, {padding:[80,80], maxZoom:17});
 }
 
 /* ============ NOMBRES DE TECNICOS EN EL MAPA ============
@@ -5721,6 +5975,9 @@ async function cargarDatosVivos(auto){
     // una bandeja: sin esto solo se podia decir "no esta en Caidas", que
     // informa donde NO esta en vez de donde SI esta.
     EN_BUCKET = new Set(js.fuera_domi || []);
+    RED = js.red || null;              // Nodos y NAP (24-09-2026)
+    renderBotonRed();
+    if(redAbierto) renderRed();
     renderBannerCaidas();
     renderBotonRepe();                 // globo con las direcciones repetidas de hoy
     renderBotonReca();                 // globo con las recaidas del mismo dia
