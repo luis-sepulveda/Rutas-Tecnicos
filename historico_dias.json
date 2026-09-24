@@ -9813,15 +9813,15 @@
    }
   },
   "24-09-2026": {
-   "hasta": "13:05",
+   "hasta": "13:10",
    "actividades": 151,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 16,
-    "Iniciado": 23,
+    "Iniciado": 24,
     "Pendiente": 57,
     "Completado": 44,
-    "en ruta": 5,
+    "en ruta": 4,
     "Cancelado": 4,
     "Suspendido": 2
    },
@@ -10545,5 +10545,5 @@
    }
   }
  },
- "generado": "24-09-2026 13:05"
+ "generado": "24-09-2026 13:10"
 }
