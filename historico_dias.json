@@ -9813,19 +9813,19 @@
    }
   },
   "24-09-2026": {
-   "hasta": "15:51",
-   "actividades": 156,
+   "hasta": "16:11",
+   "actividades": 157,
    "tecnicos": 36,
    "estados": {
-    "No Realizada": 33,
-    "Completado": 70,
-    "Iniciado": 23,
-    "Pendiente": 17,
-    "en ruta": 7,
-    "Cancelado": 4,
-    "Suspendido": 2
+    "No Realizada": 34,
+    "Completado": 72,
+    "Iniciado": 26,
+    "Pendiente": 12,
+    "Cancelado": 5,
+    "en ruta": 5,
+    "Suspendido": 3
    },
-   "rgu": 224.5,
+   "rgu": 225.5,
    "caidas_total": 15,
    "caidas_activas": 15,
    "caidas_resueltas": 0,
@@ -10024,7 +10024,7 @@
       "f": "16-19",
       "hi": "16:44",
       "d": "PJE TURQUESA 20, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O10KZCO",
@@ -10078,7 +10078,7 @@
       "f": "13-16",
       "hi": "16:24",
       "d": "MATEO DE TORO Y ZAMBRANO 921 CASA 39, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O0Z3R1M",
@@ -10285,7 +10285,7 @@
       "f": "16-19",
       "hi": "16:00",
       "d": "FRODDEN 01835, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O0TVVJ9",
@@ -10348,7 +10348,7 @@
       "f": "16-19",
       "hi": "16:38",
       "d": "LAS ACACIAS 1421 EDIF. B DEPTO 311, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O0AM07T",
@@ -10357,7 +10357,7 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "LAS PETUNIAS 1650 CASA 64, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "No Realizada"
      }
     ],
     "repetidas": [
@@ -10386,18 +10386,6 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3O0FALHK",
-      "cat": "Migración 1 Play",
-      "f": "16-19",
-      "hi": "16:00",
-      "d": "LO MOSCOSO 1115 CASA B, QUILPUE",
-      "e": "Pendiente",
-      "tec": "CRISTOBAL SILVA LEIVA",
-      "visitas": 1,
-      "ult_fecha": "23-09-2026",
-      "ult_cierre": "Cliente reagenda"
-     },
-     {
       "o": "1-3O08CWY3",
       "cat": "Alta 2 Play",
       "f": "10-13",
@@ -10415,7 +10403,7 @@
       "f": "13-16",
       "hi": "15:53",
       "d": "MATURANA 34, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "ESTEBAN PIZARRO QUINTANA",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -10580,7 +10568,7 @@
       "o": "1-3O0I9FOT",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "16:19",
       "d": "SEGUNDO DE LINEA 2498, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -10592,7 +10580,7 @@
       "o": "1-3NYKPFG1",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:05",
+      "hi": "17:24",
       "d": "CUMMING 831, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -10601,10 +10589,22 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
+      "o": "1-3O0FALHK",
+      "cat": "Migración 1 Play",
+      "f": "16-19",
+      "hi": "16:21",
+      "d": "LO MOSCOSO 1115 CASA B, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LEONEL HERNÁNDEZ OJE",
+      "visitas": 1,
+      "ult_fecha": "23-09-2026",
+      "ult_cierre": "Cliente reagenda"
+     },
+     {
       "o": "1-3NZ6LKOY",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:47",
+      "hi": "17:03",
       "d": "GLACIAR TAPADO 3191 CASA 39, QUILPUE",
       "e": "Pendiente",
       "tec": "LUIS CASTRO TORRES",
@@ -10616,9 +10616,9 @@
       "o": "1-3O10H2LL",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:10",
+      "hi": "16:11",
       "d": "PJE TURQUESA 20, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "LUIS MARTIN NUÑEZ",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -10628,9 +10628,9 @@
       "o": "1-3NZZ1KXE",
       "cat": "Migración 3 Play",
       "f": "16-19",
-      "hi": "16:53",
+      "hi": "16:19",
       "d": "MALU GATICA 1320, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "MARCELO GÓMEZ GÓME",
       "visitas": 2,
       "ult_fecha": "24-08-2026",
@@ -10720,5 +10720,5 @@
    }
   }
  },
- "generado": "24-09-2026 15:51"
+ "generado": "24-09-2026 16:11"
 }
