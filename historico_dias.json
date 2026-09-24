@@ -9813,15 +9813,15 @@
    }
   },
   "24-09-2026": {
-   "hasta": "12:55",
+   "hasta": "13:00",
    "actividades": 146,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 16,
-    "Iniciado": 22,
-    "Pendiente": 53,
-    "Completado": 43,
-    "en ruta": 6,
+    "Iniciado": 21,
+    "Pendiente": 52,
+    "Completado": 44,
+    "en ruta": 7,
     "Cancelado": 4,
     "Suspendido": 2
    },
@@ -9943,7 +9943,7 @@
       "f": "10-13",
       "hi": "12:21",
       "d": "PEDRO MONTT 1079, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O0YCRW2",
@@ -10177,7 +10177,7 @@
       "f": "13-16",
       "hi": "14:19",
       "d": "DON BOSCO 1250, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O0DYJPE",
@@ -10536,5 +10536,5 @@
    }
   }
  },
- "generado": "24-09-2026 12:55"
+ "generado": "24-09-2026 13:00"
 }
