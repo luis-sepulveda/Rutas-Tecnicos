@@ -9813,18 +9813,17 @@
    }
   },
   "24-09-2026": {
-   "hasta": "18:07",
-   "actividades": 165,
+   "hasta": "18:17",
+   "actividades": 166,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 45,
-    "Completado": 98,
-    "Iniciado": 13,
-    "Pendiente": 1,
+    "Completado": 103,
+    "Iniciado": 10,
     "Cancelado": 5,
     "Suspendido": 3
    },
-   "rgu": 230.8,
+   "rgu": 230.9,
    "caidas_total": 15,
    "caidas_activas": 14,
    "caidas_resueltas": 1,
@@ -9964,12 +9963,12 @@
     "nuevas": [
      {
       "o": "1-3O19PD0T",
-      "tec": "CRISTOBAL SILVA LEIVA",
+      "tec": "MATÍAS JAQUE AG",
       "cat": "Modificación de Servicio",
       "f": "16-19",
       "hi": "18:54",
       "d": "PORVENIR 26, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O1A0Z6I",
@@ -9978,7 +9977,7 @@
       "f": "16-19",
       "hi": "17:58",
       "d": "FRODDEN 01835, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O19MRVJ",
@@ -10068,7 +10067,7 @@
       "f": "16-19",
       "hi": "17:31",
       "d": "MARCONI 744, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O10H2LL",
@@ -10077,7 +10076,7 @@
       "f": "16-19",
       "hi": "16:44",
       "d": "PJE TURQUESA 20, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O10KZCO",
@@ -10104,7 +10103,7 @@
       "f": "13-16",
       "hi": "15:26",
       "d": "PORVENIR 1259, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O0ZNEFK",
@@ -10451,18 +10450,6 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3O19PD0T",
-      "cat": "Modificación de Servicio",
-      "f": "16-19",
-      "hi": "18:54",
-      "d": "PORVENIR 26, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "CRISTOBAL SILVA LEIVA",
-      "visitas": 1,
-      "ult_fecha": "22-09-2026",
-      "ult_cierre": "Cliente reagenda"
-     },
-     {
       "o": "1-3O08CWY3",
       "cat": "Alta 2 Play",
       "f": "10-13",
@@ -10599,7 +10586,7 @@
       "f": "16-19",
       "hi": "16:33",
       "d": "MARCONI 744, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JOSE PEREZ RANGEL",
       "visitas": 1,
       "ult_fecha": "17-09-2026",
@@ -10683,7 +10670,7 @@
       "f": "16-19",
       "hi": "16:23",
       "d": "PJE TURQUESA 20, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "LUIS MARTIN NUÑEZ",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -10710,6 +10697,18 @@
       "e": "Completado",
       "tec": "MARCO PEREZ G",
       "visitas": 3,
+      "ult_fecha": "22-09-2026",
+      "ult_cierre": "Cliente reagenda"
+     },
+     {
+      "o": "1-3NZAH7WL",
+      "cat": "Alta 2 Play",
+      "f": "10-13",
+      "hi": "11:19",
+      "d": "PORVENIR 26, VILLA ALEMANA",
+      "e": "Completado",
+      "tec": "MATÍAS JAQUE AG",
+      "visitas": 1,
       "ult_fecha": "22-09-2026",
       "ult_cierre": "Cliente reagenda"
      },
@@ -10765,7 +10764,7 @@
       "f": "16-19",
       "hi": "16:33",
       "d": "MARCONI 744, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JOSE PEREZ RANGEL",
       "desde": "22-09-2026"
      }
@@ -10773,5 +10772,5 @@
    }
   }
  },
- "generado": "24-09-2026 18:07"
+ "generado": "24-09-2026 18:17"
 }
