@@ -5624,11 +5624,15 @@ function abrirNoOperativos(){
                       : '<span class="m">sin trabajos en los últimos ' + ((NOOP && NOOP.dias_equipo) || 60) + ' días</span>';
     return '<tr><td><b>' + escR(x.tec) + '</b>' + (x.en_base ? '' : ' <span class="nb">no está en la base</span>') + '</td>'
       + '<td>' + escR(x.sup) + '</td>'
-      + '<td>' + (x.estado ? '<span class="est ' + (x.sin_expl ? 'op' : 'lic') + '">' + escR(tituloDir(x.estado)) + '</span>' : '<span class="m">—</span>') + '</td>'
+      /* 24-09-2026: el motivo lo marca Luis en estado_tecnicos.xlsx. Si figura
+         OPERATIVO y no tiene ordenes, se muestra "Sin marcar" (falta el motivo) */
+      + '<td>' + (x.sin_expl ? '<span class="est op">Sin marcar</span>'
+                             : '<span class="est lic">' + escR(tituloDir(x.estado)) + '</span>'
+                               + (x.hasta ? ' <span class="m">hasta el ' + escR(x.hasta) + '</span>' : '')) + '</td>'
       + '<td>' + ult + '</td><td class="n">' + x.d14 + '</td></tr>';
   };
   const tabla = function(lista){
-    return '<table class="cq nop"><tr><th>Técnico</th><th>Supervisor</th><th>Estado en la base</th>'
+    return '<table class="cq nop"><tr><th>Técnico</th><th>Supervisor</th><th>Motivo</th>'
       + '<th>Último día que trabajó</th><th class="n">Días trabajados<br>últimas 2 semanas</th></tr>'
       + lista.map(fila).join('') + '</table>';
   };
@@ -5637,18 +5641,21 @@ function abrirNoOperativos(){
     h += '<div style="color:#166534;padding:10px 0">Todo el equipo tiene órdenes hoy.</div>';
   } else {
     if(sinExpl.length){
-      h += '<div class="nop-t alerta">Sin órdenes hoy y figuran como OPERATIVO (' + sinExpl.length + ') · hay que averiguar por qué</div>' + tabla(sinExpl);
+      h += '<div class="nop-t alerta">Sin órdenes hoy y sin motivo marcado (' + sinExpl.length + ')'
+        + (NOOP && NOOP.archivo_estados ? ' · márcalos en estado_tecnicos.xlsx' : ' · hay que averiguar por qué') + '</div>' + tabla(sinExpl);
     }
     if(conEst.length){
-      h += '<div class="nop-t">Con licencia u otro estado (' + conEst.length + ') · ya se sabe por qué</div>' + tabla(conEst);
+      h += '<div class="nop-t">Con motivo (' + conEst.length + ')</div>' + tabla(conEst);
     }
   }
   h += '<div class="cq-nota">Equipo: ' + (NOOP ? NOOP.equipo : 0) + ' técnicos: '
-    + (NOOP && NOOP.con_estado ? 'toda la base de supervisores (distribucion_por_supervisor.xlsx)'
+    + (NOOP && NOOP.archivo_estados ? 'la lista de estado_tecnicos.xlsx (carpeta Rutas tecnicos)'
+       : NOOP && NOOP.con_estado ? 'toda la base de supervisores (distribucion_por_supervisor.xlsx)'
                                : 'los de la base de supervisores que trabajaron en la zona en los últimos ' + ((NOOP && NOOP.dias_equipo) || 60) + ' días')
     + ', más los que trabajaron en las últimas 2 semanas aunque no estén en la base. '
-    + 'No operativo = del equipo, sin ninguna orden en bandeja hoy. El estado sale de la columna ESTADO TECNICO de la base: '
-    + 'si alguien vuelve de licencia o se va, cámbialo ahí.</div></div>';
+    + 'No operativo = del equipo, sin ninguna orden en bandeja hoy. El motivo se marca cada mañana, después de la carga de '
+    + 'bandejas, en la columna ESTADO de estado_tecnicos.xlsx (Ausente, Licencia médica, Vacaciones, Permiso), con la fecha '
+    + 'HASTA; al día siguiente de esa fecha vuelve solo a Operativo.</div></div>';
   document.getElementById('noopCuerpo').innerHTML = h;
   document.getElementById('modalNoop').classList.add('abierto');
 }
