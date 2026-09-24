@@ -9813,15 +9813,15 @@
    }
   },
   "24-09-2026": {
-   "hasta": "10:54",
+   "hasta": "10:59",
    "actividades": 114,
    "tecnicos": 36,
    "estados": {
-    "No Realizada": 7,
-    "Iniciado": 30,
-    "Pendiente": 62,
+    "No Realizada": 8,
+    "Iniciado": 32,
+    "Pendiente": 61,
     "Completado": 8,
-    "en ruta": 5,
+    "en ruta": 3,
     "Suspendido": 1,
     "Cancelado": 1
    },
@@ -9970,7 +9970,7 @@
       "f": "10-13",
       "hi": "10:47",
       "d": "ANDRES BELLO 463, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O0TL3SV",
@@ -10284,7 +10284,7 @@
       "o": "1-3O0IDSIG",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:08",
+      "hi": "14:25",
       "d": "MATURANA 34, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -10298,7 +10298,7 @@
       "f": "10-13",
       "hi": "10:34",
       "d": "FLAMARION 0335, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "YENDER BOSCAN CADENAS",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -10330,5 +10330,5 @@
    }
   }
  },
- "generado": "24-09-2026 10:54"
+ "generado": "24-09-2026 10:59"
 }
