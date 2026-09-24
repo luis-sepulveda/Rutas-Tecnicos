@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-24T13:56:38",
+  "actualizado": "2026-09-24T14:26:49",
   "resumen": {
-    "sin informacion": 2,
-    "reagendada": 7
+    "sin informacion": 3,
+    "reagendada": 8
   },
   "estados": {
     "1-3O0IB2ZT": {
@@ -12,6 +12,34 @@
       "d": "JOSE FUENTES 921 DEPTO 31, QUILPUE",
       "estado": "sin informacion",
       "nota": "la OT ya no existe en TOA"
+    },
+    "1-3NZ590ZD": {
+      "tec": "FELIPE SILVA R",
+      "cat": "Migración 1 Play",
+      "franja_original": "16-19",
+      "d": "LOS ALERCES 951, QUILPUE",
+      "estado": "sin informacion",
+      "nota": "la OT ya no existe en TOA",
+      "contexto": {
+        "buscado": "LOS ALERCES 951",
+        "aviso": "historial de la direccion, NO es el estado de esta orden",
+        "filas": [
+          {
+            "estado": "cancelada",
+            "color": "rgb(128, 255, 128)",
+            "ot": "1-3NVCBGKU",
+            "franja": "16-19",
+            "texto": "1-3NVCBGKU - 16-19-Migración-Migración-LOS ALERCES 951"
+          },
+          {
+            "estado": "no realizada",
+            "color": "rgb(96, 206, 206)",
+            "ot": "1-3NQLBDYH",
+            "franja": "16-19",
+            "texto": "1-3NQLBDYH - 16-19-Migración-Migración-LOS ALERCES 951Mar, 15 Sep"
+          }
+        ]
+      }
     },
     "1-3O0UKIHN": {
       "tec": "JOEL GUSTAVE GUSTA",
@@ -50,6 +78,13 @@
             "ot": "1-3O0UKIHN",
             "franja": "13-16",
             "texto": "1-3O0UKIHN - 13-16-Migración-Migración-MADRID 1050 CASA 2Sab, 26 Sep"
+          },
+          {
+            "estado": "reagendada",
+            "color": "rgb(255, 222, 0)",
+            "ot": "1-3O10H3EV",
+            "franja": "10-13",
+            "texto": "1-3O10H3EV - 10-13-Alta-1 Play-MADRID 1050 CASA 4Vie, 25 Sep"
           },
           {
             "estado": "no realizada",
@@ -97,6 +132,16 @@
       "color": "rgb(255, 222, 0)",
       "detalle": "1-3O0W823N - 10-13-Migración-Migración-VIA UNO SIETE 2025 EDIF. A DEPTO 33Vie, 25 Sep",
       "franja_nueva": "10-13"
+    },
+    "1-3O0022A3": {
+      "tec": "RAFAEL VARGAS B",
+      "cat": "Migración 2 Play",
+      "franja_original": "16-19",
+      "d": "LOS AROMOS 1151 CASA 84, VILLA ALEMANA",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3O0022A3 - 16-19-Migración-Migración-LOS AROMOS 1151 CASA 84Mar, 29 Sep",
+      "franja_nueva": "16-19"
     },
     "1-3O0GSHFD": {
       "tec": "SEBASTIAN DOSSOW A",
