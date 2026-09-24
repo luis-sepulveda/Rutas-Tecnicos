@@ -1345,6 +1345,21 @@
   /* ---- linea del dia ---- */
   .pv-tl { background:#fff; border:1px solid #dbe4ed; border-radius:14px;
     padding:20px 24px 22px; margin-top:16px; box-shadow:0 1px 3px rgba(20,45,70,.05); }
+  /* Cuadratura del dia (24-09-2026) */
+  .pv-cuad .pv-rot { display:flex; align-items:center; gap:10px; }
+  .pv-cuad .cq-est { font-size:11px; font-weight:700; padding:1px 8px; border-radius:6px; text-transform:none; letter-spacing:0; }
+  .pv-cuad .cq-est.ok { background:#dcfce7; color:#166534; }
+  .pv-cuad .cq-est.mal { background:#fee2e2; color:#991b1b; }
+  .pv-cuad .cq-hora { font-size:11px; color:#94a3b8; font-weight:500; text-transform:none; letter-spacing:0; }
+  .cq { width:100%; max-width:760px; border-collapse:collapse; font-size:13.5px; color:#1e293b; }
+  .cq td { padding:5px 0; border-bottom:1px solid #eef2f7; }
+  .cq td.n { text-align:right; width:70px; font-variant-numeric:tabular-nums; font-size:14px; }
+  .cq tr.sub td:first-child { padding-left:18px; color:#334155; }
+  .cq tr.mas td:first-child { color:#334155; }
+  .cq tr.tot td { border-bottom:1px solid #cbd5e1; }
+  .cq tr.fin td { border-bottom:0; border-top:2px solid #0f172a; }
+  .cq .m { color:#94a3b8; font-size:12px; }
+  .cq-nota { color:#94a3b8; font-size:11.5px; margin-top:8px; max-width:760px; line-height:1.45; }
   .pv-tlf { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
     gap:20px; }
   .pv-tlf .fr .h { display:flex; align-items:baseline; justify-content:space-between;
@@ -4093,6 +4108,7 @@ function dibujarRed(g){
    Limite: solo aparecen trabajos de tecnicos de Dominion.                */
 let REIT = null;
 let reitAbierto = false;
+let CONC = null;          // cuadratura del dia (rutas.json -> conc)
 
 function nReit(){ return REIT && REIT.items ? REIT.items.length : 0; }
 
@@ -5519,6 +5535,57 @@ function pintarTendencia(){
     + 'Hoy va en curso, as\u00ed que su barra todav\u00eda puede crecer.</div>';
 }
 
+/* ======================= CUADRATURA DEL DIA =======================
+   24-09-2026, a pedido de Luis: el inicio de jornada, las actividades del dia
+   y las Nuevas no cuadraban a la vista porque cada una mira un pedazo
+   distinto. Esta tabla las junta con numeros que cierran exacto:
+
+     inicio = en bandejas + en el bucket + salieron del dia
+     en bandejas ahora = (del inicio) + (de la manana fuera del inicio)
+                       + (entraron antes de que VTR/CLARO cargara las bandejas)
+                       + (entraron durante el dia)
+     del dia (portada) = en bandejas ahora + filas repetidas
+
+   Lo calcula conciliacion.py (rutas.json -> conc) en cada ciclo; aca solo se
+   pinta. "Carga de bandejas" = primer ciclo en que la mitad o mas del inicio
+   ya estaba en bandejas. "Entraron durante el dia" se parece a Nuevas, pero
+   no es igual: Nuevas cuenta desde la primera vuelta del monitor.        */
+function cuadraturaHtml(nDia){
+  const C = (typeof CONC !== 'undefined') ? CONC : null;
+  if(!C || C.sin_inicio || C.inicio === undefined) return '';
+  const f = function(txt, n, cls, tit){
+    return '<tr class="' + (cls || '') + '"' + (tit ? ' title="' + escR(tit) + '"' : '') + '><td>' + txt + '</td><td class="n">' + n + '</td></tr>';
+  };
+  const est = C.a_bandeja_est || {};
+  const nomEst = { 'Completado':'completadas', 'No Realizada':'no realizadas', 'Iniciado':'iniciadas',
+                   'en ruta':'en ruta', 'Pendiente':'pendientes', 'Cancelado':'canceladas', 'Suspendido':'suspendidas' };
+  const detEst = Object.keys(est).sort(function(a,b){ return est[b]-est[a]; })
+    .map(function(e){ return est[e] + ' ' + (nomEst[e] || e.toLowerCase()); }).join(' · ');
+  const cargaTxt = C.carga ? (C.carga_antes ? 'cargadas antes de las ' + C.carga + ', cuando partió el monitor' : 'cargadas a las ' + C.carga)
+                           : 'VTR/CLARO todavía no carga las bandejas';
+  const calza = (C.filas === nDia);
+  return '<section class="pv-tl pv-cuad">'
+    + '<div class="pv-rot">Cuadratura del día'
+    +   '<span class="cq-est ' + (C.cuadra ? 'ok' : 'mal') + '">' + (C.cuadra ? '✓ cuadra' : '✗ no cuadra') + '</span>'
+    +   '<span class="cq-hora">al ' + escR(C.hora || '') + '</span></div>'
+    + '<table class="cq">'
+    + f('<b>Inicio de jornada</b> <span class="m">(Excel de las ' + escR(C.hora_inicio || '') + ', pendientes NFTT/FTTH)</span>', '<b>' + C.inicio + '</b>', 'tot')
+    + f('↳ hoy están en bandejas' + (detEst ? ' <span class="m">(' + detEst + ')</span>' : ''), C.a_bandeja, 'sub')
+    + f('↳ siguen en el bucket', C.a_bucket, 'sub')
+    + f('↳ salieron del día <span class="m">(VTR/CLARO las sacó del export: reagendadas o anuladas)</span>', C.a_fuera, 'sub',
+        (C.a_fuera_ots || []).join(', '))
+    + (C.manana_fuera_inicio ? f('+ venían de la mañana, fuera del inicio <span class="m">(HFC/CHFC u otro estado a esa hora)</span>', C.manana_fuera_inicio, 'mas') : '')
+    + f('+ entraron antes de que VTR/CLARO cargara las bandejas <span class="m">(' + cargaTxt + ')</span>', C.antes_carga, 'mas')
+    + f('+ entraron durante el día <span class="m">(después de la carga)</span>', C.durante, 'mas')
+    + f('<b>= en bandejas ahora</b> <span class="m">(órdenes distintas)</span>', '<b>' + C.en_bandeja + '</b>', 'tot')
+    + (C.repetidas ? f('+ filas repetidas <span class="m">(la misma orden dos veces en el export)</span>', C.repetidas, 'mas') : '')
+    + f('<b>= actividades del día</b>' + (calza ? '' : ' <span class="m">(la portada muestra ' + nDia + ': son de otra hora)</span>'), '<b>' + C.filas + '</b>', 'tot fin')
+    + '</table>'
+    + '<div class="cq-nota">"Entraron durante el día" se parece a <b>Nuevas</b>, pero no es igual: Nuevas cuenta desde la primera vuelta del monitor. '
+    + 'La carga de bandejas es el primer ciclo en que la mitad o más del inicio ya estaba asignada.</div>'
+    + '</section>';
+}
+
 function pintarPortada(){
   const caja = document.getElementById('portada');
   if(!caja || caja.style.display === 'none') return;
@@ -5727,6 +5794,9 @@ function pintarPortada(){
     +     '<div class="pv-rot">C\u00f3mo viene el resto del d\u00eda</div>'
     +     '<div class="pv-tlf">' + franjas + '</div>'
     +   '</section>'
+
+    /* ---- 2c. cuadratura del dia (24-09-2026) ---- */
+    +   cuadraturaHtml(filas.length)
 
     /* ---- 2b. los ultimos dias ---- */
     +   '<section class="pv-tend" id="tendencia"></section>'
@@ -6675,6 +6745,7 @@ async function cargarDatosVivos(auto){
     if(vistaRedAbierta) pintarCapaRed();  // mapa de red: las de hoy vienen de aca
     NEG = js.neg || {};                // Negocios / Reiterado (24-09-2026)
     REIT = js.reit || null;            // Reiterados (24-09-2026)
+    CONC = js.conc || null;            // Cuadratura del dia (24-09-2026)
     renderBotonReit();
     if(reitAbierto) renderReit();
     renderBotonRed();
