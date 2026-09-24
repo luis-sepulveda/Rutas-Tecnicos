@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-09-24T14:56:59",
+  "actualizado": "2026-09-24T15:27:25",
   "resumen": {
-    "sin informacion": 3,
+    "sin informacion": 5,
     "reagendada": 8
   },
   "estados": {
@@ -50,6 +50,14 @@
       "color": "rgb(255, 222, 0)",
       "detalle": "1-3O0UKIHN - 13-16-Migración-Migración-MADRID 1050 CASA 2Sab, 26 Sep",
       "franja_nueva": "13-16"
+    },
+    "1-3O0SFKKY": {
+      "tec": "JOEL GUSTAVE GUSTA",
+      "cat": "Reparación",
+      "franja_original": "16-19",
+      "d": "SANTA FE 1538, VILLA ALEMANA",
+      "estado": "sin informacion",
+      "nota": "la OT ya no existe en TOA"
     },
     "1-3NZL8KQK": {
       "tec": "JOSE CASTRO P",
@@ -132,6 +140,14 @@
       "color": "rgb(255, 222, 0)",
       "detalle": "1-3O0W823N - 10-13-Migración-Migración-VIA UNO SIETE 2025 EDIF. A DEPTO 33Vie, 25 Sep",
       "franja_nueva": "10-13"
+    },
+    "1-3O0UIMNX": {
+      "tec": "MARCELO GÓMEZ GÓME",
+      "cat": "Reparación",
+      "franja_original": "16-19",
+      "d": "BELLAVISTA 1342, VILLA ALEMANA",
+      "estado": "sin informacion",
+      "nota": "la OT ya no existe en TOA"
     },
     "1-3O0022A3": {
       "tec": "RAFAEL VARGAS B",
