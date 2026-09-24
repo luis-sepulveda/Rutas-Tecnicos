@@ -52,6 +52,10 @@
        reit). Nodos y NAP quedo igual: a proposito no se mezclan.
      - Direcciones repetidas: misma informacion, vista nueva (agrupada por
        gravedad, circulo de color, motivos debajo, lo de hoy a la derecha).
+     - Capa "Red" (boton Red en las herramientas del mapa y enlace Red en la
+       portada): NAP y zonas de nodo sobre el mapa. La red conocida viene de
+       red_mapa.json (lo arma red_mapa.py, crece solo cada dia); las
+       reparaciones de hoy vienen en vivo de rutas.json -> red.todas.
        Desde la tarde del 24-09-2026 cuentan tambien los trabajos completados
        HOY, si terminaron antes de que empezara la reparacion (dias = 0, se
        muestra "hoy").
@@ -1533,6 +1537,40 @@
     font-size:10.5px; font-weight:700; line-height:15px; padding:0 6px; margin-left:4px;
     border-radius:5px; background:#ede9fe; color:#5b21b6; white-space:nowrap; vertical-align:1px; }
   .tg-neg.reit { background:#fee2e2; color:#991b1b; }
+  /* ===================== CAPA RED (NAP y nodos) — 24-09-2026 ===================== */
+  #redPanel { display:none; position:absolute; right:12px; bottom:28px; z-index:1002; width:260px;
+    background:rgba(255,255,255,.96); border-radius:10px; padding:10px 12px; color:#0f172a;
+    font:12.5px/1.7 'DM Sans','Segoe UI',Arial,sans-serif; box-shadow:0 2px 10px rgba(0,0,0,.25); }
+  #redPanel.on { display:block; }
+  #redPanel .rdp-t { font:700 13.5px 'Archivo','Segoe UI',sans-serif; margin-bottom:4px; }
+  #redPanel .rdp-ch { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:6px; }
+  #redPanel .pchip { cursor:pointer; font-size:11.5px; padding:2px 9px; border-radius:12px;
+    background:#e2e8f0; color:#334155; border:1px solid #cbd5e1; }
+  #redPanel .pchip.act { background:#0e7490; color:#fff; border-color:#0e7490; }
+  #redPanel .rdp-l i { display:inline-block; border-radius:50%; vertical-align:middle; margin-right:7px; }
+  #redPanel .rdp-l i.g { width:7px; height:7px; background:#64748b; opacity:.7; }
+  #redPanel .rdp-l i.a { width:10px; height:10px; background:#f59e0b; border:2px solid #b45309; }
+  #redPanel .rdp-l i.r { width:12px; height:12px; background:#dc2626; border:2px solid #7f1d1d; }
+  #redPanel .rdp-l .z { display:inline-block; width:16px; height:11px; border-radius:3px; vertical-align:middle;
+    margin-right:7px; border:1px dashed #7c3aed; background:rgba(124,58,237,.12); }
+  #redPanel .rdp-n { color:#64748b; font-size:11.5px; line-height:1.4; margin-top:4px; }
+  .ppred { font:12.5px/1.5 'DM Sans','Segoe UI',Arial,sans-serif; min-width:250px; max-width:340px; }
+  .ppred h4 { margin:0 0 2px; font:700 14px 'Archivo','Segoe UI',sans-serif; }
+  .ppred .s { color:#64748b; margin-bottom:6px; }
+  .ppred .tt { font-weight:700; margin:6px 0 2px; }
+  .ppred .tt.hoy { color:#b91c1c; }
+  .ppred table { border-collapse:collapse; width:100%; }
+  .ppred td { padding:3px 6px 3px 0; border-top:1px solid #eef2f7; vertical-align:top; }
+  .ppred .ot { font-family:Consolas,monospace; font-size:11.5px; background:#e2e8f0; color:#1e3a8a; padding:0 5px; border-radius:4px; white-space:nowrap; }
+  .ppred td:first-child { white-space:nowrap; }
+  /* con una ventanita abierta el panel se achica a titulo y botones, para no taparla */
+  #redPanel.min .rdp-l, #redPanel.min .rdp-n { display:none; }
+  .ppred .m { color:#64748b; }
+  .lbl-nodo { background:rgba(255,255,255,.88); border:0; box-shadow:none; color:#4c1d95;
+    font:700 11px 'DM Sans',sans-serif; padding:1px 5px; border-radius:4px; }
+  .lbl-nodo.hoy { color:#991b1b; }
+  .lbl-nodo:before { display:none; }
+  @media (max-width:760px){ #redPanel { width:auto; left:12px; bottom:40px; } }
   /* ============ DIRECCIONES REPETIDAS, vista nueva — 24-09-2026 ============
      Agrupada por gravedad, circulo de color por cantidad de caidas, direccion
      en minusculas, motivos debajo y lo de hoy a la derecha. Borrando este
@@ -1625,9 +1663,24 @@
   <button class="btn" id="btnRed" onclick="toggleRed()">Nodos y NAP</button>
   <button class="btn" id="btnReit" onclick="toggleReit()">Reiterados</button>
 </div>
+<!-- Capa Red (24-09-2026): panel que aparece cuando la capa esta prendida -->
+<div id="redPanel">
+  <div class="rdp-t">Red · NAP y nodos</div>
+  <div class="rdp-ch">
+    <span class="pchip act" id="rpNap" onclick="capaRedOpc('nap')">NAP</span>
+    <span class="pchip act" id="rpNodo" onclick="capaRedOpc('nodo')">Zonas de nodo</span>
+    <span class="pchip" id="rpSolo" onclick="capaRedOpc('solo')">Solo con reparaciones</span>
+  </div>
+  <div class="rdp-l"><i class="g"></i>NAP sin reparaciones</div>
+  <div class="rdp-l"><i class="a"></i>Reparación en los últimos 30 días</div>
+  <div class="rdp-l"><i class="r"></i>Reparación hoy</div>
+  <div class="rdp-l"><span class="z"></span>Zona de un nodo (en rojo si hoy tiene reparación)</div>
+  <div class="rdp-n" id="rpNota"></div>
+</div>
 <div id="barraAcc" class="nb-flota der">
   <button class="btn" id="btnNombres" onclick="toggleNombres()">Nombres</button>
   <button class="btn" id="btnRutas" onclick="toggleRutas()">Rutas</button>
+  <button class="btn" id="btnCapaRed" onclick="toggleCapaRed()">Red</button>
   <button class="btn" id="btnInicio" onclick="abrirInicio()">Inicio de jornada</button>
   <button class="btn" id="btnJornada" onclick="toggleJornada()">Jornada</button>
   <button class="btn" id="btnComp" onclick="toggleComp()">Completitud</button>
@@ -4075,6 +4128,150 @@ function verReitEnMapa(i){
   setTimeout(function(){ dibujarRed({nivel:'reit', ots:[w]}); }, enPortada ? 150 : 0);
 }
 
+/* ============================== CAPA RED ==============================
+   24-09-2026. NAP y zonas de nodo sobre el mapa, a pedido de Luis.
+
+   De donde sale:
+     red_mapa.json  -> la red CONOCIDA: cada NAP ubicada en el promedio de las
+                       casas conectadas a ella, la zona de cada nodo (contorno
+                       de sus casas) y las reparaciones de los ultimos 30 dias
+                       hasta ayer. Lo arma red_mapa.py y crece solo cada dia
+                       (se publica una vez al dia, en la primera vuelta del
+                       monitor). Se baja una vez por sesion, al prender la capa.
+     rutas.json     -> red.todas: las reparaciones de HOY, en vivo cada 5 min.
+                       Pintan de rojo su NAP y su nodo.
+   Las claves (kn = NAP, kd = nodo) las calculan clave_nap/clave_nodo de
+   generar_rutas.py, las mismas en los dos archivos, asi calzan.
+
+   La posicion de la NAP es APROXIMADA (el export no trae la de la caja):
+   alcanza para saber la cuadra, no el poste. Los puntos van en SVG (lo
+   normal de Leaflet): se probo con L.canvas y en la prueba se caia la
+   pagina al hacer zoom, asi que se dejo lo seguro.                       */
+const URL_REDMAPA_RAW = 'https://raw.githubusercontent.com/'+REPO_BASE+'/'+RAMA_DATOS+'/red_mapa.json';
+let REDMAPA = null, redMapaFallo = false;
+let capaRedOn = false, capaRedNap = true, capaRedNodo = true, capaRedSolo = false;
+let grpRedNodos = null, grpRedNaps = null;
+const COL_NODO = ['#7c3aed','#0f766e','#c2410c','#be185d','#1d4ed8','#4d7c0f','#a16207','#0369a1'];
+
+async function asegurarRedMapa(){
+  if(REDMAPA) return REDMAPA;
+  try {
+    const r = await fetch(URL_REDMAPA_RAW + '?t=' + Date.now(), { cache:'no-store' });
+    if(!r.ok) throw new Error(r.status);
+    REDMAPA = await r.json(); redMapaFallo = false;
+  } catch(e){ redMapaFallo = true; console.warn('red_mapa:', e); }
+  return REDMAPA;
+}
+
+async function toggleCapaRed(forzar){
+  capaRedOn = (forzar === true) ? true : !capaRedOn;
+  document.getElementById('btnCapaRed').classList.toggle('on6', capaRedOn);
+  document.getElementById('redPanel').classList.toggle('on', capaRedOn);
+  if(!capaRedOn){ if(grpRedNodos) grpRedNodos.clearLayers(); if(grpRedNaps) grpRedNaps.clearLayers(); return; }
+  document.getElementById('rpNota').textContent = 'Cargando la red…';
+  await asegurarRedMapa();
+  pintarCapaRed();
+}
+
+// desde la portada: ir al mapa con la capa prendida
+function irCapaRed(){ verMapa(); setTimeout(function(){ toggleCapaRed(true); }, 120); }
+
+function capaRedOpc(q){
+  if(q === 'nap') capaRedNap = !capaRedNap;
+  if(q === 'nodo') capaRedNodo = !capaRedNodo;
+  if(q === 'solo') capaRedSolo = !capaRedSolo;
+  document.getElementById('rpNap').classList.toggle('act', capaRedNap);
+  document.getElementById('rpNodo').classList.toggle('act', capaRedNodo);
+  document.getElementById('rpSolo').classList.toggle('act', capaRedSolo);
+  pintarCapaRed();
+}
+
+function filaRepRed(r, hoy){
+  return '<tr><td>' + (hoy ? escR(r.f || 'hoy') : escR(r.f)) + '</td>'
+    + '<td><span class="ot">' + escR(r.o) + '</span>' + tagNeg(r.o) + '</td>'
+    + '<td>' + escR(tituloDir(r.d)) + '<br><span class="m">' + escR(r.tec || '')
+    + (r.e ? ' · ' + escR(r.e) : '') + (r.cie ? ' · ' + escR(r.cie) : '') + '</span></td></tr>';
+}
+
+function pintarCapaRed(){
+  if(!capaRedOn) return;
+  if(!grpRedNodos){
+    grpRedNodos = L.layerGroup().addTo(map); grpRedNaps = L.layerGroup().addTo(map);
+    // con una ventanita abierta el panel se achica, para no taparla
+    map.on('popupopen', function(){ document.getElementById('redPanel').classList.add('min'); });
+    map.on('popupclose', function(){ document.getElementById('redPanel').classList.remove('min'); });
+  }
+  grpRedNodos.clearLayers(); grpRedNaps.clearLayers();
+  const nota = document.getElementById('rpNota');
+
+  // reparaciones de hoy, por NAP y por nodo
+  const hoyNap = {}, hoyNodo = {};
+  ((RED && RED.todas) || []).forEach(function(w){
+    if(w.kn) (hoyNap[w.kn] = hoyNap[w.kn] || []).push(w);
+    if(w.kd) hoyNodo[w.kd] = (hoyNodo[w.kd] || 0) + 1;
+  });
+
+  const R = REDMAPA || { naps:[], nodos:[] };
+  if(capaRedNodo){
+    R.nodos.forEach(function(n, i){
+      const hoy = hoyNodo[n.k] || 0;
+      const col = hoy ? '#dc2626' : COL_NODO[i % COL_NODO.length];
+      const pol = L.polygon(n.h, { color:col, weight:hoy ? 1.6 : 1, dashArray:'5 4',
+        fillColor:col, fillOpacity:hoy ? 0.14 : 0.07, interactive:true });
+      // etiqueta fija solo en los nodos con reparacion hoy; los demas al pasar el mouse
+      pol.bindTooltip('Nodo ' + n.nodo + (n.red === 'HFC' ? ' HFC' : ''),
+        { permanent:!!hoy, direction:'center', className:'lbl-nodo' + (hoy ? ' hoy' : '') });
+      pol.bindPopup('<div class="ppred"><h4>Nodo ' + escR(n.nodo) + ' · ' + escR(tituloDir(n.c)) + ' · ' + escR(n.red) + '</h4>'
+        + '<div class="s">' + n.casas + ' casas conocidas en este nodo · ' + hoy + ' reparación(es) hoy</div></div>');
+      pol.addTo(grpRedNodos);
+    });
+  }
+
+  let nHoy = 0, n30 = 0;
+  const vistas = {};
+  if(capaRedNap){
+    R.naps.forEach(function(p){
+      vistas[p.k] = 1;
+      const hoy = hoyNap[p.k] || [];
+      if(hoy.length) nHoy++; if(p.r30) n30++;
+      if(capaRedSolo && !hoy.length && !p.r30) return;
+      let st;
+      if(hoy.length) st = { radius:Math.min(16, 6 + 2*(hoy.length + p.r30)), color:'#7f1d1d', weight:2, fillColor:'#dc2626', fillOpacity:.88 };
+      else if(p.r30) st = { radius:Math.min(13, 4 + 1.5*p.r30), color:'#b45309', weight:2, fillColor:'#f59e0b', fillOpacity:.8 };
+      else st = { radius:3.5, color:'#475569', weight:0, fillColor:'#64748b', fillOpacity:.55 };
+      L.circleMarker([p.lat, p.lng], st).bindPopup(function(){
+        return '<div class="ppred"><h4>NAP ' + escR(tituloDir(p.n)) + '</h4>'
+          + '<div class="s">' + escR(tituloDir(p.c)) + (p.nodo ? ' · nodo ' + escR(p.nodo) : ' · sin nodo en el export')
+          + ' · ' + p.casas + ' casa(s) conocidas</div>'
+          + (hoy.length ? '<div class="tt hoy">Hoy (' + hoy.length + ')</div><table>' + hoy.map(function(w){ return filaRepRed(w, true); }).join('') + '</table>' : '')
+          + (p.r30 ? '<div class="tt">Últimos ' + (R.dias || 30) + ' días (' + p.r30 + ')</div><table>' + p.reps.map(function(r){ return filaRepRed(r, false); }).join('') + '</table>'
+                   : (hoy.length ? '' : '<span class="m">Sin reparaciones en los últimos ' + (R.dias || 30) + ' días.</span>'))
+          + '</div>';
+      }).addTo(grpRedNaps);
+    });
+    // NAP que aparecen hoy por primera vez: todavia no estan en red_mapa.json
+    Object.keys(hoyNap).forEach(function(k){
+      if(vistas[k]) return;
+      const w0 = hoyNap[k][0];
+      if(!w0.lat || !w0.lng) return;
+      nHoy++;
+      L.circleMarker([w0.lat, w0.lng], { radius:7, color:'#7f1d1d', weight:2, fillColor:'#dc2626', fillOpacity:.88 })
+        .bindPopup('<div class="ppred"><h4>NAP ' + escR(tituloDir(w0.nap)) + '</h4><div class="s">NAP nueva, vista hoy por primera vez</div>'
+          + '<div class="tt hoy">Hoy (' + hoyNap[k].length + ')</div><table>' + hoyNap[k].map(function(w){ return filaRepRed(w, true); }).join('') + '</table></div>')
+        .addTo(grpRedNaps);
+    });
+  }
+
+  if(!REDMAPA){
+    nota.textContent = redMapaFallo
+      ? 'No se pudo bajar red_mapa.json (¿ya corrió rellenar_mapa_red.bat?). Solo se ven las reparaciones de hoy.'
+      : 'Todavía no hay red publicada. Solo se ven las reparaciones de hoy.';
+  } else {
+    nota.textContent = R.naps.length + ' NAP y ' + R.nodos.length + ' zonas de nodo conocidas (' + (R.n_casas || 0)
+      + ' casas) · ' + nHoy + ' NAP con reparación hoy · red al ' + (R.generado || R.fecha || '') + '. La ubicación de la NAP es aproximada.';
+  }
+}
+
 /* ============ NOMBRES DE TECNICOS EN EL MAPA ============
    Nombre del tecnico bajo cada pin.
 
@@ -5302,6 +5499,8 @@ function pintarPortada(){
     +       (gruposRojos() ? '<span class="pv-nred">' + gruposRojos() + '</span>' : '') + '</a>'
     /* Reiterados al lado, 24-09-2026. Solo lleva la cifra: se da casi todos
        los dias, asi que no se pinta en rojo como Nodos y NAP. */
+    /* Red (24-09-2026): va al mapa con la capa de NAP y nodos prendida */
+    +     '<a onclick="irCapaRed()">Red</a>'
     +     '<a onclick="desdePortada(toggleReit)">Reiterados'
     +       (nReit() ? '<span class="pv-nreit">' + nReit() + '</span>' : '') + '</a>'
     +   '</nav>'
@@ -6298,6 +6497,7 @@ async function cargarDatosVivos(auto){
     // informa donde NO esta en vez de donde SI esta.
     EN_BUCKET = new Set(js.fuera_domi || []);
     RED = js.red || null;              // Nodos y NAP (24-09-2026)
+    if(capaRedOn) pintarCapaRed();     // capa Red: las de hoy vienen de aca
     NEG = js.neg || {};                // Negocios / Reiterado (24-09-2026)
     REIT = js.reit || null;            // Reiterados (24-09-2026)
     renderBotonReit();
