@@ -9813,17 +9813,17 @@
    }
   },
   "24-09-2026": {
-   "hasta": "18:47",
-   "actividades": 166,
+   "hasta": "18:52",
+   "actividades": 167,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 47,
-    "Completado": 106,
+    "Completado": 107,
     "Iniciado": 5,
     "Cancelado": 5,
     "Suspendido": 3
    },
-   "rgu": 230.9,
+   "rgu": 231.9,
    "caidas_total": 15,
    "caidas_activas": 14,
    "caidas_resueltas": 1,
@@ -9986,7 +9986,7 @@
       "f": "16-19",
       "hi": "17:38",
       "d": "JOHN KENNEDY 1981, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O16138Z",
@@ -10772,5 +10772,5 @@
    }
   }
  },
- "generado": "24-09-2026 18:47"
+ "generado": "24-09-2026 18:52"
 }
