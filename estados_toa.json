@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-24T11:25:43",
+  "actualizado": "2026-09-24T11:55:54",
   "resumen": {
     "sin informacion": 1,
-    "reagendada": 3
+    "reagendada": 5
   },
   "estados": {
     "1-3O0IB2ZT": {
@@ -33,6 +33,16 @@
       "detalle": "1-3NZL8KQK - 10-13-Alta-2 Play-SANTA MARGARITA 1319Vie, 25 Sep",
       "franja_nueva": "10-13"
     },
+    "1-3O0W823N": {
+      "tec": "LUIS GATICA DAVILA",
+      "cat": "Migración 2 Play",
+      "franja_original": "13-16",
+      "d": "VIA UNO SIETE 2025 EDIF. A DEPTO 33, VILLA ALEMANA",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3O0W823N - 10-13-Migración-Migración-VIA UNO SIETE 2025 EDIF. A DEPTO 33Vie, 25 Sep",
+      "franja_nueva": "10-13"
+    },
     "1-3O0GSHFD": {
       "tec": "SEBASTIAN DOSSOW A",
       "cat": "Alta 2 Play",
@@ -42,6 +52,16 @@
       "color": "rgb(255, 222, 0)",
       "detalle": "1-3O0GSHFD - 16-19-Alta-2 Play-PJE ISIDORA ZEGERS 378Vie, 25 Sep",
       "franja_nueva": "16-19"
+    },
+    "1-3O0VTX82": {
+      "tec": "SEBASTIAN DOSSOW A",
+      "cat": "Migración 3 Play",
+      "franja_original": "10-13",
+      "d": "LOS MOCHES 392, QUILPUE",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3O0VTX82 - 10-13-Migración-Migración-LOS MOCHES 392Lun, 28 Sep",
+      "franja_nueva": "10-13"
     }
   }
 }
