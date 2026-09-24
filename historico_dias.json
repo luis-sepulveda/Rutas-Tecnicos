@@ -9813,13 +9813,13 @@
    }
   },
   "24-09-2026": {
-   "hasta": "17:47",
+   "hasta": "17:52",
    "actividades": 163,
    "tecnicos": 36,
    "estados": {
-    "No Realizada": 42,
-    "Completado": 91,
-    "Iniciado": 22,
+    "No Realizada": 43,
+    "Completado": 95,
+    "Iniciado": 17,
     "Cancelado": 5,
     "Suspendido": 3
    },
@@ -10076,7 +10076,7 @@
       "f": "13-16",
       "hi": "15:38",
       "d": "EL AMANECER 1343, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3O1051P2",
@@ -10319,7 +10319,7 @@
       "f": "16-19",
       "hi": "16:00",
       "d": "FRODDEN 01835, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O0TVVJ9",
@@ -10532,7 +10532,7 @@
       "f": "16-19",
       "hi": "15:40",
       "d": "PAUL HARRIS 807 EDIF. C DEPTO 108, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JOSE CASTRO P",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -10754,5 +10754,5 @@
    }
   }
  },
- "generado": "24-09-2026 17:47"
+ "generado": "24-09-2026 17:52"
 }
