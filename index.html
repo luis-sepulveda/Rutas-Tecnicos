@@ -34,6 +34,8 @@
      final del <style> con su titulo, el bloque JS "NODOS Y NAP", y tres
      lineas en funciones que ya existian: cargarDatosVivos() (lee js.red),
      cerrarPaneles() y la tecla Esc (cierran el modal nuevo).
+     El mismo dia se agrego un enlace "Nodos y NAP" en la barra de la portada,
+     al lado de Seguimiento, que abre el mismo modal.
      ===================================================================== -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js">
@@ -1506,6 +1508,10 @@
   .rd-sep { color:#e2e8f0; font-size:11px; font-weight:700; text-transform:uppercase;
     letter-spacing:.05em; margin:14px 0 8px; }
   .rd-sep:first-child { margin-top:2px; }
+  .pv-bar a { cursor:pointer; }
+  .pv-nred { display:inline-block; min-width:16px; padding:0 5px; margin-left:6px;
+    background:#f87171; color:#450a0a; border-radius:9px; font-size:11px; font-weight:700;
+    line-height:16px; text-align:center; }
   /* =================================================================== */
 </style>
 </head>
@@ -3774,6 +3780,14 @@ function verRedEnMapa(i){
   const g = RED && RED.grupos ? RED.grupos[i] : null;
   if(!g) return;
   cerrarRed();
+  // si se abrio desde la portada, primero pasar al mapa; verMapa() le avisa
+  // a Leaflet del nuevo tamano a los 60 ms, asi que el encuadre va despues
+  const enPortada = document.getElementById('portada').style.display !== 'none';
+  if(enPortada) verMapa();
+  setTimeout(function(){ dibujarRed(g); }, enPortada ? 150 : 0);
+}
+
+function dibujarRed(g){
   if(!redCapa) redCapa = L.layerGroup().addTo(map);
   redCapa.clearLayers();
   const color = g.nivel === 'rojo' ? '#dc2626' : '#d97706';
@@ -4984,6 +4998,11 @@ function pintarPortada(){
     +     '<a href="' + URL_ACTIVIDADES + '" target="_blank">Actividades</a>'
     +     '<a href="' + URL_HISTORIAL + '" target="_blank">Historial</a>'
     +     '<a href="' + URL_SEGUIMIENTO + '" target="_blank">Seguimiento</a>'
+    /* Nodos y NAP al lado de Seguimiento, a pedido de Luis (24-09-2026). Abre
+       el mismo modal que el boton del mapa. Se pone en rojo (.alarma, que ya
+       existia) cuando hay algun grupo en rojo, con la cifra al lado. */
+    +     '<a' + (gruposRojos() ? ' class="alarma"' : '') + ' onclick="desdePortada(toggleRed)">Nodos y NAP'
+    +       (gruposRojos() ? '<span class="pv-nred">' + gruposRojos() + '</span>' : '') + '</a>'
     +   '</nav>'
     +   '<span class="pv-upd"><i></i><span class="upd"></span></span>'
     + '</header>'
