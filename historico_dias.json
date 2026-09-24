@@ -9813,14 +9813,14 @@
    }
   },
   "24-09-2026": {
-   "hasta": "17:12",
+   "hasta": "17:17",
    "actividades": 162,
    "tecnicos": 36,
    "estados": {
-    "No Realizada": 40,
-    "Completado": 82,
+    "No Realizada": 41,
+    "Completado": 83,
     "en ruta": 2,
-    "Iniciado": 30,
+    "Iniciado": 28,
     "Cancelado": 5,
     "Suspendido": 3
    },
@@ -10221,7 +10221,7 @@
       "f": "13-16",
       "hi": "15:25",
       "d": "CRISTOBAL COLON 0326, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O0VJ9G3",
@@ -10548,7 +10548,7 @@
       "f": "13-16",
       "hi": "15:09",
       "d": "CRISTOBAL COLON 0326, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JOSE GALAZ D",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -10620,7 +10620,7 @@
       "f": "16-19",
       "hi": "16:52",
       "d": "CUMMING 831, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "JUAN ARRIAGADA C",
       "visitas": 2,
       "ult_fecha": "21-09-2026",
@@ -10746,5 +10746,5 @@
    }
   }
  },
- "generado": "24-09-2026 17:12"
+ "generado": "24-09-2026 17:17"
 }
