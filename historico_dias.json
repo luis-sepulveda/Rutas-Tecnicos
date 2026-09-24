@@ -9813,13 +9813,13 @@
    }
   },
   "24-09-2026": {
-   "hasta": "17:07",
+   "hasta": "17:12",
    "actividades": 162,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 40,
-    "Completado": 81,
-    "en ruta": 3,
+    "Completado": 82,
+    "en ruta": 2,
     "Iniciado": 30,
     "Cancelado": 5,
     "Suspendido": 3
@@ -10005,7 +10005,7 @@
       "f": "16-19",
       "hi": "17:26",
       "d": "SANTIAGO 780, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O13CDDE",
@@ -10746,5 +10746,5 @@
    }
   }
  },
- "generado": "24-09-2026 17:07"
+ "generado": "24-09-2026 17:12"
 }
