@@ -9813,13 +9813,12 @@
    }
   },
   "24-09-2026": {
-   "hasta": "17:27",
+   "hasta": "17:32",
    "actividades": 162,
    "tecnicos": 36,
    "estados": {
-    "No Realizada": 41,
+    "No Realizada": 42,
     "Completado": 86,
-    "en ruta": 1,
     "Iniciado": 26,
     "Cancelado": 5,
     "Suspendido": 3
@@ -10391,9 +10390,9 @@
       "o": "1-3NZ6LKOY",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "17:17",
+      "hi": "17:30",
       "d": "GLACIAR TAPADO 3191 CASA 39, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "ALFREDO ALCAYAGA F",
       "visitas": 1,
       "ult_fecha": "14-09-2026",
@@ -10746,5 +10745,5 @@
    }
   }
  },
- "generado": "24-09-2026 17:27"
+ "generado": "24-09-2026 17:32"
 }
