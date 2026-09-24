@@ -9813,16 +9813,16 @@
    }
   },
   "24-09-2026": {
-   "hasta": "13:45",
+   "hasta": "13:50",
    "actividades": 156,
    "tecnicos": 36,
    "estados": {
-    "No Realizada": 21,
-    "en ruta": 2,
-    "Pendiente": 57,
-    "Completado": 45,
+    "No Realizada": 22,
     "Iniciado": 25,
+    "Pendiente": 55,
+    "Completado": 46,
     "Cancelado": 4,
+    "en ruta": 2,
     "Suspendido": 2
    },
    "rgu": 226.9,
@@ -10033,7 +10033,7 @@
       "f": "10-13",
       "hi": "15:03",
       "d": "MARIA MERCEDES 1482 EDIF. 7 DEPTO 301, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3O0WKOAI",
@@ -10287,7 +10287,7 @@
       "o": "1-3O0U4OL3",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:10",
+      "hi": "15:04",
       "d": "PJE TURQUESA 13, QUILPUE",
       "e": "Pendiente",
       "tec": "CRISTOBAL SILVA LEIVA",
@@ -10406,9 +10406,9 @@
       "o": "1-3O0WLU7S",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:01",
+      "hi": "14:00",
       "d": "ADRIAZOLA 2672, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JOSE GALAZ D",
       "visitas": 3,
       "ult_fecha": "17-08-2026",
@@ -10418,7 +10418,7 @@
       "o": "1-3NYKPFG1",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:16",
+      "hi": "17:29",
       "d": "CUMMING 831, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -10502,7 +10502,7 @@
       "o": "1-3O0V7XF3",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:58",
+      "hi": "15:11",
       "d": "CRISTOBAL COLON 0326, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -10538,7 +10538,7 @@
       "o": "1-3O0IDSIG",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:55",
+      "hi": "15:17",
       "d": "MATURANA 34, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -10550,9 +10550,9 @@
       "o": "1-3O03LHEY",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "13:31",
+      "hi": "13:46",
       "d": "PJE 610 865, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "SEBASTIAN DOSSOW A",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -10562,7 +10562,7 @@
       "o": "1-3NZZ1KXE",
       "cat": "Migración 3 Play",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "16:15",
       "d": "MALU GATICA 1320, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
@@ -10630,5 +10630,5 @@
    }
   }
  },
- "generado": "24-09-2026 13:45"
+ "generado": "24-09-2026 13:50"
 }
