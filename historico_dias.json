@@ -9813,15 +9813,15 @@
    }
   },
   "24-09-2026": {
-   "hasta": "11:55",
+   "hasta": "12:00",
    "actividades": 129,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 14,
-    "en ruta": 2,
-    "Pendiente": 61,
-    "Iniciado": 21,
+    "Iniciado": 23,
+    "Pendiente": 60,
     "Completado": 26,
+    "en ruta": 1,
     "Cancelado": 3,
     "Suspendido": 2
    },
@@ -9829,9 +9829,9 @@
    "caidas_total": 6,
    "caidas_activas": 6,
    "caidas_resueltas": 0,
-   "nuevas": 26,
-   "al_bucket": 1,
-   "repetidas": 25,
+   "nuevas": 27,
+   "al_bucket": 2,
+   "repetidas": 24,
    "reagendadas": 2,
    "detalle": {
     "caidas": [
@@ -9892,6 +9892,15 @@
     ],
     "nuevas": [
      {
+      "o": "1-3O0XDI7D",
+      "tec": "RAFAEL VARGAS B",
+      "cat": "Migración 1 Play",
+      "f": "10-13",
+      "hi": "15:03",
+      "d": "MARIA MERCEDES 1482 EDIF. 7 DEPTO 301, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3O0WKOAI",
       "tec": "HERNAN CORTES HERRERA",
       "cat": "Modificación de Servicio",
@@ -9916,7 +9925,7 @@
       "f": "10-13",
       "hi": "11:27",
       "d": "MANUEL ANTONIO MATTA 543, QUILPUE",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O0W823N",
@@ -10227,7 +10236,7 @@
       "o": "1-3NZZ1KXE",
       "cat": "Migración 3 Play",
       "f": "16-19",
-      "hi": "16:07",
+      "hi": "16:20",
       "d": "MALU GATICA 1320, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -10404,18 +10413,6 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
-      "o": "1-3O0WLU7S",
-      "cat": "Alta 1 Play",
-      "f": "13-16",
-      "hi": "14:00",
-      "d": "ADRIAZOLA 2672, QUILPUE",
-      "e": "Pendiente",
-      "tec": "SEBASTIAN DOSSOW A",
-      "visitas": 3,
-      "ult_fecha": "17-08-2026",
-      "ult_cierre": "Sin moradores"
-     },
-     {
       "o": "1-3NZ4UIWC",
       "cat": "Alta 1 Play",
       "f": "10-13",
@@ -10453,5 +10450,5 @@
    }
   }
  },
- "generado": "24-09-2026 11:55"
+ "generado": "24-09-2026 12:00"
 }
