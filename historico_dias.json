@@ -9813,23 +9813,23 @@
    }
   },
   "24-09-2026": {
-   "hasta": "16:11",
-   "actividades": 157,
+   "hasta": "16:16",
+   "actividades": 158,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 34,
-    "Completado": 72,
-    "Iniciado": 26,
-    "Pendiente": 12,
+    "Completado": 73,
+    "Iniciado": 28,
+    "Pendiente": 9,
+    "en ruta": 6,
     "Cancelado": 5,
-    "en ruta": 5,
     "Suspendido": 3
    },
-   "rgu": 225.5,
+   "rgu": 225.6,
    "caidas_total": 15,
    "caidas_activas": 15,
    "caidas_resueltas": 0,
-   "nuevas": 43,
+   "nuevas": 44,
    "al_bucket": 14,
    "repetidas": 27,
    "reagendadas": 3,
@@ -9973,6 +9973,15 @@
     ],
     "nuevas": [
      {
+      "o": "1-3O16EP6U",
+      "tec": "CESAR MENA OLIVEROS",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "16:13",
+      "d": "MATEO DE TORO Y ZAMBRANO 921 CASA 39, QUILPUE",
+      "e": "Iniciado"
+     },
+     {
       "o": "1-3O15AHUV",
       "tec": "JEAN ROODLY ORELIEN",
       "cat": "Alta 1 Play",
@@ -10006,7 +10015,7 @@
       "f": "16-19",
       "hi": "16:14",
       "d": "BUENOS AIRES 1613 CASA 5, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3NWUM8QC",
@@ -10592,9 +10601,9 @@
       "o": "1-3O0FALHK",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:21",
+      "hi": "16:24",
       "d": "LO MOSCOSO 1115 CASA B, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "LEONEL HERNÁNDEZ OJE",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -10720,5 +10729,5 @@
    }
   }
  },
- "generado": "24-09-2026 16:11"
+ "generado": "24-09-2026 16:16"
 }
