@@ -1635,6 +1635,12 @@
   .rd-card.reit.cerca .rd-sello { background:#fee2e2; color:#991b1b; }
   .rd-hoy { font-size:12.5px; color:#0f172a; margin:2px 0 8px; line-height:1.6; }
   .rd-hoy b { font-weight:700; }
+  .rd-red { display:flex; flex-wrap:wrap; align-items:center; gap:6px 10px; margin:-2px 0 8px; font-size:12px; }
+  .rd-red .rr { padding:2px 9px; border-radius:6px; font-weight:600; }
+  .rd-red .rr.n1 { background:#f1f5f9; color:#475569; }
+  .rd-red .rr.n2 { background:#fef3c7; color:#92400e; }
+  .rd-red .rr.n3 { background:#fee2e2; color:#991b1b; }
+  .rd-red .rd-mapa { margin-top:0; }
   #btnReit .badge, .pv-nreit { display:inline-block; min-width:16px; padding:0 5px; margin-left:6px;
     background:#c4b5fd; color:#2e1065; border-radius:9px; font-size:11px; font-weight:700;
     line-height:16px; text-align:center; }
@@ -4087,7 +4093,11 @@ function toggleReit(){
   cerrarPaneles('reit');
   reitAbierto = !reitAbierto;
   document.getElementById('modalReit').classList.toggle('abierto', reitAbierto);
-  if(reitAbierto){ limpiarCirculosRed(); renderReit(); }
+  if(reitAbierto){
+    limpiarCirculosRed(); renderReit();
+    // el mapa de red trae las reparaciones de 30 dias por NAP: se baja una vez
+    if(!REDMAPA) asegurarRedMapa().then(function(){ if(reitAbierto && REDMAPA) renderReit(); });
+  }
 }
 
 function renderReit(){
@@ -4148,6 +4158,7 @@ function renderReit(){
         + ' · <span class="bes ' + besRed(w.e) + '">' + escR(w.e || 'Pendiente') + '</span>'
         + (w.cie ? ' · cerró: ' + escR(w.cie) + (w.der ? ' (' + escR(w.der) + ')' : '') : '')
         + '</div>'
+        + redDeReit(w)
         + '<div class="rd-sub">' + (w.prev.length === 1 ? 'Trabajo anterior en esta casa:' : w.prev.length + ' trabajos anteriores en esta casa, del más reciente al más antiguo:') + '</div>'
         + '<div class="rd-scroll"><table class="rd-tabla">'
         + '<tr><th>Fecha</th><th>Hace</th><th>Trabajo</th><th>Orden</th><th>Técnico</th><th>Supervisor</th><th>Cierre</th></tr>'
@@ -4160,6 +4171,45 @@ function renderReit(){
     + 'reparación completada en los últimos ' + dias + ' días, o hoy mismo si terminó antes de que '
     + 'empezara la reparación. Solo se ven trabajos de técnicos de Dominion (los días anteriores salen '
     + 'del Historial por técnico; los de hoy, del export en vivo). En rojo, las de la última semana.';
+}
+
+/* NAP y nodo de la casa reiterada, cruzados con el mapa de red (24-09-2026):
+   cuantas casas del mismo nodo y de la misma NAP tienen reparacion HOY (de
+   rutas.json -> red.todas, en vivo) y cuantas reparaciones tuvo la NAP en 30
+   dias (de red_mapa.json, si ya se bajo). Mismos colores que el mapa de red:
+   1 casa gris, 2 ambar, 3 o mas rojo. Sirve para ver si el reiterado es de
+   la casa o viene de una NAP / nodo con problemas. */
+function redDeReit(w){
+  if(!w.kn && !w.kd) return '';
+  const nodoCasas = {}, napCasas = {};
+  ((RED && RED.todas) || []).forEach(function(x){
+    if(w.kd && x.kd === w.kd) nodoCasas[claveDir(x.d || x.o)] = 1;
+    if(w.kn && x.kn === w.kn) napCasas[claveDir(x.d || x.o)] = 1;
+  });
+  const nNodo = Object.keys(nodoCasas).length, nNap = Object.keys(napCasas).length;
+  let r30 = null;
+  if(REDMAPA && w.kn){
+    const p = REDMAPA.naps.filter(function(x){ return x.k === w.kn; })[0];
+    if(p) r30 = p.r30;
+  }
+  const col = function(n){ return n >= 3 ? 'n3' : (n === 2 ? 'n2' : 'n1'); };
+  let h = '<div class="rd-red">';
+  if(w.nap) h += '<span class="rr ' + col(nNap) + '">NAP ' + escR(tituloDir(w.nap)) + ' · '
+    + nNap + ' casa' + (nNap === 1 ? '' : 's') + ' con reparación hoy'
+    + (r30 !== null ? ' · ' + r30 + ' en 30 días' : '') + '</span>';
+  if(w.nodo) h += '<span class="rr ' + col(nNodo) + '">Nodo ' + escR(w.nodo) + (w.red === 'HFC' ? ' HFC' : '')
+    + ' · ' + nNodo + ' casa' + (nNodo === 1 ? '' : 's') + ' con reparación hoy</span>';
+  if(w.lat && w.lng) h += '<span class="rd-mapa" onclick="verReitEnRed(\'' + escR(w.kn || '') + '\',' + w.lat + ',' + w.lng + ')">🗺 ver en el mapa de red</span>';
+  return h + '</div>';
+}
+
+// abre el mapa de red centrado en la NAP de la casa, con su ventanita abierta
+async function verReitEnRed(kn, lat, lng){
+  cerrarReit();
+  vrEncuadrado = true;                 // que no se reencuadre a toda la ciudad
+  await abrirVistaRed();
+  mapaRed.setView([lat, lng], 17);
+  if(kn) grpRedNaps.eachLayer(function(l){ if(l.options && l.options.kn === kn) l.openPopup(); });
 }
 
 function verReitEnMapa(i){
@@ -4323,6 +4373,7 @@ function pintarCapaRed(){
     else if(p.r30) st = { radius:Math.min(13, 4 + 1.5*p.r30), color:'#b45309', weight:1.5, fillColor:'#f59e0b', fillOpacity:.8 };
     else st = { radius:3.5, color:'#475569', weight:0, fillColor:'#64748b', fillOpacity:.55 };
     pts.push([p.lat, p.lng]);
+    st.kn = p.k;                       // para encontrarla desde Reiterados
     const mk = L.circleMarker([p.lat, p.lng], st).bindPopup(function(){
       return '<div class="ppred"><h4>NAP ' + escR(tituloDir(p.n)) + '</h4>'
         + '<div class="s">' + escR(tituloDir(p.c)) + (p.nodo ? ' · nodo ' + escR(p.nodo) : ' · sin nodo en el export')
