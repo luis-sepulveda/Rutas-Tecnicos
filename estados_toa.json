@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-24T15:57:48",
+  "actualizado": "2026-09-24T16:59:13",
   "resumen": {
     "sin informacion": 6,
-    "reagendada": 9
+    "reagendada": 8
   },
   "estados": {
     "1-3O0IB2ZT": {
@@ -12,34 +12,6 @@
       "d": "JOSE FUENTES 921 DEPTO 31, QUILPUE",
       "estado": "sin informacion",
       "nota": "la OT ya no existe en TOA"
-    },
-    "1-3O10DCSU": {
-      "tec": "EDGAR VALERO C",
-      "cat": "Reparación",
-      "franja_original": "13-16",
-      "d": "EL AMANECER 1343, VILLA ALEMANA",
-      "estado": "sin informacion",
-      "nota": "la OT ya no existe en TOA",
-      "contexto": {
-        "buscado": "EL AMANECER 1343",
-        "aviso": "historial de la direccion, NO es el estado de esta orden",
-        "filas": [
-          {
-            "estado": "completada",
-            "color": "rgb(121, 182, 235)",
-            "ot": "1-3MZK0TV0",
-            "franja": "13-16",
-            "texto": "1-3MZK0TV0 - 13-16-Reparación-2 Play Servicio Degradado-EL AMANECER 1343Lun, 3 Ago"
-          },
-          {
-            "estado": "completada",
-            "color": "rgb(121, 182, 235)",
-            "ot": "1-3MZQYRF6",
-            "franja": "13-16",
-            "texto": "1-3MZQYRF6 - 13-16-Modificación de Servicio-Modificación-EL AMANECER 1343Lun, 3 Ago"
-          }
-        ]
-      }
     },
     "1-3NZ590ZD": {
       "tec": "FELIPE SILVA R",
@@ -202,10 +174,8 @@
       "cat": "Alta 2 Play",
       "franja_original": "10-13",
       "d": "PJE ISIDORA ZEGERS 378, QUILPUE",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3O0GSHFD - 16-19-Alta-2 Play-PJE ISIDORA ZEGERS 378Vie, 25 Sep",
-      "franja_nueva": "16-19"
+      "estado": "sin informacion",
+      "nota": "la OT ya no existe en TOA"
     },
     "1-3O0VTX82": {
       "tec": "SEBASTIAN DOSSOW A",
