@@ -9813,15 +9813,15 @@
    }
   },
   "24-09-2026": {
-   "hasta": "13:55",
+   "hasta": "14:00",
    "actividades": 157,
    "tecnicos": 36,
    "estados": {
-    "No Realizada": 22,
-    "Iniciado": 23,
-    "Pendiente": 55,
-    "Completado": 48,
+    "No Realizada": 24,
+    "Completado": 51,
+    "Pendiente": 54,
     "en ruta": 3,
+    "Iniciado": 19,
     "Cancelado": 4,
     "Suspendido": 2
    },
@@ -9979,7 +9979,7 @@
       "f": "13-16",
       "hi": "13:07",
       "d": "VIA UNO SIETE 2065 EDIF. E DEPTO 53, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3O0Z6CRC",
@@ -10311,7 +10311,7 @@
       "o": "1-3O0I9FOT",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:54",
+      "hi": "16:27",
       "d": "SEGUNDO DE LINEA 2498, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -10347,7 +10347,7 @@
       "o": "1-3NZ590ZD",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:37",
+      "hi": "16:55",
       "d": "LOS ALERCES 951, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -10418,9 +10418,9 @@
       "o": "1-3O0WLU7S",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "13:58",
       "d": "ADRIAZOLA 2672, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JOSE GALAZ D",
       "visitas": 3,
       "ult_fecha": "17-08-2026",
@@ -10550,7 +10550,7 @@
       "o": "1-3O0IDSIG",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "15:17",
+      "hi": "15:15",
       "d": "MATURANA 34, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -10564,7 +10564,7 @@
       "f": "13-16",
       "hi": "13:46",
       "d": "PJE 610 865, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "SEBASTIAN DOSSOW A",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -10574,9 +10574,9 @@
       "o": "1-3NZZ1KXE",
       "cat": "Migración 3 Play",
       "f": "16-19",
-      "hi": "16:15",
+      "hi": "14:10",
       "d": "MALU GATICA 1320, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "SEBASTIAN DOSSOW A",
       "visitas": 2,
       "ult_fecha": "24-08-2026",
@@ -10642,5 +10642,5 @@
    }
   }
  },
- "generado": "24-09-2026 13:55"
+ "generado": "24-09-2026 14:00"
 }
