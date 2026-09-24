@@ -1345,8 +1345,20 @@
   /* ---- linea del dia ---- */
   .pv-tl { background:#fff; border:1px solid #dbe4ed; border-radius:14px;
     padding:20px 24px 22px; margin-top:16px; box-shadow:0 1px 3px rgba(20,45,70,.05); }
-  /* Cuadratura del dia (24-09-2026) */
-  .pv-cuad .pv-rot { display:flex; align-items:center; gap:10px; }
+  /* Cuadratura del dia (24-09-2026): boton chico + ventana */
+  .pv-cq { font-family:'DM Sans',sans-serif; font-size:11.5px; font-weight:600; border-radius:999px;
+    padding:1px 9px; cursor:pointer; display:inline-flex; align-items:center; gap:4px; margin-left:8px;
+    vertical-align:1px; }
+  .pv-cq.ok { color:#166534; background:#ecfdf3; border:1px solid #bbf7d0; }
+  .pv-cq.mal { color:#991b1b; background:#fef2f2; border:1px solid #fecaca; }
+  .pv-cq .fl { font-size:15px; line-height:1; }
+  .pv-cq:hover { filter:brightness(.97); }
+  #modalCuad { position:fixed; inset:0; z-index:3000; display:none; background:rgba(2,6,23,.72); }
+  #modalCuad.abierto { display:flex; align-items:flex-start; justify-content:center; padding:5vh 2vw; }
+  #modalCuad .mc-box { max-width:820px; }
+  #modalCuad .mc-body { display:block; }
+  .pv-cuad { background:#fff; border-radius:10px; padding:14px 18px; }
+  .pv-cuad .cq-cab { display:flex; align-items:center; gap:10px; margin-bottom:6px; }
   .pv-cuad .cq-est { font-size:11px; font-weight:700; padding:1px 8px; border-radius:6px; text-transform:none; letter-spacing:0; }
   .pv-cuad .cq-est.ok { background:#dcfce7; color:#166534; }
   .pv-cuad .cq-est.mal { background:#fee2e2; color:#991b1b; }
@@ -1862,6 +1874,16 @@
     <div id="reitNota" class="mc-resnota"></div>
   </div>
 </div>
+<!-- Cuadratura del dia (24-09-2026): se abre con el boton al lado del inicio -->
+<div id="modalCuad" class="t-claro" onclick="if(event.target===this) cerrarCuadratura()">
+  <div class="mc-box">
+    <div class="mc-head">
+      <div class="mc-head-left"><h2>Cuadratura del día · del inicio a las actividades</h2></div>
+      <button class="mc-close" onclick="cerrarCuadratura()" title="Cerrar (Esc)">✖</button>
+    </div>
+    <div id="cuadCuerpo" class="mc-body"></div>
+  </div>
+</div>
 <div id="modalJor" class="t-claro" onclick="if(event.target===this) cerrarJornada()">
   <div class="mc-box">
     <div class="mc-head">
@@ -2226,7 +2248,7 @@ function verTecnicoCaida(t){
 
 // cerrar los modales con la tecla Esc
 document.addEventListener('keydown', function(e){
-  if(e.key === 'Escape'){ cerrarCaidas(); cerrarNuevas(); cerrarRepe(); cerrarReca(); cerrarBuscar(); cerrarEst(); cerrarJornada(); cerrarRed(); cerrarReit(); cerrarVistaRed(); }
+  if(e.key === 'Escape'){ cerrarCaidas(); cerrarNuevas(); cerrarRepe(); cerrarReca(); cerrarBuscar(); cerrarEst(); cerrarJornada(); cerrarRed(); cerrarReit(); cerrarVistaRed(); cerrarCuadratura(); }
 });
 
 /* ======================= ORDENES NUEVAS DEL DIA =======================
@@ -5550,6 +5572,21 @@ function pintarTendencia(){
    pinta. "Carga de bandejas" = primer ciclo en que la mitad o mas del inicio
    ya estaba en bandejas. "Entraron durante el dia" se parece a Nuevas, pero
    no es igual: Nuevas cuenta desde la primera vuelta del monitor.        */
+function botonCuadratura(nDia){
+  const C = (typeof CONC !== 'undefined') ? CONC : null;
+  if(!C || C.sin_inicio || C.inicio === undefined) return '';
+  return '<button class="pv-cq ' + (C.cuadra ? 'ok' : 'mal') + '" onclick="abrirCuadratura()" '
+    + 'title="Cómo se pasó del inicio de jornada a las actividades del día">'
+    + (C.cuadra ? '✓ cuadra' : '✗ no cuadra') + '<span class="fl">\u203a</span></button>';
+}
+function abrirCuadratura(){
+  const m = document.getElementById('modalCuad');
+  const nDia = Object.keys(DB || {}).reduce(function(a, t){ return a + (DB[t] || []).length; }, 0);
+  document.getElementById('cuadCuerpo').innerHTML = cuadraturaHtml(nDia);
+  m.classList.add('abierto');
+}
+function cerrarCuadratura(){ const m = document.getElementById('modalCuad'); if(m) m.classList.remove('abierto'); }
+
 function cuadraturaHtml(nDia){
   const C = (typeof CONC !== 'undefined') ? CONC : null;
   if(!C || C.sin_inicio || C.inicio === undefined) return '';
@@ -5564,10 +5601,9 @@ function cuadraturaHtml(nDia){
   const cargaTxt = C.carga ? (C.carga_antes ? 'cargadas antes de las ' + C.carga + ', cuando partió el monitor' : 'cargadas a las ' + C.carga)
                            : 'VTR/CLARO todavía no carga las bandejas';
   const calza = (C.filas === nDia);
-  return '<section class="pv-tl pv-cuad">'
-    + '<div class="pv-rot">Cuadratura del día'
-    +   '<span class="cq-est ' + (C.cuadra ? 'ok' : 'mal') + '">' + (C.cuadra ? '✓ cuadra' : '✗ no cuadra') + '</span>'
-    +   '<span class="cq-hora">al ' + escR(C.hora || '') + '</span></div>'
+  return '<div class="pv-cuad">'
+    + '<div class="cq-cab"><span class="cq-est ' + (C.cuadra ? 'ok' : 'mal') + '">' + (C.cuadra ? '✓ cuadra' : '✗ no cuadra') + '</span>'
+    +   '<span class="cq-hora">datos de las ' + escR(C.hora || '') + '</span></div>'
     + '<table class="cq">'
     + f('<b>Inicio de jornada</b> <span class="m">(Excel de las ' + escR(C.hora_inicio || '') + ', pendientes NFTT/FTTH)</span>', '<b>' + C.inicio + '</b>', 'tot')
     + f('↳ hoy están en bandejas' + (detEst ? ' <span class="m">(' + detEst + ')</span>' : ''), C.a_bandeja, 'sub')
@@ -5583,7 +5619,7 @@ function cuadraturaHtml(nDia){
     + '</table>'
     + '<div class="cq-nota">"Entraron durante el día" se parece a <b>Nuevas</b>, pero no es igual: Nuevas cuenta desde la primera vuelta del monitor. '
     + 'La carga de bandejas es el primer ciclo en que la mitad o más del inicio ya estaba asignada.</div>'
-    + '</section>';
+    + '</div>';
 }
 
 function pintarPortada(){
@@ -5762,6 +5798,7 @@ function pintarPortada(){
     +         '<button class="pv-ini" onclick="desdePortada(abrirInicio)" title="Con cu\u00e1ntas '
     +           'actividades parti\u00f3 el d\u00eda (Excel de la ma\u00f1ana)">Inicio de jornada'
     +           (nInicio ? ' <b>' + nInicio + '</b>' : '') + '<span class="fl">\u203a</span></button>'
+
     +         '</div>'
     /* Titulo del porcentaje (23-09-2026): sin el, no se sabia que numero era.
        Mismo calculo que la efectividad oficial (completadas / todas las
@@ -5772,7 +5809,11 @@ function pintarPortada(){
     +       '<div class="pv-pct"><span class="v">' + pct.toFixed(1).replace('.', ',')
     +         '</span><span class="u">%</span></div>'
     +       '<div class="pv-pctl">' + filas.length + ' actividades \u00b7 '
-    +         nTec + ' t\u00e9cnicos operativos</div>'
+    +         nTec + ' t\u00e9cnicos operativos'
+    /* Cuadratura del dia (24-09-2026): boton chico al lado de la cifra que
+       explica; la tabla se abre en una ventana. Primero fue una seccion
+       entera en la portada y Luis pidio que no ocupara tanto espacio. */
+    +         botonCuadratura(filas.length) + '</div>'
     +       '<div class="pv-cifras">'
     +         cif(filas.length, 'del d\u00eda', 'tot', '__TODAS__')
     +         cif(comp, 'completadas', 'comp', 'Completado')
@@ -5795,8 +5836,6 @@ function pintarPortada(){
     +     '<div class="pv-tlf">' + franjas + '</div>'
     +   '</section>'
 
-    /* ---- 2c. cuadratura del dia (24-09-2026) ---- */
-    +   cuadraturaHtml(filas.length)
 
     /* ---- 2b. los ultimos dias ---- */
     +   '<section class="pv-tend" id="tendencia"></section>'
