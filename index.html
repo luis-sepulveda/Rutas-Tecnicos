@@ -1585,6 +1585,10 @@
   .lbl-nodo { background:rgba(255,255,255,.88); border:0; box-shadow:none; color:#4c1d95;
     font:700 11px 'DM Sans',sans-serif; padding:1px 5px; border-radius:4px; }
   .lbl-nodo.hoy { color:#991b1b; }
+  .lbl-nodo.dos { color:#92400e; }
+  #vrLey .z.n1 { border-color:#64748b; background:rgba(100,116,139,.1); }
+  #vrLey .z.n2 { border-color:#d97706; background:rgba(217,119,6,.15); }
+  #vrLey .z.n3 { border-color:#dc2626; background:rgba(220,38,38,.18); }
   .lbl-nodo:before { display:none; }
   @media (max-width:760px){ #vrCab .vr-sep { display:none; } #vrLey { right:12px; max-width:none; } }
   /* ============ DIRECCIONES REPETIDAS, vista nueva — 24-09-2026 ============
@@ -1707,7 +1711,10 @@
       <div><i class="g"></i>NAP sin reparaciones</div>
       <div><i class="a"></i>Reparación en los últimos 30 días</div>
       <div><i class="r"></i>Reparación hoy</div>
-      <div><span class="z"></span>Zona de un nodo (roja si hoy tiene reparación)</div>
+      <div><span class="z"></span>Zona de un nodo, sin reparaciones hoy</div>
+      <div><span class="z n1"></span>1 casa con reparación hoy</div>
+      <div><span class="z n2"></span>2 casas con reparación hoy</div>
+      <div><span class="z n3"></span>3 o más: vale la pena preguntar por falla masiva</div>
       <div>Más grande = más reparaciones.</div>
       <div class="vl-n" id="vrNota"></div>
     </div>
@@ -4268,11 +4275,13 @@ function pintarCapaRed(){
   const okCiu = function(c){ return !vrCiudadAct || c === vrCiudadAct; };
 
   // reparaciones de hoy, por NAP y por nodo
-  const hoyNap = {}, hoyNodo = {};
+  // en el nodo se cuentan CASAS distintas (dos ordenes en la misma casa son una)
+  const hoyNap = {}, hoyNodoSet = {}, hoyNodo = {};
   ((RED && RED.todas) || []).forEach(function(w){
     if(w.kn) (hoyNap[w.kn] = hoyNap[w.kn] || []).push(w);
-    if(w.kd) hoyNodo[w.kd] = (hoyNodo[w.kd] || 0) + 1;
+    if(w.kd) (hoyNodoSet[w.kd] = hoyNodoSet[w.kd] || {})[claveDir(w.d || w.o)] = 1;
   });
+  Object.keys(hoyNodoSet).forEach(function(k){ hoyNodo[k] = Object.keys(hoyNodoSet[k]).length; });
 
   const R = REDMAPA || { naps:[], nodos:[] };
   const pts = [];
@@ -4281,14 +4290,20 @@ function pintarCapaRed(){
       if(!okCiu(n.c)) return;
       const hoy = hoyNodo[n.k] || 0;
       if(vrModoAct === 'hoy' && !hoy) return;
-      const col = hoy ? '#dc2626' : COL_NODO[i % COL_NODO.length];
-      const pol = L.polygon(n.h, { color:col, weight:hoy ? 1.6 : 1, dashArray:'5 4',
-        fillColor:col, fillOpacity:hoy ? 0.14 : 0.06 });
-      // etiqueta fija solo en los nodos con reparacion hoy; los demas al pasar el mouse
-      pol.bindTooltip('Nodo ' + n.nodo + (n.red === 'HFC' ? ' HFC' : ''),
-        { permanent:!!hoy, direction:'center', className:'lbl-nodo' + (hoy ? ' hoy' : '') });
+      /* color segun cuantas casas del nodo tienen reparacion HOY (24-09-2026):
+         1 = gris suave, 2 = ambar, 3 o mas = rojo. Antes todo nodo con al
+         menos una se pintaba igual de rojo y el que importaba (el 012 con 4)
+         se perdia entre los demas. Sin reparacion hoy: color de la paleta. */
+      const col = hoy >= 3 ? '#dc2626' : (hoy === 2 ? '#d97706' : (hoy === 1 ? '#64748b' : COL_NODO[i % COL_NODO.length]));
+      const pol = L.polygon(n.h, { color:col, weight:hoy >= 2 ? 1.8 : 1, dashArray:'5 4',
+        fillColor:col, fillOpacity:hoy >= 3 ? 0.18 : (hoy === 2 ? 0.13 : 0.05) });
+      // etiqueta fija en los nodos con 2 o mas; los demas al pasar el mouse
+      pol.bindTooltip('Nodo ' + n.nodo + (n.red === 'HFC' ? ' HFC' : '') + (hoy ? ' · ' + hoy + ' hoy' : ''),
+        { permanent:hoy >= 2, direction:'center', className:'lbl-nodo' + (hoy >= 3 ? ' hoy' : (hoy === 2 ? ' dos' : '')) });
       pol.bindPopup('<div class="ppred"><h4>Nodo ' + escR(n.nodo) + ' · ' + escR(tituloDir(n.c)) + ' · ' + escR(n.red) + '</h4>'
-        + '<div class="s">' + n.casas + ' casas conocidas en este nodo · ' + hoy + ' reparación(es) hoy</div></div>');
+        + '<div class="s">' + n.casas + ' casas conocidas en este nodo · ' + hoy + ' casa(s) con reparación hoy</div>'
+        + (hoy >= 3 ? '<div class="tt hoy">3 o más casas del mismo nodo hoy: vale la pena preguntar a VTR/CLARO por una falla masiva.</div>' : '')
+        + '</div>');
       pol.addTo(grpRedNodos);
     });
   }
