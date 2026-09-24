@@ -44,6 +44,12 @@
      - Etiqueta "Negocios" / "Negocios · reiterado" junto al numero de orden
        en el pin del mapa, Nuevas, Caidas y Nodos y NAP. Sale de la columna
        "Tipo de Actividad en Siebel" del export (rutas.json -> neg).
+     - Boton "Reiterados" al lado de Nodos y NAP (portada y mapa): las
+       reparaciones de hoy en una casa donde un tecnico de Dominion completo
+       una Alta, Migracion o Reparacion en los ultimos 30 dias, y quien fue.
+       Lo arma armar_reiterados() de generar_rutas.py leyendo el
+       historico_completadas.csv del Historial por tecnico (rutas.json ->
+       reit). Nodos y NAP quedo igual: a proposito no se mezclan.
      ===================================================================== -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js">
@@ -1522,6 +1528,19 @@
     font-size:10.5px; font-weight:700; line-height:15px; padding:0 6px; margin-left:4px;
     border-radius:5px; background:#ede9fe; color:#5b21b6; white-space:nowrap; vertical-align:1px; }
   .tg-neg.reit { background:#fee2e2; color:#991b1b; }
+  /* Reiterados (24-09-2026): reusa las tarjetas .rd-* de Nodos y NAP */
+  #modalReit { position:fixed; inset:0; z-index:3000; display:none; background:rgba(2,6,23,.72); }
+  #modalReit.abierto { display:flex; align-items:flex-start; justify-content:center; padding:4vh 2vw; }
+  #modalReit .mc-body { display:block; }
+  #modalReit .vacio { color:#86efac; text-align:center; padding:28px 6px; font-size:14px; line-height:1.6; }
+  .rd-card.reit { border-left-color:#7c3aed; }
+  .rd-card.reit .rd-sello { background:#ede9fe; color:#5b21b6; }
+  .rd-card.reit.cerca .rd-sello { background:#fee2e2; color:#991b1b; }
+  .rd-hoy { font-size:12.5px; color:#0f172a; margin:2px 0 8px; line-height:1.6; }
+  .rd-hoy b { font-weight:700; }
+  #btnReit .badge, .pv-nreit { display:inline-block; min-width:16px; padding:0 5px; margin-left:6px;
+    background:#c4b5fd; color:#2e1065; border-radius:9px; font-size:11px; font-weight:700;
+    line-height:16px; text-align:center; }
   .pv-nred { display:inline-block; min-width:16px; padding:0 5px; margin-left:6px;
     background:#f87171; color:#450a0a; border-radius:9px; font-size:11px; font-weight:700;
     line-height:16px; text-align:center; }
@@ -1565,6 +1584,7 @@
   <button class="btn" id="btnNuevas" onclick="toggleNuevas()">Nuevas</button>
   <button class="btn" id="btnRepe" onclick="toggleRepe()">Repetidas</button>
   <button class="btn" id="btnRed" onclick="toggleRed()">Nodos y NAP</button>
+  <button class="btn" id="btnReit" onclick="toggleReit()">Reiterados</button>
 </div>
 <div id="barraAcc" class="nb-flota der">
   <button class="btn" id="btnNombres" onclick="toggleNombres()">Nombres</button>
@@ -1658,6 +1678,21 @@
     <div id="redIntro" class="mc-intro"></div>
     <div id="listaRed" class="mc-body"></div>
     <div id="redNota" class="mc-resnota"></div>
+  </div>
+</div>
+<!-- Reiterados (24-09-2026). Mismo tema claro que los demas. -->
+<div id="modalReit" class="t-claro" onclick="if(event.target===this) cerrarReit()">
+  <div class="mc-box">
+    <div class="mc-head">
+      <div class="mc-head-left">
+        <h2>Reiterados · reparaciones en casas trabajadas hace poco</h2>
+        <div id="reitChips" class="mc-cont"></div>
+      </div>
+      <button class="mc-close" onclick="cerrarReit()" title="Cerrar (Esc)">✖</button>
+    </div>
+    <div id="reitIntro" class="mc-intro"></div>
+    <div id="listaReit" class="mc-body"></div>
+    <div id="reitNota" class="mc-resnota"></div>
   </div>
 </div>
 <div id="modalJor" class="t-claro" onclick="if(event.target===this) cerrarJornada()">
@@ -2024,7 +2059,7 @@ function verTecnicoCaida(t){
 
 // cerrar los modales con la tecla Esc
 document.addEventListener('keydown', function(e){
-  if(e.key === 'Escape'){ cerrarCaidas(); cerrarNuevas(); cerrarRepe(); cerrarReca(); cerrarBuscar(); cerrarEst(); cerrarJornada(); cerrarRed(); }
+  if(e.key === 'Escape'){ cerrarCaidas(); cerrarNuevas(); cerrarRepe(); cerrarReca(); cerrarBuscar(); cerrarEst(); cerrarJornada(); cerrarRed(); cerrarReit(); }
 });
 
 /* ======================= ORDENES NUEVAS DEL DIA =======================
@@ -3547,7 +3582,7 @@ function cerrarPaneles(salvo){
     comp:   cerrarComp,   rgu:    cerrarRGU,    atr:    cerrarAtr,
     sc:     cerrarSC,     caidas: cerrarCaidas, repe:   cerrarRepe,
     nuevas: cerrarNuevas, reca:   cerrarReca,   buscar: cerrarBuscar,
-    red:    cerrarRed
+    red:    cerrarRed,    reit:   cerrarReit
   };
   Object.keys(todos).forEach(function(k){
     if(k !== salvo && typeof todos[k] === 'function') todos[k]();
@@ -3821,7 +3856,7 @@ function verRedEnMapa(i){
 function dibujarRed(g){
   if(!redCapa) redCapa = L.layerGroup().addTo(map);
   redCapa.clearLayers();
-  const color = g.nivel === 'rojo' ? '#dc2626' : '#d97706';
+  const color = g.nivel === 'rojo' ? '#dc2626' : (g.nivel === 'reit' ? '#7c3aed' : '#d97706');
   const pts = [];
   g.ots.forEach(function(w){
     if(!w.lat || !w.lng) return;
@@ -3832,6 +3867,120 @@ function dibujarRed(g){
   });
   if(pts.length === 1) map.setView(pts[0], 17);
   else if(pts.length > 1) map.fitBounds(pts, {padding:[80,80], maxZoom:17});
+}
+
+/* ============================ REITERADOS =============================
+   24-09-2026. Reparaciones de hoy en una casa donde un tecnico de Dominion
+   completo una Alta, Migracion o Reparacion en los ultimos 30 dias (regla de
+   VTR/CLARO). Responde "esta casa ya la trabajamos hace poco, y quien fue".
+
+   Los datos vienen armados en rutas.json -> reit por armar_reiterados() de
+   generar_rutas.py, que lee historico_completadas.csv (Historial por
+   tecnico) desde el disco. Aca solo se pinta. Boton aparte de Nodos y NAP,
+   a pedido de Luis: cada boton responde una sola pregunta.
+   Limite: solo aparecen trabajos de tecnicos de Dominion.                */
+let REIT = null;
+let reitAbierto = false;
+
+function nReit(){ return REIT && REIT.items ? REIT.items.length : 0; }
+
+function renderBotonReit(){
+  const btn = document.getElementById('btnReit');
+  if(!btn) return;
+  const n = nReit();
+  btn.innerHTML = 'Reiterados' + (n > 0 ? ' <span class="badge">'+n+'</span>' : '');
+}
+
+function cerrarReit(){
+  if(!reitAbierto) return;
+  reitAbierto = false;
+  document.getElementById('modalReit').classList.remove('abierto');
+}
+
+function toggleReit(){
+  cerrarPaneles('reit');
+  reitAbierto = !reitAbierto;
+  document.getElementById('modalReit').classList.toggle('abierto', reitAbierto);
+  if(reitAbierto){ limpiarCirculosRed(); renderReit(); }
+}
+
+function renderReit(){
+  const cont = document.getElementById('listaReit');
+  const chips = document.getElementById('reitChips');
+  const intro = document.getElementById('reitIntro');
+  const nota = document.getElementById('reitNota');
+  if(!REIT){
+    chips.innerHTML = ''; intro.innerHTML = ''; nota.textContent = '';
+    cont.innerHTML = '<div class="vacio">Todavía no hay datos de reiterados. Aparecen cuando '
+      + 'generar_rutas.py (versión del 24-09-2026) corre en el monitor y encuentra '
+      + 'historico_completadas.csv en la carpeta historial-completadas.</div>';
+    return;
+  }
+  if(REIT.aviso === 'sin_direccion'){
+    chips.innerHTML = ''; intro.innerHTML = ''; nota.textContent = '';
+    cont.innerHTML = '<div class="vacio">El histórico de completadas todavía no trae la dirección. '
+      + 'Falta instalar la versión nueva de registrar_completadas.py y correr '
+      + 'rellenar_direcciones.bat (carpeta historial-completadas).</div>';
+    return;
+  }
+  const items = REIT.items || [];
+  const dias = REIT.dias || 30;
+  const cerca = items.filter(function(w){ return w.prev[0].dias <= 7; }).length;
+  chips.innerHTML = '<span class="fchip"><b>' + (REIT.n_rep||0) + '</b> reparaciones hoy</span>'
+    + '<span class="fchip"><b>' + items.length + '</b> reiteradas</span>'
+    + '<span class="fchip"><b>' + cerca + '</b> de la última semana</span>';
+  intro.innerHTML = 'Reparaciones de hoy en una casa donde un técnico de Dominion completó una '
+    + '<b>alta, migración o reparación en los últimos ' + dias + ' días</b>. '
+    + 'Incluye las que siguen en el bucket. No entran las canceladas.';
+
+  if(!items.length){
+    cont.innerHTML = '<div class="vacio">Ninguna reparación de hoy es reiterada.</div>';
+  } else {
+    cont.innerHTML = items.map(function(w, i){
+      const p0 = w.prev[0];
+      const buck = w.tec === 'En bucket';
+      const filas = w.prev.map(function(v){
+        return '<tr>'
+          + '<td style="white-space:nowrap">' + escR(v.f) + '</td>'
+          + '<td style="white-space:nowrap"><b>' + v.dias + ' día' + (v.dias === 1 ? '' : 's') + '</b></td>'
+          + '<td>' + escR(v.cat || v.tipo) + '</td>'
+          + '<td><span class="rd-ot">' + escR(v.ot) + '</span></td>'
+          + '<td class="rd-tec">' + escR(v.tec) + '</td>'
+          + '<td>' + escR(v.sup || '') + '</td>'
+          + '<td>' + escR(v.cie || '—') + '</td>'
+          + '</tr>';
+      }).join('');
+      return '<div class="rd-card reit' + (p0.dias <= 7 ? ' cerca' : '') + '">'
+        + '<div class="rd-top"><span class="rd-tit">' + escR(w.d) + '</span>'
+        + '<span class="rd-sello">' + escR(p0.cat || p0.tipo) + ' hace ' + p0.dias + ' día' + (p0.dias === 1 ? '' : 's')
+        + ' · ' + escR(p0.tec) + '</span></div>'
+        + '<div class="rd-hoy"><b>Hoy:</b> <span class="rd-ot">' + escR(w.pet || w.o) + '</span>' + tagNeg(w.o)
+        + ' · ' + escR(w.cat || 'Reparación') + (w.sub ? ' · ' + escR(w.sub) : '')
+        + ' · franja ' + escR(w.f || 's/franja')
+        + ' · <span class="rd-tec' + (buck ? ' buck' : '') + '">' + escR(w.tec) + '</span>'
+        + ' · <span class="bes ' + besRed(w.e) + '">' + escR(w.e || 'Pendiente') + '</span>'
+        + (w.cie ? ' · cerró: ' + escR(w.cie) + (w.der ? ' (' + escR(w.der) + ')' : '') : '')
+        + '</div>'
+        + '<div class="rd-sub">' + (w.prev.length === 1 ? 'Trabajo anterior en esta casa:' : w.prev.length + ' trabajos anteriores en esta casa, del más reciente al más antiguo:') + '</div>'
+        + '<div class="rd-scroll"><table class="rd-tabla">'
+        + '<tr><th>Fecha</th><th>Hace</th><th>Trabajo</th><th>Orden</th><th>Técnico</th><th>Supervisor</th><th>Cierre</th></tr>'
+        + filas + '</table></div>'
+        + '<span class="rd-mapa" onclick="verReitEnMapa(' + i + ')">📍 ver en el mapa</span>'
+        + '</div>';
+    }).join('');
+  }
+  nota.textContent = 'Reiterada = en la misma dirección (con casa y depto) hubo una alta, migración o '
+    + 'reparación completada en los últimos ' + dias + ' días. Solo se ven trabajos de técnicos de '
+    + 'Dominion (sale del Historial por técnico). En rojo, las de la última semana.';
+}
+
+function verReitEnMapa(i){
+  const w = REIT && REIT.items ? REIT.items[i] : null;
+  if(!w) return;
+  cerrarReit();
+  const enPortada = document.getElementById('portada').style.display !== 'none';
+  if(enPortada) verMapa();
+  setTimeout(function(){ dibujarRed({nivel:'reit', ots:[w]}); }, enPortada ? 150 : 0);
 }
 
 /* ============ NOMBRES DE TECNICOS EN EL MAPA ============
@@ -5059,6 +5208,10 @@ function pintarPortada(){
        existia) cuando hay algun grupo en rojo, con la cifra al lado. */
     +     '<a' + (gruposRojos() ? ' class="alarma"' : '') + ' onclick="desdePortada(toggleRed)">Nodos y NAP'
     +       (gruposRojos() ? '<span class="pv-nred">' + gruposRojos() + '</span>' : '') + '</a>'
+    /* Reiterados al lado, 24-09-2026. Solo lleva la cifra: se da casi todos
+       los dias, asi que no se pinta en rojo como Nodos y NAP. */
+    +     '<a onclick="desdePortada(toggleReit)">Reiterados'
+    +       (nReit() ? '<span class="pv-nreit">' + nReit() + '</span>' : '') + '</a>'
     +   '</nav>'
     +   '<span class="pv-upd"><i></i><span class="upd"></span></span>'
     + '</header>'
@@ -6052,6 +6205,9 @@ async function cargarDatosVivos(auto){
     EN_BUCKET = new Set(js.fuera_domi || []);
     RED = js.red || null;              // Nodos y NAP (24-09-2026)
     NEG = js.neg || {};                // Negocios / Reiterado (24-09-2026)
+    REIT = js.reit || null;            // Reiterados (24-09-2026)
+    renderBotonReit();
+    if(reitAbierto) renderReit();
     renderBotonRed();
     if(redAbierto) renderRed();
     renderBannerCaidas();
