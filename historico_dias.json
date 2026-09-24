@@ -9813,15 +9813,15 @@
    }
   },
   "24-09-2026": {
-   "hasta": "14:20",
+   "hasta": "14:35",
    "actividades": 156,
    "tecnicos": 36,
    "estados": {
-    "No Realizada": 24,
-    "Completado": 56,
-    "Pendiente": 49,
-    "Iniciado": 19,
-    "en ruta": 2,
+    "No Realizada": 26,
+    "Completado": 58,
+    "Pendiente": 44,
+    "Iniciado": 17,
+    "en ruta": 5,
     "Cancelado": 4,
     "Suspendido": 2
    },
@@ -9961,7 +9961,7 @@
       "f": "10-13",
       "hi": "15:30",
       "d": "CALLE TRES 980, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O10DCSU",
@@ -9979,7 +9979,7 @@
       "f": "13-16",
       "hi": "15:26",
       "d": "PORVENIR 1259, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O0ZNEFK",
@@ -9988,7 +9988,7 @@
       "f": "13-16",
       "hi": "16:40",
       "d": "LINCOYAN 1410 EDIF. C DEPTO 23, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O0ZDP6Y",
@@ -10024,7 +10024,7 @@
       "f": "10-13",
       "hi": "12:55",
       "d": "ARTURO ALESSANDRI 578, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O0XVM92",
@@ -10222,7 +10222,7 @@
       "f": "10-13",
       "hi": "11:53",
       "d": "PJE ANTUMAPU 572, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O0TGTSZ",
@@ -10355,7 +10355,7 @@
       "f": "10-13",
       "hi": "11:45",
       "d": "SANTA RITA 766, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "FELIPE SILVA R",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -10379,7 +10379,7 @@
       "f": "13-16",
       "hi": "12:20",
       "d": "PJE ANTUMAPU 572, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JOEL GUSTAVE GUSTA",
       "visitas": 3,
       "ult_fecha": "14-08-2026",
@@ -10426,7 +10426,7 @@
       "f": "13-16",
       "hi": "13:58",
       "d": "ADRIAZOLA 2672, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "JOSE GALAZ D",
       "visitas": 3,
       "ult_fecha": "17-08-2026",
@@ -10520,7 +10520,7 @@
       "o": "1-3O0V7XF3",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:34",
+      "hi": "15:44",
       "d": "CRISTOBAL COLON 0326, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -10620,7 +10620,7 @@
       "f": "10-13",
       "hi": "11:45",
       "d": "SANTA RITA 766, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "FELIPE SILVA R",
       "desde": "22-09-2026"
      },
@@ -10648,5 +10648,5 @@
    }
   }
  },
- "generado": "24-09-2026 14:20"
+ "generado": "24-09-2026 14:35"
 }
