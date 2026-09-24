@@ -50,6 +50,8 @@
        Lo arma armar_reiterados() de generar_rutas.py leyendo el
        historico_completadas.csv del Historial por tecnico (rutas.json ->
        reit). Nodos y NAP quedo igual: a proposito no se mezclan.
+     - Direcciones repetidas: misma informacion, vista nueva (agrupada por
+       gravedad, circulo de color, motivos debajo, lo de hoy a la derecha).
        Desde la tarde del 24-09-2026 cuentan tambien los trabajos completados
        HOY, si terminaron antes de que empezara la reparacion (dias = 0, se
        muestra "hoy").
@@ -1531,6 +1533,40 @@
     font-size:10.5px; font-weight:700; line-height:15px; padding:0 6px; margin-left:4px;
     border-radius:5px; background:#ede9fe; color:#5b21b6; white-space:nowrap; vertical-align:1px; }
   .tg-neg.reit { background:#fee2e2; color:#991b1b; }
+  /* ============ DIRECCIONES REPETIDAS, vista nueva — 24-09-2026 ============
+     Agrupada por gravedad, circulo de color por cantidad de caidas, direccion
+     en minusculas, motivos debajo y lo de hoy a la derecha. Borrando este
+     bloque la lista queda sin formato, pero no se rompe nada. */
+  #modalRepe .mc-body { display:block; }
+  .rp-grupo { color:#cbd5e1; font-size:11px; font-weight:700; text-transform:uppercase;
+    letter-spacing:.05em; margin:14px 2px 6px; }
+  .rp-grupo:first-child { margin-top:2px; }
+  .rp-grupo span { color:#64748b; margin-left:4px; }
+  .rp-fila { background:#fff; border-radius:9px; margin-bottom:6px; color:#0f172a;
+    font-family:'DM Sans','Segoe UI',Arial,sans-serif; }
+  .rp-top { display:flex; align-items:center; gap:12px; padding:8px 12px; cursor:pointer; }
+  .rp-top:hover { background:#f8fafc; border-radius:9px; }
+  .rp-n { flex:0 0 30px; height:30px; border-radius:50%; display:flex; align-items:center;
+    justify-content:center; font-weight:700; font-size:14px; background:#e2e8f0; color:#334155; }
+  .rp-fila.n2 .rp-n { background:#fef3c7; color:#92400e; }
+  .rp-fila.n3 .rp-n { background:#fee2e2; color:#991b1b; }
+  .rp-cen { flex:1 1 0; min-width:0; display:flex; flex-direction:column; }
+  .rp-dir { font-size:14px; font-weight:600; color:#0f172a; white-space:nowrap;
+    overflow:hidden; text-overflow:ellipsis; }
+  .rp-mot { font-size:12px; color:#64748b; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .rp-hoy { flex:0 0 auto; display:flex; align-items:center; gap:10px; font-size:12.5px; color:#334155; }
+  .rp-fr { font-weight:700; color:#0f172a; }
+  .rp-tec { max-width:200px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .rp-mas { color:#7c3aed; font-weight:700; font-size:11px; }
+  .rp-fl { color:#94a3b8; transition:transform .15s; }
+  .rp-fila.abierta .rp-fl { transform:rotate(180deg); }
+  .rp-det { display:none; padding:0 12px 10px 54px; }
+  .rp-fila.abierta .rp-det { display:block; }
+  @media (max-width:760px){
+    .rp-top { flex-wrap:wrap; }
+    .rp-hoy { width:100%; padding-left:42px; flex-wrap:wrap; }
+    .rp-det { padding-left:12px; }
+  }
   /* Reiterados (24-09-2026): reusa las tarjetas .rd-* de Nodos y NAP */
   #modalReit { position:fixed; inset:0; z-index:3000; display:none; background:rgba(2,6,23,.72); }
   #modalReit.abierto { display:flex; align-items:flex-start; justify-content:center; padding:4vh 2vw; }
@@ -2864,6 +2900,13 @@ function toggleRepe(){
   renderBotonRepe();
 }
 
+/* "EL RINCON 1100 CASA 20, VILLA ALEMANA" -> "El Rincon 1100 Casa 20, Villa Alemana".
+   Solo para mostrar: las comparaciones siguen usando la direccion original. */
+function tituloDir(d){
+  return String(d || '').toLowerCase().replace(/(^|[\s(,.\/-])([a-zñáéíóú])/g,
+    function(m, a, b){ return a + b.toUpperCase(); });
+}
+
 function setRepeMin(n){ repeMin = n; renderRepe(); }
 function toggleRepeGSA(){ repeGSA = !repeGSA; renderRepe(); }
 function toggleRepeAbiertas(){ repeAbiertas = !repeAbiertas; renderRepe(); }
@@ -2904,52 +2947,92 @@ function renderRepe(){
             + (repeGSA?'':' (sin contar GSA)')+(repeAbiertas?' y todavía sin cerrar':'')+'.')
       + '</div>';
   } else {
-    cont.innerHTML = lista.map(function(d, i){
-      const filasHoy = d.hoy.map(function(w){
-        return '<div class="rv">'
-          + '<span class="rh">'+escR(w.f || 's/franja')+'</span>'
-          + '<span class="rnum">'+escR(w.num)+'</span>'
-          + '<span>'+escR(w.cat)+'</span>'
-          + '<span>· '+escR(w.tec)+'</span>'
-          + '<span class="re '+estClase(w.e)+'">'+escR(w.e)+'</span>'
-          + '</div>';
-      }).join('');
-      const filasPrev = d.prev.slice().reverse().map(function(v){
-        return '<div class="rv">'
-          + '<span class="rf">'+escR(v.f)+'</span>'
-          + '<span class="rnum">'+escR(v.num)+'</span>'
-          + '<span>'+escR(v.cat)+'</span>'
-          + '<span>· '+escR(v.tec)+'</span>'
-          + (v.cierre ? '<span class="rc">· '+escR(v.cierre)+'</span>' : '')
-          + (v.gsa ? '<span class="rgsa">GSA</span>' : '')
-          + '</div>';
-      }).join('');
-      const estHoy = d.hoy.map(function(w){ return w.e; }).join(' / ');
-      return '<div class="rcard repe" id="pc'+i+'">'
-        + '<div class="rtop" onclick="document.getElementById(\'pc'+i+'\').classList.toggle(\'abierta\')">'
-        +   '<span class="rn">'+d.prev.length+'x antes</span>'
-        +   '<span class="rdir">'+escR(d.d)+'</span>'
-        +   '<span class="rnum">'+escR(d.hoy[0] ? d.hoy[0].num : '')+'</span>'
-        +   '<span class="rult">hoy '+escR(d.fr0 || 's/franja')
-        +     ' · '+escR(estHoy)+' ▾</span>'
-        + '</div>'
-        + '<div class="rvis">'
-        +   '<div class="rvh">Hoy en bandeja</div>'+filasHoy
-        +   '<div class="rvh">No realizadas anteriores ('+d.prev.length+')</div>'+filasPrev
-        +   '<span class="rmapa" onclick="verEnMapaRepe('+(d.lat||0)+','+(d.lng||0)+')">📍 ver en el mapa</span>'
-        + '</div>'
-        + '</div>';
+    /* Vista rehecha el 24-09-2026 a pedido de Luis ("a la vista me genera
+       malestar"): la lista eran 24 barras iguales, todas con el mismo sello
+       morado, la direccion en mayusculas y nada que distinguiera una casa de
+       otra. Ahora:
+         - se agrupa por gravedad (3 o mas caidas / 2 / 1) o por franja,
+           con un titulo por grupo en vez de repetir el sello en cada fila
+         - el numero de caidas va en un circulo con color segun gravedad
+           (rojo 3+, ambar 2, gris 1): se ve de un vistazo donde mirar
+         - la direccion en minusculas con mayuscula inicial, que se lee mejor
+         - debajo, en gris, POR QUE se cayo antes (motivos con su cuenta) y
+           cuando fue la ultima: es lo que decide que hacer con la casa
+         - a la derecha, lo de hoy: franja, tecnico y estado con su color
+       Al tocar la fila se abre el detalle, en tabla. Mismos datos, mismos
+       filtros y el mismo Excel que antes: solo cambio como se ve.        */
+    const grupos = [];
+    if(repeOrden === 'h'){
+      lista.forEach(function(d){
+        const t = 'Franja ' + (d.fr0 || 'sin franja');
+        let g = grupos.filter(function(x){ return x.t === t; })[0];
+        if(!g){ g = { t:t, items:[] }; grupos.push(g); }
+        g.items.push(d);
+      });
+    } else {
+      [['3 o más caídas antes', function(n){ return n >= 3; }],
+       ['2 caídas antes',       function(n){ return n === 2; }],
+       ['1 caída antes',        function(n){ return n === 1; }]].forEach(function(p){
+        const it = lista.filter(function(d){ return p[1](d.prev.length); });
+        if(it.length) grupos.push({ t:p[0], items:it });
+      });
+    }
+    let idx = 0;
+    cont.innerHTML = grupos.map(function(g){
+      return '<div class="rp-grupo">' + escR(g.t) + ' <span>' + g.items.length + '</span></div>'
+        + g.items.map(function(d){
+          const i = idx++;
+          const n = d.prev.length;
+          const niv = n >= 3 ? 'n3' : (n === 2 ? 'n2' : 'n1');
+          // motivos: "Sin moradores ×3 · Dirección incorrecta"
+          const cuenta = {};
+          d.prev.forEach(function(v){ const m = v.cierre || 'sin código'; cuenta[m] = (cuenta[m]||0) + 1; });
+          const motivos = Object.keys(cuenta).sort(function(a,b){ return cuenta[b]-cuenta[a]; })
+            .map(function(m){ return escR(m) + (cuenta[m] > 1 ? ' ×' + cuenta[m] : ''); }).join(' · ');
+          const ult = d.prev.length ? d.prev[d.prev.length-1].f : '';
+          const h0 = d.hoy[0] || {};
+          const masHoy = d.hoy.length > 1 ? ' <span class="rp-mas">+' + (d.hoy.length-1) + ' orden</span>' : '';
+          const filasPrev = d.prev.slice().reverse().map(function(v){
+            return '<tr><td>' + escR(v.f) + '</td><td><span class="rd-ot">' + escR(v.num) + '</span></td>'
+              + '<td>' + escR(v.cat) + '</td><td>' + escR(v.tec) + '</td>'
+              + '<td>' + escR(v.cierre || 'sin código') + (v.gsa ? ' <span class="rgsa">GSA</span>' : '') + '</td></tr>';
+          }).join('');
+          const filasHoy = d.hoy.map(function(w){
+            return '<tr><td>hoy ' + escR(w.f || 's/franja') + '</td><td><span class="rd-ot">' + escR(w.num) + '</span></td>'
+              + '<td>' + escR(w.cat) + '</td><td>' + escR(w.tec) + '</td>'
+              + '<td><span class="bes ' + besRed(w.e) + '">' + escR(w.e) + '</span></td></tr>';
+          }).join('');
+          return '<div class="rp-fila ' + niv + '" id="pc' + i + '">'
+            + '<div class="rp-top" onclick="document.getElementById(\'pc' + i + '\').classList.toggle(\'abierta\')">'
+            +   '<span class="rp-n" title="' + n + ' visita(s) fallida(s) antes">' + n + '</span>'
+            +   '<span class="rp-cen">'
+            +     '<span class="rp-dir">' + escR(tituloDir(d.d)) + '</span>'
+            +     '<span class="rp-mot">' + motivos + (ult ? ' · última ' + escR(ult) : '') + '</span>'
+            +   '</span>'
+            +   '<span class="rp-hoy">'
+            +     '<span class="rp-fr">' + escR(d.fr0 || 's/franja') + '</span>'
+            +     '<span class="rp-tec">' + escR(h0.tec || '') + masHoy + '</span>'
+            +     '<span class="bes ' + besRed(h0.e) + '">' + escR(h0.e || '') + '</span>'
+            +     '<span class="rp-fl">▾</span>'
+            +   '</span>'
+            + '</div>'
+            + '<div class="rp-det">'
+            +   '<div class="rd-scroll"><table class="rd-tabla">'
+            +   '<tr><th>Fecha</th><th>Orden</th><th>Tipo</th><th>Técnico</th><th>Cierre / estado</th></tr>'
+            +   filasHoy + filasPrev + '</table></div>'
+            +   '<span class="rd-mapa" onclick="verEnMapaRepe(' + (d.lat||0) + ',' + (d.lng||0) + ')">📍 ver en el mapa</span>'
+            + '</div>'
+            + '</div>';
+        }).join('');
     }).join('');
   }
 
   const nOrd = lista.reduce(function(a, x){ return a + x.hoy.length; }, 0);
   let total = 0;
   Object.keys(DB||{}).forEach(function(t){ total += (DB[t]||[]).length; });
-  nota.textContent = lista.length + ' dirección(es) · ' + nOrd + ' orden(es) de hoy'
-    + ' sobre ' + total + ' en bandeja. Cuenta visitas No Realizadas anteriores '
-    + 'de la misma dirección, incluidas las de hoy si son de otra orden: '
-    + 'ninguna orden se cuenta a sí misma. '
-    + 'El número azul es la petición (o la OT si el export no la trae).';
+  nota.textContent = lista.length + ' dirección(es) · ' + nOrd + ' orden(es) de hoy sobre '
+    + total + ' en bandeja. El número del círculo son las visitas No Realizadas anteriores '
+    + 'en esa misma dirección (una orden no se cuenta a sí misma). Toca una fila para ver el detalle.';
 }
 
 /* ============================ BUSCADOR GLOBAL ============================
