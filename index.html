@@ -36,6 +36,14 @@
      cerrarPaneles() y la tecla Esc (cierran el modal nuevo).
      El mismo dia se agrego un enlace "Nodos y NAP" en la barra de la portada,
      al lado de Seguimiento, que abre el mismo modal.
+
+     Tambien el 24-09-2026:
+     - Nodos y NAP muestra con que codigo de cierre (y derivacion) cerro cada
+       reparacion del grupo, y cuantas van cerradas: asi se ve despues si el
+       aviso acerto. Datos: campos 'cie' y 'der' dentro de rutas.json -> red.
+     - Etiqueta "Negocios" / "Negocios · reiterado" junto al numero de orden
+       en el pin del mapa, Nuevas, Caidas y Nodos y NAP. Sale de la columna
+       "Tipo de Actividad en Siebel" del export (rutas.json -> neg).
      ===================================================================== -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js">
@@ -1509,6 +1517,11 @@
     letter-spacing:.05em; margin:14px 0 8px; }
   .rd-sep:first-child { margin-top:2px; }
   .pv-bar a { cursor:pointer; }
+  /* Etiqueta Negocios / Negocios · reiterado (24-09-2026) */
+  .tg-neg { display:inline-block; font-family:'DM Sans','Segoe UI',Arial,sans-serif;
+    font-size:10.5px; font-weight:700; line-height:15px; padding:0 6px; margin-left:4px;
+    border-radius:5px; background:#ede9fe; color:#5b21b6; white-space:nowrap; vertical-align:1px; }
+  .tg-neg.reit { background:#fee2e2; color:#991b1b; }
   .pv-nred { display:inline-block; min-width:16px; padding:0 5px; margin-left:6px;
     background:#f87171; color:#450a0a; border-radius:9px; font-size:11px; font-weight:700;
     line-height:16px; text-align:center; }
@@ -2262,7 +2275,7 @@ function renderNuevas(){
       const cls = ida ? 'n-ida' : (k === 'reingreso' ? 'n-rein' : (k === 'reagendada' ? 'n-reag' : 'n-nueva'));
 
       return '<div class="corden '+cls+'"><div class="cfila">'
-        + '<span><span class="npet">'+escR(x.pet || x.o || '')+'</span>'
+        + '<span><span class="npet">'+escR(x.pet || x.o || '')+'</span>'+tagNeg(x.o)
           + '<div class="ctipo">'+escR(x.cat||'')+'</div></span>'
         + '<span class="cfr">'+escR(x.f||'s/f')+'</span>'
         + '<span><span class="ctec" onclick="verTecnicoNueva(\''
@@ -3380,7 +3393,7 @@ function renderPanelCaidas(){
         ? '<span class="cdesde hoy">Se la cargaron hoy' + (ent ? ' a las ' + escR(ent) : '') + '</span>'
         : '<span class="cdesde">Desde la mañana</span>';
       return '<div class="corden '+claseDesenlace(c)+'"><div class="cfila">'
-        + '<span><span class="npet">'+escR(c.o||'')+'</span>'
+        + '<span><span class="npet">'+escR(c.o||'')+'</span>'+tagNeg(c.o)
           + '<div class="ctipo">'+escR(c.cat||'')+'</div></span>'
         + '<span class="cfr">'+escR(x.fr)+'</span>'
         + '<span><span class="ctec" onclick="verTecnicoCaida(\''
@@ -3635,6 +3648,19 @@ function renderReca(){
    abrir el modal.                                                         */
 let RED = null;
 let redAbierto = false;
+
+/* Negocios / Reiterado (24-09-2026). NEG = {OT: 'N' o 'R'} desde rutas.json.
+   tagNeg(o) devuelve la etiqueta para poner al lado del numero de orden, o ''
+   si la OT es de Terreno (lo normal). Reiterado = VTR/CLARO sabe que el
+   cliente ya reclamo antes: esa visita no puede fallar. */
+let NEG = {};
+function tagNeg(o){
+  const v = NEG[String(o||'').trim()];
+  if(!v) return '';
+  return v === 'R'
+    ? ' <span class="tg-neg reit" title="VTR/CLARO la marca como Negocios - Reiterado: el cliente ya reclamó antes">Negocios · reiterado</span>'
+    : ' <span class="tg-neg" title="Cliente de Negocios (Tipo de Actividad en Siebel)">Negocios</span>';
+}
 let redCapa = null;
 
 function gruposRojos(){
@@ -3703,6 +3729,9 @@ function explicaGrupoRed(g){
   else t = 'Mismo nodo, pero cada casa en su NAP. Por ahora solo para vigilar.';
   if(nfr > 1) t += ' Van en ' + nfr + ' franjas distintas.';
   if(buck) t += ' ' + (buck === g.ots.length ? 'Todas siguen' : buck + ' siguen') + ' en el bucket.';
+  // cuantas ya cerraron: con los codigos de cierre se ve si el aviso acerto
+  const cerr = g.ots.filter(function(w){ return ['Completado','No Realizada','Suspendido'].indexOf(w.e) >= 0; }).length;
+  if(cerr) t += ' Cerradas ' + cerr + ' de ' + g.ots.length + ': revisa el código de cierre.';
   return t;
 }
 
@@ -3745,13 +3774,15 @@ function renderRed(){
             ? 'nodo ' + escR(w.nodo) + (w.subn ? ' / ' + escR(w.subn) : '')
             : (w.nap ? 'NAP ' + escR(w.nap) : 'sin NAP') + (w.nodo ? ' · nodo ' + escR(w.nodo) : '');
           return '<tr>'
-            + '<td><span class="rd-ot">' + escR(w.pet || w.o) + '</span></td>'
+            + '<td><span class="rd-ot">' + escR(w.pet || w.o) + '</span>' + (tagNeg(w.o) ? '<br>' + tagNeg(w.o) : '') + '</td>'
             + '<td>' + escR(w.d) + '</td>'
             + '<td>' + escR(w.cat || 'Reparación') + (w.sub ? '<br><span style="color:#64748b">' + escR(w.sub) + '</span>' : '') + '</td>'
             + '<td style="white-space:nowrap">' + escR(w.f || 's/franja') + '</td>'
             + '<td class="rd-tec' + (buck ? ' buck' : '') + '">' + escR(w.tec) + '</td>'
             + '<td><span class="bes ' + besRed(w.e) + '">' + escR(w.e || 'Pendiente') + '</span></td>'
             + '<td>' + redTxt + (w.pto ? '<br><span class="rd-pto">' + escR(w.pto) + '</span>' : '') + '</td>'
+            + '<td>' + (w.cie ? escR(w.cie) + (w.der ? '<br><span style="color:#64748b">deriv. ' + escR(w.der) + '</span>' : '')
+                              : '<span style="color:#94a3b8">—</span>') + '</td>'
             + '</tr>';
         }).join('');
         html += '<div class="rd-card ' + (g.nivel === 'rojo' ? 'rojo' : 'ambar') + '">'
@@ -3759,7 +3790,7 @@ function renderRed(){
           + '<span class="rd-sello">' + escR(selloGrupoRed(g)) + '</span></div>'
           + '<div class="rd-sub">' + escR(explicaGrupoRed(g)) + '</div>'
           + '<div class="rd-scroll"><table class="rd-tabla">'
-          + '<tr><th>Orden</th><th>Dirección</th><th>Tipo</th><th>Franja</th><th>Técnico</th><th>Estado</th><th>Red / puerto NAP</th></tr>'
+          + '<tr><th>Orden</th><th>Dirección</th><th>Tipo</th><th>Franja</th><th>Técnico</th><th>Estado</th><th>Red / puerto NAP</th><th>Cierre</th></tr>'
           + filas + '</table></div>'
           + '<span class="rd-mapa" onclick="verRedEnMapa(' + i + ')">📍 ver en el mapa</span>'
           + '</div>';
@@ -4454,8 +4485,33 @@ function acomodarBarras(){
   const alto = cab.offsetHeight || 56;
   const barras = document.querySelectorAll('.nb-flota');
   for(let i = 0; i < barras.length; i++) barras[i].style.top = (alto + 12) + 'px';
+  acomodarZoom();
 }
 window.addEventListener('resize', acomodarBarras);
+
+/* Botones de zoom (+/-) bajo los avisos. 24-09-2026: Leaflet los pone arriba
+   a la izquierda, justo donde flotan Caidas, Recaidas, Nuevas, Repetidas y
+   Nodos y NAP, y quedaban tapados por Caidas. Ahora la esquina de Leaflet se
+   baja hasta el borde inferior de esa barra, mida lo que mida: si los botones
+   pasan a dos filas (pantalla angosta, globos con cifras), el zoom baja solo.
+   El ResizeObserver lo vuelve a acomodar cada vez que la barra cambia de alto. */
+function acomodarZoom(){
+  const barra = document.getElementById('barraAvisos');
+  const esq = document.querySelector('#map .leaflet-top.leaflet-left');
+  const mapa = document.getElementById('map');
+  if(!barra || !esq || !mapa) return;
+  const rb = barra.getBoundingClientRect(), rm = mapa.getBoundingClientRect();
+  if(!rb.height) return;               // barra oculta (portada): no mover
+  esq.style.top = Math.max(0, Math.round(rb.bottom - rm.top)) + 'px';
+}
+if(window.ResizeObserver){
+  const _obsZoom = new ResizeObserver(function(){ acomodarZoom(); });
+  window.addEventListener('load', function(){
+    const b = document.getElementById('barraAvisos');
+    if(b) _obsZoom.observe(b);
+    acomodarZoom();
+  });
+}
 
 function verMapa(){
   document.getElementById('portada').style.display = 'none';
@@ -5132,7 +5188,7 @@ function render(mantenerVista){
       const icon = L.divIcon({className:'', html:'<div class="num-icon'+stCls+'" style="background:'+col+'">'+letraTipo(p.t)+nom+'</div>', iconSize:[26,26], iconAnchor:[13,13]});
       L.marker([p.lat,p.lng],{icon}).addTo(layer).bindPopup(
         '<div class="pp"><b>'+t+'</b> — parada '+p._np+' de '+ruta.length+'<br>'+
-        '📋 '+p.o+' · '+p.t+'<br>'+
+        '📋 '+p.o+' · '+p.t+tagNeg(p.o)+'<br>'+
         '🕐 franja '+(p.f||'s/franja')+'<br>'+
         '📍 '+p.d+'<br>'+
         '<span class="est '+estClass(p.e)+'">'+p.e+'</span>'+
@@ -5995,6 +6051,7 @@ async function cargarDatosVivos(auto){
     // informa donde NO esta en vez de donde SI esta.
     EN_BUCKET = new Set(js.fuera_domi || []);
     RED = js.red || null;              // Nodos y NAP (24-09-2026)
+    NEG = js.neg || {};                // Negocios / Reiterado (24-09-2026)
     renderBotonRed();
     if(redAbierto) renderRed();
     renderBannerCaidas();
