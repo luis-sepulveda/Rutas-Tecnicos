@@ -9813,14 +9813,14 @@
    }
   },
   "24-09-2026": {
-   "hasta": "17:02",
+   "hasta": "17:07",
    "actividades": 162,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 40,
     "Completado": 81,
-    "en ruta": 4,
-    "Iniciado": 29,
+    "en ruta": 3,
+    "Iniciado": 30,
     "Cancelado": 5,
     "Suspendido": 3
    },
@@ -10068,7 +10068,7 @@
       "f": "13-16",
       "hi": "15:38",
       "d": "EL AMANECER 1343, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O1051P2",
@@ -10746,5 +10746,5 @@
    }
   }
  },
- "generado": "24-09-2026 17:02"
+ "generado": "24-09-2026 17:07"
 }
