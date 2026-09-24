@@ -1315,7 +1315,12 @@
   /* el boton va debajo pero sin ensanchar la columna (si no, las cifras
      se pasan a una segunda fila) */
   .pv-cif-caja { position:relative; padding-bottom:24px; }
-  .pv-cif-caja .pv-cq { position:absolute; left:0; bottom:0; margin:0; white-space:nowrap; }
+  /* centrado bajo "168 del dia" (el boton .pv-cif tiene 10 px de relleno a la derecha) */
+  .pv-cif-caja .pv-cq { position:absolute; left:calc(50% - 5px); transform:translateX(-50%);
+    bottom:0; margin:0; white-space:nowrap; padding:1px 7px; font-size:11px; }
+  .pv-cif-caja .pv-cq .fl { display:none; }
+  /* la cifra "del dia" centrada, para que el boton quede alineado con ella */
+  .pv-cif-caja .pv-cif { text-align:center; }
   .pv-cif:hover .n { text-decoration:underline; text-underline-offset:3px; }
   .pv-cif .n { font-family:'Archivo',sans-serif; font-size:22px; font-weight:700;
     line-height:1.1; font-variant-numeric:tabular-nums; color:#15293e; }
