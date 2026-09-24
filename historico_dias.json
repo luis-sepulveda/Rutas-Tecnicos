@@ -9813,13 +9813,13 @@
    }
   },
   "24-09-2026": {
-   "hasta": "19:53",
+   "hasta": "19:58",
    "actividades": 168,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 47,
-    "Completado": 111,
-    "Iniciado": 2,
+    "Completado": 112,
+    "Iniciado": 1,
     "Cancelado": 5,
     "Suspendido": 3
    },
@@ -9968,7 +9968,7 @@
       "f": "19-21",
       "hi": "19:15",
       "d": "CAMINO DEL SOL 2300 CASA 5-E, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O19PD0T",
@@ -10781,5 +10781,5 @@
    }
   }
  },
- "generado": "24-09-2026 19:53"
+ "generado": "24-09-2026 19:58"
 }
