@@ -9813,19 +9813,19 @@
    }
   },
   "24-09-2026": {
-   "hasta": "12:25",
-   "actividades": 128,
+   "hasta": "12:35",
+   "actividades": 129,
    "tecnicos": 36,
    "estados": {
-    "No Realizada": 14,
-    "Iniciado": 19,
-    "Pendiente": 49,
-    "Completado": 36,
-    "en ruta": 5,
+    "No Realizada": 15,
+    "Iniciado": 20,
+    "Pendiente": 44,
+    "Completado": 38,
+    "en ruta": 7,
     "Cancelado": 3,
     "Suspendido": 2
    },
-   "rgu": 186.8,
+   "rgu": 187.8,
    "caidas_total": 7,
    "caidas_activas": 7,
    "caidas_resueltas": 0,
@@ -9916,16 +9916,16 @@
       "f": "10-13",
       "hi": "13:18",
       "d": "BUENOS AIRES 861, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O0XDI7D",
-      "tec": "RAFAEL VARGAS B",
+      "tec": "JOSE CASTRO P",
       "cat": "Migración 1 Play",
       "f": "10-13",
       "hi": "15:03",
       "d": "MARIA MERCEDES 1482 EDIF. 7 DEPTO 301, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O0WKOAI",
@@ -10033,7 +10033,7 @@
       "f": "10-13",
       "hi": "11:16",
       "d": "AV LOS CARRERA 0540, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O0UKIHN",
@@ -10167,9 +10167,9 @@
       "o": "1-3O0DH393",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "12:37",
       "d": "EPSILON 2030 EDIF. A DEPTO 22, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "CESAR MENA OLIVEROS",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -10349,7 +10349,7 @@
       "f": "10-13",
       "hi": "11:40",
       "d": "CONGUILLO 1992, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "JUAN ARRIAGADA C",
       "visitas": 2,
       "ult_fecha": "17-09-2026",
@@ -10371,7 +10371,7 @@
       "o": "1-3O0V7XF3",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "14:31",
       "d": "CRISTOBAL COLON 0326, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -10407,7 +10407,7 @@
       "o": "1-3O03LHEY",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "13:28",
       "d": "PJE 610 865, QUILPUE",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
@@ -10453,5 +10453,5 @@
    }
   }
  },
- "generado": "24-09-2026 12:25"
+ "generado": "24-09-2026 12:35"
 }
