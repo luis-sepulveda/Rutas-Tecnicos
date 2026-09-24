@@ -50,6 +50,10 @@
        Lo arma armar_reiterados() de generar_rutas.py leyendo el
        historico_completadas.csv del Historial por tecnico (rutas.json ->
        reit). Nodos y NAP quedo igual: a proposito no se mezclan.
+     - Falla masiva confirmada (24-09-2026): si una reparacion del dia cierra
+       con codigo "Falla Masiva", su grupo va primero en Nodos y NAP con un
+       aviso, y en el mapa de red su nodo se marca con borde lleno y la
+       etiqueta "FALLA MASIVA". Lo marca armar_red() (campo 'confirmada').
      - Direcciones repetidas: misma informacion, vista nueva (agrupada por
        gravedad, circulo de color, motivos debajo, lo de hoy a la derecha).
      - "Mapa de red" (boton Red en las herramientas del mapa y enlace Red en
@@ -1586,6 +1590,8 @@
     font:700 11px 'DM Sans',sans-serif; padding:1px 5px; border-radius:4px; }
   .lbl-nodo.hoy { color:#991b1b; }
   .lbl-nodo.dos { color:#92400e; }
+  .lbl-nodo.masiva { background:#7f1d1d; color:#fff; }
+  #vrLey .z.nm { border:2px solid #7f1d1d; background:rgba(127,29,29,.22); }
   #vrLey .z.n1 { border-color:#64748b; background:rgba(100,116,139,.1); }
   #vrLey .z.n2 { border-color:#d97706; background:rgba(217,119,6,.15); }
   #vrLey .z.n3 { border-color:#dc2626; background:rgba(220,38,38,.18); }
@@ -1635,6 +1641,10 @@
   .rd-card.reit.cerca .rd-sello { background:#fee2e2; color:#991b1b; }
   .rd-hoy { font-size:12.5px; color:#0f172a; margin:2px 0 8px; line-height:1.6; }
   .rd-hoy b { font-weight:700; }
+  /* falla masiva confirmada (24-09-2026) */
+  .rd-card.masiva { border-left-color:#7f1d1d; background:#fff5f5; }
+  .rd-card.masiva .rd-sello { background:#7f1d1d; color:#fff; }
+  .rd-conf { background:#fee2e2; color:#7f1d1d; border-radius:6px; padding:6px 10px; margin:4px 0 6px; font-size:12.5px; }
   .rd-red { display:flex; flex-wrap:wrap; align-items:center; gap:6px 10px; margin:-2px 0 8px; font-size:12px; }
   .rd-red .rr { padding:2px 9px; border-radius:6px; font-weight:600; }
   .rd-red .rr.n1 { background:#f1f5f9; color:#475569; }
@@ -1721,6 +1731,7 @@
       <div><span class="z n1"></span>1 casa con reparación hoy</div>
       <div><span class="z n2"></span>2 casas con reparación hoy</div>
       <div><span class="z n3"></span>3 o más: vale la pena preguntar por falla masiva</div>
+      <div><span class="z nm"></span>Falla masiva confirmada (una cerró "Falla Masiva")</div>
       <div>Más grande = más reparaciones.</div>
       <div class="vl-n" id="vrNota"></div>
     </div>
@@ -3887,7 +3898,7 @@ function tagNeg(o){
 let redCapa = null;
 
 function gruposRojos(){
-  return RED && RED.grupos ? RED.grupos.filter(function(g){ return g.nivel === 'rojo'; }).length : 0;
+  return RED && RED.grupos ? RED.grupos.filter(function(g){ return g.nivel === 'rojo' || g.confirmada; }).length : 0;
 }
 
 function renderBotonRed(){
@@ -3936,9 +3947,11 @@ function tituloGrupoRed(g){
 }
 
 function selloGrupoRed(g){
-  if(g.tipo === 'nap')  return g.n_dir + ' casas en la misma NAP';
-  if(g.tipo === 'hfc')  return g.n_dir + ' casas en el mismo nodo';
-  return g.n_dir + ' casas en el nodo, ' + g.n_nap + ' NAP distintas';
+  const cs = g.n_dir === 1 ? '1 casa' : g.n_dir + ' casas';
+  if(g.tipo === 'nap')  return cs + ' en la misma NAP';
+  if(g.tipo === 'hfc')  return cs + ' en el mismo nodo';
+  if(g.n_dir === 1)     return cs + ' en el nodo';
+  return cs + ' en el nodo, ' + g.n_nap + ' NAP distintas';
 }
 
 function explicaGrupoRed(g){
@@ -3949,6 +3962,7 @@ function explicaGrupoRed(g){
   let t;
   if(g.tipo === 'nap') t = 'Clientes distintos colgados del mismo equipo: puede ser la NAP y no las casas.';
   else if(g.tipo === 'hfc') t = 'En HFC no hay NAP: el nodo es lo que falla. Puede ser una falla del sector.';
+  else if(g.confirmada) t = g.n_dir === 1 ? 'Por ahora es la única casa con reparación hoy en este nodo.' : 'Mismo nodo, cada casa en su NAP.';
   else t = 'Mismo nodo, pero cada casa en su NAP. Por ahora solo para vigilar.';
   if(nfr > 1) t += ' Van en ' + nfr + ' franjas distintas.';
   if(buck) t += ' ' + (buck === g.ots.length ? 'Todas siguen' : buck + ' siguen') + ' en el bucket.';
@@ -3972,10 +3986,14 @@ function renderRed(){
     return;
   }
   const grupos = RED.grupos || [];
-  const rojos = grupos.filter(function(g){ return g.nivel === 'rojo'; });
-  const ambar = grupos.filter(function(g){ return g.nivel !== 'rojo'; });
+  // falla masiva confirmada (24-09-2026): alguna reparacion del grupo cerro
+  // con codigo "Falla Masiva"; va primero, aparte de los rojos y ambar
+  const conf = grupos.filter(function(g){ return g.confirmada; });
+  const rojos = grupos.filter(function(g){ return g.nivel === 'rojo' && !g.confirmada; });
+  const ambar = grupos.filter(function(g){ return g.nivel !== 'rojo' && !g.confirmada; });
 
   chips.innerHTML = '<span class="fchip"><b>' + (RED.n_rep||0) + '</b> reparaciones hoy</span>'
+    + (conf.length ? '<span class="fchip"><b>' + conf.length + '</b> falla masiva confirmada</span>' : '')
     + '<span class="fchip"><b>' + rojos.length + '</b> posible falla de red</span>'
     + '<span class="fchip"><b>' + ambar.length + '</b> para vigilar</span>';
   intro.innerHTML = 'Reparaciones del día que cuelgan del mismo punto de la red, '
@@ -4004,13 +4022,18 @@ function renderRed(){
             + '<td class="rd-tec' + (buck ? ' buck' : '') + '">' + escR(w.tec) + '</td>'
             + '<td><span class="bes ' + besRed(w.e) + '">' + escR(w.e || 'Pendiente') + '</span></td>'
             + '<td>' + redTxt + (w.pto ? '<br><span class="rd-pto">' + escR(w.pto) + '</span>' : '') + '</td>'
-            + '<td>' + (w.cie ? escR(w.cie) + (w.der ? '<br><span style="color:#64748b">deriv. ' + escR(w.der) + '</span>' : '')
+            + '<td>' + (w.cie ? (/falla masiva/i.test(w.cie) ? '<b style="color:#991b1b">' + escR(w.cie) + '</b>' : escR(w.cie)) + (w.der ? '<br><span style="color:#64748b">deriv. ' + escR(w.der) + '</span>' : '')
                               : '<span style="color:#94a3b8">—</span>') + '</td>'
             + '</tr>';
         }).join('');
-        html += '<div class="rd-card ' + (g.nivel === 'rojo' ? 'rojo' : 'ambar') + '">'
+        const pend = g.ots.filter(function(w){ return ['Completado','No Realizada','Suspendido','Cancelado'].indexOf(w.e) < 0; }).length;
+        html += '<div class="rd-card ' + (g.confirmada ? 'masiva' : (g.nivel === 'rojo' ? 'rojo' : 'ambar')) + '">'
           + '<div class="rd-top"><span class="rd-tit">' + escR(tituloGrupoRed(g)) + '</span>'
-          + '<span class="rd-sello">' + escR(selloGrupoRed(g)) + '</span></div>'
+          + '<span class="rd-sello">' + escR(g.confirmada ? 'Falla masiva confirmada · ' + selloGrupoRed(g) : selloGrupoRed(g)) + '</span></div>'
+          + (g.confirmada ? '<div class="rd-conf">Una reparación de este grupo cerró como <b>Falla Masiva</b>. '
+              + (pend ? (pend === 1 ? 'La que sigue sin cerrar probablemente es' : 'Las ' + pend + ' que siguen sin cerrar probablemente son')
+                        + ' la misma falla: confirma con VTR/CLARO qué sector cubre antes de mandar técnicos.'
+                      : 'Ya no quedan reparaciones sin cerrar en este grupo.') + '</div>' : '')
           + '<div class="rd-sub">' + escR(explicaGrupoRed(g)) + '</div>'
           + '<div class="rd-scroll"><table class="rd-tabla">'
           + '<tr><th>Orden</th><th>Dirección</th><th>Tipo</th><th>Franja</th><th>Técnico</th><th>Estado</th><th>Red / puerto NAP</th><th>Cierre</th></tr>'
@@ -4019,6 +4042,7 @@ function renderRed(){
           + '</div>';
       });
     }
+    tarjetas(conf, 'Falla masiva confirmada');
     tarjetas(rojos, 'Posible falla de red');
     tarjetas(ambar, 'Para vigilar');
     cont.innerHTML = html;
@@ -4332,6 +4356,11 @@ function pintarCapaRed(){
     if(w.kd) (hoyNodoSet[w.kd] = hoyNodoSet[w.kd] || {})[claveDir(w.d || w.o)] = 1;
   });
   Object.keys(hoyNodoSet).forEach(function(k){ hoyNodo[k] = Object.keys(hoyNodoSet[k]).length; });
+  // nodos donde alguna reparacion de hoy cerro "Falla Masiva": confirmados
+  const masivaNodo = {}, masivaNap = {};
+  ((RED && RED.todas) || []).forEach(function(w){
+    if(/falla masiva/i.test(w.cie || '')){ if(w.kd) masivaNodo[w.kd] = 1; if(w.kn) masivaNap[w.kn] = 1; }
+  });
 
   const R = REDMAPA || { naps:[], nodos:[] };
   const pts = [];
@@ -4344,15 +4373,18 @@ function pintarCapaRed(){
          1 = gris suave, 2 = ambar, 3 o mas = rojo. Antes todo nodo con al
          menos una se pintaba igual de rojo y el que importaba (el 012 con 4)
          se perdia entre los demas. Sin reparacion hoy: color de la paleta. */
-      const col = hoy >= 3 ? '#dc2626' : (hoy === 2 ? '#d97706' : (hoy === 1 ? '#64748b' : COL_NODO[i % COL_NODO.length]));
-      const pol = L.polygon(n.h, { color:col, weight:hoy >= 2 ? 1.8 : 1, dashArray:'5 4',
-        fillColor:col, fillOpacity:hoy >= 3 ? 0.18 : (hoy === 2 ? 0.13 : 0.05) });
-      // etiqueta fija en los nodos con 2 o mas; los demas al pasar el mouse
-      pol.bindTooltip('Nodo ' + n.nodo + (n.red === 'HFC' ? ' HFC' : '') + (hoy ? ' · ' + hoy + ' hoy' : ''),
-        { permanent:hoy >= 2, direction:'center', className:'lbl-nodo' + (hoy >= 3 ? ' hoy' : (hoy === 2 ? ' dos' : '')) });
+      const conf = !!masivaNodo[n.k];
+      const col = conf ? '#7f1d1d' : (hoy >= 3 ? '#dc2626' : (hoy === 2 ? '#d97706' : (hoy === 1 ? '#64748b' : COL_NODO[i % COL_NODO.length])));
+      // falla masiva confirmada: borde lleno y grueso, no punteado
+      const pol = L.polygon(n.h, { color:col, weight:conf ? 3 : (hoy >= 2 ? 1.8 : 1), dashArray:conf ? null : '5 4',
+        fillColor:col, fillOpacity:conf ? 0.22 : (hoy >= 3 ? 0.18 : (hoy === 2 ? 0.13 : 0.05)) });
+      // etiqueta fija en los nodos con 2 o mas (o confirmados); los demas al pasar el mouse
+      pol.bindTooltip('Nodo ' + n.nodo + (n.red === 'HFC' ? ' HFC' : '') + (conf ? ' · FALLA MASIVA' : '') + (hoy ? ' · ' + hoy + ' hoy' : ''),
+        { permanent:conf || hoy >= 2, direction:'center', className:'lbl-nodo' + (conf ? ' masiva' : (hoy >= 3 ? ' hoy' : (hoy === 2 ? ' dos' : ''))) });
       pol.bindPopup('<div class="ppred"><h4>Nodo ' + escR(n.nodo) + ' · ' + escR(tituloDir(n.c)) + ' · ' + escR(n.red) + '</h4>'
         + '<div class="s">' + n.casas + ' casas conocidas en este nodo · ' + hoy + ' casa(s) con reparación hoy</div>'
-        + (hoy >= 3 ? '<div class="tt hoy">3 o más casas del mismo nodo hoy: vale la pena preguntar a VTR/CLARO por una falla masiva.</div>' : '')
+        + (conf ? '<div class="tt hoy">Falla masiva CONFIRMADA: una reparación de hoy en este nodo cerró como "Falla Masiva".</div>'
+          : (hoy >= 3 ? '<div class="tt hoy">3 o más casas del mismo nodo hoy: vale la pena preguntar a VTR/CLARO por una falla masiva.</div>' : ''))
         + '</div>');
       pol.addTo(grpRedNodos);
     });
