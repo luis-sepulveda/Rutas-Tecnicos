@@ -9813,23 +9813,23 @@
    }
   },
   "24-09-2026": {
-   "hasta": "12:20",
-   "actividades": 126,
+   "hasta": "12:25",
+   "actividades": 128,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 14,
-    "Iniciado": 17,
-    "Pendiente": 47,
+    "Iniciado": 19,
+    "Pendiente": 49,
     "Completado": 36,
-    "en ruta": 7,
+    "en ruta": 5,
     "Cancelado": 3,
     "Suspendido": 2
    },
-   "rgu": 185.7,
+   "rgu": 186.8,
    "caidas_total": 7,
    "caidas_activas": 7,
    "caidas_resueltas": 0,
-   "nuevas": 27,
+   "nuevas": 29,
    "al_bucket": 7,
    "repetidas": 22,
    "reagendadas": 2,
@@ -9900,6 +9900,24 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O0XVM92",
+      "tec": "EDGAR VALERO C",
+      "cat": "Modificación de Servicio",
+      "f": "10-13",
+      "hi": "12:21",
+      "d": "PEDRO MONTT 1079, QUILPUE",
+      "e": "Iniciado"
+     },
+     {
+      "o": "1-3O0YCRW2",
+      "tec": "RAFAEL VARGAS B",
+      "cat": "Modificación de Servicio",
+      "f": "10-13",
+      "hi": "13:18",
+      "d": "BUENOS AIRES 861, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3O0XDI7D",
       "tec": "RAFAEL VARGAS B",
@@ -10078,7 +10096,7 @@
       "f": "10-13",
       "hi": "11:53",
       "d": "PJE ANTUMAPU 572, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O0TGTSZ",
@@ -10233,9 +10251,9 @@
       "o": "1-3O0TVVJ9",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "12:21",
+      "hi": "12:20",
       "d": "PJE ANTUMAPU 572, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JOEL GUSTAVE GUSTA",
       "visitas": 3,
       "ult_fecha": "14-08-2026",
@@ -10317,7 +10335,7 @@
       "o": "1-3NZA1Q0B",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "16:34",
       "d": "MADRID 1050 CASA 4, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -10435,5 +10453,5 @@
    }
   }
  },
- "generado": "24-09-2026 12:20"
+ "generado": "24-09-2026 12:25"
 }
