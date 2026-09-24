@@ -9813,21 +9813,21 @@
    }
   },
   "24-09-2026": {
-   "hasta": "19:13",
-   "actividades": 167,
+   "hasta": "19:18",
+   "actividades": 168,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 47,
     "Completado": 110,
-    "Iniciado": 2,
+    "Iniciado": 3,
     "Cancelado": 5,
     "Suspendido": 3
    },
-   "rgu": 231.9,
+   "rgu": 232.0,
    "caidas_total": 15,
    "caidas_activas": 14,
    "caidas_resueltas": 1,
-   "nuevas": 50,
+   "nuevas": 51,
    "al_bucket": 14,
    "repetidas": 27,
    "reagendadas": 3,
@@ -9961,6 +9961,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O1BZHN4",
+      "tec": "NICOLAS MOYANO R",
+      "cat": "Modificación de Servicio",
+      "f": "19-21",
+      "hi": "19:15",
+      "d": "CAMINO DEL SOL 2300 CASA 5-E, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3O19PD0T",
       "tec": "MATÍAS JAQUE AG",
@@ -10772,5 +10781,5 @@
    }
   }
  },
- "generado": "24-09-2026 19:13"
+ "generado": "24-09-2026 19:18"
 }
