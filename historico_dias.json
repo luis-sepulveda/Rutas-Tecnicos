@@ -9813,26 +9813,26 @@
    }
   },
   "24-09-2026": {
-   "hasta": "13:10",
-   "actividades": 151,
+   "hasta": "13:40",
+   "actividades": 156,
    "tecnicos": 36,
    "estados": {
-    "No Realizada": 16,
-    "Iniciado": 24,
+    "No Realizada": 21,
+    "en ruta": 3,
     "Pendiente": 57,
-    "Completado": 44,
-    "en ruta": 4,
+    "Completado": 45,
+    "Iniciado": 24,
     "Cancelado": 4,
     "Suspendido": 2
    },
-   "rgu": 218.4,
-   "caidas_total": 7,
-   "caidas_activas": 7,
+   "rgu": 226.9,
+   "caidas_total": 9,
+   "caidas_activas": 9,
    "caidas_resueltas": 0,
-   "nuevas": 34,
+   "nuevas": 39,
    "al_bucket": 7,
-   "repetidas": 26,
-   "reagendadas": 2,
+   "repetidas": 27,
+   "reagendadas": 3,
    "detalle": {
     "caidas": [
      {
@@ -9860,6 +9860,24 @@
       "f": "10-13",
       "hi": "10:56",
       "d": "SANTA MARGARITA 1319, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3NZA1Q0B",
+      "tec": "JOSE ROJO A",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "16:40",
+      "d": "MADRID 1050 CASA 4, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3O0A3FCQ",
+      "tec": "KEVIN TAPIA RETAMAL",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "17:25",
+      "d": "MANUEL PLAZA 9, QUILPUE",
       "e": "Pendiente"
      },
      {
@@ -9901,8 +9919,53 @@
     ],
     "nuevas": [
      {
-      "o": "1-3O0ZNEFK",
+      "o": "1-3NWUM8QC",
+      "tec": "MATÍAS JAQUE AG",
+      "cat": "Migración 1 Play",
+      "f": "16-19",
+      "hi": "17:31",
+      "d": "MARCONI 744, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3O10H2LL",
       "tec": "LUIS MARTIN NUÑEZ",
+      "cat": "Migración 1 Play",
+      "f": "16-19",
+      "hi": "16:44",
+      "d": "PJE TURQUESA 20, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3O10KZCO",
+      "tec": "JOSE GALAZ D",
+      "cat": "Migración 2 Play",
+      "f": "10-13",
+      "hi": "15:30",
+      "d": "CALLE TRES 980, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3O10DCSU",
+      "tec": "EDGAR VALERO C",
+      "cat": "Reparación",
+      "f": "13-16",
+      "hi": "15:38",
+      "d": "EL AMANECER 1343, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3O1051P2",
+      "tec": "JEAN ROODLY ORELIEN",
+      "cat": "Migración 3 Play",
+      "f": "13-16",
+      "hi": "15:26",
+      "d": "PORVENIR 1259, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3O0ZNEFK",
+      "tec": "HERNAN CORTES HERRERA",
       "cat": "Migración 3 Play",
       "f": "13-16",
       "hi": "16:40",
@@ -9916,16 +9979,16 @@
       "f": "13-16",
       "hi": "13:07",
       "d": "VIA UNO SIETE 2065 EDIF. E DEPTO 53, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O0Z6CRC",
-      "tec": "DANIEL NAVARRETE E",
+      "tec": "CESAR MENA OLIVEROS",
       "cat": "Migración 2 Play",
       "f": "13-16",
       "hi": "16:24",
       "d": "MATEO DE TORO Y ZAMBRANO 921 CASA 39, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O0Z3R1M",
@@ -10186,7 +10249,7 @@
       "f": "13-16",
       "hi": "14:19",
       "d": "DON BOSCO 1250, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O0DYJPE",
@@ -10214,7 +10277,7 @@
       "f": "13-16",
       "hi": "12:49",
       "d": "EPSILON 2030 EDIF. A DEPTO 22, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "CESAR MENA OLIVEROS",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -10224,7 +10287,7 @@
       "o": "1-3O0U4OL3",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:33",
+      "hi": "14:57",
       "d": "PJE TURQUESA 13, QUILPUE",
       "e": "Pendiente",
       "tec": "CRISTOBAL SILVA LEIVA",
@@ -10298,7 +10361,7 @@
       "f": "13-16",
       "hi": "12:45",
       "d": "LEUCOTON 990 CASA C, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "HERNAN CORTES HERRERA",
       "visitas": 1,
       "ult_fecha": "11-09-2026",
@@ -10355,7 +10418,7 @@
       "o": "1-3NYKPFG1",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:59",
+      "hi": "17:16",
       "d": "CUMMING 831, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -10388,18 +10451,6 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3NZA1Q0B",
-      "cat": "Alta 1 Play",
-      "f": "16-19",
-      "hi": "16:40",
-      "d": "MADRID 1050 CASA 4, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "JOSE ROJO A",
-      "visitas": 1,
-      "ult_fecha": "22-09-2026",
-      "ult_cierre": "Ductos tapados"
-     },
-     {
       "o": "1-3O0TP83N",
       "cat": "Alta 2 Play",
       "f": "10-13",
@@ -10424,6 +10475,18 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3O10H2LL",
+      "cat": "Migración 1 Play",
+      "f": "16-19",
+      "hi": "16:44",
+      "d": "PJE TURQUESA 20, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LUIS MARTIN NUÑEZ",
+      "visitas": 1,
+      "ult_fecha": "24-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3NZK0OL6",
       "cat": "Migración 3 Play",
       "f": "10-13",
@@ -10439,7 +10502,7 @@
       "o": "1-3O0V7XF3",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:48",
+      "hi": "14:58",
       "d": "CRISTOBAL COLON 0326, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -10460,10 +10523,22 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
+      "o": "1-3NWUM8QC",
+      "cat": "Migración 1 Play",
+      "f": "16-19",
+      "hi": "17:31",
+      "d": "MARCONI 744, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "MATÍAS JAQUE AG",
+      "visitas": 1,
+      "ult_fecha": "17-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3O0IDSIG",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:49",
+      "hi": "14:55",
       "d": "MATURANA 34, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -10475,9 +10550,9 @@
       "o": "1-3O03LHEY",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "13:28",
+      "hi": "13:31",
       "d": "PJE 610 865, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "SEBASTIAN DOSSOW A",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -10540,10 +10615,20 @@
       "e": "Completado",
       "tec": "HERNAN CORTES HERRERA",
       "desde": "23-09-2026"
+     },
+     {
+      "o": "1-3NWUM8QC",
+      "cat": "Migración 1 Play",
+      "f": "16-19",
+      "hi": "17:31",
+      "d": "MARCONI 744, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "MATÍAS JAQUE AG",
+      "desde": "22-09-2026"
      }
     ]
    }
   }
  },
- "generado": "24-09-2026 13:10"
+ "generado": "24-09-2026 13:40"
 }
