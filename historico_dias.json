@@ -9813,18 +9813,18 @@
    }
   },
   "24-09-2026": {
-   "hasta": "09:05",
-   "actividades": 93,
-   "tecnicos": 37,
+   "hasta": "09:10",
+   "actividades": 92,
+   "tecnicos": 36,
    "estados": {
-    "Pendiente": 93
+    "Pendiente": 92
    },
-   "rgu": 149.0,
+   "rgu": 148.0,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
    "nuevas": 1,
-   "al_bucket": 0,
+   "al_bucket": 1,
    "repetidas": 19,
    "reagendadas": 2,
    "detalle": {
@@ -10095,5 +10095,5 @@
    }
   }
  },
- "generado": "24-09-2026 09:05"
+ "generado": "24-09-2026 09:10"
 }
