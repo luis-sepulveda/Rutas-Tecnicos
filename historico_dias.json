@@ -9813,13 +9813,13 @@
    }
   },
   "24-09-2026": {
-   "hasta": "09:10",
-   "actividades": 92,
+   "hasta": "09:15",
+   "actividades": 91,
    "tecnicos": 36,
    "estados": {
-    "Pendiente": 92
+    "Pendiente": 91
    },
-   "rgu": 148.0,
+   "rgu": 145.0,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
@@ -10095,5 +10095,5 @@
    }
   }
  },
- "generado": "24-09-2026 09:10"
+ "generado": "24-09-2026 09:15"
 }
