@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-09-24T10:25:18",
+  "actualizado": "2026-09-24T10:55:25",
   "resumen": {
     "sin informacion": 1,
-    "reagendada": 2
+    "reagendada": 3
   },
   "estados": {
     "1-3O0IB2ZT": {
@@ -12,6 +12,16 @@
       "d": "JOSE FUENTES 921 DEPTO 31, QUILPUE",
       "estado": "sin informacion",
       "nota": "la OT ya no existe en TOA"
+    },
+    "1-3O0UKIHN": {
+      "tec": "JOEL GUSTAVE GUSTA",
+      "cat": "Migración 3 Play",
+      "franja_original": "10-13",
+      "d": "MADRID 1050 CASA 2, VILLA ALEMANA",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3O0UKIHN - 13-16-Migración-Migración-MADRID 1050 CASA 2Sab, 26 Sep",
+      "franja_nueva": "13-16"
     },
     "1-3NZL8KQK": {
       "tec": "JOSE CASTRO P",
