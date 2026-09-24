@@ -9813,21 +9813,21 @@
    }
   },
   "24-09-2026": {
-   "hasta": "17:57",
-   "actividades": 163,
+   "hasta": "18:02",
+   "actividades": 164,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 45,
-    "Completado": 96,
+    "Completado": 97,
     "Iniciado": 14,
     "Cancelado": 5,
     "Suspendido": 3
    },
-   "rgu": 229.7,
+   "rgu": 230.7,
    "caidas_total": 15,
    "caidas_activas": 14,
    "caidas_resueltas": 1,
-   "nuevas": 48,
+   "nuevas": 49,
    "al_bucket": 14,
    "repetidas": 27,
    "reagendadas": 3,
@@ -9961,6 +9961,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O1A0Z6I",
+      "tec": "MARCO PEREZ G",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "17:58",
+      "d": "FRODDEN 01835, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3O19MRVJ",
       "tec": "GEEYSER PEREZ O",
@@ -10754,5 +10763,5 @@
    }
   }
  },
- "generado": "24-09-2026 17:57"
+ "generado": "24-09-2026 18:02"
 }
