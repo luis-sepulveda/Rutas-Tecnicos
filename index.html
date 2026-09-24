@@ -4126,7 +4126,7 @@ function renderReit(){
     + '<span class="fchip"><b>' + items.length + '</b> reiteradas</span>'
     + '<span class="fchip"><b>' + cerca + '</b> de la última semana</span>';
   intro.innerHTML = 'Reparaciones de hoy en una casa donde un técnico de Dominion completó una '
-    + '<b>alta, migración o reparación en los últimos ' + dias + ' días</b>, '
+    + '<b>alta, traslado, migración o reparación en los últimos ' + dias + ' días</b>, '
     + 'o hoy mismo antes de la reparación. '
     + 'Incluye las que siguen en el bucket. No entran las canceladas.';
 
@@ -4167,7 +4167,7 @@ function renderReit(){
         + '</div>';
     }).join('');
   }
-  nota.textContent = 'Reiterada = en la misma dirección (con casa y depto) hubo una alta, migración o '
+  nota.textContent = 'Reiterada = en la misma dirección (con casa y depto) hubo una alta, traslado, migración o '
     + 'reparación completada en los últimos ' + dias + ' días, o hoy mismo si terminó antes de que '
     + 'empezara la reparación. Solo se ven trabajos de técnicos de Dominion (los días anteriores salen '
     + 'del Historial por técnico; los de hoy, del export en vivo). En rojo, las de la última semana.';
