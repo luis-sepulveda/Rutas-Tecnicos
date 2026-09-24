@@ -9813,13 +9813,13 @@
    }
   },
   "24-09-2026": {
-   "hasta": "17:52",
+   "hasta": "17:57",
    "actividades": 163,
    "tecnicos": 36,
    "estados": {
-    "No Realizada": 43,
-    "Completado": 95,
-    "Iniciado": 17,
+    "No Realizada": 45,
+    "Completado": 96,
+    "Iniciado": 14,
     "Cancelado": 5,
     "Suspendido": 3
    },
@@ -10013,7 +10013,7 @@
       "f": "16-19",
       "hi": "17:26",
       "d": "SANTIAGO 780, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3O13CDDE",
@@ -10401,7 +10401,7 @@
       "f": "16-19",
       "hi": "17:30",
       "d": "GLACIAR TAPADO 3191 CASA 39, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "ALFREDO ALCAYAGA F",
       "visitas": 1,
       "ult_fecha": "14-09-2026",
@@ -10754,5 +10754,5 @@
    }
   }
  },
- "generado": "24-09-2026 17:52"
+ "generado": "24-09-2026 17:57"
 }
