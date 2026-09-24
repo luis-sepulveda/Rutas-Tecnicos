@@ -9813,15 +9813,15 @@
    }
   },
   "24-09-2026": {
-   "hasta": "13:40",
+   "hasta": "13:45",
    "actividades": 156,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 21,
-    "en ruta": 3,
+    "en ruta": 2,
     "Pendiente": 57,
     "Completado": 45,
-    "Iniciado": 24,
+    "Iniciado": 25,
     "Cancelado": 4,
     "Suspendido": 2
    },
@@ -9988,7 +9988,7 @@
       "f": "13-16",
       "hi": "16:24",
       "d": "MATEO DE TORO Y ZAMBRANO 921 CASA 39, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O0Z3R1M",
@@ -10287,7 +10287,7 @@
       "o": "1-3O0U4OL3",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:57",
+      "hi": "15:10",
       "d": "PJE TURQUESA 13, QUILPUE",
       "e": "Pendiente",
       "tec": "CRISTOBAL SILVA LEIVA",
@@ -10347,7 +10347,7 @@
       "o": "1-3NZ590ZD",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:22",
+      "hi": "16:37",
       "d": "LOS ALERCES 951, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -10630,5 +10630,5 @@
    }
   }
  },
- "generado": "24-09-2026 13:40"
+ "generado": "24-09-2026 13:45"
 }
