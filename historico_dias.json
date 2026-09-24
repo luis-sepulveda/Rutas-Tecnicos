@@ -9813,13 +9813,13 @@
    }
   },
   "24-09-2026": {
-   "hasta": "18:22",
+   "hasta": "18:27",
    "actividades": 166,
    "tecnicos": 36,
    "estados": {
-    "No Realizada": 45,
+    "No Realizada": 46,
     "Completado": 103,
-    "Iniciado": 10,
+    "Iniciado": 9,
     "Cancelado": 5,
     "Suspendido": 3
    },
@@ -9968,7 +9968,7 @@
       "f": "16-19",
       "hi": "18:54",
       "d": "PORVENIR 26, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3O1A0Z6I",
@@ -10772,5 +10772,5 @@
    }
   }
  },
- "generado": "24-09-2026 18:22"
+ "generado": "24-09-2026 18:27"
 }
