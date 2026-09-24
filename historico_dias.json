@@ -9813,13 +9813,13 @@
    }
   },
   "24-09-2026": {
-   "hasta": "18:32",
+   "hasta": "18:37",
    "actividades": 166,
    "tecnicos": 36,
    "estados": {
-    "No Realizada": 46,
-    "Completado": 105,
-    "Iniciado": 7,
+    "No Realizada": 47,
+    "Completado": 106,
+    "Iniciado": 5,
     "Cancelado": 5,
     "Suspendido": 3
    },
@@ -10467,7 +10467,7 @@
       "f": "13-16",
       "hi": "15:53",
       "d": "MATURANA 34, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "ESTEBAN PIZARRO QUINTANA",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -10772,5 +10772,5 @@
    }
   }
  },
- "generado": "24-09-2026 18:32"
+ "generado": "24-09-2026 18:37"
 }
