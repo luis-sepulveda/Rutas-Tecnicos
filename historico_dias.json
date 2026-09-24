@@ -9813,14 +9813,14 @@
    }
   },
   "24-09-2026": {
-   "hasta": "14:35",
+   "hasta": "14:40",
    "actividades": 156,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 26,
     "Completado": 58,
-    "Pendiente": 44,
-    "Iniciado": 17,
+    "Pendiente": 43,
+    "Iniciado": 18,
     "en ruta": 5,
     "Cancelado": 4,
     "Suspendido": 2
@@ -10520,7 +10520,7 @@
       "o": "1-3O0V7XF3",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:44",
+      "hi": "15:54",
       "d": "CRISTOBAL COLON 0326, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -10544,7 +10544,7 @@
       "o": "1-3NWUM8QC",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "18:13",
+      "hi": "18:41",
       "d": "MARCONI 744, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -10580,7 +10580,7 @@
       "o": "1-3NZZ1KXE",
       "cat": "Migración 3 Play",
       "f": "16-19",
-      "hi": "17:07",
+      "hi": "17:09",
       "d": "MALU GATICA 1320, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
@@ -10638,7 +10638,7 @@
       "o": "1-3NWUM8QC",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "18:13",
+      "hi": "18:41",
       "d": "MARCONI 744, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -10648,5 +10648,5 @@
    }
   }
  },
- "generado": "24-09-2026 14:35"
+ "generado": "24-09-2026 14:40"
 }
