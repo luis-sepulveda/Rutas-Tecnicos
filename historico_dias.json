@@ -9813,25 +9813,25 @@
    }
   },
   "24-09-2026": {
-   "hasta": "13:50",
-   "actividades": 156,
+   "hasta": "13:55",
+   "actividades": 157,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 22,
-    "Iniciado": 25,
+    "Iniciado": 23,
     "Pendiente": 55,
-    "Completado": 46,
+    "Completado": 48,
+    "en ruta": 3,
     "Cancelado": 4,
-    "en ruta": 2,
     "Suspendido": 2
    },
-   "rgu": 226.9,
+   "rgu": 227.9,
    "caidas_total": 9,
    "caidas_activas": 9,
    "caidas_resueltas": 0,
    "nuevas": 39,
    "al_bucket": 7,
-   "repetidas": 27,
+   "repetidas": 28,
    "reagendadas": 3,
    "detalle": {
     "caidas": [
@@ -10403,6 +10403,18 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3O0ZIORG",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "16:17",
+      "d": "PAUL HARRIS 807 EDIF. C DEPTO 108, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JOSE CASTRO P",
+      "visitas": 1,
+      "ult_fecha": "24-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3O0WLU7S",
       "cat": "Alta 1 Play",
       "f": "13-16",
@@ -10418,7 +10430,7 @@
       "o": "1-3NYKPFG1",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:29",
+      "hi": "17:28",
       "d": "CUMMING 831, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -10526,7 +10538,7 @@
       "o": "1-3NWUM8QC",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "17:31",
+      "hi": "17:56",
       "d": "MARCONI 744, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -10620,7 +10632,7 @@
       "o": "1-3NWUM8QC",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "17:31",
+      "hi": "17:56",
       "d": "MARCONI 744, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -10630,5 +10642,5 @@
    }
   }
  },
- "generado": "24-09-2026 13:50"
+ "generado": "24-09-2026 13:55"
 }
