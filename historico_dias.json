@@ -9813,21 +9813,22 @@
    }
   },
   "24-09-2026": {
-   "hasta": "18:02",
-   "actividades": 164,
+   "hasta": "18:07",
+   "actividades": 165,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 45,
-    "Completado": 97,
-    "Iniciado": 14,
+    "Completado": 98,
+    "Iniciado": 13,
+    "Pendiente": 1,
     "Cancelado": 5,
     "Suspendido": 3
    },
-   "rgu": 230.7,
+   "rgu": 230.8,
    "caidas_total": 15,
    "caidas_activas": 14,
    "caidas_resueltas": 1,
-   "nuevas": 49,
+   "nuevas": 50,
    "al_bucket": 14,
    "repetidas": 27,
    "reagendadas": 3,
@@ -9962,6 +9963,15 @@
     ],
     "nuevas": [
      {
+      "o": "1-3O19PD0T",
+      "tec": "CRISTOBAL SILVA LEIVA",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "18:54",
+      "d": "PORVENIR 26, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3O1A0Z6I",
       "tec": "MARCO PEREZ G",
       "cat": "Modificación de Servicio",
@@ -10049,7 +10059,7 @@
       "f": "16-19",
       "hi": "16:14",
       "d": "BUENOS AIRES 1613 CASA 5, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NWUM8QC",
@@ -10441,6 +10451,18 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3O19PD0T",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "18:54",
+      "d": "PORVENIR 26, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "CRISTOBAL SILVA LEIVA",
+      "visitas": 1,
+      "ult_fecha": "22-09-2026",
+      "ult_cierre": "Cliente reagenda"
+     },
+     {
       "o": "1-3O08CWY3",
       "cat": "Alta 2 Play",
       "f": "10-13",
@@ -10692,18 +10714,6 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
-      "o": "1-3NZAH7WL",
-      "cat": "Alta 2 Play",
-      "f": "10-13",
-      "hi": "11:19",
-      "d": "PORVENIR 26, VILLA ALEMANA",
-      "e": "Completado",
-      "tec": "MATÍAS JAQUE AG",
-      "visitas": 1,
-      "ult_fecha": "22-09-2026",
-      "ult_cierre": "Cliente reagenda"
-     },
-     {
       "o": "1-3O03LHEY",
       "cat": "Alta 2 Play",
       "f": "13-16",
@@ -10763,5 +10773,5 @@
    }
   }
  },
- "generado": "24-09-2026 18:02"
+ "generado": "24-09-2026 18:07"
 }
