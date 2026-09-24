@@ -9813,23 +9813,23 @@
    }
   },
   "24-09-2026": {
-   "hasta": "13:00",
-   "actividades": 146,
+   "hasta": "13:05",
+   "actividades": 151,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 16,
-    "Iniciado": 21,
-    "Pendiente": 52,
+    "Iniciado": 23,
+    "Pendiente": 57,
     "Completado": 44,
-    "en ruta": 7,
+    "en ruta": 5,
     "Cancelado": 4,
     "Suspendido": 2
    },
-   "rgu": 211.4,
+   "rgu": 218.4,
    "caidas_total": 7,
    "caidas_activas": 7,
    "caidas_resueltas": 0,
-   "nuevas": 33,
+   "nuevas": 34,
    "al_bucket": 7,
    "repetidas": 26,
    "reagendadas": 2,
@@ -9900,6 +9900,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O0ZNEFK",
+      "tec": "LUIS MARTIN NUÑEZ",
+      "cat": "Migración 3 Play",
+      "f": "13-16",
+      "hi": "16:40",
+      "d": "LINCOYAN 1410 EDIF. C DEPTO 23, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3O0ZDP6Y",
       "tec": "RAFAEL VARGAS B",
@@ -10215,7 +10224,7 @@
       "o": "1-3O0U4OL3",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:18",
+      "hi": "14:33",
       "d": "PJE TURQUESA 13, QUILPUE",
       "e": "Pendiente",
       "tec": "CRISTOBAL SILVA LEIVA",
@@ -10239,7 +10248,7 @@
       "o": "1-3O0I9FOT",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "16:54",
       "d": "SEGUNDO DE LINEA 2498, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -10334,7 +10343,7 @@
       "o": "1-3O0WLU7S",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "14:01",
       "d": "ADRIAZOLA 2672, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -10346,7 +10355,7 @@
       "o": "1-3NYKPFG1",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:49",
+      "hi": "16:59",
       "d": "CUMMING 831, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -10382,7 +10391,7 @@
       "o": "1-3NZA1Q0B",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:34",
+      "hi": "16:40",
       "d": "MADRID 1050 CASA 4, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -10406,7 +10415,7 @@
       "o": "1-3NZ6LKOY",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:04",
+      "hi": "16:30",
       "d": "GLACIAR TAPADO 3191 CASA 39, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -10454,7 +10463,7 @@
       "o": "1-3O0IDSIG",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:40",
+      "hi": "14:49",
       "d": "MATURANA 34, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -10536,5 +10545,5 @@
    }
   }
  },
- "generado": "24-09-2026 13:00"
+ "generado": "24-09-2026 13:05"
 }
