@@ -9813,19 +9813,19 @@
    }
   },
   "24-09-2026": {
-   "hasta": "14:00",
-   "actividades": 157,
+   "hasta": "14:05",
+   "actividades": 156,
    "tecnicos": 36,
    "estados": {
     "No Realizada": 24,
-    "Completado": 51,
-    "Pendiente": 54,
-    "en ruta": 3,
-    "Iniciado": 19,
+    "Completado": 52,
+    "Pendiente": 51,
+    "en ruta": 2,
+    "Iniciado": 21,
     "Cancelado": 4,
     "Suspendido": 2
    },
-   "rgu": 227.9,
+   "rgu": 225.4,
    "caidas_total": 9,
    "caidas_activas": 9,
    "caidas_resueltas": 0,
@@ -10240,7 +10240,7 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "PAKISTAN 943, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O0T2V89",
@@ -10430,7 +10430,7 @@
       "o": "1-3NYKPFG1",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:28",
+      "hi": "17:19",
       "d": "CUMMING 831, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -10514,7 +10514,7 @@
       "o": "1-3O0V7XF3",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:11",
+      "hi": "15:34",
       "d": "CRISTOBAL COLON 0326, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -10574,9 +10574,9 @@
       "o": "1-3NZZ1KXE",
       "cat": "Migración 3 Play",
       "f": "16-19",
-      "hi": "14:10",
+      "hi": "16:00",
       "d": "MALU GATICA 1320, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
       "visitas": 2,
       "ult_fecha": "24-08-2026",
@@ -10642,5 +10642,5 @@
    }
   }
  },
- "generado": "24-09-2026 14:00"
+ "generado": "24-09-2026 14:05"
 }
