@@ -10780,25 +10780,24 @@
    }
   },
   "25-09-2026": {
-   "hasta": "13:41",
-   "actividades": 149,
+   "hasta": "13:46",
+   "actividades": 151,
    "tecnicos": 34,
    "estados": {
     "Completado": 40,
-    "Iniciado": 25,
-    "Pendiente": 63,
+    "Iniciado": 26,
+    "Pendiente": 65,
     "No Realizada": 14,
     "Cancelado": 4,
-    "en ruta": 1,
     "Suspendido": 2
    },
-   "rgu": 236.9,
+   "rgu": 238.9,
    "caidas_total": 5,
    "caidas_activas": 5,
    "caidas_resueltas": 0,
-   "nuevas": 27,
+   "nuevas": 28,
    "al_bucket": 8,
-   "repetidas": 25,
+   "repetidas": 26,
    "reagendadas": 7,
    "detalle": {
     "caidas": [
@@ -10849,6 +10848,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O15GWVV",
+      "tec": "JOSE PEREZ RANGEL",
+      "cat": "Reparación",
+      "f": "13-16",
+      "hi": "18:19",
+      "d": "SANTA FE 1430 CASA A, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3O1UTL47",
       "tec": "MATÍAS JAQUE AG",
@@ -11203,6 +11211,18 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
+      "o": "1-3O15GWVV",
+      "cat": "Reparación",
+      "f": "13-16",
+      "hi": "18:19",
+      "d": "SANTA FE 1430 CASA A, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JOSE PEREZ RANGEL",
+      "visitas": 1,
+      "ult_fecha": "24-09-2026",
+      "ult_cierre": "Falla Masiva"
+     },
+     {
       "o": "1-3O1NP0F4",
       "cat": "Alta 1 Play",
       "f": "13-16",
@@ -11470,5 +11490,5 @@
    }
   }
  },
- "generado": "25-09-2026 13:41"
+ "generado": "25-09-2026 13:46"
 }
