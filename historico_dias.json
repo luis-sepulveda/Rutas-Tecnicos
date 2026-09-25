@@ -10780,18 +10780,19 @@
    }
   },
   "25-09-2026": {
-   "hasta": "18:43",
-   "actividades": 169,
+   "hasta": "18:53",
+   "actividades": 170,
    "tecnicos": 35,
    "estados": {
-    "Completado": 115,
-    "No Realizada": 31,
-    "Iniciado": 10,
+    "Completado": 116,
+    "No Realizada": 32,
+    "en ruta": 1,
     "Cancelado": 6,
-    "Suspendido": 5,
-    "Pendiente": 2
+    "Iniciado": 8,
+    "Suspendido": 6,
+    "Pendiente": 1
    },
-   "rgu": 254.5,
+   "rgu": 256.5,
    "caidas_total": 8,
    "caidas_activas": 7,
    "caidas_resueltas": 1,
@@ -10981,7 +10982,7 @@
       "f": "16-19",
       "hi": "16:16",
       "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O1U23HY",
@@ -11053,7 +11054,7 @@
       "f": "13-16",
       "hi": "15:15",
       "d": "LINCOYAN 874, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O1RPWMW",
@@ -11384,9 +11385,9 @@
       "o": "1-3O1TPPMM",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:50",
+      "hi": "18:44",
       "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "LEONEL HERNÁNDEZ OJE",
       "visitas": 1,
       "ult_fecha": "25-09-2026",
@@ -11600,5 +11601,5 @@
    }
   }
  },
- "generado": "25-09-2026 18:43"
+ "generado": "25-09-2026 18:53"
 }
