@@ -10780,18 +10780,17 @@
    }
   },
   "25-09-2026": {
-   "hasta": "19:09",
-   "actividades": 173,
+   "hasta": "19:14",
+   "actividades": 172,
    "tecnicos": 35,
    "estados": {
-    "Completado": 118,
+    "Completado": 121,
     "No Realizada": 32,
-    "Iniciado": 10,
+    "Iniciado": 7,
     "Cancelado": 6,
-    "Suspendido": 6,
-    "Pendiente": 1
+    "Suspendido": 6
    },
-   "rgu": 257.7,
+   "rgu": 256.7,
    "caidas_total": 8,
    "caidas_activas": 7,
    "caidas_resueltas": 1,
@@ -10918,7 +10917,7 @@
       "f": "16-19",
       "hi": "18:27",
       "d": "CASTRO 68, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O1Y5W5X",
@@ -11609,5 +11608,5 @@
    }
   }
  },
- "generado": "25-09-2026 19:09"
+ "generado": "25-09-2026 19:14"
 }
