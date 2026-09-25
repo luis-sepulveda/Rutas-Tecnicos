@@ -10780,12 +10780,12 @@
    }
   },
   "25-09-2026": {
-   "hasta": "13:26",
+   "hasta": "13:36",
    "actividades": 148,
    "tecnicos": 34,
    "estados": {
-    "Completado": 37,
-    "Iniciado": 25,
+    "Completado": 39,
+    "Iniciado": 23,
     "Pendiente": 63,
     "No Realizada": 14,
     "Cancelado": 4,
@@ -11137,7 +11137,7 @@
       "o": "1-3O17GOP9",
       "cat": "Modificación de Servicio",
       "f": "13-16",
-      "hi": "14:57",
+      "hi": "15:08",
       "d": "MONTEVIDEO 205 CASA A, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -11149,7 +11149,7 @@
       "o": "1-3O0EU8WW",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:52",
+      "hi": "17:03",
       "d": "LAS ROSAS 859, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -11209,7 +11209,7 @@
       "o": "1-3O1P80ST",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "17:11",
+      "hi": "16:18",
       "d": "SANTA ROSA 0120, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -11233,7 +11233,7 @@
       "o": "1-3O17I1TA",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:41",
+      "hi": "14:58",
       "d": "SEGUNDO DE LINEA 2498, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -11305,7 +11305,7 @@
       "o": "1-3O10GW79",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:56",
+      "hi": "15:10",
       "d": "LEUCOTON 990 CASA C, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -11317,7 +11317,7 @@
       "o": "1-3NZWJ9KV",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "17:03",
+      "hi": "17:17",
       "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -11343,7 +11343,7 @@
       "f": "10-13",
       "hi": "11:08",
       "d": "MARIA MERCEDES 1482 EDIF. 7 DEPTO 301, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "MATÍAS JAQUE AG",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -11353,7 +11353,7 @@
       "o": "1-3O07WTHS",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:39",
+      "hi": "15:35",
       "d": "HUANHUALI 1549 EDIF. B10 DEPTO 32, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -11393,7 +11393,7 @@
       "f": "13-16",
       "hi": "13:07",
       "d": "LINCOYAN 1410 EDIF. D DEPTO 33, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "CESAR MENA OLIVEROS",
       "desde": "21-09-2026"
      },
@@ -11461,5 +11461,5 @@
    }
   }
  },
- "generado": "25-09-2026 13:26"
+ "generado": "25-09-2026 13:36"
 }
