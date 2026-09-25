@@ -10780,16 +10780,16 @@
    }
   },
   "25-09-2026": {
-   "hasta": "09:50",
-   "actividades": 105,
+   "hasta": "09:55",
+   "actividades": 104,
    "tecnicos": 36,
    "estados": {
-    "en ruta": 9,
-    "Pendiente": 72,
-    "Iniciado": 23,
+    "en ruta": 4,
+    "Pendiente": 69,
+    "Iniciado": 30,
     "Cancelado": 1
    },
-   "rgu": 170.5,
+   "rgu": 169.5,
    "caidas_total": 1,
    "caidas_activas": 1,
    "caidas_resueltas": 0,
@@ -10826,7 +10826,7 @@
       "f": "10-13",
       "hi": "11:53",
       "d": "SANTA FE 1538, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Pendiente (ya no está)"
      },
      {
       "o": "1-3O1MBTHU",
@@ -10903,9 +10903,9 @@
       "o": "1-3O135XXO",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "09:48",
+      "hi": "09:51",
       "d": "CALLE TRES 980, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "LUIS CASTRO TORRES",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -10963,7 +10963,7 @@
       "o": "1-3O1124GP",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "11:54",
+      "hi": "12:09",
       "d": "MARIA MERCEDES 1482 EDIF. 7 DEPTO 301, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -10975,7 +10975,7 @@
       "o": "1-3O10GW79",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:15",
+      "hi": "14:39",
       "d": "LEUCOTON 990 CASA C, QUILPUE",
       "e": "Pendiente",
       "tec": "NICOLAS MOYANO R",
@@ -10987,9 +10987,9 @@
       "o": "1-3O12G5JU",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:53",
       "d": "SANTA RITA 766, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "RAFAEL VARGAS B",
       "visitas": 2,
       "ult_fecha": "24-09-2026",
@@ -10999,7 +10999,7 @@
       "o": "1-3O0UV1G0",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "11:21",
+      "hi": "11:14",
       "d": "AVENIDA VALPARAISO 1696 CASA B, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "RAFAEL VARGAS B",
@@ -11107,5 +11107,5 @@
    }
   }
  },
- "generado": "25-09-2026 09:50"
+ "generado": "25-09-2026 09:55"
 }
