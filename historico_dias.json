@@ -10780,25 +10780,25 @@
    }
   },
   "25-09-2026": {
-   "hasta": "10:45",
-   "actividades": 115,
+   "hasta": "11:05",
+   "actividades": 119,
    "tecnicos": 36,
    "estados": {
-    "Iniciado": 32,
-    "Pendiente": 64,
+    "Iniciado": 29,
+    "Pendiente": 61,
+    "No Realizada": 10,
     "Cancelado": 3,
-    "Completado": 5,
-    "en ruta": 3,
-    "No Realizada": 6,
+    "en ruta": 6,
+    "Completado": 8,
     "Suspendido": 2
    },
-   "rgu": 193.5,
-   "caidas_total": 3,
-   "caidas_activas": 3,
+   "rgu": 197.5,
+   "caidas_total": 4,
+   "caidas_activas": 4,
    "caidas_resueltas": 0,
-   "nuevas": 7,
+   "nuevas": 8,
    "al_bucket": 0,
-   "repetidas": 19,
+   "repetidas": 20,
    "reagendadas": 7,
    "detalle": {
     "caidas": [
@@ -10828,9 +10828,27 @@
       "hi": "11:56",
       "d": "RENE RODRIGUEZ 563 EDIF. B-26 DEPTO 203, QUILPUE",
       "e": "Pendiente"
+     },
+     {
+      "o": "1-3O1N5X6Z",
+      "tec": "SAMUEL FERNANDEZ VIDAL",
+      "cat": "Alta 2 Play",
+      "f": "13-16",
+      "hi": "14:36",
+      "d": "SANTA MARGARITA 1319, VILLA ALEMANA",
+      "e": "Pendiente"
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O1OFG88",
+      "tec": "CRISTOBAL MIRANDA VALENC",
+      "cat": "Reparación",
+      "f": "10-13",
+      "hi": "11:48",
+      "d": "RAFAEL SOTOMAYOR 0842, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3O17I1TA",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -10865,7 +10883,7 @@
       "f": "13-16",
       "hi": "14:17",
       "d": "SANTA MARGARITA 1319, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Pendiente (ya no está)"
      },
      {
       "o": "1-3O1M2I7W",
@@ -10924,7 +10942,7 @@
       "o": "1-3O17I1TA",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:26",
+      "hi": "14:35",
       "d": "SEGUNDO DE LINEA 2498, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -10957,6 +10975,18 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3NY8RCBP",
+      "cat": "Migración 2 Play",
+      "f": "10-13",
+      "hi": "11:29",
+      "d": "AZALEAS PONIENTE 2782, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JORDAN ROA PEREZ",
+      "visitas": 1,
+      "ult_fecha": "21-09-2026",
+      "ult_cierre": "Ductos tapados"
+     },
+     {
       "o": "1-3O1A05E1",
       "cat": "Alta 1 Play",
       "f": "13-16",
@@ -10969,16 +10999,16 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
-      "o": "1-3NY8RCBP",
+      "o": "1-3O1OL0EM",
       "cat": "Migración 2 Play",
-      "f": "10-13",
+      "f": "13-16",
       "hi": "14:00",
-      "d": "AZALEAS PONIENTE 2782, VILLA ALEMANA",
+      "d": "VALLE DEL PARAISO 2746, QUILPUE",
       "e": "Pendiente",
-      "tec": "JOSE ROJO A",
+      "tec": "JOSE SALAS MEDINA",
       "visitas": 1,
-      "ult_fecha": "21-09-2026",
-      "ult_cierre": "Ductos tapados"
+      "ult_fecha": "11-09-2026",
+      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3O12G5JU",
@@ -10998,7 +11028,7 @@
       "f": "10-13",
       "hi": "10:35",
       "d": "LAS CAMELIAS 2525 CASA B, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "KEVIN TAPIA RETAMAL",
       "visitas": 1,
       "ult_fecha": "15-09-2026",
@@ -11015,6 +11045,18 @@
       "visitas": 1,
       "ult_fecha": "24-09-2026",
       "ult_cierre": "Falta de dotación"
+     },
+     {
+      "o": "1-3O1OE64S",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "17:12",
+      "d": "PJE WASHINGTON 1040 CASA 14, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "LUIS GATICA DAVILA",
+      "visitas": 1,
+      "ult_fecha": "25-09-2026",
+      "ult_cierre": "Cliente reagenda"
      },
      {
       "o": "1-3O17GOP9",
@@ -11056,9 +11098,9 @@
       "o": "1-3O1124GP",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "12:09",
+      "hi": "11:02",
       "d": "MARIA MERCEDES 1482 EDIF. 7 DEPTO 301, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "MATÍAS JAQUE AG",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -11068,7 +11110,7 @@
       "o": "1-3O10GW79",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:39",
+      "hi": "14:37",
       "d": "LEUCOTON 990 CASA C, QUILPUE",
       "e": "Pendiente",
       "tec": "NICOLAS MOYANO R",
@@ -11092,7 +11134,7 @@
       "o": "1-3O16NXEY",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "11:13",
+      "hi": "11:19",
       "d": "LAS ACACIAS 1421 EDIF. B DEPTO 311, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -11101,22 +11143,10 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3O1N5X6Z",
-      "cat": "Alta 2 Play",
-      "f": "13-16",
-      "hi": "14:36",
-      "d": "SANTA MARGARITA 1319, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "SAMUEL FERNANDEZ VIDAL",
-      "visitas": 1,
-      "ult_fecha": "25-09-2026",
-      "ult_cierre": "Sin moradores"
-     },
-     {
       "o": "1-3O10NPV9",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:59",
+      "hi": "16:00",
       "d": "EL RINCON 1100 CASA 52, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -11160,9 +11190,9 @@
       "o": "1-3O0W823N",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "11:16",
+      "hi": "11:02",
       "d": "VIA UNO SIETE 2025 EDIF. A DEPTO 33, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "LUIS GATICA DAVILA",
       "desde": "24-09-2026"
      },
@@ -11190,7 +11220,7 @@
       "o": "1-3NY55E4M",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:36",
+      "hi": "14:00",
       "d": "CALLE HERALDO ORREGO 3201 EDIF. A DEPTO 905, QUILPUE",
       "e": "Pendiente",
       "tec": "PABLO HERNANEZ FERNANDEZ",
@@ -11200,5 +11230,5 @@
    }
   }
  },
- "generado": "25-09-2026 10:45"
+ "generado": "25-09-2026 11:05"
 }
