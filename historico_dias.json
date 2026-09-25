@@ -10780,16 +10780,16 @@
    }
   },
   "25-09-2026": {
-   "hasta": "12:11",
+   "hasta": "12:21",
    "actividades": 128,
    "tecnicos": 36,
    "estados": {
-    "Completado": 24,
+    "Completado": 28,
+    "Iniciado": 19,
+    "Pendiente": 57,
+    "No Realizada": 15,
     "en ruta": 3,
-    "Pendiente": 61,
-    "No Realizada": 14,
     "Cancelado": 4,
-    "Iniciado": 20,
     "Suspendido": 2
    },
    "rgu": 207.6,
@@ -10847,7 +10847,7 @@
       "f": "13-16",
       "hi": "13:00",
       "d": "BUENOS AIRES 1234 CASA 12, QUILPUE",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O1QSZ3Z",
@@ -10856,7 +10856,7 @@
       "f": "10-13",
       "hi": "12:19",
       "d": "JOHN KENNEDY 1731, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O1Q7G43",
@@ -10928,7 +10928,7 @@
       "f": "10-13",
       "hi": "14:00",
       "d": "PABLO RAMIREZ 0219, QUILPUE",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O1NNVHM",
@@ -10981,7 +10981,7 @@
       "o": "1-3O1OL0EM",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:27",
+      "hi": "14:23",
       "d": "VALLE DEL PARAISO 2746, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -10993,9 +10993,9 @@
       "o": "1-3O16NXEY",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "12:12",
+      "hi": "12:13",
       "d": "LAS ACACIAS 1421 EDIF. B DEPTO 311, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "EDGAR VALERO C",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -11053,7 +11053,7 @@
       "o": "1-3O10NPV9",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:18",
+      "hi": "16:55",
       "d": "EL RINCON 1100 CASA 52, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -11077,7 +11077,7 @@
       "o": "1-3O1P80ST",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:54",
+      "hi": "15:37",
       "d": "SANTA ROSA 0120, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -11137,9 +11137,9 @@
       "o": "1-3O1NOPN8",
       "cat": "Migración 3 Play",
       "f": "10-13",
-      "hi": "12:07",
+      "hi": "12:11",
       "d": "PABLO RAMIREZ 0219, QUILPUE",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "LUIS MARTIN NUÑEZ",
       "visitas": 1,
       "ult_fecha": "10-08-2026",
@@ -11233,7 +11233,7 @@
       "o": "1-3O1OZWOO",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:32",
+      "hi": "14:00",
       "d": "JOSE FUENTES 885 DEPTO 21, QUILPUE",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
@@ -11277,7 +11277,7 @@
       "o": "1-3O0WLFFG",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:23",
+      "hi": "14:00",
       "d": "BLANCO 339, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -11317,5 +11317,5 @@
    }
   }
  },
- "generado": "25-09-2026 12:11"
+ "generado": "25-09-2026 12:21"
 }
