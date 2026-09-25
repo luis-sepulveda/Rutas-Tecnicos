@@ -10780,16 +10780,16 @@
    }
   },
   "25-09-2026": {
-   "hasta": "17:23",
+   "hasta": "17:28",
    "actividades": 161,
    "tecnicos": 35,
    "estados": {
-    "Completado": 92,
-    "Iniciado": 28,
+    "Completado": 96,
+    "Iniciado": 26,
     "No Realizada": 21,
     "Cancelado": 4,
-    "Pendiente": 10,
-    "en ruta": 3,
+    "Pendiente": 7,
+    "en ruta": 4,
     "Suspendido": 3
    },
    "rgu": 247.3,
@@ -11412,9 +11412,9 @@
       "o": "1-3O1OE64S",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "17:20",
+      "hi": "17:25",
       "d": "PJE WASHINGTON 1040 CASA 14, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "MATIAS APELEO APELEO",
       "visitas": 1,
       "ult_fecha": "25-09-2026",
@@ -11544,5 +11544,5 @@
    }
   }
  },
- "generado": "25-09-2026 17:23"
+ "generado": "25-09-2026 17:28"
 }
