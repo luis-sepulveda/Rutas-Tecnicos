@@ -10780,23 +10780,43 @@
    }
   },
   "25-09-2026": {
-   "hasta": "09:15",
-   "actividades": 96,
-   "tecnicos": 37,
+   "hasta": "09:25",
+   "actividades": 104,
+   "tecnicos": 36,
    "estados": {
-    "Pendiente": 96
+    "en ruta": 16,
+    "Pendiente": 88
    },
-   "rgu": 155.5,
+   "rgu": 169.5,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
-   "nuevas": 0,
+   "nuevas": 2,
    "al_bucket": 0,
-   "repetidas": 15,
+   "repetidas": 16,
    "reagendadas": 7,
    "detalle": {
     "caidas": [],
-    "nuevas": [],
+    "nuevas": [
+     {
+      "o": "1-3O1HDINI",
+      "tec": "JOSE ROJO A",
+      "cat": "Reparación",
+      "f": "10-13",
+      "hi": "11:53",
+      "d": "SANTA FE 1538, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3O1MBTHU",
+      "tec": "PABLO HERNANEZ FERNANDEZ",
+      "cat": "Migración 3 Play",
+      "f": "10-13",
+      "hi": "11:56",
+      "d": "RENE RODRIGUEZ 563 EDIF. B-26 DEPTO 203, QUILPUE",
+      "e": "Pendiente (ya no está)"
+     }
+    ],
     "repetidas": [
      {
       "o": "1-3NZWJ9KV",
@@ -10838,7 +10858,7 @@
       "o": "1-3NUYPH6F",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "11:24",
+      "hi": "10:55",
       "d": "LAS CAMELIAS 2525 CASA B, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -10850,7 +10870,7 @@
       "o": "1-3NY8RCBP",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "14:00",
+      "hi": "14:06",
       "d": "AZALEAS PONIENTE 2782, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -10881,6 +10901,18 @@
       "visitas": 1,
       "ult_fecha": "24-09-2026",
       "ult_cierre": "Falta de dotación"
+     },
+     {
+      "o": "1-3O17NFY4",
+      "cat": "Migración 3 Play",
+      "f": "16-19",
+      "hi": "17:13",
+      "d": "MALU GATICA 1320, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "LUIS GATICA DAVILA",
+      "visitas": 3,
+      "ult_fecha": "24-09-2026",
+      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3O17GOP9",
@@ -10922,7 +10954,7 @@
       "o": "1-3O10GW79",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "14:15",
       "d": "LEUCOTON 990 CASA C, QUILPUE",
       "e": "Pendiente",
       "tec": "NICOLAS MOYANO R",
@@ -10958,7 +10990,7 @@
       "o": "1-3O16NXEY",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "11:58",
+      "hi": "11:28",
       "d": "LAS ACACIAS 1421 EDIF. B DEPTO 311, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -10994,9 +11026,9 @@
       "o": "1-3O0ZI4C2",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:25",
       "d": "CALLE 1 850 EDIF. S DEPTO 32, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "DANIEL NAVARRETE E",
       "desde": "24-09-2026"
      },
@@ -11004,7 +11036,7 @@
       "o": "1-3NZL8KQK",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "11:00",
+      "hi": "10:32",
       "d": "SANTA MARGARITA 1319, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOEL GUSTAVE GUSTA",
@@ -11054,5 +11086,5 @@
    }
   }
  },
- "generado": "25-09-2026 09:15"
+ "generado": "25-09-2026 09:25"
 }
