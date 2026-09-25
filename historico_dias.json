@@ -10780,18 +10780,19 @@
    }
   },
   "25-09-2026": {
-   "hasta": "09:55",
-   "actividades": 104,
+   "hasta": "10:05",
+   "actividades": 105,
    "tecnicos": 36,
    "estados": {
-    "en ruta": 4,
-    "Pendiente": 69,
-    "Iniciado": 30,
-    "Cancelado": 1
+    "Iniciado": 34,
+    "Pendiente": 67,
+    "Cancelado": 2,
+    "Completado": 1,
+    "en ruta": 1
    },
-   "rgu": 169.5,
-   "caidas_total": 1,
-   "caidas_activas": 1,
+   "rgu": 170.5,
+   "caidas_total": 2,
+   "caidas_activas": 2,
    "caidas_resueltas": 0,
    "nuevas": 3,
    "al_bucket": 0,
@@ -10799,6 +10800,15 @@
    "reagendadas": 7,
    "detalle": {
     "caidas": [
+     {
+      "o": "1-3O1HDINI",
+      "tec": "JOSE ROJO A",
+      "cat": "Reparación",
+      "f": "10-13",
+      "hi": "11:40",
+      "d": "SANTA FE 1538, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3O1MBTHU",
       "tec": "PABLO HERNANEZ FERNANDEZ",
@@ -10817,7 +10827,7 @@
       "f": "10-13",
       "hi": "10:52",
       "d": "BERLIN 1602 EDIF. D DEPTO 104, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Cancelado"
      },
      {
       "o": "1-3O1HDINI",
@@ -11057,9 +11067,9 @@
       "o": "1-3NZL8KQK",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "09:57",
+      "hi": "09:55",
       "d": "SANTA MARGARITA 1319, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JOEL GUSTAVE GUSTA",
       "desde": "24-09-2026"
      },
@@ -11067,7 +11077,7 @@
       "o": "1-3O0W823N",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "11:37",
+      "hi": "11:01",
       "d": "VIA UNO SIETE 2025 EDIF. A DEPTO 33, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS GATICA DAVILA",
@@ -11087,7 +11097,7 @@
       "o": "1-3O0WLFFG",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "15:07",
+      "hi": "15:19",
       "d": "BLANCO 339, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATIAS APELEO APELEO",
@@ -11107,5 +11117,5 @@
    }
   }
  },
- "generado": "25-09-2026 09:55"
+ "generado": "25-09-2026 10:05"
 }
