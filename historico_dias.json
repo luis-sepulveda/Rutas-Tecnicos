@@ -10780,14 +10780,14 @@
    }
   },
   "25-09-2026": {
-   "hasta": "14:57",
+   "hasta": "15:02",
    "actividades": 154,
    "tecnicos": 34,
    "estados": {
-    "Completado": 61,
+    "Completado": 62,
     "Iniciado": 18,
-    "Pendiente": 48,
-    "No Realizada": 15,
+    "Pendiente": 46,
+    "No Realizada": 16,
     "Cancelado": 4,
     "en ruta": 6,
     "Suspendido": 2
@@ -10901,7 +10901,7 @@
       "f": "13-16",
       "hi": "14:23",
       "d": "JOSE URIBE 88, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O1TGFKK",
@@ -11063,7 +11063,7 @@
       "f": "16-19",
       "hi": "18:00",
       "d": "MANUEL RODRIGUEZ 360 CASA E, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O1N5X6Z",
@@ -11143,9 +11143,9 @@
       "o": "1-3O1NNVHM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:49",
+      "hi": "15:16",
       "d": "MANUEL RODRIGUEZ 360 CASA E, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "ESTEBAN PIZARRO QUINTANA",
       "visitas": 1,
       "ult_fecha": "25-09-2026",
@@ -11347,9 +11347,9 @@
       "o": "1-3O10GW79",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "15:14",
+      "hi": "15:00",
       "d": "LEUCOTON 990 CASA C, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "MARCO PEREZ G",
       "visitas": 2,
       "ult_fecha": "24-09-2026",
@@ -11359,7 +11359,7 @@
       "o": "1-3NZWJ9KV",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "17:21",
+      "hi": "17:07",
       "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -11419,9 +11419,9 @@
       "o": "1-3O1OZWOO",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:19",
+      "hi": "15:18",
       "d": "JOSE FUENTES 885 DEPTO 21, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "SEBASTIAN DOSSOW A",
       "visitas": 1,
       "ult_fecha": "25-09-2026",
@@ -11503,5 +11503,5 @@
    }
   }
  },
- "generado": "25-09-2026 14:57"
+ "generado": "25-09-2026 15:02"
 }
