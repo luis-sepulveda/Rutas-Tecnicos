@@ -10780,25 +10780,25 @@
    }
   },
   "25-09-2026": {
-   "hasta": "13:16",
-   "actividades": 146,
+   "hasta": "13:21",
+   "actividades": 147,
    "tecnicos": 34,
    "estados": {
-    "Completado": 35,
-    "Iniciado": 25,
-    "Pendiente": 62,
+    "Completado": 36,
+    "Iniciado": 24,
+    "Pendiente": 64,
     "No Realizada": 14,
     "Cancelado": 4,
-    "en ruta": 4,
+    "en ruta": 3,
     "Suspendido": 2
    },
-   "rgu": 234.8,
+   "rgu": 235.8,
    "caidas_total": 5,
    "caidas_activas": 5,
    "caidas_resueltas": 0,
-   "nuevas": 24,
+   "nuevas": 25,
    "al_bucket": 8,
-   "repetidas": 24,
+   "repetidas": 25,
    "reagendadas": 7,
    "detalle": {
     "caidas": [
@@ -10849,6 +10849,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O1TPPMM",
+      "tec": "LEONEL HERNÁNDEZ OJE",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "16:16",
+      "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3O1U23HY",
       "tec": "JOSE SALAS MEDINA",
@@ -11179,7 +11188,7 @@
       "o": "1-3O1NP0F4",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:43",
+      "hi": "14:31",
       "d": "MADRID 1050 CASA 4, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -11191,7 +11200,7 @@
       "o": "1-3O1P80ST",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "17:23",
+      "hi": "17:11",
       "d": "SANTA ROSA 0120, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -11215,12 +11224,24 @@
       "o": "1-3O17I1TA",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:20",
+      "hi": "14:41",
       "d": "SEGUNDO DE LINEA 2498, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
       "visitas": 2,
       "ult_fecha": "24-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3O1TPPMM",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "16:16",
+      "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LEONEL HERNÁNDEZ OJE",
+      "visitas": 1,
+      "ult_fecha": "25-09-2026",
       "ult_cierre": "Sin moradores"
      },
      {
@@ -11411,7 +11432,7 @@
       "o": "1-3O0A3FCQ",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:00",
+      "hi": "16:58",
       "d": "MANUEL PLAZA 9, QUILPUE",
       "e": "Pendiente",
       "tec": "LUIS MARTIN NUÑEZ",
@@ -11421,7 +11442,7 @@
       "o": "1-3NY55E4M",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:54",
+      "hi": "15:49",
       "d": "CALLE HERALDO ORREGO 3201 EDIF. A DEPTO 905, QUILPUE",
       "e": "Pendiente",
       "tec": "PABLO HERNANEZ FERNANDEZ",
@@ -11431,5 +11452,5 @@
    }
   }
  },
- "generado": "25-09-2026 13:16"
+ "generado": "25-09-2026 13:21"
 }
