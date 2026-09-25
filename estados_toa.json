@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-09-25T15:47:59",
+  "actualizado": "2026-09-25T16:49:07",
   "resumen": {
-    "reagendada": 4,
+    "reagendada": 6,
     "sin informacion": 1
   },
   "estados": {
@@ -44,8 +44,8 @@
             "texto": "1-3O0UKIHN - 13-16-Migración-Migración-MADRID 1050 CASA 2Mar, 29 Sep"
           },
           {
-            "estado": "?",
-            "color": "rgb(93, 190, 63)",
+            "estado": "completada",
+            "color": "rgb(121, 182, 235)",
             "ot": "1-3O1NP0F4",
             "franja": "13-16",
             "texto": "1-3O1NP0F4 - 13-16-Alta-1 Play-MADRID 1050 CASA 4"
@@ -73,6 +73,26 @@
           }
         ]
       }
+    },
+    "1-3O1OVI13": {
+      "tec": "MATIAS APELEO APELEO",
+      "cat": "Alta 3 Play",
+      "franja_original": "13-16",
+      "d": "RIO DE JANEIRO 2450, VILLA ALEMANA",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3O1OVI13 - 10-13-Alta-3 Play-RIO DE JANEIRO 2450Sab, 26 Sep",
+      "franja_nueva": "10-13"
+    },
+    "1-3O1P80ST": {
+      "tec": "MATIAS APELEO APELEO",
+      "cat": "Alta 2 Play",
+      "franja_original": "13-16",
+      "d": "SANTA ROSA 0120, VILLA ALEMANA",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3O1P80ST - 10-13-Alta-2 Play-SANTA ROSA 0120Sab, 26 Sep",
+      "franja_nueva": "10-13"
     },
     "1-3O1MBTHU": {
       "tec": "PABLO HERNANEZ FERNANDEZ",
