@@ -10780,13 +10780,13 @@
    }
   },
   "25-09-2026": {
-   "hasta": "19:24",
+   "hasta": "19:29",
    "actividades": 172,
    "tecnicos": 35,
    "estados": {
-    "Completado": 122,
+    "Completado": 123,
     "No Realizada": 32,
-    "Iniciado": 6,
+    "Iniciado": 5,
     "Cancelado": 6,
     "Suspendido": 6
    },
@@ -11487,7 +11487,7 @@
       "f": "16-19",
       "hi": "17:25",
       "d": "PJE WASHINGTON 1040 CASA 14, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "MATIAS APELEO APELEO",
       "visitas": 1,
       "ult_fecha": "25-09-2026",
@@ -11617,5 +11617,5 @@
    }
   }
  },
- "generado": "25-09-2026 19:24"
+ "generado": "25-09-2026 19:29"
 }
