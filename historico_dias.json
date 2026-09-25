@@ -10780,16 +10780,16 @@
    }
   },
   "25-09-2026": {
-   "hasta": "11:46",
+   "hasta": "11:51",
    "actividades": 129,
    "tecnicos": 36,
    "estados": {
     "Completado": 20,
-    "Pendiente": 64,
+    "Pendiente": 65,
     "No Realizada": 13,
     "Cancelado": 4,
-    "Iniciado": 23,
-    "en ruta": 3,
+    "Iniciado": 24,
+    "en ruta": 1,
     "Suspendido": 2
    },
    "rgu": 219.0,
@@ -11037,7 +11037,7 @@
       "f": "10-13",
       "hi": "11:48",
       "d": "AZALEAS PONIENTE 2782, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JORDAN ROA PEREZ",
       "visitas": 1,
       "ult_fecha": "21-09-2026",
@@ -11215,9 +11215,9 @@
       "o": "1-3O16NXEY",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "11:56",
+      "hi": "11:43",
       "d": "LAS ACACIAS 1421 EDIF. B DEPTO 311, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -11227,7 +11227,7 @@
       "o": "1-3O07WTHS",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:20",
+      "hi": "15:07",
       "d": "HUANHUALI 1549 EDIF. B10 DEPTO 32, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -11239,7 +11239,7 @@
       "o": "1-3O10NPV9",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:44",
+      "hi": "17:31",
       "d": "EL RINCON 1100 CASA 52, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -11323,5 +11323,5 @@
    }
   }
  },
- "generado": "25-09-2026 11:46"
+ "generado": "25-09-2026 11:51"
 }
