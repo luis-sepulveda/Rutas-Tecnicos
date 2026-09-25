@@ -10780,23 +10780,23 @@
    }
   },
   "25-09-2026": {
-   "hasta": "16:53",
-   "actividades": 157,
-   "tecnicos": 34,
+   "hasta": "17:08",
+   "actividades": 161,
+   "tecnicos": 35,
    "estados": {
-    "Completado": 84,
-    "Iniciado": 29,
-    "No Realizada": 19,
-    "en ruta": 1,
+    "Completado": 89,
+    "Iniciado": 28,
+    "No Realizada": 20,
     "Cancelado": 4,
-    "Pendiente": 17,
+    "en ruta": 5,
+    "Pendiente": 12,
     "Suspendido": 3
    },
-   "rgu": 240.7,
-   "caidas_total": 7,
+   "rgu": 247.3,
+   "caidas_total": 8,
    "caidas_activas": 7,
-   "caidas_resueltas": 0,
-   "nuevas": 31,
+   "caidas_resueltas": 1,
+   "nuevas": 32,
    "al_bucket": 18,
    "repetidas": 26,
    "reagendadas": 7,
@@ -10868,8 +10868,17 @@
     ],
     "nuevas": [
      {
+      "o": "1-3O1Y5W5X",
+      "tec": "MARCELO GÓMEZ GÓME",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "15:26",
+      "d": "AV VICTORIA 0464, VILLA ALEMANA",
+      "e": "Completado"
+     },
+     {
       "o": "1-3O20356N",
-      "tec": "CRISTOBAL SILVA LEIVA",
+      "tec": "DANIEL NAVARRETE E",
       "cat": "Reparación",
       "f": "16-19",
       "hi": "17:18",
@@ -11054,7 +11063,7 @@
       "f": "13-16",
       "hi": "16:38",
       "d": "GALLEGUILLOS 1421 EDIF. C DEPTO 14, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O1PA6EW",
@@ -11244,6 +11253,18 @@
       "ult_cierre": "Ductos tapados"
      },
      {
+      "o": "1-3O17NFY4",
+      "cat": "Migración 3 Play",
+      "f": "16-19",
+      "hi": "17:55",
+      "d": "MALU GATICA 1320, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JORDAN ROA PEREZ",
+      "visitas": 3,
+      "ult_fecha": "24-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3O15GWVV",
       "cat": "Reparación",
       "f": "13-16",
@@ -11278,18 +11299,6 @@
       "visitas": 1,
       "ult_fecha": "22-09-2026",
       "ult_cierre": "Ductos tapados"
-     },
-     {
-      "o": "1-3O17NFY4",
-      "cat": "Migración 3 Play",
-      "f": "16-19",
-      "hi": "17:09",
-      "d": "MALU GATICA 1320, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "JOSE ROJO A",
-      "visitas": 3,
-      "ult_fecha": "24-09-2026",
-      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3O12G5JU",
@@ -11403,9 +11412,9 @@
       "o": "1-3O1OE64S",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "17:12",
+      "hi": "17:20",
       "d": "PJE WASHINGTON 1040 CASA 14, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "MATIAS APELEO APELEO",
       "visitas": 1,
       "ult_fecha": "25-09-2026",
@@ -11535,5 +11544,5 @@
    }
   }
  },
- "generado": "25-09-2026 16:53"
+ "generado": "25-09-2026 17:08"
 }
