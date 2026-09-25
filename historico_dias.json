@@ -10780,24 +10780,44 @@
    }
   },
   "25-09-2026": {
-   "hasta": "09:25",
-   "actividades": 104,
+   "hasta": "09:35",
+   "actividades": 105,
    "tecnicos": 36,
    "estados": {
-    "en ruta": 16,
-    "Pendiente": 88
+    "en ruta": 26,
+    "Pendiente": 78,
+    "Iniciado": 1
    },
-   "rgu": 169.5,
-   "caidas_total": 0,
-   "caidas_activas": 0,
+   "rgu": 170.5,
+   "caidas_total": 1,
+   "caidas_activas": 1,
    "caidas_resueltas": 0,
-   "nuevas": 2,
+   "nuevas": 3,
    "al_bucket": 0,
    "repetidas": 16,
    "reagendadas": 7,
    "detalle": {
-    "caidas": [],
+    "caidas": [
+     {
+      "o": "1-3O1MBTHU",
+      "tec": "PABLO HERNANEZ FERNANDEZ",
+      "cat": "Migración 3 Play",
+      "f": "10-13",
+      "hi": "11:56",
+      "d": "RENE RODRIGUEZ 563 EDIF. B-26 DEPTO 203, QUILPUE",
+      "e": "Pendiente"
+     }
+    ],
     "nuevas": [
+     {
+      "o": "1-3O1M2I7W",
+      "tec": "JUAN ARRIAGADA C",
+      "cat": "Reparación",
+      "f": "10-13",
+      "hi": "10:52",
+      "d": "BERLIN 1602 EDIF. D DEPTO 104, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3O1HDINI",
       "tec": "JOSE ROJO A",
@@ -10870,7 +10890,7 @@
       "o": "1-3NY8RCBP",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "14:06",
+      "hi": "14:00",
       "d": "AZALEAS PONIENTE 2782, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -10882,7 +10902,7 @@
       "o": "1-3O10H3EV",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "11:00",
+      "hi": "11:55",
       "d": "MADRID 1050 CASA 4, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -10930,9 +10950,9 @@
       "o": "1-3O16MJIW",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:44",
       "d": "JUAN JOSE LATORRE 1376, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "MARCO PEREZ G",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -10942,7 +10962,7 @@
       "o": "1-3O1124GP",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "12:18",
+      "hi": "11:54",
       "d": "MARIA MERCEDES 1482 EDIF. 7 DEPTO 301, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -11046,7 +11066,7 @@
       "o": "1-3O0W823N",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "11:49",
+      "hi": "11:30",
       "d": "VIA UNO SIETE 2025 EDIF. A DEPTO 33, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS GATICA DAVILA",
@@ -11086,5 +11106,5 @@
    }
   }
  },
- "generado": "25-09-2026 09:25"
+ "generado": "25-09-2026 09:35"
 }
