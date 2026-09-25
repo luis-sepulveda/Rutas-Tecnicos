@@ -10780,16 +10780,16 @@
    }
   },
   "25-09-2026": {
-   "hasta": "14:11",
+   "hasta": "14:17",
    "actividades": 152,
    "tecnicos": 34,
    "estados": {
-    "Completado": 48,
+    "Completado": 49,
     "Iniciado": 22,
     "Pendiente": 57,
     "No Realizada": 15,
     "Cancelado": 4,
-    "en ruta": 4,
+    "en ruta": 3,
     "Suspendido": 2
    },
    "rgu": 239.9,
@@ -10928,7 +10928,7 @@
       "f": "10-13",
       "hi": "12:49",
       "d": "EL LUCUMILLO 307, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O1T184P",
@@ -11018,7 +11018,7 @@
       "f": "13-16",
       "hi": "13:07",
       "d": "PAUL HARRIS 388 CASA C, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O1OVI13",
@@ -11143,7 +11143,7 @@
       "o": "1-3O1NNVHM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:23",
+      "hi": "17:37",
       "d": "MANUEL RODRIGUEZ 360 CASA E, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -11491,5 +11491,5 @@
    }
   }
  },
- "generado": "25-09-2026 14:11"
+ "generado": "25-09-2026 14:17"
 }
