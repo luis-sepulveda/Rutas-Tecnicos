@@ -10780,23 +10780,23 @@
    }
   },
   "25-09-2026": {
-   "hasta": "12:21",
-   "actividades": 128,
+   "hasta": "12:31",
+   "actividades": 129,
    "tecnicos": 36,
    "estados": {
-    "Completado": 28,
-    "Iniciado": 19,
-    "Pendiente": 57,
+    "Completado": 30,
+    "Iniciado": 20,
+    "Pendiente": 56,
     "No Realizada": 15,
-    "en ruta": 3,
+    "en ruta": 2,
     "Cancelado": 4,
     "Suspendido": 2
    },
-   "rgu": 207.6,
+   "rgu": 208.6,
    "caidas_total": 4,
    "caidas_activas": 4,
    "caidas_resueltas": 0,
-   "nuevas": 15,
+   "nuevas": 16,
    "al_bucket": 8,
    "repetidas": 22,
    "reagendadas": 7,
@@ -10840,6 +10840,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O1RPWMW",
+      "tec": "JOEL GUSTAVE GUSTA",
+      "cat": "Modificación de Servicio",
+      "f": "10-13",
+      "hi": "12:29",
+      "d": "EL BOSQUE 145 CASA 4, VILLA ALEMANA",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3O1R4J4N",
       "tec": "CRISTOBAL SILVA LEIVA",
@@ -11077,7 +11086,7 @@
       "o": "1-3O1P80ST",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:37",
+      "hi": "15:36",
       "d": "SANTA ROSA 0120, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -11307,7 +11316,7 @@
       "o": "1-3NY55E4M",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "15:17",
       "d": "CALLE HERALDO ORREGO 3201 EDIF. A DEPTO 905, QUILPUE",
       "e": "Pendiente",
       "tec": "PABLO HERNANEZ FERNANDEZ",
@@ -11317,5 +11326,5 @@
    }
   }
  },
- "generado": "25-09-2026 12:21"
+ "generado": "25-09-2026 12:31"
 }
