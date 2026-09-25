@@ -10780,23 +10780,23 @@
    }
   },
   "25-09-2026": {
-   "hasta": "11:41",
-   "actividades": 128,
+   "hasta": "11:46",
+   "actividades": 129,
    "tecnicos": 36,
    "estados": {
-    "Iniciado": 24,
-    "Pendiente": 65,
+    "Completado": 20,
+    "Pendiente": 64,
     "No Realizada": 13,
-    "Completado": 18,
-    "Cancelado": 3,
+    "Cancelado": 4,
+    "Iniciado": 23,
     "en ruta": 3,
     "Suspendido": 2
    },
-   "rgu": 218.0,
+   "rgu": 219.0,
    "caidas_total": 4,
    "caidas_activas": 4,
    "caidas_resueltas": 0,
-   "nuevas": 12,
+   "nuevas": 13,
    "al_bucket": 0,
    "repetidas": 24,
    "reagendadas": 7,
@@ -10840,6 +10840,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O1Q7G43",
+      "tec": "LUIS MARTIN NUÑEZ",
+      "cat": "Modificación de Servicio",
+      "f": "10-13",
+      "hi": "11:44",
+      "d": "CARDENAL CARO 077, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3O1POLTB",
       "tec": "ANTONHY MORALES MENDOZA",
@@ -11134,7 +11143,7 @@
       "o": "1-3O1NOPN8",
       "cat": "Migración 3 Play",
       "f": "10-13",
-      "hi": "12:36",
+      "hi": "12:42",
       "d": "PABLO RAMIREZ 0219, QUILPUE",
       "e": "Pendiente",
       "tec": "LUIS MARTIN NUÑEZ",
@@ -11284,7 +11293,7 @@
       "o": "1-3O0A3FCQ",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:18",
+      "hi": "16:24",
       "d": "MANUEL PLAZA 9, QUILPUE",
       "e": "Pendiente",
       "tec": "LUIS MARTIN NUÑEZ",
@@ -11314,5 +11323,5 @@
    }
   }
  },
- "generado": "25-09-2026 11:41"
+ "generado": "25-09-2026 11:46"
 }
