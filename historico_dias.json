@@ -10780,13 +10780,13 @@
    }
   },
   "25-09-2026": {
-   "hasta": "18:38",
+   "hasta": "18:43",
    "actividades": 169,
    "tecnicos": 35,
    "estados": {
-    "Completado": 111,
-    "No Realizada": 30,
-    "Iniciado": 15,
+    "Completado": 115,
+    "No Realizada": 31,
+    "Iniciado": 10,
     "Cancelado": 6,
     "Suspendido": 5,
     "Pendiente": 2
@@ -10873,7 +10873,7 @@
       "f": "16-19",
       "hi": "18:36",
       "d": "VOLCAN ANTOFALLA 2627, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O2394QT",
@@ -10882,7 +10882,7 @@
       "f": "16-19",
       "hi": "18:47",
       "d": "PJE TURQUESA 20, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O22X4BK",
@@ -10900,7 +10900,7 @@
       "f": "16-19",
       "hi": "18:13",
       "d": "HUANHUALI 1549 EDIF. B10 DEPTO 32, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O22NNB2",
@@ -11434,7 +11434,7 @@
       "f": "16-19",
       "hi": "18:28",
       "d": "PJE TURQUESA 20, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "LUIS MARTIN NUÑEZ",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -11600,5 +11600,5 @@
    }
   }
  },
- "generado": "25-09-2026 18:38"
+ "generado": "25-09-2026 18:43"
 }
