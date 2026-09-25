@@ -10780,23 +10780,23 @@
    }
   },
   "25-09-2026": {
-   "hasta": "12:56",
-   "actividades": 149,
+   "hasta": "13:06",
+   "actividades": 151,
    "tecnicos": 36,
    "estados": {
-    "Completado": 32,
-    "en ruta": 6,
-    "Pendiente": 63,
+    "Completado": 34,
+    "Iniciado": 28,
+    "Pendiente": 64,
     "No Realizada": 16,
-    "Iniciado": 26,
     "Cancelado": 4,
+    "en ruta": 3,
     "Suspendido": 2
    },
-   "rgu": 240.3,
-   "caidas_total": 4,
-   "caidas_activas": 4,
+   "rgu": 244.3,
+   "caidas_total": 5,
+   "caidas_activas": 5,
    "caidas_resueltas": 0,
-   "nuevas": 21,
+   "nuevas": 23,
    "al_bucket": 8,
    "repetidas": 25,
    "reagendadas": 7,
@@ -10809,6 +10809,15 @@
       "f": "10-13",
       "hi": "11:40",
       "d": "SANTA FE 1538, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3O1T184P",
+      "tec": "LUIS CASTRO TORRES",
+      "cat": "Migración 2 Play",
+      "f": "13-16",
+      "hi": "14:30",
+      "d": "LAS GARZAS 989, QUILPUE",
       "e": "Pendiente"
      },
      {
@@ -10840,6 +10849,24 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O1TLIC6",
+      "tec": "LUIS CASTRO TORRES",
+      "cat": "Reparación",
+      "f": "13-16",
+      "hi": "14:23",
+      "d": "JOSE URIBE 88, QUILPUE",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3O1TGFKK",
+      "tec": "JOSE SALAS MEDINA",
+      "cat": "Migración 3 Play",
+      "f": "16-19",
+      "hi": "16:03",
+      "d": "LAUTARO 477 CASA 2, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3O1T9171",
       "tec": "JORDAN ROA PEREZ",
@@ -11035,9 +11062,9 @@
       "o": "1-3O1OL0EM",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "13:05",
+      "hi": "12:59",
       "d": "VALLE DEL PARAISO 2746, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "ALEXIS JARA",
       "visitas": 1,
       "ult_fecha": "11-09-2026",
@@ -11131,7 +11158,7 @@
       "o": "1-3O1A05E1",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:47",
+      "hi": "15:51",
       "d": "SANTIAGO 780, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -11215,7 +11242,7 @@
       "o": "1-3O17NFY4",
       "cat": "Migración 3 Play",
       "f": "16-19",
-      "hi": "17:50",
+      "hi": "17:19",
       "d": "MALU GATICA 1320, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS GATICA DAVILA",
@@ -11323,7 +11350,7 @@
       "o": "1-3O1OZWOO",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:17",
+      "hi": "15:23",
       "d": "JOSE FUENTES 885 DEPTO 21, QUILPUE",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
@@ -11379,7 +11406,7 @@
       "f": "10-13",
       "hi": "11:02",
       "d": "VIA UNO SIETE 2025 EDIF. A DEPTO 33, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "LUIS GATICA DAVILA",
       "desde": "24-09-2026"
      },
@@ -11397,7 +11424,7 @@
       "o": "1-3NY55E4M",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:52",
+      "hi": "15:38",
       "d": "CALLE HERALDO ORREGO 3201 EDIF. A DEPTO 905, QUILPUE",
       "e": "Pendiente",
       "tec": "PABLO HERNANEZ FERNANDEZ",
@@ -11407,5 +11434,5 @@
    }
   }
  },
- "generado": "25-09-2026 12:56"
+ "generado": "25-09-2026 13:06"
 }
