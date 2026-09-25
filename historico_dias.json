@@ -10780,16 +10780,16 @@
    }
   },
   "25-09-2026": {
-   "hasta": "17:43",
+   "hasta": "17:53",
    "actividades": 162,
    "tecnicos": 35,
    "estados": {
-    "Completado": 100,
-    "No Realizada": 25,
-    "Iniciado": 21,
+    "Completado": 102,
+    "No Realizada": 26,
+    "Iniciado": 22,
     "Cancelado": 4,
-    "Pendiente": 5,
-    "en ruta": 4,
+    "en ruta": 3,
+    "Pendiente": 2,
     "Suspendido": 3
    },
    "rgu": 247.4,
@@ -10878,12 +10878,12 @@
      },
      {
       "o": "1-3O20356N",
-      "tec": "CRISTOBAL SILVA LEIVA",
+      "tec": "GEEYSER PEREZ O",
       "cat": "Reparación",
       "f": "16-19",
       "hi": "17:18",
       "d": "VOLCAN ANTOFALLA 2627, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O1YB913",
@@ -11340,7 +11340,7 @@
       "o": "1-3O1TPPMM",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:03",
+      "hi": "18:22",
       "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -11438,7 +11438,7 @@
       "f": "13-16",
       "hi": "15:21",
       "d": "HUANHUALI 1549 EDIF. B10 DEPTO 32, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "MATÍAS JAQUE AG",
       "visitas": 2,
       "ult_fecha": "23-09-2026",
@@ -11544,5 +11544,5 @@
    }
   }
  },
- "generado": "25-09-2026 17:43"
+ "generado": "25-09-2026 17:53"
 }
