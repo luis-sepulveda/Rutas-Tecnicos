@@ -10780,15 +10780,16 @@
    }
   },
   "25-09-2026": {
-   "hasta": "13:46",
+   "hasta": "13:56",
    "actividades": 151,
    "tecnicos": 34,
    "estados": {
-    "Completado": 40,
+    "Completado": 42,
     "Iniciado": 26,
-    "Pendiente": 65,
+    "Pendiente": 61,
     "No Realizada": 14,
     "Cancelado": 4,
+    "en ruta": 2,
     "Suspendido": 2
    },
    "rgu": 238.9,
@@ -10850,7 +10851,7 @@
     "nuevas": [
      {
       "o": "1-3O15GWVV",
-      "tec": "JOSE PEREZ RANGEL",
+      "tec": "JOSE CASTRO P",
       "cat": "Reparación",
       "f": "13-16",
       "hi": "18:19",
@@ -10891,7 +10892,7 @@
       "f": "13-16",
       "hi": "14:33",
       "d": "LAMARCK 0186, QUILPUE",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O1TLIC6",
@@ -10999,7 +11000,7 @@
       "f": "13-16",
       "hi": "15:12",
       "d": "AVENIDA BELLOTO 957, QUILPUE",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O1PRRIY",
@@ -11017,7 +11018,7 @@
       "f": "13-16",
       "hi": "13:07",
       "d": "PAUL HARRIS 388 CASA C, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O1OVI13",
@@ -11142,7 +11143,7 @@
       "o": "1-3O1NNVHM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:36",
+      "hi": "17:23",
       "d": "MANUEL RODRIGUEZ 360 CASA E, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -11187,10 +11188,22 @@
       "ult_cierre": "Ductos tapados"
      },
      {
+      "o": "1-3O15GWVV",
+      "cat": "Reparación",
+      "f": "13-16",
+      "hi": "14:29",
+      "d": "SANTA FE 1430 CASA A, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JOSE CASTRO P",
+      "visitas": 1,
+      "ult_fecha": "24-09-2026",
+      "ult_cierre": "Falla Masiva"
+     },
+     {
       "o": "1-3O10NPV9",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:22",
+      "hi": "19:04",
       "d": "EL RINCON 1100 CASA 52, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -11211,24 +11224,12 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
-      "o": "1-3O15GWVV",
-      "cat": "Reparación",
-      "f": "13-16",
-      "hi": "18:19",
-      "d": "SANTA FE 1430 CASA A, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "JOSE PEREZ RANGEL",
-      "visitas": 1,
-      "ult_fecha": "24-09-2026",
-      "ult_cierre": "Falla Masiva"
-     },
-     {
       "o": "1-3O1NP0F4",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:31",
+      "hi": "14:05",
       "d": "MADRID 1050 CASA 4, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JOSE ROJO A",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -11238,7 +11239,7 @@
       "o": "1-3O1P80ST",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "16:18",
+      "hi": "15:52",
       "d": "SANTA ROSA 0120, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -11298,7 +11299,7 @@
       "o": "1-3O17NFY4",
       "cat": "Migración 3 Play",
       "f": "16-19",
-      "hi": "17:19",
+      "hi": "17:16",
       "d": "MALU GATICA 1320, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS GATICA DAVILA",
@@ -11450,7 +11451,7 @@
       "o": "1-3O0WLFFG",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:27",
+      "hi": "16:09",
       "d": "BLANCO 339, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -11490,5 +11491,5 @@
    }
   }
  },
- "generado": "25-09-2026 13:46"
+ "generado": "25-09-2026 13:56"
 }
