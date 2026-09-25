@@ -10780,13 +10780,13 @@
    }
   },
   "25-09-2026": {
-   "hasta": "19:29",
+   "hasta": "19:34",
    "actividades": 172,
    "tecnicos": 35,
    "estados": {
-    "Completado": 123,
-    "No Realizada": 32,
-    "Iniciado": 5,
+    "Completado": 124,
+    "No Realizada": 33,
+    "Iniciado": 3,
     "Cancelado": 6,
     "Suspendido": 6
    },
@@ -10998,7 +10998,7 @@
       "f": "16-19",
       "hi": "16:16",
       "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3O1U23HY",
@@ -11403,7 +11403,7 @@
       "f": "16-19",
       "hi": "18:44",
       "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "LEONEL HERNÁNDEZ OJE",
       "visitas": 1,
       "ult_fecha": "25-09-2026",
@@ -11617,5 +11617,5 @@
    }
   }
  },
- "generado": "25-09-2026 19:29"
+ "generado": "25-09-2026 19:34"
 }
