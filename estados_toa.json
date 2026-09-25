@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-09-25T12:46:54",
+  "actualizado": "2026-09-25T13:17:07",
   "resumen": {
-    "reagendada": 3,
+    "reagendada": 4,
     "sin informacion": 1
   },
   "estados": {
@@ -14,6 +14,16 @@
       "color": "rgb(255, 222, 0)",
       "detalle": "1-3O1HDINI - 13-16-Reparación-2 Play Servicio Degradado-SANTA FE 1538Sab, 26 Sep",
       "franja_nueva": "13-16"
+    },
+    "1-3O1T184P": {
+      "tec": "LUIS CASTRO TORRES",
+      "cat": "Migración 2 Play",
+      "franja_original": "13-16",
+      "d": "LAS GARZAS 989, QUILPUE",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3O1T184P - 10-13-Migración-Migración-LAS GARZAS 989Mar, 29 Sep",
+      "franja_nueva": "10-13"
     },
     "1-3O10H3EV": {
       "tec": "MARCELO GÓMEZ GÓME",
