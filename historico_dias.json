@@ -10778,7 +10778,42 @@
      }
     ]
    }
+  },
+  "25-09-2026": {
+   "hasta": "07:44",
+   "actividades": 3,
+   "tecnicos": 3,
+   "estados": {
+    "Pendiente": 3
+   },
+   "rgu": 4.0,
+   "caidas_total": 0,
+   "caidas_activas": 0,
+   "caidas_resueltas": 0,
+   "nuevas": 0,
+   "al_bucket": 0,
+   "repetidas": 1,
+   "reagendadas": 0,
+   "detalle": {
+    "caidas": [],
+    "nuevas": [],
+    "repetidas": [
+     {
+      "o": "1-3NY8RCBP",
+      "cat": "Migración 2 Play",
+      "f": "10-13",
+      "hi": "10:10",
+      "d": "AZALEAS PONIENTE 2782, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JOSE ROJO A",
+      "visitas": 1,
+      "ult_fecha": "21-09-2026",
+      "ult_cierre": "Ductos tapados"
+     }
+    ],
+    "reagendadas": []
+   }
   }
  },
- "generado": "24-09-2026 21:08"
+ "generado": "25-09-2026 07:44"
 }
