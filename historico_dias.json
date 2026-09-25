@@ -10780,11 +10780,11 @@
    }
   },
   "25-09-2026": {
-   "hasta": "18:58",
-   "actividades": 170,
+   "hasta": "19:04",
+   "actividades": 171,
    "tecnicos": 35,
    "estados": {
-    "Completado": 117,
+    "Completado": 118,
     "No Realizada": 32,
     "en ruta": 1,
     "Cancelado": 6,
@@ -10792,7 +10792,7 @@
     "Suspendido": 6,
     "Pendiente": 1
    },
-   "rgu": 256.5,
+   "rgu": 256.6,
    "caidas_total": 8,
    "caidas_activas": 7,
    "caidas_resueltas": 1,
@@ -10892,7 +10892,7 @@
       "f": "16-19",
       "hi": "18:42",
       "d": "PJE ANTUMAPU 554, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O232XYQ",
@@ -11601,5 +11601,5 @@
    }
   }
  },
- "generado": "25-09-2026 18:58"
+ "generado": "25-09-2026 19:04"
 }
