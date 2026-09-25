@@ -79,8 +79,12 @@
      funcion: identidad y resumen, luego filtrar+acciones, luego paneles. Antes
      todos los botones pesaban igual y habia que leerlos uno por uno para
      encontrar el que se buscaba. */
+  /* z-index 1003 (25-09-2026): tiene que ganarle a las barras flotantes del
+     mapa (.nb-flota, 1002). Con 1001 los menus desplegables de los filtros
+     (Estado, Franja...) quedaban DETRAS de los botones Nombres / Rutas / Red /
+     Inicio de jornada y no se podia marcar "Iniciado". */
   header { background:#132845; padding:8px 16px; display:flex; flex-direction:column;
-    gap:7px; border-bottom:2px solid #1e3a5f; z-index:1001; }
+    gap:7px; border-bottom:2px solid #1e3a5f; z-index:1003; }
   .hfila { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
   .hfila1 { gap:12px; }
   .hgrp { color:#6f9bc9; font-size:9px; letter-spacing:.5px; flex-shrink:0; }
