@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-25T11:46:40",
+  "actualizado": "2026-09-25T12:16:40",
   "resumen": {
     "reagendada": 3,
     "sin informacion": 1
@@ -32,6 +32,13 @@
             "ot": "1-3O0UKIHN",
             "franja": "13-16",
             "texto": "1-3O0UKIHN - 13-16-Migración-Migración-MADRID 1050 CASA 2Sab, 26 Sep"
+          },
+          {
+            "estado": "reagendada",
+            "color": "rgb(255, 222, 0)",
+            "ot": "1-3O1NP0F4",
+            "franja": "13-16",
+            "texto": "1-3O1NP0F4 - 13-16-Alta-1 Play-MADRID 1050 CASA 4"
           },
           {
             "estado": "no realizada",
