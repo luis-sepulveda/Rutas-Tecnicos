@@ -1,9 +1,19 @@
 {
-  "actualizado": "2026-09-25T09:45:49",
+  "actualizado": "2026-09-25T10:16:04",
   "resumen": {
-    "reagendada": 1
+    "reagendada": 2
   },
   "estados": {
+    "1-3O1HDINI": {
+      "tec": "JOSE ROJO A",
+      "cat": "Reparación",
+      "franja_original": "10-13",
+      "d": "SANTA FE 1538, VILLA ALEMANA",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3O1HDINI - 13-16-Reparación-2 Play Servicio Degradado-SANTA FE 1538Sab, 26 Sep",
+      "franja_nueva": "13-16"
+    },
     "1-3O1MBTHU": {
       "tec": "PABLO HERNANEZ FERNANDEZ",
       "cat": "Migración 3 Play",
