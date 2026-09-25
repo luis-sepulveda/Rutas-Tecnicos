@@ -10780,16 +10780,16 @@
    }
   },
   "25-09-2026": {
-   "hasta": "17:38",
+   "hasta": "17:43",
    "actividades": 162,
    "tecnicos": 35,
    "estados": {
-    "Completado": 98,
-    "Iniciado": 25,
-    "No Realizada": 23,
+    "Completado": 100,
+    "No Realizada": 25,
+    "Iniciado": 21,
     "Cancelado": 4,
-    "Pendiente": 7,
-    "en ruta": 2,
+    "Pendiente": 5,
+    "en ruta": 4,
     "Suspendido": 3
    },
    "rgu": 247.4,
@@ -11211,7 +11211,7 @@
       "f": "16-19",
       "hi": "17:21",
       "d": "LAS ROSAS 859, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "HERNAN CORTES HERRERA",
       "visitas": 3,
       "ult_fecha": "23-09-2026",
@@ -11282,7 +11282,7 @@
       "f": "16-19",
       "hi": "16:17",
       "d": "EL RINCON 1100 CASA 52, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JOSE PEREZ RANGEL",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -11476,7 +11476,7 @@
       "f": "16-19",
       "hi": "16:24",
       "d": "MANUEL PLAZA 9, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "ALEXIS JARA",
       "desde": "24-09-2026"
      },
@@ -11544,5 +11544,5 @@
    }
   }
  },
- "generado": "25-09-2026 17:38"
+ "generado": "25-09-2026 17:43"
 }
