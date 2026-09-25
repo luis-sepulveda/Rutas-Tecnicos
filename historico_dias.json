@@ -10780,13 +10780,14 @@
    }
   },
   "25-09-2026": {
-   "hasta": "10:05",
+   "hasta": "10:10",
    "actividades": 105,
    "tecnicos": 36,
    "estados": {
-    "Iniciado": 34,
+    "Iniciado": 33,
     "Pendiente": 67,
     "Cancelado": 2,
+    "No Realizada": 1,
     "Completado": 1,
     "en ruta": 1
    },
@@ -11069,7 +11070,7 @@
       "f": "10-13",
       "hi": "09:55",
       "d": "SANTA MARGARITA 1319, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "JOEL GUSTAVE GUSTA",
       "desde": "24-09-2026"
      },
@@ -11077,7 +11078,7 @@
       "o": "1-3O0W823N",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "11:01",
+      "hi": "11:03",
       "d": "VIA UNO SIETE 2025 EDIF. A DEPTO 33, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS GATICA DAVILA",
@@ -11117,5 +11118,5 @@
    }
   }
  },
- "generado": "25-09-2026 10:05"
+ "generado": "25-09-2026 10:10"
 }
