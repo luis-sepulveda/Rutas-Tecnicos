@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-09-25T10:46:21",
+  "actualizado": "2026-09-25T11:16:28",
   "resumen": {
-    "reagendada": 2,
+    "reagendada": 3,
     "sin informacion": 1
   },
   "estados": {
@@ -58,6 +58,16 @@
       "estado": "reagendada",
       "color": "rgb(255, 222, 0)",
       "detalle": "1-3O1MBTHU - 13-16-Migración-Migración-RENE RODRIGUEZ 563 EDIF. B-26 DEPTO 203Sab, 26 Sep",
+      "franja_nueva": "13-16"
+    },
+    "1-3O1N5X6Z": {
+      "tec": "SAMUEL FERNANDEZ VIDAL",
+      "cat": "Alta 2 Play",
+      "franja_original": "13-16",
+      "d": "SANTA MARGARITA 1319, VILLA ALEMANA",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3O1N5X6Z - 13-16-Alta-2 Play-SANTA MARGARITA 1319Lun, 5 Oct",
       "franja_nueva": "13-16"
     }
   }
