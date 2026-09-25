@@ -10780,16 +10780,16 @@
    }
   },
   "25-09-2026": {
-   "hasta": "14:42",
+   "hasta": "14:47",
    "actividades": 154,
    "tecnicos": 34,
    "estados": {
-    "Completado": 53,
-    "Iniciado": 25,
+    "Completado": 59,
+    "Iniciado": 20,
     "Pendiente": 52,
     "No Realizada": 15,
     "Cancelado": 4,
-    "en ruta": 3,
+    "en ruta": 2,
     "Suspendido": 2
    },
    "rgu": 241.9,
@@ -10964,7 +10964,7 @@
       "f": "10-13",
       "hi": "12:29",
       "d": "EL BOSQUE 145 CASA 4, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O1R4J4N",
@@ -11143,7 +11143,7 @@
       "o": "1-3O1NNVHM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:52",
+      "hi": "16:49",
       "d": "MANUEL RODRIGUEZ 360 CASA E, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -11227,7 +11227,7 @@
       "o": "1-3O1A05E1",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:51",
+      "hi": "15:56",
       "d": "SANTIAGO 780, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -11503,5 +11503,5 @@
    }
   }
  },
- "generado": "25-09-2026 14:42"
+ "generado": "25-09-2026 14:47"
 }
