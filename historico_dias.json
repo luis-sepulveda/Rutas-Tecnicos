@@ -10780,16 +10780,16 @@
    }
   },
   "25-09-2026": {
-   "hasta": "14:52",
+   "hasta": "14:57",
    "actividades": 154,
    "tecnicos": 34,
    "estados": {
-    "Completado": 59,
-    "Iniciado": 20,
-    "Pendiente": 50,
+    "Completado": 61,
+    "Iniciado": 18,
+    "Pendiente": 48,
     "No Realizada": 15,
     "Cancelado": 4,
-    "en ruta": 4,
+    "en ruta": 6,
     "Suspendido": 2
    },
    "rgu": 241.9,
@@ -10865,7 +10865,7 @@
       "f": "13-16",
       "hi": "13:40",
       "d": "MARIA MERCEDES 1482 EDIF. 7 DEPTO 301, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O1U81IL",
@@ -11287,7 +11287,7 @@
       "o": "1-3O1TPPMM",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:16",
+      "hi": "16:10",
       "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -11347,9 +11347,9 @@
       "o": "1-3O10GW79",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "15:43",
+      "hi": "15:14",
       "d": "LEUCOTON 990 CASA C, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "MARCO PEREZ G",
       "visitas": 2,
       "ult_fecha": "24-09-2026",
@@ -11359,7 +11359,7 @@
       "o": "1-3NZWJ9KV",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "17:50",
+      "hi": "17:21",
       "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -11395,7 +11395,7 @@
       "o": "1-3O07WTHS",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "16:20",
+      "hi": "16:07",
       "d": "HUANHUALI 1549 EDIF. B10 DEPTO 32, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -11495,7 +11495,7 @@
       "f": "13-16",
       "hi": "15:10",
       "d": "CALLE HERALDO ORREGO 3201 EDIF. A DEPTO 905, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "NICOLAS MOYANO R",
       "desde": "21-09-2026"
      }
@@ -11503,5 +11503,5 @@
    }
   }
  },
- "generado": "25-09-2026 14:52"
+ "generado": "25-09-2026 14:57"
 }
