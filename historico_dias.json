@@ -10780,16 +10780,16 @@
    }
   },
   "25-09-2026": {
-   "hasta": "11:36",
+   "hasta": "11:41",
    "actividades": 128,
    "tecnicos": 36,
    "estados": {
-    "Iniciado": 23,
-    "Pendiente": 66,
-    "No Realizada": 12,
+    "Iniciado": 24,
+    "Pendiente": 65,
+    "No Realizada": 13,
     "Completado": 18,
     "Cancelado": 3,
-    "en ruta": 4,
+    "en ruta": 3,
     "Suspendido": 2
    },
    "rgu": 218.0,
@@ -10883,7 +10883,7 @@
       "f": "10-13",
       "hi": "11:48",
       "d": "RAFAEL SOTOMAYOR 0842, QUILPUE",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3O17I1TA",
@@ -11050,7 +11050,7 @@
       "o": "1-3O1OL0EM",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "14:01",
       "d": "VALLE DEL PARAISO 2746, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE SALAS MEDINA",
@@ -11206,9 +11206,9 @@
       "o": "1-3O16NXEY",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "11:43",
+      "hi": "11:56",
       "d": "LAS ACACIAS 1421 EDIF. B DEPTO 311, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "SAMUEL FERNANDEZ VIDAL",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -11218,7 +11218,7 @@
       "o": "1-3O07WTHS",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:07",
+      "hi": "15:20",
       "d": "HUANHUALI 1549 EDIF. B10 DEPTO 32, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -11230,7 +11230,7 @@
       "o": "1-3O10NPV9",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:31",
+      "hi": "17:44",
       "d": "EL RINCON 1100 CASA 52, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -11314,5 +11314,5 @@
    }
   }
  },
- "generado": "25-09-2026 11:36"
+ "generado": "25-09-2026 11:41"
 }
