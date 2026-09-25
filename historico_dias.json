@@ -10780,21 +10780,21 @@
    }
   },
   "25-09-2026": {
-   "hasta": "19:34",
-   "actividades": 172,
+   "hasta": "19:39",
+   "actividades": 173,
    "tecnicos": 35,
    "estados": {
-    "Completado": 124,
+    "Completado": 125,
     "No Realizada": 33,
     "Iniciado": 3,
     "Cancelado": 6,
     "Suspendido": 6
    },
-   "rgu": 256.7,
+   "rgu": 256.8,
    "caidas_total": 9,
    "caidas_activas": 8,
    "caidas_resueltas": 1,
-   "nuevas": 38,
+   "nuevas": 39,
    "al_bucket": 18,
    "repetidas": 27,
    "reagendadas": 7,
@@ -10875,13 +10875,22 @@
     ],
     "nuevas": [
      {
+      "o": "1-3O24D214",
+      "tec": "MATIAS APELEO APELEO",
+      "cat": "Modificación de Servicio",
+      "f": "19-21",
+      "hi": "19:37",
+      "d": "PJE WASHINGTON 1040 CASA 14, VILLA ALEMANA",
+      "e": "Iniciado"
+     },
+     {
       "o": "1-3O24CYNL",
       "tec": "CESAR MENA OLIVEROS",
       "cat": "Modificación de Servicio",
       "f": "19-21",
       "hi": "19:06",
       "d": "ALMIRANTE WILSON 215, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O2381VU",
@@ -11362,6 +11371,18 @@
       "ult_cierre": "Ductos tapados"
      },
      {
+      "o": "1-3O0VP7I7",
+      "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "12:40",
+      "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
+      "e": "No Realizada",
+      "tec": "JOSE SALAS MEDINA",
+      "visitas": 1,
+      "ult_fecha": "25-09-2026",
+      "ult_cierre": "Cliente reagenda"
+     },
+     {
       "o": "1-3O12G5JU",
       "cat": "Alta 1 Play",
       "f": "10-13",
@@ -11396,18 +11417,6 @@
       "visitas": 1,
       "ult_fecha": "25-09-2026",
       "ult_cierre": "Cliente reagenda"
-     },
-     {
-      "o": "1-3O1TPPMM",
-      "cat": "Alta 1 Play",
-      "f": "16-19",
-      "hi": "18:44",
-      "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
-      "e": "No Realizada",
-      "tec": "LEONEL HERNÁNDEZ OJE",
-      "visitas": 1,
-      "ult_fecha": "25-09-2026",
-      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3O135XXO",
@@ -11617,5 +11626,5 @@
    }
   }
  },
- "generado": "25-09-2026 19:34"
+ "generado": "25-09-2026 19:39"
 }
