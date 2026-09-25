@@ -10780,16 +10780,16 @@
    }
   },
   "25-09-2026": {
-   "hasta": "14:06",
+   "hasta": "14:11",
    "actividades": 152,
    "tecnicos": 34,
    "estados": {
-    "Completado": 45,
-    "Iniciado": 24,
-    "Pendiente": 59,
+    "Completado": 48,
+    "Iniciado": 22,
+    "Pendiente": 57,
     "No Realizada": 15,
     "Cancelado": 4,
-    "en ruta": 3,
+    "en ruta": 4,
     "Suspendido": 2
    },
    "rgu": 239.9,
@@ -10856,7 +10856,7 @@
       "f": "13-16",
       "hi": "18:19",
       "d": "SANTA FE 1430 CASA A, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O1UTL47",
@@ -10973,7 +10973,7 @@
       "f": "13-16",
       "hi": "13:00",
       "d": "BUENOS AIRES 1234 CASA 12, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O1QSZ3Z",
@@ -11121,7 +11121,7 @@
       "f": "10-13",
       "hi": "12:13",
       "d": "LAS ACACIAS 1421 EDIF. B DEPTO 311, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "EDGAR VALERO C",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -11131,7 +11131,7 @@
       "o": "1-3O1OE64S",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "17:57",
+      "hi": "17:43",
       "d": "PJE WASHINGTON 1040 CASA 14, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -11193,7 +11193,7 @@
       "f": "13-16",
       "hi": "14:25",
       "d": "SANTA FE 1430 CASA A, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JOSE CASTRO P",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -11397,7 +11397,7 @@
       "f": "10-13",
       "hi": "10:34",
       "d": "AVENIDA VALPARAISO 1696 CASA B, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "RAFAEL VARGAS B",
       "visitas": 1,
       "ult_fecha": "12-08-2026",
@@ -11491,5 +11491,5 @@
    }
   }
  },
- "generado": "25-09-2026 14:06"
+ "generado": "25-09-2026 14:11"
 }
