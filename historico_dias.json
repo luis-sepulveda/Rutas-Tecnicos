@@ -10780,19 +10780,19 @@
    }
   },
   "25-09-2026": {
-   "hasta": "19:14",
+   "hasta": "19:24",
    "actividades": 172,
    "tecnicos": 35,
    "estados": {
-    "Completado": 121,
+    "Completado": 122,
     "No Realizada": 32,
-    "Iniciado": 7,
+    "Iniciado": 6,
     "Cancelado": 6,
     "Suspendido": 6
    },
    "rgu": 256.7,
-   "caidas_total": 8,
-   "caidas_activas": 7,
+   "caidas_total": 9,
+   "caidas_activas": 8,
    "caidas_resueltas": 1,
    "nuevas": 38,
    "al_bucket": 18,
@@ -10800,6 +10800,15 @@
    "reagendadas": 7,
    "detalle": {
     "caidas": [
+     {
+      "o": "1-3O0V6HSO",
+      "tec": "JOSE CASTRO P",
+      "cat": "Reparación",
+      "f": "16-19",
+      "hi": "20:18",
+      "d": "EL MIRADOR 493 CASA 23, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3O1HDINI",
       "tec": "JOSE ROJO A",
@@ -11608,5 +11617,5 @@
    }
   }
  },
- "generado": "25-09-2026 19:14"
+ "generado": "25-09-2026 19:24"
 }
