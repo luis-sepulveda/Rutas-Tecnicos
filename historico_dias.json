@@ -10780,13 +10780,13 @@
    }
   },
   "25-09-2026": {
-   "hasta": "09:45",
+   "hasta": "09:50",
    "actividades": 105,
    "tecnicos": 36,
    "estados": {
-    "en ruta": 16,
-    "Pendiente": 76,
-    "Iniciado": 12,
+    "en ruta": 9,
+    "Pendiente": 72,
+    "Iniciado": 23,
     "Cancelado": 1
    },
    "rgu": 170.5,
@@ -10879,7 +10879,7 @@
       "o": "1-3NUYPH6F",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "10:55",
+      "hi": "11:10",
       "d": "LAS CAMELIAS 2525 CASA B, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -10939,7 +10939,7 @@
       "o": "1-3O10H3EV",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "12:36",
+      "hi": "12:56",
       "d": "MADRID 1050 CASA 4, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MARCELO GÓMEZ GÓME",
@@ -10951,9 +10951,9 @@
       "o": "1-3O16MJIW",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "09:44",
+      "hi": "09:46",
       "d": "JUAN JOSE LATORRE 1376, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "MARCO PEREZ G",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -11057,9 +11057,9 @@
       "o": "1-3NZL8KQK",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:57",
       "d": "SANTA MARGARITA 1319, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JOEL GUSTAVE GUSTA",
       "desde": "24-09-2026"
      },
@@ -11067,7 +11067,7 @@
       "o": "1-3O0W823N",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "11:30",
+      "hi": "11:37",
       "d": "VIA UNO SIETE 2025 EDIF. A DEPTO 33, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS GATICA DAVILA",
@@ -11107,5 +11107,5 @@
    }
   }
  },
- "generado": "25-09-2026 09:45"
+ "generado": "25-09-2026 09:50"
 }
