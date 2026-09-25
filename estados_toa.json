@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-25T15:17:47",
+  "actualizado": "2026-09-25T15:47:59",
   "resumen": {
     "reagendada": 4,
     "sin informacion": 1
@@ -46,6 +46,13 @@
           {
             "estado": "?",
             "color": "rgb(93, 190, 63)",
+            "ot": "1-3O1NP0F4",
+            "franja": "13-16",
+            "texto": "1-3O1NP0F4 - 13-16-Alta-1 Play-MADRID 1050 CASA 4"
+          },
+          {
+            "estado": "suspendida",
+            "color": "rgb(153, 255, 255)",
             "ot": "1-3O1NP0F4",
             "franja": "13-16",
             "texto": "1-3O1NP0F4 - 13-16-Alta-1 Play-MADRID 1050 CASA 4"
