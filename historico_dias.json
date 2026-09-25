@@ -10780,13 +10780,13 @@
    }
   },
   "25-09-2026": {
-   "hasta": "20:09",
+   "hasta": "20:14",
    "actividades": 173,
    "tecnicos": 35,
    "estados": {
-    "Completado": 126,
+    "Completado": 127,
     "No Realizada": 33,
-    "Iniciado": 2,
+    "Iniciado": 1,
     "Cancelado": 6,
     "Suspendido": 6
    },
@@ -10881,7 +10881,7 @@
       "f": "19-21",
       "hi": "19:37",
       "d": "PJE WASHINGTON 1040 CASA 14, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O24CYNL",
@@ -11626,5 +11626,5 @@
    }
   }
  },
- "generado": "25-09-2026 20:09"
+ "generado": "25-09-2026 20:14"
 }
