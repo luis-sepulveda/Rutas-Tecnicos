@@ -10780,13 +10780,13 @@
    }
   },
   "25-09-2026": {
-   "hasta": "17:33",
+   "hasta": "17:38",
    "actividades": 162,
    "tecnicos": 35,
    "estados": {
-    "Completado": 97,
-    "Iniciado": 27,
-    "No Realizada": 22,
+    "Completado": 98,
+    "Iniciado": 25,
+    "No Realizada": 23,
     "Cancelado": 4,
     "Pendiente": 7,
     "en ruta": 2,
@@ -10964,7 +10964,7 @@
       "f": "16-19",
       "hi": "16:03",
       "d": "LAUTARO 477 CASA 2, QUILPUE",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3O1T9171",
@@ -11544,5 +11544,5 @@
    }
   }
  },
- "generado": "25-09-2026 17:33"
+ "generado": "25-09-2026 17:38"
 }
