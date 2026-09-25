@@ -10780,16 +10780,16 @@
    }
   },
   "25-09-2026": {
-   "hasta": "15:57",
+   "hasta": "16:02",
    "actividades": 159,
    "tecnicos": 34,
    "estados": {
-    "Completado": 75,
-    "Pendiente": 32,
+    "Completado": 76,
+    "Pendiente": 29,
     "No Realizada": 18,
     "Iniciado": 22,
     "Cancelado": 4,
-    "en ruta": 5,
+    "en ruta": 7,
     "Suspendido": 3
    },
    "rgu": 246.2,
@@ -11173,7 +11173,7 @@
       "o": "1-3O0EU8WW",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:57",
+      "hi": "17:29",
       "d": "LAS ROSAS 859, QUILPUE",
       "e": "Pendiente",
       "tec": "HERNAN CORTES HERRERA",
@@ -11256,7 +11256,7 @@
       "o": "1-3O17NFY4",
       "cat": "Migración 3 Play",
       "f": "16-19",
-      "hi": "18:19",
+      "hi": "17:07",
       "d": "MALU GATICA 1320, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -11328,9 +11328,9 @@
       "o": "1-3NZWJ9KV",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "16:08",
+      "hi": "16:17",
       "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "LUIS CASTRO TORRES",
       "visitas": 1,
       "ult_fecha": "18-08-2026",
@@ -11436,7 +11436,7 @@
       "o": "1-3O1OE64S",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "18:01",
+      "hi": "18:05",
       "d": "PJE WASHINGTON 1040 CASA 14, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -11532,5 +11532,5 @@
    }
   }
  },
- "generado": "25-09-2026 15:57"
+ "generado": "25-09-2026 16:02"
 }
