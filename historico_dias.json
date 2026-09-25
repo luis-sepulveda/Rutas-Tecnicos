@@ -10780,40 +10780,279 @@
    }
   },
   "25-09-2026": {
-   "hasta": "08:45",
-   "actividades": 3,
-   "tecnicos": 3,
+   "hasta": "08:50",
+   "actividades": 96,
+   "tecnicos": 37,
    "estados": {
-    "Pendiente": 3
+    "Pendiente": 96
    },
-   "rgu": 4.0,
+   "rgu": 155.5,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
    "nuevas": 0,
    "al_bucket": 0,
-   "repetidas": 1,
-   "reagendadas": 0,
+   "repetidas": 15,
+   "reagendadas": 7,
    "detalle": {
     "caidas": [],
     "nuevas": [],
     "repetidas": [
      {
+      "o": "1-3NZWJ9KV",
+      "cat": "Migración 1 Play",
+      "f": "16-19",
+      "hi": "16:00",
+      "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
+      "e": "Pendiente",
+      "tec": "CESAR MENA OLIVEROS",
+      "visitas": 1,
+      "ult_fecha": "18-08-2026",
+      "ult_cierre": "Cliente Desiste"
+     },
+     {
+      "o": "1-3O0EU8WW",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "16:00",
+      "d": "LAS ROSAS 859, QUILPUE",
+      "e": "Pendiente",
+      "tec": "HERNAN CORTES HERRERA",
+      "visitas": 3,
+      "ult_fecha": "23-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3O1A05E1",
+      "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "14:17",
+      "d": "SANTIAGO 780, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JOSE CASTRO P",
+      "visitas": 1,
+      "ult_fecha": "24-09-2026",
+      "ult_cierre": "Cliente reagenda"
+     },
+     {
+      "o": "1-3NUYPH6F",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "11:24",
+      "d": "LAS CAMELIAS 2525 CASA B, QUILPUE",
+      "e": "Pendiente",
+      "tec": "JOSE GALAZ D",
+      "visitas": 1,
+      "ult_fecha": "15-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3NY8RCBP",
       "cat": "Migración 2 Play",
       "f": "10-13",
-      "hi": "10:10",
+      "hi": "14:00",
       "d": "AZALEAS PONIENTE 2782, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
       "visitas": 1,
       "ult_fecha": "21-09-2026",
       "ult_cierre": "Ductos tapados"
+     },
+     {
+      "o": "1-3O10H3EV",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "11:00",
+      "d": "MADRID 1050 CASA 4, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JUAN ARRIAGADA C",
+      "visitas": 1,
+      "ult_fecha": "22-09-2026",
+      "ult_cierre": "Ductos tapados"
+     },
+     {
+      "o": "1-3O135XXO",
+      "cat": "Migración 2 Play",
+      "f": "10-13",
+      "hi": "10:00",
+      "d": "CALLE TRES 980, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LUIS CASTRO TORRES",
+      "visitas": 1,
+      "ult_fecha": "24-09-2026",
+      "ult_cierre": "Falta de dotación"
+     },
+     {
+      "o": "1-3O17GOP9",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "14:00",
+      "d": "MONTEVIDEO 205 CASA A, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LUIS MARTIN NUÑEZ",
+      "visitas": 2,
+      "ult_fecha": "07-08-2026",
+      "ult_cierre": "Direccion incorrecta"
+     },
+     {
+      "o": "1-3O16MJIW",
+      "cat": "Migración 2 Play",
+      "f": "10-13",
+      "hi": "10:00",
+      "d": "JUAN JOSE LATORRE 1376, QUILPUE",
+      "e": "Pendiente",
+      "tec": "MARCO PEREZ G",
+      "visitas": 1,
+      "ult_fecha": "24-09-2026",
+      "ult_cierre": "Cliente reagenda"
+     },
+     {
+      "o": "1-3O1124GP",
+      "cat": "Migración 1 Play",
+      "f": "10-13",
+      "hi": "12:18",
+      "d": "MARIA MERCEDES 1482 EDIF. 7 DEPTO 301, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "MATÍAS JAQUE AG",
+      "visitas": 1,
+      "ult_fecha": "24-09-2026",
+      "ult_cierre": "Cliente reagenda"
+     },
+     {
+      "o": "1-3O10GW79",
+      "cat": "Migración 1 Play",
+      "f": "13-16",
+      "hi": "14:00",
+      "d": "LEUCOTON 990 CASA C, QUILPUE",
+      "e": "Pendiente",
+      "tec": "NICOLAS MOYANO R",
+      "visitas": 2,
+      "ult_fecha": "24-09-2026",
+      "ult_cierre": "Cliente reagenda"
+     },
+     {
+      "o": "1-3O12G5JU",
+      "cat": "Alta 1 Play",
+      "f": "10-13",
+      "hi": "10:00",
+      "d": "SANTA RITA 766, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "RAFAEL VARGAS B",
+      "visitas": 2,
+      "ult_fecha": "24-09-2026",
+      "ult_cierre": "Cliente reagenda"
+     },
+     {
+      "o": "1-3O0UV1G0",
+      "cat": "Migración 1 Play",
+      "f": "10-13",
+      "hi": "11:21",
+      "d": "AVENIDA VALPARAISO 1696 CASA B, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "RAFAEL VARGAS B",
+      "visitas": 1,
+      "ult_fecha": "12-08-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3O16NXEY",
+      "cat": "Alta 2 Play",
+      "f": "10-13",
+      "hi": "11:58",
+      "d": "LAS ACACIAS 1421 EDIF. B DEPTO 311, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "SAMUEL FERNANDEZ VIDAL",
+      "visitas": 1,
+      "ult_fecha": "24-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3O10NPV9",
+      "cat": "Reparación",
+      "f": "16-19",
+      "hi": "16:00",
+      "d": "EL RINCON 1100 CASA 52, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "SAMUEL FERNANDEZ VIDAL",
+      "visitas": 1,
+      "ult_fecha": "24-09-2026",
+      "ult_cierre": "Sin moradores"
      }
     ],
-    "reagendadas": []
+    "reagendadas": [
+     {
+      "o": "1-3NXV7H77",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "14:00",
+      "d": "LINCOYAN 1410 EDIF. D DEPTO 33, QUILPUE",
+      "e": "Pendiente",
+      "tec": "CESAR MENA OLIVEROS",
+      "desde": "21-09-2026"
+     },
+     {
+      "o": "1-3O0ZI4C2",
+      "cat": "Alta 2 Play",
+      "f": "10-13",
+      "hi": "10:00",
+      "d": "CALLE 1 850 EDIF. S DEPTO 32, QUILPUE",
+      "e": "Pendiente",
+      "tec": "DANIEL NAVARRETE E",
+      "desde": "24-09-2026"
+     },
+     {
+      "o": "1-3NZL8KQK",
+      "cat": "Alta 2 Play",
+      "f": "10-13",
+      "hi": "11:00",
+      "d": "SANTA MARGARITA 1319, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JOEL GUSTAVE GUSTA",
+      "desde": "24-09-2026"
+     },
+     {
+      "o": "1-3O0W823N",
+      "cat": "Migración 2 Play",
+      "f": "10-13",
+      "hi": "11:49",
+      "d": "VIA UNO SIETE 2025 EDIF. A DEPTO 33, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "LUIS GATICA DAVILA",
+      "desde": "24-09-2026"
+     },
+     {
+      "o": "1-3O0A3FCQ",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "16:00",
+      "d": "MANUEL PLAZA 9, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LUIS MARTIN NUÑEZ",
+      "desde": "24-09-2026"
+     },
+     {
+      "o": "1-3O0WLFFG",
+      "cat": "Migración 2 Play",
+      "f": "13-16",
+      "hi": "14:00",
+      "d": "BLANCO 339, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "MARCELO GÓMEZ GÓME",
+      "desde": "24-09-2026"
+     },
+     {
+      "o": "1-3NY55E4M",
+      "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "14:00",
+      "d": "CALLE HERALDO ORREGO 3201 EDIF. A DEPTO 905, QUILPUE",
+      "e": "Pendiente",
+      "tec": "PABLO HERNANEZ FERNANDEZ",
+      "desde": "21-09-2026"
+     }
+    ]
    }
   }
  },
- "generado": "25-09-2026 08:45"
+ "generado": "25-09-2026 08:50"
 }
