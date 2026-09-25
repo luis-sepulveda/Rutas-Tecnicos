@@ -10780,23 +10780,22 @@
    }
   },
   "25-09-2026": {
-   "hasta": "19:04",
-   "actividades": 171,
+   "hasta": "19:09",
+   "actividades": 173,
    "tecnicos": 35,
    "estados": {
     "Completado": 118,
     "No Realizada": 32,
-    "en ruta": 1,
+    "Iniciado": 10,
     "Cancelado": 6,
-    "Iniciado": 7,
     "Suspendido": 6,
     "Pendiente": 1
    },
-   "rgu": 256.6,
+   "rgu": 257.7,
    "caidas_total": 8,
    "caidas_activas": 7,
    "caidas_resueltas": 1,
-   "nuevas": 37,
+   "nuevas": 38,
    "al_bucket": 18,
    "repetidas": 27,
    "reagendadas": 7,
@@ -10867,6 +10866,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O24CYNL",
+      "tec": "CESAR MENA OLIVEROS",
+      "cat": "Modificación de Servicio",
+      "f": "19-21",
+      "hi": "19:06",
+      "d": "ALMIRANTE WILSON 215, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3O2381VU",
       "tec": "GEEYSER PEREZ O",
@@ -11601,5 +11609,5 @@
    }
   }
  },
- "generado": "25-09-2026 19:04"
+ "generado": "25-09-2026 19:09"
 }
