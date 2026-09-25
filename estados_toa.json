@@ -1,10 +1,20 @@
 {
-  "actualizado": "2026-09-25T18:49:34",
+  "actualizado": "2026-09-25T19:19:44",
   "resumen": {
-    "reagendada": 6,
+    "reagendada": 7,
     "sin informacion": 1
   },
   "estados": {
+    "1-3O0V6HSO": {
+      "tec": "JOSE CASTRO P",
+      "cat": "Reparación",
+      "franja_original": "16-19",
+      "d": "EL MIRADOR 493 CASA 23, VILLA ALEMANA",
+      "estado": "reagendada",
+      "color": "rgb(255, 222, 0)",
+      "detalle": "1-3O0V6HSO - 16-19-Reparación-3 Play Servicio Degradado-EL MIRADOR 493 CASA 23Sab, 26 Sep",
+      "franja_nueva": "16-19"
+    },
     "1-3O1HDINI": {
       "tec": "JOSE ROJO A",
       "cat": "Reparación",
