@@ -10780,14 +10780,14 @@
    }
   },
   "25-09-2026": {
-   "hasta": "15:52",
+   "hasta": "15:57",
    "actividades": 159,
    "tecnicos": 34,
    "estados": {
-    "Completado": 73,
-    "Iniciado": 23,
-    "Pendiente": 33,
+    "Completado": 75,
+    "Pendiente": 32,
     "No Realizada": 18,
+    "Iniciado": 22,
     "Cancelado": 4,
     "en ruta": 5,
     "Suspendido": 3
@@ -11127,7 +11127,7 @@
       "f": "13-16",
       "hi": "12:59",
       "d": "VALLE DEL PARAISO 2746, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "ALEXIS JARA",
       "visitas": 1,
       "ult_fecha": "11-09-2026",
@@ -11280,9 +11280,9 @@
       "o": "1-3O1A05E1",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "16:25",
+      "hi": "16:01",
       "d": "SANTIAGO 780, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JUAN ARRIAGADA C",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -11292,7 +11292,7 @@
       "o": "1-3O1NNVHM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "18:07",
+      "hi": "17:43",
       "d": "MANUEL RODRIGUEZ 360 CASA E, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -11436,7 +11436,7 @@
       "o": "1-3O1OE64S",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "17:58",
+      "hi": "18:01",
       "d": "PJE WASHINGTON 1040 CASA 14, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -11462,7 +11462,7 @@
       "o": "1-3O0A3FCQ",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:59",
+      "hi": "17:08",
       "d": "MANUEL PLAZA 9, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -11532,5 +11532,5 @@
    }
   }
  },
- "generado": "25-09-2026 15:52"
+ "generado": "25-09-2026 15:57"
 }
