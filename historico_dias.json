@@ -10780,25 +10780,25 @@
    }
   },
   "25-09-2026": {
-   "hasta": "16:07",
-   "actividades": 159,
+   "hasta": "16:53",
+   "actividades": 157,
    "tecnicos": 34,
    "estados": {
-    "Completado": 77,
-    "Pendiente": 26,
-    "No Realizada": 18,
-    "en ruta": 8,
-    "Iniciado": 23,
+    "Completado": 84,
+    "Iniciado": 29,
+    "No Realizada": 19,
+    "en ruta": 1,
     "Cancelado": 4,
+    "Pendiente": 17,
     "Suspendido": 3
    },
-   "rgu": 246.2,
-   "caidas_total": 5,
-   "caidas_activas": 5,
+   "rgu": 240.7,
+   "caidas_total": 7,
+   "caidas_activas": 7,
    "caidas_resueltas": 0,
-   "nuevas": 30,
+   "nuevas": 31,
    "al_bucket": 18,
-   "repetidas": 28,
+   "repetidas": 26,
    "reagendadas": 7,
    "detalle": {
     "caidas": [
@@ -10830,6 +10830,24 @@
       "e": "Pendiente"
      },
      {
+      "o": "1-3O1OVI13",
+      "tec": "MATIAS APELEO APELEO",
+      "cat": "Alta 3 Play",
+      "f": "13-16",
+      "hi": "16:45",
+      "d": "RIO DE JANEIRO 2450, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
+      "o": "1-3O1P80ST",
+      "tec": "MATIAS APELEO APELEO",
+      "cat": "Alta 2 Play",
+      "f": "13-16",
+      "hi": "19:13",
+      "d": "SANTA ROSA 0120, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
+     {
       "o": "1-3O1MBTHU",
       "tec": "PABLO HERNANEZ FERNANDEZ",
       "cat": "Migración 3 Play",
@@ -10849,6 +10867,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O20356N",
+      "tec": "CRISTOBAL SILVA LEIVA",
+      "cat": "Reparación",
+      "f": "16-19",
+      "hi": "17:18",
+      "d": "VOLCAN ANTOFALLA 2627, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3O1YB913",
       "tec": "CESAR MENA OLIVEROS",
@@ -10892,7 +10919,7 @@
       "f": "13-16",
       "hi": "15:44",
       "d": "EDWIN GUAJARDO 645, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O1TPPMM",
@@ -10928,7 +10955,7 @@
       "f": "16-19",
       "hi": "16:03",
       "d": "LAUTARO 477 CASA 2, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O1T9171",
@@ -10973,7 +11000,7 @@
       "f": "13-16",
       "hi": "15:15",
       "d": "LINCOYAN 874, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O1RPWMW",
@@ -11045,7 +11072,7 @@
       "f": "13-16",
       "hi": "14:08",
       "d": "RIO DE JANEIRO 2450, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Pendiente (ya no está)"
      },
      {
       "o": "1-3O1OFG88",
@@ -11063,7 +11090,7 @@
       "f": "13-16",
       "hi": "14:26",
       "d": "SEGUNDO DE LINEA 2498, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O1NOPN8",
@@ -11081,7 +11108,7 @@
       "f": "16-19",
       "hi": "18:00",
       "d": "MANUEL RODRIGUEZ 360 CASA E, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O1N5X6Z",
@@ -11151,7 +11178,7 @@
       "f": "13-16",
       "hi": "15:16",
       "d": "SEGUNDO DE LINEA 2498, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "ESTEBAN PIZARRO QUINTANA",
       "visitas": 2,
       "ult_fecha": "24-09-2026",
@@ -11173,7 +11200,7 @@
       "o": "1-3O0EU8WW",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:29",
+      "hi": "17:55",
       "d": "LAS ROSAS 859, QUILPUE",
       "e": "Pendiente",
       "tec": "HERNAN CORTES HERRERA",
@@ -11232,9 +11259,9 @@
       "o": "1-3O10NPV9",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:33",
+      "hi": "16:17",
       "d": "EL RINCON 1100 CASA 52, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "JOSE PEREZ RANGEL",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -11256,7 +11283,7 @@
       "o": "1-3O17NFY4",
       "cat": "Migración 3 Play",
       "f": "16-19",
-      "hi": "17:11",
+      "hi": "17:09",
       "d": "MALU GATICA 1320, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -11282,7 +11309,7 @@
       "f": "13-16",
       "hi": "16:07",
       "d": "SANTIAGO 780, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "JUAN ARRIAGADA C",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -11292,9 +11319,9 @@
       "o": "1-3O1NNVHM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:49",
+      "hi": "16:47",
       "d": "MANUEL RODRIGUEZ 360 CASA E, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "JUAN ARRIAGADA C",
       "visitas": 1,
       "ult_fecha": "25-09-2026",
@@ -11330,7 +11357,7 @@
       "f": "16-19",
       "hi": "16:17",
       "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "LUIS CASTRO TORRES",
       "visitas": 1,
       "ult_fecha": "18-08-2026",
@@ -11373,28 +11400,16 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
-      "o": "1-3O1OVI13",
-      "cat": "Alta 3 Play",
-      "f": "13-16",
-      "hi": "16:45",
-      "d": "RIO DE JANEIRO 2450, VILLA ALEMANA",
+      "o": "1-3O1OE64S",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "17:12",
+      "d": "PJE WASHINGTON 1040 CASA 14, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATIAS APELEO APELEO",
       "visitas": 1,
       "ult_fecha": "25-09-2026",
       "ult_cierre": "Cliente reagenda"
-     },
-     {
-      "o": "1-3O1P80ST",
-      "cat": "Alta 2 Play",
-      "f": "13-16",
-      "hi": "19:13",
-      "d": "SANTA ROSA 0120, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "MATIAS APELEO APELEO",
-      "visitas": 2,
-      "ult_fecha": "24-08-2026",
-      "ult_cierre": "Sin Apoyo de Poste"
      },
      {
       "o": "1-3O1124GP",
@@ -11433,18 +11448,6 @@
       "ult_cierre": "Sin moradores"
      },
      {
-      "o": "1-3O1OE64S",
-      "cat": "Alta 2 Play",
-      "f": "16-19",
-      "hi": "18:05",
-      "d": "PJE WASHINGTON 1040 CASA 14, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "SAMUEL FERNANDEZ VIDAL",
-      "visitas": 1,
-      "ult_fecha": "25-09-2026",
-      "ult_cierre": "Cliente reagenda"
-     },
-     {
       "o": "1-3O0HTP5O",
       "cat": "Alta 2 Play",
       "f": "10-13",
@@ -11462,9 +11465,9 @@
       "o": "1-3O0A3FCQ",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:08",
+      "hi": "16:24",
       "d": "MANUEL PLAZA 9, QUILPUE",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "ALEXIS JARA",
       "desde": "24-09-2026"
      },
@@ -11532,5 +11535,5 @@
    }
   }
  },
- "generado": "25-09-2026 16:07"
+ "generado": "25-09-2026 16:53"
 }
