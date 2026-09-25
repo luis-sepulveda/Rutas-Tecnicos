@@ -10780,25 +10780,25 @@
    }
   },
   "25-09-2026": {
-   "hasta": "14:17",
-   "actividades": 152,
+   "hasta": "14:37",
+   "actividades": 153,
    "tecnicos": 34,
    "estados": {
-    "Completado": 49,
-    "Iniciado": 22,
-    "Pendiente": 57,
+    "Completado": 53,
+    "Iniciado": 24,
+    "Pendiente": 51,
     "No Realizada": 15,
     "Cancelado": 4,
-    "en ruta": 3,
+    "en ruta": 4,
     "Suspendido": 2
    },
-   "rgu": 239.9,
+   "rgu": 240.9,
    "caidas_total": 5,
    "caidas_activas": 5,
    "caidas_resueltas": 0,
    "nuevas": 28,
    "al_bucket": 8,
-   "repetidas": 26,
+   "repetidas": 27,
    "reagendadas": 7,
    "detalle": {
     "caidas": [
@@ -10856,7 +10856,7 @@
       "f": "13-16",
       "hi": "18:19",
       "d": "SANTA FE 1430 CASA A, VILLA ALEMANA",
-      "e": "en ruta"
+      "e": "Completado"
      },
      {
       "o": "1-3O1UTL47",
@@ -10901,7 +10901,7 @@
       "f": "13-16",
       "hi": "14:23",
       "d": "JOSE URIBE 88, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O1TGFKK",
@@ -11009,7 +11009,7 @@
       "f": "13-16",
       "hi": "16:38",
       "d": "GALLEGUILLOS 1421 EDIF. C DEPTO 14, VILLA ALEMANA",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O1PA6EW",
@@ -11018,7 +11018,7 @@
       "f": "13-16",
       "hi": "13:07",
       "d": "PAUL HARRIS 388 CASA C, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O1OVI13",
@@ -11143,7 +11143,7 @@
       "o": "1-3O1NNVHM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:37",
+      "hi": "16:52",
       "d": "MANUEL RODRIGUEZ 360 CASA E, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "ESTEBAN PIZARRO QUINTANA",
@@ -11157,7 +11157,7 @@
       "f": "13-16",
       "hi": "14:23",
       "d": "MONTEVIDEO 205 CASA A, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "FELIPE SILVA R",
       "visitas": 2,
       "ult_fecha": "07-08-2026",
@@ -11176,6 +11176,18 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3O1MX73M",
+      "cat": "Reparación",
+      "f": "10-13",
+      "hi": "11:57",
+      "d": "EL LUCUMILLO 307, VILLA ALEMANA",
+      "e": "Completado",
+      "tec": "JEAN ROODLY ORELIEN",
+      "visitas": 1,
+      "ult_fecha": "25-09-2026",
+      "ult_cierre": "Falla Aprovisionamiento"
+     },
+     {
       "o": "1-3NY8RCBP",
       "cat": "Migración 2 Play",
       "f": "10-13",
@@ -11191,9 +11203,9 @@
       "o": "1-3O15GWVV",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:25",
+      "hi": "14:26",
       "d": "SANTA FE 1430 CASA A, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Completado",
       "tec": "JOSE CASTRO P",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -11203,7 +11215,7 @@
       "o": "1-3O10NPV9",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "19:00",
+      "hi": "17:45",
       "d": "EL RINCON 1100 CASA 52, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE CASTRO P",
@@ -11263,7 +11275,7 @@
       "o": "1-3O17I1TA",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "15:22",
+      "hi": "15:36",
       "d": "SEGUNDO DE LINEA 2498, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -11299,7 +11311,7 @@
       "o": "1-3O17NFY4",
       "cat": "Migración 3 Play",
       "f": "16-19",
-      "hi": "17:26",
+      "hi": "16:58",
       "d": "MALU GATICA 1320, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS GATICA DAVILA",
@@ -11335,7 +11347,7 @@
       "o": "1-3O10GW79",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "15:33",
+      "hi": "15:43",
       "d": "LEUCOTON 990 CASA C, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -11347,7 +11359,7 @@
       "o": "1-3NZWJ9KV",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "17:40",
+      "hi": "17:50",
       "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -11451,9 +11463,9 @@
       "o": "1-3O0WLFFG",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "16:05",
+      "hi": "14:50",
       "d": "BLANCO 339, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JOSE CASTRO P",
       "desde": "24-09-2026"
      },
@@ -11481,15 +11493,15 @@
       "o": "1-3NY55E4M",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "16:05",
+      "hi": "15:10",
       "d": "CALLE HERALDO ORREGO 3201 EDIF. A DEPTO 905, QUILPUE",
       "e": "Pendiente",
-      "tec": "PABLO HERNANEZ FERNANDEZ",
+      "tec": "NICOLAS MOYANO R",
       "desde": "21-09-2026"
      }
     ]
    }
   }
  },
- "generado": "25-09-2026 14:17"
+ "generado": "25-09-2026 14:37"
 }
