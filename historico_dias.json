@@ -10780,16 +10780,16 @@
    }
   },
   "25-09-2026": {
-   "hasta": "13:56",
+   "hasta": "14:01",
    "actividades": 151,
    "tecnicos": 34,
    "estados": {
-    "Completado": 42,
-    "Iniciado": 26,
+    "Completado": 45,
+    "Iniciado": 24,
     "Pendiente": 61,
     "No Realizada": 14,
     "Cancelado": 4,
-    "en ruta": 2,
+    "en ruta": 1,
     "Suspendido": 2
    },
    "rgu": 238.9,
@@ -10946,7 +10946,7 @@
       "f": "10-13",
       "hi": "12:37",
       "d": "ALMIRANTE GERKEN 2536, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O1RVHFN",
@@ -11155,7 +11155,7 @@
       "o": "1-3O17GOP9",
       "cat": "Modificación de Servicio",
       "f": "13-16",
-      "hi": "15:08",
+      "hi": "14:17",
       "d": "MONTEVIDEO 205 CASA A, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -11167,7 +11167,7 @@
       "o": "1-3O0EU8WW",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:03",
+      "hi": "16:12",
       "d": "LAS ROSAS 859, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -11227,9 +11227,9 @@
       "o": "1-3O1NP0F4",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:05",
+      "hi": "13:59",
       "d": "MADRID 1050 CASA 4, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JOSE ROJO A",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -11239,7 +11239,7 @@
       "o": "1-3O1P80ST",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:52",
+      "hi": "15:46",
       "d": "SANTA ROSA 0120, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -11263,7 +11263,7 @@
       "o": "1-3O17I1TA",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:58",
+      "hi": "15:22",
       "d": "SEGUNDO DE LINEA 2498, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -11299,7 +11299,7 @@
       "o": "1-3O17NFY4",
       "cat": "Migración 3 Play",
       "f": "16-19",
-      "hi": "17:16",
+      "hi": "17:32",
       "d": "MALU GATICA 1320, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS GATICA DAVILA",
@@ -11335,7 +11335,7 @@
       "o": "1-3O10GW79",
       "cat": "Migración 1 Play",
       "f": "13-16",
-      "hi": "15:10",
+      "hi": "15:33",
       "d": "LEUCOTON 990 CASA C, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -11347,7 +11347,7 @@
       "o": "1-3NZWJ9KV",
       "cat": "Migración 1 Play",
       "f": "16-19",
-      "hi": "17:17",
+      "hi": "17:40",
       "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -11407,7 +11407,7 @@
       "o": "1-3O1OZWOO",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:23",
+      "hi": "15:19",
       "d": "JOSE FUENTES 885 DEPTO 21, QUILPUE",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
@@ -11491,5 +11491,5 @@
    }
   }
  },
- "generado": "25-09-2026 13:56"
+ "generado": "25-09-2026 14:01"
 }
