@@ -10780,13 +10780,13 @@
    }
   },
   "25-09-2026": {
-   "hasta": "18:03",
+   "hasta": "18:08",
    "actividades": 163,
    "tecnicos": 35,
    "estados": {
-    "Completado": 103,
-    "No Realizada": 26,
-    "Iniciado": 23,
+    "Completado": 104,
+    "No Realizada": 27,
+    "Iniciado": 21,
     "Cancelado": 4,
     "Pendiente": 3,
     "Suspendido": 3,
@@ -11126,7 +11126,7 @@
       "f": "16-19",
       "hi": "18:00",
       "d": "MANUEL RODRIGUEZ 360 CASA E, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O1N5X6Z",
@@ -11339,7 +11339,7 @@
       "f": "16-19",
       "hi": "16:47",
       "d": "MANUEL RODRIGUEZ 360 CASA E, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JUAN ARRIAGADA C",
       "visitas": 1,
       "ult_fecha": "25-09-2026",
@@ -11349,7 +11349,7 @@
       "o": "1-3O1TPPMM",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:22",
+      "hi": "18:38",
       "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -11553,5 +11553,5 @@
    }
   }
  },
- "generado": "25-09-2026 18:03"
+ "generado": "25-09-2026 18:08"
 }
