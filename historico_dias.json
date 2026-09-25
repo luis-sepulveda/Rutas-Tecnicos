@@ -10780,13 +10780,13 @@
    }
   },
   "25-09-2026": {
-   "hasta": "15:22",
+   "hasta": "15:27",
    "actividades": 137,
    "tecnicos": 34,
    "estados": {
-    "Completado": 66,
-    "Iniciado": 23,
-    "Pendiente": 22,
+    "Completado": 68,
+    "Iniciado": 22,
+    "Pendiente": 21,
     "No Realizada": 16,
     "en ruta": 4,
     "Cancelado": 4,
@@ -10856,7 +10856,7 @@
       "f": "13-16",
       "hi": "15:04",
       "d": "RIO LIMARI 012, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O15GWVV",
@@ -11223,7 +11223,7 @@
       "o": "1-3O10NPV9",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:45",
+      "hi": "16:33",
       "d": "EL RINCON 1100 CASA 52, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -11475,5 +11475,5 @@
    }
   }
  },
- "generado": "25-09-2026 15:22"
+ "generado": "25-09-2026 15:27"
 }
