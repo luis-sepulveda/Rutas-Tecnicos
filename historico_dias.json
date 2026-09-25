@@ -10780,16 +10780,16 @@
    }
   },
   "25-09-2026": {
-   "hasta": "14:47",
+   "hasta": "14:52",
    "actividades": 154,
    "tecnicos": 34,
    "estados": {
     "Completado": 59,
     "Iniciado": 20,
-    "Pendiente": 52,
+    "Pendiente": 50,
     "No Realizada": 15,
     "Cancelado": 4,
-    "en ruta": 2,
+    "en ruta": 4,
     "Suspendido": 2
    },
    "rgu": 241.9,
@@ -11227,7 +11227,7 @@
       "o": "1-3O1A05E1",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:56",
+      "hi": "16:56",
       "d": "SANTIAGO 780, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -11275,7 +11275,7 @@
       "o": "1-3O17I1TA",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "15:36",
+      "hi": "16:13",
       "d": "SEGUNDO DE LINEA 2498, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -11395,7 +11395,7 @@
       "o": "1-3O07WTHS",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:38",
+      "hi": "16:20",
       "d": "HUANHUALI 1549 EDIF. B10 DEPTO 32, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -11503,5 +11503,5 @@
    }
   }
  },
- "generado": "25-09-2026 14:47"
+ "generado": "25-09-2026 14:52"
 }
