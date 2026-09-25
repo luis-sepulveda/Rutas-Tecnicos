@@ -1376,6 +1376,9 @@
   .cq .est { font-size:11.5px; font-weight:700; padding:1px 7px; border-radius:5px; }
   .cq .est.op { background:#fee2e2; color:#991b1b; }
   .cq .est.lic { background:#e0e7ff; color:#3730a3; }
+  /* 25-09-2026: trabajo en otra comuna (Vina, Quillota...). Verde azulado:
+     no es una ausencia, es alguien que si trabajo pero fuera de la zona. */
+  .cq .est.otra { background:#ccfbf1; color:#115e59; }
   .cq.nop th { text-align:left; font-size:11px; color:#64748b; text-transform:uppercase; letter-spacing:.03em;
     padding:4px 8px 6px 0; border-bottom:1px solid #cbd5e1; }
   .cq.nop th.n { text-align:right; }
@@ -5631,7 +5634,10 @@ function botonNoOperativos(){
 function abrirNoOperativos(){
   const L = (NOOP && NOOP.lista) || [];
   const sinExpl = L.filter(function(x){ return x.sin_expl; });
-  const conEst = L.filter(function(x){ return !x.sin_expl; });
+  /* 25-09-2026: CAMBIO DE COMUNA va en su propio grupo: si trabajaron, pero
+     en otra comuna (con el acceso de Luis esas ordenes no se ven) */
+  const otraCom = L.filter(function(x){ return x.otra_comuna; });
+  const conEst = L.filter(function(x){ return !x.sin_expl && !x.otra_comuna; });
   const fila = function(x){
     const ult = x.ult ? escR(x.ult) + ' <span class="m">(' + (x.hace === 1 ? 'ayer' : 'hace ' + x.hace + ' días') + ')</span>'
                       : '<span class="m">sin trabajos en los últimos ' + ((NOOP && NOOP.dias_equipo) || 60) + ' días</span>';
@@ -5640,7 +5646,8 @@ function abrirNoOperativos(){
       /* 24-09-2026: el motivo lo marca Luis en estado_tecnicos.xlsx. Si figura
          OPERATIVO y no tiene ordenes, se muestra "Sin marcar" (falta el motivo) */
       + '<td>' + (x.sin_expl ? '<span class="est op">Sin marcar</span>'
-                             : '<span class="est lic">' + escR(tituloDir(x.estado)) + '</span>'
+                             : '<span class="est ' + (x.otra_comuna ? 'otra' : 'lic') + '">'
+                               + escR(x.otra_comuna ? 'Cambio de comuna' : tituloDir(x.estado)) + '</span>'
                                + (x.hasta ? ' <span class="m">hasta el ' + escR(x.hasta) + '</span>' : '')) + '</td>'
       + '<td>' + ult + '</td><td class="n">' + x.d14 + '</td></tr>';
   };
@@ -5657,6 +5664,10 @@ function abrirNoOperativos(){
       h += '<div class="nop-t alerta">Sin órdenes hoy y sin motivo marcado (' + sinExpl.length + ')'
         + (NOOP && NOOP.archivo_estados ? ' · márcalos en estado_tecnicos.xlsx' : ' · hay que averiguar por qué') + '</div>' + tabla(sinExpl);
     }
+    if(otraCom.length){
+      h += '<div class="nop-t">En otra comuna (' + otraCom.length + ') · trabajaron, pero fuera de Quilpué y Villa Alemana</div>'
+        + tabla(otraCom);
+    }
     if(conEst.length){
       h += '<div class="nop-t">Con motivo (' + conEst.length + ')</div>' + tabla(conEst);
     }
@@ -5667,7 +5678,7 @@ function abrirNoOperativos(){
                                : 'los de la base de supervisores que trabajaron en la zona en los últimos ' + ((NOOP && NOOP.dias_equipo) || 60) + ' días')
     + ', más los que trabajaron en las últimas 2 semanas aunque no estén en la base. '
     + 'No operativo = del equipo, sin ninguna orden en bandeja hoy. El motivo se marca cada mañana, después de la carga de '
-    + 'bandejas, en la columna ESTADO de estado_tecnicos.xlsx (Ausente, Licencia médica, Vacaciones, Permiso), con la fecha '
+    + 'bandejas, en la columna ESTADO de estado_tecnicos.xlsx (Ausente, Licencia médica, Vacaciones, Permiso, Cambio de comuna), con la fecha '
     + 'HASTA; al día siguiente de esa fecha vuelve solo a Operativo.</div></div>';
   document.getElementById('noopCuerpo').innerHTML = h;
   document.getElementById('modalNoop').classList.add('abierto');
