@@ -10780,22 +10780,22 @@
    }
   },
   "25-09-2026": {
-   "hasta": "18:18",
-   "actividades": 165,
+   "hasta": "18:23",
+   "actividades": 166,
    "tecnicos": 35,
    "estados": {
-    "Completado": 106,
+    "Completado": 107,
     "No Realizada": 27,
-    "Iniciado": 20,
+    "Iniciado": 19,
     "Cancelado": 5,
-    "Pendiente": 3,
+    "Pendiente": 4,
     "Suspendido": 4
    },
-   "rgu": 250.0,
+   "rgu": 251.5,
    "caidas_total": 8,
    "caidas_activas": 7,
    "caidas_resueltas": 1,
-   "nuevas": 34,
+   "nuevas": 35,
    "al_bucket": 18,
    "repetidas": 26,
    "reagendadas": 7,
@@ -10866,6 +10866,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O22X4BK",
+      "tec": "JOSE ROJO A",
+      "cat": "Upgrade promoción",
+      "f": "16-19",
+      "hi": "18:42",
+      "d": "PJE ANTUMAPU 554, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3O232XYQ",
       "tec": "MATÍAS JAQUE AG",
@@ -11561,5 +11570,5 @@
    }
   }
  },
- "generado": "25-09-2026 18:18"
+ "generado": "25-09-2026 18:23"
 }
