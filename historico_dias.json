@@ -10780,19 +10780,19 @@
    }
   },
   "25-09-2026": {
-   "hasta": "17:28",
-   "actividades": 161,
+   "hasta": "17:33",
+   "actividades": 162,
    "tecnicos": 35,
    "estados": {
-    "Completado": 96,
-    "Iniciado": 26,
-    "No Realizada": 21,
+    "Completado": 97,
+    "Iniciado": 27,
+    "No Realizada": 22,
     "Cancelado": 4,
     "Pendiente": 7,
-    "en ruta": 4,
+    "en ruta": 2,
     "Suspendido": 3
    },
-   "rgu": 247.3,
+   "rgu": 247.4,
    "caidas_total": 8,
    "caidas_activas": 7,
    "caidas_resueltas": 1,
@@ -11256,9 +11256,9 @@
       "o": "1-3O17NFY4",
       "cat": "Migración 3 Play",
       "f": "16-19",
-      "hi": "17:32",
+      "hi": "17:31",
       "d": "MALU GATICA 1320, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JORDAN ROA PEREZ",
       "visitas": 3,
       "ult_fecha": "24-09-2026",
@@ -11340,7 +11340,7 @@
       "o": "1-3O1TPPMM",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:44",
+      "hi": "18:03",
       "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -11544,5 +11544,5 @@
    }
   }
  },
- "generado": "25-09-2026 17:28"
+ "generado": "25-09-2026 17:33"
 }
