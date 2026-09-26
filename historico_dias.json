@@ -11625,11 +11625,12 @@
    }
   },
   "26-09-2026": {
-   "hasta": "09:10",
+   "hasta": "09:15",
    "actividades": 117,
    "tecnicos": 35,
    "estados": {
-    "Pendiente": 117
+    "Pendiente": 116,
+    "en ruta": 1
    },
    "rgu": 195.5,
    "caidas_total": 0,
@@ -11903,9 +11904,9 @@
       "o": "1-3O11Q9RW",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:23",
       "d": "VIA UNO SIETE 2065 EDIF. E DEPTO 53, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "MARCELO GÓMEZ GÓME",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -12093,5 +12094,5 @@
    }
   }
  },
- "generado": "26-09-2026 09:10"
+ "generado": "26-09-2026 09:15"
 }
