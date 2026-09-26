@@ -11625,15 +11625,15 @@
    }
   },
   "26-09-2026": {
-   "hasta": "17:49",
+   "hasta": "17:54",
    "actividades": 172,
    "tecnicos": 35,
    "estados": {
     "Completado": 103,
-    "No Realizada": 36,
+    "No Realizada": 37,
     "Suspendido": 5,
     "Cancelado": 8,
-    "Iniciado": 19,
+    "Iniciado": 18,
     "Pendiente": 1
    },
    "rgu": 250.5,
@@ -12390,5 +12390,5 @@
    }
   }
  },
- "generado": "26-09-2026 17:49"
+ "generado": "26-09-2026 17:54"
 }
