@@ -11625,15 +11625,15 @@
    }
   },
   "26-09-2026": {
-   "hasta": "15:03",
+   "hasta": "15:08",
    "actividades": 164,
    "tecnicos": 35,
    "estados": {
     "Completado": 63,
     "No Realizada": 24,
-    "Iniciado": 22,
-    "Pendiente": 43,
-    "en ruta": 4,
+    "Iniciado": 24,
+    "Pendiente": 40,
+    "en ruta": 5,
     "Cancelado": 6,
     "Suspendido": 2
    },
@@ -11922,7 +11922,7 @@
       "o": "1-3O2DL671",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:11",
+      "hi": "18:20",
       "d": "AVENIDA BELLOTO 1080, QUILPUE",
       "e": "Pendiente",
       "tec": "CRISTOBAL SILVA LEIVA",
@@ -12006,9 +12006,9 @@
       "o": "1-3O24LXUD",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "15:32",
+      "hi": "15:24",
       "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JOEL GUSTAVE GUSTA",
       "visitas": 2,
       "ult_fecha": "25-09-2026",
@@ -12041,7 +12041,7 @@
       "o": "1-3O2FKQKM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:45",
+      "hi": "17:39",
       "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -12124,9 +12124,9 @@
       "o": "1-3O1AS7QU",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "15:23",
       "d": "PORVENIR 26, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "LUIS MARTIN NUÑEZ",
       "visitas": 2,
       "ult_fecha": "24-09-2026",
@@ -12337,5 +12337,5 @@
    }
   }
  },
- "generado": "26-09-2026 15:03"
+ "generado": "26-09-2026 15:08"
 }
