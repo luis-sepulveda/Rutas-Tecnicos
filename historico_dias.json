@@ -11625,16 +11625,16 @@
    }
   },
   "26-09-2026": {
-   "hasta": "14:12",
+   "hasta": "14:17",
    "actividades": 161,
    "tecnicos": 35,
    "estados": {
-    "Completado": 55,
-    "No Realizada": 20,
-    "Iniciado": 17,
-    "Pendiente": 58,
+    "Completado": 56,
+    "No Realizada": 21,
+    "Iniciado": 18,
+    "Pendiente": 54,
+    "en ruta": 4,
     "Cancelado": 6,
-    "en ruta": 3,
     "Suspendido": 2
    },
    "rgu": 246.9,
@@ -11800,7 +11800,7 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "LOS PINOS 1132, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      }
     ],
     "repetidas": [
@@ -11916,7 +11916,7 @@
       "o": "1-3O22VA1Q",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:43",
+      "hi": "16:44",
       "d": "PABLO NERUDA 2069, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -11999,9 +11999,9 @@
       "o": "1-3NZ6QIY7",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:12",
+      "hi": "14:30",
       "d": "VILLA ESMERALDA 1531 DEPTO 304, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JORDAN ROA PEREZ",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -12011,7 +12011,7 @@
       "o": "1-3O2FKQKM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "18:20",
+      "hi": "18:08",
       "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -12130,9 +12130,9 @@
       "o": "1-3NZ2NN1H",
       "cat": "Alta Traslado",
       "f": "13-16",
-      "hi": "14:28",
+      "hi": "14:31",
       "d": "LOS PINOS 1132, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "MARCO PEREZ G",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -12142,7 +12142,7 @@
       "o": "1-3O2DZI0K",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "18:44",
+      "hi": "18:47",
       "d": "CUMMING 1790 EDIF. DEPTO 22, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -12154,7 +12154,7 @@
       "o": "1-3O007SSN",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:33",
+      "hi": "14:27",
       "d": "AV LA PALMA 151 EDIF. 7 DEPTO 527, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATÍAS JAQUE AG",
@@ -12269,7 +12269,7 @@
       "o": "1-3O1HDINI",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "15:36",
+      "hi": "15:25",
       "d": "SANTA FE 1538, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOEL GUSTAVE GUSTA",
@@ -12319,5 +12319,5 @@
    }
   }
  },
- "generado": "26-09-2026 14:12"
+ "generado": "26-09-2026 14:17"
 }
