@@ -11625,16 +11625,16 @@
    }
   },
   "26-09-2026": {
-   "hasta": "17:14",
+   "hasta": "17:19",
    "actividades": 170,
    "tecnicos": 35,
    "estados": {
-    "Completado": 91,
-    "No Realizada": 33,
-    "Iniciado": 26,
+    "Completado": 95,
+    "No Realizada": 34,
+    "Iniciado": 24,
     "Suspendido": 3,
-    "en ruta": 5,
-    "Pendiente": 6,
+    "en ruta": 3,
+    "Pendiente": 5,
     "Cancelado": 6
    },
    "rgu": 248.5,
@@ -11674,7 +11674,7 @@
       "f": "16-19",
       "hi": "16:41",
       "d": "PJE LOS AVELLANOS 3137, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O2LFPQB",
@@ -11990,7 +11990,7 @@
       "f": "16-19",
       "hi": "16:34",
       "d": "IRMA JOHNSON MOLINA 201 EDIF. I DEPTO 913, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "FELIPE SILVA R",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -12050,7 +12050,7 @@
       "f": "13-16",
       "hi": "15:15",
       "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JOEL GUSTAVE GUSTA",
       "visitas": 2,
       "ult_fecha": "25-09-2026",
@@ -12319,9 +12319,9 @@
       "o": "1-3O0V6HSO",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:11",
+      "hi": "17:15",
       "d": "EL MIRADOR 493 CASA 23, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "EDGAR VALERO C",
       "desde": "25-09-2026"
      },
@@ -12379,5 +12379,5 @@
    }
   }
  },
- "generado": "26-09-2026 17:14"
+ "generado": "26-09-2026 17:19"
 }
