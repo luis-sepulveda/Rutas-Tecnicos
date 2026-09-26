@@ -11625,15 +11625,15 @@
    }
   },
   "26-09-2026": {
-   "hasta": "12:11",
+   "hasta": "12:16",
    "actividades": 135,
    "tecnicos": 35,
    "estados": {
-    "Completado": 20,
+    "Completado": 24,
     "No Realizada": 16,
-    "en ruta": 3,
+    "en ruta": 2,
     "Pendiente": 61,
-    "Iniciado": 30,
+    "Iniciado": 27,
     "Cancelado": 3,
     "Suspendido": 2
    },
@@ -12088,7 +12088,7 @@
       "o": "1-3O2276Y1",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "14:58",
+      "hi": "15:06",
       "d": "LAUTARO 477 CASA 2, QUILPUE",
       "e": "Pendiente",
       "tec": "YENDER BOSCAN CADENAS",
@@ -12182,5 +12182,5 @@
    }
   }
  },
- "generado": "26-09-2026 12:11"
+ "generado": "26-09-2026 12:16"
 }
