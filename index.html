@@ -5795,14 +5795,9 @@ function abrirNoOperativos(modo){
       h += '<div class="nop-t">Con motivo (' + conEst.length + ')</div>' + tabla(conEst);
     }
   }
-  h += '<div class="cq-nota">Equipo: ' + (NOOP ? NOOP.equipo : 0) + ' técnicos: '
-    + (NOOP && NOOP.archivo_estados ? 'la lista de estado_tecnicos.xlsx (carpeta Rutas tecnicos)'
-       : NOOP && NOOP.con_estado ? 'toda la base de supervisores (distribucion_por_supervisor.xlsx)'
-                               : 'los de la base de supervisores que trabajaron en la zona en los últimos ' + ((NOOP && NOOP.dias_equipo) || 60) + ' días')
-    + ', más los que trabajaron en las últimas 2 semanas aunque no estén en la base. '
-    + 'No operativo = del equipo, sin ninguna orden en bandeja hoy. El motivo se marca cada mañana, después de la carga de '
-    + 'bandejas, en la columna ESTADO de estado_tecnicos.xlsx (Ausente, Licencia médica, Vacaciones, Permiso, Cambio de comuna), con la fecha '
-    + 'HASTA; al día siguiente de esa fecha vuelve solo a Operativo. Con Cambio de comuna, en la columna COMUNA se anota dónde está.</div></div>';
+  /* 26-09-2026: se saco la nota de abajo ("Equipo: 40 tecnicos... la columna
+     COMUNA"), a pedido de Luis: ocupaba mucho espacio. Queda en la ficha. */
+  h += '</div>';
   document.getElementById('noopCuerpo').innerHTML = h;
   document.getElementById('modalNoop').classList.add('abierto');
 }
