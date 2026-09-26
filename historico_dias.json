@@ -11625,19 +11625,19 @@
    }
   },
   "26-09-2026": {
-   "hasta": "10:51",
-   "actividades": 139,
+   "hasta": "11:01",
+   "actividades": 140,
    "tecnicos": 35,
    "estados": {
-    "Completado": 7,
-    "en ruta": 5,
-    "Pendiente": 87,
-    "Iniciado": 28,
+    "Completado": 9,
+    "Iniciado": 29,
+    "Pendiente": 85,
+    "en ruta": 4,
     "Cancelado": 2,
-    "No Realizada": 9,
+    "No Realizada": 10,
     "Suspendido": 1
    },
-   "rgu": 225.1,
+   "rgu": 226.1,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
@@ -11659,12 +11659,12 @@
      },
      {
       "o": "1-3O2E81FA",
-      "tec": "LEONEL HERNÁNDEZ OJE",
+      "tec": "NICOLAS MOYANO R",
       "cat": "Modificación de Servicio",
       "f": "16-19",
       "hi": "18:45",
       "d": "LOS ALMENDROS 2915 EDIF. A DEPTO 11, QUILPUE",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O2DL671",
@@ -11735,9 +11735,9 @@
       "o": "1-3O22EMBD",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "10:53",
+      "hi": "10:54",
       "d": "LAS ROSAS 859, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "ALEXIS JARA",
       "visitas": 4,
       "ult_fecha": "25-09-2026",
@@ -11747,7 +11747,7 @@
       "o": "1-3NXBVKKG",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "16:37",
+      "hi": "16:38",
       "d": "PJE SANTA JULIA 131 CASA C, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -11915,7 +11915,7 @@
       "o": "1-3NZ6QIY7",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:16",
+      "hi": "14:18",
       "d": "VILLA ESMERALDA 1531 DEPTO 304, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JORDAN ROA PEREZ",
@@ -11963,7 +11963,7 @@
       "o": "1-3O0FC8DM",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:50",
+      "hi": "11:15",
       "d": "PJE LOS YUYOS 1596, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -12163,7 +12163,7 @@
       "o": "1-3O0V6HSO",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:16",
+      "hi": "16:41",
       "d": "EL MIRADOR 493 CASA 23, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -12173,7 +12173,7 @@
       "o": "1-3O1HDINI",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "14:05",
+      "hi": "14:08",
       "d": "SANTA FE 1538, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS GATICA DAVILA",
@@ -12213,5 +12213,5 @@
    }
   }
  },
- "generado": "26-09-2026 10:51"
+ "generado": "26-09-2026 11:01"
 }
