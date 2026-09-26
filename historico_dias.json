@@ -11625,15 +11625,15 @@
    }
   },
   "26-09-2026": {
-   "hasta": "15:08",
+   "hasta": "15:14",
    "actividades": 164,
    "tecnicos": 35,
    "estados": {
     "Completado": 63,
-    "No Realizada": 24,
-    "Iniciado": 24,
-    "Pendiente": 40,
-    "en ruta": 5,
+    "No Realizada": 26,
+    "Iniciado": 23,
+    "Pendiente": 37,
+    "en ruta": 7,
     "Cancelado": 6,
     "Suspendido": 2
    },
@@ -11874,9 +11874,9 @@
       "o": "1-3O2F0GK8",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:38",
+      "hi": "15:26",
       "d": "LAGO LAS TORRES 29 DEPTO 1203, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "ALFREDO ALCAYAGA F",
       "visitas": 2,
       "ult_fecha": "21-09-2026",
@@ -11886,9 +11886,9 @@
       "o": "1-3O22ZMTJ",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:59",
+      "hi": "15:12",
       "d": "REGULUS 2774, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "ANTONHY MORALES MENDOZA",
       "visitas": 1,
       "ult_fecha": "14-09-2026",
@@ -11970,7 +11970,7 @@
       "o": "1-3O22VIU0",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:31",
+      "hi": "17:58",
       "d": "PJE YANKA 01142, QUILPUE",
       "e": "Pendiente",
       "tec": "HERNAN CORTES HERRERA",
@@ -12267,9 +12267,9 @@
       "o": "1-3O1HDINI",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "15:12",
+      "hi": "15:26",
       "d": "SANTA FE 1538, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "CESAR MENA OLIVEROS",
       "desde": "25-09-2026"
      },
@@ -12287,7 +12287,7 @@
       "o": "1-3O0V6HSO",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:03",
+      "hi": "16:29",
       "d": "EL MIRADOR 493 CASA 23, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JEAN ROODLY ORELIEN",
@@ -12337,5 +12337,5 @@
    }
   }
  },
- "generado": "26-09-2026 15:08"
+ "generado": "26-09-2026 15:14"
 }
