@@ -11625,25 +11625,25 @@
    }
   },
   "26-09-2026": {
-   "hasta": "17:24",
-   "actividades": 170,
+   "hasta": "17:34",
+   "actividades": 171,
    "tecnicos": 35,
    "estados": {
-    "Completado": 95,
-    "No Realizada": 34,
-    "Iniciado": 25,
-    "Suspendido": 3,
-    "Pendiente": 5,
-    "Cancelado": 6,
-    "en ruta": 2
+    "Completado": 97,
+    "No Realizada": 36,
+    "Suspendido": 4,
+    "Cancelado": 7,
+    "Iniciado": 24,
+    "en ruta": 2,
+    "Pendiente": 1
    },
-   "rgu": 248.5,
+   "rgu": 249.5,
    "caidas_total": 2,
    "caidas_activas": 2,
    "caidas_resueltas": 0,
    "nuevas": 23,
    "al_bucket": 42,
-   "repetidas": 35,
+   "repetidas": 36,
    "reagendadas": 8,
    "detalle": {
     "caidas": [
@@ -11692,7 +11692,7 @@
       "f": "16-19",
       "hi": "16:33",
       "d": "CERRO ALMUD 3077, QUILPUE",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3O2KZJ0Q",
@@ -11732,12 +11732,12 @@
      },
      {
       "o": "1-3O2FKQKM",
-      "tec": "JOSE SALAS MEDINA",
+      "tec": "FELIPE SILVA R",
       "cat": "Reparación",
       "f": "16-19",
       "hi": "18:20",
       "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O2HRD9M",
@@ -11818,7 +11818,7 @@
       "f": "16-19",
       "hi": "18:26",
       "d": "AVENIDA BELLOTO 1080, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O2D63WX",
@@ -11964,9 +11964,9 @@
       "o": "1-3O22VA1Q",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:34",
+      "hi": "17:30",
       "d": "PABLO NERUDA 2069, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "CESAR MENA OLIVEROS",
       "visitas": 1,
       "ult_fecha": "25-09-2026",
@@ -11985,6 +11985,18 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3O20XOD7",
+      "cat": "Reparación",
+      "f": "13-16",
+      "hi": "13:35",
+      "d": "CERRO ALMUD 3077, QUILPUE",
+      "e": "Completado",
+      "tec": "CRISTOBAL SILVA LEIVA",
+      "visitas": 1,
+      "ult_fecha": "26-09-2026",
+      "ult_cierre": "Cliente reagenda"
+     },
+     {
       "o": "1-3NZHK113",
       "cat": "Reparación",
       "f": "16-19",
@@ -11997,12 +12009,24 @@
       "ult_cierre": "Sin moradores"
      },
      {
+      "o": "1-3O2FKQKM",
+      "cat": "Reparación",
+      "f": "16-19",
+      "hi": "17:47",
+      "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
+      "e": "en ruta",
+      "tec": "FELIPE SILVA R",
+      "visitas": 1,
+      "ult_fecha": "18-08-2026",
+      "ult_cierre": "Cliente Desiste"
+     },
+     {
       "o": "1-3NZ8XA3P",
       "cat": "Modificación de Servicio",
       "f": "16-19",
       "hi": "16:27",
       "d": "DIAZ 1505, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "GEEYSER PEREZ O",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -12036,9 +12060,9 @@
       "o": "1-3O2DZI0K",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "17:23",
+      "hi": "17:34",
       "d": "CUMMING 1790 EDIF. DEPTO 22, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JEAN ROODLY ORELIEN",
       "visitas": 1,
       "ult_fecha": "26-09-2026",
@@ -12104,18 +12128,6 @@
       "ult_cierre": "Cliente Desiste"
      },
      {
-      "o": "1-3O2FKQKM",
-      "cat": "Reparación",
-      "f": "16-19",
-      "hi": "17:53",
-      "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
-      "e": "Pendiente",
-      "tec": "JOSE SALAS MEDINA",
-      "visitas": 1,
-      "ult_fecha": "18-08-2026",
-      "ult_cierre": "Cliente Desiste"
-     },
-     {
       "o": "1-3O0FC8DM",
       "cat": "Alta 2 Play",
       "f": "10-13",
@@ -12131,9 +12143,9 @@
       "o": "1-3O2DL671",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:18",
+      "hi": "17:31",
       "d": "AVENIDA BELLOTO 1080, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "LEONEL HERNÁNDEZ OJE",
       "visitas": 1,
       "ult_fecha": "26-09-2026",
@@ -12379,5 +12391,5 @@
    }
   }
  },
- "generado": "26-09-2026 17:24"
+ "generado": "26-09-2026 17:34"
 }
