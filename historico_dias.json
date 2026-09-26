@@ -11625,15 +11625,15 @@
    }
   },
   "26-09-2026": {
-   "hasta": "15:39",
+   "hasta": "15:44",
    "actividades": 164,
    "tecnicos": 35,
    "estados": {
-    "Completado": 68,
+    "Completado": 71,
     "No Realizada": 27,
-    "Iniciado": 24,
-    "Pendiente": 32,
-    "en ruta": 5,
+    "Iniciado": 21,
+    "Pendiente": 31,
+    "en ruta": 6,
     "Cancelado": 6,
     "Suspendido": 2
    },
@@ -12169,7 +12169,7 @@
       "o": "1-3O22VIU0",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:45",
+      "hi": "17:14",
       "d": "PJE YANKA 01142, QUILPUE",
       "e": "Pendiente",
       "tec": "NICOLAS MOYANO R",
@@ -12240,7 +12240,7 @@
       "o": "1-3O2DZI0K",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "17:57",
+      "hi": "17:20",
       "d": "CUMMING 1790 EDIF. DEPTO 22, QUILPUE",
       "e": "Pendiente",
       "tec": "YENDER BOSCAN CADENAS",
@@ -12306,7 +12306,7 @@
       "f": "13-16",
       "hi": "13:14",
       "d": "RENE RODRIGUEZ 563 EDIF. B-26 DEPTO 203, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "LUIS CASTRO TORRES",
       "desde": "25-09-2026"
      },
@@ -12334,5 +12334,5 @@
    }
   }
  },
- "generado": "26-09-2026 15:39"
+ "generado": "26-09-2026 15:44"
 }
