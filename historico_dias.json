@@ -11625,13 +11625,13 @@
    }
   },
   "26-09-2026": {
-   "hasta": "12:31",
+   "hasta": "12:36",
    "actividades": 137,
    "tecnicos": 35,
    "estados": {
-    "Completado": 25,
-    "No Realizada": 16,
-    "Iniciado": 30,
+    "Completado": 26,
+    "No Realizada": 17,
+    "Iniciado": 28,
     "Pendiente": 58,
     "Cancelado": 4,
     "en ruta": 2,
@@ -11815,7 +11815,7 @@
       "f": "10-13",
       "hi": "12:07",
       "d": "SAN ENRIQUE 1780 EDIF. 4 DEPTO 304, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "CESAR MENA OLIVEROS",
       "visitas": 2,
       "ult_fecha": "17-09-2026",
@@ -12182,5 +12182,5 @@
    }
   }
  },
- "generado": "26-09-2026 12:31"
+ "generado": "26-09-2026 12:36"
 }
