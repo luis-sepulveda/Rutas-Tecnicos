@@ -11625,14 +11625,14 @@
    }
   },
   "26-09-2026": {
-   "hasta": "11:06",
+   "hasta": "11:11",
    "actividades": 140,
    "tecnicos": 35,
    "estados": {
-    "Completado": 9,
-    "Iniciado": 28,
-    "Pendiente": 82,
-    "en ruta": 7,
+    "Completado": 10,
+    "Iniciado": 31,
+    "Pendiente": 81,
+    "en ruta": 4,
     "Cancelado": 2,
     "No Realizada": 11,
     "Suspendido": 1
@@ -11903,7 +11903,7 @@
       "o": "1-3O1PIROM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:53",
+      "hi": "16:02",
       "d": "LOS ARRAYANES 9998, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOEL GUSTAVE GUSTA",
@@ -12107,7 +12107,7 @@
       "o": "1-3O26WEZF",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:35",
+      "hi": "14:40",
       "d": "AV JOHN KENNEDY 1550 EDIF. B DEPTO 301, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
@@ -12119,7 +12119,7 @@
       "o": "1-3O147FIZ",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:07",
+      "hi": "17:12",
       "d": "SANTA FE 1491, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
@@ -12213,5 +12213,5 @@
    }
   }
  },
- "generado": "26-09-2026 11:06"
+ "generado": "26-09-2026 11:11"
 }
