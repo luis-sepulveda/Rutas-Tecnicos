@@ -11625,25 +11625,25 @@
    }
   },
   "26-09-2026": {
-   "hasta": "11:26",
-   "actividades": 142,
+   "hasta": "11:31",
+   "actividades": 143,
    "tecnicos": 35,
    "estados": {
-    "Completado": 12,
+    "Completado": 14,
     "No Realizada": 14,
-    "en ruta": 2,
-    "Pendiente": 80,
-    "Iniciado": 31,
+    "Iniciado": 30,
+    "Pendiente": 81,
     "Cancelado": 2,
-    "Suspendido": 1
+    "Suspendido": 1,
+    "en ruta": 1
    },
-   "rgu": 228.1,
+   "rgu": 230.1,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
    "nuevas": 10,
    "al_bucket": 14,
-   "repetidas": 33,
+   "repetidas": 34,
    "reagendadas": 8,
    "detalle": {
     "caidas": [],
@@ -11756,12 +11756,24 @@
       "o": "1-3NXBVKKG",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "15:40",
+      "hi": "15:36",
       "d": "PJE SANTA JULIA 131 CASA C, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
       "visitas": 1,
       "ult_fecha": "26-08-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3O2DZI0K",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "17:55",
+      "d": "CUMMING 1790 EDIF. DEPTO 22, QUILPUE",
+      "e": "Pendiente",
+      "tec": "ALEXIS JARA",
+      "visitas": 1,
+      "ult_fecha": "26-09-2026",
       "ult_cierre": "Sin moradores"
      },
      {
@@ -12222,5 +12234,5 @@
    }
   }
  },
- "generado": "26-09-2026 11:26"
+ "generado": "26-09-2026 11:31"
 }
