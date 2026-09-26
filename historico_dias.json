@@ -11625,20 +11625,20 @@
    }
   },
   "26-09-2026": {
-   "hasta": "09:15",
-   "actividades": 117,
+   "hasta": "09:20",
+   "actividades": 125,
    "tecnicos": 35,
    "estados": {
     "Pendiente": 116,
-    "en ruta": 1
+    "en ruta": 9
    },
-   "rgu": 195.5,
+   "rgu": 209.0,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
    "nuevas": 3,
    "al_bucket": 1,
-   "repetidas": 28,
+   "repetidas": 30,
    "reagendadas": 8,
    "detalle": {
     "caidas": [],
@@ -11650,7 +11650,7 @@
       "f": "10-13",
       "hi": "10:00",
       "d": "CALLE 1 850 EDIF. G DEPTO 33, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O1WMW2G",
@@ -11772,7 +11772,7 @@
       "o": "1-3O216EPZ",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "15:51",
+      "hi": "18:53",
       "d": "LAS AMERICAS 1015 EDIF. 10 DEPTO 1, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JEAN ROODLY ORELIEN",
@@ -11808,7 +11808,7 @@
       "o": "1-3O24LXUD",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:36",
+      "hi": "14:06",
       "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -11832,7 +11832,7 @@
       "o": "1-3NZ6QIY7",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "16:27",
+      "hi": "18:27",
       "d": "VILLA ESMERALDA 1531 DEPTO 304, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -11844,7 +11844,7 @@
       "o": "1-3NZ8XA3P",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "17:15",
+      "hi": "20:09",
       "d": "DIAZ 1505, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -11880,13 +11880,25 @@
       "o": "1-3NZH5RBP",
       "cat": "Migración 1 Play",
       "f": "10-13",
-      "hi": "12:52",
+      "hi": "15:43",
       "d": "SAN ENRIQUE 1780 EDIF. 4 DEPTO 304, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
       "visitas": 2,
       "ult_fecha": "17-09-2026",
       "ult_cierre": "Cliente Desiste"
+     },
+     {
+      "o": "1-3O22VIU0",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "16:38",
+      "d": "PJE YANKA 01142, QUILPUE",
+      "e": "Pendiente",
+      "tec": "LUIS CASTRO TORRES",
+      "visitas": 3,
+      "ult_fecha": "23-09-2026",
+      "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3O1AS7QU",
@@ -11940,7 +11952,7 @@
       "o": "1-3O26WEZF",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "16:13",
+      "hi": "19:03",
       "d": "AV JOHN KENNEDY 1550 EDIF. B DEPTO 301, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "MATIAS APELEO APELEO",
@@ -11973,10 +11985,22 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
+      "o": "1-3O1YO3SO",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "16:39",
+      "d": "JOSE FUENTES 885 DEPTO 21, QUILPUE",
+      "e": "Pendiente",
+      "tec": "NICOLAS MOYANO R",
+      "visitas": 2,
+      "ult_fecha": "25-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3NZ7U071",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "11:21",
+      "hi": "10:50",
       "d": "SANTA MARIA 0241, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "RAFAEL VARGAS B",
@@ -12024,7 +12048,7 @@
       "o": "1-3O0V6HSO",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:57",
+      "hi": "19:59",
       "d": "EL MIRADOR 493 CASA 23, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JEAN ROODLY ORELIEN",
@@ -12034,9 +12058,9 @@
       "o": "1-3NZX9BPJ",
       "cat": "Reparación",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:30",
       "d": "LA INVERNADA 3172, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JORDAN ROA PEREZ",
       "desde": "23-09-2026"
      },
@@ -12044,7 +12068,7 @@
       "o": "1-3NZAHAJS",
       "cat": "Migración 3 Play",
       "f": "10-13",
-      "hi": "13:34",
+      "hi": "15:34",
       "d": "CAMINO TRONCAL 2091 CASA 18, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE PEREZ RANGEL",
@@ -12074,7 +12098,7 @@
       "o": "1-3NZ7U071",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "11:21",
+      "hi": "10:50",
       "d": "SANTA MARIA 0241, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "RAFAEL VARGAS B",
@@ -12094,5 +12118,5 @@
    }
   }
  },
- "generado": "26-09-2026 09:15"
+ "generado": "26-09-2026 09:20"
 }
