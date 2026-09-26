@@ -11625,15 +11625,15 @@
    }
   },
   "26-09-2026": {
-   "hasta": "12:16",
+   "hasta": "12:21",
    "actividades": 135,
    "tecnicos": 35,
    "estados": {
     "Completado": 24,
     "No Realizada": 16,
-    "en ruta": 2,
+    "en ruta": 1,
     "Pendiente": 61,
-    "Iniciado": 27,
+    "Iniciado": 28,
     "Cancelado": 3,
     "Suspendido": 2
    },
@@ -11801,7 +11801,7 @@
       "o": "1-3O22ZMTJ",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "15:56",
+      "hi": "16:17",
       "d": "REGULUS 2774, QUILPUE",
       "e": "Pendiente",
       "tec": "ANTONHY MORALES MENDOZA",
@@ -12065,7 +12065,7 @@
       "o": "1-3O1PIROM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:10",
+      "hi": "16:01",
       "d": "LOS ARRAYANES 9998, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
@@ -12182,5 +12182,5 @@
    }
   }
  },
- "generado": "26-09-2026 12:16"
+ "generado": "26-09-2026 12:21"
 }
