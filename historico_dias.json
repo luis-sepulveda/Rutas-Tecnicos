@@ -11625,12 +11625,13 @@
    }
   },
   "26-09-2026": {
-   "hasta": "10:00",
+   "hasta": "10:05",
    "actividades": 129,
    "tecnicos": 35,
    "estados": {
     "Iniciado": 34,
-    "Pendiente": 93,
+    "Pendiente": 92,
+    "Cancelado": 1,
     "No Realizada": 1,
     "en ruta": 1
    },
@@ -11753,7 +11754,7 @@
       "o": "1-3NY5I1WT",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "14:56",
+      "hi": "14:00",
       "d": "HUASCO 2881, QUILPUE",
       "e": "Pendiente",
       "tec": "CRISTOBAL SILVA LEIVA",
@@ -12147,5 +12148,5 @@
    }
   }
  },
- "generado": "26-09-2026 10:00"
+ "generado": "26-09-2026 10:05"
 }
