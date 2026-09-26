@@ -11625,24 +11625,34 @@
    }
   },
   "26-09-2026": {
-   "hasta": "09:30",
-   "actividades": 125,
+   "hasta": "09:35",
+   "actividades": 126,
    "tecnicos": 35,
    "estados": {
-    "en ruta": 23,
-    "Pendiente": 102
+    "en ruta": 26,
+    "Pendiente": 99,
+    "Iniciado": 1
    },
-   "rgu": 209.0,
+   "rgu": 210.0,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
-   "nuevas": 3,
+   "nuevas": 4,
    "al_bucket": 1,
    "repetidas": 30,
    "reagendadas": 8,
    "detalle": {
     "caidas": [],
     "nuevas": [
+     {
+      "o": "1-3O27RDE1",
+      "tec": "ALEXIS JARA",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "13:00",
+      "d": "EL OCASO 1104 DEPTO 35, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3NVSME79",
       "tec": "JOSE SALAS MEDINA",
@@ -11688,7 +11698,7 @@
       "o": "1-3NXBVKKG",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "15:07",
+      "hi": "17:59",
       "d": "PJE SANTA JULIA 131 CASA C, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -12118,5 +12128,5 @@
    }
   }
  },
- "generado": "26-09-2026 09:30"
+ "generado": "26-09-2026 09:35"
 }
