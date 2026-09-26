@@ -11625,15 +11625,15 @@
    }
   },
   "26-09-2026": {
-   "hasta": "13:27",
+   "hasta": "13:32",
    "actividades": 158,
    "tecnicos": 35,
    "estados": {
-    "Completado": 41,
+    "Completado": 45,
     "No Realizada": 19,
     "en ruta": 3,
     "Pendiente": 68,
-    "Iniciado": 21,
+    "Iniciado": 17,
     "Cancelado": 4,
     "Suspendido": 2
    },
@@ -11655,7 +11655,7 @@
       "f": "13-16",
       "hi": "13:24",
       "d": "AV LOS CARRERA 1376 DEPTO 40, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O2H053W",
@@ -11840,7 +11840,7 @@
       "o": "1-3O22ZMTJ",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "16:39",
+      "hi": "16:58",
       "d": "REGULUS 2774, QUILPUE",
       "e": "Pendiente",
       "tec": "ANTONHY MORALES MENDOZA",
@@ -12092,7 +12092,7 @@
       "o": "1-3NZ2NN1H",
       "cat": "Alta Traslado",
       "f": "13-16",
-      "hi": "15:29",
+      "hi": "14:47",
       "d": "LOS PINOS 1132, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -12104,7 +12104,7 @@
       "o": "1-3O2DZI0K",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "19:45",
+      "hi": "19:03",
       "d": "CUMMING 1790 EDIF. DEPTO 22, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -12187,7 +12187,7 @@
       "o": "1-3O2276Y1",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "15:41",
+      "hi": "16:00",
       "d": "LAUTARO 477 CASA 2, QUILPUE",
       "e": "Pendiente",
       "tec": "YENDER BOSCAN CADENAS",
@@ -12213,7 +12213,7 @@
       "f": "10-13",
       "hi": "10:34",
       "d": "CAMINO TRONCAL 2091 CASA 18, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "GEEYSER PEREZ O",
       "desde": "23-09-2026"
      },
@@ -12281,5 +12281,5 @@
    }
   }
  },
- "generado": "26-09-2026 13:27"
+ "generado": "26-09-2026 13:32"
 }
