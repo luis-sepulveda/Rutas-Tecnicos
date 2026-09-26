@@ -11625,16 +11625,16 @@
    }
   },
   "26-09-2026": {
-   "hasta": "10:41",
+   "hasta": "10:46",
    "actividades": 137,
    "tecnicos": 35,
    "estados": {
-    "Completado": 5,
-    "en ruta": 4,
-    "Pendiente": 89,
-    "Iniciado": 30,
+    "Completado": 6,
+    "en ruta": 7,
+    "Pendiente": 85,
+    "Iniciado": 27,
     "Cancelado": 2,
-    "No Realizada": 6,
+    "No Realizada": 9,
     "Suspendido": 1
    },
    "rgu": 223.0,
@@ -11801,7 +11801,7 @@
       "o": "1-3O222RQN",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "16:30",
+      "hi": "16:11",
       "d": "LAGO HUILLINCO 2007 CASA 17, QUILPUE",
       "e": "Pendiente",
       "tec": "DANIEL NAVARRETE E",
@@ -11813,7 +11813,7 @@
       "o": "1-3O2DFE6I",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "18:44",
+      "hi": "18:25",
       "d": "PJE 610 865, QUILPUE",
       "e": "Pendiente",
       "tec": "DANIEL NAVARRETE E",
@@ -12053,9 +12053,9 @@
       "o": "1-3NZ7U071",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:38",
+      "hi": "10:44",
       "d": "SANTA MARIA 0241, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "RAFAEL VARGAS B",
       "visitas": 1,
       "ult_fecha": "14-09-2026",
@@ -12089,7 +12089,7 @@
       "o": "1-3O26WEZF",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "15:54",
+      "hi": "14:35",
       "d": "AV JOHN KENNEDY 1550 EDIF. B DEPTO 301, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
@@ -12101,7 +12101,7 @@
       "o": "1-3O147FIZ",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "18:26",
+      "hi": "17:07",
       "d": "SANTA FE 1491, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
@@ -12175,9 +12175,9 @@
       "o": "1-3NZ7U071",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "10:38",
+      "hi": "10:44",
       "d": "SANTA MARIA 0241, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "RAFAEL VARGAS B",
       "desde": "23-09-2026"
      },
@@ -12195,5 +12195,5 @@
    }
   }
  },
- "generado": "26-09-2026 10:41"
+ "generado": "26-09-2026 10:46"
 }
