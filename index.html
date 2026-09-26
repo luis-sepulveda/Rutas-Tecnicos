@@ -1748,6 +1748,19 @@
     box-shadow:0 0 14px rgba(248,113,113,.55); transform:translateY(-1px); }
   @media (prefers-reduced-motion:reduce){ .pv-bar .pv-seg a:hover { transform:none; } }
   /* =================================================================== */
+  /* ==== COLORES DE LAS FRANJAS (26-09-2026) ====
+     "Como viene el resto del dia" tenia todo verde. En curso: azul; proxima:
+     celeste; pasada: gris, o ambar/rojo si quedo mucho sin cerrar (la regla
+     esta en el calculo de 'franjas', FR_AMBAR y FR_ROJO). Para volver al
+     verde, borrar este bloque. */
+  .pv-tlf .fr.ahora .pista span { background:#2563eb; }
+  .pv-tlf .fr.prox .pista span { background:#93c5fd; }
+  .pv-tlf .fr.pasada .pista span { background:#64748b; }
+  .pv-tlf .fr.pasada.amb .pista span { background:#d97706; }
+  .pv-tlf .fr.pasada.amb .q b { color:#b45309; }
+  .pv-tlf .fr.pasada.roj .pista span { background:#dc2626; }
+  .pv-tlf .fr.pasada.roj .q b { color:#b91c1c; }
+  /* =================================================================== */
 </style>
 </head>
 <body>
@@ -5922,7 +5935,17 @@ function pintarPortada(){
     const enCurso = hoy && m && ahora >= +m[1] && ahora < +m[2];
     const cerradas = d.t - d.ab;
     const p = d.t ? Math.round(100 * cerradas / d.t) : 0;
-    return '<div class="fr' + (enCurso ? ' ahora' : '') + (d.ab ? '' : ' vacia') + '">'
+    /* Color de la barra (26-09-2026, Luis: "hay mucho verde"). En curso: azul.
+       Proxima: celeste. Ya pasada: gris si cerro casi todo, AMBAR si quedo mas
+       del 10% sin cerrar y ROJO si mas del 25%; asi salta la franja que se
+       atraso. Si el dato no es de hoy, todas cuentan como pasadas. Los cortes
+       estan en FR_AMBAR y FR_ROJO. */
+    const FR_AMBAR = 10, FR_ROJO = 25;
+    const pasada = !hoy || (m && ahora >= +m[2]);
+    const pAb = d.t ? 100 * d.ab / d.t : 0;
+    const tono = enCurso ? '' : !pasada ? ' prox'
+      : ' pasada' + (pAb > FR_ROJO ? ' roj' : pAb > FR_AMBAR ? ' amb' : '');
+    return '<div class="fr' + (enCurso ? ' ahora' : '') + tono + (d.ab ? '' : ' vacia') + '">'
       + '<div class="h"><span class="hh">' + f + '</span>'
       +   (enCurso ? '<span class="ah">en curso</span>' : '') + '</div>'
       + '<div class="pista"><span style="width:' + p + '%"></span></div>'
