@@ -11625,19 +11625,19 @@
    }
   },
   "26-09-2026": {
-   "hasta": "12:21",
-   "actividades": 135,
+   "hasta": "12:31",
+   "actividades": 137,
    "tecnicos": 35,
    "estados": {
-    "Completado": 24,
+    "Completado": 25,
     "No Realizada": 16,
-    "en ruta": 1,
-    "Pendiente": 61,
-    "Iniciado": 28,
-    "Cancelado": 3,
+    "Iniciado": 30,
+    "Pendiente": 58,
+    "Cancelado": 4,
+    "en ruta": 2,
     "Suspendido": 2
    },
-   "rgu": 213.7,
+   "rgu": 213.9,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
@@ -11655,7 +11655,7 @@
       "f": "10-13",
       "hi": "12:48",
       "d": "LOS ALMENDROS 2915 EDIF. C DEPTO 34, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O2EMU3I",
@@ -11765,9 +11765,9 @@
       "o": "1-3O1P80ST",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "12:16",
+      "hi": "12:22",
       "d": "SANTA ROSA 0120, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "ALEXIS JARA",
       "visitas": 2,
       "ult_fecha": "24-08-2026",
@@ -11777,7 +11777,7 @@
       "o": "1-3NXBVKKG",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "15:30",
+      "hi": "15:36",
       "d": "PJE SANTA JULIA 131 CASA C, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -11801,7 +11801,7 @@
       "o": "1-3O22ZMTJ",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "16:17",
+      "hi": "16:27",
       "d": "REGULUS 2774, QUILPUE",
       "e": "Pendiente",
       "tec": "ANTONHY MORALES MENDOZA",
@@ -11832,18 +11832,6 @@
       "visitas": 1,
       "ult_fecha": "21-09-2026",
       "ult_cierre": "Sin moradores"
-     },
-     {
-      "o": "1-3O24LXUD",
-      "cat": "Alta 1 Play",
-      "f": "13-16",
-      "hi": "14:00",
-      "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
-      "e": "Pendiente",
-      "tec": "DANIEL NAVARRETE E",
-      "visitas": 2,
-      "ult_fecha": "25-09-2026",
-      "ult_cierre": "Cliente reagenda"
      },
      {
       "o": "1-3O22VA1Q",
@@ -11933,7 +11921,7 @@
       "o": "1-3NZ8XA3P",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "16:48",
       "d": "DIAZ 1505, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -12062,6 +12050,18 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
+      "o": "1-3O24LXUD",
+      "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "14:00",
+      "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
+      "e": "Pendiente",
+      "tec": "SAMUEL FERNANDEZ VIDAL",
+      "visitas": 2,
+      "ult_fecha": "25-09-2026",
+      "ult_cierre": "Cliente reagenda"
+     },
+     {
       "o": "1-3O1PIROM",
       "cat": "Reparación",
       "f": "16-19",
@@ -12102,9 +12102,9 @@
       "o": "1-3O1P80ST",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "12:16",
+      "hi": "12:22",
       "d": "SANTA ROSA 0120, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "ALEXIS JARA",
       "desde": "25-09-2026"
      },
@@ -12182,5 +12182,5 @@
    }
   }
  },
- "generado": "26-09-2026 12:21"
+ "generado": "26-09-2026 12:31"
 }
