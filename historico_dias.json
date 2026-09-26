@@ -11625,15 +11625,15 @@
    }
   },
   "26-09-2026": {
-   "hasta": "17:54",
+   "hasta": "17:59",
    "actividades": 172,
    "tecnicos": 35,
    "estados": {
-    "Completado": 103,
-    "No Realizada": 37,
+    "Completado": 105,
+    "No Realizada": 40,
     "Suspendido": 5,
     "Cancelado": 8,
-    "Iniciado": 18,
+    "Iniciado": 13,
     "Pendiente": 1
    },
    "rgu": 250.5,
@@ -11799,7 +11799,7 @@
       "f": "16-19",
       "hi": "16:00",
       "d": "PAUL HARRIS 883 EDIF. B DEPTO 207, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O2E81FA",
@@ -11817,7 +11817,7 @@
       "f": "16-19",
       "hi": "18:26",
       "d": "AVENIDA BELLOTO 1080, QUILPUE",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3O2D63WX",
@@ -12144,7 +12144,7 @@
       "f": "16-19",
       "hi": "17:31",
       "d": "AVENIDA BELLOTO 1080, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "LEONEL HERNÁNDEZ OJE",
       "visitas": 1,
       "ult_fecha": "26-09-2026",
@@ -12227,7 +12227,7 @@
       "f": "16-19",
       "hi": "16:26",
       "d": "PJE YANKA 01142, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "NICOLAS MOYANO R",
       "visitas": 3,
       "ult_fecha": "23-09-2026",
@@ -12390,5 +12390,5 @@
    }
   }
  },
- "generado": "26-09-2026 17:54"
+ "generado": "26-09-2026 17:59"
 }
