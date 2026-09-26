@@ -11625,29 +11625,38 @@
    }
   },
   "26-09-2026": {
-   "hasta": "10:21",
-   "actividades": 133,
+   "hasta": "10:36",
+   "actividades": 137,
    "tecnicos": 35,
    "estados": {
-    "Iniciado": 31,
-    "Pendiente": 92,
-    "Cancelado": 1,
-    "No Realizada": 3,
-    "en ruta": 3,
+    "Iniciado": 33,
+    "Pendiente": 91,
+    "Cancelado": 2,
+    "No Realizada": 6,
     "Completado": 2,
+    "en ruta": 2,
     "Suspendido": 1
    },
-   "rgu": 218.0,
+   "rgu": 223.0,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
-   "nuevas": 6,
+   "nuevas": 7,
    "al_bucket": 14,
-   "repetidas": 31,
+   "repetidas": 33,
    "reagendadas": 8,
    "detalle": {
     "caidas": [],
     "nuevas": [
+     {
+      "o": "1-3O2DL671",
+      "tec": "ANTONHY MORALES MENDOZA",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "18:26",
+      "d": "AVENIDA BELLOTO 1080, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3O2D63WX",
       "tec": "JOSE SALAS MEDINA",
@@ -11691,7 +11700,7 @@
       "f": "10-13",
       "hi": "10:00",
       "d": "PORVENIR 1893, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3NZ2NN1H",
@@ -11708,7 +11717,7 @@
       "o": "1-3O22EMBD",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "10:31",
+      "hi": "10:52",
       "d": "LAS ROSAS 859, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -11720,13 +11729,25 @@
       "o": "1-3NXBVKKG",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "16:15",
+      "hi": "16:36",
       "d": "PJE SANTA JULIA 131 CASA C, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
       "visitas": 1,
       "ult_fecha": "26-08-2026",
       "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3O2DL671",
+      "cat": "Alta 1 Play",
+      "f": "16-19",
+      "hi": "18:26",
+      "d": "AVENIDA BELLOTO 1080, QUILPUE",
+      "e": "Pendiente",
+      "tec": "ANTONHY MORALES MENDOZA",
+      "visitas": 1,
+      "ult_fecha": "26-09-2026",
+      "ult_cierre": "Cliente reagenda"
      },
      {
       "o": "1-3NZH5RBP",
@@ -11864,7 +11885,7 @@
       "o": "1-3O1PIROM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "16:53",
       "d": "LOS ARRAYANES 9998, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOEL GUSTAVE GUSTA",
@@ -11902,7 +11923,7 @@
       "f": "10-13",
       "hi": "09:55",
       "d": "MARIA MERCEDES 1482 EDIF. 3 DEPTO 101, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "JOSE PEREZ RANGEL",
       "visitas": 1,
       "ult_fecha": "02-09-2026",
@@ -11948,7 +11969,7 @@
       "o": "1-3O1AS7QU",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "16:40",
+      "hi": "16:00",
       "d": "PORVENIR 26, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS GATICA DAVILA",
@@ -12032,9 +12053,9 @@
       "o": "1-3NZ7U071",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "11:09",
+      "hi": "10:38",
       "d": "SANTA MARIA 0241, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "RAFAEL VARGAS B",
       "visitas": 1,
       "ult_fecha": "14-09-2026",
@@ -12068,13 +12089,25 @@
       "o": "1-3O26WEZF",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "15:54",
       "d": "AV JOHN KENNEDY 1550 EDIF. B DEPTO 301, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
       "visitas": 1,
       "ult_fecha": "25-09-2026",
       "ult_cierre": "Sin moradores"
+     },
+     {
+      "o": "1-3O147FIZ",
+      "cat": "Reparación",
+      "f": "16-19",
+      "hi": "18:26",
+      "d": "SANTA FE 1491, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "SEBASTIAN DOSSOW A",
+      "visitas": 1,
+      "ult_fecha": "24-09-2026",
+      "ult_cierre": "Falla Masiva"
      }
     ],
     "reagendadas": [
@@ -12094,19 +12127,9 @@
       "f": "10-13",
       "hi": "10:34",
       "d": "CAMINO TRONCAL 2091 CASA 18, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "GEEYSER PEREZ O",
       "desde": "23-09-2026"
-     },
-     {
-      "o": "1-3O0V6HSO",
-      "cat": "Reparación",
-      "f": "16-19",
-      "hi": "18:02",
-      "d": "EL MIRADOR 493 CASA 23, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "JEAN ROODLY ORELIEN",
-      "desde": "25-09-2026"
      },
      {
       "o": "1-3NZX9BPJ",
@@ -12119,10 +12142,20 @@
       "desde": "23-09-2026"
      },
      {
+      "o": "1-3O0V6HSO",
+      "cat": "Reparación",
+      "f": "16-19",
+      "hi": "16:16",
+      "d": "EL MIRADOR 493 CASA 23, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "JUAN ARRIAGADA C",
+      "desde": "25-09-2026"
+     },
+     {
       "o": "1-3O1HDINI",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "15:44",
+      "hi": "14:37",
       "d": "SANTA FE 1538, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS GATICA DAVILA",
@@ -12142,9 +12175,9 @@
       "o": "1-3NZ7U071",
       "cat": "Alta 2 Play",
       "f": "10-13",
-      "hi": "11:09",
+      "hi": "10:38",
       "d": "SANTA MARIA 0241, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "RAFAEL VARGAS B",
       "desde": "23-09-2026"
      },
@@ -12162,5 +12195,5 @@
    }
   }
  },
- "generado": "26-09-2026 10:21"
+ "generado": "26-09-2026 10:36"
 }
