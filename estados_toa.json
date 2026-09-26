@@ -1,128 +1,16 @@
 {
-  "actualizado": "2026-09-25T20:20:19",
+  "actualizado": "2026-09-26T14:02:41",
   "resumen": {
-    "reagendada": 7,
     "sin informacion": 1
   },
   "estados": {
-    "1-3O0V6HSO": {
-      "tec": "JOSE CASTRO P",
-      "cat": "Reparación",
-      "franja_original": "16-19",
-      "d": "EL MIRADOR 493 CASA 23, VILLA ALEMANA",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3O0V6HSO - 16-19-Reparación-3 Play Servicio Degradado-EL MIRADOR 493 CASA 23Sab, 26 Sep",
-      "franja_nueva": "16-19"
-    },
-    "1-3O1HDINI": {
-      "tec": "JOSE ROJO A",
-      "cat": "Reparación",
-      "franja_original": "10-13",
-      "d": "SANTA FE 1538, VILLA ALEMANA",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3O1HDINI - 13-16-Reparación-2 Play Servicio Degradado-SANTA FE 1538Sab, 26 Sep",
-      "franja_nueva": "13-16"
-    },
-    "1-3O1T184P": {
-      "tec": "LUIS CASTRO TORRES",
-      "cat": "Migración 2 Play",
+    "1-3O0WVW34": {
+      "tec": "MATIAS APELEO APELEO",
+      "cat": "Migración 1 Play",
       "franja_original": "13-16",
-      "d": "LAS GARZAS 989, QUILPUE",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3O1T184P - 10-13-Migración-Migración-LAS GARZAS 989Mar, 29 Sep",
-      "franja_nueva": "10-13"
-    },
-    "1-3O10H3EV": {
-      "tec": "MARCELO GÓMEZ GÓME",
-      "cat": "Alta 1 Play",
-      "franja_original": "10-13",
-      "d": "MADRID 1050 CASA 4, VILLA ALEMANA",
+      "d": "OJOS DE AGUA 1688 EDIF. 4 DEPTO 403, VILLA ALEMANA",
       "estado": "sin informacion",
-      "nota": "la OT ya no existe en TOA",
-      "contexto": {
-        "buscado": "MADRID 1050",
-        "aviso": "historial de la direccion, NO es el estado de esta orden",
-        "filas": [
-          {
-            "estado": "reagendada",
-            "color": "rgb(255, 222, 0)",
-            "ot": "1-3O0UKIHN",
-            "franja": "13-16",
-            "texto": "1-3O0UKIHN - 13-16-Migración-Migración-MADRID 1050 CASA 2Mar, 29 Sep"
-          },
-          {
-            "estado": "completada",
-            "color": "rgb(121, 182, 235)",
-            "ot": "1-3O1NP0F4",
-            "franja": "13-16",
-            "texto": "1-3O1NP0F4 - 13-16-Alta-1 Play-MADRID 1050 CASA 4"
-          },
-          {
-            "estado": "suspendida",
-            "color": "rgb(153, 255, 255)",
-            "ot": "1-3O1NP0F4",
-            "franja": "13-16",
-            "texto": "1-3O1NP0F4 - 13-16-Alta-1 Play-MADRID 1050 CASA 4"
-          },
-          {
-            "estado": "no realizada",
-            "color": "rgb(96, 206, 206)",
-            "ot": "1-3NYMM91Q",
-            "franja": "10-13",
-            "texto": "1-3NYMM91Q - 10-13-Alta-1 Play-MADRID 1050 CASA 4Mar, 22 Sep"
-          },
-          {
-            "estado": "cancelada",
-            "color": "rgb(128, 255, 128)",
-            "ot": "1-3MKNVBGR",
-            "franja": "16-19",
-            "texto": "1-3MKNVBGR - 16-19-Migración-Migración-MADRID 1050 CASA 1Mie, 15 Jul"
-          }
-        ]
-      }
-    },
-    "1-3O1OVI13": {
-      "tec": "MATIAS APELEO APELEO",
-      "cat": "Alta 3 Play",
-      "franja_original": "13-16",
-      "d": "RIO DE JANEIRO 2450, VILLA ALEMANA",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3O1OVI13 - 10-13-Alta-3 Play-RIO DE JANEIRO 2450Sab, 26 Sep",
-      "franja_nueva": "10-13"
-    },
-    "1-3O1P80ST": {
-      "tec": "MATIAS APELEO APELEO",
-      "cat": "Alta 2 Play",
-      "franja_original": "13-16",
-      "d": "SANTA ROSA 0120, VILLA ALEMANA",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3O1P80ST - 10-13-Alta-2 Play-SANTA ROSA 0120Sab, 26 Sep",
-      "franja_nueva": "10-13"
-    },
-    "1-3O1MBTHU": {
-      "tec": "PABLO HERNANEZ FERNANDEZ",
-      "cat": "Migración 3 Play",
-      "franja_original": "10-13",
-      "d": "RENE RODRIGUEZ 563 EDIF. B-26 DEPTO 203, QUILPUE",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3O1MBTHU - 13-16-Migración-Migración-RENE RODRIGUEZ 563 EDIF. B-26 DEPTO 203Sab, 26 Sep",
-      "franja_nueva": "13-16"
-    },
-    "1-3O1N5X6Z": {
-      "tec": "SAMUEL FERNANDEZ VIDAL",
-      "cat": "Alta 2 Play",
-      "franja_original": "13-16",
-      "d": "SANTA MARGARITA 1319, VILLA ALEMANA",
-      "estado": "reagendada",
-      "color": "rgb(255, 222, 0)",
-      "detalle": "1-3O1N5X6Z - 13-16-Alta-2 Play-SANTA MARGARITA 1319Lun, 5 Oct",
-      "franja_nueva": "13-16"
+      "nota": "la OT ya no existe en TOA"
     }
   }
 }
