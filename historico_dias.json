@@ -11625,23 +11625,23 @@
    }
   },
   "26-09-2026": {
-   "hasta": "15:24",
-   "actividades": 153,
+   "hasta": "15:29",
+   "actividades": 154,
    "tecnicos": 35,
    "estados": {
     "Completado": 67,
     "No Realizada": 27,
-    "Iniciado": 21,
+    "Iniciado": 23,
     "Pendiente": 26,
     "Cancelado": 6,
-    "en ruta": 4,
+    "en ruta": 3,
     "Suspendido": 2
    },
-   "rgu": 226.1,
+   "rgu": 227.1,
    "caidas_total": 1,
    "caidas_activas": 1,
    "caidas_resueltas": 0,
-   "nuevas": 18,
+   "nuevas": 19,
    "al_bucket": 42,
    "repetidas": 30,
    "reagendadas": 8,
@@ -11658,6 +11658,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O2KGFMM",
+      "tec": "JOSE GALAZ D",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "15:26",
+      "d": "CALLE 7 0442, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3O2IJKKA",
       "tec": "JOSE ROJO A",
@@ -12265,5 +12274,5 @@
    }
   }
  },
- "generado": "26-09-2026 15:24"
+ "generado": "26-09-2026 15:29"
 }
