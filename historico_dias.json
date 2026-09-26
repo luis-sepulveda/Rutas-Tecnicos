@@ -11625,23 +11625,23 @@
    }
   },
   "26-09-2026": {
-   "hasta": "14:17",
-   "actividades": 161,
+   "hasta": "14:22",
+   "actividades": 162,
    "tecnicos": 35,
    "estados": {
     "Completado": 56,
     "No Realizada": 21,
-    "Iniciado": 18,
-    "Pendiente": 54,
-    "en ruta": 4,
+    "Iniciado": 20,
+    "Pendiente": 51,
+    "en ruta": 6,
     "Cancelado": 6,
     "Suspendido": 2
    },
-   "rgu": 246.9,
+   "rgu": 247.0,
    "caidas_total": 1,
    "caidas_activas": 1,
    "caidas_resueltas": 0,
-   "nuevas": 16,
+   "nuevas": 17,
    "al_bucket": 39,
    "repetidas": 36,
    "reagendadas": 8,
@@ -11658,6 +11658,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O2IM8CS",
+      "tec": "SAMUEL FERNANDEZ VIDAL",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "14:21",
+      "d": "RIO DE JANEIRO 2450, VILLA ALEMANA",
+      "e": "en ruta"
+     },
      {
       "o": "1-3O2FKQKM",
       "tec": "JOSE GALAZ D",
@@ -11755,7 +11764,7 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "EL ALBA 815 CASA D, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O2CZ8WX",
@@ -11868,7 +11877,7 @@
       "o": "1-3O22ZMTJ",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "17:08",
+      "hi": "16:36",
       "d": "REGULUS 2774, QUILPUE",
       "e": "Pendiente",
       "tec": "ANTONHY MORALES MENDOZA",
@@ -12154,9 +12163,9 @@
       "o": "1-3O007SSN",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:27",
+      "hi": "14:21",
       "d": "AV LA PALMA 151 EDIF. 7 DEPTO 527, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "MATÍAS JAQUE AG",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -12190,7 +12199,7 @@
       "o": "1-3O24LXUD",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:26",
+      "hi": "15:22",
       "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -12319,5 +12328,5 @@
    }
   }
  },
- "generado": "26-09-2026 14:17"
+ "generado": "26-09-2026 14:22"
 }
