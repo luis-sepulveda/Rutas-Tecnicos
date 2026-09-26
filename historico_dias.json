@@ -11625,16 +11625,16 @@
    }
   },
   "26-09-2026": {
-   "hasta": "16:24",
+   "hasta": "16:29",
    "actividades": 167,
    "tecnicos": 35,
    "estados": {
-    "Completado": 82,
-    "No Realizada": 31,
-    "Pendiente": 21,
+    "Completado": 83,
+    "No Realizada": 33,
+    "Pendiente": 20,
     "Iniciado": 21,
     "Cancelado": 6,
-    "en ruta": 4,
+    "en ruta": 2,
     "Suspendido": 2
    },
    "rgu": 249.2,
@@ -11976,9 +11976,9 @@
       "o": "1-3NZ8XA3P",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "17:08",
+      "hi": "16:27",
       "d": "DIAZ 1505, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "GEEYSER PEREZ O",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -12178,9 +12178,9 @@
       "o": "1-3O22VIU0",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:28",
+      "hi": "16:26",
       "d": "PJE YANKA 01142, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "NICOLAS MOYANO R",
       "visitas": 3,
       "ult_fecha": "23-09-2026",
@@ -12228,7 +12228,7 @@
       "f": "16-19",
       "hi": "16:01",
       "d": "LOS ARRAYANES 9998, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "SEBASTIAN DOSSOW A",
       "visitas": 1,
       "ult_fecha": "25-09-2026",
@@ -12249,7 +12249,7 @@
       "o": "1-3O2DZI0K",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "18:25",
+      "hi": "18:07",
       "d": "CUMMING 1790 EDIF. DEPTO 22, QUILPUE",
       "e": "Pendiente",
       "tec": "YENDER BOSCAN CADENAS",
@@ -12343,5 +12343,5 @@
    }
   }
  },
- "generado": "26-09-2026 16:24"
+ "generado": "26-09-2026 16:29"
 }
