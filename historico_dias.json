@@ -11625,17 +11625,16 @@
    }
   },
   "26-09-2026": {
-   "hasta": "17:44",
+   "hasta": "17:49",
    "actividades": 172,
    "tecnicos": 35,
    "estados": {
-    "Completado": 99,
+    "Completado": 103,
     "No Realizada": 36,
     "Suspendido": 5,
-    "Cancelado": 7,
-    "Iniciado": 22,
-    "Pendiente": 2,
-    "en ruta": 1
+    "Cancelado": 8,
+    "Iniciado": 19,
+    "Pendiente": 1
    },
    "rgu": 250.5,
    "caidas_total": 2,
@@ -11719,7 +11718,7 @@
       "f": "16-19",
       "hi": "17:21",
       "d": "SANTA FE 1491, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O2IM8CS",
@@ -11737,7 +11736,7 @@
       "f": "16-19",
       "hi": "18:20",
       "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O2HRD9M",
@@ -12014,7 +12013,7 @@
       "f": "16-19",
       "hi": "17:47",
       "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "FELIPE SILVA R",
       "visitas": 1,
       "ult_fecha": "18-08-2026",
@@ -12168,7 +12167,7 @@
       "f": "16-19",
       "hi": "15:56",
       "d": "PORVENIR 26, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "LUIS MARTIN NUÑEZ",
       "visitas": 2,
       "ult_fecha": "24-09-2026",
@@ -12391,5 +12390,5 @@
    }
   }
  },
- "generado": "26-09-2026 17:44"
+ "generado": "26-09-2026 17:49"
 }
