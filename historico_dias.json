@@ -11625,12 +11625,12 @@
    }
   },
   "26-09-2026": {
-   "hasta": "09:25",
+   "hasta": "09:30",
    "actividades": 125,
    "tecnicos": 35,
    "estados": {
-    "en ruta": 19,
-    "Pendiente": 106
+    "en ruta": 23,
+    "Pendiente": 102
    },
    "rgu": 209.0,
    "caidas_total": 0,
@@ -11760,9 +11760,9 @@
       "o": "1-3O1WFILF",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "10:00",
+      "hi": "09:38",
       "d": "PJE 2(TRASLAVINA) 442, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JEAN ROODLY ORELIEN",
       "visitas": 1,
       "ult_fecha": "17-09-2026",
@@ -11772,7 +11772,7 @@
       "o": "1-3O216EPZ",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "18:53",
+      "hi": "18:31",
       "d": "LAS AMERICAS 1015 EDIF. 10 DEPTO 1, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JEAN ROODLY ORELIEN",
@@ -11844,7 +11844,7 @@
       "o": "1-3NZ8XA3P",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "20:09",
+      "hi": "19:45",
       "d": "DIAZ 1505, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JOSE ROJO A",
@@ -12048,7 +12048,7 @@
       "o": "1-3O0V6HSO",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "19:59",
+      "hi": "19:37",
       "d": "EL MIRADOR 493 CASA 23, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JEAN ROODLY ORELIEN",
@@ -12118,5 +12118,5 @@
    }
   }
  },
- "generado": "26-09-2026 09:25"
+ "generado": "26-09-2026 09:30"
 }
