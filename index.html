@@ -1848,6 +1848,19 @@
   .pv-com .c .pista .sa { background:#4a90e2; }
   .pv-com .c .pista .sx { background:#c3d2e0; color:#41586f; }
   /* =================================================================== */
+  /* ==== ESTADO DE CADA FRANJA EN PALABRAS (26-09-2026) ====
+     La etiqueta de la derecha del titulo, en el color de la franja. */
+  /* la etiqueta de la derecha, en letra normal (antes MAYUSCULAS, se leia a gritos) */
+  .pv-tlf .fr .ah { text-transform:none; letter-spacing:0; font-size:12px; font-weight:600; }
+  .pv-tlf .fr .hh .est { font-family:'DM Sans',sans-serif; font-size:11px; font-weight:600;
+    padding:1px 8px; border-radius:999px; margin-left:6px; vertical-align:1px; background:#dbeafe; color:#1d4ed8; }
+  .pv-tlf .fr .hh .est.prox { background:#eff6ff; color:#60a5fa; }
+  .pv-tlf .fr .hh .est.ok { background:#f1f5f9; color:#64748b; }
+  .pv-tlf .fr .ah.prox { color:#60a5fa; }
+  .pv-tlf .fr .ah.ok, .pv-tlf .fr .ah.gri { color:#64748b; }
+  .pv-tlf .fr .ah.amb { color:#b45309; }
+  .pv-tlf .fr .ah.roj { color:#b91c1c; }
+  /* =================================================================== */
 </style>
 </head>
 <body>
@@ -6106,8 +6119,16 @@ function pintarPortada(){
     const tono = enCurso ? '' : !pasada ? ' prox'
       : ' pasada' + (pAb > FR_ROJO ? ' roj' : pAb > FR_AMBAR ? ' amb' : '');
     return '<div class="fr' + (enCurso ? ' ahora' : '') + tono + (d.ab ? '' : ' vacia') + '">'
-      + '<div class="h"><span class="hh">' + f + '</span>'
-      +   (enCurso ? '<span class="ah">en curso</span>' : '') + '</div>'
+      /* 26-09-2026 (Luis): en TODAS las franjas, a la derecha, el % que queda
+         por cerrar en el color de la franja; y junto al nombre, el estado en
+         palabras (en curso / proxima / cerrada). Asi el color se entiende sin
+         leyenda. */
+      + '<div class="h"><span class="hh">' + f
+      +   (enCurso ? ' <span class="est">en curso</span>'
+           : !pasada ? ' <span class="est prox">pr\u00f3xima</span>'
+           : !d.ab ? ' <span class="est ok">\u2713 cerrada</span>' : '') + '</span>'
+      +   '<span class="ah' + (enCurso ? '' : !pasada ? ' prox' : pAb > FR_ROJO ? ' roj' : pAb > FR_AMBAR ? ' amb' : ' gri')
+      +   '">' + Math.round(pAb) + ' % por cerrar</span></div>'
       + '<div class="pista"><span style="width:' + p + '%"></span></div>'
       + '<div class="q"><b>' + d.ab + '</b> sin cerrar de ' + d.t + '</div>'
       + '</div>';
