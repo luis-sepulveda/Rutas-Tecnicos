@@ -1833,6 +1833,21 @@
   .pv-nop.otra { color:#15293e; }
   .pv-nop.otra .nn { background:#0f766e; }
   /* =================================================================== */
+  /* ==== POR COMUNA CON REPARTO Y CANTIDADES (26-09-2026) ====
+     Cada comuna: una barra con completadas, no realizadas, sin cerrar y
+     canc/susp (colores de "Reparto del dia") y la cantidad dentro de cada
+     tramo. Al lado del nombre, el total de la comuna; a la derecha, el % de
+     completadas de siempre. */
+  .pv-com .c .nm small { color:#8fa1b3; font-size:11.5px; margin-left:4px; }
+  .pv-com .c .pista { display:flex; height:18px; border-radius:5px; }
+  .pv-com .c .pista span { flex-basis:0; min-width:22px; display:flex; align-items:center; justify-content:center;
+    border-radius:0; font-size:11px; font-weight:700; color:#fff; font-variant-numeric:tabular-nums;
+    overflow:hidden; white-space:nowrap; }
+  .pv-com .c .pista .sc { background:#0e7c6b; }
+  .pv-com .c .pista .sn { background:#d04a46; }
+  .pv-com .c .pista .sa { background:#4a90e2; }
+  .pv-com .c .pista .sx { background:#c3d2e0; color:#41586f; }
+  /* =================================================================== */
 </style>
 </head>
 <body>
@@ -6011,9 +6026,14 @@ function pintarPortada(){
   const porComuna = {};
   filas.forEach(o => {
     const c = String(o.d || '').split(',').pop().trim().toUpperCase() || 'SIN CIUDAD';
-    porComuna[c] = porComuna[c] || {t:0, c:0};
+    porComuna[c] = porComuna[c] || {t:0, c:0, nr:0, ab:0, cs:0};
     porComuna[c].t++;
     if(String(o.e) === 'Completado') porComuna[c].c++;
+    /* 26-09-2026: el resto del reparto por comuna, con las mismas reglas que
+       las cifras de arriba (sin cerrar = abierta; canc/susp aparte) */
+    else if(String(o.e) === 'No Realizada') porComuna[c].nr++;
+    else if(abierta(o)) porComuna[c].ab++;
+    else porComuna[c].cs++;
   });
 
   let fecha = (typeof FECHA_DATOS !== 'undefined' && FECHA_DATOS)
@@ -6052,8 +6072,16 @@ function pintarPortada(){
     const d = porComuna[c];
     const p = Math.round(100 * d.c / d.t);
     const nom = c.toLowerCase().replace(/(^|\s)\S/g, t => t.toUpperCase());
-    return '<div class="c"><span class="nm">' + nom + '</span>'
-      + '<span class="pista"><span style="width:' + p + '%"></span></span>'
+    /* 26-09-2026 (Luis): cada comuna con su reparto completo, con los colores
+       de "Reparto del dia" y la cantidad DENTRO de cada tramo. SIEMPRE se ve
+       el numero: cada tramo crece en proporcion a su cantidad (flex-grow),
+       pero con un ancho minimo para que la cifra quepa. Asi no se esconde un
+       "3 canc/susp" como paso en la primera prueba. */
+    const tramoCom = (v, cls, txt) => !v ? ''
+      : '<span class="' + cls + '" style="flex-grow:' + v + '" title="' + v + ' ' + txt + '">' + v + '</span>';
+    return '<div class="c"><span class="nm">' + nom + ' <small>' + d.t + '</small></span>'
+      + '<span class="pista">' + tramoCom(d.c, 'sc', 'completadas') + tramoCom(d.nr, 'sn', 'no realizadas')
+      +   tramoCom(d.ab, 'sa', 'sin cerrar') + tramoCom(d.cs, 'sx', 'canc/susp') + '</span>'
       + '<span class="vl">' + p + '%</span></div>';
   }).join('');
 
