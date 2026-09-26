@@ -11625,15 +11625,15 @@
    }
   },
   "26-09-2026": {
-   "hasta": "14:33",
+   "hasta": "14:38",
    "actividades": 164,
    "tecnicos": 35,
    "estados": {
     "Completado": 57,
     "No Realizada": 22,
     "Iniciado": 24,
-    "Pendiente": 49,
-    "en ruta": 4,
+    "Pendiente": 48,
+    "en ruta": 5,
     "Cancelado": 6,
     "Suspendido": 2
    },
@@ -11874,7 +11874,7 @@
       "o": "1-3O2F0GK8",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:33",
+      "hi": "17:32",
       "d": "LAGO LAS TORRES 29 DEPTO 1203, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
@@ -12337,5 +12337,5 @@
    }
   }
  },
- "generado": "26-09-2026 14:33"
+ "generado": "26-09-2026 14:38"
 }
