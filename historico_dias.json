@@ -11625,23 +11625,23 @@
    }
   },
   "26-09-2026": {
-   "hasta": "14:27",
-   "actividades": 163,
+   "hasta": "14:33",
+   "actividades": 164,
    "tecnicos": 35,
    "estados": {
-    "Completado": 56,
+    "Completado": 57,
     "No Realizada": 22,
-    "Iniciado": 23,
-    "Pendiente": 50,
+    "Iniciado": 24,
+    "Pendiente": 49,
     "en ruta": 4,
     "Cancelado": 6,
     "Suspendido": 2
    },
-   "rgu": 247.1,
+   "rgu": 248.1,
    "caidas_total": 1,
    "caidas_activas": 1,
    "caidas_resueltas": 0,
-   "nuevas": 17,
+   "nuevas": 18,
    "al_bucket": 39,
    "repetidas": 36,
    "reagendadas": 8,
@@ -11658,6 +11658,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O2IJKKA",
+      "tec": "JOSE GALAZ D",
+      "cat": "Reparación",
+      "f": "16-19",
+      "hi": "17:21",
+      "d": "SANTA FE 1491, VILLA ALEMANA",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3O2IM8CS",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -11809,7 +11818,7 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "LOS PINOS 1132, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      }
     ],
     "repetidas": [
@@ -11913,7 +11922,7 @@
       "o": "1-3O2DL671",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:39",
+      "hi": "18:00",
       "d": "AVENIDA BELLOTO 1080, QUILPUE",
       "e": "Pendiente",
       "tec": "CRISTOBAL SILVA LEIVA",
@@ -12080,7 +12089,7 @@
       "o": "1-3NY5I1WT",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "16:07",
+      "hi": "16:01",
       "d": "HUASCO 2881, QUILPUE",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -12139,9 +12148,9 @@
       "o": "1-3NZ2NN1H",
       "cat": "Alta Traslado",
       "f": "13-16",
-      "hi": "14:31",
+      "hi": "14:32",
       "d": "LOS PINOS 1132, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "MARCO PEREZ G",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -12151,7 +12160,7 @@
       "o": "1-3O2DZI0K",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "18:47",
+      "hi": "18:48",
       "d": "CUMMING 1790 EDIF. DEPTO 22, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -12328,5 +12337,5 @@
    }
   }
  },
- "generado": "26-09-2026 14:27"
+ "generado": "26-09-2026 14:33"
 }
