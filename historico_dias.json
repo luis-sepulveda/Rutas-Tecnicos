@@ -11625,16 +11625,16 @@
    }
   },
   "26-09-2026": {
-   "hasta": "11:01",
+   "hasta": "11:06",
    "actividades": 140,
    "tecnicos": 35,
    "estados": {
     "Completado": 9,
-    "Iniciado": 29,
-    "Pendiente": 85,
-    "en ruta": 4,
+    "Iniciado": 28,
+    "Pendiente": 82,
+    "en ruta": 7,
     "Cancelado": 2,
-    "No Realizada": 10,
+    "No Realizada": 11,
     "Suspendido": 1
    },
    "rgu": 226.1,
@@ -12073,7 +12073,7 @@
       "f": "10-13",
       "hi": "10:44",
       "d": "SANTA MARIA 0241, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "RAFAEL VARGAS B",
       "visitas": 1,
       "ult_fecha": "14-09-2026",
@@ -12195,7 +12195,7 @@
       "f": "10-13",
       "hi": "10:44",
       "d": "SANTA MARIA 0241, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "RAFAEL VARGAS B",
       "desde": "23-09-2026"
      },
@@ -12213,5 +12213,5 @@
    }
   }
  },
- "generado": "26-09-2026 11:01"
+ "generado": "26-09-2026 11:06"
 }
