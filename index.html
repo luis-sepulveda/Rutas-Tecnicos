@@ -5121,6 +5121,9 @@ const URL_SEGUIMIENTO = URL_ACTIVIDADES + 'seguimiento_autonomia.html';
 /* Los dos reportes del historial se abren directo con su marca. */
 const URL_SINMORADORES = URL_HISTORIAL + '#sinmoradores';
 const URL_EQUIPO = URL_HISTORIAL + '#equipo';
+/* Tiempos en terreno (26-09-2026): el boton nuevo del historial, que arma
+   generar_dashboard.py. Abre directo con su marca, igual que los dos de arriba. */
+const URL_TIEMPOS = URL_HISTORIAL + '#tiempos';
 
 /* ============ ESTA VIVO EL MONITOR? ============
    El monitor publica cada 5 minutos, asi que 15 sin novedad ya es senal de
@@ -5949,6 +5952,10 @@ function pintarPortada(){
     +     '<a onclick="abrirVistaRed()">Red</a>'
     +     '<a onclick="desdePortada(toggleReit)">Reiterados'
     +       (nReit() ? '<span class="pv-nreit">' + nReit() + '</span>' : '') + '</a>'
+    /* Tiempos (26-09-2026): a la derecha de Reiterados, a pedido de Luis (antes
+       estuvo un rato en "Reportes"). Abre el boton Tiempos en terreno del
+       historial en otra pestana, como Historial y Seguimiento. */
+    +     '<a href="' + URL_TIEMPOS + '" target="_blank">Tiempos</a>'
     +   '</nav>'
     +   '<span class="pv-upd"><i></i><span class="upd"></span></span>'
     + '</header>'
