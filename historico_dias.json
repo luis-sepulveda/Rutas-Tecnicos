@@ -11625,16 +11625,16 @@
    }
   },
   "26-09-2026": {
-   "hasta": "13:37",
+   "hasta": "13:42",
    "actividades": 160,
    "tecnicos": 35,
    "estados": {
-    "Completado": 47,
+    "Completado": 48,
     "No Realizada": 19,
-    "Iniciado": 17,
-    "Pendiente": 69,
+    "Iniciado": 18,
+    "Pendiente": 66,
     "Cancelado": 4,
-    "en ruta": 2,
+    "en ruta": 3,
     "Suspendido": 2
    },
    "rgu": 246.8,
@@ -11909,9 +11909,9 @@
       "o": "1-3O1YO3SO",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "13:55",
       "d": "JOSE FUENTES 885 DEPTO 21, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "FELIPE SILVA R",
       "visitas": 2,
       "ult_fecha": "25-09-2026",
@@ -11921,7 +11921,7 @@
       "o": "1-3O22VIU0",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:15",
+      "hi": "18:06",
       "d": "PJE YANKA 01142, QUILPUE",
       "e": "Pendiente",
       "tec": "HERNAN CORTES HERRERA",
@@ -12029,7 +12029,7 @@
       "o": "1-3NY5I1WT",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "16:12",
+      "hi": "16:07",
       "d": "HUASCO 2881, QUILPUE",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -12041,7 +12041,7 @@
       "o": "1-3O0DMR77",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "18:14",
+      "hi": "18:15",
       "d": "PJE 1 01299 EDIF. 7 DEPTO 22, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -12053,7 +12053,7 @@
       "o": "1-3O2DL671",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "19:39",
+      "hi": "19:40",
       "d": "AVENIDA BELLOTO 1080, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -12290,5 +12290,5 @@
    }
   }
  },
- "generado": "26-09-2026 13:37"
+ "generado": "26-09-2026 13:42"
 }
