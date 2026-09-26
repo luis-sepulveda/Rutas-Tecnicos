@@ -5163,6 +5163,8 @@ const URL_EQUIPO = URL_HISTORIAL + '#equipo';
 /* Tiempos en terreno (26-09-2026): el boton nuevo del historial, que arma
    generar_dashboard.py. Abre directo con su marca, igual que los dos de arriba. */
 const URL_TIEMPOS = URL_HISTORIAL + '#tiempos';
+/* Tabla completa del historial, directo (26-09-2026): boton Historial */
+const URL_TABLA_HIST = URL_HISTORIAL + '#tabla';
 
 /* ============ ESTA VIVO EL MONITOR? ============
    El monitor publica cada 5 minutos, asi que 15 sin novedad ya es senal de
@@ -6018,7 +6020,6 @@ function pintarPortada(){
     /* Clases por boton (26-09-2026): b-inf = informe (abre otra pagina),
        b-map = mapa, y una propia por boton, para poder darles color. */
     +     '<a class="b-inf b-act" href="' + URL_ACTIVIDADES + '" target="_blank">Actividades</a>'
-    +     '<a class="b-inf b-hist" href="' + URL_HISTORIAL + '" target="_blank">Historial</a>'
     +     '<a class="b-inf b-seg" href="' + URL_SEGUIMIENTO + '" target="_blank">Seguimiento</a>'
     /* Nodos y NAP al lado de Seguimiento, a pedido de Luis (24-09-2026). Abre
        el mismo modal que el boton del mapa. Se pone en rojo (.alarma, que ya
@@ -6034,6 +6035,10 @@ function pintarPortada(){
        estuvo un rato en "Reportes"). Abre el boton Tiempos en terreno del
        historial en otra pestana, como Historial y Seguimiento. */
     +     '<a class="b-inf b-tie" href="' + URL_TIEMPOS + '" target="_blank">Tiempos</a>'
+    /* Historial (26-09-2026, pedido de Luis): se movio a la derecha de Tiempos
+       y abre DIRECTO la tabla completa del historial (#tabla), sin pasar por
+       la pantalla de consulta. */
+    +     '<a class="b-inf b-hist" href="' + URL_TABLA_HIST + '" target="_blank">Historial</a>'
     +   '</nav>'
     +   '<span class="pv-upd"><i></i><span class="upd"></span></span>'
     + '</header>'
