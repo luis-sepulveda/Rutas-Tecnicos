@@ -11625,19 +11625,19 @@
    }
   },
   "26-09-2026": {
-   "hasta": "13:42",
-   "actividades": 160,
+   "hasta": "13:47",
+   "actividades": 161,
    "tecnicos": 35,
    "estados": {
-    "Completado": 48,
-    "No Realizada": 19,
-    "Iniciado": 18,
-    "Pendiente": 66,
+    "Completado": 50,
+    "No Realizada": 20,
+    "Iniciado": 17,
+    "Pendiente": 65,
     "Cancelado": 4,
     "en ruta": 3,
     "Suspendido": 2
    },
-   "rgu": 246.8,
+   "rgu": 246.9,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
@@ -11945,9 +11945,9 @@
       "o": "1-3O216EPZ",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "13:35",
+      "hi": "13:43",
       "d": "LAS AMERICAS 1015 EDIF. 10 DEPTO 1, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "JEAN ROODLY ORELIEN",
       "visitas": 1,
       "ult_fecha": "15-09-2026",
@@ -12041,7 +12041,7 @@
       "o": "1-3O0DMR77",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "18:15",
+      "hi": "17:40",
       "d": "PJE 1 01299 EDIF. 7 DEPTO 22, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -12053,7 +12053,7 @@
       "o": "1-3O2DL671",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "19:40",
+      "hi": "19:05",
       "d": "AVENIDA BELLOTO 1080, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -12290,5 +12290,5 @@
    }
   }
  },
- "generado": "26-09-2026 13:42"
+ "generado": "26-09-2026 13:47"
 }
