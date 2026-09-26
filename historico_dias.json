@@ -11625,15 +11625,15 @@
    }
   },
   "26-09-2026": {
-   "hasta": "17:09",
+   "hasta": "17:14",
    "actividades": 170,
    "tecnicos": 35,
    "estados": {
-    "Completado": 90,
+    "Completado": 91,
     "No Realizada": 33,
-    "en ruta": 7,
+    "Iniciado": 26,
     "Suspendido": 3,
-    "Iniciado": 25,
+    "en ruta": 5,
     "Pendiente": 6,
     "Cancelado": 6
    },
@@ -11964,9 +11964,9 @@
       "o": "1-3O22VA1Q",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:31",
+      "hi": "17:18",
       "d": "PABLO NERUDA 2069, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "CESAR MENA OLIVEROS",
       "visitas": 1,
       "ult_fecha": "25-09-2026",
@@ -12311,7 +12311,7 @@
       "f": "13-16",
       "hi": "15:16",
       "d": "SANTA FE 1538, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "CESAR MENA OLIVEROS",
       "desde": "25-09-2026"
      },
@@ -12319,9 +12319,9 @@
       "o": "1-3O0V6HSO",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:12",
+      "hi": "17:11",
       "d": "EL MIRADOR 493 CASA 23, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Pendiente",
       "tec": "EDGAR VALERO C",
       "desde": "25-09-2026"
      },
@@ -12379,5 +12379,5 @@
    }
   }
  },
- "generado": "26-09-2026 17:09"
+ "generado": "26-09-2026 17:14"
 }
