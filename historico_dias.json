@@ -11625,17 +11625,17 @@
    }
   },
   "26-09-2026": {
-   "hasta": "16:34",
+   "hasta": "16:39",
    "actividades": 170,
    "tecnicos": 35,
    "estados": {
     "Completado": 84,
     "No Realizada": 33,
-    "Pendiente": 19,
+    "Pendiente": 18,
     "Suspendido": 3,
-    "Iniciado": 22,
-    "Cancelado": 6,
-    "en ruta": 3
+    "en ruta": 3,
+    "Iniciado": 23,
+    "Cancelado": 6
    },
    "rgu": 251.3,
    "caidas_total": 1,
@@ -11665,7 +11665,7 @@
       "f": "16-19",
       "hi": "16:32",
       "d": "RAMON ANGEL JARA 112 CASA 12, QUILPUE",
-      "e": "en ruta"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O2LNNN8",
@@ -11773,7 +11773,7 @@
       "f": "16-19",
       "hi": "18:43",
       "d": "AV LOS CARRERA 1382 DEPTO 30, QUILPUE",
-      "e": "Pendiente"
+      "e": "en ruta"
      },
      {
       "o": "1-3O2E378F",
@@ -12089,7 +12089,7 @@
       "o": "1-3O2FKQKM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:33",
+      "hi": "17:36",
       "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE SALAS MEDINA",
@@ -12101,7 +12101,7 @@
       "o": "1-3NY5I1WT",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "18:59",
+      "hi": "19:02",
       "d": "HUASCO 2881, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE SALAS MEDINA",
@@ -12361,5 +12361,5 @@
    }
   }
  },
- "generado": "26-09-2026 16:34"
+ "generado": "26-09-2026 16:39"
 }
