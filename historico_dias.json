@@ -11625,23 +11625,23 @@
    }
   },
   "26-09-2026": {
-   "hasta": "15:59",
-   "actividades": 165,
+   "hasta": "16:04",
+   "actividades": 166,
    "tecnicos": 35,
    "estados": {
-    "Completado": 75,
+    "Completado": 76,
     "No Realizada": 29,
-    "Pendiente": 28,
-    "Iniciado": 23,
+    "Pendiente": 27,
+    "Iniciado": 25,
     "Cancelado": 6,
-    "en ruta": 2,
+    "en ruta": 1,
     "Suspendido": 2
    },
-   "rgu": 248.1,
+   "rgu": 248.2,
    "caidas_total": 1,
    "caidas_activas": 1,
    "caidas_resueltas": 0,
-   "nuevas": 19,
+   "nuevas": 20,
    "al_bucket": 42,
    "repetidas": 35,
    "reagendadas": 8,
@@ -11658,6 +11658,15 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O2KZJ0Q",
+      "tec": "LUIS CASTRO TORRES",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "16:01",
+      "d": "RENE RODRIGUEZ 563 EDIF. B-26 DEPTO 203, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3O2KGFMM",
       "tec": "JOSE GALAZ D",
@@ -11967,7 +11976,7 @@
       "o": "1-3NZ8XA3P",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "17:04",
+      "hi": "17:08",
       "d": "DIAZ 1505, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "GEEYSER PEREZ O",
@@ -12217,9 +12226,9 @@
       "o": "1-3O1PIROM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:03",
+      "hi": "16:01",
       "d": "LOS ARRAYANES 9998, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "Iniciado",
       "tec": "SEBASTIAN DOSSOW A",
       "visitas": 1,
       "ult_fecha": "25-09-2026",
@@ -12334,5 +12343,5 @@
    }
   }
  },
- "generado": "26-09-2026 15:59"
+ "generado": "26-09-2026 16:04"
 }
