@@ -11625,15 +11625,15 @@
    }
   },
   "26-09-2026": {
-   "hasta": "14:53",
+   "hasta": "15:03",
    "actividades": 164,
    "tecnicos": 35,
    "estados": {
-    "Completado": 60,
-    "No Realizada": 23,
+    "Completado": 63,
+    "No Realizada": 24,
     "Iniciado": 22,
-    "Pendiente": 45,
-    "en ruta": 6,
+    "Pendiente": 43,
+    "en ruta": 4,
     "Cancelado": 6,
     "Suspendido": 2
    },
@@ -11773,7 +11773,7 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "EL ALBA 815 CASA D, QUILPUE",
-      "e": "Iniciado"
+      "e": "No Realizada"
      },
      {
       "o": "1-3O2CZ8WX",
@@ -11874,7 +11874,7 @@
       "o": "1-3O2F0GK8",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:32",
+      "hi": "17:38",
       "d": "LAGO LAS TORRES 29 DEPTO 1203, QUILPUE",
       "e": "Pendiente",
       "tec": "ALFREDO ALCAYAGA F",
@@ -11886,9 +11886,9 @@
       "o": "1-3O22ZMTJ",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "16:40",
+      "hi": "14:59",
       "d": "REGULUS 2774, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "ANTONHY MORALES MENDOZA",
       "visitas": 1,
       "ult_fecha": "14-09-2026",
@@ -11922,7 +11922,7 @@
       "o": "1-3O2DL671",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:04",
+      "hi": "18:11",
       "d": "AVENIDA BELLOTO 1080, QUILPUE",
       "e": "Pendiente",
       "tec": "CRISTOBAL SILVA LEIVA",
@@ -11934,7 +11934,7 @@
       "o": "1-3O22VA1Q",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:24",
+      "hi": "16:20",
       "d": "PABLO NERUDA 2069, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -12124,7 +12124,7 @@
       "o": "1-3O1AS7QU",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "16:33",
+      "hi": "16:00",
       "d": "PORVENIR 26, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS MARTIN NUÑEZ",
@@ -12172,7 +12172,7 @@
       "o": "1-3O2DZI0K",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "17:14",
+      "hi": "17:20",
       "d": "CUMMING 1790 EDIF. DEPTO 22, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -12186,7 +12186,7 @@
       "f": "13-16",
       "hi": "14:21",
       "d": "AV LA PALMA 151 EDIF. 7 DEPTO 527, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "MATÍAS JAQUE AG",
       "visitas": 1,
       "ult_fecha": "23-09-2026",
@@ -12220,7 +12220,7 @@
       "o": "1-3O1PIROM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:12",
+      "hi": "16:15",
       "d": "LOS ARRAYANES 9998, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
@@ -12264,6 +12264,16 @@
       "desde": "25-09-2026"
      },
      {
+      "o": "1-3O1HDINI",
+      "cat": "Reparación",
+      "f": "13-16",
+      "hi": "15:12",
+      "d": "SANTA FE 1538, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "CESAR MENA OLIVEROS",
+      "desde": "25-09-2026"
+     },
+     {
       "o": "1-3NZAHAJS",
       "cat": "Migración 3 Play",
       "f": "10-13",
@@ -12304,16 +12314,6 @@
       "desde": "25-09-2026"
      },
      {
-      "o": "1-3O1HDINI",
-      "cat": "Reparación",
-      "f": "13-16",
-      "hi": "15:26",
-      "d": "SANTA FE 1538, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "LUIS MARTIN NUÑEZ",
-      "desde": "25-09-2026"
-     },
-     {
       "o": "1-3NZ7U071",
       "cat": "Alta 2 Play",
       "f": "10-13",
@@ -12337,5 +12337,5 @@
    }
   }
  },
- "generado": "26-09-2026 14:53"
+ "generado": "26-09-2026 15:03"
 }
