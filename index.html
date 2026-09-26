@@ -1719,6 +1719,14 @@
     background:#f87171; color:#450a0a; border-radius:9px; font-size:11px; font-weight:700;
     line-height:16px; text-align:center; }
   /* =================================================================== */
+  /* ==== PLAY Y FRANJA en Inicio de jornada (26-09-2026) ====
+     Las tablas de tipo y de Play van lado a lado. Cada una se estira hasta
+     ocupar su mitad; bajo ~800 px de ancho la de Play pasa abajo sola.
+     Para revertir: borrar este bloque (las tablas quedan una bajo la otra). */
+  .ini-par { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:10px; }
+  .ini-par > .bcaja { flex:1 1 380px; margin-bottom:0; }
+  .ini-pie { font-size:11px; color:#5d7389; margin-top:8px; line-height:1.4; }
+  /* =================================================================== */
 </style>
 </head>
 <body>
@@ -4656,39 +4664,82 @@ function tablasInicio(lista, pal, grad, porTipo, total){
   const franjas = [];
   lista.forEach(function(x){ if(franjas.indexOf(x.p.f) < 0) franjas.push(x.p.f); });
   franjas.sort();
-  const tabla = function(titulo, clave){
+  /* 'orden' es opcional: sin el, las filas van por orden alfabetico (asi
+     estaban las dos tablas de siempre). La de Play lo usa para que las
+     reparaciones y las "otras" queden al final, despues de 1, 2 y 3 Play.
+     'colDe' tambien es opcional: dice que va en las COLUMNAS. Sin el son las
+     franjas (como siempre); la tabla Play x comuna le pasa la comuna. */
+  const tabla = function(titulo, clave, orden, pie, colDe){
+    colDe = colDe || function(x){ return x.p.f; };
+    const cols = [];
+    lista.forEach(function(x){ const c = colDe(x); if(cols.indexOf(c) < 0) cols.push(c); });
+    cols.sort();
     const filas = {};
     lista.forEach(function(x){
-      const k = clave(x);
+      const k = clave(x), c = colDe(x);
       filas[k] = filas[k] || {};
-      filas[k][x.p.f] = (filas[k][x.p.f] || 0) + 1;
+      filas[k][c] = (filas[k][c] || 0) + 1;
     });
-    const nombres = Object.keys(filas).sort();
+    const nombres = Object.keys(filas).sort(orden ? function(a,b){
+      return orden.indexOf(a) - orden.indexOf(b); } : undefined);
     const tot = {};
     let h = '<div class="bcaja"><div class="btit" style="color:'+pal[0]+'">'+titulo+'</div>'
           + '<div class="ini-scroll"><table class="ini-tab"><tr><th></th>'
-          + franjas.map(function(f){ return '<th>'+escR(f)+'</th>'; }).join('')
+          + cols.map(function(f){ return '<th>'+escR(f)+'</th>'; }).join('')
           + '<th>Total</th></tr>';
     nombres.forEach(function(n){
       let t = 0;
       h += '<tr><td class="ini-nom">'+escR(n)+'</td>';
-      franjas.forEach(function(f){
+      cols.forEach(function(f){
         const v = filas[n][f] || 0; t += v; tot[f] = (tot[f] || 0) + v;
         h += '<td>'+(v || '')+'</td>';
       });
       h += '<td class="ini-t">'+t+'</td></tr>';
     });
     h += '<tr class="ini-tot"><td class="ini-nom">Total</td>'
-       + franjas.map(function(f){ return '<td>'+(tot[f] || 0)+'</td>'; }).join('')
-       + '<td class="ini-t">'+lista.length+'</td></tr></table></div></div>';
+       + cols.map(function(f){ return '<td>'+(tot[f] || 0)+'</td>'; }).join('')
+       + '<td class="ini-t">'+lista.length+'</td></tr></table></div>'
+       + (pie ? '<div class="ini-pie">'+pie+'</div>' : '') + '</div>';
     return h;
   };
   const comuna = function(x){
     const c = String(x.p.d || '').split(',').pop().trim().toLowerCase();
     return c.replace(/\b\w/g, function(l){ return l.toUpperCase(); }) || 'Sin comuna';
   };
-  return tabla('POR COMUNA Y FRANJA', comuna)
+  /* ==== PLAY Y FRANJA (26-09-2026) ====
+     Pedido de Luis para planificar la manana con mas detalle: cuantas de 1, 2
+     y 3 Play hay en cada franja (una de 3 Play toma mas tiempo que una de 1).
+     El Play sale de 'cat', el mismo que usan las barras de abajo, y se agrupa
+     con la MISMA regla de resumenPlay(): solo Altas y Migraciones se abren por
+     Play; las reparaciones van en su propia fila; traslados, modificaciones y
+     upgrades van en "Otras (sin Play)". A diferencia del resumen de barras,
+     aca SI se muestran las otras, para que el total calce con las otras dos
+     tablas (128 = 128 = 128). Va al lado de la de tipo, en el espacio que
+     quedaba en blanco; en pantallas angostas baja sola debajo. */
+  const ORDEN_PLAY = ['1 Play','2 Play','3 Play','Reparaciones','Otras (sin Play)'];
+  const grupoPlay = function(x){
+    const T = String(x.p.cat || x.p.t || '').toUpperCase();
+    if(T.indexOf('REPARAC') === 0) return 'Reparaciones';
+    const m = T.match(/(\d)\s*PLAY/);
+    const esAlta = T.indexOf('ALTA') === 0 && T.indexOf('ALTA TRASLADO') !== 0;
+    if(m && (esAlta || T.indexOf('MIGRAC') === 0)) return m[1] + ' Play';
+    return 'Otras (sin Play)';
+  };
+  /* ==== PLAY Y COMUNA (26-09-2026) ====
+     Mismo pedido, visto por comuna: cuantas de 1, 2 y 3 Play le tocan a
+     Quilpue y cuantas a Villa Alemana. Misma agrupacion (grupoPlay), con las
+     comunas en las columnas. Va al lado de comuna x franja, igual que la de
+     Play x franja va al lado de la de tipo. */
+  const PIE_PLAY = 'Solo Altas y Migraciones se abren por Play. Otras = traslados, '
+                 + 'modificaciones y upgrades.';
+  return '<div class="ini-par">'
+       + tabla('POR COMUNA Y FRANJA', comuna)
+       + tabla('POR PLAY Y COMUNA', grupoPlay, ORDEN_PLAY, PIE_PLAY, comuna)
+       + '</div>'
+       + '<div class="ini-par">'
        + tabla('POR TIPO DE ACTIVIDAD Y FRANJA', function(x){ return x.p.t || 'Sin tipo'; })
+       + tabla('POR PLAY Y FRANJA', grupoPlay, ORDEN_PLAY, PIE_PLAY)
+       + '</div>'
        + '<div class="bcaja"><div class="btit" style="color:'+pal[0]+'">TIPO DE ACTIVIDAD CON SU PLAY</div>'
        + barrasFijas(resumenPlay(porTipo), total, grad, 'bres')
        + '<div class="bsep"></div><div class="bcap">DETALLE</div>'
@@ -5028,7 +5079,7 @@ function renderEst(){
   if(estActual === '__INICIO__'){
     document.getElementById('estNota').innerHTML =
         'Foto del Excel de la ma\u00f1ana, antes de que los t\u00e9cnicos empiecen: '
-      + 'actividades Pendientes de red NFTT, la misma regla de la tabla que se env\u00eda '
+      + 'actividades Pendientes de red NFTT y FTTH, la misma regla de la tabla que se env\u00eda '
       + 'por WhatsApp. Incluye las del bucket, que el resto del m\u00f3dulo no cuenta porque '
       + 'todav\u00eda no tienen t\u00e9cnico. Respeta los filtros de ciudad y franja.';
     return;
