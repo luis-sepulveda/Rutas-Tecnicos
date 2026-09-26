@@ -11625,15 +11625,15 @@
    }
   },
   "26-09-2026": {
-   "hasta": "14:43",
+   "hasta": "14:53",
    "actividades": 164,
    "tecnicos": 35,
    "estados": {
-    "Completado": 57,
-    "No Realizada": 22,
-    "Iniciado": 25,
-    "Pendiente": 50,
-    "en ruta": 2,
+    "Completado": 60,
+    "No Realizada": 23,
+    "Iniciado": 22,
+    "Pendiente": 45,
+    "en ruta": 6,
     "Cancelado": 6,
     "Suspendido": 2
    },
@@ -11773,7 +11773,7 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "EL ALBA 815 CASA D, QUILPUE",
-      "e": "Pendiente"
+      "e": "Iniciado"
      },
      {
       "o": "1-3O2CZ8WX",
@@ -11818,7 +11818,7 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "LOS PINOS 1132, QUILPUE",
-      "e": "Iniciado"
+      "e": "No Realizada"
      }
     ],
     "repetidas": [
@@ -11886,7 +11886,7 @@
       "o": "1-3O22ZMTJ",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "16:36",
+      "hi": "16:40",
       "d": "REGULUS 2774, QUILPUE",
       "e": "Pendiente",
       "tec": "ANTONHY MORALES MENDOZA",
@@ -11922,7 +11922,7 @@
       "o": "1-3O2DL671",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "18:00",
+      "hi": "18:04",
       "d": "AVENIDA BELLOTO 1080, QUILPUE",
       "e": "Pendiente",
       "tec": "CRISTOBAL SILVA LEIVA",
@@ -11934,7 +11934,7 @@
       "o": "1-3O22VA1Q",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "16:44",
+      "hi": "16:24",
       "d": "PABLO NERUDA 2069, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "EDGAR VALERO C",
@@ -12003,6 +12003,18 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
+      "o": "1-3O24LXUD",
+      "cat": "Alta 1 Play",
+      "f": "13-16",
+      "hi": "15:32",
+      "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
+      "e": "Pendiente",
+      "tec": "JOEL GUSTAVE GUSTA",
+      "visitas": 2,
+      "ult_fecha": "25-09-2026",
+      "ult_cierre": "Cliente reagenda"
+     },
+     {
       "o": "1-3O147FIZ",
       "cat": "Reparación",
       "f": "16-19",
@@ -12029,7 +12041,7 @@
       "o": "1-3O2FKQKM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:35",
+      "hi": "17:45",
       "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -12112,7 +12124,7 @@
       "o": "1-3O1AS7QU",
       "cat": "Modificación de Servicio",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "16:33",
       "d": "PORVENIR 26, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "LUIS MARTIN NUÑEZ",
@@ -12150,7 +12162,7 @@
       "f": "13-16",
       "hi": "14:32",
       "d": "LOS PINOS 1132, QUILPUE",
-      "e": "Iniciado",
+      "e": "No Realizada",
       "tec": "MARCO PEREZ G",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -12160,7 +12172,7 @@
       "o": "1-3O2DZI0K",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "18:48",
+      "hi": "17:14",
       "d": "CUMMING 1790 EDIF. DEPTO 22, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -12201,18 +12213,6 @@
       "e": "Completado",
       "tec": "SAMUEL FERNANDEZ VIDAL",
       "visitas": 1,
-      "ult_fecha": "25-09-2026",
-      "ult_cierre": "Cliente reagenda"
-     },
-     {
-      "o": "1-3O24LXUD",
-      "cat": "Alta 1 Play",
-      "f": "13-16",
-      "hi": "15:25",
-      "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
-      "e": "Pendiente",
-      "tec": "SAMUEL FERNANDEZ VIDAL",
-      "visitas": 2,
       "ult_fecha": "25-09-2026",
       "ult_cierre": "Cliente reagenda"
      },
@@ -12284,16 +12284,6 @@
       "desde": "25-09-2026"
      },
      {
-      "o": "1-3O1HDINI",
-      "cat": "Reparación",
-      "f": "13-16",
-      "hi": "15:25",
-      "d": "SANTA FE 1538, VILLA ALEMANA",
-      "e": "Pendiente",
-      "tec": "JOEL GUSTAVE GUSTA",
-      "desde": "25-09-2026"
-     },
-     {
       "o": "1-3NZX9BPJ",
       "cat": "Reparación",
       "f": "10-13",
@@ -12311,6 +12301,16 @@
       "d": "RENE RODRIGUEZ 563 EDIF. B-26 DEPTO 203, QUILPUE",
       "e": "Iniciado",
       "tec": "LUIS CASTRO TORRES",
+      "desde": "25-09-2026"
+     },
+     {
+      "o": "1-3O1HDINI",
+      "cat": "Reparación",
+      "f": "13-16",
+      "hi": "15:26",
+      "d": "SANTA FE 1538, VILLA ALEMANA",
+      "e": "Pendiente",
+      "tec": "LUIS MARTIN NUÑEZ",
       "desde": "25-09-2026"
      },
      {
@@ -12337,5 +12337,5 @@
    }
   }
  },
- "generado": "26-09-2026 14:43"
+ "generado": "26-09-2026 14:53"
 }
