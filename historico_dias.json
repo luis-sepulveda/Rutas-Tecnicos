@@ -11625,29 +11625,38 @@
    }
   },
   "26-09-2026": {
-   "hasta": "13:32",
-   "actividades": 158,
+   "hasta": "13:37",
+   "actividades": 160,
    "tecnicos": 35,
    "estados": {
-    "Completado": 45,
+    "Completado": 47,
     "No Realizada": 19,
-    "en ruta": 3,
-    "Pendiente": 68,
     "Iniciado": 17,
+    "Pendiente": 69,
     "Cancelado": 4,
+    "en ruta": 2,
     "Suspendido": 2
    },
-   "rgu": 244.7,
+   "rgu": 246.8,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
-   "nuevas": 14,
+   "nuevas": 15,
    "al_bucket": 39,
    "repetidas": 35,
    "reagendadas": 8,
    "detalle": {
     "caidas": [],
     "nuevas": [
+     {
+      "o": "1-3O2HRD9M",
+      "tec": "JOSE SALAS MEDINA",
+      "cat": "Alta 2 Play",
+      "f": "16-19",
+      "hi": "17:42",
+      "d": "ISIDORA 2842 DEPTO 22, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3O2GU9RX",
       "tec": "MARCO PEREZ G",
@@ -11664,7 +11673,7 @@
       "f": "13-16",
       "hi": "13:05",
       "d": "ALFONSO ALCALDE 1167, VILLA ALEMANA",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3O2GDF6E",
@@ -11804,9 +11813,9 @@
       "o": "1-3NXBVKKG",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "13:26",
+      "hi": "13:32",
       "d": "PJE SANTA JULIA 131 CASA C, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "ALEXIS JARA",
       "visitas": 1,
       "ult_fecha": "26-08-2026",
@@ -11816,7 +11825,7 @@
       "o": "1-3O222RQN",
       "cat": "Alta 2 Play",
       "f": "13-16",
-      "hi": "16:49",
+      "hi": "16:55",
       "d": "LAGO HUILLINCO 2007 CASA 17, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -12032,7 +12041,7 @@
       "o": "1-3O0DMR77",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:50",
+      "hi": "18:14",
       "d": "PJE 1 01299 EDIF. 7 DEPTO 22, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -12044,7 +12053,7 @@
       "o": "1-3O2DL671",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "19:15",
+      "hi": "19:39",
       "d": "AVENIDA BELLOTO 1080, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -12281,5 +12290,5 @@
    }
   }
  },
- "generado": "26-09-2026 13:32"
+ "generado": "26-09-2026 13:37"
 }
