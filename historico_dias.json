@@ -11625,16 +11625,16 @@
    }
   },
   "26-09-2026": {
-   "hasta": "12:36",
+   "hasta": "12:41",
    "actividades": 137,
    "tecnicos": 35,
    "estados": {
-    "Completado": 26,
+    "Completado": 28,
     "No Realizada": 17,
-    "Iniciado": 28,
+    "Iniciado": 27,
     "Pendiente": 58,
     "Cancelado": 4,
-    "en ruta": 2,
+    "en ruta": 1,
     "Suspendido": 2
    },
    "rgu": 213.9,
@@ -11777,7 +11777,7 @@
       "o": "1-3NXBVKKG",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "15:36",
+      "hi": "14:36",
       "d": "PJE SANTA JULIA 131 CASA C, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -11983,7 +11983,7 @@
       "f": "10-13",
       "hi": "09:45",
       "d": "VIA UNO SIETE 2065 EDIF. E DEPTO 53, VILLA ALEMANA",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "MARCELO GÓMEZ GÓME",
       "visitas": 1,
       "ult_fecha": "24-09-2026",
@@ -12005,7 +12005,7 @@
       "o": "1-3NZ2NN1H",
       "cat": "Alta Traslado",
       "f": "13-16",
-      "hi": "14:05",
+      "hi": "14:00",
       "d": "LOS PINOS 1132, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -12182,5 +12182,5 @@
    }
   }
  },
- "generado": "26-09-2026 12:36"
+ "generado": "26-09-2026 12:41"
 }
