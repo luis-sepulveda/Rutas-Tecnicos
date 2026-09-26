@@ -11625,15 +11625,15 @@
    }
   },
   "26-09-2026": {
-   "hasta": "12:06",
+   "hasta": "12:11",
    "actividades": 135,
    "tecnicos": 35,
    "estados": {
-    "Completado": 19,
+    "Completado": 20,
     "No Realizada": 16,
-    "en ruta": 4,
-    "Pendiente": 62,
-    "Iniciado": 29,
+    "en ruta": 3,
+    "Pendiente": 61,
+    "Iniciado": 30,
     "Cancelado": 3,
     "Suspendido": 2
    },
@@ -11815,7 +11815,7 @@
       "f": "10-13",
       "hi": "12:07",
       "d": "SAN ENRIQUE 1780 EDIF. 4 DEPTO 304, VILLA ALEMANA",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "CESAR MENA OLIVEROS",
       "visitas": 2,
       "ult_fecha": "17-09-2026",
@@ -12065,7 +12065,7 @@
       "o": "1-3O1PIROM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "16:10",
       "d": "LOS ARRAYANES 9998, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "SEBASTIAN DOSSOW A",
@@ -12182,5 +12182,5 @@
    }
   }
  },
- "generado": "26-09-2026 12:06"
+ "generado": "26-09-2026 12:11"
 }
