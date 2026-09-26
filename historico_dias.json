@@ -11625,29 +11625,38 @@
    }
   },
   "26-09-2026": {
-   "hasta": "13:22",
-   "actividades": 157,
+   "hasta": "13:27",
+   "actividades": 158,
    "tecnicos": 35,
    "estados": {
     "Completado": 41,
     "No Realizada": 19,
     "en ruta": 3,
     "Pendiente": 68,
-    "Iniciado": 20,
+    "Iniciado": 21,
     "Cancelado": 4,
     "Suspendido": 2
    },
-   "rgu": 244.6,
+   "rgu": 244.7,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
-   "nuevas": 13,
+   "nuevas": 14,
    "al_bucket": 39,
    "repetidas": 35,
    "reagendadas": 8,
    "detalle": {
     "caidas": [],
     "nuevas": [
+     {
+      "o": "1-3O2GU9RX",
+      "tec": "MARCO PEREZ G",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "13:24",
+      "d": "AV LOS CARRERA 1376 DEPTO 40, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3O2H053W",
       "tec": "JOSE CASTRO P",
@@ -12083,7 +12092,7 @@
       "o": "1-3NZ2NN1H",
       "cat": "Alta Traslado",
       "f": "13-16",
-      "hi": "14:56",
+      "hi": "15:29",
       "d": "LOS PINOS 1132, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -12095,7 +12104,7 @@
       "o": "1-3O2DZI0K",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "19:12",
+      "hi": "19:45",
       "d": "CUMMING 1790 EDIF. DEPTO 22, QUILPUE",
       "e": "Pendiente",
       "tec": "MARCO PEREZ G",
@@ -12143,7 +12152,7 @@
       "o": "1-3O24LXUD",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:12",
+      "hi": "14:26",
       "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
       "e": "Pendiente",
       "tec": "SAMUEL FERNANDEZ VIDAL",
@@ -12272,5 +12281,5 @@
    }
   }
  },
- "generado": "26-09-2026 13:22"
+ "generado": "26-09-2026 13:27"
 }
