@@ -11625,29 +11625,38 @@
    }
   },
   "26-09-2026": {
-   "hasta": "12:56",
-   "actividades": 151,
+   "hasta": "13:02",
+   "actividades": 152,
    "tecnicos": 35,
    "estados": {
-    "Completado": 35,
+    "Completado": 36,
     "No Realizada": 17,
-    "Iniciado": 21,
-    "Pendiente": 70,
+    "Iniciado": 20,
+    "Pendiente": 71,
     "en ruta": 2,
     "Cancelado": 4,
     "Suspendido": 2
    },
-   "rgu": 234.9,
+   "rgu": 235.0,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
-   "nuevas": 11,
+   "nuevas": 12,
    "al_bucket": 39,
    "repetidas": 34,
    "reagendadas": 8,
    "detalle": {
     "caidas": [],
     "nuevas": [
+     {
+      "o": "1-3O2GDF6E",
+      "tec": "ALEXIS JARA",
+      "cat": "Modificación de Servicio",
+      "f": "13-16",
+      "hi": "18:00",
+      "d": "LOS ALMENDROS 2915 EDIF. A DEPTO 11, QUILPUE",
+      "e": "Pendiente"
+     },
      {
       "o": "1-3O2F3CH5",
       "tec": "LUIS CASTRO TORRES",
@@ -11921,7 +11930,7 @@
       "o": "1-3NZ6QIY7",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "15:01",
+      "hi": "14:55",
       "d": "VILLA ESMERALDA 1531 DEPTO 304, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JORDAN ROA PEREZ",
@@ -11993,7 +12002,7 @@
       "o": "1-3O0DMR77",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:38",
+      "hi": "16:47",
       "d": "PJE 1 01299 EDIF. 7 DEPTO 22, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -12005,7 +12014,7 @@
       "o": "1-3O2DL671",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "19:03",
+      "hi": "18:12",
       "d": "AVENIDA BELLOTO 1080, QUILPUE",
       "e": "Pendiente",
       "tec": "LEONEL HERNÁNDEZ OJE",
@@ -12242,5 +12251,5 @@
    }
   }
  },
- "generado": "26-09-2026 12:56"
+ "generado": "26-09-2026 13:02"
 }
