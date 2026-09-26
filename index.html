@@ -1766,6 +1766,50 @@
   .pv-tlf .fr.pasada.roj .pista span { background:#dc2626; }
   .pv-tlf .fr.pasada.roj .q b { color:#b91c1c; }
   /* =================================================================== */
+  /* ==== MAS DE 3 HORAS, ESTILO LISTA (26-09-2026) ====
+     Panel claro, una linea por orden (opcion "C" que eligio Luis). Sin
+     botones de umbral: fijo en 3 horas. Para volver al estilo oscuro,
+     borrar este bloque (las tarjetas viejas siguen en el codigo). */
+  #panelAtr { background:#fff; border:1px solid #dbe4ed; box-shadow:0 8px 24px rgba(15,23,42,.18);
+    border-radius:12px; padding:12px 14px; width:320px; font-family:'DM Sans',sans-serif; }
+  #panelAtr h2 { font-family:'Archivo',sans-serif; font-size:14px; color:#15293e; margin-bottom:8px; }
+  #panelAtr .vacio { color:#166534; }
+  #panelAtr .vertodos { color:#1d4ed8; }
+  #panelAtr .aviso { background:#fef3c7; border-color:#f59e0b; color:#92400e; }
+  .atrfila { display:grid; grid-template-columns:auto 1fr auto; gap:8px; align-items:center;
+    font-size:12px; color:#15293e; border-top:1px solid #edf1f5; padding:7px 4px; cursor:pointer; border-radius:6px; }
+  .atrfila:hover { background:#f1f5f9; }
+  .atrfila .pt { width:8px; height:8px; border-radius:50%; background:#d97706; }
+  .atrfila.grave .pt { background:#dc2626; }
+  .atrfila .dt b { font-weight:600; }
+  .atrfila .dir { display:block; color:#5b7086; font-size:11px; margin-top:1px;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:220px; }
+  .atrfila .tm { color:#b45309; font-weight:700; white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .atrfila.grave .tm { color:#b91c1c; }
+  /* =================================================================== */
+  /* ==== BOTON MAS DE 3 HORAS ENCENDIDO (26-09-2026) ====
+     Azul con borde blanco y brillo, como los botones elegidos del Historial,
+     para que se vea al tiro que ese modo esta activo. */
+  .nb-flota .btn#btnAtr.on5 { background:#1d4ed8; border-color:#fff; color:#fff; font-weight:700;
+    box-shadow:0 0 0 2px rgba(29,78,216,.45), 0 0 14px rgba(96,165,250,.55); }
+  #btnAtr .cerrar-x { margin-left:8px; padding-left:8px; border-left:1px solid rgba(255,255,255,.45);
+    font-weight:400; }
+  /* =================================================================== */
+  /* ==== SIN COMPLETAR, ESTILO LISTA (26-09-2026) ====
+     Mismo panel claro y una linea por tecnico que Mas de 3 horas (reusa
+     .atrfila). Boton encendido en azul con visto y X. */
+  #panelSC { background:#fff; border:1px solid #dbe4ed; box-shadow:0 8px 24px rgba(15,23,42,.18);
+    border-radius:12px; padding:12px 14px; width:320px; font-family:'DM Sans',sans-serif; }
+  #panelSC h2 { font-family:'Archivo',sans-serif; font-size:14px; color:#15293e; margin-bottom:8px; }
+  #panelSC .vacio { color:#166534; }
+  #panelSC .vertodos { color:#1d4ed8; }
+  .atrfila .dir .nr { color:#b91c1c; font-weight:600; }
+  .atrfila .tm.sc { color:#15293e; font-weight:600; }
+  .nb-flota .btn#btnSC.on3 { background:#1d4ed8; border-color:#fff; color:#fff; font-weight:700;
+    box-shadow:0 0 0 2px rgba(29,78,216,.45), 0 0 14px rgba(96,165,250,.55); }
+  #btnSC .cerrar-x { margin-left:8px; padding-left:8px; border-left:1px solid rgba(255,255,255,.45);
+    font-weight:400; }
+  /* =================================================================== */
 </style>
 </head>
 <body>
@@ -2003,7 +2047,8 @@
 </div>
 <div id="panelSC">
   <h2>🚩 Sin completar</h2>
-  <div class="hint">Técnicos que aún no tienen ningún trabajo <b>Completado</b>. Toca un nombre para verlo solo a él en el mapa. Respeta el filtro de ciudad de arriba.</div>
+  <!-- 26-09-2026 (Luis): sin la explicacion bajo el titulo y en lista, una
+       linea por tecnico, igual que el panel de Mas de 3 horas. -->
   <div id="listaSC"></div>
 </div>
 <div id="panelComp">
@@ -2014,12 +2059,10 @@
 <div id="panelAtr">
   <h2>⏱️ Llevan mucho rato iniciado</h2>
   <div id="avisoAtr"></div>
-  <div class="umbral">
-    <button id="umb120" onclick="setUmbral(120)">+2h</button>
-    <button id="umb150" onclick="setUmbral(150)">+2h30</button>
-    <button id="umb180" onclick="setUmbral(180)">+3h</button>
-  </div>
-  <div class="hint">Órdenes en estado <b>Iniciado</b> cuya hora de inicio ya lleva más del umbral. Respeta el filtro de ciudad de arriba. Toca una tarjeta para ver al técnico en el mapa.</div>
+  <!-- 26-09-2026 (Luis): se sacaron los botones +2h / +2h30 / +3h (queda fijo
+       en 3 horas, UMBRAL_MIN) y la explicacion de abajo del titulo. La lista
+       paso a una linea por orden (estilo "C"). setUmbral() sigue existiendo
+       por si se quiere volver. -->
   <div id="listaAtr"></div>
 </div>
 <!-- Una sola leyenda plegable, abajo a la izquierda, en vez de las dos cajas
@@ -2273,7 +2316,9 @@ function toggleSinCompletar(){
   cerrarPaneles('sc');                 // modos excluyentes
   sinComp = !sinComp;
   document.getElementById('btnSC').classList.toggle('on3', sinComp);
-  document.getElementById('btnSC').textContent = sinComp ? 'Salir' : 'Sin completar';
+  /* encendido: nombre + visto + X, en azul (26-09-2026, igual que Mas de 3 horas) */
+  document.getElementById('btnSC').innerHTML = sinComp
+    ? '✓ Sin completar<span class="cerrar-x">✕</span>' : 'Sin completar';
   document.getElementById('panelSC').style.display = sinComp ? 'block' : 'none';
   document.getElementById('estadosBox').style.display = sinComp ? 'none' : '';
   if(sinComp){ sel.value='__ALL__'; FILTROS.Estado.clear(); pintarFiltro('Estado'); }
@@ -3793,13 +3838,35 @@ function renderPanelCaidas(){
 function renderPanelSC(){
   const lista = tecnicosSinCompletar();
   const cont = document.getElementById('listaSC');
-  document.querySelector('#panelSC h2').textContent = '🚩 Sin completar ('+lista.length+')';
+  document.querySelector('#panelSC h2').textContent = 'Sin completar ('+lista.length+')';
   if(!lista.length){
     cont.innerHTML = '<div class="vacio">✅ Todos los técnicos con trabajos tienen al menos uno completado.</div>';
     return;
   }
   let html = '';
   if(sel.value!=='__ALL__') html += '<div class="vertodos" onclick="verTecnicoSC(\'__ALL__\')">👥 Ver todos en el mapa</div>';
+  /* 26-09-2026: una linea por tecnico (estilo lista). Punto = su color en el
+     mapa; abajo, en que esta cada una de sus ordenes; a la derecha, cuantas
+     tiene. La no realizada va en rojo: es la que mas pesa. */
+  html += lista.map(t=>{
+    const act = DB[t].filter(p=> p.e!=='Cancelado' && okCiudad(p));
+    const c = e => act.filter(p=>p.e===e).length;
+    const partes = [];
+    if(c('Iniciado'))     partes.push(c('Iniciado')+' iniciada'+(c('Iniciado')>1?'s':''));
+    if(c('en ruta'))      partes.push(c('en ruta')+' en ruta');
+    if(c('Pendiente'))    partes.push(c('Pendiente')+' pendiente'+(c('Pendiente')>1?'s':''));
+    if(c('Suspendido'))   partes.push(c('Suspendido')+' suspendida'+(c('Suspendido')>1?'s':''));
+    if(c('No Realizada')) partes.push('<span class="nr">'+c('No Realizada')+' no realizada'+(c('No Realizada')>1?'s':'')+'</span>');
+    const tEsc = t.replace(/'/g,"\\'");
+    return '<div class="atrfila" onclick="verTecnicoSC(\''+tEsc+'\')">'+
+      '<span class="pt" style="background:'+colorOf[t]+'"></span>'+
+      '<span class="dt"><b>'+escR(t)+'</b><span class="dir">'+partes.join(' · ')+'</span></span>'+
+      '<span class="tm sc">'+act.length+'</span>'+
+    '</div>';
+  }).join('');
+  cont.innerHTML = html;
+  return;
+  // --- estilo anterior (tarjetas), sin uso desde el 26-09-2026 ---
   html += lista.map(t=>{
     const act = DB[t].filter(p=> p.e!=='Cancelado' && okCiudad(p));
     const nIni = act.filter(p=>p.e==='Iniciado').length;
@@ -6816,7 +6883,10 @@ function setUmbral(v){
 function actualizarBadgeAtr(){
   const b = document.getElementById('btnAtr');
   if(!b) return;
-  if(atr){ b.textContent = '✖ Salir'; return; }
+  /* 26-09-2026 (Luis): encendido se nota mas. Antes decia "✖ Salir" y se
+     perdia cual boton era; ahora mantiene su nombre, lleva un visto delante
+     y una X para cerrar, en azul (el color de "lo que estoy mirando"). */
+  if(atr){ b.innerHTML = '✓ Más de '+umbralEnPalabras()+'<span class="cerrar-x">✕</span>'; return; }
   const n = trabajosAtrasados().length;
   b.innerHTML = 'Más de '+umbralEnPalabras() + (n ? '<span class="pill">'+n+'</span>' : '');
 }
@@ -6862,7 +6932,7 @@ function renderPanelAtr(){
   const lista = trabajosAtrasados();
   const cont = document.getElementById('listaAtr');
   document.querySelector('#panelAtr h2').textContent =
-    '⏱️ Iniciado hace más de '+umbralEnPalabras()+' ('+lista.length+')';
+    'Más de '+umbralEnPalabras()+' iniciado ('+lista.length+')';
 
   if(!lista.length){
     cont.innerHTML = '<div class="vacio">✅ Ningún técnico lleva más de '+
@@ -6872,6 +6942,23 @@ function renderPanelAtr(){
 
   let html = '';
   if(sel.value!=='__ALL__') html += '<div class="vertodos" onclick="verTecnicoAtr(\'__ALL__\')">👥 Ver todos en el mapa</div>';
+  /* 26-09-2026: lista compacta, una linea por orden (estilo "C" que eligio
+     Luis): punto de color (ambar; rojo si lleva 90 min o mas sobre el umbral),
+     tecnico · tipo · hora de inicio, la direccion abajo y el tiempo a la
+     derecha. Caben 8-10 sin bajar. Toca una fila para ver al tecnico. */
+  html += lista.map(x=>{
+    const grave = x.m >= UMBRAL_MIN + 90 ? ' grave' : '';
+    const tEsc = x.t.replace(/'/g,"\\'");
+    return '<div class="atrfila'+grave+'" onclick="verTecnicoAtr(\''+tEsc+'\')" title="'+escR(x.p.o)+' · franja '+escR(x.p.f)+'">'+
+      '<span class="pt"></span>'+
+      '<span class="dt"><b>'+escR(x.t)+'</b> · '+escR(x.p.cat||x.p.t)+' · '+escR(x.p.hi)+
+        '<span class="dir">'+escR(x.p.d)+'</span></span>'+
+      '<span class="tm">'+fmtDur(x.m)+'</span>'+
+    '</div>';
+  }).join('');
+  cont.innerHTML = html;
+  return;
+  // --- estilo anterior (tarjetas), sin uso desde el 26-09-2026 ---
   html += lista.map(x=>{
     const grave = x.m >= UMBRAL_MIN + 90 ? ' grave' : '';
     const tEsc = x.t.replace(/'/g,"\\'");
