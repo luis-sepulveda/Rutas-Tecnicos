@@ -1810,6 +1810,15 @@
   #btnSC .cerrar-x { margin-left:8px; padding-left:8px; border-left:1px solid rgba(255,255,255,.45);
     font-weight:400; }
   /* =================================================================== */
+  /* ==== TARJETA DE REQUIERE ATENCION ENCENDIDA (26-09-2026) ====
+     Mientras su panel esta abierto: borde y fondo azul, y abajo "abierto · ✕"
+     para saber que tocandola de nuevo se cierra. */
+  .pv-al.sel { border-color:#1d4ed8; border-left:4px solid #1d4ed8; background:#eff6ff;
+    box-shadow:0 0 0 2px rgba(29,78,216,.25), 0 6px 16px rgba(29,78,216,.18); position:relative; }
+  .pv-al.sel .n { color:#1d4ed8; }
+  .pv-al.sel::after { content:'\2713  abierto  \00b7  \2715  cerrar'; position:absolute; right:12px; top:10px;
+    font-size:11px; font-weight:700; color:#1d4ed8; letter-spacing:.02em; }
+  /* =================================================================== */
 </style>
 </head>
 <body>
@@ -2307,6 +2316,7 @@ function tecnicosSinCompletar(){
 function cerrarSC(){
   if(!sinComp) return;
   sinComp = false;
+  setTimeout(marcarAlertasPortada, 0);
   document.getElementById('btnSC').classList.remove('on3');
   document.getElementById('btnSC').textContent = 'Sin completar';
   document.getElementById('panelSC').style.display = 'none';
@@ -5389,6 +5399,21 @@ function verPortada(){
 /* abre un panel sin salir de la portada */
 function desdePortada(fn){
   try { fn(); } catch(e){ console.warn('panel:', e); }
+  marcarAlertasPortada();
+}
+
+/* Tarjetas de "Requiere atencion" encendidas (26-09-2026, Luis: "los botones
+   principales no cambian de color"). Mas de 3 horas y Sin completar abren un
+   panel al costado; mientras esta abierto, su tarjeta se pone azul con un
+   "✓ abierto · ✕ cerrar", igual que los botones del mapa. */
+function alertaAbierta(fn){
+  return (fn === 'toggleAtrasados' && typeof atr !== 'undefined' && atr)
+      || (fn === 'toggleSinCompletar' && typeof sinComp !== 'undefined' && sinComp);
+}
+function marcarAlertasPortada(){
+  document.querySelectorAll('.pv-al[data-fn]').forEach(function(b){
+    b.classList.toggle('sel', alertaAbierta(b.dataset.fn));
+  });
 }
 
 /* Reparto de la jornada en una sola barra. Los mismos colores que usan las
@@ -6049,8 +6074,11 @@ function pintarPortada(){
   /* ---- lo que pide accion ----
      Tres tarjetas grandes con la explicacion de que significa cada una, para
      el que no vive dentro del modulo. En cero se apagan enteras. */
+  /* data-fn (26-09-2026): para marcar en azul la tarjeta cuyo panel esta
+     abierto (Mas de 3 horas / Sin completar), ver marcarAlertasPortada(). */
   const alerta = (fn, n, titulo, sub, tono) =>
-      '<button class="pv-al ' + (n > 0 ? 'viva' : 'cero') + '" style="--tono:' + tono + '"'
+      '<button class="pv-al ' + (n > 0 ? 'viva' : 'cero') + (alertaAbierta(fn) ? ' sel' : '')
+    +   '" data-fn="' + fn + '" style="--tono:' + tono + '"'
     +   ' onclick="desdePortada(' + fn + ')">'
     +   '<span class="n">' + (n === null ? '\u2013' : n) + '</span>'
     +   '<span class="tx"><span class="t">' + titulo + '</span>'
@@ -6894,6 +6922,7 @@ function actualizarBadgeAtr(){
 function cerrarAtr(){
   if(!atr) return;
   atr = false;
+  setTimeout(marcarAlertasPortada, 0);
   document.getElementById('btnAtr').classList.remove('on5');
   document.getElementById('panelAtr').style.display = 'none';
   document.getElementById('estadosBox').style.display = '';
