@@ -1819,6 +1819,20 @@
   .pv-al.sel::after { content:'\2713  abierto  \00b7  \2715  cerrar'; position:absolute; right:12px; top:10px;
     font-size:11px; font-weight:700; color:#1d4ed8; letter-spacing:.02em; }
   /* =================================================================== */
+  /* ==== ENLACES NO OPERATIVOS / OTRA COMUNA (26-09-2026) ====
+     Luis eligio la opcion B: pastilla blanca con el numero en un circulo de
+     color (naranjo no operativos, rojo si hay sin marcar, verde azulado en
+     otra comuna). El numero va en <span class="nn"> (botonNoOperativos).
+     Para volver a los enlaces subrayados de antes, borrar este bloque. */
+  .pv-nop { display:inline-flex; align-items:center; gap:6px; text-decoration:none; border:1px solid #dbe4ed;
+    background:#fff; color:#15293e; border-radius:999px; padding:3px 11px 3px 4px; font-size:12.5px; font-weight:500; margin-left:4px; }
+  .pv-nop:hover { border-color:#9aadbf; background:#f8fafc; color:#15293e; }
+  .pv-nop .nn { background:#ea580c; color:#fff; border-radius:999px; min-width:20px; height:20px;
+    display:inline-flex; align-items:center; justify-content:center; font-size:11.5px; font-weight:700; padding:0 5px; }
+  .pv-nop.alerta .nn { background:#dc2626; }
+  .pv-nop.otra { color:#15293e; }
+  .pv-nop.otra .nn { background:#0f766e; }
+  /* =================================================================== */
 </style>
 </head>
 <body>
@@ -5830,13 +5844,13 @@ function botonNoOperativos(){
   if(nNo || !oc)
     h += ' \u00b7 <a class="pv-nop' + (sx ? ' alerta' : '') + '" onclick="abrirNoOperativos(\'no\')" '
       + 'title="Del equipo, sin órdenes hoy' + (sx ? ': ' + sx + ' figuran como OPERATIVO' : '') + '">'
-      + nNo + ' no operativo' + (nNo === 1 ? '' : 's') + ' \u203a</a>';
+      + '<span class="nn">' + nNo + '</span> no operativo' + (nNo === 1 ? '' : 's') + ' \u203a</a>';
   if(oc)
     h += ' \u00b7 <a class="pv-nop otra" onclick="abrirNoOperativos(\'otra\')" '
       /* el globo dice quien y donde (26-09-2026): "KEVIN TAPIA: Viña del Mar" */
       + 'title="Trabajan hoy en otra comuna: ' + escR(((NOOP.lista || []).filter(function(x){ return x.otra_comuna; })
           .map(function(x){ return x.tec + (x.comuna ? ' (' + x.comuna + ')' : ''); })).join(', ')) + '">'
-      + oc + ' en otra comuna \u203a</a>';
+      + '<span class="nn">' + oc + '</span> en otra comuna \u203a</a>';
   return h;
 }
 /* modo: 'no' = solo los no operativos de verdad; 'otra' = solo los que
