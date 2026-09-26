@@ -11625,16 +11625,16 @@
    }
   },
   "26-09-2026": {
-   "hasta": "10:36",
+   "hasta": "10:41",
    "actividades": 137,
    "tecnicos": 35,
    "estados": {
-    "Iniciado": 33,
-    "Pendiente": 91,
+    "Completado": 5,
+    "en ruta": 4,
+    "Pendiente": 89,
+    "Iniciado": 30,
     "Cancelado": 2,
     "No Realizada": 6,
-    "Completado": 2,
-    "en ruta": 2,
     "Suspendido": 1
    },
    "rgu": 223.0,
@@ -11682,7 +11682,7 @@
       "f": "13-16",
       "hi": "13:00",
       "d": "EL OCASO 1104 DEPTO 35, QUILPUE",
-      "e": "Iniciado"
+      "e": "Completado"
      },
      {
       "o": "1-3NVSME79",
@@ -11717,9 +11717,9 @@
       "o": "1-3O22EMBD",
       "cat": "Alta 1 Play",
       "f": "10-13",
-      "hi": "10:52",
+      "hi": "10:53",
       "d": "LAS ROSAS 859, QUILPUE",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "ALEXIS JARA",
       "visitas": 4,
       "ult_fecha": "25-09-2026",
@@ -11729,7 +11729,7 @@
       "o": "1-3NXBVKKG",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "16:36",
+      "hi": "16:37",
       "d": "PJE SANTA JULIA 131 CASA C, QUILPUE",
       "e": "Pendiente",
       "tec": "ALEXIS JARA",
@@ -11897,7 +11897,7 @@
       "o": "1-3NZ6QIY7",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:12",
+      "hi": "14:16",
       "d": "VILLA ESMERALDA 1531 DEPTO 304, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JORDAN ROA PEREZ",
@@ -12041,7 +12041,7 @@
       "o": "1-3O1YO3SO",
       "cat": "Alta 2 Play",
       "f": "16-19",
-      "hi": "18:04",
+      "hi": "16:33",
       "d": "JOSE FUENTES 885 DEPTO 21, QUILPUE",
       "e": "Pendiente",
       "tec": "NICOLAS MOYANO R",
@@ -12137,7 +12137,7 @@
       "f": "10-13",
       "hi": "09:45",
       "d": "LA INVERNADA 3172, QUILPUE",
-      "e": "Iniciado",
+      "e": "Completado",
       "tec": "JORDAN ROA PEREZ",
       "desde": "23-09-2026"
      },
@@ -12195,5 +12195,5 @@
    }
   }
  },
- "generado": "26-09-2026 10:36"
+ "generado": "26-09-2026 10:41"
 }
