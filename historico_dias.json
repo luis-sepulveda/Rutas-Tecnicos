@@ -11625,24 +11625,25 @@
    }
   },
   "26-09-2026": {
-   "hasta": "10:10",
-   "actividades": 130,
+   "hasta": "10:21",
+   "actividades": 133,
    "tecnicos": 35,
    "estados": {
-    "Iniciado": 32,
+    "Iniciado": 31,
     "Pendiente": 92,
     "Cancelado": 1,
-    "No Realizada": 2,
+    "No Realizada": 3,
+    "en ruta": 3,
     "Completado": 2,
-    "en ruta": 1
+    "Suspendido": 1
    },
-   "rgu": 214.0,
+   "rgu": 218.0,
    "caidas_total": 0,
    "caidas_activas": 0,
    "caidas_resueltas": 0,
    "nuevas": 6,
    "al_bucket": 14,
-   "repetidas": 30,
+   "repetidas": 31,
    "reagendadas": 8,
    "detalle": {
     "caidas": [],
@@ -11764,6 +11765,18 @@
       "ult_cierre": "Cliente Desiste"
      },
      {
+      "o": "1-3NZHK113",
+      "cat": "Reparación",
+      "f": "16-19",
+      "hi": "16:54",
+      "d": "IRMA JOHNSON MOLINA 201 EDIF. I DEPTO 913, QUILPUE",
+      "e": "Pendiente",
+      "tec": "CRISTOBAL SILVA LEIVA",
+      "visitas": 1,
+      "ult_fecha": "22-09-2026",
+      "ult_cierre": "Sin moradores"
+     },
+     {
       "o": "1-3O222RQN",
       "cat": "Alta 2 Play",
       "f": "13-16",
@@ -11776,22 +11789,22 @@
       "ult_cierre": "Cliente reagenda"
      },
      {
-      "o": "1-3O11P8UK",
+      "o": "1-3O2DFE6I",
       "cat": "Alta 2 Play",
-      "f": "10-13",
-      "hi": "09:44",
+      "f": "16-19",
+      "hi": "18:44",
       "d": "PJE 610 865, QUILPUE",
-      "e": "No Realizada",
-      "tec": "FELIPE SILVA R",
-      "visitas": 2,
-      "ult_fecha": "24-09-2026",
+      "e": "Pendiente",
+      "tec": "DANIEL NAVARRETE E",
+      "visitas": 3,
+      "ult_fecha": "26-09-2026",
       "ult_cierre": "Sin moradores"
      },
      {
       "o": "1-3O22ZMTJ",
       "cat": "Migración 2 Play",
       "f": "13-16",
-      "hi": "14:00",
+      "hi": "14:01",
       "d": "REGULUS 2774, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -11803,7 +11816,7 @@
       "o": "1-3NZ2NN1H",
       "cat": "Alta Traslado",
       "f": "13-16",
-      "hi": "16:54",
+      "hi": "16:55",
       "d": "LOS PINOS 1132, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -11875,7 +11888,7 @@
       "o": "1-3O24LXUD",
       "cat": "Alta 1 Play",
       "f": "13-16",
-      "hi": "14:18",
+      "hi": "14:00",
       "d": "LAS AZUCENAS 2655 EDIF. V DEPTO 301, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -12079,9 +12092,9 @@
       "o": "1-3NZAHAJS",
       "cat": "Migración 3 Play",
       "f": "10-13",
-      "hi": "10:27",
+      "hi": "10:34",
       "d": "CAMINO TRONCAL 2091 CASA 18, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "GEEYSER PEREZ O",
       "desde": "23-09-2026"
      },
@@ -12149,5 +12162,5 @@
    }
   }
  },
- "generado": "26-09-2026 10:10"
+ "generado": "26-09-2026 10:21"
 }
