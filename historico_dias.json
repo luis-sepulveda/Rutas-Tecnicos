@@ -11625,23 +11625,23 @@
    }
   },
   "26-09-2026": {
-   "hasta": "16:29",
-   "actividades": 167,
+   "hasta": "16:34",
+   "actividades": 170,
    "tecnicos": 35,
    "estados": {
-    "Completado": 83,
+    "Completado": 84,
     "No Realizada": 33,
-    "Pendiente": 20,
-    "Iniciado": 21,
+    "Pendiente": 19,
+    "Suspendido": 3,
+    "Iniciado": 22,
     "Cancelado": 6,
-    "en ruta": 2,
-    "Suspendido": 2
+    "en ruta": 3
    },
-   "rgu": 249.2,
+   "rgu": 251.3,
    "caidas_total": 1,
    "caidas_activas": 1,
    "caidas_resueltas": 0,
-   "nuevas": 20,
+   "nuevas": 22,
    "al_bucket": 42,
    "repetidas": 35,
    "reagendadas": 8,
@@ -11658,6 +11658,24 @@
      }
     ],
     "nuevas": [
+     {
+      "o": "1-3O2LFPQB",
+      "tec": "JOSE SALAS MEDINA",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "16:32",
+      "d": "RAMON ANGEL JARA 112 CASA 12, QUILPUE",
+      "e": "en ruta"
+     },
+     {
+      "o": "1-3O2LNNN8",
+      "tec": "CRISTOBAL SILVA LEIVA",
+      "cat": "Modificación de Servicio",
+      "f": "16-19",
+      "hi": "16:33",
+      "d": "CERRO ALMUD 3077, QUILPUE",
+      "e": "Iniciado"
+     },
      {
       "o": "1-3O2KZJ0Q",
       "tec": "LUIS CASTRO TORRES",
@@ -11882,7 +11900,7 @@
       "f": "16-19",
       "hi": "15:47",
       "d": "LAGO LAS TORRES 29 DEPTO 1203, QUILPUE",
-      "e": "Iniciado",
+      "e": "Suspendido",
       "tec": "ALFREDO ALCAYAGA F",
       "visitas": 2,
       "ult_fecha": "21-09-2026",
@@ -11952,9 +11970,9 @@
       "o": "1-3NZHK113",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:22",
+      "hi": "16:34",
       "d": "IRMA JOHNSON MOLINA 201 EDIF. I DEPTO 913, QUILPUE",
-      "e": "en ruta",
+      "e": "Iniciado",
       "tec": "FELIPE SILVA R",
       "visitas": 1,
       "ult_fecha": "22-09-2026",
@@ -11964,7 +11982,7 @@
       "o": "1-3O2DL671",
       "cat": "Alta 1 Play",
       "f": "16-19",
-      "hi": "17:36",
+      "hi": "17:48",
       "d": "AVENIDA BELLOTO 1080, QUILPUE",
       "e": "Pendiente",
       "tec": "FELIPE SILVA R",
@@ -12071,7 +12089,7 @@
       "o": "1-3O2FKQKM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:20",
+      "hi": "17:33",
       "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE SALAS MEDINA",
@@ -12083,7 +12101,7 @@
       "o": "1-3NY5I1WT",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "17:46",
+      "hi": "18:59",
       "d": "HUASCO 2881, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE SALAS MEDINA",
@@ -12343,5 +12361,5 @@
    }
   }
  },
- "generado": "26-09-2026 16:29"
+ "generado": "26-09-2026 16:34"
 }
