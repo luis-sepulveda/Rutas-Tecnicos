@@ -11625,15 +11625,15 @@
    }
   },
   "26-09-2026": {
-   "hasta": "14:38",
+   "hasta": "14:43",
    "actividades": 164,
    "tecnicos": 35,
    "estados": {
     "Completado": 57,
     "No Realizada": 22,
-    "Iniciado": 24,
-    "Pendiente": 48,
-    "en ruta": 5,
+    "Iniciado": 25,
+    "Pendiente": 50,
+    "en ruta": 2,
     "Cancelado": 6,
     "Suspendido": 2
    },
@@ -11773,7 +11773,7 @@
       "f": "13-16",
       "hi": "14:00",
       "d": "EL ALBA 815 CASA D, QUILPUE",
-      "e": "en ruta"
+      "e": "Pendiente"
      },
      {
       "o": "1-3O2CZ8WX",
@@ -12029,7 +12029,7 @@
       "o": "1-3O2FKQKM",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:18",
+      "hi": "17:35",
       "d": "JOSE URIBE 1210 CASA E3, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE GALAZ D",
@@ -12089,7 +12089,7 @@
       "o": "1-3NY5I1WT",
       "cat": "Migración 3 Play",
       "f": "13-16",
-      "hi": "16:01",
+      "hi": "15:57",
       "d": "HUASCO 2881, QUILPUE",
       "e": "Pendiente",
       "tec": "JUAN ARRIAGADA C",
@@ -12277,7 +12277,7 @@
       "o": "1-3O0V6HSO",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "16:00",
+      "hi": "16:03",
       "d": "EL MIRADOR 493 CASA 23, VILLA ALEMANA",
       "e": "Pendiente",
       "tec": "JEAN ROODLY ORELIEN",
@@ -12337,5 +12337,5 @@
    }
   }
  },
- "generado": "26-09-2026 14:38"
+ "generado": "26-09-2026 14:43"
 }
