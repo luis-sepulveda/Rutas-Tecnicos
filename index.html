@@ -1374,6 +1374,11 @@
   .pv-nop:hover { color:#92400e; }
   .pv-nop.alerta { color:#b91c1c; }
   .pv-nop-esp { color:#94a3b8; }
+  /* en otra comuna (26-09-2026): verde azulado, como su etiqueta en la ventana;
+     no es una alerta, trabajaron */
+  .pv-nop.otra { color:#0f766e; }
+  .nop-com { color:#0f766e; font-weight:700; margin-left:4px; }
+  .pv-nop.otra:hover { color:#115e59; }
   .nop-t { font:700 12.5px 'DM Sans',sans-serif; color:#475569; margin:4px 0 6px; }
   .nop-t.alerta { color:#b91c1c; }
   .nop-t + .cq { margin-bottom:14px; }
@@ -5713,23 +5718,44 @@ function pintarTendencia(){
    trabajo, hace cuantos dias y cuantos dias trabajo en las ultimas 2
    semanas (distingue un dia suelto de una licencia o alguien que se fue). */
 let NOOP = null;
+/* tecnicos en otra comuna hoy (26-09-2026): cuentan como operativos */
+function nOtraCom(){ return (NOOP && NOOP.listo !== false && NOOP.n_otra_comuna) || 0; }
 function botonNoOperativos(){
   if(!NOOP) return '';
   // antes de la carga de bandejas casi nadie tiene ordenes: no se muestra la cifra
   if(NOOP.listo === false)
     return ' \u00b7 <span class="pv-nop-esp" title="Antes de la carga de bandejas casi nadie tiene órdenes">no operativos: tras la carga</span>';
   const sx = NOOP.n_sin_expl || 0;
-  return ' \u00b7 <a class="pv-nop' + (sx ? ' alerta' : '') + '" onclick="abrirNoOperativos()" '
-    + 'title="Del equipo, sin órdenes hoy' + (sx ? ': ' + sx + ' figuran como OPERATIVO' : '') + '">'
-    + NOOP.n + ' no operativo' + (NOOP.n === 1 ? '' : 's') + ' \u203a</a>';
+  /* 26-09-2026, a pedido de Luis: los que estan en OTRA COMUNA van en su
+     propio enlace. Si trabajaron (solo que fuera de la zona), meterlos en
+     "no operativos" hacia preguntar "tienes 5 no operativos?". El numero de
+     no operativos ahora es sin ellos; el calculo de dotacion.py no cambio. */
+  const oc = NOOP.n_otra_comuna || 0;
+  const nNo = Math.max(0, (NOOP.n || 0) - oc);
+  let h = '';
+  if(nNo || !oc)
+    h += ' \u00b7 <a class="pv-nop' + (sx ? ' alerta' : '') + '" onclick="abrirNoOperativos(\'no\')" '
+      + 'title="Del equipo, sin órdenes hoy' + (sx ? ': ' + sx + ' figuran como OPERATIVO' : '') + '">'
+      + nNo + ' no operativo' + (nNo === 1 ? '' : 's') + ' \u203a</a>';
+  if(oc)
+    h += ' \u00b7 <a class="pv-nop otra" onclick="abrirNoOperativos(\'otra\')" '
+      /* el globo dice quien y donde (26-09-2026): "KEVIN TAPIA: Viña del Mar" */
+      + 'title="Trabajan hoy en otra comuna: ' + escR(((NOOP.lista || []).filter(function(x){ return x.otra_comuna; })
+          .map(function(x){ return x.tec + (x.comuna ? ' (' + x.comuna + ')' : ''); })).join(', ')) + '">'
+      + oc + ' en otra comuna \u203a</a>';
+  return h;
 }
-function abrirNoOperativos(){
+/* modo: 'no' = solo los no operativos de verdad; 'otra' = solo los que
+   estan en otra comuna; sin modo = todos (como era antes). 26-09-2026. */
+function abrirNoOperativos(modo){
   const L = (NOOP && NOOP.lista) || [];
-  const sinExpl = L.filter(function(x){ return x.sin_expl; });
+  const sinExpl = modo === 'otra' ? [] : L.filter(function(x){ return x.sin_expl; });
   /* 25-09-2026: CAMBIO DE COMUNA va en su propio grupo: si trabajaron, pero
      en otra comuna (con el acceso de Luis esas ordenes no se ven) */
-  const otraCom = L.filter(function(x){ return x.otra_comuna; });
-  const conEst = L.filter(function(x){ return !x.sin_expl && !x.otra_comuna; });
+  const otraCom = modo === 'no' ? [] : L.filter(function(x){ return x.otra_comuna; });
+  const conEst = modo === 'otra' ? [] : L.filter(function(x){ return !x.sin_expl && !x.otra_comuna; });
+  const tit = document.querySelector('#modalNoop .mc-head h2');
+  if(tit) tit.textContent = modo === 'otra' ? 'Técnicos en otra comuna hoy' : 'Técnicos no operativos hoy';
   const fila = function(x){
     const ult = x.ult ? escR(x.ult) + ' <span class="m">(' + (x.hace === 1 ? 'ayer' : 'hace ' + x.hace + ' días') + ')</span>'
                       : '<span class="m">sin trabajos en los últimos ' + ((NOOP && NOOP.dias_equipo) || 60) + ' días</span>';
@@ -5740,6 +5766,8 @@ function abrirNoOperativos(){
       + '<td>' + (x.sin_expl ? '<span class="est op">Sin marcar</span>'
                              : '<span class="est ' + (x.otra_comuna ? 'otra' : 'lic') + '">'
                                + escR(x.otra_comuna ? 'Cambio de comuna' : tituloDir(x.estado)) + '</span>'
+                               /* a que comuna lo mandaron (26-09-2026), si se anoto en el Excel */
+                               + (x.otra_comuna && x.comuna ? ' <b class="nop-com">' + escR(x.comuna) + '</b>' : '')
                                + (x.hasta ? ' <span class="m">hasta el ' + escR(x.hasta) + '</span>' : '')) + '</td>'
       + '<td>' + ult + '</td><td class="n">' + x.d14 + '</td></tr>';
   };
@@ -5749,8 +5777,9 @@ function abrirNoOperativos(){
       + lista.map(fila).join('') + '</table>';
   };
   let h = '<div class="pv-cuad">';
-  if(!L.length){
-    h += '<div style="color:#166534;padding:10px 0">Todo el equipo tiene órdenes hoy.</div>';
+  if(!(sinExpl.length + otraCom.length + conEst.length)){
+    h += '<div style="color:#166534;padding:10px 0">' + (modo === 'otra' ? 'Hoy nadie está en otra comuna.'
+      : 'Todo el equipo tiene órdenes hoy (o está en otra comuna).') + '</div>';
   } else {
     if(sinExpl.length){
       h += '<div class="nop-t alerta">Sin órdenes hoy y sin motivo marcado (' + sinExpl.length + ')'
@@ -5771,7 +5800,7 @@ function abrirNoOperativos(){
     + ', más los que trabajaron en las últimas 2 semanas aunque no estén en la base. '
     + 'No operativo = del equipo, sin ninguna orden en bandeja hoy. El motivo se marca cada mañana, después de la carga de '
     + 'bandejas, en la columna ESTADO de estado_tecnicos.xlsx (Ausente, Licencia médica, Vacaciones, Permiso, Cambio de comuna), con la fecha '
-    + 'HASTA; al día siguiente de esa fecha vuelve solo a Operativo.</div></div>';
+    + 'HASTA; al día siguiente de esa fecha vuelve solo a Operativo. Con Cambio de comuna, en la columna COMUNA se anota dónde está.</div></div>';
   document.getElementById('noopCuerpo').innerHTML = h;
   document.getElementById('modalNoop').classList.add('abierto');
 }
@@ -6033,7 +6062,13 @@ function pintarPortada(){
     +       '<div class="pv-pct"><span class="v">' + pct.toFixed(1).replace('.', ',')
     +         '</span><span class="u">%</span></div>'
     +       '<div class="pv-pctl">' + filas.length + ' actividades \u00b7 '
-    +         nTec + ' t\u00e9cnicos operativos'
+    /* 26-09-2026 (Luis): el que esta en OTRA COMUNA tambien esta operativo,
+       solo que trabajando fuera de la zona, asi que se suma aca. No hay doble
+       conteo: dotacion.py solo lo marca si no tiene ninguna orden en nuestras
+       bandejas. nTec (los con ordenes en la zona) no se toca. */
+    +         '<span title="' + nTec + ' con \u00f3rdenes en Quilpu\u00e9 y Villa Alemana'
+    +           (nOtraCom() ? ' + ' + nOtraCom() + ' en otra comuna' : '') + '">'
+    +         (nTec + nOtraCom()) + ' t\u00e9cnicos operativos</span>'
     /* No operativos (24-09-2026): del equipo, sin ordenes hoy. Ver dotacion.py */
     +         botonNoOperativos()
     +         '</div>'
