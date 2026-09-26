@@ -11625,15 +11625,15 @@
    }
   },
   "26-09-2026": {
-   "hasta": "13:17",
+   "hasta": "13:22",
    "actividades": 157,
    "tecnicos": 35,
    "estados": {
     "Completado": 41,
     "No Realizada": 19,
-    "en ruta": 2,
-    "Pendiente": 70,
-    "Iniciado": 19,
+    "en ruta": 3,
+    "Pendiente": 68,
+    "Iniciado": 20,
     "Cancelado": 4,
     "Suspendido": 2
    },
@@ -11927,9 +11927,9 @@
       "o": "1-3O216EPZ",
       "cat": "Reparación",
       "f": "13-16",
-      "hi": "13:26",
+      "hi": "13:35",
       "d": "LAS AMERICAS 1015 EDIF. 10 DEPTO 1, VILLA ALEMANA",
-      "e": "Pendiente",
+      "e": "en ruta",
       "tec": "JEAN ROODLY ORELIEN",
       "visitas": 1,
       "ult_fecha": "15-09-2026",
@@ -11987,7 +11987,7 @@
       "o": "1-3NZHK113",
       "cat": "Reparación",
       "f": "16-19",
-      "hi": "17:10",
+      "hi": "16:25",
       "d": "IRMA JOHNSON MOLINA 201 EDIF. I DEPTO 913, QUILPUE",
       "e": "Pendiente",
       "tec": "JOSE SALAS MEDINA",
@@ -12272,5 +12272,5 @@
    }
   }
  },
- "generado": "26-09-2026 13:17"
+ "generado": "26-09-2026 13:22"
 }
